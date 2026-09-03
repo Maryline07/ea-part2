@@ -1,0 +1,1413 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 1. Формы ведения бизнеса, методы и периоды учёта — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=7">
+<script defer src="assets/figures-2025.js?v=7"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=7"></script>
+</head>
+<body data-module="su01">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">01</span>
+      <h1>
+        <span lang="ru">Формы ведения бизнеса, методы и периоды учёта</span>
+        <span lang="en">Business forms, accounting methods and periods</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Виды бизнеса и связанные вопросы</span><span lang="en">Business Entities and Considerations</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>SS-4 · 8832 · W-2 · W-4 · 1099-NEC · 940 · 3115 · 1128 · 8716</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>334 · 538 · 541 · 542 · 15</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su01" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s11"><span lang="ru">1.1 Кто платит налог за бизнес</span><span lang="en">1.1 Who pays the tax</span></a></li>
+        <li><a href="#s12"><span lang="ru">1.2 Классификация и её изменение</span><span lang="en">1.2 Classification and elections</span></a></li>
+        <li><a href="#s13"><span lang="ru">1.3 Работники, подрядчики, отчётность</span><span lang="en">1.3 Workers and reporting</span></a></li>
+        <li><a href="#s14"><span lang="ru">1.4 Методы учёта</span><span lang="en">1.4 Accounting methods</span></a></li>
+        <li><a href="#s15"><span lang="ru">1.5 Запасы</span><span lang="en">1.5 Inventories</span></a></li>
+        <li><a href="#s16"><span lang="ru">1.6 Налоговый период</span><span lang="en">1.6 The tax year</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">Бизнес заработал доллар. Кто заплатит с него налог — сам бизнес или его владелец?
+        Ответ на этот вопрос делит весь курс надвое и определяет, какую декларацию подавать,
+        когда возникает налог и что происходит при выплате денег владельцу.</p>
+      <p lang="en">A business earns a dollar. Who pays tax on it — the business, or its owner? That
+        single question splits the whole course in two: it decides which return is filed, when the
+        tax arises, and what happens when money reaches the owner.</p>
+      <p lang="ru">Ответов ровно два. <strong>Сквозной субъект</strong> сам налог на прибыль не
+        платит: доход «протекает» к владельцам и облагается у них — независимо от того, получили
+        они деньги или нет. <strong>C-корпорация</strong> платит налог сама, а потом ещё раз, уже
+        у акционера, когда распределяет прибыль. Это и есть двойное налогообложение.</p>
+      <p lang="en">There are exactly two. A <strong>pass-through</strong> pays no income tax itself:
+        the income flows to the owners and is taxed to them — whether or not any cash was
+        distributed. A <strong>C corporation</strong> pays tax itself, and the profit is taxed a
+        second time at the shareholder level when it is distributed. That is double taxation.</p>
+      <p lang="ru">Всё остальное в модуле — следствия: какую форму подать, по какому методу
+        считать доход и за какой период.</p>
+      <p lang="en">Everything else in this module follows from that: which return to file, on which
+        method to compute income, and for which period.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s11">
+      <h2><span class="num">1.1</span>
+        <span lang="ru">Кто платит налог за бизнес</span>
+        <span lang="en">Who pays the tax</span>
+      </h2>
+    </section>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Форма</span><span lang="en">Form of business</span></th>
+          <th><span lang="ru">Декларация</span><span lang="en">Return</span></th>
+          <th><span lang="ru">Кто платит налог на прибыль</span><span lang="en">Who pays the income tax</span></th>
+          <th><span lang="ru">Ответственность владельца</span><span lang="en">Owner’s liability</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Индивидуальный предприниматель</span><span lang="en">Sole proprietorship</span></th>
+          <td>Schedule C <span class="orig">(1040)</span></td>
+          <td><span lang="ru">Владелец</span><span lang="en">The owner</span></td>
+          <td><span lang="ru">Неограниченная</span><span lang="en">Unlimited</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Партнёрство</span><span lang="en">Partnership</span></th>
+          <td>1065 → K-1</td>
+          <td><span lang="ru">Партнёры</span><span lang="en">The partners</span></td>
+          <td><span lang="ru">Полные партнёры — неограниченная</span><span lang="en">Unlimited for general partners</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">C-корпорация</span><span lang="en">C corporation</span></th>
+          <td>1120</td>
+          <td><span lang="ru">Сама корпорация, ставка 21%</span><span lang="en">The corporation itself, at 21%</span></td>
+          <td><span lang="ru">Ограничена вкладом</span><span lang="en">Limited</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">S-корпорация</span><span lang="en">S corporation</span></th>
+          <td>1120-S → K-1</td>
+          <td><span lang="ru">Акционеры</span><span lang="en">The shareholders</span></td>
+          <td><span lang="ru">Ограничена вкладом</span><span lang="en">Limited</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Компания с ограниченной ответственностью</span><span lang="en">Limited liability company</span></th>
+          <td><span lang="ru">Зависит от классификации</span><span lang="en">Depends on classification</span></td>
+          <td><span lang="ru">Зависит от классификации</span><span lang="en">Depends on classification</span></td>
+          <td><span lang="ru">Ограничена вкладом</span><span lang="en">Limited</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">LLC — это не налоговая категория</span><span lang="en">An LLC is not a tax category</span></h3>
+      <p lang="ru">Компания с ограниченной ответственностью существует по праву штата, а Кодекс
+        такой формы налогообложения не знает вовсе. Для целей федерального налога LLC — это либо
+        неучитываемое лицо, либо партнёрство, либо корпорация. Вопрос «как облагается LLC» не имеет
+        ответа, пока не выяснено, сколько у неё участников и делала ли она выбор классификации.</p>
+      <p lang="en">A limited liability company exists under state law; the Code does not recognise it
+        as a taxable form at all. For federal tax purposes an LLC is a disregarded entity, a
+        partnership, or a corporation. The question “how is an LLC taxed” has no answer until you
+        know how many members it has and whether it made a classification election.</p>
+    </div>
+
+    <h3><span lang="ru">Индивидуальный предприниматель</span><span lang="en">Sole proprietorship</span></h3>
+
+    <p lang="ru">Самая распространённая форма и единственная, у которой нет юридического
+      существования отдельно от владельца. Доход и расходы попадают в Schedule C, чистая прибыль
+      переносится в форму 1040 и одновременно облагается налогом на самозанятость по Schedule SE,
+      если чистый заработок достиг <span data-fig="se_threshold"></span>.</p>
+    <p lang="en">The most common form, and the only one with no legal existence apart from its owner.
+      Income and expenses go on Schedule C; the net profit carries to Form 1040 and is also subject
+      to self-employment tax on Schedule SE once net earnings reach
+      <span data-fig="se_threshold"></span>.</p>
+
+    <p lang="ru">Личное имущество владельца отвечает по долгам бизнеса без каких-либо
+      ограничений — это главный недостаток формы.</p>
+    <p lang="en">The owner’s personal assets are exposed to the debts of the business without limit —
+      the principal drawback of the form.</p>
+
+    <h3><span lang="ru">Совместное предприятие супругов</span><span lang="en">Qualified joint venture</span></h3>
+
+    <p lang="ru">Бизнес, которым владеют и управляют супруги, по общему правилу считается
+      партнёрством и обязан подавать форму 1065. Выбор режима совместного предприятия
+      <span class="orig">(qualified joint venture)</span> позволяет этого избежать: каждый супруг
+      показывает свою долю дохода и расходов в собственном Schedule C и платит собственный налог
+      на самозанятость.</p>
+    <p lang="en">A business owned and operated by spouses is generally a partnership and must file
+      Form 1065. Electing qualified joint venture treatment avoids that: each spouse reports a share
+      of the income and expenses on a separate Schedule C and pays self-employment tax on that share.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th><span lang="ru">Условие совместного предприятия</span><span lang="en">Requirement</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Единственные участники — супруги</span><span lang="en">The only members are the two spouses</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Подаётся совместная декларация</span><span lang="en">They file a joint return</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Оба супруга материально участвуют в деятельности</span><span lang="en">Both spouses materially participate</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Бизнес не ведётся в форме юридического лица штата</span><span lang="en">The business is not held in a state-law entity</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Четвёртое условие отсекает LLC</span><span lang="en">The fourth requirement excludes LLCs</span></h3>
+      <p lang="ru">Супруги, оформившие бизнес как LLC, режим совместного предприятия применить не
+        могут: это уже юридическое лицо штата. Исключение возможно только в штатах с режимом
+        общей собственности супругов, где такая LLC может рассматриваться как неучитываемое лицо.</p>
+      <p lang="en">Spouses who put the business into an LLC cannot use the qualified joint venture
+        election: it is a state-law entity. The one exception arises in community property states,
+        where such an LLC may be treated as a disregarded entity.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-1. Совместное предприятие супругов</span><span lang="en">Example 1-1. Qualified joint venture</span></div>
+      <div class="example__body">
+        <p lang="ru">Супруги ведут ремонтную мастерскую, оба работают в ней полный день, доли
+          равные, юридического лица не создавали. Чистая прибыль за 2025 год — $84 000. Подают
+          совместную декларацию и выбирают режим совместного предприятия.</p>
+        <p lang="en">Spouses run a repair shop, both work in it full time, shares are equal, and no
+          state-law entity was formed. Net profit for 2025 is $84,000. They file jointly and elect
+          qualified joint venture treatment.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Чистая прибыль мастерской</span><span lang="en">Net profit of the shop</span></td>
+              <td data-num="84000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля мужа — Schedule C №1</span><span lang="en">Husband’s share — first Schedule C</span></td>
+              <td data-num="42000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля жены — Schedule C №2</span><span lang="en">Wife’s share — second Schedule C</span></td>
+              <td data-num="42000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Форм 1065 подано</span><span lang="en">Forms 1065 filed</span></td>
+              <td data-num="0" data-unit="plain"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Каждый супруг подаёт также свой Schedule SE. Смысл выбора — не в размере
+          налога, а в том, что декларация партнёрства и связанные с ней штрафы исчезают, и у
+          каждого супруга формируется собственный стаж для социального обеспечения.</p>
+        <p lang="en">Each spouse also files a separate Schedule SE. The point of the election is not
+          the amount of tax but that the partnership return and its penalties disappear, and each
+          spouse builds their own social security earnings record.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s12">
+      <h2><span class="num">1.2</span>
+        <span lang="ru">Классификация по умолчанию и её изменение</span>
+        <span lang="en">Default classification and elections</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Если субъект не выбрал классификацию сам, она определяется по умолчанию — по числу
+      участников и по тому, создан ли он как корпорация по праву штата.</p>
+    <p lang="en">If an entity makes no election, its classification is determined by default — by the
+      number of members and by whether it is incorporated under state law.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Сколько участников у компании с ограниченной ответственностью?</span>
+        <span lang="en">How many members does the LLC have?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b">
+          <b><span lang="ru">Один</span><span lang="en">One</span></b>
+          <span lang="ru">Неучитываемое лицо <span class="orig">(disregarded entity)</span>. Деятельность показывается в Schedule C владельца, как если бы компании не было</span>
+          <span lang="en">Disregarded entity. The activity is reported on the owner’s Schedule C as though the company did not exist</span>
+        </div>
+        <div class="fork__b">
+          <b><span lang="ru">Двое и более</span><span lang="en">Two or more</span></b>
+          <span lang="ru">Партнёрство. Подаётся форма 1065, каждому участнику выдаётся K-1</span>
+          <span lang="en">Partnership. Form 1065 is filed and each member receives a Schedule K-1</span>
+        </div>
+      </div>
+    </div>
+
+    <p lang="ru">Любой из этих субъектов может выбрать обложение как корпорация, подав форму 8832.
+      Обратное тоже верно: корпорация по праву штата выбрать статус партнёрства не может — она
+      корпорация всегда.</p>
+    <p lang="en">Either entity may elect to be taxed as a corporation by filing Form 8832. The reverse
+      is not available: an entity incorporated under state law is a corporation and cannot elect
+      partnership status.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Форма</span><span lang="en">Form</span></th>
+          <th><span lang="ru">Назначение</span><span lang="en">Purpose</span></th>
+          <th><span lang="ru">Что важно помнить</span><span lang="en">What to remember</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SS-4</th>
+          <td><span lang="ru">Получение идентификационного номера работодателя</span><span lang="en">Applying for an employer identification number</span></td>
+          <td><span lang="ru">Номер нужен при наличии работников, при подаче деклараций партнёрства или корпорации, при акцизных налогах и планах</span><span lang="en">Required if there are employees, for partnership or corporate returns, for excise taxes and for plans</span></td>
+        </tr>
+        <tr>
+          <th>8832</th>
+          <td><span lang="ru">Выбор классификации субъекта</span><span lang="en">Entity classification election</span></td>
+          <td><span lang="ru">Действует не ранее чем за 75 дней до подачи и не позднее чем через 12 месяцев после</span><span lang="en">Effective no more than 75 days before or 12 months after filing</span></td>
+        </tr>
+        <tr>
+          <th>2553</th>
+          <td><span lang="ru">Выбор статуса S-корпорации</span><span lang="en">Election to be an S corporation</span></td>
+          <td><span lang="ru">Подробно — в модуле 17</span><span lang="en">Covered in module 17</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Индивидуальному предпринимателю без работников идентификационный номер, как
+      правило, не требуется: он использует свой номер социального страхования. Номер становится
+      обязательным, как только появляются работники или обязанность по акцизным налогам.</p>
+    <p lang="en">A sole proprietor with no employees generally needs no EIN and uses a social security
+      number instead. An EIN becomes necessary as soon as there are employees or an excise tax
+      obligation arises.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s13">
+      <h2><span class="num">1.3</span>
+        <span lang="ru">Работники, подрядчики и отчётность</span>
+        <span lang="en">Workers, contractors and reporting</span>
+      </h2>
+    </section>
+
+    <p lang="ru">От того, кем признан исполнитель, зависит, удерживает ли бизнес налоги, платит ли
+      он половину социальных взносов и какую форму выдаёт по итогам года. Признак — степень
+      контроля, а не название договора.</p>
+    <p lang="en">Whether the business withholds tax, pays half the payroll taxes and which form it
+      issues at year end all depend on how the worker is classified. The test is the degree of
+      control, not the label on the contract.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Признак контроля</span><span lang="en">Category of control</span></th>
+          <th><span lang="ru">О чём спрашивают</span><span lang="en">What is asked</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Поведенческий</span><span lang="en">Behavioral</span></th>
+          <td><span lang="ru">Указывает ли заказчик, как именно выполнять работу, обучает ли исполнителя</span><span lang="en">Does the payer direct how the work is done, and train the worker</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Финансовый</span><span lang="en">Financial</span></th>
+          <td><span lang="ru">Кто вкладывается в инструменты, возмещаются ли расходы, может ли исполнитель получить убыток</span><span lang="en">Who invests in the tools, are expenses reimbursed, can the worker realise a loss</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Характер отношений</span><span lang="en">Type of relationship</span></th>
+          <td><span lang="ru">Бессрочность, льготы, является ли работа ключевой для бизнеса заказчика</span><span lang="en">Permanency, benefits, whether the work is a key aspect of the business</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Если ответ неочевиден, любая сторона вправе запросить решение IRS по форме SS-8.</p>
+    <p lang="en">Where the answer is unclear, either party may ask the IRS to determine the status on
+      Form SS-8.</p>
+
+    <h3><span lang="ru">Две особые категории</span><span lang="en">Two special categories</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Категория</span><span lang="en">Category</span></th>
+          <th><span lang="ru">Кто это</span><span lang="en">Who</span></th>
+          <th><span lang="ru">Налоговые последствия</span><span lang="en">Tax treatment</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Статутный работник</span><span lang="en">Statutory employee</span></th>
+          <td><span lang="ru">Водитель-агент и водитель-комиссионер; страховой агент по страхованию жизни на полной занятости; надомный работник; разъездной торговый представитель</span><span lang="en">Agent or commission driver; full-time life insurance salesperson; home worker; travelling salesperson</span></td>
+          <td><span lang="ru">Получает форму W-2 с отметкой в боксе 13. Социальные взносы уже удержаны, поэтому налога на самозанятость нет, но расходы вычитаются в Schedule C</span><span lang="en">Receives a Form W-2 with box 13 checked. Payroll taxes are already withheld, so there is no self-employment tax, yet expenses are deducted on Schedule C</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Статутный неработник</span><span lang="en">Statutory nonemployee</span></th>
+          <td><span lang="ru">Прямой продавец; лицензированный агент по недвижимости; отдельные сиделки-компаньоны</span><span lang="en">Direct seller; licensed real estate agent; certain companion sitters</span></td>
+          <td><span lang="ru">Считается самозанятым во всех отношениях: Schedule C и Schedule SE</span><span lang="en">Treated as self-employed for all purposes: Schedule C and Schedule SE</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Статутный работник получает W-2 и всё равно заполняет Schedule C</span><span lang="en">A statutory employee gets a W-2 and still files Schedule C</span></h3>
+      <p lang="ru">Это единственное сочетание, которое кажется противоречивым, и именно поэтому его
+        любят спрашивать. Логика такая: социальные взносы за него уже уплачены пополам с
+        работодателем — значит, налога на самозанятость быть не должно. Но он несёт собственные
+        деловые расходы — значит, ему нужен Schedule C, чтобы их вычесть. Обе части верны
+        одновременно.</p>
+      <p lang="en">This is the one combination that looks self-contradictory, which is exactly why it
+        is asked. The logic: payroll taxes were already split with the employer, so no
+        self-employment tax applies. But the worker bears their own business expenses, so a
+        Schedule C is needed to deduct them. Both halves are true at once.</p>
+    </div>
+
+    <h3><span lang="ru">Что и когда подаётся</span><span lang="en">What is filed, and when</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Форма</span><span lang="en">Form</span></th>
+          <th><span lang="ru">Когда возникает обязанность</span><span lang="en">When the obligation arises</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>W-4</th>
+          <td><span lang="ru">Заполняется работником при приёме; определяет размер удержания. Хранится у работодателя, в IRS не отправляется</span><span lang="en">Completed by the employee on hire; sets the withholding. Kept by the employer, not sent to the IRS</span></td>
+        </tr>
+        <tr>
+          <th>W-2</th>
+          <td><span lang="ru">Выдаётся каждому работнику независимо от суммы выплат</span><span lang="en">Issued to every employee regardless of the amount paid</span></td>
+        </tr>
+        <tr>
+          <th>1099-NEC</th>
+          <td><span lang="ru">Выплаты не работнику за услуги в рамках бизнеса от <span data-fig="nec_threshold_2025"></span> за год</span><span lang="en">Payments of <span data-fig="nec_threshold_2025"></span> or more for services to a non-employee in the course of business</span></td>
+        </tr>
+        <tr>
+          <th>1099-K</th>
+          <td><span lang="ru">Расчётные организации: одновременно свыше <span data-fig="k1099_amount"></span> и более <span data-fig="k1099_count"></span> операций</span><span lang="en">Third-party settlement organisations: over <span data-fig="k1099_amount"></span> and more than <span data-fig="k1099_count"></span> transactions</span></td>
+        </tr>
+        <tr>
+          <th>940</th>
+          <td><span lang="ru">Годовая декларация по налогу на безработицу</span><span lang="en">Annual federal unemployment tax return</span></td>
+        </tr>
+        <tr>
+          <th>941</th>
+          <td><span lang="ru">Ежеквартальная отчётность по удержанным налогам</span><span lang="en">Quarterly return of withheld taxes</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Порог формы 1099-NEC на 2025 год — <span data-fig="nec_threshold_2025"></span>, а не $2 000</span><span lang="en">The 2025 Form 1099-NEC threshold is <span data-fig="nec_threshold_2025"></span>, not $2,000</span></h3>
+      <p lang="ru">Порог, не менявшийся с 1954 года, повышен до $2 000 — но только для платежей,
+        совершённых после 31 декабря 2025 года. Экзамен проверяет период 2025, значит действует
+        прежняя величина. Тот, кто проверит сумму в сегодняшней редакции инструкции, увидит
+        $2 000 и ответит неверно.</p>
+      <p lang="en">The threshold, unchanged since 1954, rises to $2,000 — but only for payments made
+        after December 31, 2025. The exam tests the 2025 tax year, so the earlier figure applies.
+        Anyone checking the current revision of the instructions will see $2,000 and answer wrongly.</p>
+    </div>
+
+    <h3><span lang="ru">Налог по безработице</span><span lang="en">Federal unemployment tax</span></h3>
+
+    <p lang="ru">Налог платит работодатель из собственных средств; из зарплаты работника он не
+      удерживается. Обязанность возникает, если за квартал текущего или предыдущего года выплачено
+      от <span data-fig="futa_test_wages"></span> либо работник был занят хотя бы часть дня в
+      <span data-fig="futa_test_weeks"></span> и более различных неделях.</p>
+    <p lang="en">The employer pays this tax from its own funds; nothing is withheld from the
+      employee. The obligation arises if wages of <span data-fig="futa_test_wages"></span> or more
+      were paid in any calendar quarter of the current or prior year, or an employee worked at least
+      part of a day in <span data-fig="futa_test_weeks"></span> or more different weeks.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-2. Расчёт налога по безработице</span><span lang="en">Example 1-2. Computing the FUTA tax</span></div>
+      <div class="example__body">
+        <p lang="ru">У пекарни четыре работника, каждому за 2025 год выплачено более $7 000.
+          Взносы в фонд штата уплачены полностью и в срок, поэтому кредит предоставляется в
+          максимальном размере.</p>
+        <p lang="en">A bakery has four employees, each paid more than $7,000 during 2025. State
+          unemployment contributions were paid in full and on time, so the full credit is available.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">База на каждого работника</span><span lang="en">Wage base per employee</span></td>
+              <td><span data-fig="futa_base"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Облагаемая база: 4 × $7 000</span><span lang="en">Taxable wages: 4 × $7,000</span></td>
+              <td data-num="28000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Ставка до кредита</span><span lang="en">Rate before the credit</span></td>
+              <td><span data-fig="futa_rate"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Кредит за взносы в штат</span><span lang="en">Credit for state contributions</span></td>
+              <td>−<span data-fig="futa_credit"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Эффективная ставка</span><span lang="en">Net rate</span></td>
+              <td><span data-fig="futa_net"></span></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Налог к уплате: $28 000 × 0,6%</span><span lang="en">Tax due: $28,000 × 0.6%</span></td>
+              <td data-num="168"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Выплаты сверх $7 000 каждому работнику в базу не входят. Если накопленная
+          задолженность за квартал превысит <span data-fig="futa_deposit"></span>, её нужно
+          депонировать, не дожидаясь конца года.</p>
+        <p lang="en">Wages above $7,000 per employee are outside the base. If the accumulated
+          liability exceeds <span data-fig="futa_deposit"></span> in a quarter, it must be deposited
+          rather than held to year end.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s14">
+      <h2><span class="num">1.4</span>
+        <span lang="ru">Методы учёта</span>
+        <span lang="en">Accounting methods</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Метод учёта отвечает на вопрос «когда», а не «сколько»: он определяет, в каком
+      году доход попадает в декларацию, а расход становится вычетом. Метод выбирается при подаче
+      первой декларации и применяется последовательно.</p>
+    <p lang="en">An accounting method answers “when”, not “how much”: it determines the year in which
+      income is reported and an expense becomes deductible. The method is adopted on the first return
+      and must then be applied consistently.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Метод</span><span lang="en">Method</span></th>
+          <th><span lang="ru">Доход признаётся</span><span lang="en">Income recognised</span></th>
+          <th><span lang="ru">Расход вычитается</span><span lang="en">Expense deducted</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Кассовый</span><span lang="en">Cash</span></th>
+          <td><span lang="ru">При фактическом или конструктивном получении</span><span lang="en">When actually or constructively received</span></td>
+          <td><span lang="ru">При уплате</span><span lang="en">When paid</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Начисления</span><span lang="en">Accrual</span></th>
+          <td><span lang="ru">Когда право на доход зафиксировано и сумма определима</span><span lang="en">When the right to it is fixed and the amount is determinable</span></td>
+          <td><span lang="ru">Когда выполнен тест всех событий и наступило экономическое исполнение</span><span lang="en">When the all-events test is met and economic performance occurs</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Гибридный</span><span lang="en">Hybrid</span></th>
+          <td colspan="2"><span lang="ru">Сочетание, при котором запасы обязательно учитываются по начислению, а прочие статьи могут вестись кассовым методом</span><span lang="en">A combination in which inventories are on the accrual method while other items may be on the cash method</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Конструктивное получение: деньги не обязательно трогать</span><span lang="en">Constructive receipt: you need not touch the money</span></h3>
+      <p lang="ru">При кассовом методе доход считается полученным, как только он поставлен в
+        распоряжение налогоплательщика без существенных ограничений. Чек, пришедший 30 декабря и
+        обналиченный 3 января, — доход декабря. Отказ забрать чек из почтового ящика ничего не
+        меняет: важна возможность получить, а не факт получения.</p>
+      <p lang="en">Under the cash method income arises as soon as it is credited or set apart so that
+        the taxpayer may draw on it without substantial restriction. A cheque received on
+        December 30 and cashed on January 3 is December income. Choosing not to collect it from the
+        mailbox changes nothing: what matters is the ability to receive, not the act of receiving.</p>
+    </div>
+
+    <h3><span lang="ru">Кому кассовый метод запрещён</span><span lang="en">Who may not use the cash method</span></h3>
+
+    <p lang="ru">По общему правилу кассовый метод недоступен C-корпорации, партнёрству, среди
+      партнёров которого есть C-корпорация, и налоговому убежищу
+      <span class="orig">(tax shelter)</span>. Первые две категории возвращают себе это право,
+      если проходят тест валовой выручки.</p>
+    <p lang="en">As a general rule the cash method is unavailable to a C corporation, to a partnership
+      having a C corporation as a partner, and to a tax shelter. The first two regain it if they meet
+      the gross receipts test.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Средняя годовая валовая выручка за три предыдущих года — не более <span data-fig="gross_receipts_448c"></span>?</span>
+        <span lang="en">Are average annual gross receipts for the three prior years <span data-fig="gross_receipts_448c"></span> or less?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b">
+          <b><span lang="ru">Да — малый налогоплательщик</span><span lang="en">Yes — small business taxpayer</span></b>
+          <span lang="ru">Кассовый метод разрешён; правила единообразной капитализации не применяются; ограничение вычета процентов не действует; доступны упрощённые правила учёта запасов</span>
+          <span lang="en">Cash method allowed; uniform capitalization does not apply; the business interest limitation does not apply; simplified inventory rules are available</span>
+        </div>
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет</span><span lang="en">No</span></b>
+          <span lang="ru">Метод начисления обязателен, запасы учитываются по общим правилам, применяется §263A</span>
+          <span lang="en">Accrual method required, inventories follow the general rules, and section 263A applies</span>
+        </div>
+      </div>
+    </div>
+
+    <p lang="ru">Налоговое убежище исключений не имеет: тест валовой выручки его не спасает.</p>
+    <p lang="en">A tax shelter has no exception: passing the gross receipts test does not help it.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-3. Тест валовой выручки</span><span lang="en">Example 1-3. The gross receipts test</span></div>
+      <div class="example__body">
+        <p lang="ru">Корпорация решает, вправе ли она применять кассовый метод в 2025 году.
+          Берутся три предшествующих года.</p>
+        <p lang="en">A corporation is deciding whether it may use the cash method for 2025. The three
+          preceding years are taken.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td>2022</td><td data-num="27000000"></td></tr>
+            <tr><td>2023</td><td data-num="32000000"></td></tr>
+            <tr><td>2024</td><td data-num="28000000"></td></tr>
+            <tr>
+              <td><span lang="ru">Сумма за три года</span><span lang="en">Total for the three years</span></td>
+              <td data-num="87000000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Среднее: 87 000 000 ÷ 3</span><span lang="en">Average: 87,000,000 ÷ 3</span></td>
+              <td data-num="29000000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Порог на 2025 год</span><span lang="en">Threshold for 2025</span></td>
+              <td><span data-fig="gross_receipts_448c"></span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Среднее ниже порога, значит кассовый метод доступен. Обратите внимание: в
+          2023 году выручка сама по себе превышала порог, но тест применяется к среднему за три
+          года, а не к каждому году отдельно.</p>
+        <p lang="en">The average is below the threshold, so the cash method is available. Note that
+          receipts in 2023 alone exceeded the threshold: the test applies to the three-year average,
+          not to each year separately.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Метод начисления: два условия вычета</span><span lang="en">Accrual: two conditions for a deduction</span></h3>
+
+    <p lang="ru">Расход по методу начисления вычитается, когда выполнены оба условия. Первое —
+      тест всех событий <span class="orig">(all-events test)</span>: обязанность установлена и
+      сумма определима с разумной точностью. Второе — экономическое исполнение
+      <span class="orig">(economic performance)</span>: услуги оказаны, имущество передано, работы
+      выполнены.</p>
+    <p lang="en">Under the accrual method an expense is deductible when both conditions are met.
+      First, the all-events test: the liability is fixed and the amount can be determined with
+      reasonable accuracy. Second, economic performance: the services are provided, the property is
+      delivered, or the work is done.</p>
+
+    <p lang="ru">Второе условие и есть смысл всей конструкции: договориться о расходе мало,
+      кто-то должен реально что-то сделать.</p>
+    <p lang="en">The second condition carries the whole point: agreeing to an expense is not enough,
+      somebody must actually perform.</p>
+
+    <h3><span lang="ru">Правило двенадцати месяцев</span><span lang="en">The twelve-month rule</span></h3>
+
+    <p lang="ru">Предоплата обычно капитализируется и списывается по мере использования. Правило
+      двенадцати месяцев освобождает от этого, если полученное право не выходит за более раннюю из
+      двух дат: двенадцать месяцев с начала действия права либо конец налогового года, следующего
+      за годом оплаты.</p>
+    <p lang="en">A prepayment is normally capitalised and written off as the benefit is used. The
+      twelve-month rule relieves that where the right or benefit does not extend beyond the earlier
+      of: twelve months after the benefit begins, or the end of the tax year following the year of
+      payment.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-4. Предоплата страховки</span><span lang="en">Example 1-4. Prepaid insurance</span></div>
+      <div class="example__body">
+        <p lang="ru">1 октября 2025 года бизнес оплачивает страховой полис на 12 месяцев за
+          $6 000. Действие полиса — с 1 октября 2025 по 30 сентября 2026 года.</p>
+        <p lang="en">On October 1, 2025 a business pays $6,000 for a twelve-month insurance policy
+          running from October 1, 2025 to September 30, 2026.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Срок действия права</span><span lang="en">Length of the benefit</span></td>
+              <td><span lang="ru">12 мес.</span><span lang="en">12 months</span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Не выходит за 12 месяцев</span><span lang="en">Does not exceed 12 months</span></td>
+              <td><span lang="ru">да</span><span lang="en">yes</span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Не выходит за конец 2026 года</span><span lang="en">Does not extend beyond the end of 2026</span></td>
+              <td><span lang="ru">да</span><span lang="en">yes</span></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет в 2025 году</span><span lang="en">Deduction in 2025</span></td>
+              <td data-num="6000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Если бы тот же полис был оплачен на 24 месяца, правило не сработало бы и
+          расход пришлось бы распределять между годами.</p>
+        <p lang="en">Had the same policy covered 24 months, the rule would not apply and the cost
+          would have to be spread across the years.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Смена метода</span><span lang="en">Changing a method</span></h3>
+
+    <p lang="ru">Смена метода учёта требует согласия IRS и оформляется формой 3115. Ошибку в
+      арифметике или в переносе суммы методом не считают — её исправляют уточнённой декларацией.
+      Метод — это последовательный порядок отражения статьи, а не разовая оплошность.</p>
+    <p lang="en">A change of accounting method requires IRS consent and is made on Form 3115. An
+      arithmetical or posting error is not a method — it is corrected by an amended return. A method
+      is a consistent treatment of an item, not a one-off mistake.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s15">
+      <h2><span class="num">1.5</span>
+        <span lang="ru">Запасы</span>
+        <span lang="en">Inventories</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Там, где продажа товара образует существенную часть дохода, запасы обязаны
+      учитываться, а прибыль считается через себестоимость проданного.</p>
+    <p lang="en">Where the sale of goods is a material income-producing factor, inventories must be
+      accounted for, and profit is computed through cost of goods sold.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Формула себестоимости проданного</span><span lang="en">The cost of goods sold formula</span></div>
+      <div class="example__body">
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Запасы на начало года</span><span lang="en">Beginning inventory</span></td><td data-num="40000"></td></tr>
+            <tr><td><span lang="ru">Плюс закупки за год</span><span lang="en">Plus purchases</span></td><td data-num="150000"></td></tr>
+            <tr><td><span lang="ru">Плюс прямой труд и прочие затраты</span><span lang="en">Plus labour and other costs</span></td><td data-num="25000"></td></tr>
+            <tr><td><span lang="ru">Минус запасы на конец года</span><span lang="en">Less ending inventory</span></td><td data-num="-55000"></td></tr>
+            <tr class="total"><td><span lang="ru">Себестоимость проданного</span><span lang="en">Cost of goods sold</span></td><td data-num="160000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Завышение запасов на конец года уменьшает себестоимость и увеличивает
+          прибыль. Это соотношение проверяют постоянно: если в вопросе меняют одну величину,
+          требуется назвать направление изменения другой.</p>
+        <p lang="en">Overstating ending inventory reduces cost of goods sold and increases profit.
+          This relationship is tested constantly: when a question changes one figure, you are
+          expected to state which way the other moves.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Методы оценки</span><span lang="en">Valuation methods</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Метод</span><span lang="en">Method</span></th>
+          <th><span lang="ru">Что означает</span><span lang="en">What it means</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Специфическая идентификация</span><span lang="en">Specific identification</span></th>
+          <td><span lang="ru">Отслеживается стоимость каждой конкретной единицы. Применим, когда товар уникален</span><span lang="en">The cost of each particular item is tracked. Used where goods are unique</span></td>
+        </tr>
+        <tr>
+          <th>FIFO</th>
+          <td><span lang="ru">Первыми проданы товары, поступившие раньше. В остатке — последние, самые свежие по цене закупки</span><span lang="en">The earliest goods acquired are sold first, so ending inventory holds the most recent costs</span></td>
+        </tr>
+        <tr>
+          <th>LIFO</th>
+          <td><span lang="ru">Первыми проданы товары, поступившие позже. Требует отдельного разрешения по форме 970 и обязывает вести бухгалтерский учёт тем же методом</span><span lang="en">The most recently acquired goods are sold first. Requires election on Form 970 and conformity in the financial statements</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Меньшая из себестоимости и рыночной цены</span><span lang="en">Lower of cost or market</span></th>
+          <td><span lang="ru">Оценка по наименьшей величине. С методом LIFO не сочетается</span><span lang="en">Valued at the lower amount. Not available with LIFO</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Требование соответствия применимо только к LIFO</span><span lang="en">The conformity requirement applies only to LIFO</span></h3>
+      <p lang="ru">Выбрав LIFO для налоговых целей, тот же метод обязаны показывать и в
+        бухгалтерской отчётности перед кредиторами и собственниками. У FIFO такого требования нет.
+        Именно поэтому LIFO в вопросах почти всегда идёт в связке со словом «отчётность».</p>
+      <p lang="en">A taxpayer electing LIFO for tax purposes must use it in financial statements given
+        to creditors and owners as well. FIFO carries no such requirement. That is why LIFO in exam
+        questions almost always appears alongside the word “statements”.</p>
+    </div>
+
+    <h3><span lang="ru">Послабления для малого налогоплательщика</span><span lang="en">Relief for small business taxpayers</span></h3>
+
+    <p lang="ru">Прошедший тест валовой выручки вправе не вести запасы по общим правилам, а выбрать
+      одно из двух: учитывать их как неосновные материалы и принадлежности либо следовать порядку,
+      принятому в собственной финансовой отчётности или бухгалтерских книгах.</p>
+    <p lang="en">A taxpayer meeting the gross receipts test need not follow the general inventory
+      rules and may instead choose one of two options: treat inventories as non-incidental materials
+      and supplies, or conform to the treatment in its applicable financial statement or in its books
+      and records.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s16">
+      <h2><span class="num">1.6</span>
+        <span lang="ru">Налоговый период</span>
+        <span lang="en">The tax year</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Налоговый период — годовой отрезок, за который считается облагаемый доход. Он
+      бывает календарным, фискальным (заканчивается в последний день любого месяца, кроме декабря)
+      либо 52—53-недельным.</p>
+    <p lang="en">A tax year is the annual period for which taxable income is computed. It may be a
+      calendar year, a fiscal year ending on the last day of any month except December, or a
+      52-53-week year.</p>
+
+    <p lang="ru">Свобода выбора здесь ограничена: у сквозных субъектов период должен совпадать с
+      периодом их владельцев, иначе доход можно было бы бесконечно откладывать.</p>
+    <p lang="en">The choice is constrained: a pass-through must match the year of its owners, since
+      otherwise income could be deferred indefinitely.</p>
+
+    <h3><span lang="ru">Требуемый период партнёрства — три теста по порядку</span><span lang="en">A partnership’s required year — three tests in order</span></h3>
+
+    <div class="scroller">
+    <table class="numbered">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th><span lang="ru">Тест</span><span lang="en">Test</span></th>
+          <th><span lang="ru">Содержание</span><span lang="en">Content</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td><span lang="ru">Мажоритарной доли</span><span lang="en">Majority interest</span></td>
+          <td><span lang="ru">Если партнёры с одинаковым налоговым периодом владеют более чем 50% прибыли и капитала, партнёрство берёт их период</span><span lang="en">If partners with the same tax year own more than 50% of profits and capital, the partnership takes their year</span></td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td><span lang="ru">Основных партнёров</span><span lang="en">Principal partners</span></td>
+          <td><span lang="ru">Если мажоритарной группы нет — берётся общий период всех партнёров с долей 5% и более</span><span lang="en">If there is no majority group, the common year of all partners holding 5% or more is used</span></td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td><span lang="ru">Наименьшей совокупной отсрочки</span><span lang="en">Least aggregate deferral</span></td>
+          <td><span lang="ru">Если и это не сработало — выбирается период, дающий наименьшую суммарную отсрочку дохода для партнёров</span><span lang="en">If neither applies, the year producing the least aggregate deferral of income to the partners is chosen</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-5. Наименьшая совокупная отсрочка</span><span lang="en">Example 1-5. Least aggregate deferral</span></div>
+      <div class="example__body">
+        <p lang="ru">В партнёрстве два партнёра с равными долями по 50%. У первого налоговый год
+          заканчивается 30 июня, у второго — 31 декабря. Мажоритарной группы с одинаковым периодом
+          нет, общего периода у основных партнёров тоже нет. Проверяются оба варианта.</p>
+        <p lang="en">A partnership has two equal 50% partners. One has a June 30 year end, the other
+          December 31. There is no majority group with a common year and no common year among the
+          principal partners, so both candidates are tested.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Вариант A — год партнёрства заканчивается 30 июня</span><span lang="en">Option A — partnership year ends June 30</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Партнёр 1 (30 июня): отсрочка 0 мес. × 50%</span><span lang="en">Partner 1 (June 30): 0 months × 50%</span></td>
+              <td data-num="0" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Партнёр 2 (31 декабря): отсрочка 6 мес. × 50%</span><span lang="en">Partner 2 (December 31): 6 months × 50%</span></td>
+              <td data-num="3" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Совокупная отсрочка варианта A</span><span lang="en">Aggregate deferral, option A</span></td>
+              <td data-num="3" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Вариант B — год партнёрства заканчивается 31 декабря</span><span lang="en">Option B — partnership year ends December 31</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Партнёр 1 (30 июня): отсрочка 6 мес. × 50%</span><span lang="en">Partner 1 (June 30): 6 months × 50%</span></td>
+              <td data-num="3" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Партнёр 2 (31 декабря): отсрочка 0 мес. × 50%</span><span lang="en">Partner 2 (December 31): 0 months × 50%</span></td>
+              <td data-num="0" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Совокупная отсрочка варианта B</span><span lang="en">Aggregate deferral, option B</span></td>
+              <td data-num="3" data-unit="plain"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Результат — равенство</span><span lang="en">Result — a tie</span></td>
+              <td data-num="3" data-unit="plain"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">При равенстве партнёрство вправе выбрать любой из совпавших вариантов. Отсрочка
+          считается в месяцах от конца проверяемого года партнёрства до конца года партнёра, вперёд
+          по календарю.</p>
+        <p lang="en">Where the totals tie, the partnership may choose either of the matching years.
+          Deferral is counted in months forward from the end of the candidate partnership year to the
+          end of the partner’s year.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Периоды других субъектов</span><span lang="en">Required years of other entities</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Субъект</span><span lang="en">Entity</span></th>
+          <th><span lang="ru">Требуемый период</span><span lang="en">Required year</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">S-корпорация</span><span lang="en">S corporation</span></th>
+          <td><span lang="ru">Разрешённый период: календарный год, либо выбор по §444, либо 52—53-недельный, либо обоснованная деловая цель</span><span lang="en">A permitted year: the calendar year, a section 444 election, a 52-53-week year, or an established business purpose</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Корпорация личных услуг</span><span lang="en">Personal service corporation</span></th>
+          <td><span lang="ru">Календарный год, если не сделан выбор по §444 и не обоснована деловая цель</span><span lang="en">The calendar year, unless a section 444 election is made or a business purpose is established</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">C-корпорация</span><span lang="en">C corporation</span></th>
+          <td><span lang="ru">Свободный выбор календарного или фискального года</span><span lang="en">Free to adopt a calendar or a fiscal year</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Выбор по §444</span><span lang="en">The section 444 election</span></h3>
+
+    <p lang="ru">Норма позволяет партнёрству, S-корпорации и корпорации личных услуг взять период,
+      отличный от требуемого, если отсрочка не превышает
+      <span data-fig="sec444_deferral"></span> месяцев. Выбор оформляется формой 8716, а платой за
+      него служит обязательный депозитный платёж по форме 8752, который вносится ежегодно.</p>
+    <p lang="en">The provision lets a partnership, an S corporation or a personal service corporation
+      adopt a year other than the required one, provided the deferral period does not exceed
+      <span data-fig="sec444_deferral"></span> months. The election is made on Form 8716, and its
+      price is the required payment on Form 8752, filed each year.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Три месяца — потолок отсрочки, а не длина периода</span><span lang="en">Three months is the cap on deferral, not the length of the year</span></h3>
+      <p lang="ru">Выбор по §444 не сокращает налоговый период: он остаётся годовым. Ограничение
+        касается разрыва между требуемым и выбранным концом года. Партнёрство с требуемым
+        календарным годом может закончить год 30 сентября — отсрочка три месяца, — но не 30 июня.</p>
+      <p lang="en">A section 444 election does not shorten the tax year, which remains twelve months.
+        The limit applies to the gap between the required year end and the elected one. A partnership
+        whose required year is the calendar year may end on September 30 — a three-month deferral —
+        but not on June 30.</p>
+    </div>
+
+    <h3><span lang="ru">Короткий период и смена периода</span><span lang="en">Short years and changing the year</span></h3>
+
+    <p lang="ru">Короткий налоговый период возникает в двух случаях: субъект существовал не весь
+      год либо сменил налоговый период. Во втором случае при годовом исчислении доход приводится к
+      годовому эквиваленту <span class="orig">(annualization)</span>, чтобы прогрессия не давала
+      необоснованной выгоды. Смена периода оформляется формой 1128.</p>
+    <p lang="en">A short tax year arises in two situations: the entity did not exist for the whole
+      year, or it changed its tax year. In the second case income is annualized so that the rate
+      structure does not produce an unwarranted benefit. A change of year is requested on Form 1128.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">LLC — форма по праву штата, а не режим налогообложения. Сначала выясните число участников и наличие выбора по форме 8832</span><span lang="en">An LLC is a state-law form, not a tax regime. Establish the number of members and whether Form 8832 was filed</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Совместное предприятие супругов невозможно, если бизнес оформлен как LLC — кроме штатов общей собственности</span><span lang="en">A qualified joint venture is unavailable if the business is an LLC, except in community property states</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Порог формы 1099-NEC за 2025 год — <span data-fig="nec_threshold_2025"></span>; повышение до $2 000 действует только с 2026 года</span><span lang="en">The Form 1099-NEC threshold for 2025 is <span data-fig="nec_threshold_2025"></span>; the increase to $2,000 applies only from 2026</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Форма 1099-K требует одновременного превышения и суммы, и числа операций</span><span lang="en">Form 1099-K requires both the dollar amount and the transaction count to be exceeded</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Статутный работник получает W-2, налога на самозанятость не платит, но расходы вычитает в Schedule C</span><span lang="en">A statutory employee receives a W-2, pays no self-employment tax, yet deducts expenses on Schedule C</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Налог по безработице платит работодатель; из зарплаты он не удерживается</span><span lang="en">The employer pays the unemployment tax; nothing is withheld from the employee</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Конструктивное получение делает доходом чек, который вы могли получить, но не получили</span><span lang="en">Constructive receipt makes income of a cheque you could have collected but did not</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Тест валовой выручки применяется к среднему за три года, а не к каждому году в отдельности</span><span lang="en">The gross receipts test applies to the three-year average, not to any single year</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Налоговое убежище не вправе применять кассовый метод даже при малой выручке</span><span lang="en">A tax shelter may not use the cash method even with small receipts</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Требование соответствия отчётности относится только к LIFO</span><span lang="en">The financial statement conformity requirement applies to LIFO only</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Завышение конечных запасов уменьшает себестоимость и увеличивает прибыль</span><span lang="en">Overstating ending inventory lowers cost of goods sold and raises profit</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Три теста периода партнёрства применяются строго по порядку, а не на выбор</span><span lang="en">The three partnership year tests apply in sequence, not at the taxpayer’s option</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Выбор по §444 ограничивает отсрочку тремя месяцами и требует платежа по форме 8752</span><span lang="en">A section 444 election caps deferral at three months and requires the payment on Form 8752</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Смена метода учёта — форма 3115, смена налогового периода — форма 1128. Арифметическая ошибка методом не является</span><span lang="en">Form 3115 changes a method, Form 1128 changes a year. An arithmetical error is not a method</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. У LLC два участника, форма 8832 не подавалась. Какую декларацию подаёт компания?</span><span lang="en">1. An LLC has two members and never filed Form 8832. Which return does it file?</span></summary>
+      <div>
+        <p lang="ru">Форму 1065. По умолчанию LLC с двумя и более участниками — партнёрство,
+          каждому участнику выдаётся K-1.</p>
+        <p lang="en">Form 1065. By default an LLC with two or more members is a partnership, and each
+          member receives a Schedule K-1.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. Валовая выручка корпорации: $30 млн, $33 млн и $30 млн за 2022—2024 годы. Доступен ли кассовый метод в 2025 году?</span><span lang="en">2. A corporation’s gross receipts were $30M, $33M and $30M for 2022–2024. Is the cash method available for 2025?</span></summary>
+      <div>
+        <p lang="ru">Да, доступен. Сумма за три года $93 млн, среднее $31 млн — ровно порог
+          <span data-fig="gross_receipts_448c"></span>. Тест сформулирован как «не более»,
+          поэтому совпадение с порогом его проходит. Отдельный год выше порога значения не
+          имеет: считается только среднее.</p>
+        <p lang="en">Yes. The three-year total is $93M and the average $31M — exactly the
+          <span data-fig="gross_receipts_448c"></span> threshold. The test reads “at or below”, so
+          hitting the threshold passes it. A single year above the threshold is irrelevant: only the
+          average counts.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Чек на $9 000 доставлен 29 декабря 2025 года, обналичен 5 января 2026 года. Метод кассовый. В каком году доход?</span><span lang="en">3. A $9,000 cheque arrives December 29, 2025 and is cashed January 5, 2026. The taxpayer is on the cash method. Which year?</span></summary>
+      <div>
+        <p lang="ru">2025 год. Средства были поставлены в распоряжение без ограничений — это
+          конструктивное получение.</p>
+        <p lang="en">2025. The funds were made available without restriction, which is constructive
+          receipt.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Партнёрство с четырьмя партнёрами не подало декларацию за 2025 год и опоздало на 5 месяцев. Налога к уплате нет. Каков штраф?</span><span lang="en">4. A partnership with four partners filed its 2025 return five months late. No tax is due. What is the penalty?</span></summary>
+      <div>
+        <p lang="ru">$255 × 4 партнёра × 5 месяцев = $5 100. Отсутствие налога к уплате штраф не
+          отменяет: он считается от числа партнёров и месяцев просрочки.</p>
+        <p lang="en">$255 × 4 partners × 5 months = $5,100. Having no tax due does not remove the
+          penalty: it is computed from the number of partners and the months late.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Требуемый период партнёрства — календарный год. Может ли оно по §444 закончить год 31 июля?</span><span lang="en">5. A partnership’s required year is the calendar year. May a section 444 election give it a July 31 year end?</span></summary>
+      <div>
+        <p lang="ru">Нет. Отсрочка составила бы пять месяцев, а предел — три. Допустимы окончания
+          30 сентября, 31 октября и 30 ноября.</p>
+        <p lang="en">No. That would be a five-month deferral against a three-month limit. September 30,
+          October 31 and November 30 are the available year ends.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. Запасы на конец года ошибочно завышены на $10 000. Как это повлияло на прибыль?</span><span lang="en">6. Ending inventory was overstated by $10,000. What happened to profit?</span></summary>
+      <div>
+        <p lang="ru">Себестоимость проданного занижена на $10 000, значит прибыль завышена на ту же
+          сумму. Конечные запасы вычитаются, поэтому их рост уменьшает себестоимость.</p>
+        <p lang="en">Cost of goods sold is understated by $10,000, so profit is overstated by the same
+          amount. Ending inventory is subtracted, so a larger figure reduces cost of goods sold.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div id="quiz-body" data-quiz="su01"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 334, 538, 541, 542 и 15, инструкциями к формам
+        1065, 1120-S, 940 и SS-4. Данные проверены 3 сентября 2026 года и относятся к налоговому
+        периоду 2025. Не является налоговой консультацией.</p>
+      <p lang="en">Check against IRS Publications 334, 538, 541, 542 and 15, and the instructions to
+        Forms 1065, 1120-S, 940 and SS-4. Verified September 3, 2026 for the 2025 tax year. Not tax
+        advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+window.QUIZZES = window.QUIZZES || {};
+window.QUIZZES.su01 = [
+  {
+    ru: "Единственный участник LLC не подавал форму 8832. Как компания отражается для целей федерального налога?",
+    en: "A single-member LLC has not filed Form 8832. How is it treated for federal tax purposes?",
+    opts: [
+      { k: "A", ru: "Как корпорация, декларация 1120", en: "As a corporation filing Form 1120" },
+      { k: "B", ru: "Как неучитываемое лицо; деятельность идёт в Schedule C владельца", en: "As a disregarded entity; the activity is reported on the owner’s Schedule C" },
+      { k: "C", ru: "Как партнёрство, декларация 1065", en: "As a partnership filing Form 1065" },
+      { k: "D", ru: "Как S-корпорация, декларация 1120-S", en: "As an S corporation filing Form 1120-S" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Обложение как корпорация возможно, но требует подачи формы 8832. По умолчанию оно не возникает.", en: "Corporate treatment is available but requires Form 8832. It is not the default." },
+      B: { ru: "Верно. По умолчанию LLC с одним участником — неучитываемое лицо, и его деятельность отражается так, как если бы компании не существовало.", en: "Correct. The default for a single-member LLC is a disregarded entity, reported as though the company did not exist." },
+      C: { ru: "Партнёрство требует не менее двух участников.", en: "A partnership requires at least two members." },
+      D: { ru: "Статус S-корпорации требует отдельного выбора по форме 2553 и соответствия условиям.", en: "S corporation status requires a separate election on Form 2553 and meeting the eligibility rules." }
+    }
+  },
+  {
+    ru: "Супруги владеют мастерской в равных долях, оба работают полный день, бизнес оформлен как LLC штата. Подают совместную декларацию. Доступен ли режим совместного предприятия супругов?",
+    en: "Spouses own a shop in equal shares, both work full time, and the business is a state-law LLC. They file jointly. Is qualified joint venture treatment available?",
+    opts: [
+      { k: "A", ru: "Да, все условия выполнены", en: "Yes, all requirements are met" },
+      { k: "B", ru: "Да, но только если доли строго равны", en: "Yes, but only if the shares are exactly equal" },
+      { k: "C", ru: "Нет: бизнес ведётся в форме юридического лица штата", en: "No: the business is held in a state-law entity" },
+      { k: "D", ru: "Нет: требуется, чтобы участвовал только один супруг", en: "No: only one spouse may participate" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Четвёртое условие нарушено — бизнес оформлен как LLC.", en: "The fourth requirement fails: the business is an LLC." },
+      B: { ru: "Равенство долей не требуется; каждый показывает свою фактическую долю.", en: "Equal shares are not required; each spouse reports their actual share." },
+      C: { ru: "Верно. Режим требует, чтобы бизнес не был оформлен как юридическое лицо штата. Исключение возможно лишь в штатах общей собственности супругов.", en: "Correct. The election requires that the business not be held in a state-law entity. Only community property states offer an exception." },
+      D: { ru: "Наоборот: материально участвовать должны оба супруга.", en: "The opposite: both spouses must materially participate." }
+    }
+  },
+  {
+    ru: "Бизнес выплатил независимому подрядчику $780 за услуги в 2025 году. Возникает ли обязанность подать форму 1099-NEC?",
+    en: "A business paid an independent contractor $780 for services during 2025. Is a Form 1099-NEC required?",
+    opts: [
+      { k: "A", ru: "Нет, сумма ниже порога $2 000", en: "No, the amount is below the $2,000 threshold" },
+      { k: "B", ru: "Да, порог за 2025 год составляет $600", en: "Yes, the 2025 threshold is $600" },
+      { k: "C", ru: "Нет, форма подаётся только при выплатах свыше $20 000", en: "No, the form is required only above $20,000" },
+      { k: "D", ru: "Да, форма подаётся при любой сумме", en: "Yes, the form is required for any amount" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Порог $2 000 применяется к платежам после 31 декабря 2025 года. К периоду 2025 он не относится.", en: "The $2,000 threshold applies to payments made after December 31, 2025 and does not reach the 2025 tax year." },
+      B: { ru: "Верно. За 2025 год действует порог $600, не менявшийся с 1954 года.", en: "Correct. For 2025 the threshold is $600, unchanged since 1954." },
+      C: { ru: "$20 000 — это порог формы 1099-K для расчётных организаций, а не 1099-NEC.", en: "$20,000 is the Form 1099-K threshold for settlement organisations, not 1099-NEC." },
+      D: { ru: "Без порога выдаётся форма W-2 работнику, а не 1099-NEC подрядчику.", en: "It is Form W-2 for an employee that has no threshold, not Form 1099-NEC." }
+    }
+  },
+  {
+    ru: "Работник получил форму W-2 с отметкой «статутный работник» в боксе 13. Как он отражает доход и расходы?",
+    en: "A worker receives a Form W-2 with the statutory employee box checked. How are income and expenses reported?",
+    opts: [
+      { k: "A", ru: "Доход в Schedule C, расходы там же; налог на самозанятость не начисляется", en: "Income and expenses on Schedule C; no self-employment tax" },
+      { k: "B", ru: "Доход в Schedule C, расходы там же; налог на самозанятость начисляется", en: "Income and expenses on Schedule C; self-employment tax applies" },
+      { k: "C", ru: "Доход как зарплата в форме 1040; деловые расходы не вычитаются", en: "Income as wages on Form 1040; no business expenses deductible" },
+      { k: "D", ru: "Доход в Schedule E", en: "Income on Schedule E" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Социальные взносы уже удержаны работодателем, поэтому налога на самозанятость нет, но Schedule C нужен для вычета собственных деловых расходов.", en: "Correct. Payroll taxes were already withheld, so no self-employment tax arises, yet Schedule C is needed to deduct the worker’s own business expenses." },
+      B: { ru: "Налог на самозанятость не начисляется: взносы уже уплачены пополам с работодателем.", en: "No self-employment tax arises: the payroll taxes were already split with the employer." },
+      C: { ru: "Статутный работник как раз вправе вычитать деловые расходы в Schedule C — в этом смысл категории.", en: "A statutory employee may deduct business expenses on Schedule C — that is the point of the category." },
+      D: { ru: "Schedule E предназначен для аренды и сквозных доходов, а не для вознаграждения за услуги.", en: "Schedule E is for rentals and pass-through income, not for compensation for services." }
+    }
+  },
+  {
+    ru: "У работодателя пять работников, каждому за 2025 год выплачено по $30 000. Взносы в фонд штата уплачены полностью и в срок. Какова сумма федерального налога по безработице?",
+    en: "An employer has five employees, each paid $30,000 during 2025. State unemployment contributions were paid in full and on time. What is the FUTA tax?",
+    opts: [
+      { k: "A", ru: "$900", en: "$900" },
+      { k: "B", ru: "$210", en: "$210" },
+      { k: "C", ru: "$2 100", en: "$2,100" },
+      { k: "D", ru: "$150 000 × 0,6% = $900", en: "$150,000 × 0.6% = $900" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так получится, если применить ставку ко всей зарплате. База ограничена $7 000 на работника.", en: "This results from applying the rate to total wages. The base is capped at $7,000 per employee." },
+      B: { ru: "Верно. База: 5 × $7 000 = $35 000. Эффективная ставка после полного кредита 0,6%. Налог: $35 000 × 0,6% = $210.", en: "Correct. Base: 5 × $7,000 = $35,000. The net rate after the full credit is 0.6%. Tax: $35,000 × 0.6% = $210." },
+      C: { ru: "Это результат применения ставки 6,0% без учёта кредита за взносы в штат.", en: "This applies the 6.0% rate without the credit for state contributions." },
+      D: { ru: "Ошибка в базе: облагается не вся зарплата, а первые $7 000 на каждого работника.", en: "The base is wrong: only the first $7,000 per employee is taxed, not total wages." }
+    }
+  },
+  {
+    ru: "Средняя годовая валовая выручка партнёрства за три предыдущих года — $18 млн. Один из партнёров — C-корпорация. Вправе ли партнёрство применять кассовый метод в 2025 году?",
+    en: "A partnership’s average annual gross receipts for the three prior years are $18 million. One partner is a C corporation. May the partnership use the cash method for 2025?",
+    opts: [
+      { k: "A", ru: "Нет: наличие партнёра-корпорации исключает кассовый метод без изъятий", en: "No: having a corporate partner rules out the cash method absolutely" },
+      { k: "B", ru: "Да: тест валовой выручки пройден", en: "Yes: the gross receipts test is met" },
+      { k: "C", ru: "Нет: партнёрства вообще не применяют кассовый метод", en: "No: partnerships may never use the cash method" },
+      { k: "D", ru: "Да, но только с разрешения IRS по форме 3115", en: "Yes, but only with IRS consent on Form 3115" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Запрет снимается, если пройден тест валовой выручки. Изъятие как раз предусмотрено.", en: "The prohibition lifts where the gross receipts test is met. The exception exists precisely for this." },
+      B: { ru: "Верно. $18 млн ниже порога, поэтому партнёрство считается малым налогоплательщиком и вправе применять кассовый метод.", en: "Correct. $18 million is below the threshold, so the partnership is a small business taxpayer and may use the cash method." },
+      C: { ru: "Партнёрства применяют кассовый метод свободно, если среди партнёров нет C-корпорации или пройден тест выручки.", en: "Partnerships may use the cash method freely absent a C corporation partner, or where the receipts test is met." },
+      D: { ru: "Форма 3115 нужна для смены уже применяемого метода, а не для права его применять.", en: "Form 3115 is for changing an existing method, not for the right to use one." }
+    }
+  },
+  {
+    ru: "Что из перечисленного не позволяет применять кассовый метод независимо от размера валовой выручки?",
+    en: "Which of the following may not use the cash method regardless of the size of its gross receipts?",
+    opts: [
+      { k: "A", ru: "Партнёрство с двумя физическими лицами", en: "A partnership of two individuals" },
+      { k: "B", ru: "S-корпорация", en: "An S corporation" },
+      { k: "C", ru: "Налоговое убежище", en: "A tax shelter" },
+      { k: "D", ru: "Индивидуальный предприниматель без запасов", en: "A sole proprietor with no inventory" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Такое партнёрство ограничений не имеет.", en: "Such a partnership faces no restriction." },
+      B: { ru: "S-корпорации кассовый метод доступен.", en: "An S corporation may use the cash method." },
+      C: { ru: "Верно. Для налогового убежища изъятия по тесту валовой выручки не предусмотрено.", en: "Correct. No gross receipts exception is available to a tax shelter." },
+      D: { ru: "Это типичный пользователь кассового метода.", en: "This is the typical cash method taxpayer." }
+    }
+  },
+  {
+    ru: "Налогоплательщик на методе начисления подписал в декабре 2025 года договор на ремонт крыши и оплатил его целиком. Работы выполнены в марте 2026 года. Когда возникает вычет?",
+    en: "An accrual method taxpayer signed a roof repair contract in December 2025 and paid it in full. The work was done in March 2026. When is the deduction allowed?",
+    opts: [
+      { k: "A", ru: "В 2025 году — по дате оплаты", en: "In 2025, when payment was made" },
+      { k: "B", ru: "В 2025 году — по дате заключения договора", en: "In 2025, when the contract was signed" },
+      { k: "C", ru: "В 2026 году — когда наступило экономическое исполнение", en: "In 2026, when economic performance occurred" },
+      { k: "D", ru: "Распределяется поровну между 2025 и 2026 годами", en: "Split evenly between 2025 and 2026" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Дата оплаты решает вопрос при кассовом методе, а не при методе начисления.", en: "The date of payment governs under the cash method, not the accrual method." },
+      B: { ru: "Заключение договора выполняет тест всех событий, но экономическое исполнение ещё не наступило.", en: "Signing satisfies the all-events test, but economic performance has not yet occurred." },
+      C: { ru: "Верно. При методе начисления нужны оба условия, и услуги считаются исполненными по мере их оказания — в марте 2026 года.", en: "Correct. The accrual method requires both conditions, and services are performed as they are provided — in March 2026." },
+      D: { ru: "Распределение здесь не предусмотрено: работы выполнены единовременно в 2026 году.", en: "No allocation applies: the work was performed at one time in 2026." }
+    }
+  },
+  {
+    ru: "1 ноября 2025 года оплачен договор на обслуживание оборудования сроком 12 месяцев, до 31 октября 2026 года. Применимо ли правило двенадцати месяцев?",
+    en: "On November 1, 2025 a taxpayer paid for a twelve-month maintenance contract running to October 31, 2026. Does the twelve-month rule apply?",
+    opts: [
+      { k: "A", ru: "Да: право не выходит ни за 12 месяцев, ни за конец 2026 года", en: "Yes: the benefit extends beyond neither twelve months nor the end of 2026" },
+      { k: "B", ru: "Нет: право переходит на следующий год", en: "No: the benefit crosses into the following year" },
+      { k: "C", ru: "Нет: правило применяется только при кассовом методе", en: "No: the rule applies only to cash method taxpayers" },
+      { k: "D", ru: "Да, но вычет ограничен двумя месяцами 2025 года", en: "Yes, but the deduction is limited to the two months falling in 2025" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Оба предела соблюдены: срок ровно 12 месяцев, и он заканчивается до конца 2026 года — года, следующего за годом оплаты.", en: "Correct. Both limits hold: the term is exactly twelve months and it ends before the close of 2026, the year following payment." },
+      B: { ru: "Переход на следующий год сам по себе правилу не мешает — на то оно и рассчитано.", en: "Crossing into the next year does not defeat the rule; that is what it is designed for." },
+      C: { ru: "Правило относится к капитализации предоплаченных расходов и не ограничено кассовым методом.", en: "The rule concerns capitalisation of prepaid expenses and is not limited to the cash method." },
+      D: { ru: "Смысл правила в том и состоит, что распределять не требуется — вычитается вся сумма.", en: "The point of the rule is that no allocation is required — the whole amount is deducted." }
+    }
+  },
+  {
+    ru: "Что произойдёт с себестоимостью проданного и с прибылью, если конечные запасы занижены?",
+    en: "If ending inventory is understated, what happens to cost of goods sold and to profit?",
+    opts: [
+      { k: "A", ru: "Себестоимость занижена, прибыль завышена", en: "Cost of goods sold understated, profit overstated" },
+      { k: "B", ru: "Себестоимость завышена, прибыль занижена", en: "Cost of goods sold overstated, profit understated" },
+      { k: "C", ru: "Обе величины занижены", en: "Both are understated" },
+      { k: "D", ru: "Ни одна не меняется", en: "Neither changes" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это результат завышения конечных запасов, а не занижения.", en: "That is the effect of overstating ending inventory, not understating it." },
+      B: { ru: "Верно. Конечные запасы вычитаются из суммы доступных товаров: чем они меньше, тем больше себестоимость и тем меньше прибыль.", en: "Correct. Ending inventory is subtracted from goods available: the smaller it is, the larger cost of goods sold and the smaller the profit." },
+      C: { ru: "Себестоимость и прибыль движутся в противоположных направлениях.", en: "Cost of goods sold and profit move in opposite directions." },
+      D: { ru: "Конечные запасы входят в формулу напрямую и влияют на результат.", en: "Ending inventory enters the formula directly and does affect the result." }
+    }
+  },
+  {
+    ru: "Какое утверждение о методе LIFO верно?",
+    en: "Which statement about the LIFO method is correct?",
+    opts: [
+      { k: "A", ru: "Он сочетается с оценкой по меньшей из себестоимости и рыночной цены", en: "It may be combined with the lower of cost or market valuation" },
+      { k: "B", ru: "Он требует применения того же метода в финансовой отчётности", en: "It requires the same method to be used in financial statements" },
+      { k: "C", ru: "Он применяется автоматически, без выбора", en: "It applies automatically, with no election" },
+      { k: "D", ru: "Он оставляет в остатке самые поздние по времени затраты", en: "It leaves the most recent costs in ending inventory" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Такое сочетание не допускается.", en: "That combination is not permitted." },
+      B: { ru: "Верно. Требование соответствия обязывает показывать LIFO и в отчётности перед кредиторами и собственниками.", en: "Correct. The conformity requirement obliges the taxpayer to use LIFO in statements given to creditors and owners." },
+      C: { ru: "Метод требует выбора, оформляемого формой 970.", en: "The method requires an election, made on Form 970." },
+      D: { ru: "Это описание FIFO: при LIFO в остатке остаются самые ранние затраты.", en: "That describes FIFO: under LIFO the earliest costs remain in ending inventory." }
+    }
+  },
+  {
+    ru: "В партнёрстве партнёры с одинаковым налоговым годом владеют 60% прибыли и капитала. Какой тест определяет налоговый период?",
+    en: "Partners sharing the same tax year own 60% of a partnership’s profits and capital. Which test determines the partnership’s year?",
+    opts: [
+      { k: "A", ru: "Наименьшей совокупной отсрочки", en: "Least aggregate deferral" },
+      { k: "B", ru: "Основных партнёров", en: "Principal partners" },
+      { k: "C", ru: "Мажоритарной доли", en: "Majority interest" },
+      { k: "D", ru: "Партнёрство выбирает период свободно", en: "The partnership may choose freely" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Этот тест применяется последним и только если два предыдущих не дали результата.", en: "This test comes last and only if the first two produce no answer." },
+      B: { ru: "К тесту основных партнёров переходят, когда мажоритарной группы нет.", en: "The principal partner test is reached only when there is no majority group." },
+      C: { ru: "Верно. Более 50% прибыли и капитала у партнёров с общим периодом — партнёрство берёт их период.", en: "Correct. More than 50% of profits and capital held by partners with a common year fixes the partnership’s year." },
+      D: { ru: "Свободы выбора у сквозного субъекта нет: период привязан к периоду владельцев.", en: "A pass-through has no free choice: its year follows that of its owners." }
+    }
+  },
+  {
+    ru: "Корпорация личных услуг хочет закончить налоговый год 30 сентября. Требуемый период — календарный год. Что позволит это сделать?",
+    en: "A personal service corporation wants a September 30 year end. Its required year is the calendar year. What makes this possible?",
+    opts: [
+      { k: "A", ru: "Выбор по §444 с подачей формы 8716", en: "A section 444 election on Form 8716" },
+      { k: "B", ru: "Подача формы 3115", en: "Filing Form 3115" },
+      { k: "C", ru: "Ничего: календарный год обязателен без исключений", en: "Nothing: the calendar year is mandatory without exception" },
+      { k: "D", ru: "Подача формы 8832", en: "Filing Form 8832" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Отсрочка составляет три месяца — ровно предел нормы. Выбор оформляется формой 8716 и сопровождается платежом по форме 8752.", en: "Correct. The deferral is three months, exactly the statutory cap. The election is made on Form 8716 and carries the required payment on Form 8752." },
+      B: { ru: "Форма 3115 меняет метод учёта, а не налоговый период.", en: "Form 3115 changes an accounting method, not a tax year." },
+      C: { ru: "Исключения есть: выбор по §444, 52—53-недельный год и обоснованная деловая цель.", en: "Exceptions exist: a section 444 election, a 52-53-week year, and an established business purpose." },
+      D: { ru: "Форма 8832 меняет классификацию субъекта, а не его период.", en: "Form 8832 changes an entity’s classification, not its year." }
+    }
+  },
+  {
+    ru: "Какую форму подают, чтобы изменить метод учёта?",
+    en: "Which form is filed to change an accounting method?",
+    opts: [
+      { k: "A", ru: "1128", en: "Form 1128" },
+      { k: "B", ru: "8716", en: "Form 8716" },
+      { k: "C", ru: "3115", en: "Form 3115" },
+      { k: "D", ru: "8832", en: "Form 8832" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Форма 1128 меняет налоговый период.", en: "Form 1128 changes the tax year." },
+      B: { ru: "Форма 8716 оформляет выбор по §444.", en: "Form 8716 makes the section 444 election." },
+      C: { ru: "Верно. Смена метода учёта требует согласия IRS и оформляется формой 3115.", en: "Correct. A change of method requires IRS consent and is made on Form 3115." },
+      D: { ru: "Форма 8832 меняет классификацию субъекта.", en: "Form 8832 changes entity classification." }
+    }
+  },
+  {
+    ru: "S-корпорация с тремя акционерами подала декларацию 1120-S за 2025 год с опозданием на два месяца. Налога к уплате нет. Каков штраф за несвоевременную подачу?",
+    en: "An S corporation with three shareholders filed its 2025 Form 1120-S two months late. No tax is due. What is the late filing penalty?",
+    opts: [
+      { k: "A", ru: "$0 — налога к уплате нет", en: "$0 — no tax is due" },
+      { k: "B", ru: "$525", en: "$525" },
+      { k: "C", ru: "$1 530", en: "$1,530" },
+      { k: "D", ru: "$510", en: "$510" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Штраф не зависит от наличия налога: он считается от числа акционеров и месяцев просрочки.", en: "The penalty does not depend on tax being due: it is based on shareholders and months late." },
+      B: { ru: "$525 — минимальный штраф при просрочке свыше 60 дней, а не расчёт по числу акционеров.", en: "$525 is the minimum penalty for a return over 60 days late, not the per-shareholder computation." },
+      C: { ru: "Верно. $255 × 3 акционера × 2 месяца = $1 530.", en: "Correct. $255 × 3 shareholders × 2 months = $1,530." },
+      D: { ru: "Эта величина получается при умножении на двух акционеров вместо трёх.", en: "This results from using two shareholders instead of three." }
+    }
+  },
+  {
+    ru: "Когда индивидуальному предпринимателю обязательно требуется идентификационный номер работодателя?",
+    en: "When must a sole proprietor obtain an employer identification number?",
+    opts: [
+      { k: "A", ru: "Всегда, с момента начала деятельности", en: "Always, from the start of the business" },
+      { k: "B", ru: "Когда появляются работники или обязанность по акцизным налогам", en: "When there are employees or an excise tax obligation" },
+      { k: "C", ru: "Когда выручка превышает $100 000", en: "When receipts exceed $100,000" },
+      { k: "D", ru: "Только при открытии банковского счёта", en: "Only to open a bank account" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Пока работников нет, предприниматель пользуется своим номером социального страхования.", en: "Without employees the proprietor uses a social security number." },
+      B: { ru: "Верно. Номер становится обязательным при найме работников, при акцизных налогах и при наличии пенсионного плана.", en: "Correct. An EIN becomes necessary with employees, excise taxes, or a retirement plan." },
+      C: { ru: "Размер выручки на обязанность получить номер не влияет.", en: "The size of receipts has no bearing on the requirement." },
+      D: { ru: "Требования банка не создают налоговой обязанности.", en: "A bank’s requirements do not create a tax obligation." }
+    }
+  },
+  {
+    ru: "Валовая выручка корпорации составила $34 млн, $29 млн и $27 млн за 2022, 2023 и 2024 годы. Вправе ли она применять кассовый метод в 2025 году?",
+    en: "A corporation had gross receipts of $34M, $29M and $27M in 2022, 2023 and 2024. May it use the cash method for 2025?",
+    opts: [
+      { k: "A", ru: "Нет: в 2022 году выручка превысила порог", en: "No: receipts exceeded the threshold in 2022" },
+      { k: "B", ru: "Да: среднее равно $30 млн и не превышает порог", en: "Yes: the average is $30 million and does not exceed the threshold" },
+      { k: "C", ru: "Нет: корпорациям кассовый метод недоступен", en: "No: corporations may not use the cash method" },
+      { k: "D", ru: "Да, но только с разрешения IRS", en: "Yes, but only with IRS consent" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Тест применяется к среднему за три года, а не к отдельному году.", en: "The test applies to the three-year average, not to a single year." },
+      B: { ru: "Верно. Сумма $90 млн, среднее $30 млн — ниже порога, значит корпорация является малым налогоплательщиком.", en: "Correct. The total is $90 million and the average $30 million — below the threshold, so the corporation is a small business taxpayer." },
+      C: { ru: "Запрет для C-корпораций снимается при прохождении теста валовой выручки.", en: "The prohibition on C corporations lifts when the gross receipts test is met." },
+      D: { ru: "Отдельного разрешения для применения метода при первой декларации не требуется.", en: "No separate consent is needed to adopt a method on the first return." }
+    }
+  },
+  {
+    ru: "Какое утверждение о налоге по безработице верно?",
+    en: "Which statement about the federal unemployment tax is correct?",
+    opts: [
+      { k: "A", ru: "Он удерживается из заработной платы работника", en: "It is withheld from the employee’s wages" },
+      { k: "B", ru: "Он делится поровну между работником и работодателем", en: "It is split evenly between employee and employer" },
+      { k: "C", ru: "Его платит работодатель из собственных средств", en: "The employer pays it from its own funds" },
+      { k: "D", ru: "Его платят только корпорации", en: "Only corporations pay it" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Из зарплаты удерживаются подоходный налог и социальные взносы, но не этот налог.", en: "Income tax and payroll taxes are withheld from wages, but not this tax." },
+      B: { ru: "Пополам делятся социальные взносы, а не налог по безработице.", en: "It is the social security and Medicare taxes that are split, not the unemployment tax." },
+      C: { ru: "Верно. Работодатель несёт этот налог полностью сам.", en: "Correct. The employer bears this tax entirely." },
+      D: { ru: "Обязанность зависит от выплат работникам, а не от формы бизнеса.", en: "The obligation depends on wages paid, not on the form of the business." }
+    }
+  }
+];
+</script>
+</body>
+</html>

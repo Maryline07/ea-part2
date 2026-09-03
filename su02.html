@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 2. Доход бизнеса, самозанятость и фермеры — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=7">
+<script defer src="assets/figures-2025.js?v=7"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=7"></script>
+</head>
+<body data-module="su02">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">02</span>
+      <h1>
+        <span lang="ru">Доход бизнеса, самозанятость и фермеры</span>
+        <span lang="en">Business income, self-employment tax and farming</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Подготовка деклараций · Специальные налогоплательщики</span><span lang="en">Business Tax Preparation · Specialized Taxpayers</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>Schedule C · Schedule SE · Schedule F · Schedule J · 4835 · 8959 · 1099-G</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>334 · 225 · 525 · 4681</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su02" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s21"><span lang="ru">2.1 Что считается доходом</span><span lang="en">2.1 What counts as income</span></a></li>
+        <li><a href="#s22"><span lang="ru">2.2 Налог на самозанятость</span><span lang="en">2.2 Self-employment tax</span></a></li>
+        <li><a href="#s23"><span lang="ru">2.3 Дополнительный Medicare</span><span lang="en">2.3 Additional Medicare Tax</span></a></li>
+        <li><a href="#s24"><span lang="ru">2.4 Фермеры</span><span lang="en">2.4 Farmers</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">У наёмного работника социальные взносы делятся пополам: половину удерживают
+        из зарплаты, половину доплачивает работодатель. У самозанятого работодателя нет — значит,
+        он платит обе половины сам. Отсюда ставка <span data-fig="se_rate_total"></span> вместо
+        привычных 7,65%.</p>
+      <p lang="en">For an employee the payroll taxes are split in half: one half is withheld from
+        wages, the other is paid by the employer. A self-employed person has no employer and pays
+        both halves. That is why the rate is <span data-fig="se_rate_total"></span> rather than the
+        familiar 7.65%.</p>
+      <p lang="ru">Чтобы положение самозанятого не оказалось хуже, закон даёт два уравнивающих
+        приёма. Первый: налог считается не со всей прибыли, а с
+        <span data-fig="se_net_factor"></span> — это имитация того, что у работодателя его
+        половина взносов была бы вычитаемым расходом. Второй: половину уплаченного налога
+        разрешено вычесть при расчёте подоходного налога.</p>
+      <p lang="en">To keep the self-employed from being worse off, the law provides two equalising
+        adjustments. First, the tax applies not to the whole profit but to
+        <span data-fig="se_net_factor"></span> of it — mirroring the deduction an employer would
+        have taken for its half. Second, half of the tax paid is deductible in computing income tax.</p>
+      <p lang="ru">Понимая это, вы не перепутаете, что и на что умножается: множитель
+        <span data-fig="se_net_factor"></span> уменьшает <em>базу</em>, а вычет половины уменьшает
+        <em>облагаемый доход</em>, но не сам налог на самозанятость.</p>
+      <p lang="en">Hold on to that and you will not confuse the two: the
+        <span data-fig="se_net_factor"></span> factor reduces the <em>base</em>, while the deduction
+        for one half reduces <em>taxable income</em> — never the self-employment tax itself.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s21">
+      <h2><span class="num">2.1</span>
+        <span lang="ru">Что считается доходом бизнеса</span>
+        <span lang="en">What counts as business income</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Кодекс определяет валовой доход предельно широко: это доход из любого источника,
+      если только закон прямо не сделал исключения. Перечень в §61 — примерный, а не
+      исчерпывающий, и именно поэтому вопросы строятся вокруг поступлений, которые не выглядят
+      как выручка.</p>
+    <p lang="en">The Code defines gross income as broadly as possible: income from whatever source
+      derived, unless the law expressly excludes it. The list in section 61 is illustrative, not
+      exhaustive, which is why questions are built around receipts that do not look like sales.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Поступление</span><span lang="en">Receipt</span></th>
+          <th><span lang="ru">Как облагается</span><span lang="en">Treatment</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Бартер</span><span lang="en">Bartering</span></th>
+          <td><span lang="ru">Доход равен рыночной стоимости полученного товара или услуги. Отсутствие денег значения не имеет</span><span lang="en">Income equals the fair market value of the goods or services received. The absence of cash is irrelevant</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Списание долга бизнеса</span><span lang="en">Cancellation of business debt</span></th>
+          <td><span lang="ru">Как правило, доход. Исключения — банкротство, неплатёжеспособность, отдельные виды долгов</span><span lang="en">Generally income. Exceptions include bankruptcy, insolvency and certain qualified debts</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Судебные присуждения и мировые соглашения</span><span lang="en">Court awards and settlements</span></th>
+          <td><span lang="ru">Возмещение упущенной прибыли — доход бизнеса. Возмещение вреда имуществу уменьшает базис</span><span lang="en">Compensation for lost profits is business income. Damages for injury to property reduce basis</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Возвраты и скидки поставщиков</span><span lang="en">Rebates and supplier refunds</span></th>
+          <td><span lang="ru">Уменьшают ранее заявленный расход либо образуют доход, если расход уже дал налоговую выгоду</span><span lang="en">Reduce the earlier deduction, or produce income where the deduction already gave a tax benefit</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Проценты и дивиденды бизнеса</span><span lang="en">Business interest and dividends</span></th>
+          <td><span lang="ru">Как правило, показываются отдельно, а не в Schedule C, и не облагаются налогом на самозанятость</span><span lang="en">Generally reported separately rather than on Schedule C, and are not subject to self-employment tax</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Аванс за услуги</span><span lang="en">Advance payment for services</span></th>
+          <td><span lang="ru">При кассовом методе — доход при получении. При методе начисления возможна отсрочка не более чем на один год</span><span lang="en">Cash method: income on receipt. Accrual method: deferral of no more than one year may be available</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Отсутствие формы 1099 не отменяет доход</span><span lang="en">No Form 1099 does not mean no income</span></h3>
+      <p lang="ru">Обязанность показать доход лежит на получателе и не зависит от того, выдал ли
+        плательщик информационную декларацию. Платежи от частных лиц, поступления ниже порога,
+        расчёты наличными — всё это доход. Формулировка «форму 1099 не получал» в вопросе почти
+        всегда служит отвлекающим манёвром.</p>
+      <p lang="en">The duty to report rests on the recipient and does not depend on whether the payer
+        issued an information return. Payments from individuals, amounts below the threshold and cash
+        receipts are all income. The phrase “did not receive a Form 1099” in a question is almost
+        always a distractor.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-1. Бартер</span><span lang="en">Example 2-1. Bartering</span></div>
+      <div class="example__body">
+        <p lang="ru">Электрик выполнил проводку в кабинете стоматолога. Вместо оплаты стоматолог
+          вылечил ему зубы. Обычная цена работ электрика — $3 200, обычная цена лечения — $3 200.</p>
+        <p lang="en">An electrician wired a dentist’s office. Instead of payment, the dentist provided
+          dental work. The electrician normally charges $3,200 for the job; the dental work is
+          normally $3,200 as well.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Доход электрика</span><span lang="en">Electrician’s income</span></td>
+              <td data-num="3200"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доход стоматолога</span><span lang="en">Dentist’s income</span></td>
+              <td data-num="3200"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Денег перечислено</span><span lang="en">Cash exchanged</span></td>
+              <td data-num="0"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Каждый показывает доход в своём Schedule C, и у каждого он входит в базу
+          налога на самозанятость. Лечение зубов при этом остаётся личным расходом электрика и
+          деловым вычетом не становится.</p>
+        <p lang="en">Each reports the income on their own Schedule C, and for each it enters the
+          self-employment tax base. The dental work remains a personal expense of the electrician and
+          does not become a business deduction.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s22">
+      <h2><span class="num">2.2</span>
+        <span lang="ru">Налог на самозанятость</span>
+        <span lang="en">Self-employment tax</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Налог платится, если чистый заработок от самозанятости достиг
+      <span data-fig="se_threshold"></span>. Порог считается по чистому заработку, а не по
+      выручке, и применяется независимо от возраста и от того, получает ли человек пенсию.</p>
+    <p lang="en">The tax applies once net earnings from self-employment reach
+      <span data-fig="se_threshold"></span>. The threshold is measured on net earnings, not on gross
+      receipts, and applies regardless of age or whether the person already draws social security.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Составляющая</span><span lang="en">Component</span></th>
+          <th><span lang="ru">Ставка</span><span lang="en">Rate</span></th>
+          <th><span lang="ru">Предел базы</span><span lang="en">Base limit</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Социальное страхование</span><span lang="en">Social security</span></th>
+          <td><span data-fig="se_rate_ss"></span></td>
+          <td><span data-fig="se_wage_base"></span></td>
+        </tr>
+        <tr>
+          <th>Medicare</th>
+          <td><span data-fig="se_rate_medicare"></span></td>
+          <td><span lang="ru">Предела нет</span><span lang="en">No limit</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Итого</span><span lang="en">Combined</span></th>
+          <td><span data-fig="se_rate_total"></span></td>
+          <td><span lang="ru">Только к социальной части</span><span lang="en">Applies to the social security portion only</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-2. Расчёт при прибыли ниже предела базы</span><span lang="en">Example 2-2. Computation below the base limit</span></div>
+      <div class="example__body">
+        <p lang="ru">Чистая прибыль консультанта по Schedule C за 2025 год — $80 000. Заработной
+          платы у него нет.</p>
+        <p lang="en">A consultant’s net profit on Schedule C for 2025 is $80,000. He has no wages.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Чистая прибыль</span><span lang="en">Net profit</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Чистый заработок: 80 000 × 92,35%</span><span lang="en">Net earnings: 80,000 × 92.35%</span></td>
+              <td data-num="73880"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Социальная часть: 73 880 × 12,4%</span><span lang="en">Social security: 73,880 × 12.4%</span></td>
+              <td data-num="9161.12"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Часть Medicare: 73 880 × 2,9%</span><span lang="en">Medicare: 73,880 × 2.9%</span></td>
+              <td data-num="2142.52"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Налог на самозанятость</span><span lang="en">Self-employment tax</span></td>
+              <td data-num="11303.64"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Вычитается при расчёте подоходного налога: половина</span><span lang="en">Deductible in computing income tax: one half</span></td>
+              <td data-num="5651.82"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Вычет половины уменьшает облагаемый доход, но сам налог на самозанятость
+          остаётся прежним. Это разные расчёты, и путать их нельзя.</p>
+        <p lang="en">The deduction for one half reduces taxable income, but the self-employment tax
+          itself is unchanged. These are separate computations and must not be merged.</p>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-3. Прибыль выше предела базы</span><span lang="en">Example 2-3. Profit above the base limit</span></div>
+      <div class="example__body">
+        <p lang="ru">Чистая прибыль архитектора за 2025 год — $200 000, заработной платы нет.</p>
+        <p lang="en">An architect’s net profit for 2025 is $200,000, with no wages.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Чистый заработок: 200 000 × 92,35%</span><span lang="en">Net earnings: 200,000 × 92.35%</span></td>
+              <td data-num="184700"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Социальная часть ограничена базой</span><span lang="en">Social security portion capped at the base</span></td>
+              <td><span data-fig="se_wage_base"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Социальная часть: 176 100 × 12,4%</span><span lang="en">Social security: 176,100 × 12.4%</span></td>
+              <td data-num="21836.4"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Часть Medicare: 184 700 × 2,9%</span><span lang="en">Medicare: 184,700 × 2.9%</span></td>
+              <td data-num="5356.3"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Налог на самозанятость</span><span lang="en">Self-employment tax</span></td>
+              <td data-num="27192.7"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Предел базы обрезал только социальную часть. Часть Medicare считается со
+          всего чистого заработка — потолка у неё нет.</p>
+        <p lang="en">The base limit cut back only the social security portion. The Medicare portion is
+          computed on all net earnings — it has no ceiling.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Что в базу не входит</span><span lang="en">What is outside the base</span></h3>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Доход от аренды недвижимости, если не оказываются существенные услуги</span><span lang="en">Rental income from real estate, absent substantial services</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Проценты, дивиденды и прирост капитала, не связанные с торговой деятельностью</span><span lang="en">Interest, dividends and capital gains outside a dealing business</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Распределяемая доля ограниченного партнёра, кроме гарантированных выплат за услуги</span><span lang="en">A limited partner’s distributive share, other than guaranteed payments for services</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Заработная плата акционера S-корпорации и его доля прибыли</span><span lang="en">An S corporation shareholder’s wages and distributive share</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Доход от аренды фермы по форме 4835 при отсутствии материального участия</span><span lang="en">Farm rental income reported on Form 4835 without material participation</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Доля прибыли S-корпорации не облагается налогом на самозанятость</span><span lang="en">An S corporation’s distributive share bears no self-employment tax</span></h3>
+      <p lang="ru">Именно в этом состоит различие между единственным участником LLC и акционером
+        S-корпорации, работающим в собственном бизнесе. У первого вся прибыль попадает в базу
+        налога на самозанятость. У второго облагается только разумная заработная плата, а
+        оставшаяся прибыль — нет. Обратная сторона: заработная плата должна быть именно разумной,
+        и её занижение — предмет постоянных споров с IRS.</p>
+      <p lang="en">This is the difference between a single-member LLC and a shareholder working in
+        their own S corporation. For the first, the entire profit enters the self-employment tax
+        base. For the second, only reasonable compensation is taxed and the remaining profit is not.
+        The trade-off: the wage must genuinely be reasonable, and understating it is a perennial
+        dispute with the IRS.</p>
+    </div>
+
+    <h3><span lang="ru">Дополнительные методы расчёта</span><span lang="en">The optional methods</span></h3>
+
+    <p lang="ru">Когда доход мал или получен убыток, самозанятый может добровольно показать
+      больший заработок, чтобы сохранить страховой стаж. Фермерский метод доступен, если валовой
+      доход от фермерства не превысил <span data-fig="farm_opt_gross"></span> либо чистая прибыль
+      оказалась ниже <span data-fig="farm_opt_profit"></span>. Показать по любому из методов можно
+      не более <span data-fig="farm_opt_max"></span>.</p>
+    <p lang="en">Where income is small or a loss arises, a self-employed person may voluntarily report
+      higher earnings to preserve social security credits. The farm optional method is available if
+      gross farm income was <span data-fig="farm_opt_gross"></span> or less, or net farm profit was
+      below <span data-fig="farm_opt_profit"></span>. No more than
+      <span data-fig="farm_opt_max"></span> may be reported under either method.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s23">
+      <h2><span class="num">2.3</span>
+        <span lang="ru">Дополнительный налог Medicare</span>
+        <span lang="en">Additional Medicare Tax</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Сверх обычной ставки взимается ещё <span data-fig="addl_medicare_rate"></span> с
+      суммы, на которую совокупный трудовой доход превысил порог. Порог зависит от статуса подачи
+      и не индексируется.</p>
+    <p lang="en">On top of the regular rate, a further <span data-fig="addl_medicare_rate"></span>
+      applies to the amount by which combined earned income exceeds a threshold. The threshold depends
+      on filing status and is not indexed.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Статус подачи</span><span lang="en">Filing status</span></th>
+          <th><span lang="ru">Порог</span><span lang="en">Threshold</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Совместная декларация супругов</span><span lang="en">Married filing jointly</span></th>
+          <td><span data-fig="addl_medicare_mfj"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Раздельная декларация супругов</span><span lang="en">Married filing separately</span></th>
+          <td><span data-fig="addl_medicare_mfs"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прочие статусы</span><span lang="en">All other statuses</span></th>
+          <td><span data-fig="addl_medicare_single"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-4. Зарплата и самозанятость вместе</span><span lang="en">Example 2-4. Wages and self-employment combined</span></div>
+      <div class="example__body">
+        <p lang="ru">Незамужняя женщина получила заработную плату $150 000 и имеет чистый
+          заработок от самозанятости $80 000.</p>
+        <p lang="en">A single taxpayer earned $150,000 in wages and has $80,000 of net earnings from
+          self-employment.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Заработная плата</span><span lang="en">Wages</span></td>
+              <td data-num="150000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Чистый заработок от самозанятости</span><span lang="en">Net earnings from self-employment</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Совокупно</span><span lang="en">Combined</span></td>
+              <td data-num="230000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Порог для этого статуса</span><span lang="en">Threshold for this status</span></td>
+              <td><span data-fig="addl_medicare_single"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение</span><span lang="en">Excess</span></td>
+              <td data-num="30000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Дополнительный налог: 30 000 × 0,9%</span><span lang="en">Additional tax: 30,000 × 0.9%</span></td>
+              <td data-num="270"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Работодатель начинает удерживать этот налог, только когда заработная плата
+          сама по себе превысит $200 000, независимо от статуса подачи. Здесь зарплата ниже, значит
+          удержания не было, и налог рассчитывается в декларации по форме 8959.</p>
+        <p lang="en">An employer begins withholding this tax only once wages alone exceed $200,000,
+          regardless of filing status. Here they do not, so nothing was withheld and the tax is
+          computed on the return using Form 8959.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">У дополнительного налога нет работодательской половины</span><span lang="en">The additional tax has no employer half</span></h3>
+      <p lang="ru">Обычная часть Medicare делится: <span data-fig="se_rate_medicare"></span> у
+        самозанятого — это две половины по 1,45%. Дополнительные
+        <span data-fig="addl_medicare_rate"></span> платит только работник или самозанятый, и они
+        не удваиваются. По этой же причине половина дополнительного налога не участвует в вычете.</p>
+      <p lang="en">The regular Medicare portion is shared: the self-employed person’s
+        <span data-fig="se_rate_medicare"></span> is two halves of 1.45% each. The additional
+        <span data-fig="addl_medicare_rate"></span> is borne by the worker alone and is not doubled.
+        For the same reason it does not enter the deduction for one half of the tax.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s24">
+      <h2><span class="num">2.4</span>
+        <span lang="ru">Фермеры</span>
+        <span lang="en">Farmers</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Фермерская деятельность отражается в Schedule F и подчиняется общим правилам, но
+      имеет несколько собственных норм, которые проверяются регулярно.</p>
+    <p lang="en">Farming is reported on Schedule F and follows the general rules, but it has several
+      provisions of its own that are tested regularly.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Участвует ли владелец земли в управлении фермой?</span>
+        <span lang="en">Does the landowner participate in managing the farm?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b">
+          <b><span lang="ru">Да, материально участвует</span><span lang="en">Yes, materially participates</span></b>
+          <span lang="ru">Schedule F. Доход входит в базу налога на самозанятость</span>
+          <span lang="en">Schedule F. The income enters the self-employment tax base</span>
+        </div>
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет, сдаёт за долю урожая</span><span lang="en">No, rents for a share of the crop</span></b>
+          <span lang="ru">Форма 4835. Налога на самозанятость нет</span>
+          <span lang="en">Form 4835. No self-employment tax</span>
+        </div>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Доходы фермера</span><span lang="en">Farm income</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Вид дохода</span><span lang="en">Type of income</span></th>
+          <th><span lang="ru">Правило</span><span lang="en">Rule</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Продажа выращенного</span><span lang="en">Sale of raised produce or livestock</span></th>
+          <td><span lang="ru">Полностью доход: базиса у выращенного нет, затраты уже вычтены как расходы</span><span lang="en">Entirely income: raised products have no basis, the costs having been deducted already</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Продажа купленного для перепродажи</span><span lang="en">Sale of livestock bought for resale</span></th>
+          <td><span lang="ru">Доход за вычетом стоимости приобретения</span><span lang="en">Income less the cost of the animals</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Страхование урожая</span><span lang="en">Crop insurance proceeds</span></th>
+          <td><span lang="ru">Доход года получения. Возможен выбор отсрочки на следующий год, если фермер обычно продавал урожай в следующем году</span><span lang="en">Income in the year received. An election may defer it one year if the farmer normally sells the crop in the following year</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Выплаты по государственным программам</span><span lang="en">Agricultural program payments</span></th>
+          <td><span lang="ru">Доход. Показываются в форме 1099-G</span><span lang="en">Income. Reported on Form 1099-G</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Кооперативные выплаты</span><span lang="en">Patronage dividends</span></th>
+          <td><span lang="ru">Доход, если относятся к деятельности фермы</span><span lang="en">Income where they relate to the farming business</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Заём товарного кредита</span><span lang="en">Commodity Credit Corporation loan</span></th>
+          <td><span lang="ru">По общему правилу не доход, но фермер вправе выбрать признание дохода при получении займа</span><span lang="en">Generally not income, but the farmer may elect to treat the loan proceeds as income when received</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Особый порядок расчётного налога</span><span lang="en">The special estimated tax rule</span></h3>
+
+    <p lang="ru">Если не менее двух третей валового дохода за 2024 или 2025 год получено от
+      фермерства или рыболовства, действует упрощение: достаточно одного платежа расчётного налога
+      15 января либо можно вовсе обойтись без него, подав декларацию и уплатив налог полностью до
+      <span data-fig="due_farm_estimated"></span>.</p>
+    <p lang="en">Where at least two-thirds of gross income for 2024 or 2025 comes from farming or
+      fishing, a simplification applies: a single estimated payment on January 15 suffices, or none at
+      all if the return is filed and the tax paid in full by
+      <span data-fig="due_farm_estimated"></span>.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Правило говорит «1 марта», а дата — <span data-fig="due_farm_estimated"></span></span><span lang="en">The rule says March 1, the date is <span data-fig="due_farm_estimated"></span></span></h3>
+      <p lang="ru">1 марта 2026 года приходится на воскресенье, поэтому срок сдвигается на
+        следующий рабочий день. Вопрос может проверять либо правило, либо фактическую дату —
+        держите в голове обе.</p>
+      <p lang="en">March 1, 2026 falls on a Sunday, so the date moves to the next business day. A
+        question may test either the rule or the actual date — hold both.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-5. Проверка доли фермерского дохода</span><span lang="en">Example 2-5. Testing the two-thirds share</span></div>
+      <div class="example__body">
+        <p lang="ru">За 2025 год фермер получил доход от продажи урожая, а также проценты по
+          вкладу и заработную плату на зимней подработке.</p>
+        <p lang="en">For 2025 a farmer had crop sales, plus bank interest and wages from a winter job.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Валовой доход от фермерства</span><span lang="en">Gross farm income</span></td>
+              <td data-num="92000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Проценты по вкладу</span><span lang="en">Bank interest</span></td>
+              <td data-num="3000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Заработная плата</span><span lang="en">Wages</span></td>
+              <td data-num="41000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Валовой доход всего</span><span lang="en">Total gross income</span></td>
+              <td data-num="136000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Доля фермерского дохода: 92 000 ÷ 136 000</span><span lang="en">Farm share: 92,000 ÷ 136,000</span></td>
+              <td data-num="67.6" data-unit="pct"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Две трети — это 66,7%. Полученные 67,6% порог превышают, значит особый
+          порядок применим. Обратите внимание: сравнивается валовой доход, а не чистая прибыль.</p>
+        <p lang="en">Two-thirds is 66.7%. The 67.6% obtained clears the threshold, so the special rule
+          applies. Note that the comparison uses gross income, not net profit.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Усреднение дохода</span><span lang="en">Income averaging</span></h3>
+
+    <p lang="ru">Фермер вправе перенести часть дохода текущего года на три предыдущих года и
+      обложить её по ставкам тех лет. Расчёт делается в Schedule J. Приём полезен, когда удачный
+      год выталкивает доход в более высокую ставку. Возможность доступна фермерам и рыбакам и не
+      предоставляется другим видам бизнеса.</p>
+    <p lang="en">A farmer may elect to spread part of the current year’s income back over the three
+      prior years and tax it at those years’ rates, computed on Schedule J. It helps when a good year
+      pushes income into a higher bracket. The election is open to farmers and fishermen and to no
+      other business.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Множитель <span data-fig="se_net_factor"></span> уменьшает базу налога; вычет половины уменьшает облагаемый доход. Это разные действия</span><span lang="en">The <span data-fig="se_net_factor"></span> factor reduces the tax base; the deduction for one half reduces taxable income. Two different steps</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Предел базы <span data-fig="se_wage_base"></span> ограничивает только социальную часть; у Medicare потолка нет</span><span lang="en">The <span data-fig="se_wage_base"></span> limit caps the social security portion only; Medicare has no ceiling</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Дополнительный налог Medicare платит только работник, работодательской половины у него нет</span><span lang="en">The Additional Medicare Tax is borne by the worker alone; there is no employer half</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Порог <span data-fig="se_threshold"></span> считается по чистому заработку, а не по выручке</span><span lang="en">The <span data-fig="se_threshold"></span> threshold applies to net earnings, not gross receipts</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Отсутствие формы 1099 не освобождает от обязанности показать доход</span><span lang="en">The absence of a Form 1099 does not excuse reporting the income</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Бартер — доход по рыночной стоимости у обеих сторон</span><span lang="en">A barter exchange is income at fair market value to both parties</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Доля прибыли акционера S-корпорации налогом на самозанятость не облагается; заработная плата облагается обычными взносами</span><span lang="en">An S corporation shareholder’s distributive share bears no self-employment tax; the wages bear regular payroll taxes</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Аренда фермы без материального участия — форма 4835 и никакого налога на самозанятость</span><span lang="en">Farm rental without material participation goes on Form 4835 with no self-employment tax</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Выращенная продукция базиса не имеет: выручка от неё облагается полностью</span><span lang="en">Raised produce has no basis: the entire proceeds are income</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Доля в две трети проверяется по валовому доходу, а не по чистой прибыли</span><span lang="en">The two-thirds share is tested on gross income, not net profit</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Срок для фермеров за 2025 год — <span data-fig="due_farm_estimated"></span>, потому что 1 марта выпало на воскресенье</span><span lang="en">The farmer’s date for 2025 is <span data-fig="due_farm_estimated"></span>, because March 1 fell on a Sunday</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Усреднение дохода по Schedule J доступно только фермерам и рыбакам</span><span lang="en">Income averaging on Schedule J is available to farmers and fishermen only</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. Чистая прибыль по Schedule C — $40 000. Каков налог на самозанятость?</span><span lang="en">1. Net profit on Schedule C is $40,000. What is the self-employment tax?</span></summary>
+      <div>
+        <p lang="ru">40 000 × 92,35% = $36 940. Прибыль ниже предела базы, поэтому применяется
+          полная ставка: 36 940 × 15,3% = <strong>$5 651,82</strong>.</p>
+        <p lang="en">40,000 × 92.35% = $36,940. The amount is below the base limit, so the full rate
+          applies: 36,940 × 15.3% = <strong>$5,651.82</strong>.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. Чистый заработок от самозанятости — $380. Нужно ли подавать Schedule SE?</span><span lang="en">2. Net earnings from self-employment are $380. Is Schedule SE required?</span></summary>
+      <div>
+        <p lang="ru">Нет: порог <span data-fig="se_threshold"></span> не достигнут. Но подоходным
+          налогом эти $380 всё равно облагаются и показываются в Schedule C.</p>
+        <p lang="en">No: the <span data-fig="se_threshold"></span> threshold is not met. The $380
+          remains subject to income tax and is reported on Schedule C.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Дизайнер сделал сайт ресторану в обмен на обеды в течение года стоимостью $5 000. Что в декларации?</span><span lang="en">3. A designer built a restaurant’s website in exchange for a year of meals worth $5,000. What is reported?</span></summary>
+      <div>
+        <p lang="ru">$5 000 дохода в Schedule C у дизайнера и такая же сумма дохода у ресторана.
+          Обеды для дизайнера — личный расход, вычета не дают.</p>
+        <p lang="en">$5,000 of income on the designer’s Schedule C and the same amount of income to the
+          restaurant. The meals are a personal expense of the designer and are not deductible.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Валовой доход фермера: ферма $60 000, пенсия $35 000. Применим ли особый порядок расчётного налога?</span><span lang="en">4. A farmer’s gross income: farm $60,000, pension $35,000. Does the special estimated tax rule apply?</span></summary>
+      <div>
+        <p lang="ru">60 000 ÷ 95 000 = 63,2%. Это меньше двух третей, значит особый порядок не
+          применяется и расчётный налог платится в обычные четыре срока.</p>
+        <p lang="en">60,000 ÷ 95,000 = 63.2%. That is below two-thirds, so the special rule does not
+          apply and the ordinary four estimated payments are required.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Владелец сдаёт землю за долю урожая и в управлении не участвует. Куда идёт доход и облагается ли он налогом на самозанятость?</span><span lang="en">5. An owner rents land for a share of the crop and does not participate in management. Where does the income go, and is it subject to self-employment tax?</span></summary>
+      <div>
+        <p lang="ru">В форму 4835. Налогом на самозанятость не облагается — именно отсутствие
+          материального участия решает вопрос.</p>
+        <p lang="en">On Form 4835. It is not subject to self-employment tax — the absence of material
+          participation is what decides it.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. Совместная декларация супругов: зарплата мужа $180 000, чистый заработок жены от самозанятости $110 000. Есть ли дополнительный налог Medicare?</span><span lang="en">6. Married filing jointly: husband’s wages $180,000, wife’s net earnings from self-employment $110,000. Is there Additional Medicare Tax?</span></summary>
+      <div>
+        <p lang="ru">Да. Совокупно $290 000, порог для совместной декларации
+          <span data-fig="addl_medicare_mfj"></span>, превышение $40 000 × 0,9% = <strong>$360</strong>.</p>
+        <p lang="en">Yes. Combined $290,000 against the joint threshold of
+          <span data-fig="addl_medicare_mfj"></span>; the excess of $40,000 × 0.9% =
+          <strong>$360</strong>.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div id="quiz-body" data-quiz="su02"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 334, 225, 525 и 4681, инструкциями к Schedule C,
+        Schedule SE, Schedule F, Schedule J и формам 4835 и 8959. Данные проверены 3 сентября
+        2026 года и относятся к налоговому периоду 2025. Не является налоговой консультацией.</p>
+      <p lang="en">Check against IRS Publications 334, 225, 525 and 4681, and the instructions to
+        Schedule C, Schedule SE, Schedule F, Schedule J and Forms 4835 and 8959. Verified
+        September 3, 2026 for the 2025 tax year. Not tax advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+window.QUIZZES = window.QUIZZES || {};
+window.QUIZZES.su02 = [
+  {
+    ru: "Чистая прибыль по Schedule C составила $60 000, заработной платы нет. Какова база для расчёта налога на самозанятость?",
+    en: "Net profit on Schedule C is $60,000 and there are no wages. What is the base for computing self-employment tax?",
+    opts: [
+      { k: "A", ru: "$60 000", en: "$60,000" },
+      { k: "B", ru: "$55 410", en: "$55,410" },
+      { k: "C", ru: "$30 000", en: "$30,000" },
+      { k: "D", ru: "$46 200", en: "$46,200" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это чистая прибыль до применения множителя. Налог считается не с неё.", en: "That is net profit before the factor is applied. The tax is not computed on it." },
+      B: { ru: "Верно. 60 000 × 92,35% = $55 410. Множитель имитирует вычет, который был бы у работодателя.", en: "Correct. 60,000 × 92.35% = $55,410. The factor mirrors the deduction an employer would have taken." },
+      C: { ru: "Половина прибыли — это не база. Пополам делится сам уплаченный налог, и только для вычета по подоходному налогу.", en: "Half the profit is not the base. It is the tax itself that is halved, and only for the income tax deduction." },
+      D: { ru: "Такой множитель в расчёте не участвует.", en: "No such factor enters the computation." }
+    }
+  },
+  {
+    ru: "Чистый заработок от самозанятости составил $190 000, заработной платы нет. Как считается социальная часть налога?",
+    en: "Net earnings from self-employment are $190,000 with no wages. How is the social security portion computed?",
+    opts: [
+      { k: "A", ru: "190 000 × 12,4%", en: "190,000 × 12.4%" },
+      { k: "B", ru: "176 100 × 12,4%", en: "176,100 × 12.4%" },
+      { k: "C", ru: "190 000 × 15,3%", en: "190,000 × 15.3%" },
+      { k: "D", ru: "176 100 × 15,3%", en: "176,100 × 15.3%" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Социальная часть ограничена базой $176 100; сумма сверх неё этой ставкой не облагается.", en: "The social security portion is capped at the $176,100 base; amounts above it are not taxed at this rate." },
+      B: { ru: "Верно. Социальная часть считается с меньшей из двух величин — чистого заработка и предела базы.", en: "Correct. The social security portion applies to the lesser of net earnings and the base limit." },
+      C: { ru: "Ставка 15,3% объединяет обе части, а предел базы относится только к социальной.", en: "The 15.3% rate combines both portions, while the base limit applies to the social security portion only." },
+      D: { ru: "Часть Medicare предела не имеет, поэтому применять к базе объединённую ставку нельзя.", en: "The Medicare portion has no limit, so the combined rate cannot be applied to the capped base." }
+    }
+  },
+  {
+    ru: "Какое утверждение о вычете половины налога на самозанятость верно?",
+    en: "Which statement about the deduction for one half of the self-employment tax is correct?",
+    opts: [
+      { k: "A", ru: "Он уменьшает сам налог на самозанятость вдвое", en: "It halves the self-employment tax itself" },
+      { k: "B", ru: "Он уменьшает облагаемый доход, но не сам налог на самозанятость", en: "It reduces taxable income but not the self-employment tax itself" },
+      { k: "C", ru: "Он применяется только при использовании постатейных вычетов", en: "It is available only to taxpayers who itemize" },
+      { k: "D", ru: "Он включает половину дополнительного налога Medicare", en: "It includes half of the Additional Medicare Tax" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Сам налог на самозанятость остаётся в полной сумме.", en: "The self-employment tax remains payable in full." },
+      B: { ru: "Верно. Это два разных расчёта: вычет действует в подоходном налоге и не затрагивает базу и сумму налога на самозанятость.", en: "Correct. These are separate computations: the deduction operates in the income tax and leaves the self-employment tax untouched." },
+      C: { ru: "Вычет предоставляется независимо от того, применяются постатейные вычеты или стандартный.", en: "The deduction is allowed whether the taxpayer itemizes or takes the standard deduction." },
+      D: { ru: "Дополнительный налог Medicare в вычет не входит: у него нет работодательской половины.", en: "The Additional Medicare Tax is excluded: it has no employer half." }
+    }
+  },
+  {
+    ru: "Сантехник получил от частных заказчиков $8 400 наличными и ни одной формы 1099-NEC. Что он показывает в декларации?",
+    en: "A plumber received $8,400 in cash from private customers and no Form 1099-NEC. What does he report?",
+    opts: [
+      { k: "A", ru: "Ничего: без формы 1099 доход не отражается", en: "Nothing: without a Form 1099 the income is not reported" },
+      { k: "B", ru: "Только сумму сверх порога информационной отчётности", en: "Only the amount above the information reporting threshold" },
+      { k: "C", ru: "Все $8 400 как доход бизнеса", en: "The full $8,400 as business income" },
+      { k: "D", ru: "Половину суммы, поскольку заказчики — частные лица", en: "Half the amount, since the customers are individuals" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Обязанность показать доход лежит на получателе и от выдачи формы не зависит.", en: "The duty to report rests on the recipient and does not depend on a form being issued." },
+      B: { ru: "Порог относится к обязанности плательщика подать форму, а не к налогооблагаемости дохода.", en: "The threshold governs the payer’s filing duty, not whether the income is taxable." },
+      C: { ru: "Верно. Доход облагается независимо от формы оплаты и наличия информационной декларации.", en: "Correct. The income is taxable regardless of how it was paid or whether an information return exists." },
+      D: { ru: "Статус заказчика на размер облагаемого дохода не влияет.", en: "The status of the customer does not affect how much income is taxable." }
+    }
+  },
+  {
+    ru: "Столяр изготовил мебель для юриста, а юрист взамен оформил ему договоры. Обычная цена работ каждого — $4 000. Каковы последствия?",
+    en: "A carpenter built furniture for a lawyer, and the lawyer drafted contracts in return. Each service is normally worth $4,000. What are the consequences?",
+    opts: [
+      { k: "A", ru: "Последствий нет: деньги не передавались", en: "None: no money changed hands" },
+      { k: "B", ru: "Каждый показывает $4 000 дохода", en: "Each reports $4,000 of income" },
+      { k: "C", ru: "Доход показывает только тот, кто получил услугу дороже", en: "Only the party receiving the more valuable service reports income" },
+      { k: "D", ru: "Каждый показывает $2 000 дохода", en: "Each reports $2,000 of income" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Бартер облагается: доход равен рыночной стоимости полученного.", en: "Barter is taxable: income equals the fair market value of what is received." },
+      B: { ru: "Верно. Обе стороны получили услугу стоимостью $4 000, и каждая показывает эту сумму в своём Schedule C.", en: "Correct. Both parties received a service worth $4,000 and each reports that amount on their own Schedule C." },
+      C: { ru: "Доход возникает у обеих сторон независимо от соотношения стоимостей.", en: "Income arises for both parties regardless of any difference in value." },
+      D: { ru: "Стоимость полученного не делится пополам.", en: "The value received is not halved." }
+    }
+  },
+  {
+    ru: "Что из перечисленного НЕ входит в базу налога на самозанятость?",
+    en: "Which of the following is NOT included in the self-employment tax base?",
+    opts: [
+      { k: "A", ru: "Чистая прибыль индивидуального предпринимателя", en: "A sole proprietor’s net profit" },
+      { k: "B", ru: "Гарантированная выплата полному партнёру за услуги", en: "A guaranteed payment to a general partner for services" },
+      { k: "C", ru: "Доля прибыли акционера S-корпорации", en: "An S corporation shareholder’s distributive share" },
+      { k: "D", ru: "Доход фермера, материально участвующего в деятельности", en: "Farm income of a materially participating farmer" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Это базовый случай обложения налогом на самозанятость.", en: "This is the core case for the self-employment tax." },
+      B: { ru: "Гарантированные выплаты за услуги в базу входят.", en: "Guaranteed payments for services are included." },
+      C: { ru: "Верно. Доля прибыли акционера налогом на самозанятость не облагается; обычные взносы платятся только с его разумной заработной платы.", en: "Correct. The distributive share bears no self-employment tax; regular payroll taxes apply only to reasonable compensation." },
+      D: { ru: "Материальное участие как раз и вводит фермерский доход в базу.", en: "Material participation is precisely what brings farm income into the base." }
+    }
+  },
+  {
+    ru: "Незамужняя женщина имеет заработную плату $210 000 и чистый заработок от самозанятости $30 000. С какой суммы взимается дополнительный налог Medicare?",
+    en: "A single taxpayer has $210,000 of wages and $30,000 of net earnings from self-employment. On what amount is the Additional Medicare Tax imposed?",
+    opts: [
+      { k: "A", ru: "$30 000", en: "$30,000" },
+      { k: "B", ru: "$40 000", en: "$40,000" },
+      { k: "C", ru: "$10 000", en: "$10,000" },
+      { k: "D", ru: "$240 000", en: "$240,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "В расчёт берётся весь трудовой доход вместе, а не только самозанятость.", en: "All earned income is combined, not just the self-employment portion." },
+      B: { ru: "Верно. Совокупно $240 000, порог $200 000, превышение $40 000. Работодатель уже удержал налог с $10 000 зарплаты сверх $200 000, остальное досчитывается по форме 8959.", en: "Correct. Combined $240,000 against a $200,000 threshold leaves $40,000. The employer already withheld on the $10,000 of wages above $200,000; the rest is computed on Form 8959." },
+      C: { ru: "Это лишь та часть зарплаты, с которой удержал работодатель; доход от самозанятости тоже учитывается.", en: "That is only the portion the employer withheld on; the self-employment earnings count too." },
+      D: { ru: "Налог берётся с превышения над порогом, а не со всей суммы дохода.", en: "The tax applies to the excess over the threshold, not to the whole amount." }
+    }
+  },
+  {
+    ru: "Фермер получил выплату по страхованию урожая в 2025 году из-за градобоя. Обычно урожай продаётся в следующем году. Что он вправе сделать?",
+    en: "A farmer received crop insurance proceeds in 2025 after hail damage. The crop is normally sold in the following year. What may the farmer do?",
+    opts: [
+      { k: "A", ru: "Не показывать выплату вовсе", en: "Exclude the proceeds entirely" },
+      { k: "B", ru: "Выбрать отсрочку признания дохода на 2026 год", en: "Elect to defer the income to 2026" },
+      { k: "C", ru: "Распределить выплату на три года", en: "Spread the proceeds over three years" },
+      { k: "D", ru: "Показать выплату как прирост капитала", en: "Report the proceeds as capital gain" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Страховая выплата является доходом; освобождения для неё нет.", en: "Crop insurance proceeds are income; no exclusion applies." },
+      B: { ru: "Верно. Отсрочка на один год допускается именно потому, что фермер обычно продавал бы урожай в следующем году.", en: "Correct. The one-year deferral is available precisely because the farmer would normally have sold the crop the following year." },
+      C: { ru: "Распределение на три года — это усреднение дохода по Schedule J, другой механизм.", en: "Spreading over three years is income averaging on Schedule J, a different mechanism." },
+      D: { ru: "Это обычный доход фермерской деятельности, а не прирост капитала.", en: "This is ordinary farm income, not capital gain." }
+    }
+  },
+  {
+    ru: "Валовой доход налогоплательщика за 2025 год: ферма $70 000, аренда квартиры $32 000. Применим ли особый порядок расчётного налога для фермеров?",
+    en: "A taxpayer’s 2025 gross income: farming $70,000 and apartment rent $32,000. Does the special estimated tax rule for farmers apply?",
+    opts: [
+      { k: "A", ru: "Да: фермерский доход больше половины", en: "Yes: farm income exceeds half" },
+      { k: "B", ru: "Нет: требуется не менее двух третей, а получается 68,6%", en: "No: two-thirds is required and the share is 68.6%" },
+      { k: "C", ru: "Да: доля составляет 68,6%, что выше двух третей", en: "Yes: the share is 68.6%, above two-thirds" },
+      { k: "D", ru: "Нет: аренда полностью лишает права на особый порядок", en: "No: any rental income disqualifies the taxpayer" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Требуется не половина, а две трети — порог выше.", en: "The requirement is two-thirds, not one half — a higher bar." },
+      B: { ru: "Арифметика верна, вывод — нет: 68,6% превышает 66,7%.", en: "The arithmetic is right but the conclusion is not: 68.6% exceeds 66.7%." },
+      C: { ru: "Верно. 70 000 ÷ 102 000 = 68,6%, что выше двух третей, поэтому особый порядок применяется.", en: "Correct. 70,000 ÷ 102,000 = 68.6%, above two-thirds, so the special rule applies." },
+      D: { ru: "Наличие иного дохода само по себе права не лишает; важна только доля.", en: "Other income does not disqualify by itself; only the share matters." }
+    }
+  },
+  {
+    ru: "Владелец земли сдаёт её фермеру за долю урожая и в управлении не участвует. Как отражается доход?",
+    en: "A landowner rents farmland for a share of the crop and does not participate in management. How is the income reported?",
+    opts: [
+      { k: "A", ru: "Schedule F, облагается налогом на самозанятость", en: "Schedule F, subject to self-employment tax" },
+      { k: "B", ru: "Форма 4835, налогом на самозанятость не облагается", en: "Form 4835, not subject to self-employment tax" },
+      { k: "C", ru: "Schedule C, облагается налогом на самозанятость", en: "Schedule C, subject to self-employment tax" },
+      { k: "D", ru: "Форма 4835, облагается налогом на самозанятость", en: "Form 4835, subject to self-employment tax" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Schedule F применяется при материальном участии, которого здесь нет.", en: "Schedule F applies where the owner materially participates, which is not the case here." },
+      B: { ru: "Верно. Отсутствие материального участия выводит доход в форму 4835 и за пределы базы налога на самозанятость.", en: "Correct. The absence of material participation puts the income on Form 4835 and outside the self-employment tax base." },
+      C: { ru: "Schedule C предназначен для торговой или производственной деятельности, а не для сдачи земли внаём.", en: "Schedule C is for a trade or business, not for renting out land." },
+      D: { ru: "Форма выбрана верно, но налога на самозанятость в этом случае нет.", en: "The form is right, but there is no self-employment tax in this case." }
+    }
+  },
+  {
+    ru: "Фермер продал выращенный им скот за $45 000. Какая сумма является доходом?",
+    en: "A farmer sold livestock he raised for $45,000. How much is income?",
+    opts: [
+      { k: "A", ru: "$45 000 полностью", en: "The full $45,000" },
+      { k: "B", ru: "$45 000 за вычетом рыночной стоимости скота", en: "$45,000 less the fair market value of the livestock" },
+      { k: "C", ru: "Ничего: продажа скота освобождена", en: "Nothing: livestock sales are exempt" },
+      { k: "D", ru: "Половина суммы", en: "Half the amount" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. У выращенного скота базиса нет: корма, ветеринария и прочие затраты уже были вычтены как текущие расходы.", en: "Correct. Raised livestock has no basis: feed, veterinary care and other costs were already deducted as current expenses." },
+      B: { ru: "Вычитается базис, а не рыночная стоимость, и у выращенного скота базис отсутствует.", en: "It is basis that is subtracted, not fair market value, and raised livestock has none." },
+      C: { ru: "Освобождения для продажи скота не существует.", en: "No exemption exists for livestock sales." },
+      D: { ru: "Оснований делить выручку пополам нет.", en: "There is no basis for halving the proceeds." }
+    }
+  },
+  {
+    ru: "Какое утверждение об усреднении дохода по Schedule J верно?",
+    en: "Which statement about income averaging on Schedule J is correct?",
+    opts: [
+      { k: "A", ru: "Оно доступно любому индивидуальному предпринимателю", en: "It is available to any sole proprietor" },
+      { k: "B", ru: "Оно позволяет перенести доход на три предыдущих года и обложить его по ставкам тех лет", en: "It spreads income back over the three prior years at those years’ rates" },
+      { k: "C", ru: "Оно освобождает часть дохода от налога", en: "It exempts part of the income from tax" },
+      { k: "D", ru: "Оно переносит доход на будущие годы", en: "It shifts income into future years" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Возможность предоставлена только фермерам и рыбакам.", en: "The election is limited to farmers and fishermen." },
+      B: { ru: "Верно. Это способ сгладить последствия удачного года, а не уменьшить сам доход.", en: "Correct. It smooths the effect of a good year rather than reducing the income itself." },
+      C: { ru: "Освобождения не происходит: меняются только применяемые ставки.", en: "Nothing is exempted: only the rates applied change." },
+      D: { ru: "Перенос делается назад, на прошедшие годы, а не вперёд.", en: "The spreading is backward, to prior years, not forward." }
+    }
+  },
+  {
+    ru: "Чистый заработок от самозанятости составил $410. Какие обязанности возникают?",
+    en: "Net earnings from self-employment are $410. What obligations arise?",
+    opts: [
+      { k: "A", ru: "Никаких: сумма незначительна", en: "None: the amount is trivial" },
+      { k: "B", ru: "Подаётся Schedule SE и уплачивается налог на самозанятость", en: "Schedule SE is filed and self-employment tax is paid" },
+      { k: "C", ru: "Только подоходный налог, Schedule SE не нужен", en: "Income tax only; no Schedule SE" },
+      { k: "D", ru: "Обязанность возникает начиная с $1 000", en: "The obligation begins at $1,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Порог составляет всего $400, и он превышен.", en: "The threshold is only $400 and it has been exceeded." },
+      B: { ru: "Верно. Чистый заработок достиг порога $400, поэтому Schedule SE обязателен.", en: "Correct. Net earnings reached the $400 threshold, so Schedule SE is required." },
+      C: { ru: "Подоходный налог начисляется, но и Schedule SE при таком заработке обязателен.", en: "Income tax applies, but Schedule SE is also required at this level of earnings." },
+      D: { ru: "Такого порога в законе нет.", en: "No such threshold exists." }
+    }
+  },
+  {
+    ru: "Ресторан списал долг поставщику: поставщик простил $12 000 задолженности. Налогоплательщик платёжеспособен и в банкротстве не находится. Каковы последствия?",
+    en: "A restaurant’s supplier forgave $12,000 of debt. The taxpayer is solvent and not in bankruptcy. What are the consequences?",
+    opts: [
+      { k: "A", ru: "$12 000 дохода от списания долга", en: "$12,000 of cancellation of debt income" },
+      { k: "B", ru: "Последствий нет: деньги не получены", en: "None: no money was received" },
+      { k: "C", ru: "Уменьшается базис активов, дохода нет", en: "Basis in assets is reduced and there is no income" },
+      { k: "D", ru: "$12 000 прироста капитала", en: "$12,000 of capital gain" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. По общему правилу прощённый долг образует доход; исключения для банкротства и неплатёжеспособности здесь не применяются.", en: "Correct. Forgiven debt is generally income; the bankruptcy and insolvency exceptions do not apply here." },
+      B: { ru: "Освобождение от обязанности платить экономически равнозначно получению денег.", en: "Being relieved of an obligation is economically equivalent to receiving money." },
+      C: { ru: "Уменьшение базиса применяется в случаях исключения дохода, например при неплатёжеспособности.", en: "Basis reduction applies where the income is excluded, such as under the insolvency exception." },
+      D: { ru: "Это обычный доход, а не прирост капитала.", en: "This is ordinary income, not capital gain." }
+    }
+  },
+  {
+    ru: "Какая часть налога на самозанятость не имеет предела базы?",
+    en: "Which portion of the self-employment tax has no base limit?",
+    opts: [
+      { k: "A", ru: "Социальная часть", en: "The social security portion" },
+      { k: "B", ru: "Часть Medicare", en: "The Medicare portion" },
+      { k: "C", ru: "Обе части ограничены", en: "Both portions are capped" },
+      { k: "D", ru: "Ни одна не ограничена", en: "Neither portion is capped" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Именно социальная часть ограничена базой $176 100.", en: "It is the social security portion that is capped at $176,100." },
+      B: { ru: "Верно. Часть Medicare начисляется на весь чистый заработок без потолка.", en: "Correct. The Medicare portion applies to all net earnings with no ceiling." },
+      C: { ru: "Ограничена только социальная часть.", en: "Only the social security portion is capped." },
+      D: { ru: "Социальная часть ограничение имеет.", en: "The social security portion does have a limit." }
+    }
+  },
+  {
+    ru: "Индивидуальный предприниматель получил $6 000 процентов по банковскому вкладу, открытому на средства бизнеса. Как это влияет на налог на самозанятость?",
+    en: "A sole proprietor received $6,000 of interest on a bank account holding business funds. How does this affect self-employment tax?",
+    opts: [
+      { k: "A", ru: "Увеличивает базу на $6 000", en: "It increases the base by $6,000" },
+      { k: "B", ru: "Увеличивает базу на $5 541", en: "It increases the base by $5,541" },
+      { k: "C", ru: "В базу не входит", en: "It is not included in the base" },
+      { k: "D", ru: "Уменьшает базу на $6 000", en: "It reduces the base by $6,000" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Проценты по вкладу не являются доходом от торговой деятельности.", en: "Bank interest is not income from a trade or business." },
+      B: { ru: "Множитель применяется к чистому заработку от деятельности, а проценты в него не входят.", en: "The factor applies to net earnings from the business, and interest is not part of them." },
+      C: { ru: "Верно. Проценты — инвестиционный доход; они облагаются подоходным налогом, но в базу налога на самозанятость не входят.", en: "Correct. Interest is investment income: subject to income tax, but outside the self-employment tax base." },
+      D: { ru: "Доход базу не уменьшает.", en: "Income does not reduce the base." }
+    }
+  },
+  {
+    ru: "Пенсионер 70 лет получает социальное пособие и подрабатывает консультантом с чистым заработком $25 000. Платит ли он налог на самозанятость?",
+    en: "A 70-year-old retiree draws social security and consults on the side with $25,000 of net earnings. Does self-employment tax apply?",
+    opts: [
+      { k: "A", ru: "Нет: он уже получает социальное пособие", en: "No: he already receives social security" },
+      { k: "B", ru: "Нет: после 65 лет налог не взимается", en: "No: the tax does not apply after age 65" },
+      { k: "C", ru: "Да: возраст и получение пособия значения не имеют", en: "Yes: age and receipt of benefits are irrelevant" },
+      { k: "D", ru: "Да, но только часть Medicare", en: "Yes, but only the Medicare portion" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Получение пособия от уплаты налога не освобождает.", en: "Receiving benefits does not exempt a person from the tax." },
+      B: { ru: "Возрастного освобождения закон не предусматривает.", en: "The law provides no age-based exemption." },
+      C: { ru: "Верно. Налог зависит только от размера чистого заработка, а не от возраста налогоплательщика.", en: "Correct. The tax depends solely on the amount of net earnings, not on the taxpayer’s age." },
+      D: { ru: "Обе части начисляются в обычном порядке.", en: "Both portions apply in the ordinary way." }
+    }
+  },
+  {
+    ru: "Что показывает форма 1099-G фермеру?",
+    en: "What does a farmer’s Form 1099-G report?",
+    opts: [
+      { k: "A", ru: "Выплаты по государственным сельскохозяйственным программам", en: "Agricultural program payments" },
+      { k: "B", ru: "Кооперативные выплаты", en: "Patronage dividends" },
+      { k: "C", ru: "Выручку от продажи скота", en: "Proceeds from livestock sales" },
+      { k: "D", ru: "Страховые выплаты за урожай", en: "Crop insurance proceeds" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Форма 1099-G отражает выплаты от государственных органов, включая сельскохозяйственные программы.", en: "Correct. Form 1099-G reports government payments, including agricultural program payments." },
+      B: { ru: "Кооперативные выплаты отражаются в форме 1099-PATR.", en: "Patronage dividends are reported on Form 1099-PATR." },
+      C: { ru: "Продажи скота информационной декларацией такого вида не оформляются.", en: "Livestock sales are not reported on this type of information return." },
+      D: { ru: "Страховые выплаты поступают от страховой компании, а не от государственного органа.", en: "Insurance proceeds come from an insurer, not from a government agency." }
+    }
+  }
+];
+</script>
+</body>
+</html>

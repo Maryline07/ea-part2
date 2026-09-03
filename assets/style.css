@@ -1,0 +1,647 @@
+/* ===================================================================
+   EA Part 2 — учебный корпус
+   Визуальный язык: бланк налоговой формы и бухгалтерская ведомость.
+   Подписанные поля, тонкие линейки, колонка сумм справа.
+   =================================================================== */
+
+/* ---------- Токены -------------------------------------------------- */
+
+:root {
+  --paper:      #FBFBF8;
+  --paper-sunk: #F2F3EE;   /* утопленные поля бланка */
+  --ink:        #22252A;
+  --ink-soft:   #5A6066;
+  --ink-faint:  #868D93;
+  --rule:       #C7CDC7;
+  --rule-hair:  #E1E5DF;
+  --ledger:     #DCE8DC;   /* полоса ведомости */
+  --accent:     #17604A;   /* нумерация, активное состояние */
+  --accent-pale:#E8F0EA;
+  --stamp:      #9A2B2B;   /* штемпель: только ловушки */
+  --stamp-pale: #F6EAEA;
+  --on-accent:  #FFFFFF;   /* текст поверх заливки акцентом */
+
+  --serif: "Source Serif 4", "Source Serif Pro", Cambria, "Times New Roman", serif;
+  --sans:  "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --measure: 36em;         /* длина строки прозы, < 80 знаков */
+  --gap:     1.5rem;
+
+  color-scheme: light;
+}
+
+/* Тёмная тема — набор токенов повторяется дважды намеренно.
+
+   Первый блок отвечает на системную настройку, но отступает, если
+   читатель явно выбрал светлую. Второй срабатывает от кнопки и должен
+   победить даже на светлой системе. В чистом CSS без препроцессора
+   переиспользовать один набор нельзя, поэтому значения продублированы:
+   при правке менять оба блока. */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #16191A;
+    --paper-sunk: #1E2223;
+    --ink:        #E3E6E2;
+    --ink-soft:   #A8AEAB;
+    --ink-faint:  #7C8380;
+    --rule:       #3A403C;
+    --rule-hair:  #2A2F2C;
+    --ledger:     #1F2A22;
+    --accent:     #6FB394;
+    --accent-pale:#1C2A24;
+    --stamp:      #D98A8A;
+    --stamp-pale: #2A1E1E;
+    --on-accent:  #101713;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper:      #16191A;
+  --paper-sunk: #1E2223;
+  --ink:        #E3E6E2;
+  --ink-soft:   #A8AEAB;
+  --ink-faint:  #7C8380;
+  --rule:       #3A403C;
+  --rule-hair:  #2A2F2C;
+  --ledger:     #1F2A22;
+  --accent:     #6FB394;
+  --accent-pale:#1C2A24;
+  --stamp:      #D98A8A;
+  --stamp-pale: #2A1E1E;
+  --on-accent:  #101713;
+  color-scheme: dark;
+}
+
+/* ---------- Основание ----------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  font-variant-numeric: tabular-nums;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 40em) { body { font-size: 16px; } }
+
+p { max-width: var(--measure); margin: 0 0 0.9em; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+strong { font-weight: 600; }
+em.term { font-style: normal; color: var(--ink-soft); }
+
+/* Английский термин рядом с русским переводом */
+.orig { color: var(--ink-soft); font-size: 0.92em; }
+
+/* Ссылка на норму или публикацию */
+.cite {
+  font-family: var(--sans);
+  font-size: 0.78em;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* ---------- Переключение языка --------------------------------------- */
+
+html[data-lang="ru"] [lang="en"] { display: none; }
+html[data-lang="en"] [lang="ru"] { display: none; }
+
+/* Инлайновые элементы не должны становиться блоками при показе */
+html[data-lang="ru"] span[lang="ru"],
+html[data-lang="en"] span[lang="en"] { display: inline; }
+
+/* ---------- Верхняя панель ------------------------------------------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 1.25rem;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.86rem;
+}
+
+.topbar__mark {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.topbar nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+.topbar nav a { color: var(--ink-soft); text-decoration: none; }
+.topbar nav a:hover { color: var(--accent); text-decoration: underline; }
+.topbar nav a[aria-current="page"] { color: var(--ink); font-weight: 500; }
+
+.switches { margin-left: auto; display: flex; gap: 0.5rem; align-items: center; }
+
+.langswitch, .themeswitch { display: flex; border: 1px solid var(--rule); }
+
+.langswitch button, .themeswitch button {
+  font: inherit;
+  font-weight: 500;
+  padding: 0.15rem 0.7rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.langswitch button + button,
+.themeswitch button + button { border-left: 1px solid var(--rule); }
+
+.langswitch button[aria-pressed="true"],
+.themeswitch button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.themeswitch button { padding: 0.15rem 0.55rem; }
+
+/* ---------- Сетка страницы модуля ------------------------------------ */
+
+.wrap { max-width: 76rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+
+.layout { display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 3rem; }
+
+@media (max-width: 62em) {
+  /* minmax(0, 1fr), а не 1fr: по умолчанию колонка грида не сжимается
+     ниже min-content своего содержимого, и широкая таблица растягивает
+     всю страницу, вызывая горизонтальную прокрутку body. */
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+}
+
+/* То же на уровне детей: без min-width:0 прокрутка внутри .scroller
+   не спасает — элемент всё равно требует ширину своей таблицы. */
+.layout > * { min-width: 0; }
+.scroller { min-width: 0; }
+
+/* ---------- Шапка-бланк ---------------------------------------------- */
+
+.sheet {
+  border: 1.5px solid var(--ink);
+  margin-bottom: 2.5rem;
+  background: var(--paper);
+}
+
+.sheet__title {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.sheet__no {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.sheet__title h1 {
+  font-family: var(--sans);
+  font-size: clamp(1.35rem, 3.4vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 26em;
+}
+
+/* Подписанные поля, как в верхней части налоговой формы */
+.sheet__fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+
+.field { padding: 0.55rem 1.1rem; border-right: 1px solid var(--rule-hair); }
+.field:last-child { border-right: 0; }
+
+.field dt {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  margin-bottom: 0.15rem;
+}
+
+.field dd {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 40em) {
+  .field { border-right: 0; border-top: 1px solid var(--rule-hair); }
+}
+
+/* Сноска соответствия учебнику — появляется только если есть xref.local.js */
+.xref {
+  padding: 0.4rem 1.1rem;
+  border-top: 1px solid var(--rule-hair);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+/* ---------- Боковое оглавление --------------------------------------- */
+
+.toc { font-family: var(--sans); font-size: 0.84rem; }
+
+@media (min-width: 62.01em) {
+  .toc { position: sticky; top: 4rem; align-self: start; max-height: calc(100vh - 6rem); overflow-y: auto; }
+}
+
+.toc h2 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  margin: 0 0 0.6rem;
+}
+
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { border-top: 1px solid var(--rule-hair); }
+.toc a {
+  display: block;
+  padding: 0.4rem 0;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.toc a:hover { color: var(--accent); }
+.toc a.is-current { color: var(--ink); font-weight: 500; }
+.toc a.is-current::before {
+  content: "";
+  display: inline-block;
+  width: 3px; height: 0.8em;
+  margin-right: 0.5rem;
+  vertical-align: -0.05em;
+  background: var(--accent);
+}
+
+/* ---------- Заголовки разделов --------------------------------------- */
+
+.sub { margin: 3rem 0 1.2rem; scroll-margin-top: 4.5rem; }
+.sub:first-child { margin-top: 0; }
+
+.sub h2 {
+  font-family: var(--sans);
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1.5px solid var(--ink);
+  max-width: var(--measure);
+}
+
+.sub h2 .num { color: var(--accent); margin-right: 0.5rem; }
+
+h3 {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.6rem;
+  max-width: var(--measure);
+}
+
+/* ---------- Вводный концептуальный блок ------------------------------ */
+
+.concept {
+  background: var(--accent-pale);
+  border-left: 3px solid var(--accent);
+  padding: 1.1rem 1.3rem;
+  margin: 0 0 2.5rem;
+}
+
+.concept h2 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+
+.concept p:last-child { margin-bottom: 0; }
+
+/* ---------- Таблицы правил ------------------------------------------- */
+
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0 1.8rem; }
+
+.scroller { overflow-x: auto; margin: 1.2rem 0 1.8rem; }
+.scroller table { margin: 0; }
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--rule-hair);
+}
+
+thead th {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 0.35rem;
+}
+
+tbody th {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 34%;
+}
+
+td { font-size: 0.95rem; }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
+
+/* Узкий первый столбец для нумерованных перечней */
+table.numbered tbody th { width: 2.5rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* ---------- Расчётный пример: строки ведомости ------------------------ */
+
+.example {
+  border: 1px solid var(--rule);
+  margin: 1.5rem 0 2rem;
+  background: var(--paper);
+}
+
+.example__head {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-sunk);
+}
+
+.example__body { padding: 0.9rem; }
+.example__body > p { font-size: 0.95rem; }
+.example__body > p:last-of-type { margin-bottom: 0; }
+
+.ledger { width: 100%; border-collapse: collapse; margin: 0.8rem 0 0; }
+
+.ledger td {
+  padding: 0.3rem 0.6rem;
+  border-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.ledger tbody tr:nth-child(odd) { background: var(--ledger); }
+
+.ledger td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+  font-weight: 500;
+}
+
+/* Итоговая строка всегда без полосы, независимо от её чётности.
+   Селектор специально повторяет вес правила :nth-child(odd) выше —
+   иначе полоса выигрывает по специфичности и итог оказывается зелёным. */
+.ledger tbody tr.total { background: var(--paper); }
+
+.ledger tr.total td {
+  border-top: 1px solid var(--ink);
+  font-weight: 600;
+}
+
+.ledger tr.total td:last-child { border-bottom: 3px double var(--ink); }
+
+/* ---------- Ловушка: красный штемпель --------------------------------- */
+
+.trap {
+  border: 1px solid var(--stamp);
+  background: var(--stamp-pale);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.trap h3 {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--stamp);
+  margin: 0 0 0.5rem;
+}
+
+.trap p:last-child { margin-bottom: 0; }
+.trap p { max-width: 40em; }
+
+/* ---------- Схема-развилка -------------------------------------------- */
+
+.fork {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.fork__q {
+  padding: 0.5rem 0.8rem;
+  border: 1.5px solid var(--ink);
+  font-weight: 600;
+  justify-self: start;
+}
+
+.fork__branches { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.6rem; }
+
+.fork__b {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  background: var(--paper-sunk);
+}
+
+.fork__b b { display: block; font-weight: 600; margin-bottom: 0.1rem; }
+.fork__b--no { border-left-color: var(--stamp); }
+
+/* ---------- Ловушки списком и «Проверь себя» -------------------------- */
+
+.pitfalls { margin: 2.5rem 0; }
+
+details.check {
+  border-top: 1px solid var(--rule-hair);
+  padding: 0.5rem 0;
+}
+
+details.check summary {
+  cursor: pointer;
+  font-size: 0.97rem;
+  max-width: var(--measure);
+}
+
+details.check summary::marker { color: var(--accent); }
+details.check > div { padding: 0.5rem 0 0.3rem 1.2rem; font-size: 0.95rem; color: var(--ink-soft); }
+details.check > div p { max-width: 34em; }
+
+/* ---------- Тренажёр --------------------------------------------------- */
+
+.quiz { margin: 3.5rem 0 0; border-top: 1.5px solid var(--ink); padding-top: 1.5rem; }
+
+.quiz__head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.quiz__head h2 { font-family: var(--sans); font-size: 1.1rem; font-weight: 600; margin: 0; }
+
+.quiz__score {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.q { border-bottom: 1px solid var(--rule-hair); padding: 1.1rem 0 1.3rem; }
+
+.q__stem { max-width: 40em; margin: 0 0 0.8rem; }
+.q__stem .qnum { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-right: 0.5rem; }
+
+.q__opts { display: grid; gap: 0.35rem; max-width: 44em; }
+
+.opt {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  align-items: start;
+  gap: 0.4rem;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.6rem;
+  background: transparent;
+  border: 1px solid var(--rule-hair);
+  color: inherit;
+  cursor: pointer;
+}
+
+.opt:hover:not([disabled]) { border-color: var(--accent); }
+.opt[disabled] { cursor: default; }
+.opt__k { font-family: var(--sans); font-weight: 600; color: var(--ink-faint); }
+
+.opt.is-correct { border-color: var(--accent); background: var(--accent-pale); }
+.opt.is-correct .opt__k { color: var(--accent); }
+.opt.is-wrong { border-color: var(--stamp); background: var(--stamp-pale); }
+.opt.is-wrong .opt__k { color: var(--stamp); }
+
+/* Разбор каждого варианта, а не только верного */
+.why { display: none; margin: 0.7rem 0 0; padding-left: 0.6rem; border-left: 2px solid var(--rule); }
+.q.is-answered .why { display: block; }
+.why dl { margin: 0; display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.15rem 0.4rem; font-size: 0.9rem; }
+.why dt { font-family: var(--sans); font-weight: 600; color: var(--ink-faint); }
+.why dd { margin: 0; color: var(--ink-soft); max-width: 40em; }
+.why dd.ok { color: var(--ink); }
+
+.quiz__reset {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  margin-top: 1.5rem;
+  padding: 0.35rem 0.9rem;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.quiz__reset:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---------- Карта модулей на главной ---------------------------------- */
+
+.section-head {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0;
+}
+
+.modules { display: grid; gap: 0; margin: 2rem 0 0; border-top: 1.5px solid var(--ink); }
+
+.module {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid var(--rule-hair);
+  text-decoration: none;
+  color: inherit;
+}
+
+a.module:hover { background: var(--accent-pale); }
+
+.module__no { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--accent); }
+.module__name { font-family: var(--sans); font-size: 0.97rem; }
+.module__sub { display: block; font-family: var(--serif); font-size: 0.87rem; color: var(--ink-soft); margin-top: 0.1rem; }
+
+.module__state { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-faint); white-space: nowrap; }
+.module--soon { color: var(--ink-faint); }
+.module--soon .module__no { color: var(--ink-faint); }
+
+/* ---------- Справочник цифр -------------------------------------------- */
+
+.figures td.val { font-weight: 600; white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+.figures td.src { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-faint); }
+.figures td.src a { color: inherit; }
+
+/* ---------- Футер ------------------------------------------------------ */
+
+.pagefoot {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+.pagefoot p { max-width: 46em; }
+
+/* ---------- Доступность и печать --------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus { left: 0.5rem; top: 0.5rem; z-index: 50; background: var(--paper); padding: 0.4rem 0.8rem; border: 1px solid var(--accent); }
+
+@media print {
+  .topbar, .toc, .quiz__reset { display: none; }
+  .layout { grid-template-columns: 1fr; }
+  body { font-size: 10.5pt; background: #fff; }
+  .q.is-answered .why, .why { display: block; }
+  details.check[open] > div, details.check > div { display: block; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
+}
