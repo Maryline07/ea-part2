@@ -1,5 +1,7 @@
 # EA Part 2 — Businesses
 
+**Читать: https://maryline07.github.io/ea-part2/**
+
 Двуязычный (русский / английский) учебный курс подготовки к экзамену
 IRS Special Enrollment Examination, часть 2 «Businesses».
 
