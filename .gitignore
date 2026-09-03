@@ -1,0 +1,46 @@
+# =====================================================================
+#  Whitelist policy: everything is ignored unless explicitly allowed.
+#
+#  Rationale: this repository sits next to copyrighted study materials
+#  (commercial exam-prep books in PDF). A blacklist would only protect
+#  against the files we thought of in advance; a whitelist protects
+#  against every file nobody thought of. A new PDF dropped into this
+#  folder cannot reach the index.
+#
+#  Adding a new tracked file REQUIRES adding an explicit "!" rule here.
+# =====================================================================
+
+*
+
+# --- root pages -------------------------------------------------------
+!.gitignore
+!CLAUDE.md
+!README.md
+!LICENSE
+!index.html
+!reference.html
+!exam-map.html
+!sources.html
+!su[0-9][0-9].html
+!build_artifact.py
+
+# --- assets: open the directory, then allow files one by one ----------
+!assets/
+assets/*
+!assets/style.css
+!assets/app.js
+!assets/figures-2025.js
+
+# =====================================================================
+#  Hard bans. Listed last so they win over every "!" rule above.
+# =====================================================================
+
+# Study materials and any other PDF must never be committed.
+*.pdf
+
+# Local-only overlays (e.g. cross-references to commercial textbooks).
+# These exist on the author's disk only and are not part of the project.
+*.local.js
+
+# Generated single-file build. An artifact, not a source.
+ea-part2.html
