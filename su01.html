@@ -1899,7 +1899,11 @@
         </tr>
         <tr>
           <th><span lang="ru">Скидка за быструю оплату</span><span lang="en">Cash discount</span></th>
-          <td><span lang="ru">На выбор: вычесть из закупок <strong>либо</strong> отнести на отдельный счёт скидок. Во втором случае остаток счёта — доход бизнеса, а себестоимость не уменьшается</span><span lang="en">Your choice: deduct it from purchases, <strong>or</strong> credit it to a separate discount account. Under the second method the balance is business income and cost of goods sold is not reduced</span></td>
+          <td><span lang="ru">На выбор: вычесть из закупок <strong>либо</strong> отнести на отдельный счёт скидок. Во втором случае остаток счёта — доход бизнеса, а себестоимость не уменьшается. Выбор связывает: он применяется ко всем скидкам во все годы, а сменить его можно только через форму 3115</span><span lang="en">Your choice: deduct it from purchases, <strong>or</strong> credit it to a separate discount account. Under the second method the balance is business income and cost of goods sold is not reduced. The choice binds: it applies to every discount in every year and can be changed only on Form 3115</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Оценка остатка</span><span lang="en">Valuing the closing inventory</span></th>
+          <td><span lang="ru">Товар, оставшийся на конец года, <strong>нельзя</strong> уценить на средние или расчётные скидки, полученные по этому товару</span><span lang="en">Merchandise on hand at the close of the tax year <strong>cannot</strong> be written down by the average or estimated discounts received on it</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Возвраты и уценки поставщику</span><span lang="en">Purchase returns and allowances</span></th>
@@ -1929,6 +1933,60 @@
         of goods sold is <strong>not</strong> reduced and the year-end balance becomes income. The
         question usually asks what does not affect cost of goods sold, and the answer is exactly the
         cash discount credited to a separate account.</p>
+      <p lang="ru">Но на сумму за год выбор влияет не всегда. Если весь закупленный товар
+        продан, оба метода дают одну и ту же прибыль: в первом себестоимость меньше на сумму
+        скидки, во втором на ту же сумму больше доход. Расходятся методы только на
+        <strong>остатке</strong>: при первом скидка сидит в стоимости непроданного товара и
+        ждёт его продажи, при втором она целиком попадает в доход того года, когда получена, а
+        остаток уносится в следующий год по цене счёта. Это сдвиг во времени, а не разный налог
+        за всю жизнь товара.</p>
+      <p lang="en">The choice does not always change the tax for the year. If all the goods
+        purchased are sold, both methods give the same profit: under the first, cost of goods
+        sold is lower by the discount; under the second, income is higher by the same amount.
+        They part company only over what is <strong>left on hand</strong>: under the first the
+        discount sits in the cost of the unsold goods and waits for them to be sold; under the
+        second it is income in the year received, while the closing inventory carries forward at
+        the invoice price. The difference is one of timing, not of total tax.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Одна скидка, два метода</span><span lang="en">One discount, two methods</span></div>
+      <div class="example__body">
+        <p lang="ru">Товар закуплен по счёту на <span data-num="100"></span>, скидка за быструю
+          оплату <span data-num="10"></span>, уплачено <span data-num="90"></span>. Запасов на
+          начало года не было; к концу года продана половина товара.</p>
+        <p lang="en">Goods are invoiced at <span data-num="100"></span> with a
+          <span data-num="10"></span> cash discount, so <span data-num="90"></span> is paid. There
+          was no beginning inventory and half the goods are sold by the year end.</p>
+        <table class="ledger">
+          <thead>
+            <tr>
+              <th><span lang="ru">Строка</span><span lang="en">Line</span></th>
+              <th><span lang="ru">Вычесть из закупок</span><span lang="en">Deducted from purchases</span></th>
+              <th><span lang="ru">Отдельный счёт скидок</span><span lang="en">Separate discount account</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span lang="ru">Закупки</span><span lang="en">Purchases</span></td><td data-num="90"></td><td data-num="100"></td></tr>
+            <tr><td><span lang="ru">Минус запасы на конец года</span><span lang="en">Less ending inventory</span></td><td data-num="-45"></td><td data-num="-50"></td></tr>
+            <tr><td><span lang="ru">Себестоимость проданного</span><span lang="en">Cost of goods sold</span></td><td data-num="45"></td><td data-num="50"></td></tr>
+            <tr><td><span lang="ru">Доход от скидок</span><span lang="en">Discount income</span></td><td>—</td><td data-num="10"></td></tr>
+            <tr class="total"><td><span lang="ru">Влияние на прибыль года</span><span lang="en">Effect on this year’s profit</span></td><td data-num="-45"></td><td data-num="-40"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Второй метод даёт в этом году прибыль на <span data-num="5"></span> больше, а в
+          следующем на те же <span data-num="5"></span> меньше: остаток ушёл туда по
+          <span data-num="50"></span>, а не по <span data-num="45"></span>. Уценить его до
+          <span data-num="45"></span> нельзя — это и есть запрет уменьшать конечный остаток на
+          расчётные скидки. Если бы товар был распродан целиком, обе колонки дали бы
+          <span data-num="-90"></span>, и выбор метода не значил бы ничего.</p>
+        <p lang="en">The second method shows <span data-num="5"></span> more profit this year and
+          <span data-num="5"></span> less next year: the inventory carried forward at
+          <span data-num="50"></span> rather than <span data-num="45"></span>. Writing it down to
+          <span data-num="45"></span> is exactly what the rule against reducing closing inventory by
+          estimated discounts forbids. Had every item been sold, both columns would read
+          <span data-num="-90"></span> and the choice of method would mean nothing.</p>
+      </div>
     </div>
 
     <h3><span lang="ru">Как опознать единицу и как её оценить</span><span lang="en">Identifying an item and valuing it</span></h3>
@@ -2846,23 +2904,24 @@
         <tr><th>25</th><td><span lang="ru">Титул решает состав запасов: отправленный на консигнацию товар остаётся вашим, принятый на консигнацию — чужой</span><span lang="en">Title decides what is in inventory: goods sent out on consignment stay yours, goods consigned to you are someone else’s</span></td></tr>
         <tr><th>26</th><td><span lang="ru">Меньшая из себестоимости и рыночной цены берётся <strong>по каждой позиции</strong>. Сравнение итога с итогом — заготовленный неверный ответ</span><span lang="en">Lower of cost or market is applied <strong>item by item</strong>. Comparing total against total is the prepared wrong answer</span></td></tr>
         <tr><th>27</th><td><span lang="ru">Торговая скидка уменьшает себестоимость всегда; денежная скидка, отнесённая на отдельный счёт, — не уменьшает, а становится доходом</span><span lang="en">A trade discount always reduces cost; a cash discount credited to a separate account does not — it becomes income</span></td></tr>
-        <tr><th>28</th><td><span lang="ru">Изъятие товара для личных нужд уменьшает закупки на <strong>себестоимость</strong>, а не на рыночную цену. Резерв на обесценение запасов не признаётся</span><span lang="en">Goods withdrawn for personal use reduce purchases by <strong>cost</strong>, not market value. A reserve for inventory write-downs is not recognised</span></td></tr>
-        <tr><th>29</th><td><span lang="ru">Не ведёте книг — календарный год обязателен. Фискальный год принимается ведением книг по нему, разрешения не требует и короткого периода не создаёт</span><span lang="en">Keep no books and the calendar year is compulsory. A fiscal year is adopted by keeping books on that basis: no approval, no short period</span></td></tr>
-        <tr><th>30</th><td><span lang="ru">Формы 1065 и 1120-S — 15-й день 3-го месяца, форма 1120 — 4-го. Исключение одно: фискальный год, заканчивающийся 30 июня</span><span lang="en">Forms 1065 and 1120-S: the 15th day of the 3rd month. Form 1120: the 4th. One exception — a fiscal year ending June 30</span></td></tr>
-        <tr><th>31</th><td><span lang="ru">Деятельность не для прибыли: доход идёт в Schedule 1, строку 8j, а расходы за 2025 год не вычитаются вовсе. Себестоимость проданных товаров выручку всё же уменьшает — это не вычет</span><span lang="en">A not-for-profit activity: income goes on Schedule 1, line 8j, and for 2025 the expenses are not deductible at all. Cost of goods sold still reduces receipts — it is not a deduction</span></td></tr>
-        <tr><th>32</th><td><span lang="ru">Три прибыльных года из пяти лишь перекладывают бремя доказывания; их отсутствие хобби не создаёт. Для лошадей — два года из семи</span><span lang="en">Three profitable years out of five only shift the burden of proof; their absence does not create a hobby. For horses it is two years out of seven</span></td></tr>
-        <tr><th>33</th><td><span lang="ru">Оплата картой — вычет в год списания по карте, а не оплаты счёта банка. Собственный вексель, выданный продавцу, платежом не является</span><span lang="en">A card charge is deducted in the year of the charge, not when the card company is paid. The taxpayer’s own note given to the seller is not payment</span></td></tr>
-        <tr><th>34</th><td><span lang="ru">Корпорация личных услуг применяет кассовый метод при любой выручке, но акции <strong>членов семьи</strong> работника в тесте собственников не засчитываются</span><span lang="en">A qualified personal service corporation may use the cash method at any level of receipts, but stock held by an employee’s <strong>family</strong> does not count for the ownership test</span></td></tr>
-        <tr><th>35</th><td><span lang="ru">Фермерский синдикат обязан применять метод начисления независимо от выручки, а питомник, дерновая ферма и лесоводство вправе применять кассовый метод при любой выручке — даже будучи C-корпорацией</span><span lang="en">A farming syndicate must use an accrual method whatever its receipts, while a nursery, a sod farm and tree operations may use the cash method at any level of receipts — even as a C corporation</span></td></tr>
-        <tr><th>36</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
-        <tr><th>37</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
-        <tr><th>38</th><td><span lang="ru">Правило двенадцати месяцев действует при обоих методах, но при начислении снимает только капитализацию: экономическое исполнение всё равно требуется, поэтому предоплата аренды растягивается, а предоплата страховки — нет</span><span lang="en">The twelve-month rule operates under both methods, but on the accrual method it removes only the capitalisation: economic performance is still required, so prepaid rent spreads while prepaid insurance does not</span></td></tr>
-        <tr><th>39</th><td><span lang="ru">Предоплата аренды у сторон отражается по-разному: плательщик растягивает вычет по мере пользования, получатель включает всю сумму в доход сразу. Зеркальности между сторонами не требуется</span><span lang="en">Prepaid rent falls differently on the two sides: the payer spreads the deduction as the property is used, while the recipient takes the whole amount into income at once. The two sides are not required to mirror each other</span></td></tr>
-        <tr><th>40</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
-        <tr><th>41</th><td><span lang="ru">Порог электронной подачи в <span data-fig="efile_threshold"></span> деклараций считается по <strong>всем видам форм вместе</strong>, а не по каждой форме отдельно</span><span lang="en">The <span data-fig="efile_threshold"></span>-return electronic filing threshold counts <strong>all form types together</strong>, not each form separately</span></td></tr>
-        <tr><th>42</th><td><span lang="ru">Штраф партнёрства и S-корпорации за непредставление считается по <strong>числу участников</strong> и не зависит от того, есть ли налог к уплате</span><span lang="en">The partnership and S corporation late filing penalty is measured by the <strong>number of owners</strong> and does not depend on whether any tax is due</span></td></tr>
-        <tr><th>43</th><td><span lang="ru">В месяцы, когда идут оба штрафа, штраф за непредставление уменьшается на штраф за неуплату: 4,5%, а не <span data-fig="pen_6651_rate"></span> плюс <span data-fig="pen_6651_pay"></span></span><span lang="en">In months when both penalties run, the failure-to-file penalty is reduced by the failure-to-pay penalty: 4.5%, not <span data-fig="pen_6651_rate"></span> plus <span data-fig="pen_6651_pay"></span></span></td></tr>
-        <tr><th>44</th><td><span lang="ru">График депозитов задан контрольным периодом прошлого года и внутри года не меняется. Новый работодатель — ежемесячный. Вмешивается только правило <span data-fig="dep_nextday"></span></span><span lang="en">The deposit schedule is fixed by last year’s lookback period and does not change mid-year. A new employer is monthly. Only the <span data-fig="dep_nextday"></span> rule intervenes</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Два метода учёта денежной скидки дают одинаковый итог года только при полной распродаже: непроданный остаток разводит их во времени</span><span lang="en">The two cash discount methods give the same result for the year only when everything is sold: unsold inventory separates them in timing</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Изъятие товара для личных нужд уменьшает закупки на <strong>себестоимость</strong>, а не на рыночную цену. Резерв на обесценение запасов не признаётся</span><span lang="en">Goods withdrawn for personal use reduce purchases by <strong>cost</strong>, not market value. A reserve for inventory write-downs is not recognised</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Не ведёте книг — календарный год обязателен. Фискальный год принимается ведением книг по нему, разрешения не требует и короткого периода не создаёт</span><span lang="en">Keep no books and the calendar year is compulsory. A fiscal year is adopted by keeping books on that basis: no approval, no short period</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Формы 1065 и 1120-S — 15-й день 3-го месяца, форма 1120 — 4-го. Исключение одно: фискальный год, заканчивающийся 30 июня</span><span lang="en">Forms 1065 and 1120-S: the 15th day of the 3rd month. Form 1120: the 4th. One exception — a fiscal year ending June 30</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Деятельность не для прибыли: доход идёт в Schedule 1, строку 8j, а расходы за 2025 год не вычитаются вовсе. Себестоимость проданных товаров выручку всё же уменьшает — это не вычет</span><span lang="en">A not-for-profit activity: income goes on Schedule 1, line 8j, and for 2025 the expenses are not deductible at all. Cost of goods sold still reduces receipts — it is not a deduction</span></td></tr>
+        <tr><th>33</th><td><span lang="ru">Три прибыльных года из пяти лишь перекладывают бремя доказывания; их отсутствие хобби не создаёт. Для лошадей — два года из семи</span><span lang="en">Three profitable years out of five only shift the burden of proof; their absence does not create a hobby. For horses it is two years out of seven</span></td></tr>
+        <tr><th>34</th><td><span lang="ru">Оплата картой — вычет в год списания по карте, а не оплаты счёта банка. Собственный вексель, выданный продавцу, платежом не является</span><span lang="en">A card charge is deducted in the year of the charge, not when the card company is paid. The taxpayer’s own note given to the seller is not payment</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">Корпорация личных услуг применяет кассовый метод при любой выручке, но акции <strong>членов семьи</strong> работника в тесте собственников не засчитываются</span><span lang="en">A qualified personal service corporation may use the cash method at any level of receipts, but stock held by an employee’s <strong>family</strong> does not count for the ownership test</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Фермерский синдикат обязан применять метод начисления независимо от выручки, а питомник, дерновая ферма и лесоводство вправе применять кассовый метод при любой выручке — даже будучи C-корпорацией</span><span lang="en">A farming syndicate must use an accrual method whatever its receipts, while a nursery, a sod farm and tree operations may use the cash method at any level of receipts — even as a C corporation</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
+        <tr><th>38</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
+        <tr><th>39</th><td><span lang="ru">Правило двенадцати месяцев действует при обоих методах, но при начислении снимает только капитализацию: экономическое исполнение всё равно требуется, поэтому предоплата аренды растягивается, а предоплата страховки — нет</span><span lang="en">The twelve-month rule operates under both methods, but on the accrual method it removes only the capitalisation: economic performance is still required, so prepaid rent spreads while prepaid insurance does not</span></td></tr>
+        <tr><th>40</th><td><span lang="ru">Предоплата аренды у сторон отражается по-разному: плательщик растягивает вычет по мере пользования, получатель включает всю сумму в доход сразу. Зеркальности между сторонами не требуется</span><span lang="en">Prepaid rent falls differently on the two sides: the payer spreads the deduction as the property is used, while the recipient takes the whole amount into income at once. The two sides are not required to mirror each other</span></td></tr>
+        <tr><th>41</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
+        <tr><th>42</th><td><span lang="ru">Порог электронной подачи в <span data-fig="efile_threshold"></span> деклараций считается по <strong>всем видам форм вместе</strong>, а не по каждой форме отдельно</span><span lang="en">The <span data-fig="efile_threshold"></span>-return electronic filing threshold counts <strong>all form types together</strong>, not each form separately</span></td></tr>
+        <tr><th>43</th><td><span lang="ru">Штраф партнёрства и S-корпорации за непредставление считается по <strong>числу участников</strong> и не зависит от того, есть ли налог к уплате</span><span lang="en">The partnership and S corporation late filing penalty is measured by the <strong>number of owners</strong> and does not depend on whether any tax is due</span></td></tr>
+        <tr><th>44</th><td><span lang="ru">В месяцы, когда идут оба штрафа, штраф за непредставление уменьшается на штраф за неуплату: 4,5%, а не <span data-fig="pen_6651_rate"></span> плюс <span data-fig="pen_6651_pay"></span></span><span lang="en">In months when both penalties run, the failure-to-file penalty is reduced by the failure-to-pay penalty: 4.5%, not <span data-fig="pen_6651_rate"></span> plus <span data-fig="pen_6651_pay"></span></span></td></tr>
+        <tr><th>45</th><td><span lang="ru">График депозитов задан контрольным периодом прошлого года и внутри года не меняется. Новый работодатель — ежемесячный. Вмешивается только правило <span data-fig="dep_nextday"></span></span><span lang="en">The deposit schedule is fixed by last year’s lookback period and does not change mid-year. A new employer is monthly. Only the <span data-fig="dep_nextday"></span> rule intervenes</span></td></tr>
       </tbody>
     </table>
     </div>
