@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=18">
-<script defer src="assets/figures-2025.js?v=18"></script>
+<link rel="stylesheet" href="assets/style.css?v=19">
+<script defer src="assets/figures-2025.js?v=19"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=18"></script>
+<script defer src="assets/app.js?v=19"></script>
 </head>
 <body data-module="su01">
 
@@ -2528,6 +2528,289 @@
         tests both the rule and the resulting date — hold both.</p>
     </div>
 
+    <h3><span lang="ru">Информационные декларации: два адреса и два срока</span><span lang="en">Information returns: two recipients, two dates</span></h3>
+
+    <p lang="ru">Информационная декларация уходит дважды: получателю выплаты и налоговой службе.
+      Сроки у этих двух отправок разные, и вопрос обычно спрашивает про один из них, называя
+      другой в вариантах ответа.</p>
+    <p lang="en">An information return goes out twice: to the payee and to the IRS. The two dates
+      differ, and a question usually asks about one of them while offering the other among the
+      answers.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Форма</span><span lang="en">Form</span></th>
+          <th><span lang="ru">Получателю</span><span lang="en">To the payee</span></th>
+          <th><span lang="ru">В налоговую службу</span><span lang="en">To the IRS</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>W-2</th>
+          <td><span data-fig="due_1099_recipient"></span></td>
+          <td><span lang="ru">Тогда же, в Управление социального обеспечения</span><span lang="en">The same date, to the Social Security Administration</span></td>
+        </tr>
+        <tr class="total">
+          <th>1099-NEC</th>
+          <td><span data-fig="due_1099_recipient"></span></td>
+          <td><span lang="ru">Тогда же — эта форма единственная, у которой обе даты совпадают</span><span lang="en">The same date — this form is the one where both dates coincide</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прочие 1099</span><span lang="en">Other Forms 1099</span></th>
+          <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а по отдельным формам — 17 февраля 2026 года</span><span lang="en">, and February 17, 2026 for certain forms</span></td>
+          <td><span lang="ru">2 марта 2026 года на бумаге, 31 марта 2026 года электронно</span><span lang="en">March 2, 2026 on paper; March 31, 2026 electronically</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Порог электронной подачи считается по всем формам сразу</span><span lang="en">The electronic filing threshold counts every form together</span></h3>
+      <p lang="ru">Подавать электронно обязан тот, у кого за календарный год набирается
+        <span data-fig="efile_threshold"></span> и более информационных деклараций. Порог
+        <strong>не применяется отдельно к каждому виду формы</strong>: четыре формы 1098 и шесть
+        форм 1099 — это уже десять, и обязанность возникает. Вариант ответа «нет, ни одной формы
+        не набралось десяти» и есть ошибка, ради которой вопрос задан.</p>
+      <p lang="en">Electronic filing is required of anyone who files
+        <span data-fig="efile_threshold"></span> or more information returns for the calendar year.
+        The threshold <strong>does not apply separately to each type of form</strong>: four Forms
+        1098 and six Forms 1099 already make ten, and the requirement applies. The answer “no single
+        form reached ten” is the error the question is built on.</p>
+    </div>
+
+    <h3><span lang="ru">Штраф за непредставление декларации</span><span lang="en">The failure to file penalty</span></h3>
+
+    <p lang="ru">У партнёрства и S-корпорации штраф считается не от суммы налога — налога у них
+      нет, — а <strong>от числа участников</strong>. Это единственное место в курсе, где штраф
+      растёт от количества людей.</p>
+    <p lang="en">For a partnership and an S corporation the penalty is not measured by tax — there is
+      none — but <strong>by the number of owners</strong>. It is the only place in the course where a
+      penalty grows with a head count.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Кто</span><span lang="en">Who</span></th>
+          <th><span lang="ru">Штраф</span><span lang="en">Penalty</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Партнёрство, §6698</span><span lang="en">A partnership, section 6698</span></th>
+          <td><span lang="ru"><span data-fig="pen_6698"></span> за каждый месяц или его часть, не более <span data-fig="pen_6698_months"></span> месяцев, умноженные на число лиц, бывших партнёрами <strong>в любой части года</strong></span><span lang="en"><span data-fig="pen_6698"></span> for each month or part of a month, up to <span data-fig="pen_6698_months"></span> months, multiplied by the number of persons who were partners <strong>during any part of the year</strong></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">S-корпорация, §6699</span><span lang="en">An S corporation, section 6699</span></th>
+          <td><span lang="ru">То же самое: <span data-fig="pen_6699"></span> за месяц за каждого акционера. При наличии налога к уплате добавляется штраф, считаемый от него</span><span lang="en">The same: <span data-fig="pen_6699"></span> per month per shareholder. Where tax is due, a penalty measured on the tax is added</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Декларация с налогом к уплате, §6651</span><span lang="en">A return with tax due, section 6651</span></th>
+          <td><span lang="ru"><span data-fig="pen_6651_rate"></span> от неуплаченного налога за месяц, потолок <span data-fig="pen_6651_max"></span> — достигается за пять месяцев</span><span lang="en"><span data-fig="pen_6651_rate"></span> of the unpaid tax per month, capped at <span data-fig="pen_6651_max"></span>, reached after five months</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Неуплата налога</span><span lang="en">Failure to pay</span></th>
+          <td><span lang="ru"><span data-fig="pen_6651_pay"></span> от неуплаченного налога за месяц, тот же потолок <span data-fig="pen_6651_max"></span></span><span lang="en"><span data-fig="pen_6651_pay"></span> of the unpaid tax per month, the same <span data-fig="pen_6651_max"></span> cap</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Просрочка свыше <span data-fig="pen_6651_days"></span> дней</span><span lang="en">More than <span data-fig="pen_6651_days"></span> days late</span></th>
+          <td><span lang="ru">Штраф не меньше <strong>меньшей</strong> из двух величин: <span data-fig="pen_6651_min"></span> либо 100% налога к уплате</span><span lang="en">The penalty is at least the <strong>smaller</strong> of <span data-fig="pen_6651_min"></span> and 100% of the tax due</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Два штрафа за один месяц не складываются целиком</span><span lang="en">Two penalties in one month do not simply add up</span></h3>
+      <p lang="ru">Когда декларация не подана и налог не уплачен, в каждый общий месяц штраф за
+        непредставление <strong>уменьшается</strong> на штраф за неуплату: вместо
+        <span data-fig="pen_6651_rate"></span> начисляется 4,5%. Через пять месяцев штраф за
+        непредставление упирается в потолок и останавливается, а штраф за неуплату продолжает идти
+        до собственного потолка <span data-fig="pen_6651_max"></span>. Неверный вариант получается
+        простым сложением двух ставок.</p>
+      <p lang="en">Where the return is unfiled and the tax unpaid, in each overlapping month the
+        failure-to-file penalty is <strong>reduced</strong> by the failure-to-pay penalty: 4.5%
+        accrues instead of <span data-fig="pen_6651_rate"></span>. After five months the
+        failure-to-file penalty hits its cap and stops, while the failure-to-pay penalty runs on to
+        its own <span data-fig="pen_6651_max"></span> cap. The wrong answer comes from adding the two
+        rates together.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Минимальный штраф привязан к сроку подачи, а не к налоговому году</span><span lang="en">The minimum penalty follows the due date, not the tax year</span></h3>
+      <p lang="ru">Величина <span data-fig="pen_6651_min"></span> применяется к декларациям, срок
+        которых наступает <strong>после 31 декабря 2025 года</strong>, — то есть к декларациям за
+        2025 налоговый год. У декларации за 2024 год, поданной с опозданием в том же 2026 году,
+        минимальный штраф другой: $510, потому что её срок наступил в 2025 году. Величина растёт с
+        инфляцией, и привязана она к дате, к которой декларацию ждали.</p>
+      <p lang="en">The <span data-fig="pen_6651_min"></span> figure applies to returns due
+        <strong>after December 31, 2025</strong> — that is, to 2025 tax year returns. For a 2024
+        return filed late in that same year 2026 the minimum is different, $510, because its due date
+        fell in 2025. The amount is indexed, and it attaches to the date the return was expected.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-12. Штраф партнёрства за просрочку</span><span lang="en">Example 1-12. A partnership's late filing penalty</span></div>
+      <div class="example__body">
+        <p lang="ru">Партнёрство с четырьмя партнёрами должно было подать форму 1065 за 2025 год
+          <span data-fig="due_1065"></span>. Декларация подана 2 июля 2026 года, продление не
+          запрашивалось. Налога партнёрство не платит.</p>
+        <p lang="en">A partnership with four partners had to file its 2025 Form 1065 by
+          <span data-fig="due_1065"></span>. The return went in on July 2, 2026 and no extension was
+          requested. The partnership itself pays no tax.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Месяцев просрочки или их частей: с 17 марта по 2 июля</span><span lang="en">Months or parts of months late, March 17 to July 2</span></td>
+              <td data-num="4" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Штраф за месяц за одного партнёра</span><span lang="en">Penalty per month per partner</span></td>
+              <td><span data-fig="pen_6698"></span></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Число партнёров</span><span lang="en">Number of partners</span></td>
+              <td data-num="4" data-unit="plain"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Штраф: 4 × $255 × 4</span><span lang="en">Penalty: 4 × $255 × 4</span></td>
+              <td data-num="4080"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Часть месяца считается за полный: со 2 июня по 2 июля идёт четвёртый месяц, и
+          он засчитывается целиком. Отсутствие налога к уплате штраф не отменяет — он считается по
+          партнёрам, а не по налогу.</p>
+        <p lang="en">A part of a month counts as a whole one: June 2 to July 2 is the fourth month and
+          counts in full. Having no tax to pay does not remove the penalty — it is measured by
+          partners, not by tax.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Штраф за K-1</span><span lang="en">The Schedule K-1 penalty</span></h3>
+
+    <p lang="ru">Отдельный штраф — за то, что K-1 не выдан участнику вовремя либо выдан с неполными
+      или неверными данными. Он не связан со штрафом за саму декларацию: партнёрство, подавшее 1065
+      в срок, но не разославшее K-1, платит только этот.</p>
+    <p lang="en">A separate penalty covers a Schedule K-1 not furnished to the owner on time, or
+      furnished with information missing or wrong. It is independent of the penalty on the return
+      itself: a partnership that filed Form 1065 on time but sent no K-1s pays only this one.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Случай</span><span lang="en">Case</span></th>
+          <th><span lang="ru">Размер</span><span lang="en">Amount</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Обычное нарушение</span><span lang="en">An ordinary failure</span></th>
+          <td><span lang="ru"><span data-fig="pen_k1"></span> за каждый K-1</span><span lang="en"><span data-fig="pen_k1"></span> for each Schedule K-1</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Годовой максимум: выручка не выше <span data-fig="pen_k1_receipts"></span></span><span lang="en">Annual cap: gross receipts at or below <span data-fig="pen_k1_receipts"></span></span></th>
+          <td><span data-fig="pen_k1_max_small"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Годовой максимум: выручка выше</span><span lang="en">Annual cap: gross receipts above that</span></th>
+          <td><span data-fig="pen_k1_max_large"></span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Умышленное пренебрежение</span><span lang="en">Intentional disregard</span></th>
+          <td><span lang="ru"><span data-fig="pen_k1_intentional"></span> за каждый K-1 либо 10% суммы, подлежавшей отражению, — <strong>большая</strong> из двух. Годового максимума здесь нет вовсе</span><span lang="en"><span data-fig="pen_k1_intentional"></span> for each Schedule K-1 or 10% of the amount that should have been reported — the <strong>greater</strong> of the two. Here there is no annual cap at all</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Депозиты зарплатных налогов</span><span lang="en">Depositing employment taxes</span></h3>
+
+    <p lang="ru">Удержанные у работников налоги и долю работодателя нельзя просто уплатить вместе с
+      отчётностью: их <strong>депонируют</strong>, и график депозитов определяется заранее — по
+      контрольному периоду, а не по текущим суммам. Контрольный период — четыре квартала,
+      закончившиеся 30 июня года, предшествующего календарному.</p>
+    <p lang="en">Taxes withheld from employees, and the employer's own share, cannot simply be paid
+      with the return: they are <strong>deposited</strong>, and the schedule is fixed in advance by
+      the lookback period rather than by current amounts. The lookback period is the four quarters
+      ending June 30 of the year before the calendar year.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Итог контрольного периода</span><span lang="en">Lookback period total</span></th>
+          <th><span lang="ru">График</span><span lang="en">Schedule</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Не выше <span data-fig="dep_lookback"></span></span><span lang="en">At or below <span data-fig="dep_lookback"></span></span></th>
+          <td><span lang="ru">Ежемесячный: налог за месяц депонируется до 15-го числа следующего месяца</span><span lang="en">Monthly: a month's taxes are deposited by the 15th of the following month</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Выше <span data-fig="dep_lookback"></span></span><span lang="en">Above <span data-fig="dep_lookback"></span></span></th>
+          <td><span lang="ru">Полунедельный: выплаты со среды по пятницу — до следующей среды, выплаты с субботы по вторник — до следующей пятницы</span><span lang="en">Semiweekly: wages paid Wednesday through Friday are due the following Wednesday; Saturday through Tuesday, the following Friday</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Накоплено <span data-fig="dep_nextday"></span> и более за один день</span><span lang="en"><span data-fig="dep_nextday"></span> or more accumulated on any one day</span></th>
+          <td><span lang="ru">Депозит на следующий рабочий день — <strong>при любом графике</strong></span><span lang="en">Deposit by the next business day — <strong>under either schedule</strong></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">График задан прошлым, а не настоящим</span><span lang="en">The schedule comes from the past, not the present</span></h3>
+      <p lang="ru">Работодатель не выбирает график и не меняет его в течение года из-за того, что
+        суммы выросли. График на весь календарный год определён итогом контрольного периода,
+        закончившегося 30 июня предыдущего года. Новый работодатель в первый год —
+        <strong>ежемесячный</strong>, потому что в контрольном периоде у него нули. Единственное,
+        что вмешивается в течение года, — правило <span data-fig="dep_nextday"></span>.</p>
+      <p lang="en">An employer neither chooses the schedule nor switches during the year because the
+        amounts grew. The schedule for the whole calendar year is fixed by the lookback period ending
+        June 30 of the previous year. A new employer is on the <strong>monthly</strong> schedule for
+        the first year, because the lookback period holds zeros. The only thing that intervenes
+        mid-year is the <span data-fig="dep_nextday"></span> rule.</p>
+    </div>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Опоздание депозита</span><span lang="en">How late the deposit is</span></th>
+          <th><span lang="ru">Штраф</span><span lang="en">Penalty</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">От 1 до 5 дней</span><span lang="en">1 to 5 days</span></th>
+          <td><span data-fig="dep_pen_5"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">От 6 до 15 дней</span><span lang="en">6 to 15 days</span></th>
+          <td><span data-fig="dep_pen_15"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">16 дней и более; а также суммы, уплаченные напрямую или вместе с декларацией вместо депозита</span><span lang="en">16 or more days; and amounts paid directly or with the return instead of deposited</span></th>
+          <td><span data-fig="dep_pen_16"></span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Не уплачено спустя 10 дней после первого требования налоговой службы</span><span lang="en">Still unpaid more than 10 days after the first IRS notice</span></th>
+          <td><span data-fig="dep_pen_notice"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Дни считаются календарные, от срока депозита. Ставка не суммируется по ступеням:
+      применяется одна — та, в которую попало опоздание.</p>
+    <p lang="en">The days are calendar days, counted from the deposit due date. The rates do not
+      stack: one applies, the one the delay falls into.</p>
+
     <!-- ============================================================ -->
     <section class="sub" id="traps">
       <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
@@ -2576,6 +2859,10 @@
         <tr><th>38</th><td><span lang="ru">Правило двенадцати месяцев действует при обоих методах, но при начислении снимает только капитализацию: экономическое исполнение всё равно требуется, поэтому предоплата аренды растягивается, а предоплата страховки — нет</span><span lang="en">The twelve-month rule operates under both methods, but on the accrual method it removes only the capitalisation: economic performance is still required, so prepaid rent spreads while prepaid insurance does not</span></td></tr>
         <tr><th>39</th><td><span lang="ru">Предоплата аренды у сторон отражается по-разному: плательщик растягивает вычет по мере пользования, получатель включает всю сумму в доход сразу. Зеркальности между сторонами не требуется</span><span lang="en">Prepaid rent falls differently on the two sides: the payer spreads the deduction as the property is used, while the recipient takes the whole amount into income at once. The two sides are not required to mirror each other</span></td></tr>
         <tr><th>40</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
+        <tr><th>41</th><td><span lang="ru">Порог электронной подачи в <span data-fig="efile_threshold"></span> деклараций считается по <strong>всем видам форм вместе</strong>, а не по каждой форме отдельно</span><span lang="en">The <span data-fig="efile_threshold"></span>-return electronic filing threshold counts <strong>all form types together</strong>, not each form separately</span></td></tr>
+        <tr><th>42</th><td><span lang="ru">Штраф партнёрства и S-корпорации за непредставление считается по <strong>числу участников</strong> и не зависит от того, есть ли налог к уплате</span><span lang="en">The partnership and S corporation late filing penalty is measured by the <strong>number of owners</strong> and does not depend on whether any tax is due</span></td></tr>
+        <tr><th>43</th><td><span lang="ru">В месяцы, когда идут оба штрафа, штраф за непредставление уменьшается на штраф за неуплату: 4,5%, а не <span data-fig="pen_6651_rate"></span> плюс <span data-fig="pen_6651_pay"></span></span><span lang="en">In months when both penalties run, the failure-to-file penalty is reduced by the failure-to-pay penalty: 4.5%, not <span data-fig="pen_6651_rate"></span> plus <span data-fig="pen_6651_pay"></span></span></td></tr>
+        <tr><th>44</th><td><span lang="ru">График депозитов задан контрольным периодом прошлого года и внутри года не меняется. Новый работодатель — ежемесячный. Вмешивается только правило <span data-fig="dep_nextday"></span></span><span lang="en">The deposit schedule is fixed by last year’s lookback period and does not change mid-year. A new employer is monthly. Only the <span data-fig="dep_nextday"></span> rule intervenes</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -3542,6 +3829,57 @@ window.QUIZZES.su01 = [
       B: { ru: "Зеркальность выглядит естественно, но нормы для дохода и для вычета разные, и по аренде они расходятся.", en: "Mirroring looks natural, but the income rule and the deduction rule are different, and on rent they diverge." },
       C: { ru: "Сумма целиком верна только для арендодателя. Плательщик так вычесть не может: пользование помещением в 2025 году составило три месяца.", en: "The full amount is right for the landlord only. The payer cannot deduct it: the property was used for three months in 2025." },
       D: { ru: "Это обратная сторона той же ошибки: правила сторон перепутаны местами.", en: "This is the same error inverted: the two sides’ rules have been swapped." }
+    }
+  },
+  {
+    ru: "Партнёрство с шестью партнёрами подало форму 1065 за 2025 год 20 мая 2026 года. Продление не запрашивалось, налога партнёрство не платит. Какой штраф начисляется?",
+    en: "A partnership with six partners filed its 2025 Form 1065 on May 20, 2026. No extension was requested and the partnership pays no tax. What penalty applies?",
+    opts: [
+      { k: "A", ru: "$4 590", en: "$4,590" },
+      { k: "B", ru: "$1 530", en: "$1,530" },
+      { k: "C", ru: "Штрафа нет: налога к уплате нет", en: "No penalty: there is no tax due" },
+      { k: "D", ru: "$3 060", en: "$3,060" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Срок — 16 марта 2026 года; с 16 марта по 20 мая проходят три месяца или их части. $255 × 3 месяца × 6 партнёров = $4 590. Часть месяца считается за полный.", en: "Correct. The due date is March 16, 2026; from March 16 to May 20 there are three months or parts of months. $255 × 3 months × 6 partners = $4,590. A part of a month counts as a whole." },
+      B: { ru: "Это один месяц вместо трёх: $255 × 6. Просрочка длилась дольше.", en: "That is one month instead of three: $255 × 6. The delay ran longer." },
+      C: { ru: "Штраф считается по числу партнёров, а не по налогу. Отсутствие налога его не отменяет.", en: "The penalty is measured by the number of partners, not by tax. Having no tax does not remove it." },
+      D: { ru: "$3 060 получается при четырёх партнёрах либо при двух месяцах у шести. Пересчитайте оба множителя.", en: "$3,060 comes from four partners, or from two months with six. Recheck both multipliers." }
+    }
+  },
+  {
+    ru: "За 2025 год бизнес обязан подать 6 форм 1099-NEC, 3 формы 1099-MISC и 2 формы W-2. Обязан ли он представлять их электронно?",
+    en: "For 2025 a business must file 6 Forms 1099-NEC, 3 Forms 1099-MISC and 2 Forms W-2. Is electronic filing required?",
+    opts: [
+      { k: "A", ru: "Да: всего 11 деклараций, порог перейдён", en: "Yes: 11 returns in all, the threshold is crossed" },
+      { k: "B", ru: "Нет: ни одного вида формы не набралось десяти", en: "No: no single form type reached ten" },
+      { k: "C", ru: "Да, но только по формам 1099-NEC", en: "Yes, but only for the Forms 1099-NEC" },
+      { k: "D", ru: "Нет: W-2 в подсчёт не входят", en: "No: Forms W-2 do not count" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Порог в десять деклараций считается по всем видам форм в совокупности за календарный год: 6 + 3 + 2 = 11.", en: "Correct. The ten-return threshold counts all form types together for the calendar year: 6 + 3 + 2 = 11." },
+      B: { ru: "Именно эта ошибка и проверяется: порог не применяется отдельно к каждому виду формы.", en: "That is precisely the error being tested: the threshold does not apply separately to each form type." },
+      C: { ru: "Обязанность возникает по всем информационным декларациям, а не по той форме, которой больше всего.", en: "The requirement covers all the information returns, not the form type with the largest count." },
+      D: { ru: "W-2 входят в совокупный подсчёт наравне с формами 1099.", en: "Forms W-2 count in the aggregate along with the Forms 1099." }
+    }
+  },
+  {
+    ru: "За четыре квартала, закончившиеся 30 июня 2025 года, зарплатные налоги работодателя составили $46 000. В марте 2026 года он выплачивает премии и накапливает за один день обязательство в $112 000. Как он депонирует налог?",
+    en: "For the four quarters ending June 30, 2025 an employer's employment taxes were $46,000. In March 2026 it pays bonuses and accumulates a $112,000 liability on a single day. How must it deposit?",
+    opts: [
+      { k: "A", ru: "На следующий рабочий день", en: "By the next business day" },
+      { k: "B", ru: "До 15 апреля 2026 года: график ежемесячный", en: "By April 15, 2026: the schedule is monthly" },
+      { k: "C", ru: "По полунедельному графику: сумма превысила $50 000", en: "On the semiweekly schedule: the amount exceeded $50,000" },
+      { k: "D", ru: "Вместе с формой 941 за первый квартал", en: "With the Form 941 for the first quarter" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Контрольный период даёт ежемесячный график, но накопление $100 000 и более за один день требует депозита на следующий рабочий день при любом графике.", en: "Correct. The lookback period gives a monthly schedule, but accumulating $100,000 or more on a single day requires a next-business-day deposit under either schedule." },
+      B: { ru: "Ежемесячный график определён верно, но правило ста тысяч его перебивает.", en: "The monthly schedule is identified correctly, but the hundred-thousand rule overrides it." },
+      C: { ru: "График задан контрольным периодом прошлого года — $46 000, — а не текущей суммой. Внутри года он не меняется.", en: "The schedule comes from last year's lookback period — $46,000 — not from the current amount. It does not change mid-year." },
+      D: { ru: "Уплата вместе с декларацией вместо депозита сама по себе даёт штраф в 10%.", en: "Paying with the return instead of depositing is itself a 10% penalty." }
     }
   }
 

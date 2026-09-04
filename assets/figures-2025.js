@@ -18,6 +18,9 @@ var SRC_I461 = { t: "Instructions for Form 461 (2025)", u: "https://www.irs.gov/
 var SRC_P463 = { t: "Publication 463 (2025), Travel, Gift, and Car Expenses", u: "https://www.irs.gov/publications/p463" };
 var SRC_P587 = { t: "Publication 587 (2025), Business Use of Your Home", u: "https://www.irs.gov/publications/p587" };
 var SRC_RP2440 = { t: "Rev. Proc. 2024-40, §2.27", u: "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf" };
+var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/publications/p15" };
+var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
+var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
 
 window.FIGURES = {
@@ -306,6 +309,90 @@ window.FIGURES = {
       note_ru: "Или 10% от суммы, которую следовало показать, если это больше. Годового максимума нет.",
       note_en: "Or 10% of the aggregate amount required to be reported, if greater. No annual maximum applies.",
       src: { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" }
+    },
+    dep_lookback: {
+      n: 50000, unit: "usd",
+      ru: "Граница графика депозитов по итогам контрольного периода",
+      en: "Lookback period total that fixes the deposit schedule",
+      note_ru: "Не выше — ежемесячный график, выше — полунедельный.",
+      note_en: "At or below: monthly schedule. Above: semiweekly schedule.",
+      src: SRC_P15
+    },
+    dep_nextday: {
+      n: 100000, unit: "usd",
+      ru: "Накопление налога, требующее депозита на следующий рабочий день",
+      en: "Accumulated tax requiring a next-business-day deposit",
+      note_ru: "Правило действует при обоих графиках.",
+      note_en: "The rule applies under either schedule.",
+      src: SRC_P15
+    },
+    dep_pen_5: {
+      n: 2, unit: "pct",
+      ru: "Депозит с опозданием от 1 до 5 дней",
+      en: "Deposit 1 to 5 days late",
+      src: SRC_P15
+    },
+    dep_pen_15: {
+      n: 5, unit: "pct",
+      ru: "Депозит с опозданием от 6 до 15 дней",
+      en: "Deposit 6 to 15 days late",
+      src: SRC_P15
+    },
+    dep_pen_16: {
+      n: 10, unit: "pct",
+      ru: "Депозит с опозданием 16 дней и более",
+      en: "Deposit 16 or more days late",
+      note_ru: "Столько же — если сумма уплачена напрямую или вместе с декларацией вместо депозита.",
+      note_en: "The same rate applies to amounts paid directly or with the return instead of deposited.",
+      src: SRC_P15
+    },
+    dep_pen_notice: {
+      n: 15, unit: "pct",
+      ru: "Не уплачено спустя 10 дней после первого требования",
+      en: "Still unpaid more than 10 days after the first IRS notice",
+      src: SRC_P15
+    },
+    pen_6651_rate: {
+      n: 5, unit: "pct",
+      ru: "Штраф за непредставление: за месяц просрочки",
+      en: "Failure to file: per month or part of a month",
+      note_ru: "Считается от суммы налога к уплате за вычетом уплаченного в срок и доступных зачётов.",
+      note_en: "Computed on the tax due less amounts paid on time and available credits.",
+      src: SRC_FTF
+    },
+    pen_6651_max: {
+      n: 25, unit: "pct",
+      ru: "Штраф за непредставление: потолок",
+      en: "Failure to file: maximum",
+      note_ru: "Достигается за пять месяцев просрочки.",
+      note_en: "Reached after five months.",
+      src: SRC_FTF
+    },
+    pen_6651_pay: {
+      n: 0.5, unit: "pct",
+      ru: "Штраф за неуплату: за месяц просрочки",
+      en: "Failure to pay: per month or part of a month",
+      note_ru: "В месяцы, когда действуют оба штрафа, штраф за непредставление уменьшается на эту величину.",
+      note_en: "In months when both penalties run, the failure-to-file penalty is reduced by this amount.",
+      src: SRC_FTF
+    },
+    pen_6651_days: {
+      n: 60, unit: "int",
+      ru: "Просрочка, после которой включается минимальный штраф, дней",
+      en: "Days late after which the minimum penalty applies",
+      src: SRC_FTF
+    },
+    pen_6698_months: {
+      n: 12, unit: "int",
+      ru: "§6698 и §6699: предельное число месяцев",
+      en: "Sections 6698 and 6699: maximum number of months",
+      src: SRC_I1065
+    },
+    pen_k1_receipts: {
+      n: 5000000, unit: "usd",
+      ru: "Граница выручки для годового максимума штрафов за K-1",
+      en: "Gross receipts dividing line for the annual K-1 penalty caps",
+      src: SRC_I1065
     },
     pen_6651_min: {
       n: 525, unit: "usd",
@@ -724,8 +811,11 @@ window.FIGURES = {
     { id: "info", ru: "Информационные декларации", en: "Information returns",
       keys: ["nec_threshold_2025", "k1099_amount", "k1099_count", "efile_threshold"] },
     { id: "penalties", ru: "Штрафы", en: "Penalties",
-      keys: ["pen_6698", "pen_6699", "pen_k1", "pen_k1_max_small", "pen_k1_max_large",
-             "pen_k1_intentional", "pen_6651_min"] },
+      keys: ["pen_6698", "pen_6699", "pen_6698_months", "pen_k1", "pen_k1_max_small",
+             "pen_k1_max_large", "pen_k1_intentional", "pen_k1_receipts",
+             "pen_6651_rate", "pen_6651_max", "pen_6651_pay", "pen_6651_days",
+             "pen_6651_min", "dep_lookback", "dep_nextday", "dep_pen_5",
+             "dep_pen_15", "dep_pen_16", "dep_pen_notice"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
       keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment", "due_1099_recipient"] },
     { id: "rental", ru: "Аренда и лимиты убытков", en: "Rental property and loss limitations",
