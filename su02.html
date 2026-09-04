@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=17">
-<script defer src="assets/figures-2025.js?v=17"></script>
+<link rel="stylesheet" href="assets/style.css?v=18">
+<script defer src="assets/figures-2025.js?v=18"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=17"></script>
+<script defer src="assets/app.js?v=18"></script>
 </head>
 <body data-module="su02">
 
@@ -381,6 +381,33 @@
     <p lang="en">The tax applies once net earnings from self-employment reach
       <span data-fig="se_threshold"></span>. The threshold is measured on net earnings, not on gross
       receipts, and applies regardless of age or whether the person already draws social security.</p>
+
+    <p lang="ru">Порог не один. Schedule SE подаётся и тогда, когда доход церковного работника
+      составил <span data-fig="se_church"></span> и более — этот порог работает
+      <strong>сам по себе</strong>, независимо от <span data-fig="se_threshold"></span> чистого
+      заработка. Церковный работник здесь — тот, кто получает зарплату от церкви или церковной
+      организации, освобождённой от социальных взносов работодателя: взносы за него никто не
+      платит, и обязанность переходит к нему самому.</p>
+    <p lang="en">There is more than one threshold. Schedule SE is also required where church
+      employee income was <span data-fig="se_church"></span> or more — that threshold operates
+      <strong>on its own</strong>, independently of the <span data-fig="se_threshold"></span> of net
+      earnings. A church employee here is someone paid by a church or church organisation that is
+      exempt from the employer social security taxes: nobody pays those taxes for the employee, so
+      the obligation passes to the employee.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Служитель церкви — не церковный работник</span><span lang="en">A minister is not a church employee</span></h3>
+      <p lang="ru">Доход за услуги служителя церкви, члена религиозного ордена или практикующего
+        Christian Science <strong>не является</strong> доходом церковного работника, и порог
+        <span data-fig="se_church"></span> к нему не применяется. У служителей своя ветка правил и
+        собственные формы освобождения — 4361 и 4029. Вопрос строится на том, что оба человека
+        получают деньги от церкви, а правила к ним применяются разные.</p>
+      <p lang="en">Income for services as a minister, a member of a religious order or a Christian
+        Science practitioner is <strong>not</strong> church employee income, and the
+        <span data-fig="se_church"></span> threshold does not reach it. Ministers have their own
+        branch of rules and their own exemption forms, 4361 and 4029. The question turns on the fact
+        that both people are paid by a church while different rules apply to them.</p>
+    </div>
 
     <div class="scroller">
     <table>
@@ -778,6 +805,19 @@
     </div>
 
     <h3><span lang="ru">Доходы фермера</span><span lang="en">Farm income</span></h3>
+
+    <p lang="ru">Отдельно стоит программа сохранения земель <span class="orig">(Conservation
+      Reserve Program)</span>: владелец обязуется перевести пашню в менее интенсивное
+      использование и получает годовые платежи. В доход Schedule F они входят и приходят по форме
+      1099-G. Но в базу налога на самозанятость они входят не у всех: получающий социальную пенсию
+      по возрасту или пособие по нетрудоспособности <strong>на момент получения платежа</strong>
+      исключает его из базы — в Schedule SE для этого есть отдельная строка.</p>
+    <p lang="en">The Conservation Reserve Program stands apart: the owner agrees to convert cropland
+      to a less intensive use and receives annual payments. They are Schedule F income and arrive on
+      Form 1099-G. They do not enter the self-employment tax base for everyone, though: a person who
+      was receiving social security retirement or disability benefits <strong>at the time the
+      payment was received</strong> excludes it from the base, and Schedule SE has a separate line
+      for that.</p>
 
     <div class="scroller">
     <table>
