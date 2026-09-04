@@ -12,11 +12,14 @@
    =================================================================== */
 
 var SRC_P225 = { t: "Publication 225 (2025), Farmer's Tax Guide", u: "https://www.irs.gov/publications/p225" };
+var SRC_P527 = { t: "Publication 527 (2025), Residential Rental Property", u: "https://www.irs.gov/publications/p527" };
+var SRC_P925 = { t: "Publication 925 (2025), Passive Activity and At-Risk Rules", u: "https://www.irs.gov/publications/p925" };
+var SRC_I461 = { t: "Instructions for Form 461 (2025)", u: "https://www.irs.gov/instructions/i461" };
 
 window.FIGURES = {
   meta: {
     taxYear: 2025,
-    verified: "2026-09-03",
+    verified: "2026-09-04",
     lawAsOf: "2025-12-31",
     window: { from: "2026-07-01", to: "2027-02-28" }
   },
@@ -326,6 +329,135 @@ window.FIGURES = {
       src: { t: "Publication 1099, General Instructions for Certain Information Returns", u: "https://www.irs.gov/publications/p1099" }
     },
 
+
+    /* --- Аренда и лимиты убытков ------------------------------------- */
+
+    dwelling_personal_days: {
+      n: 14, unit: "int",
+      ru: "Личное пользование жильём: порог в днях",
+      en: "Dwelling unit personal use: day threshold",
+      note_ru: "Жильё считается использованным как дом, если личное пользование превысило БОЛЬШУЮ из двух величин: 14 дней либо 10% дней сдачи по рыночной цене.",
+      note_en: "A dwelling unit is used as a home if personal use exceeds the GREATER of 14 days or 10% of the days rented at a fair rental price.",
+      src: SRC_P527
+    },
+
+    dwelling_personal_pct: {
+      n: 10, unit: "pct",
+      ru: "Личное пользование жильём: доля дней сдачи",
+      en: "Dwelling unit personal use: share of rental days",
+      note_ru: "Вторая из двух величин порога. Берётся большая, а не меньшая и не сумма.",
+      note_en: "The second of the two threshold figures. The greater one applies — not the lesser, and not the sum.",
+      src: SRC_P527
+    },
+
+    rental_min_days: {
+      n: 15, unit: "int",
+      ru: "Сдача жилья менее 15 дней в году",
+      en: "Renting a dwelling for fewer than 15 days",
+      note_ru: "Жильё, которое вы используете как дом и сдали менее 15 дней за год: доход не включается, расходы по аренде не вычитаются.",
+      note_en: "A dwelling you use as a home and rent for fewer than 15 days: the rent is excluded from income and the rental expenses are not deductible.",
+      src: SRC_P527
+    },
+
+    depr_residential: {
+      n: 27.5, unit: "int",
+      ru: "Срок амортизации жилой недвижимости, лет",
+      en: "Recovery period for residential rental property, years",
+      note_ru: "Прямолинейный метод, соглашение середины месяца. Земля не амортизируется.",
+      note_en: "Straight line, mid-month convention. Land is not depreciable.",
+      src: SRC_P527
+    },
+
+    depr_nonresidential: {
+      n: 39, unit: "int",
+      ru: "Срок амортизации нежилой недвижимости, лет",
+      en: "Recovery period for nonresidential real property, years",
+      note_ru: "Прямолинейный метод, соглашение середины месяца.",
+      note_en: "Straight line, mid-month convention.",
+      src: SRC_P527
+    },
+
+    matpart_hours: {
+      n: 500, unit: "int",
+      ru: "Существенное участие: основной порог часов",
+      en: "Material participation: the primary hours test",
+      note_ru: "Первый из семи тестов. Достаточно выполнить ЛЮБОЙ один из семи.",
+      note_en: "The first of seven tests. Meeting ANY one of the seven is enough.",
+      src: SRC_P925
+    },
+
+    matpart_hours_sig: {
+      n: 100, unit: "int",
+      ru: "Существенное участие: порог значимого участия",
+      en: "Material participation: the significant participation threshold",
+      note_ru: "Более 100 часов при участии не меньшем, чем у любого другого лица (тест 3); и потолок, выше которого работает тест 7 по совокупности обстоятельств.",
+      note_en: "More than 100 hours with participation at least equal to any other individual (test 3); also the floor below which test 7 cannot be met.",
+      src: SRC_P925
+    },
+
+    rep_hours: {
+      n: 750, unit: "int",
+      ru: "Профессионал рынка недвижимости: часов за год",
+      en: "Real estate professional: hours for the year",
+      note_ru: "Более 750 часов в сферах недвижимости, где было существенное участие, И более половины всех оказанных за год личных услуг. Часы супруга к порогу не складываются.",
+      note_en: "More than 750 hours in real property trades or businesses with material participation AND more than half of all personal services for the year. A spouse's hours are not added to meet the test.",
+      src: SRC_P925
+    },
+
+    pal_allowance: {
+      n: 25000, unit: "usd",
+      ru: "Особый вычет по аренде недвижимости",
+      en: "Special allowance for rental real estate",
+      note_ru: "Требует активного участия — стандарта более мягкого, чем существенное участие.",
+      note_en: "Requires active participation, a less stringent standard than material participation.",
+      src: SRC_P925
+    },
+
+    pal_allowance_mfs: {
+      n: 12500, unit: "usd",
+      ru: "Особый вычет при раздельной подаче супругов",
+      en: "Special allowance, married filing separately",
+      note_ru: "Только если супруги жили раздельно весь год. Жили вместе — вычет равен нулю.",
+      note_en: "Only if the spouses lived apart at all times during the year. If they lived together, the allowance is zero.",
+      src: SRC_P925
+    },
+
+    pal_phaseout_start: {
+      n: 100000, unit: "usd",
+      ru: "Начало сокращения особого вычета (MAGI)",
+      en: "Special allowance phaseout begins (MAGI)",
+      note_ru: "Вычет уменьшается на 50% суммы превышения модифицированного скорректированного валового дохода над этим порогом.",
+      note_en: "The allowance is reduced by 50% of the modified adjusted gross income above this amount.",
+      src: SRC_P925
+    },
+
+    pal_phaseout_end: {
+      n: 150000, unit: "usd",
+      ru: "Полное исчезновение особого вычета (MAGI)",
+      en: "Special allowance fully phased out (MAGI)",
+      note_ru: "При таком MAGI и выше особый вычет недоступен.",
+      note_en: "At this modified adjusted gross income and above the special allowance is unavailable.",
+      src: SRC_P925
+    },
+
+    ebl_single: {
+      n: 313000, unit: "usd",
+      ru: "Порог избыточного убытка бизнеса",
+      en: "Excess business loss threshold",
+      note_ru: "Четвёртый и последний лимит, после базиса, риска и пассивных убытков. Превышение переносится вперёд как чистый операционный убыток.",
+      note_en: "The fourth and final limitation, after basis, at-risk and passive losses. The excess carries forward as a net operating loss.",
+      src: SRC_I461
+    },
+
+    ebl_mfj: {
+      n: 626000, unit: "usd",
+      ru: "Порог избыточного убытка при совместной подаче",
+      en: "Excess business loss threshold, joint return",
+      note_ru: "Ровно вдвое больше одиночного порога.",
+      note_en: "Exactly twice the single threshold.",
+      src: SRC_I461
+    },
+
     /* --- Фермеры -------------------------------------------------------- */
 
     farm_income_share: {
@@ -388,6 +520,11 @@ window.FIGURES = {
              "pen_k1_intentional", "pen_6651_min"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
       keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment", "due_1099_recipient"] },
+    { id: "rental", ru: "Аренда и лимиты убытков", en: "Rental property and loss limitations",
+      keys: ["dwelling_personal_days", "dwelling_personal_pct", "rental_min_days",
+             "depr_residential", "depr_nonresidential", "matpart_hours", "matpart_hours_sig",
+             "rep_hours", "pal_allowance", "pal_allowance_mfs", "pal_phaseout_start",
+             "pal_phaseout_end", "ebl_single", "ebl_mfj"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
       keys: ["farm_income_share", "farm_prepaid_limit", "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
   ]

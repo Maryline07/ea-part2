@@ -1,0 +1,1899 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 3. Аренда недвижимости и лимиты убытков — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=9">
+<script defer src="assets/figures-2025.js?v=9"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=9"></script>
+</head>
+<body data-module="su03">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">03</span>
+      <h1>
+        <span lang="ru">Аренда недвижимости и лимиты убытков</span>
+        <span lang="en">Rental property and loss limitations</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Подготовка деклараций бизнеса</span><span lang="en">Business Tax Preparation</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>Schedule E · Schedule C · 4562 · 8582 · 6198 · 461 · 8825</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>527 · 925 · 946 · 334</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su03" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s31"><span lang="ru">3.1 Доход от аренды</span><span lang="en">3.1 Rental income</span></a></li>
+        <li><a href="#s32"><span lang="ru">3.2 Расходы по аренде</span><span lang="en">3.2 Rental expenses</span></a></li>
+        <li><a href="#s33"><span lang="ru">3.3 Личное пользование жильём</span><span lang="en">3.3 Personal use of a dwelling</span></a></li>
+        <li><a href="#s34"><span lang="ru">3.4 Четыре лимита убытка</span><span lang="en">3.4 The four loss limits</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">Расходы по аренде превысили доход. Вычтется ли этот убыток из зарплаты
+        владельца — и если да, то сколько именно?</p>
+      <p lang="en">Rental expenses exceeded rental income. Will that loss reduce the owner’s
+        salary — and if so, by how much?</p>
+      <p lang="ru">Ответ почти никогда не «весь». Между посчитанным убытком и уменьшенным
+        налогом стоят <strong>четыре последовательных фильтра</strong>: базис, риск, пассивная
+        деятельность и избыточный убыток бизнеса. Каждый следующий работает с тем, что
+        пропустил предыдущий, и порядок изменить нельзя.</p>
+      <p lang="en">The answer is almost never “all of it”. Between the computed loss and a lower
+        tax bill stand <strong>four consecutive filters</strong>: basis, at-risk, passive activity,
+        and excess business loss. Each one works on what the previous one let through, and the
+        order cannot be rearranged.</p>
+      <p lang="ru">Аренда стоит в этой конструкции особняком: закон объявляет её пассивной
+        <em>по определению</em>, даже если владелец занимается ею сам и целыми днями. Отсюда и
+        главная развилка модуля — что именно вы сдаёте и как этим пользуетесь: обычный объект,
+        жильё, в котором живёте сами, или деятельность с услугами, которая арендой уже не
+        считается.</p>
+      <p lang="en">Rental sits apart in that structure: the statute declares it passive
+        <em>by definition</em>, even where the owner works at it personally and full time. Hence
+        the module’s central fork — what exactly you rent out and how you use it: an ordinary
+        property, a dwelling you also live in, or an activity with services that is no longer a
+        rental at all.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s31">
+      <h2><span class="num">3.1</span>
+        <span lang="ru">Доход от аренды</span>
+        <span lang="en">Rental income</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Доход от аренды — не только деньги, названные арендной платой. В него входит
+      всё, что арендатор передал вам за пользование имуществом, в какой бы форме это ни
+      выражалось.</p>
+    <p lang="en">Rental income is not only the money labelled rent. It includes everything the
+      tenant gave you for the use of the property, in whatever form it came.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что получено</span><span lang="en">What was received</span></th>
+          <th><span lang="ru">Доход?</span><span lang="en">Income?</span></th>
+          <th><span lang="ru">Когда</span><span lang="en">When</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Обычная арендная плата</span><span lang="en">Ordinary rent</span></th>
+          <td><span lang="ru">Да</span><span lang="en">Yes</span></td>
+          <td><span lang="ru">По вашему методу учёта</span><span lang="en">Under your accounting method</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Авансовая арендная плата</span><span lang="en">Advance rent</span></th>
+          <td><span lang="ru">Да</span><span lang="en">Yes</span></td>
+          <td><span lang="ru"><strong>В год получения</strong> — независимо от периода, который она покрывает, и от метода учёта</span><span lang="en"><strong>In the year received</strong> — regardless of the period it covers and of your accounting method</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Плата за досрочное расторжение договора</span><span lang="en">Payment to cancel a lease</span></th>
+          <td><span lang="ru">Да</span><span lang="en">Yes</span></td>
+          <td><span lang="ru">В год получения</span><span lang="en">In the year received</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Расходы, оплаченные арендатором за вас</span><span lang="en">Your expenses paid by the tenant</span></th>
+          <td><span lang="ru">Да</span><span lang="en">Yes</span></td>
+          <td><span lang="ru">В момент уплаты арендатором; ту же сумму вы вычитаете как расход, если он вычитаем</span><span lang="en">When the tenant pays; you also deduct the same amount if the expense is deductible</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Имущество или услуги вместо платы</span><span lang="en">Property or services instead of rent</span></th>
+          <td><span lang="ru">Да, по рыночной стоимости</span><span lang="en">Yes, at fair market value</span></td>
+          <td><span lang="ru">Согласованная цена считается рыночной, пока не доказано иное</span><span lang="en">An agreed price is the fair market value unless there is evidence otherwise</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Обеспечительный депозит, подлежащий возврату</span><span lang="en">A security deposit to be returned</span></th>
+          <td><span lang="ru"><strong>Нет</strong></span><span lang="en"><strong>No</strong></span></td>
+          <td><span lang="ru">Становится доходом в том году, в котором вы его удержали за нарушение договора</span><span lang="en">Becomes income in the year you keep it because the tenant broke the lease</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">«Депозит», идущий в счёт последнего платежа</span><span lang="en">A “deposit” to be used as the final rent payment</span></th>
+          <td><span lang="ru"><strong>Да</strong>: это аванс, а не депозит</span><span lang="en"><strong>Yes</strong>: that is advance rent, not a deposit</span></td>
+          <td><span lang="ru">В год получения</span><span lang="en">In the year received</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Платежи по договору аренды с правом выкупа</span><span lang="en">Payments under a lease with an option to buy</span></th>
+          <td><span lang="ru">Да, как арендная плата</span><span lang="en">Yes, as rent</span></td>
+          <td><span lang="ru">Если право выкупа реализовано, платежи <em>после</em> даты продажи входят в цену продажи</span><span lang="en">If the option is exercised, payments <em>after</em> the sale date become part of the selling price</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Название на квитанции ничего не решает</span><span lang="en">What the receipt calls it does not matter</span></h3>
+      <p lang="ru">Депозит и аванс различаются не словом в договоре, а <strong>судьбой денег</strong>.
+        Если сумма подлежит возврату при исполнении договора — это депозит, и дохода нет. Если
+        она по условиям договора зачитывается в последний месяц — это авансовая арендная плата,
+        и доход возникает сразу, даже у налогоплательщика на методе начисления и даже если
+        последний месяц наступит через девять лет.</p>
+      <p lang="en">A deposit and advance rent differ not by the word in the lease but by
+        <strong>what happens to the money</strong>. If it is refundable when the tenant performs,
+        it is a deposit and there is no income. If the lease applies it to the final month, it is
+        advance rent and the income arises at once — even for an accrual-method taxpayer, and even
+        if that final month is nine years away.</p>
+    </div>
+
+    <h3><span lang="ru">Где отражается</span><span lang="en">Where it is reported</span></h3>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Оказываете ли вы арендатору существенные услуги?</span>
+        <span lang="en">Do you provide substantial services to the tenant?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет — обычная аренда</span><span lang="en">No — an ordinary rental</span></b>
+          <span lang="ru">Schedule E, часть I. Отопление, свет, вывоз мусора, уборка мест общего пользования существенными услугами не считаются. Более трёх объектов — несколько бланков Schedule E</span>
+          <span lang="en">Schedule E, Part I. Heat, light, trash collection and cleaning of common areas are not substantial services. More than three properties: attach additional Schedules E</span>
+        </div>
+        <div class="fork__b">
+          <b><span lang="ru">Да — это бизнес</span><span lang="en">Yes — this is a business</span></b>
+          <span lang="ru">Schedule C. Существенные услуги — регулярная уборка номера, смена белья, услуги горничной, то есть услуги для удобства постояльца. Сюда же попадает дилер недвижимости</span>
+          <span lang="en">Schedule C. Substantial services means regular cleaning, changing linen, maid service — services primarily for the occupant’s convenience. A real estate dealer also reports here</span>
+        </div>
+      </div>
+    </div>
+
+    <p lang="ru">Разница не косметическая: доход в Schedule C входит в базу налога на
+      самозанятость, а доход в Schedule E — нет. Модуль 2 разбирает это правило со стороны
+      налога на самозанятость; здесь важна его вторая половина — что именно превращает аренду
+      в бизнес.</p>
+    <p lang="en">The difference is not cosmetic: Schedule C income enters the self-employment tax
+      base and Schedule E income does not. Module 2 approaches this rule from the
+      self-employment side; what matters here is its other half — what turns a rental into a
+      business.</p>
+
+    <h3><span lang="ru">Аренда не ради прибыли</span><span lang="en">Renting not for profit</span></h3>
+
+    <p lang="ru">Если объект сдаётся без намерения получить прибыль, действует та же
+      конструкция, что и для хобби в модуле 1: доход отражается в
+      <strong>Schedule 1, строке 8j</strong>, а расходы по аренде <strong>не вычитаются</strong>.
+      Проценты по ипотеке и налоги на недвижимость можно взять в Schedule A, если вы
+      детализируете вычеты и объект является вашим основным или вторым жильём.</p>
+    <p lang="en">If the property is not rented to make a profit, the structure is the same as for
+      a hobby in module 1: the income goes on <strong>Schedule 1, line 8j</strong> and the rental
+      expenses are <strong>not deductible</strong>. Mortgage interest and real estate taxes may
+      still go on Schedule A if you itemize and the property is your main or second home.</p>
+
+    <p lang="ru">Презумпция здесь та же: превышение дохода над расходами не менее чем в трёх
+      годах из пяти последовательных означает, что имущество предполагается сдаваемым ради
+      прибыли.</p>
+    <p lang="en">The presumption is the same: rental income exceeding rental expenses in at least
+      three years out of five consecutive years means the property is presumed to be rented for
+      profit.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 3-1. Что попадает в доход за год</span><span lang="en">Example 3-1. What enters income for the year</span></div>
+      <div class="example__body">
+        <p lang="ru">Владелец на кассовом методе сдаёт квартиру за $1 800 в месяц. За 2025 год
+          получено двенадцать платежей. В декабре подписан договор на 2026 год: внесены
+          арендная плата за январь 2026 года $1 800 и возвращаемый депозит $1 800. В марте
+          арендатор вместо платы за месяц отремонтировал сантехнику; стороны оценили работу в
+          $1 800, и деньги за март не вносились. В августе прежний арендатор заплатил $2 400 за
+          досрочное расторжение договора.</p>
+        <p lang="en">A cash-method owner rents out a flat for $1,800 a month and received twelve
+          payments during 2025. In December a 2026 lease was signed: January 2026 rent of $1,800
+          and a refundable deposit of $1,800 were paid. In March the tenant repaired the plumbing
+          instead of paying for the month; the parties valued the work at $1,800 and no cash
+          changed hands for March. In August a former tenant paid $2,400 to cancel a lease.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Одиннадцать денежных платежей</span><span lang="en">Eleven cash payments</span></td>
+              <td data-num="19800"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Ремонт вместо платы за март, по рыночной стоимости</span><span lang="en">Repairs instead of March rent, at fair market value</span></td>
+              <td data-num="1800"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Авансовая плата за январь 2026 года</span><span lang="en">Advance rent for January 2026</span></td>
+              <td data-num="1800"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Плата за расторжение договора</span><span lang="en">Lease cancellation payment</span></td>
+              <td data-num="2400"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Возвращаемый депозит</span><span lang="en">Refundable security deposit</span></td>
+              <td data-num="0"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Валовой доход от аренды за 2025 год</span><span lang="en">Gross rental income for 2025</span></td>
+              <td data-num="25800"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Ремонт учтён дважды и это правильно: $1 800 в доход и $1 800 в расходы на
+          ремонт. Итог по этой операции нулевой, но обе строки должны быть в декларации.
+          Депозит останется за рамками дохода до года, в котором его удержат.</p>
+        <p lang="en">The repair is counted twice, and correctly so: $1,800 into income and $1,800
+          into repair expense. The net effect is zero, but both lines belong on the return. The
+          deposit stays out of income until the year it is kept.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Бартер не освобождает от дохода</span><span lang="en">Barter does not remove the income</span></h3>
+      <p lang="ru">Соблазн в примере выше — не показывать март вовсе: денег не было, значит и
+        дохода нет. Это неверно дважды. Во-первых, доход равен рыночной стоимости полученных
+        услуг. Во-вторых, отказавшись от строки дохода, вы теряете и строку расхода — то есть
+        сами себе ухудшаете результат в будущем, когда стоимость ремонта окажется больше платы
+        за месяц.</p>
+      <p lang="en">The temptation in the example above is to leave March out entirely: no money
+        came in, so no income. That is wrong twice over. First, the income equals the fair market
+        value of the services received. Second, dropping the income line costs you the expense
+        line too — which works against you as soon as the repair is worth more than a month’s
+        rent.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s32">
+      <h2><span class="num">3.2</span>
+        <span lang="ru">Расходы по аренде</span>
+        <span lang="en">Rental expenses</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Вычитаются обычные и необходимые расходы на управление, сохранение и
+      обслуживание объекта. Перечень широк и на экзамене редко проверяется целиком; проверяются
+      три вещи, в которых легко ошибиться: когда расход <em>начинает</em> вычитаться, когда он
+      перестаёт быть расходом и превращается в капитальные вложения, и чего в расходах нет
+      вовсе.</p>
+    <p lang="en">Ordinary and necessary expenses of managing, conserving and maintaining the
+      property are deductible. The list is long and is rarely tested in full; what is tested is
+      three things that are easy to get wrong: when an expense <em>starts</em> being deductible,
+      when it stops being an expense and becomes a capital outlay, and what is not an expense at
+      all.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Ситуация</span><span lang="en">Situation</span></th>
+          <th><span lang="ru">Как обходиться</span><span lang="en">Treatment</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Расходы до первой сдачи</span><span lang="en">Expenses before the first tenant</span></th>
+          <td><span lang="ru">Вычитаются <strong>с момента, когда объект стал доступен для сдачи</strong>, а не с момента появления первого арендатора</span><span lang="en">Deductible <strong>from the time the property is available for rent</strong>, not from the arrival of the first tenant</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Объект пустует между арендаторами</span><span lang="en">The property is vacant between tenants</span></th>
+          <td><span lang="ru">Расходы, включая амортизацию, вычитаются. <strong>Неполученная арендная плата расходом не является</strong></span><span lang="en">Expenses, including depreciation, are deductible. <strong>The lost rent is not an expense</strong></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Объект пустует и выставлен на продажу</span><span lang="en">The property is vacant and listed for sale</span></th>
+          <td><span lang="ru">Расходы за период, пока он предлагался в аренду, вычитаются; после снятия с аренды — нет</span><span lang="en">Expenses for the period it was held out for rent are deductible; after it leaves the rental market they are not</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Ремонт</span><span lang="en">A repair</span></th>
+          <td><span lang="ru">Вычитается целиком в году оплаты или начисления</span><span lang="en">Deducted in full in the year paid or accrued</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Улучшение</span><span lang="en">An improvement</span></th>
+          <td><span lang="ru">Капитализируется и возмещается через амортизацию</span><span lang="en">Capitalized and recovered through depreciation</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Стоимость вашего собственного труда</span><span lang="en">The value of your own labour</span></th>
+          <td><span lang="ru"><strong>Не вычитается никогда</strong>: вы не включали её в доход</span><span lang="en"><strong>Never deductible</strong>: you never took it into income</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Пустая квартира — не убыток</span><span lang="en">An empty flat is not a loss</span></h3>
+      <p lang="ru">Три месяца простоя по $1 800 — это не расход $5 400. Неполученного дохода в
+        декларации не существует: на кассовом методе его никогда и не было в доходах, вычитать
+        нечего. Вариант ответа с недополученной платой встречается почти в каждом вопросе про
+        простой и всегда неверен. Вычитаются при этом реальные расходы периода простоя —
+        страховка, налоги, коммунальные, амортизация.</p>
+      <p lang="en">Three vacant months at $1,800 is not a $5,400 expense. Income you never
+        received does not exist on the return: on the cash method it was never in income, so
+        there is nothing to deduct. The answer choice offering the lost rent appears in almost
+        every vacancy question and is always wrong. The real costs of the vacant period —
+        insurance, taxes, utilities, depreciation — are deductible.</p>
+    </div>
+
+    <h3><span lang="ru">Ремонт или улучшение</span><span lang="en">Repair or improvement</span></h3>
+
+    <p lang="ru">Граница проходит по тому, что работа сделала с имуществом. Расход
+      капитализируется, если он отвечает хотя бы одному из трёх признаков.</p>
+    <p lang="en">The line runs through what the work did to the property. The cost is capitalized
+      if it meets any one of three descriptions.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru"><strong>Улучшение</strong> <span class="orig">(betterment)</span> — устранён недостаток, существовавший при покупке, либо объект стал существеннее, крупнее, качественнее</span><span lang="en"><strong>Betterment</strong> — a defect existing at acquisition is corrected, or the property is made materially larger, stronger or better</span></td></tr>
+        <tr><th>2</th><td><span lang="ru"><strong>Восстановление</strong> <span class="orig">(restoration)</span> — заменена существенная часть объекта, восстановлено пришедшее в негодность состояние, перестроен после списания</span><span lang="en"><strong>Restoration</strong> — a major component is replaced, deteriorated property is returned to working order, or it is rebuilt after being written off</span></td></tr>
+        <tr><th>3</th><td><span lang="ru"><strong>Приспособление</strong> <span class="orig">(adaptation)</span> — объект приспособлен к новому использованию, не предполагавшемуся изначально</span><span lang="en"><strong>Adaptation</strong> — the property is adapted to a new use not intended when it was acquired</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Замена разбитого стекла — ремонт. Замена всех окон в доме — восстановление.
+      Покраска стен — ремонт; покраска как часть общей реконструкции — часть стоимости
+      реконструкции. Правило простое и коварное одновременно: <em>та же работа</em> получает
+      разный ответ в зависимости от того, входит ли она в более крупный проект.</p>
+    <p lang="en">Replacing a broken pane is a repair. Replacing every window in the building is a
+      restoration. Painting walls is a repair; painting as part of a general renovation is part
+      of the cost of that renovation. The rule is simple and treacherous at once: <em>the same
+      work</em> gets a different answer depending on whether it belongs to a larger project.</p>
+
+    <h3><span lang="ru">Амортизация</span><span lang="en">Depreciation</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Параметр</span><span lang="en">Item</span></th>
+          <th><span lang="ru">Значение</span><span lang="en">Value</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Жилая недвижимость</span><span lang="en">Residential rental property</span></th>
+          <td><span data-fig="depr_residential"></span> <span lang="ru">года</span><span lang="en">years</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Нежилая недвижимость</span><span lang="en">Nonresidential real property</span></th>
+          <td><span data-fig="depr_nonresidential"></span> <span lang="ru">лет</span><span lang="en">years</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Метод</span><span lang="en">Method</span></th>
+          <td><span lang="ru">Прямолинейный</span><span lang="en">Straight line</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Соглашение</span><span lang="en">Convention</span></th>
+          <td><span lang="ru">Середины месяца: месяц ввода и месяц выбытия считаются за половину</span><span lang="en">Mid-month: the month placed in service and the month of disposal each count as a half</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Земля</span><span lang="en">Land</span></th>
+          <td><span lang="ru"><strong>Не амортизируется.</strong> Цену покупки делят между землёй и строением</span><span lang="en"><strong>Not depreciable.</strong> The purchase price is allocated between land and building</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Перевод жилья в аренду</span><span lang="en">Converting a home to rental use</span></th>
+          <td><span lang="ru">База для амортизации — <strong>меньшая</strong> из скорректированного базиса и рыночной стоимости на дату перевода</span><span lang="en">The depreciable basis is the <strong>lesser</strong> of adjusted basis and fair market value on the conversion date</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Амортизацию нельзя «не брать»</span><span lang="en">Depreciation cannot be skipped</span></h3>
+      <p lang="ru">При продаже базис уменьшается на амортизацию, <strong>разрешённую или
+        взятую</strong> <span class="orig">(allowed or allowable)</span> — по большей из двух
+        величин. Владелец, не заявлявший амортизацию, при продаже всё равно уменьшит базис на
+        неё и заплатит с этой суммы. Отказ от вычета не сохраняет базис, а просто теряет
+        вычет.</p>
+      <p lang="en">On sale the basis is reduced by depreciation <strong>allowed or
+        allowable</strong> — the greater of the two. An owner who never claimed depreciation
+        still reduces basis by it on sale and pays tax on that amount. Skipping the deduction
+        does not preserve basis; it merely loses the deduction.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 3-2. База для амортизации и первый год</span><span lang="en">Example 3-2. Depreciable basis and the first year</span></div>
+      <div class="example__body">
+        <p lang="ru">Дом куплен за $340 000; по оценке для налога на имущество на землю
+          приходится 20% стоимости. Объект сдан в аренду с 1 мая 2025 года. Кроме того, до
+          сдачи заменена крыша за $18 000 и покрашены стены за $2 300.</p>
+        <p lang="en">A house is bought for $340,000; the property tax assessment attributes 20% of
+          the value to land. It is placed in service as a rental on May 1, 2025. Before that the
+          roof was replaced for $18,000 and the walls painted for $2,300.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Цена покупки</span><span lang="en">Purchase price</span></td>
+              <td data-num="340000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля земли, 20%</span><span lang="en">Land share, 20%</span></td>
+              <td data-num="68000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Стоимость строения</span><span lang="en">Building</span></td>
+              <td data-num="272000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Крыша — улучшение, капитализируется</span><span lang="en">Roof — an improvement, capitalized</span></td>
+              <td data-num="18000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Покраска до сдачи — часть подготовки объекта</span><span lang="en">Painting before service — part of readying the property</span></td>
+              <td data-num="2300"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">База для амортизации</span><span lang="en">Depreciable basis</span></td>
+              <td data-num="292300"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Годовая амортизация — $292 300 ÷ 27,5 = $10 629. За 2025 год объект
+          проработал с середины мая по декабрь, то есть 7,5 месяца по соглашению середины
+          месяца: $10 629 × 7,5 ÷ 12 = $6 643. Земля $68 000 не амортизируется никогда.</p>
+        <p lang="en">Annual depreciation is $292,300 ÷ 27.5 = $10,629. For 2025 the property was
+          in service from mid-May through December, that is 7.5 months under the mid-month
+          convention: $10,629 × 7.5 ÷ 12 = $6,643. The $68,000 of land is never depreciated.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Покраска до сдачи и покраска после — разные суммы</span><span lang="en">Painting before and painting after are different amounts</span></h3>
+      <p lang="ru">Те же $2 300 на покраску дают разный ответ. Работы, приводящие объект в
+        состояние, пригодное для сдачи, <em>до</em> ввода в эксплуатацию входят в базу и
+        амортизируются. Точно такая же покраска через год после начала сдачи — текущий ремонт и
+        вычитается целиком. Вопрос почти всегда содержит дату ввода в эксплуатацию, и это не
+        украшение условия.</p>
+      <p lang="en">The same $2,300 of painting gives a different answer. Work that puts the
+        property into a condition fit to rent <em>before</em> it is placed in service goes into
+        basis and is depreciated. Identical painting a year after renting begins is a current
+        repair, deducted in full. The question almost always states the date placed in service,
+        and that is not decoration.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s33">
+      <h2><span class="num">3.3</span>
+        <span lang="ru">Личное пользование жильём</span>
+        <span lang="en">Personal use of a dwelling</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Как только вы сами пользуетесь тем, что сдаёте, обычные правила отступают.
+      Жилое помещение <span class="orig">(dwelling unit)</span> — дом, квартира, кондоминиум,
+      передвижной дом, лодка или дача с местом для сна, туалетом и кухней. Дальше всё зависит
+      от двух чисел: сколько дней вы сдавали и сколько дней пользовались сами.</p>
+    <p lang="en">As soon as you use what you rent out, the ordinary rules step aside. A dwelling
+      unit is a house, flat, condominium, mobile home, boat or holiday home with sleeping space,
+      a toilet and cooking facilities. Everything then turns on two counts: days rented and days
+      of personal use.</p>
+
+    <h3><span lang="ru">Три режима</span><span lang="en">Three regimes</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Режим</span><span lang="en">Regime</span></th>
+          <th><span lang="ru">Условие</span><span lang="en">Condition</span></th>
+          <th><span lang="ru">Последствия</span><span lang="en">Consequences</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Сдача менее <span data-fig="rental_min_days"></span> дней</span><span lang="en">Rented fewer than <span data-fig="rental_min_days"></span> days</span></th>
+          <td><span lang="ru">Жильё использовалось как дом и сдано менее 15 дней за год</span><span lang="en">The dwelling is used as a home and rented fewer than 15 days in the year</span></td>
+          <td><span lang="ru"><strong>Доход не включается вовсе</strong>, расходы по аренде не вычитаются. Проценты и налоги идут в Schedule A по обычным правилам</span><span lang="en"><strong>The rent is excluded entirely</strong> and rental expenses are not deductible. Interest and taxes go on Schedule A under the ordinary rules</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Не как дом</span><span lang="en">Not used as a home</span></th>
+          <td><span lang="ru">Личное пользование не превысило порог</span><span lang="en">Personal use did not exceed the threshold</span></td>
+          <td><span lang="ru">Расходы делятся между арендой и личным пользованием; <strong>убыток возможен</strong>, но проходит через лимиты §3.4</span><span lang="en">Expenses are divided between rental and personal use; <strong>a loss is possible</strong> but runs the limits in §3.4</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Как дом</span><span lang="en">Used as a home</span></th>
+          <td><span lang="ru">Личное пользование превысило порог</span><span lang="en">Personal use exceeded the threshold</span></td>
+          <td><span lang="ru">Расходы вычитаются <strong>только до размера дохода от аренды</strong>; излишек переносится на следующий год</span><span lang="en">Expenses are deductible <strong>only up to rental income</strong>; the excess carries forward to next year</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Порог: большая из двух величин</span><span lang="en">The threshold: the greater of two</span></h3>
+
+    <p lang="ru">Жильё считается использованным <strong>как дом</strong>, если личное пользование
+      превысило <strong>большую</strong> из двух величин: <span data-fig="dwelling_personal_days"></span>
+      дней либо <span data-fig="dwelling_personal_pct"></span> от числа дней, в течение которых
+      объект сдавался <em>по рыночной цене</em>.</p>
+    <p lang="en">A dwelling is used <strong>as a home</strong> if personal use exceeded the
+      <strong>greater</strong> of <span data-fig="dwelling_personal_days"></span> days or
+      <span data-fig="dwelling_personal_pct"></span> of the days it was rented <em>at a fair
+      rental price</em>.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Большая, а не меньшая и не сумма</span><span lang="en">The greater — not the lesser, not the sum</span></h3>
+      <p lang="ru">При 200 днях сдачи порог равен 20 дням (10% от 200), а не 14 и не 34. При 80
+        днях сдачи порог равен 14 дням (10% от 80 — это всего 8). Варианты ответа строятся ровно
+        на трёх ошибках: взять меньшую величину, сложить их, посчитать 10% от 365 дней.</p>
+      <p lang="en">With 200 rental days the threshold is 20 days (10% of 200), not 14 and not 34.
+        With 80 rental days the threshold is 14 days (10% of 80 is only 8). The answer choices are
+        built on exactly three mistakes: taking the lesser figure, adding the two, and taking 10%
+        of 365 days.</p>
+    </div>
+
+    <h3><span lang="ru">Что считается днём личного пользования</span><span lang="en">What counts as a day of personal use</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Кто пользовался</span><span lang="en">Who used it</span></th>
+          <th><span lang="ru">День личного пользования?</span><span lang="en">A personal-use day?</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Вы или другой совладелец</span><span lang="en">You or another owner of an interest</span></td>
+          <td><span lang="ru"><strong>Да</strong></span><span lang="en"><strong>Yes</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Член семьи: супруг, брат или сестра, предок, потомок</span><span lang="en">A family member: spouse, sibling, ancestor or lineal descendant</span></td>
+          <td><span lang="ru"><strong>Да</strong> — кроме случая, когда это его <em>основной дом</em> и он платит рыночную цену</span><span lang="en"><strong>Yes</strong> — unless it is that person’s <em>main home</em> and they pay a fair rental price</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Любой человек по цене ниже рыночной</span><span lang="en">Anyone at less than a fair rental price</span></td>
+          <td><span lang="ru"><strong>Да</strong></span><span lang="en"><strong>Yes</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Любой по договорённости, дающей вам пользование чужим жильём</span><span lang="en">Anyone under an arrangement letting you use another dwelling</span></td>
+          <td><span lang="ru"><strong>Да</strong>: обмен домами — личное пользование</span><span lang="en"><strong>Yes</strong>: a home exchange is personal use</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Победитель благотворительного аукциона, купивший право пожить</span><span lang="en">The winning bidder at a charity auction of the right to stay</span></td>
+          <td><span lang="ru"><strong>Да</strong>, у вас</span><span lang="en"><strong>Yes</strong>, to you</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Вы сами, целый день занимаясь ремонтом и обслуживанием</span><span lang="en">You, working substantially full time on repairs and maintenance</span></td>
+          <td><span lang="ru"><strong>Нет</strong> — даже если семья в этот же день отдыхала</span><span lang="en"><strong>No</strong> — even if the family used it for recreation the same day</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Арендатор по рыночной цене, а вы в этот же день тоже пользовались</span><span lang="en">A tenant at fair rental price on a day you also used it</span></td>
+          <td><span lang="ru"><strong>Да</strong>: день идёт в личное пользование, а из дней сдачи вычитается</span><span lang="en"><strong>Yes</strong>: the day counts as personal use and is removed from rental days</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Объект простаивал, будучи предложен к сдаче</span><span lang="en">The property sat available but unrented</span></td>
+          <td><span lang="ru"><strong>Нет</strong>, и днём сдачи он тоже не считается</span><span lang="en"><strong>No</strong>, and it is not a rental day either</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 3-3. Подсчёт дней</span><span lang="en">Example 3-3. Counting the days</span></div>
+      <div class="example__body">
+        <p lang="ru">Дача сдавалась по рыночной цене 120 дней. Владелец прожил там 11 дней летом
+          и 4 дня осенью, целиком занимаясь заменой пола. Сестра владельца прожила 6 дней,
+          заплатив половину рыночной цены. Ещё 9 дней объект был свободен и предлагался к
+          сдаче.</p>
+        <p lang="en">A holiday home was rented at a fair price for 120 days. The owner stayed 11
+          days in the summer and 4 days in the autumn, spending them entirely on replacing the
+          floor. The owner’s sister stayed 6 days, paying half the market rate. For another 9 days
+          the property stood available but unrented.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Дни сдачи по рыночной цене</span><span lang="en">Days rented at fair price</span></td>
+              <td data-num="120" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Личное пользование владельца летом</span><span lang="en">Owner’s summer stay</span></td>
+              <td data-num="11" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Дни ремонта — не личное пользование</span><span lang="en">Repair days — not personal use</span></td>
+              <td data-num="0" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Сестра ниже рыночной цены — личное пользование</span><span lang="en">Sister below market — personal use</span></td>
+              <td data-num="6" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Дни простоя — ни то, ни другое</span><span lang="en">Vacant days — neither</span></td>
+              <td data-num="0" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Всего личного пользования</span><span lang="en">Total personal use</span></td>
+              <td data-num="17" data-unit="plain"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Порог: большая из 14 и 10% от 120</span><span lang="en">Threshold: the greater of 14 and 10% of 120</span></td>
+              <td data-num="14" data-unit="plain"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">17 дней больше 14, значит жильё использовалось <strong>как дом</strong>:
+          расходы вычитаются только до размера дохода от аренды. Заметьте, что четыре дня
+          ремонта решили исход — без правила о них личного пользования было бы 21 день, и вывод
+          не изменился бы; а вот если бы сестра платила рыночную цену и жила там постоянно,
+          личного пользования осталось бы 11 дней и режим был бы другим.</p>
+        <p lang="en">17 days exceeds 14, so the dwelling was used <strong>as a home</strong>:
+          expenses are deductible only up to rental income. Note how the four repair days matter —
+          without that rule personal use would be 21 days and the conclusion would be the same;
+          but had the sister paid a fair price and lived there as her main home, personal use
+          would drop to 11 days and the regime would change.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Порядок вычета, когда жильё — дом</span><span lang="en">The order of deductions when it is a home</span></h3>
+
+    <p lang="ru">Расходы вычитаются не в произвольном порядке, а тремя очередями, и каждая
+      следующая пользуется тем, что осталось от дохода.</p>
+    <p lang="en">The expenses come off in three tiers rather than in any order, and each tier
+      works on what the previous one left of the income.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Проценты по ипотеке, налоги на недвижимость, потери от несчастных случаев — та часть, что приходится на аренду</span><span lang="en">Mortgage interest, real estate taxes and casualty losses — the share allocable to the rental</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Операционные расходы: коммунальные, страхование, ремонт, управление</span><span lang="en">Operating expenses: utilities, insurance, repairs, management</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Амортизация — в последнюю очередь</span><span lang="en">Depreciation — last</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Дошли до нуля дохода — остальное переносится на следующий год и там снова
+      встаёт в ту же очередь. Перенос сохраняется, даже если в следующем году жильё домом уже
+      не считается.</p>
+    <p lang="en">Once the income is used up, the rest carries forward to next year and queues up
+      again in the same order. The carryover survives even if the dwelling is not used as a home
+      in that later year.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Дача с личным пользованием — не пассивная деятельность</span><span lang="en">A holiday home with personal use is not a passive activity</span></h3>
+      <p lang="ru">Это одна из самых тонких развилок курса. Сдача жилья, которое считается вашим
+        домом, <strong>вообще не попадает</strong> под правила пассивной деятельности: её
+        ограничивает §280A — предел по размеру дохода. Ни особый вычет
+        <span data-fig="pal_allowance"></span>, ни форма 8582 к ней отношения не имеют, и
+        приостановленный остаток высвобождается не при продаже, а по мере появления дохода от
+        аренды этого же объекта.</p>
+      <p lang="en">This is one of the finest forks in the course. Renting a dwelling that counts
+        as your home falls <strong>outside</strong> the passive activity rules altogether: it is
+        limited by section 280A, a cap at the level of income. Neither the
+        <span data-fig="pal_allowance"></span> special allowance nor Form 8582 has anything to do
+        with it, and the suspended balance is released not on sale but as rental income from the
+        same property appears.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s34">
+      <h2><span class="num">3.4</span>
+        <span lang="ru">Четыре лимита убытка</span>
+        <span lang="en">The four loss limits</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Посчитанный убыток проходит четыре проверки строго по порядку. Каждая работает
+      с тем, что пропустила предыдущая; поменять их местами нельзя, и именно порядок чаще всего
+      и проверяется.</p>
+    <p lang="en">A computed loss runs four tests in a fixed order. Each works on what the previous
+      one let through; they cannot be rearranged, and it is the order itself that is most often
+      tested.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru"><strong>Базис.</strong> Убыток не больше того, что вложено в деятельность</span><span lang="en"><strong>Basis.</strong> The loss cannot exceed what was put into the activity</span></td></tr>
+        <tr><th>2</th><td><span lang="ru"><strong>Риск</strong> <span class="orig">(at-risk)</span>, форма 6198. Убыток не больше суммы, которой вы реально рискуете</span><span lang="en"><strong>At-risk</strong>, Form 6198. The loss cannot exceed the amount you genuinely stand to lose</span></td></tr>
+        <tr><th>3</th><td><span lang="ru"><strong>Пассивная деятельность</strong>, форма 8582. Пассивный убыток гасится только пассивным доходом</span><span lang="en"><strong>Passive activity</strong>, Form 8582. A passive loss is absorbed only by passive income</span></td></tr>
+        <tr><th>4</th><td><span lang="ru"><strong>Избыточный убыток бизнеса</strong>, форма 461. Совокупный убыток сверх порога переносится вперёд</span><span lang="en"><strong>Excess business loss</strong>, Form 461. The aggregate loss above the threshold carries forward</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Порядок — это и есть вопрос</span><span lang="en">The order is the question</span></h3>
+      <p lang="ru">Вопрос редко звучит «какой лимит применяется». Он звучит «сколько вычитается»,
+        и неверные варианты получаются, если начать с пассивных правил, не проверив базис и
+        риск. Запоминается легко: сначала <em>сколько у меня вложено</em>, потом <em>сколько я
+        теряю по-настоящему</em>, потом <em>работал ли я сам</em>, и только в конце — общий
+        потолок.</p>
+      <p lang="en">The question is rarely “which limit applies”. It is “how much is deductible”,
+        and the wrong answers come from starting with the passive rules without checking basis and
+        at-risk first. The sequence is easy to hold: first <em>how much did I put in</em>, then
+        <em>how much do I really stand to lose</em>, then <em>did I work at it myself</em>, and
+        only at the end the overall cap.</p>
+    </div>
+
+    <h3><span lang="ru">Лимит риска</span><span lang="en">The at-risk limit</span></h3>
+
+    <p lang="ru">Под риском находятся деньги и скорректированный базис имущества, вложенного в
+      деятельность, а также заёмные средства — но не любые.</p>
+    <p lang="en">At risk are the money and the adjusted basis of property contributed to the
+      activity, plus borrowed amounts — but not all of them.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Источник средств</span><span lang="en">Source of funds</span></th>
+          <th><span lang="ru">Под риском?</span><span lang="en">At risk?</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Собственные деньги и имущество</span><span lang="en">Your own money and property</span></td>
+          <td><span lang="ru"><strong>Да</strong></span><span lang="en"><strong>Yes</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Заём, по которому вы отвечаете лично</span><span lang="en">A loan for which you are personally liable</span></td>
+          <td><span lang="ru"><strong>Да</strong></span><span lang="en"><strong>Yes</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Заём под залог имущества, <em>не используемого</em> в этой деятельности</span><span lang="en">A loan secured by property <em>not used</em> in the activity</span></td>
+          <td><span lang="ru"><strong>Да</strong>, в размере чистой рыночной стоимости заложенного</span><span lang="en"><strong>Yes</strong>, up to the net fair market value of the pledged property</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Безоборотный заём под залог имущества самой деятельности</span><span lang="en">A nonrecourse loan secured by the activity’s own property</span></td>
+          <td><span lang="ru"><strong>Нет</strong> — общее правило</span><span lang="en"><strong>No</strong> — the general rule</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Квалифицированное безоборотное финансирование недвижимости</span><span lang="en">Qualified nonrecourse financing of real property</span></td>
+          <td><span lang="ru"><strong>Да</strong> — исключение специально для недвижимости</span><span lang="en"><strong>Yes</strong> — an exception made for real property</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Квалифицированное безоборотное финансирование должно отвечать четырём условиям:
+      взято в связи с владением недвижимостью; обеспечено этой недвижимостью; не конвертируется
+      в долю участия; выдано или гарантировано государственным органом либо получено от
+      квалифицированного кредитора. Личной ответственности при этом ни у кого нет — в том и
+      смысл исключения.</p>
+    <p lang="en">Qualified nonrecourse financing must meet four conditions: borrowed in connection
+      with holding real property; secured by that real property; not convertible into an ownership
+      interest; and lent or guaranteed by a government body or borrowed from a qualified person.
+      Nobody is personally liable — that is the point of the exception.</p>
+
+    <h3><span lang="ru">Пассивная деятельность</span><span lang="en">Passive activity</span></h3>
+
+    <p lang="ru">Пассивной считается деятельность двух видов: торговля или бизнес, в котором вы
+      не участвуете существенно, и <strong>любая аренда</strong> — независимо от того, сколько
+      вы в неё вложили труда.</p>
+    <p lang="en">Two kinds of activity are passive: a trade or business in which you do not
+      materially participate, and <strong>any rental activity</strong> — however much work you put
+      into it.</p>
+
+    <p lang="ru">Правила применяются к физическим лицам, наследственным массам, трастам (кроме
+      доверительных трастов учредителя), корпорациям личных услуг и закрытым корпорациям. К
+      партнёрствам и S-корпорациям напрямую они не применяются — но применяются к их
+      владельцам.</p>
+    <p lang="en">The rules reach individuals, estates and trusts — grantor trusts excepted — and also
+      closely held corporations together with personal service corporations. They do not reach
+      partnerships and S corporations directly — but they do reach their owners.</p>
+
+    <h4><span lang="ru">Семь тестов существенного участия</span><span lang="en">The seven material participation tests</span></h4>
+
+    <p lang="ru">Достаточно выполнить <strong>любой один</strong> из семи.</p>
+    <p lang="en">Meeting <strong>any one</strong> of the seven is enough.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Более <span data-fig="matpart_hours"></span> часов за год</span><span lang="en">More than <span data-fig="matpart_hours"></span> hours during the year</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Ваше участие составляет практически всё участие в деятельности, включая участие лиц без доли в ней</span><span lang="en">Your participation is substantially all the participation in the activity, including that of people with no interest in it</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Более <span data-fig="matpart_hours_sig"></span> часов, и не меньше, чем у любого другого лица</span><span lang="en">More than <span data-fig="matpart_hours_sig"></span> hours, and at least as much as any other individual</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Деятельность является значимой по участию, и по всем таким видам деятельности вместе набирается более 500 часов</span><span lang="en">The activity is a significant participation activity and all such activities together exceed 500 hours</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Вы существенно участвовали в любые <strong>5 из 10</strong> предшествующих лет, не обязательно подряд</span><span lang="en">You materially participated in any <strong>5 of the 10</strong> preceding years, not necessarily consecutive</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Деятельность является услугами личного характера, и вы существенно участвовали в любые <strong>3</strong> предшествующих года</span><span lang="en">The activity is a personal service activity and you materially participated in any <strong>3</strong> preceding years</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">По совокупности обстоятельств участие было регулярным, непрерывным и существенным. Этот тест <strong>недоступен</strong>, если часов было 100 или меньше</span><span lang="en">On all the facts and circumstances, participation was regular, continuous and substantial. This test is <strong>unavailable</strong> if participation was 100 hours or less</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Существенное участие аренду не спасает</span><span lang="en">Material participation does not rescue a rental</span></h3>
+      <p lang="ru">Владелец, отдавший аренде 900 часов, тесты существенного участия проходит — и
+        всё равно остаётся в пассивной деятельности, потому что аренда пассивна
+        <em>по определению</em>, а не из-за нехватки участия. Выход из этого правила один и
+        называется он профессионалом рынка недвижимости.</p>
+      <p lang="en">An owner who spends 900 hours on a rental passes the material participation
+        tests — and is still in a passive activity, because a rental is passive <em>by
+        definition</em>, not for want of participation. There is exactly one way out, and it is
+        called being a real estate professional.</p>
+    </div>
+
+    <h4><span lang="ru">Профессионал рынка недвижимости</span><span lang="en">Real estate professional</span></h4>
+
+    <p lang="ru">Аренда перестаёт быть пассивной по определению, если выполнены <strong>оба</strong>
+      условия сразу.</p>
+    <p lang="en">A rental stops being passive by definition if <strong>both</strong> conditions are
+      met.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Более половины всех личных услуг, оказанных вами за год, пришлось на сферы недвижимости, где вы существенно участвовали</span><span lang="en">More than half of all personal services you performed during the year were in real property trades or businesses in which you materially participated</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Более <span data-fig="rep_hours"></span> часов за год в этих же сферах</span><span lang="en">More than <span data-fig="rep_hours"></span> hours during the year in those same trades or businesses</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Услуги в качестве наёмного работника не считаются, если только вам не
+      принадлежит более 5% работодателя. При совместной декларации часы супруга к вашим
+      <strong>не складываются</strong>: порог должен взять кто-то один.</p>
+    <p lang="en">Services performed as an employee do not count unless you own more than 5% of the
+      employer. On a joint return a spouse’s hours <strong>are not added</strong> to yours: one
+      spouse must clear the threshold alone.</p>
+
+    <p lang="ru">И даже пройдя оба условия, вы получаете только снятие автоматической
+      пассивности. По каждому объекту всё ещё нужно существенное участие — либо выбор
+      объединить все объекты аренды в одну деятельность.</p>
+    <p lang="en">And even meeting both conditions only removes the automatic passive label. Each
+      property still needs material participation — or an election to group all the rental
+      interests into a single activity.</p>
+
+    <h4><span lang="ru">Особый вычет <span data-fig="pal_allowance"></span></span><span lang="en">The <span data-fig="pal_allowance"></span> special allowance</span></h4>
+
+    <p lang="ru">Для тех, кто профессионалом не является, закон оставляет отдушину: до
+      <span data-fig="pal_allowance"></span> убытка от аренды недвижимости можно вычесть против
+      непассивного дохода. Требуется <strong>активное участие</strong> — стандарт заметно мягче
+      существенного.</p>
+    <p lang="en">For those who are not professionals the statute leaves a gap: up to
+      <span data-fig="pal_allowance"></span> of rental real estate loss may offset non-passive
+      income. It requires <strong>active participation</strong>, a distinctly softer standard than
+      material participation.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Параметр</span><span lang="en">Item</span></th>
+          <th><span lang="ru">Правило</span><span lang="en">Rule</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Что такое активное участие</span><span lang="en">What active participation is</span></th>
+          <td><span lang="ru">Значимое и добросовестное участие в управленческих решениях: одобрение новых арендаторов, определение условий аренды, утверждение расходов</span><span lang="en">Participating in management decisions in a significant and bona fide sense: approving new tenants, setting rental terms, approving expenditures</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Минимальная доля</span><span lang="en">Minimum interest</span></th>
+          <td><span lang="ru">Не менее <strong>10% по стоимости</strong> всех долей в деятельности в течение всего периода, считая долю супруга</span><span lang="en">At least <strong>10% by value</strong> of all interests in the activity throughout the period, counting a spouse’s interest</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Ограниченный партнёр</span><span lang="en">A limited partner</span></th>
+          <td><span lang="ru">Активно участвующим не признаётся</span><span lang="en">Is not treated as actively participating</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Сокращение</span><span lang="en">Phaseout</span></th>
+          <td><span lang="ru">На 50% суммы, на которую MAGI превышает <span data-fig="pal_phaseout_start"></span></span><span lang="en">By 50% of the amount by which MAGI exceeds <span data-fig="pal_phaseout_start"></span></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Полное исчезновение</span><span lang="en">Fully gone</span></th>
+          <td><span lang="ru">При MAGI <span data-fig="pal_phaseout_end"></span> и выше</span><span lang="en">At MAGI of <span data-fig="pal_phaseout_end"></span> or more</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Раздельная подача супругов</span><span lang="en">Married filing separately</span></th>
+          <td><span lang="ru"><span data-fig="pal_allowance_mfs"></span> и только при раздельном проживании весь год. Жили вместе — вычет <strong>ноль</strong></span><span lang="en"><span data-fig="pal_allowance_mfs"></span>, and only if they lived apart all year. If they lived together the allowance is <strong>zero</strong></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 3-4. Сокращение особого вычета</span><span lang="en">Example 3-4. Phasing out the special allowance</span></div>
+      <div class="example__body">
+        <p lang="ru">Одинокий налогоплательщик активно участвует в сдаче квартиры. Убыток от
+          аренды за 2025 год — $31 000, модифицированный скорректированный валовой доход —
+          $128 000, пассивного дохода нет.</p>
+        <p lang="en">A single taxpayer actively participates in renting out a flat. The 2025 rental
+          loss is $31,000, modified adjusted gross income is $128,000, and there is no passive
+          income.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">MAGI</span><span lang="en">MAGI</span></td>
+              <td data-num="128000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение над порогом $100 000</span><span lang="en">Excess over the $100,000 threshold</span></td>
+              <td data-num="28000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Сокращение: 50% превышения</span><span lang="en">Reduction: 50% of the excess</span></td>
+              <td data-num="14000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Особый вычет: 25 000 − 14 000</span><span lang="en">Special allowance: 25,000 − 14,000</span></td>
+              <td data-num="11000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Приостановлено до будущих лет</span><span lang="en">Suspended to future years</span></td>
+              <td data-num="20000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Сокращение считается от <strong>превышения дохода</strong>, а не от самого
+          дохода и не от убытка. Приостановленные $20 000 не пропадают: они ждут пассивного
+          дохода или полного выбытия объекта.</p>
+        <p lang="en">The reduction is computed on the <strong>excess income</strong>, not on the
+          income itself and not on the loss. The suspended $20,000 is not lost: it waits for
+          passive income or for a complete disposition of the property.</p>
+      </div>
+    </div>
+
+    <h4><span lang="ru">Когда приостановленный убыток высвобождается</span><span lang="en">When a suspended loss is released</span></h4>
+
+    <p lang="ru">Приостановленные пассивные убытки переносятся вперёд без ограничения по сроку и
+      высвобождаются целиком, когда вы <strong>полностью</strong> выбываете из деятельности в
+      налогооблагаемой сделке с посторонним лицом. Три слова здесь несут всю нагрузку.</p>
+    <p lang="en">Suspended passive losses carry forward indefinitely and are released in full when
+      you dispose of your <strong>entire</strong> interest in the activity in a taxable transaction
+      to an unrelated party. Three words carry the whole weight.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Условие</span><span lang="en">Requirement</span></th>
+          <th><span lang="ru">Что нарушает</span><span lang="en">What breaks it</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Полностью</span><span lang="en">Entire</span></th>
+          <td><span lang="ru">Продажа одного из двух объектов внутри одной деятельности</span><span lang="en">Selling one of two properties inside a single activity</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налогооблагаемая сделка</span><span lang="en">Taxable transaction</span></th>
+          <td><span lang="ru">Дарение, обмен по §1031, передача в траст</span><span lang="en">A gift, a section 1031 exchange, a transfer to a trust</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Постороннему лицу</span><span lang="en">To an unrelated party</span></th>
+          <td><span lang="ru">Продажа сыну, брату, контролируемой компании</span><span lang="en">A sale to a son, a brother, a controlled company</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Подарить — значит потерять вычет</span><span lang="en">Give it away and the deduction goes with it</span></h3>
+      <p lang="ru">При дарении приостановленный убыток не высвобождается и одаряемому не
+        передаётся как убыток: он <strong>прибавляется к базису</strong> подаренного имущества.
+        Смерть владельца — тоже не высвобождение: убыток пропадает в части, не превышающей
+        повышения базиса до рыночной стоимости.</p>
+      <p lang="en">On a gift the suspended loss is not released and does not pass to the donee as
+        a loss: it is <strong>added to the basis</strong> of the gifted property. Death is not a
+        release either: the loss is lost to the extent of the step-up in basis.</p>
+    </div>
+
+    <h3><span lang="ru">Избыточный убыток бизнеса</span><span lang="en">Excess business loss</span></h3>
+
+    <p lang="ru">Последний фильтр. Он применяется к некорпоративным налогоплательщикам уже
+      <em>после</em> трёх предыдущих и ограничивает совокупный убыток от всех видов деятельности
+      порогом <span data-fig="ebl_single"></span>
+      (<span data-fig="ebl_mfj"></span> при совместной подаче). Превышение не пропадает — оно
+      переносится вперёд как чистый операционный убыток.</p>
+    <p lang="en">The last filter. It applies to noncorporate taxpayers <em>after</em> the other
+      three and caps the aggregate loss from all trades or businesses at
+      <span data-fig="ebl_single"></span> (<span data-fig="ebl_mfj"></span> on a joint return).
+      The excess is not lost — it carries forward as a net operating loss.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 3-5. Четыре фильтра подряд</span><span lang="en">Example 3-5. Four filters in sequence</span></div>
+      <div class="example__body">
+        <p lang="ru">Инвестор вложил в товарищество $40 000 наличными и получил долю; его базис
+          на начало года — $40 000. Из этой суммы $9 000 профинансированы безоборотным займом
+          под имущество самой деятельности. Доля убытка за 2025 год — $52 000. Инвестор
+          существенного участия не принимает, пассивного дохода нет.</p>
+        <p lang="en">An investor contributed $40,000 in cash for an interest; the beginning basis
+          is $40,000. Of that, $9,000 came from a nonrecourse loan secured by the activity’s own
+          property. The 2025 share of loss is $52,000. The investor does not materially
+          participate and has no passive income.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Доля убытка</span><span lang="en">Share of loss</span></td>
+              <td data-num="52000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Фильтр 1 — базис: пропускает</span><span lang="en">Filter 1 — basis: allows</span></td>
+              <td data-num="40000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Фильтр 2 — риск: минус безоборотный заём</span><span lang="en">Filter 2 — at-risk: less the nonrecourse loan</span></td>
+              <td data-num="31000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Фильтр 3 — пассивная деятельность: пассивного дохода нет</span><span lang="en">Filter 3 — passive: no passive income</span></td>
+              <td data-num="0"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычитается в 2025 году</span><span lang="en">Deductible in 2025</span></td>
+              <td data-num="0"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">До четвёртого фильтра дело не дошло: вычитать нечего. Убыток разошёлся по
+          трём разным очередям — $12 000 ждут увеличения базиса, $9 000 ждут появления суммы
+          под риском, $31 000 ждут пассивного дохода или выбытия. Все три остатка живут по своим
+          правилам и высвобождаются по-разному.</p>
+        <p lang="en">The fourth filter never came into play: there is nothing to deduct. The loss
+          has split into three separate queues — $12,000 waiting for more basis, $9,000 waiting
+          for an at-risk amount, $31,000 waiting for passive income or a disposition. Each of the
+          three balances lives by its own rules and is released differently.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Приостановлено — не значит потеряно</span><span lang="en">Suspended is not lost</span></h3>
+      <p lang="ru">Вопрос «какая сумма убытка пропадает» почти всегда имеет ответ «нисколько».
+        Убыток, не прошедший фильтр, переносится вперёд — и вариант ответа, где часть убытка
+        исчезает навсегда, обычно неверен. Исключения редки и их два: дарение объекта и смерть
+        владельца.</p>
+      <p lang="en">The question “how much of the loss is lost” almost always has the answer “none”.
+        A loss stopped by a filter carries forward — and the choice where part of it disappears
+        for good is usually wrong. The exceptions are rare and there are two: gifting the property
+        and the owner’s death.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Авансовая арендная плата — доход в год получения, независимо от покрываемого периода и от метода учёта</span><span lang="en">Advance rent is income in the year received, regardless of the period covered or the accounting method</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Обеспечительный депозит доходом не является; «депозит», зачитываемый в последний платёж, — является</span><span lang="en">A security deposit is not income; a “deposit” applied to the final rent payment is</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Расходы, оплаченные арендатором за вас, — ваш доход и одновременно ваш расход. Обе строки обязательны</span><span lang="en">Expenses the tenant pays for you are your income and your expense at once. Both lines are required</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Имущество и услуги вместо платы включаются по рыночной стоимости; согласованная цена считается рыночной</span><span lang="en">Property and services instead of rent go in at fair market value; an agreed price is treated as market</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Существенные услуги переводят аренду в Schedule C и в базу налога на самозанятость. Отопление, свет и вывоз мусора существенными услугами не считаются</span><span lang="en">Substantial services move a rental to Schedule C and into the self-employment base. Heat, light and trash collection are not substantial services</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Аренда не ради прибыли: доход в Schedule 1, строку 8j, расходы по аренде не вычитаются</span><span lang="en">A not-for-profit rental: income on Schedule 1, line 8j, and no deduction for rental expenses</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Неполученная арендная плата за время простоя расходом не является. Реальные расходы простоя при этом вычитаются</span><span lang="en">Rent lost during a vacancy is not an expense. The actual costs of the vacant period are deductible</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Расходы вычитаются с момента, когда объект <em>стал доступен</em> для сдачи, а не с приходом первого арендатора</span><span lang="en">Expenses run from the time the property is <em>available</em> for rent, not from the first tenant</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Стоимость собственного труда владельца не вычитается: она не была включена в доход</span><span lang="en">The owner’s own labour is not deductible: it was never taken into income</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Одна и та же работа — ремонт или улучшение в зависимости от того, входит ли она в более крупный проект</span><span lang="en">The same work is a repair or an improvement depending on whether it belongs to a larger project</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Земля не амортизируется. Цена покупки делится между землёй и строением</span><span lang="en">Land is not depreciable. The purchase price is split between land and building</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">При переводе жилья в аренду база — <strong>меньшая</strong> из скорректированного базиса и рыночной стоимости на дату перевода</span><span lang="en">On converting a home to rental use the basis is the <strong>lesser</strong> of adjusted basis and fair market value at conversion</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Базис уменьшается на амортизацию, <strong>разрешённую или взятую</strong>. Не заявлять амортизацию — потерять вычет, а не сохранить базис</span><span lang="en">Basis is reduced by depreciation <strong>allowed or allowable</strong>. Skipping it loses the deduction without preserving basis</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Порог «как дом» — <strong>большая</strong> из 14 дней и 10% дней сдачи по рыночной цене. Не меньшая, не сумма, не 10% от 365</span><span lang="en">The “as a home” threshold is the <strong>greater</strong> of 14 days and 10% of days rented at fair price. Not the lesser, not the sum, not 10% of 365</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">День, целиком отданный ремонту, личным пользованием не считается — даже если семья в этот день отдыхала</span><span lang="en">A day spent substantially full time on repairs is not personal use — even if the family used the place that day</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">День, сданный по рыночной цене и одновременно использованный лично, идёт в личное пользование и <em>вычитается</em> из дней сдачи</span><span lang="en">A day rented at fair price that is also used personally counts as personal use and is <em>removed</em> from rental days</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">Родственник платит рыночную цену и живёт как в основном доме — это не личное пользование. Ниже рыночной — личное</span><span lang="en">A relative paying fair rent and using it as a main home is not personal use. Below market, it is</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Сдача менее 15 дней жилья, используемого как дом: доход не включается вовсе, расходы по аренде не вычитаются</span><span lang="en">Renting a home-use dwelling for fewer than 15 days: the income is excluded entirely and rental expenses are not deducted</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Жильё, используемое как дом, <strong>не подчиняется правилам пассивной деятельности</strong>: работает предел §280A по размеру дохода</span><span lang="en">A dwelling used as a home is <strong>outside the passive activity rules</strong>: the section 280A income cap applies instead</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Очерёдность вычета в режиме «как дом»: проценты и налоги → операционные расходы → амортизация</span><span lang="en">The order of deductions in the “as a home” regime: interest and taxes → operating expenses → depreciation</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Четыре лимита применяются строго по порядку: базис → риск → пассивная деятельность → избыточный убыток бизнеса</span><span lang="en">The four limits apply in strict order: basis → at-risk → passive activity → excess business loss</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Безоборотный заём под имущество самой деятельности под риском не находится — кроме квалифицированного финансирования недвижимости</span><span lang="en">A nonrecourse loan secured by the activity’s own property is not at risk — except qualified nonrecourse financing of real property</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Аренда пассивна <em>по определению</em>. Даже 900 часов участия этого не меняют</span><span lang="en">A rental is passive <em>by definition</em>. Even 900 hours of participation does not change it</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Достаточно <strong>любого одного</strong> из семи тестов существенного участия. Тест 7 недоступен при 100 часах и менее</span><span lang="en"><strong>Any one</strong> of the seven material participation tests suffices. Test 7 is unavailable at 100 hours or less</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Профессионал рынка недвижимости: более 750 часов <strong>и</strong> более половины всех личных услуг. Часы супруга не складываются</span><span lang="en">Real estate professional: more than 750 hours <strong>and</strong> more than half of all personal services. A spouse’s hours are not added</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Особый вычет требует <strong>активного</strong>, а не существенного участия, и доли не менее 10% по стоимости</span><span lang="en">The special allowance requires <strong>active</strong>, not material, participation and at least a 10% interest by value</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Сокращение вычета считается как 50% <strong>превышения</strong> MAGI над $100 000, а не от MAGI и не от убытка</span><span lang="en">The phaseout is 50% of the <strong>excess</strong> of MAGI over $100,000, not of MAGI and not of the loss</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">При раздельной подаче супругов вычет равен нулю, если они жили вместе хотя бы часть года</span><span lang="en">On separate returns the allowance is zero if the spouses lived together at any time during the year</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Приостановленный убыток высвобождается только при <strong>полном</strong> выбытии в <strong>налогооблагаемой</strong> сделке с <strong>посторонним</strong> лицом</span><span lang="en">A suspended loss is released only on a <strong>complete</strong> disposition in a <strong>taxable</strong> transaction to an <strong>unrelated</strong> party</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">При дарении приостановленный убыток прибавляется к базису имущества, а не переходит к одаряемому как убыток</span><span lang="en">On a gift the suspended loss is added to the property’s basis rather than passing to the donee as a loss</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. В декабре 2025 года арендодатель получил арендную плату за декабрь $1 500, за январь 2026 года $1 500 и возвращаемый депозит $1 500. Сколько войдёт в доход 2025 года?</span><span lang="en">1. In December 2025 a landlord received December rent of $1,500, January 2026 rent of $1,500, and a refundable deposit of $1,500. How much enters 2025 income?</span></summary>
+      <div>
+        <p lang="ru">$3 000. Авансовая плата за январь включается в год получения. Возвращаемый
+          депозит доходом не является до года, в котором его удержат.</p>
+        <p lang="en">$3,000. The advance January rent is included in the year received. The
+          refundable deposit is not income until the year it is kept.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. Владелец сдаёт комнаты в доме и ежедневно убирает их, меняет бельё и подаёт завтрак. Какую форму он заполняет?</span><span lang="en">2. An owner rents out rooms, cleans them daily, changes the linen and serves breakfast. Which form is filed?</span></summary>
+      <div>
+        <p lang="ru"><strong>Schedule C</strong>: услуги оказываются для удобства постояльцев и
+          признаются существенными. Доход попадёт и в базу налога на самозанятость.</p>
+        <p lang="en"><strong>Schedule C</strong>: the services are primarily for the occupants’
+          convenience and count as substantial. The income also enters the self-employment tax
+          base.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Квартира пустовала четыре месяца по $1 400. За это время уплачены страховка $600 и налог на имущество $900. Что вычитается?</span><span lang="en">3. A flat stood vacant for four months at $1,400. During that time $600 of insurance and $900 of property tax were paid. What is deductible?</span></summary>
+      <div>
+        <p lang="ru">$1 500 плюс амортизация за этот период. Неполученные $5 600 расходом не
+          являются: их никогда не было в доходе.</p>
+        <p lang="en">$1,500 plus depreciation for the period. The $5,600 of lost rent is not an
+          expense: it was never in income.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Дом куплен за $260 000, из них земля $52 000. Через год заменена система отопления за $14 000 и прочищены водостоки за $400. Что капитализируется?</span><span lang="en">4. A house cost $260,000, of which $52,000 is land. A year later the heating system was replaced for $14,000 and the gutters cleaned for $400. What is capitalized?</span></summary>
+      <div>
+        <p lang="ru">$14 000: замена существенной части объекта — восстановление. Прочистка
+          водостоков на $400 — текущий ремонт, вычитается целиком. Земля $52 000 не
+          амортизируется.</p>
+        <p lang="en">$14,000: replacing a major component is a restoration. The $400 of gutter
+          cleaning is a current repair, deducted in full. The $52,000 of land is not
+          depreciated.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Дача сдавалась по рыночной цене 150 дней, владелец пользовался ею 18 дней. Считается ли она использованной как дом?</span><span lang="en">5. A holiday home was rented at fair price for 150 days and used personally for 18 days. Is it used as a home?</span></summary>
+      <div>
+        <p lang="ru">Да. Порог — большая из двух величин: 14 дней и 10% от 150 дней сдачи,
+          то есть <strong>15 дней</strong>. Личное пользование 18 дней его превышает, поэтому
+          жильё использовано как дом и расходы ограничены доходом от аренды. Если бы порогом
+          ошибочно взяли 14 дней, ответ получился бы тот же — но при 250 днях сдачи порог стал
+          бы 25, и те же 18 дней дали бы противоположный вывод.</p>
+        <p lang="en">Yes. The threshold is the greater of two figures: 14 days and 10% of the
+          150 rental days, that is <strong>15 days</strong>. Personal use of 18 days exceeds it,
+          so the dwelling is used as a home and expenses are capped at rental income. Taking 14
+          days as the threshold would give the same answer here — but at 250 rental days the
+          threshold becomes 25, and the same 18 days would give the opposite result.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. Владелец прожил в своей даче 20 дней, из них 6 целиком чинил крышу. Дом сдавался 100 дней по рыночной цене. Как дом или нет?</span><span lang="en">6. An owner stayed at a holiday home for 20 days, six of them spent entirely on repairing the roof. It was rented at fair price for 100 days. Used as a home or not?</span></summary>
+      <div>
+        <p lang="ru">Личное пользование — 14 дней (20 − 6 дней ремонта). Порог — большая из 14 и
+          10% от 100, то есть 14. Личное пользование должно <strong>превысить</strong> порог, а
+          14 его не превышает. Жильё домом <strong>не считается</strong>.</p>
+        <p lang="en">Personal use is 14 days (20 − 6 repair days). The threshold is the greater of
+          14 and 10% of 100, that is 14. Personal use must <strong>exceed</strong> the threshold,
+          and 14 does not. The dwelling is <strong>not</strong> used as a home.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">7. Владелец сдал квартиру на 12 дней во время крупного спортивного события за $9 000, остальное время жил в ней сам. Что отражается в декларации?</span><span lang="en">7. An owner rented out a flat for 12 days during a major sporting event for $9,000 and lived there the rest of the year. What goes on the return?</span></summary>
+      <div>
+        <p lang="ru">Ничего по аренде. Жильё используется как дом и сдано менее 15 дней: $9 000
+          в доход <strong>не включаются</strong>, расходы по аренде не вычитаются. Проценты по
+          ипотеке и налоги на недвижимость идут в Schedule A по обычным правилам.</p>
+        <p lang="en">Nothing rental. The dwelling is used as a home and was rented fewer than 15
+          days: the $9,000 is <strong>excluded</strong> from income and no rental expenses are
+          deducted. Mortgage interest and property taxes go on Schedule A as usual.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">8. Жильё используется как дом. Доход от аренды $8 000; приходящаяся на аренду часть процентов и налогов $5 000, операционных расходов $4 000, амортизации $3 000. Что вычитается?</span><span lang="en">8. A dwelling is used as a home. Rental income is $8,000; the rental share of interest and taxes is $5,000, operating expenses $4,000, depreciation $3,000. What is deductible?</span></summary>
+      <div>
+        <p lang="ru">$5 000 процентов и налогов, затем $3 000 операционных расходов — доход
+          исчерпан. Оставшиеся $1 000 операционных расходов и все $3 000 амортизации
+          переносятся на следующий год. Убытка не возникает.</p>
+        <p lang="en">$5,000 of interest and taxes, then $3,000 of operating expenses — the income
+          is used up. The remaining $1,000 of operating expenses and all $3,000 of depreciation
+          carry forward. No loss arises.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">9. Налогоплательщик отдал сдаче квартиры 1 100 часов за год, но работает штатным инженером на полной ставке. Пассивна ли аренда?</span><span lang="en">9. A taxpayer spent 1,100 hours on a rental but works full time as a salaried engineer. Is the rental passive?</span></summary>
+      <div>
+        <p lang="ru">Да, пассивна. Порог 750 часов взят, но второе условие не выполнено: более
+          половины <em>всех</em> личных услуг за год должно приходиться на сферы недвижимости, а
+          основная работа их перевешивает. Остаётся особый вычет при активном участии.</p>
+        <p lang="en">Yes, passive. The 750-hour threshold is met, but the second condition is not:
+          more than half of <em>all</em> personal services for the year must be in real property
+          trades or businesses, and the day job outweighs them. The special allowance for active
+          participation remains available.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">10. Убыток от аренды $18 000, активное участие есть, MAGI $138 000, пассивного дохода нет. Сколько вычитается?</span><span lang="en">10. A rental loss of $18,000, active participation, MAGI of $138,000, no passive income. How much is deductible?</span></summary>
+      <div>
+        <p lang="ru"><strong>$6 000</strong>. Превышение над $100 000 составляет $38 000,
+          сокращение — половина, то есть $19 000. Особый вычет $25 000 − $19 000 = $6 000.
+          Оставшиеся $12 000 приостанавливаются.</p>
+        <p lang="en"><strong>$6,000</strong>. The excess over $100,000 is $38,000 and the
+          reduction is half of it, $19,000. The allowance is $25,000 − $19,000 = $6,000. The
+          remaining $12,000 is suspended.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">11. Супруги подают раздельные декларации и весь год жили вместе. У жены убыток от аренды с активным участием $14 000, её MAGI $40 000. Сколько она вычтет?</span><span lang="en">11. Spouses file separately and lived together all year. The wife has a $14,000 rental loss with active participation and MAGI of $40,000. How much may she deduct?</span></summary>
+      <div>
+        <p lang="ru"><strong>Ноль.</strong> Раздельная подача даёт $12 500 только при раздельном
+          проживании в течение всего года. Жили вместе — особый вычет равен нулю независимо от
+          дохода. Весь убыток приостанавливается.</p>
+        <p lang="en"><strong>Zero.</strong> Separate filers get $12,500 only if they lived apart
+          at all times during the year. Having lived together, the allowance is zero whatever the
+          income. The whole loss is suspended.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">12. Инвестор вложил $25 000, из них $7 000 — безоборотный заём под имущество деятельности. Доля убытка $30 000. Сколько пройдёт первые два фильтра?</span><span lang="en">12. An investor put in $25,000, of which $7,000 came from a nonrecourse loan secured by the activity’s property. The share of loss is $30,000. How much passes the first two filters?</span></summary>
+      <div>
+        <p lang="ru">$18 000. Базис пропускает $25 000, лимит риска снимает безоборотные $7 000.
+          Оставшиеся $18 000 идут на третий фильтр — пассивные правила. $5 000 ждут увеличения
+          базиса, $7 000 — появления суммы под риском.</p>
+        <p lang="en">$18,000. Basis allows $25,000 and the at-risk limit removes the $7,000 of
+          nonrecourse debt. The remaining $18,000 goes to the third filter, the passive rules.
+          $5,000 waits for more basis and $7,000 for an at-risk amount.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">13. У налогоплательщика два объекта в одной пассивной деятельности и приостановленный убыток $40 000. Он продаёт один объект постороннему лицу с прибылью. Высвобождается ли убыток?</span><span lang="en">13. A taxpayer has two properties in one passive activity and $40,000 of suspended losses. One property is sold to an unrelated buyer at a gain. Are the losses released?</span></summary>
+      <div>
+        <p lang="ru">Нет, не полностью. Требуется выбытие <strong>всей</strong> доли в
+          деятельности. Прибыль от продажи является пассивным доходом и погасит часть
+          приостановленного убытка, но остаток продолжит ждать.</p>
+        <p lang="en">No, not in full. Disposition of the <strong>entire</strong> interest in the
+          activity is required. The gain is passive income and will absorb part of the suspended
+          loss, but the balance keeps waiting.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">14. Владелец дарит сыну объект аренды с приостановленным убытком $22 000. Что происходит с убытком?</span><span lang="en">14. An owner gifts a rental property with $22,000 of suspended losses to a son. What happens to the losses?</span></summary>
+      <div>
+        <p lang="ru">Убыток не высвобождается и сыну как убыток не переходит: он
+          <strong>прибавляется к базису</strong> подаренного имущества. Дарение не является ни
+          налогооблагаемой сделкой, ни сделкой с посторонним лицом — нарушены сразу два
+          условия из трёх.</p>
+        <p lang="en">The losses are not released and do not pass to the son as losses: they are
+          <strong>added to the basis</strong> of the gifted property. A gift is neither a taxable
+          transaction nor a transfer to an unrelated party — two of the three conditions fail at
+          once.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div id="quiz-body" data-quiz="su03"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 527, 925, 946 и 334, инструкциями к Schedule E
+        и формам 8582, 6198, 461 и 4562, а также §§280A, 465, 469 и 461(l) Кодекса. Данные
+        проверены 4 сентября 2026 года и относятся к налоговому периоду 2025. Не является
+        налоговой консультацией.</p>
+      <p lang="en">Check against IRS Publications 527, 925, 946 and 334, the instructions to
+        Schedule E and Forms 8582, 6198, 461 and 4562, and Code sections 280A, 465, 469 and
+        461(l). Verified September 4, 2026 for the 2025 tax year. Not tax advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+window.QUIZZES = window.QUIZZES || {};
+window.QUIZZES.su03 = [
+  {
+    ru: "1 ноября 2025 года подписан трёхлетний договор аренды. Арендодатель на методе начисления получил при подписании плату за ноябрь и декабрь 2025 года $3 400 и плату за последний месяц срока — октябрь 2028 года — $1 700. Какая сумма войдёт в доход 2025 года?",
+    en: "On November 1, 2025, a three-year lease was signed. The accrual-method landlord received $3,400 for November and December 2025 plus $1,700 for the final month of the term, October 2028. How much enters 2025 income?",
+    opts: [
+      { k: "A", ru: "$3 400", en: "$3,400" },
+      { k: "B", ru: "$5 100", en: "$5,100" },
+      { k: "C", ru: "$1 700", en: "$1,700" },
+      { k: "D", ru: "$3 457 — плата за два месяца плюс доля последнего месяца", en: "$3,457 — two months plus a prorated share of the final month" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это только текущая плата. Авансовая плата за последний месяц включается сразу.", en: "That is only the current rent. Advance rent for the final month is included at once." },
+      B: { ru: "Верно. Авансовая арендная плата включается в доход в год получения независимо от покрываемого периода и независимо от метода учёта. Метод начисления здесь ничего не меняет.", en: "Correct. Advance rent is included in the year received regardless of the period it covers and regardless of the accounting method. Accrual accounting changes nothing here." },
+      C: { ru: "Это только аванс, без платы за ноябрь и декабрь.", en: "That is the advance alone, without the November and December rent." },
+      D: { ru: "Аванс не растягивается по сроку договора. Он включается целиком в год получения.", en: "Advance rent is not spread over the term. It goes in entirely in the year received." }
+    }
+  },
+  {
+    ru: "Арендатор внёс $2 000, которые по договору возвращаются в конце срока при отсутствии повреждений, и ещё $2 000, которые по договору зачитываются в счёт платы за последний месяц. Что включается в доход в год получения?",
+    en: "A tenant paid $2,000 refundable at the end of the term if there is no damage, and another $2,000 that the lease applies to the final month’s rent. What is included in income in the year received?",
+    opts: [
+      { k: "A", ru: "$4 000: обе суммы получены", en: "$4,000: both amounts were received" },
+      { k: "B", ru: "$2 000 — только зачитываемая в последний месяц", en: "$2,000 — only the amount applied to the final month" },
+      { k: "C", ru: "$2 000 — только возвращаемая", en: "$2,000 — only the refundable amount" },
+      { k: "D", ru: "Ноль: обе суммы называются депозитом", en: "Zero: both are called deposits" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Возвращаемый депозит доходом не является: он не ваш, пока вы его не удержали.", en: "A refundable deposit is not income: it is not yours until you keep it." },
+      B: { ru: "Верно. Сумма, идущая в счёт последнего платежа, — авансовая арендная плата и доход сразу. Возвращаемый депозит станет доходом только в том году, когда вы его удержите.", en: "Correct. An amount applied to the final rent payment is advance rent and income at once. The refundable deposit becomes income only in the year you keep it." },
+      C: { ru: "Перепутаны роли: доход даёт как раз не возвращаемая, а зачитываемая сумма.", en: "The roles are reversed: it is the applied amount, not the refundable one, that is income." },
+      D: { ru: "Название в договоре значения не имеет; решает судьба денег.", en: "The label in the lease is irrelevant; what matters is what happens to the money." }
+    }
+  },
+  {
+    ru: "По договору арендатор платит счета за воду напрямую поставщику и вычитает их из арендной платы. За год он уплатил $1 150 и внёс арендодателю $16 850 вместо $18 000. Что отражает арендодатель?",
+    en: "Under the lease the tenant pays the water bills directly and deducts them from the rent. Over the year the tenant paid $1,150 and remitted $16,850 instead of $18,000. What does the landlord report?",
+    opts: [
+      { k: "A", ru: "Доход $16 850, расходов нет", en: "$16,850 of income and no expense" },
+      { k: "B", ru: "Доход $18 000 и расход $1 150", en: "$18,000 of income and $1,150 of expense" },
+      { k: "C", ru: "Доход $18 000, расходов нет", en: "$18,000 of income and no expense" },
+      { k: "D", ru: "Доход $16 850 и расход $1 150", en: "$16,850 of income and $1,150 of expense" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это учёт по фактически полученным деньгам. Оплата арендатором ваших счетов — тоже ваш доход.", en: "That records only the cash received. The tenant’s payment of your bills is your income too." },
+      B: { ru: "Верно. Расходы, оплаченные арендатором за вас, включаются в доход, и та же сумма вычитается как расход, если она вычитаема. Итог по налогу совпадает с вариантом A, но обе строки должны быть в декларации.", en: "Correct. Expenses the tenant pays for you are income, and the same amount is deducted if it is a deductible expense. The tax result equals choice A, but both lines belong on the return." },
+      C: { ru: "Половина верна: доход действительно $18 000. Но расход на воду вычитается.", en: "Half right: the income is indeed $18,000. But the water expense is deductible." },
+      D: { ru: "Здесь $1 150 вычтены дважды — из дохода и как расход.", en: "Here the $1,150 is subtracted twice — from income and again as an expense." }
+    }
+  },
+  {
+    ru: "Арендатор-электрик перевёл проводку в квартире вместо платы за два месяца. Обычная плата — $1 450 в месяц; стороны согласовали стоимость работ в $2 900, и это соответствует рыночным расценкам. Что отражает арендодатель?",
+    en: "A tenant who is an electrician rewired the flat instead of paying two months’ rent. The normal rent is $1,450 a month; the parties agreed the work was worth $2,900, which matches market rates. What does the landlord report?",
+    opts: [
+      { k: "A", ru: "Ничего: денег не поступало", en: "Nothing: no money changed hands" },
+      { k: "B", ru: "Доход $2 900; расход на ремонт не возникает", en: "$2,900 of income; no repair expense arises" },
+      { k: "C", ru: "Доход $2 900 и расход $2 900", en: "$2,900 of income and $2,900 of expense" },
+      { k: "D", ru: "Доход $2 900 и капитализируемое улучшение $2 900", en: "$2,900 of income and a $2,900 capitalized improvement" }
+    ],
+    correct: "D",
+    why: {
+      A: { ru: "Услуги вместо платы включаются в доход по рыночной стоимости.", en: "Services received instead of rent are income at fair market value." },
+      B: { ru: "Доход указан верно, но полученные работы — это ещё и затраты на объект, которые надо куда-то отнести.", en: "The income is right, but the work received is also an outlay on the property that has to go somewhere." },
+      C: { ru: "Так было бы при обычном ремонте. Полная замена проводки — восстановление существенной части объекта.", en: "That would be the answer for an ordinary repair. Rewiring the whole flat replaces a major component." },
+      D: { ru: "Верно. Доход равен рыночной стоимости услуг, а сами работы капитализируются как восстановление и возмещаются через амортизацию, а не вычитаются сразу.", en: "Correct. The income equals the fair market value of the services, while the work itself is capitalized as a restoration and recovered through depreciation rather than deducted at once." }
+    }
+  },
+  {
+    ru: "Арендатор заплатил $5 500 за право досрочно расторгнуть договор и съехал. Как арендодатель отражает эту сумму?",
+    en: "A tenant paid $5,500 to cancel the lease early and moved out. How does the landlord report it?",
+    opts: [
+      { k: "A", ru: "Как арендный доход в год получения", en: "As rental income in the year received" },
+      { k: "B", ru: "Как прирост капитала", en: "As a capital gain" },
+      { k: "C", ru: "Как возврат ранее вычтенных расходов", en: "As a recovery of previously deducted expenses" },
+      { k: "D", ru: "Растягивается на оставшийся срок договора", en: "Spread over the remaining term of the lease" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Плата за расторжение договора — обычный арендный доход в год получения.", en: "Correct. A payment to cancel a lease is ordinary rental income in the year received." },
+      B: { ru: "Капитального актива арендодатель не продавал: договор прекращён, а не отчуждён.", en: "The landlord sold no capital asset: the lease was terminated, not disposed of." },
+      C: { ru: "Никаких расходов эта сумма не возвращает.", en: "The payment recovers no previously deducted expense." },
+      D: { ru: "Растягивание применялось бы к авансу за будущие периоды по методу начисления, но и там правило иное. Плата за расторжение включается сразу.", en: "Spreading would suit prepaid future rent under an accrual method, and even there the rule differs. A cancellation payment is included at once." }
+    }
+  },
+  {
+    ru: "Владелец сдаёт четыре квартиры, обеспечивает отопление, освещение, вывоз мусора и убирает лестничные клетки. Никаких услуг внутри квартир он не оказывает. Где отражается результат?",
+    en: "An owner rents out four flats and provides heat, light, trash collection and cleaning of the stairwells. No services are provided inside the flats. Where is the result reported?",
+    opts: [
+      { k: "A", ru: "Schedule C: услуг много и они регулярны", en: "Schedule C: the services are numerous and regular" },
+      { k: "B", ru: "Schedule E, при этом понадобится более одного бланка", en: "Schedule E, and more than one copy of it will be needed" },
+      { k: "C", ru: "Schedule E, одного бланка достаточно", en: "Schedule E, and one copy is enough" },
+      { k: "D", ru: "Schedule 1, строка 8j", en: "Schedule 1, line 8j" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Отопление, свет, вывоз мусора и уборка мест общего пользования существенными услугами не считаются.", en: "Heat, light, trash collection and cleaning of common areas are not substantial services." },
+      B: { ru: "Верно. Услуги не существенные, значит Schedule E. Один бланк вмещает три объекта, а их четыре — нужен второй.", en: "Correct. The services are not substantial, so Schedule E applies. One copy holds three properties and there are four, so a second copy is required." },
+      C: { ru: "Форма выбрана верно, но на одном бланке помещаются только три объекта.", en: "The right form, but a single copy holds only three properties." },
+      D: { ru: "Строка 8j предназначена для деятельности, ведущейся не ради прибыли.", en: "Line 8j is for an activity not engaged in for profit." }
+    }
+  },
+  {
+    ru: "Владелец сдаёт домик соседям за символическую плату, много лет получая меньше, чем тратит, и прибыли не ищет. Доход за 2025 год $3 200, расходы $7 400. Как это отражается?",
+    en: "An owner rents a cottage to neighbours for a token amount, has spent more than it brings in for years, and seeks no profit. Income for 2025 is $3,200 and expenses $7,400. How is it reported?",
+    opts: [
+      { k: "A", ru: "Убыток $4 200 в Schedule E", en: "A $4,200 loss on Schedule E" },
+      { k: "B", ru: "Доход $3 200 и расходы $3 200 в Schedule E", en: "$3,200 of income and $3,200 of expenses on Schedule E" },
+      { k: "C", ru: "Доход $3 200 в Schedule 1, строке 8j; расходы по аренде не вычитаются", en: "$3,200 on Schedule 1, line 8j; the rental expenses are not deductible" },
+      { k: "D", ru: "Не отражается: плата символическая", en: "Not reported: the rent is only nominal" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Убыток даёт только деятельность, ведущаяся ради прибыли.", en: "Only an activity engaged in for profit produces a loss." },
+      B: { ru: "Ограничение вычета размером дохода — это правило §280A для жилья, используемого как дом, а не для аренды не ради прибыли.", en: "Capping deductions at the income is the section 280A rule for a dwelling used as a home, not the not-for-profit rule." },
+      C: { ru: "Верно. Аренда не ради прибыли отражается так же, как хобби: доход в Schedule 1, строку 8j, расходы по аренде не вычитаются. Проценты и налоги можно взять в Schedule A при детализации.", en: "Correct. A not-for-profit rental follows the hobby pattern: income on Schedule 1, line 8j, and no deduction for rental expenses. Interest and taxes may go on Schedule A if the taxpayer itemizes." },
+      D: { ru: "Доход остаётся доходом независимо от размера платы.", en: "Income remains income whatever the size of the rent." }
+    }
+  },
+  {
+    ru: "Договор аренды даёт арендатору право выкупить объект. В июне арендатор реализовал это право. Платежи за январь—май составили $7 500, за июнь—декабрь — $10 500. Как отражаются платежи после даты продажи?",
+    en: "A lease gives the tenant an option to buy, and in June the tenant exercised it. Payments for January through May were $7,500 and for June through December $10,500. How are the post-sale payments treated?",
+    opts: [
+      { k: "A", ru: "Как арендный доход: договор так и назывался арендой", en: "As rental income: the agreement was called a lease" },
+      { k: "B", ru: "Как часть цены продажи", en: "As part of the selling price" },
+      { k: "C", ru: "Как возврат капитала, не облагаемый вовсе", en: "As a tax-free return of capital" },
+      { k: "D", ru: "Как процентный доход", en: "As interest income" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так отражаются платежи <em>до</em> даты продажи — здесь это $7 500.", en: "That is the treatment of payments <em>before</em> the sale date — here, the $7,500." },
+      B: { ru: "Верно. При реализации права выкупа платежи за период после даты продажи входят в цену продажи, а не в арендный доход.", en: "Correct. When the option is exercised, payments for the period after the sale date become part of the selling price rather than rent." },
+      C: { ru: "Возврат капитала определяется при расчёте прибыли от продажи, а не заменяет её.", en: "Return of capital is worked out inside the gain computation; it does not replace it." },
+      D: { ru: "Процентов договор аренды с правом выкупа сам по себе не порождает.", en: "A lease with an option to buy does not by itself generate interest." }
+    }
+  },
+  {
+    ru: "Квартира была свободна с марта по июнь: прежний арендатор съехал, новый въехал в июле. Всё это время объект предлагался к сдаче за $1 600 в месяц. За период простоя уплачены коммунальные $520, страховка $340, налог на имущество $780. Что вычитается за эти четыре месяца?",
+    en: "A flat stood empty from March through June: the old tenant left and a new one moved in in July. Throughout, it was offered for rent at $1,600 a month. During the vacancy $520 of utilities, $340 of insurance and $780 of property tax were paid. What is deductible for those four months?",
+    opts: [
+      { k: "A", ru: "Ничего: дохода за период не было", en: "Nothing: there was no income for the period" },
+      { k: "B", ru: "$1 640 плюс амортизация за период", en: "$1,640 plus depreciation for the period" },
+      { k: "C", ru: "$8 040: расходы плюс недополученная плата", en: "$8,040: the expenses plus the lost rent" },
+      { k: "D", ru: "$6 400 недополученной платы", en: "$6,400 of lost rent" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Расходы периода простоя вычитаются, пока объект предлагается к сдаче. Дохода за период для этого не требуется.", en: "Expenses of a vacant period are deductible while the property is held out for rent. Income for the period is not required." },
+      B: { ru: "Верно. $520 + $340 + $780 = $1 640, и амортизация за время простоя тоже продолжает начисляться.", en: "Correct. $520 + $340 + $780 = $1,640, and depreciation keeps running through the vacancy." },
+      C: { ru: "Недополученная плата к расходам не добавляется: её никогда не было в доходе.", en: "The lost rent is not added to expenses: it was never in income." },
+      D: { ru: "Неполученный доход расходом не является ни при каком методе учёта.", en: "Income never received is not an expense under any accounting method." }
+    }
+  },
+  {
+    ru: "Купленный в марте дом требовал ремонта. С марта по июль владелец красил стены и чинил полы, потратив $6 300. В августе объект был выставлен в аренду, а первый арендатор въехал в октябре. Расходы на объявления в августе и сентябре — $400. Что вычитается в 2025 году?",
+    en: "A house bought in March needed work. From March to July the owner painted and repaired floors, spending $6,300. In August it was listed for rent and the first tenant moved in in October. Advertising in August and September cost $400. What is deductible in 2025?",
+    opts: [
+      { k: "A", ru: "$6 700", en: "$6,700" },
+      { k: "B", ru: "$400", en: "$400" },
+      { k: "C", ru: "Ничего до октября", en: "Nothing until October" },
+      { k: "D", ru: "$6 300", en: "$6,300" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Работы до ввода объекта в эксплуатацию приводят его в пригодное состояние и входят в базу, а не вычитаются.", en: "Work done before the property is placed in service readies it for use and goes into basis rather than being deducted." },
+      B: { ru: "Верно. Расходы вычитаются с момента, когда объект стал доступен для сдачи, то есть с августа. $6 300 подготовительных работ капитализируются и амортизируются.", en: "Correct. Expenses run from the time the property is available for rent, that is from August. The $6,300 of readying costs is capitalized and depreciated." },
+      C: { ru: "Ждать первого арендатора не нужно: важна доступность объекта для сдачи, а не факт заселения.", en: "There is no need to wait for the first tenant: what matters is availability, not occupancy." },
+      D: { ru: "Это как раз та часть, которая вычету не подлежит.", en: "That is precisely the part that cannot be deducted." }
+    }
+  },
+  {
+    ru: "В сдаваемом доме заменены все двадцать окон за $27 000. Прежние окна были исправны, новые — энергосберегающие. Как учитывается расход?",
+    en: "All twenty windows in a rental house were replaced for $27,000. The old windows worked; the new ones are energy-efficient. How is the cost treated?",
+    opts: [
+      { k: "A", ru: "Вычитается целиком как ремонт", en: "Deducted in full as a repair" },
+      { k: "B", ru: "Капитализируется: заменена существенная часть объекта", en: "Capitalized: a major component was replaced" },
+      { k: "C", ru: "Вычитается целиком, поскольку окна работали и до замены", en: "Deducted in full, since the windows worked before the replacement" },
+      { k: "D", ru: "Делится пополам между ремонтом и улучшением", en: "Split evenly between repair and improvement" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Замена одного разбитого стекла была бы ремонтом. Замена всех окон — другой масштаб.", en: "Replacing one broken pane would be a repair. Replacing every window is a different scale." },
+      B: { ru: "Верно. Замена существенной части объекта — восстановление, расход капитализируется и возмещается через амортизацию. Улучшение характеристик добавляет к этому ещё один признак.", en: "Correct. Replacing a major component is a restoration: the cost is capitalized and recovered through depreciation. The improved performance adds a second ground for the same conclusion." },
+      C: { ru: "Исправность прежних окон не спасает: восстановление возникает и при замене работоспособной существенной части.", en: "The old windows working does not help: a restoration arises even when a functioning major component is replaced." },
+      D: { ru: "Такого деления правила не предусматривают.", en: "The rules provide for no such split." }
+    }
+  },
+  {
+    ru: "Владелец сам, без подрядчиков, отремонтировал крышу сдаваемого дома. Работа заняла три недели; расценки подрядчиков за такую работу — $9 000. Материалы обошлись в $2 100. Что вычитается?",
+    en: "An owner repaired the roof of a rental house personally, without contractors. The job took three weeks; contractors would have charged $9,000. Materials cost $2,100. What is deductible?",
+    opts: [
+      { k: "A", ru: "$11 100", en: "$11,100" },
+      { k: "B", ru: "$9 000", en: "$9,000" },
+      { k: "C", ru: "$2 100", en: "$2,100" },
+      { k: "D", ru: "Ничего: работа выполнена собственными силами", en: "Nothing: the work was done in-house" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Сюда включена стоимость собственного труда, которая не вычитается.", en: "This includes the value of the owner’s own labour, which is not deductible." },
+      B: { ru: "Стоимость вашего собственного труда в вычет не входит: она никогда не была включена в доход.", en: "The value of your own labour is not deductible: it was never taken into income." },
+      C: { ru: "Верно. Вычитаются только реально понесённые расходы — материалы. Ремонт крыши без замены самой кровли остаётся текущим ремонтом.", en: "Correct. Only costs actually incurred are deductible — the materials. Repairing a roof without replacing the covering itself remains a current repair." },
+      D: { ru: "Материалы куплены за деньги и вычитаются.", en: "The materials were bought with money and are deductible." }
+    }
+  },
+  {
+    ru: "Квартира, служившая основным жильём, переведена в аренду. Скорректированный базис на дату перевода — $215 000, рыночная стоимость — $186 000. Какова база для амортизации?",
+    en: "A flat that served as a main home is converted to rental use. Its adjusted basis at conversion is $215,000 and its fair market value $186,000. What is the depreciable basis?",
+    opts: [
+      { k: "A", ru: "$215 000", en: "$215,000" },
+      { k: "B", ru: "$186 000", en: "$186,000" },
+      { k: "C", ru: "$200 500 — среднее из двух величин", en: "$200,500 — the average of the two" },
+      { k: "D", ru: "Первоначальная цена покупки", en: "The original purchase price" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Скорректированный базис берётся, только если он меньше рыночной стоимости.", en: "Adjusted basis is used only when it is the lower of the two." },
+      B: { ru: "Верно. При переводе жилья в аренду база для амортизации — меньшая из скорректированного базиса и рыночной стоимости на дату перевода. Падение стоимости за время личного пользования через амортизацию не возмещается.", en: "Correct. On converting a home to rental use the depreciable basis is the lesser of adjusted basis and fair market value at conversion. A decline in value during personal use is not recovered through depreciation." },
+      C: { ru: "Усреднения правило не предусматривает.", en: "The rule provides for no averaging." },
+      D: { ru: "Первоначальная цена уже учтена внутри скорректированного базиса.", en: "The original price is already inside the adjusted basis." }
+    }
+  },
+  {
+    ru: "Владелец десять лет сдавал дом, но амортизацию в декларациях не заявлял ни разу. Разрешённая за эти годы амортизация составила бы $74 000. Дом продан. Как это влияет на базис?",
+    en: "An owner rented out a house for ten years but never claimed depreciation. The allowable depreciation for those years would have been $74,000. The house is sold. How does this affect basis?",
+    opts: [
+      { k: "A", ru: "Базис не уменьшается: вычет не заявлялся", en: "Basis is not reduced: no deduction was claimed" },
+      { k: "B", ru: "Базис уменьшается на $74 000", en: "Basis is reduced by $74,000" },
+      { k: "C", ru: "Базис уменьшается на половину суммы", en: "Basis is reduced by half the amount" },
+      { k: "D", ru: "Базис увеличивается на $74 000", en: "Basis is increased by $74,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это самая частая ошибка. Базис уменьшается на амортизацию разрешённую или взятую — по большей из двух величин.", en: "This is the commonest error. Basis is reduced by depreciation allowed or allowable — whichever is greater." },
+      B: { ru: "Верно. Отказ заявлять амортизацию базис не сохраняет: прибыль от продажи всё равно считается от уменьшенного базиса, а вычет за прошедшие годы просто потерян.", en: "Correct. Declining to claim depreciation does not preserve basis: the gain is still computed from the reduced basis, and the deductions for past years are simply lost." },
+      C: { ru: "Деления пополам правило не знает.", en: "The rule knows no halving." },
+      D: { ru: "Амортизация базис только уменьшает.", en: "Depreciation only reduces basis." }
+    }
+  },
+  {
+    ru: "Дача сдавалась по рыночной цене 240 дней. Владелец пользовался ею 22 дня. Использовалась ли она как дом?",
+    en: "A holiday home was rented at a fair price for 240 days and used personally for 22 days. Was it used as a home?",
+    opts: [
+      { k: "A", ru: "Да: 22 дня больше 14", en: "Yes: 22 days exceeds 14" },
+      { k: "B", ru: "Нет: порог равен 24 дням", en: "No: the threshold is 24 days" },
+      { k: "C", ru: "Да: 22 дня больше 10% от 240", en: "Yes: 22 days exceeds 10% of 240" },
+      { k: "D", ru: "Нет: порог равен 38 дням", en: "No: the threshold is 38 days" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Берётся большая из двух величин, а не первая попавшаяся. При 240 днях сдачи 10% дают 24, и это больше 14.", en: "The greater of the two figures applies, not the first one. With 240 rental days, 10% is 24, which exceeds 14." },
+      B: { ru: "Верно. Порог — большая из 14 дней и 10% от 240, то есть 24 дня. Личное пользование 22 дня его не превышает, поэтому жильё домом не считается и убыток в принципе возможен.", en: "Correct. The threshold is the greater of 14 days and 10% of 240, that is 24 days. Personal use of 22 days does not exceed it, so the dwelling is not used as a home and a loss is possible in principle." },
+      C: { ru: "10% от 240 — это 24, а 22 меньше 24.", en: "10% of 240 is 24, and 22 is less than 24." },
+      D: { ru: "38 — это сумма 14 и 24. Величины не складываются.", en: "38 adds 14 and 24. The figures are not summed." }
+    }
+  },
+  {
+    ru: "Владелец провёл в сдаваемом доме 19 дней. Из них 5 дней он с утра до вечера менял полы, а вечерами семья отдыхала. Дом сдавался 90 дней по рыночной цене. Сколько дней личного пользования?",
+    en: "An owner spent 19 days at a rental house. On five of them he replaced flooring from morning to night while the family relaxed in the evenings. The house was rented at fair price for 90 days. How many days of personal use?",
+    opts: [
+      { k: "A", ru: "19", en: "19" },
+      { k: "B", ru: "14", en: "14" },
+      { k: "C", ru: "5", en: "5" },
+      { k: "D", ru: "0", en: "0" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Дни, целиком отданные ремонту, из личного пользования исключаются.", en: "Days spent substantially full time on repairs are excluded from personal use." },
+      B: { ru: "Верно. 19 − 5 = 14. Отдых семьи в те же дни ничего не меняет: правило прямо допускает это. Порог здесь — большая из 14 и 9, то есть 14, и 14 его не превышает, поэтому домом жильё не считается.", en: "Correct. 19 − 5 = 14. The family relaxing on those same days changes nothing: the rule expressly allows it. The threshold here is the greater of 14 and 9, that is 14, and 14 does not exceed it, so the dwelling is not used as a home." },
+      C: { ru: "Это как раз исключаемые дни, а не личное пользование.", en: "Those are the excluded days, not the personal use." },
+      D: { ru: "Четырнадцать дней обычного пребывания остаются личным пользованием.", en: "The fourteen ordinary days of occupancy remain personal use." }
+    }
+  },
+  {
+    ru: "Сестра владельца живёт в его квартире круглый год, платит рыночную цену и другого жилья не имеет. Брат владельца провёл там две недели отпуска, заплатив половину рыночной цены. Сколько дней личного пользования у владельца?",
+    en: "The owner’s sister lives in the flat all year, pays a fair rental price and has no other home. The owner’s brother spent a fortnight there on holiday, paying half the market rate. How many days of personal use does the owner have?",
+    opts: [
+      { k: "A", ru: "365: оба — члены семьи", en: "365: both are family members" },
+      { k: "B", ru: "14", en: "14" },
+      { k: "C", ru: "0", en: "0" },
+      { k: "D", ru: "351", en: "351" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Родство само по себе личного пользования не создаёт: важны цена и то, основной ли это дом.", en: "Kinship alone does not create personal use: what matters is the price and whether it is a main home." },
+      B: { ru: "Верно. Сестра платит рыночную цену и живёт как в основном доме — её дни личным пользованием не считаются. Брат платит ниже рыночной, поэтому все 14 дней идут в личное пользование.", en: "Correct. The sister pays a fair price and uses it as her main home, so her days are not personal use. The brother pays below market, so all 14 of his days count as personal use." },
+      C: { ru: "Дни брата исключить нельзя: он платит ниже рыночной цены.", en: "The brother’s days cannot be excluded: he pays below the fair rental price." },
+      D: { ru: "Здесь дни сестры засчитаны, а дни брата — нет. Всё ровно наоборот.", en: "This counts the sister’s days and not the brother’s. It is exactly the wrong way round." }
+    }
+  },
+  {
+    ru: "Владелец живёт в доме сам и в дни городского фестиваля сдал его на 10 дней за $14 000. Расходы, приходящиеся на эти дни, составили $900. Что попадёт в декларацию?",
+    en: "An owner lives in the house and let it for 10 days during a city festival for $14,000. Expenses allocable to those days were $900. What goes on the return?",
+    opts: [
+      { k: "A", ru: "Доход $14 000 и расход $900", en: "$14,000 of income and $900 of expense" },
+      { k: "B", ru: "Доход $14 000, расходы не вычитаются", en: "$14,000 of income and no deductible expenses" },
+      { k: "C", ru: "Ни дохода, ни расходов по аренде", en: "Neither rental income nor rental expenses" },
+      { k: "D", ru: "Доход $14 000 в Schedule 1, строке 8j", en: "$14,000 on Schedule 1, line 8j" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Это обычные правила аренды, которые здесь не применяются вовсе.", en: "Those are the ordinary rental rules, which do not apply here at all." },
+      B: { ru: "Доход тоже не включается — в этом и состоит смысл правила.", en: "The income is excluded as well — that is the whole point of the rule." },
+      C: { ru: "Верно. Жильё используется как дом и сдано менее 15 дней: доход не включается вовсе, расходы по аренде не вычитаются. Проценты по ипотеке и налоги идут в Schedule A по обычным правилам.", en: "Correct. The dwelling is used as a home and was rented fewer than 15 days: the income is excluded entirely and rental expenses are not deducted. Mortgage interest and taxes go on Schedule A as usual." },
+      D: { ru: "Строка 8j предназначена для деятельности не ради прибыли, а не для этого правила.", en: "Line 8j is for a not-for-profit activity, not for this rule." }
+    }
+  },
+  {
+    ru: "Жильё признано использованным как дом. Доход от аренды $9 000. Приходящиеся на аренду проценты и налоги — $6 500, операционные расходы — $3 800, амортизация — $2 900. Какая сумма переносится на следующий год?",
+    en: "A dwelling is used as a home. Rental income is $9,000. The rental share of interest and taxes is $6,500, operating expenses $3,800 and depreciation $2,900. How much carries forward?",
+    opts: [
+      { k: "A", ru: "$4 200", en: "$4,200" },
+      { k: "B", ru: "$2 900", en: "$2,900" },
+      { k: "C", ru: "Ничего: убыток $4 200 вычитается", en: "Nothing: the $4,200 loss is deductible" },
+      { k: "D", ru: "$6 700", en: "$6,700" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Первыми идут проценты и налоги $6 500 — остаётся $2 500. Операционных расходов $3 800, из них проходит $2 500, а $1 300 переносится. Амортизация $2 900 переносится целиком. Итого $1 300 + $2 900 = $4 200.", en: "Correct. Interest and taxes of $6,500 go first, leaving $2,500. Of the $3,800 of operating expenses, $2,500 is allowed and $1,300 carries forward. The full $2,900 of depreciation carries forward. Together $1,300 + $2,900 = $4,200." },
+      B: { ru: "Перенесена только амортизация. Часть операционных расходов тоже не поместилась в доход.", en: "Only depreciation is carried. Part of the operating expenses did not fit within the income either." },
+      C: { ru: "Убытка в этом режиме не возникает: вычет ограничен размером дохода.", en: "No loss arises in this regime: the deduction is capped at the income." },
+      D: { ru: "$6 700 — это все операционные расходы плюс вся амортизация. Так выходит, если забыть, что после процентов и налогов от дохода осталось ещё $2 500.", en: "$6,700 is all the operating expenses plus all the depreciation. That follows from forgetting that $2,500 of income remains after interest and taxes." }
+    }
+  },
+  {
+    ru: "Дача, признанная домом владельца, принесла в 2025 году убыток по расчёту $5 000, который вычесть не удалось. У владельца есть пассивный доход $12 000 от товарищества. Может ли он погасить остаток этим доходом?",
+    en: "A holiday home treated as the owner’s home produced a computed $5,000 loss that could not be deducted. The owner has $12,000 of passive income from a partnership. Can that income absorb the balance?",
+    opts: [
+      { k: "A", ru: "Да: приостановленный убыток гасится любым пассивным доходом", en: "Yes: a suspended loss is absorbed by any passive income" },
+      { k: "B", ru: "Нет: остаток переносится и ждёт дохода от аренды этого же объекта", en: "No: the balance carries forward and waits for rental income from the same property" },
+      { k: "C", ru: "Да, но только в пределах $2 500", en: "Yes, but only up to $2,500" },
+      { k: "D", ru: "Нет: остаток пропадает безвозвратно", en: "No: the balance is lost for good" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Пассивные правила здесь не работают вообще: жильё, используемое как дом, им не подчиняется.", en: "The passive rules do not operate here at all: a dwelling used as a home is outside them." },
+      B: { ru: "Верно. Ограничение идёт по §280A, а не по правилам пассивной деятельности: остаток переносится на следующий год и снова встаёт в очередь против дохода от аренды того же объекта.", en: "Correct. The limitation is under section 280A rather than the passive activity rules: the balance carries to the next year and queues again against rental income from the same property." },
+      C: { ru: "Никакого частичного зачёта правило не предусматривает.", en: "The rule provides for no partial offset." },
+      D: { ru: "Остаток не пропадает, он переносится вперёд.", en: "The balance is not lost; it carries forward." }
+    }
+  },
+  {
+    ru: "В каком порядке применяются ограничения к убытку некорпоративного налогоплательщика?",
+    en: "In what order are the limitations applied to a noncorporate taxpayer’s loss?",
+    opts: [
+      { k: "A", ru: "Пассивная деятельность → базис → риск → избыточный убыток", en: "Passive activity → basis → at-risk → excess business loss" },
+      { k: "B", ru: "Базис → риск → пассивная деятельность → избыточный убыток бизнеса", en: "Basis → at-risk → passive activity → excess business loss" },
+      { k: "C", ru: "Риск → базис → избыточный убыток → пассивная деятельность", en: "At-risk → basis → excess business loss → passive activity" },
+      { k: "D", ru: "Порядок значения не имеет: результат один и тот же", en: "The order does not matter: the result is the same" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Пассивные правила применяются третьими, а не первыми.", en: "The passive rules come third, not first." },
+      B: { ru: "Верно. Сначала сколько вложено, затем сколько реально теряется, затем участвовали ли вы сами, и в конце общий потолок по форме 461.", en: "Correct. First how much was put in, then how much is genuinely at stake, then whether you participated yourself, and finally the overall cap on Form 461." },
+      C: { ru: "Базис проверяется раньше риска, а избыточный убыток — последним.", en: "Basis comes before at-risk, and the excess business loss is last." },
+      D: { ru: "Порядок меняет ответ: каждый фильтр работает с тем, что пропустил предыдущий.", en: "The order changes the answer: each filter works on what the previous one let through." }
+    }
+  },
+  {
+    ru: "Налогоплательщик вложил в деятельность $60 000 собственных средств и взял безоборотный заём $40 000 под залог оборудования этой же деятельности. Доля убытка за год — $85 000. Сколько проходит лимит риска?",
+    en: "A taxpayer put $60,000 of their own money into an activity and took a $40,000 nonrecourse loan secured by that activity’s own equipment. The year’s share of loss is $85,000. How much passes the at-risk limit?",
+    opts: [
+      { k: "A", ru: "$85 000", en: "$85,000" },
+      { k: "B", ru: "$100 000", en: "$100,000" },
+      { k: "C", ru: "$60 000", en: "$60,000" },
+      { k: "D", ru: "$40 000", en: "$40,000" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Это весь убыток. Лимит риска пропускает лишь то, чем вы действительно рискуете.", en: "That is the whole loss. The at-risk limit passes only what you genuinely stand to lose." },
+      B: { ru: "Это базис. Безоборотный заём в базис попал, но под риском не находится.", en: "That is basis. The nonrecourse loan is in basis but is not at risk." },
+      C: { ru: "Верно. Под риском только собственные $60 000: по безоборотному займу под имущество самой деятельности вы не отвечаете ничем. Исключение сделано только для квалифицированного финансирования недвижимости, а здесь заложено оборудование.", en: "Correct. Only the $60,000 of own funds is at risk: on a nonrecourse loan secured by the activity’s own property you risk nothing. The exception covers only qualified nonrecourse financing of real property, and here the security is equipment." },
+      D: { ru: "Это как раз та часть, которая под риском не находится.", en: "That is precisely the part that is not at risk." }
+    }
+  },
+  {
+    ru: "Инвестор владеет доходным зданием. Оно приобретено за счёт безоборотного займа от независимого банка, обеспеченного этим же зданием, не конвертируемого в долю участия. Под риском ли эта сумма?",
+    en: "An investor owns a commercial building bought with a nonrecourse loan from an unrelated bank, secured by that building and not convertible into an ownership interest. Is that amount at risk?",
+    opts: [
+      { k: "A", ru: "Нет: заём безоборотный", en: "No: the loan is nonrecourse" },
+      { k: "B", ru: "Да: это квалифицированное безоборотное финансирование недвижимости", en: "Yes: this is qualified nonrecourse financing of real property" },
+      { k: "C", ru: "Да, но только если инвестор лично поручился", en: "Yes, but only if the investor gave a personal guarantee" },
+      { k: "D", ru: "Нет: заём получен не от государственного органа", en: "No: the loan did not come from a government body" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это общее правило, но для недвижимости из него сделано исключение.", en: "That is the general rule, but real property has an exception." },
+      B: { ru: "Верно. Все четыре условия соблюдены: заём взят в связи с владением недвижимостью, обеспечен ею, не конвертируется в долю и получен от квалифицированного кредитора. Личной ответственности нет ни у кого — в этом и смысл исключения.", en: "Correct. All four conditions are met: borrowed in connection with holding real property, secured by it, not convertible into an ownership interest, and obtained from a qualified person. Nobody is personally liable — that is the point of the exception." },
+      C: { ru: "Личное поручительство сделало бы заём оборотным, и исключение стало бы не нужно.", en: "A personal guarantee would make the loan recourse, and the exception would not be needed." },
+      D: { ru: "Достаточно займа от квалифицированного кредитора; государственный орган — лишь один из вариантов.", en: "A loan from a qualified person suffices; a government body is only one of the options." }
+    }
+  },
+  {
+    ru: "Совладелец мастерской отработал в ней 140 часов за год. Второй совладелец отработал 130 часов, наёмный управляющий — 900 часов. Существенно ли участие первого?",
+    en: "A co-owner of a workshop worked 140 hours in it during the year. The other co-owner worked 130 hours and a hired manager 900 hours. Does the first co-owner materially participate?",
+    opts: [
+      { k: "A", ru: "Да: более 100 часов и не меньше, чем у любого другого", en: "Yes: more than 100 hours and at least as much as anyone else" },
+      { k: "B", ru: "Нет: 140 часов меньше 500", en: "No: 140 hours is less than 500" },
+      { k: "C", ru: "Нет: управляющий отработал больше", en: "No: the manager worked more" },
+      { k: "D", ru: "Да: 140 часов больше 100", en: "Yes: 140 hours exceeds 100" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Второе условие теста 3 нарушено: наёмный управляющий отработал 900 часов, и он учитывается, хотя доли в деятельности не имеет.", en: "The second half of test 3 fails: the hired manager worked 900 hours, and he counts even though he owns no interest." },
+      B: { ru: "Верный факт, но недостаточный вывод: тест 1 — не единственный из семи.", en: "A true fact but not a sufficient conclusion: test 1 is not the only one of the seven." },
+      C: { ru: "Верно. Тест 3 требует не только более 100 часов, но и участия не меньшего, чем у любого другого лица, включая работников без доли. 140 против 900 этому не отвечает, а прочие тесты по условию не проходят.", en: "Correct. Test 3 requires not only more than 100 hours but participation at least equal to any other individual, including employees with no interest. 140 against 900 fails that, and the other tests are not met on these facts." },
+      D: { ru: "Само по себе превышение 100 часов ничего не даёт: у теста 3 два условия, а у теста 7 сто часов — это нижняя граница, а не достаточное условие.", en: "Exceeding 100 hours by itself gives nothing: test 3 has two conditions, and in test 7 one hundred hours is a floor, not a sufficient condition." }
+    }
+  },
+  {
+    ru: "Владелец лично управляет четырьмя доходными домами и тратит на это 1 900 часов в год. Другой работы у него нет. Является ли деятельность пассивной?",
+    en: "An owner personally manages four rental buildings and spends 1,900 hours a year doing it. He has no other work. Is the activity passive?",
+    opts: [
+      { k: "A", ru: "Да: аренда пассивна по определению, и часы этого не меняют", en: "Yes: a rental is passive by definition and hours do not change that" },
+      { k: "B", ru: "Нет: выполнены оба условия профессионала рынка недвижимости", en: "No: both conditions for a real estate professional are met" },
+      { k: "C", ru: "Да: 1 900 часов меньше 2 000", en: "Yes: 1,900 hours is less than 2,000" },
+      { k: "D", ru: "Нет: пройден тест 500 часов", en: "No: the 500-hour test is met" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это верно как общее правило, но у него есть именно одно исключение, и оно здесь сработало.", en: "True as a general rule, but it has exactly one exception, and here that exception applies." },
+      B: { ru: "Верно. Более 750 часов в сферах недвижимости с существенным участием и более половины всех личных услуг за год — других работ нет вовсе. Автоматическая пассивность снимается.", en: "Correct. More than 750 hours in real property trades with material participation, and more than half of all personal services for the year — there is no other work at all. The automatic passive label is removed." },
+      C: { ru: "Порога в 2 000 часов не существует. Порог — 750.", en: "There is no 2,000-hour threshold. The threshold is 750." },
+      D: { ru: "Тесты существенного участия аренду из пассивной категории не выводят: она пассивна по определению, а не из-за участия.", en: "The material participation tests do not lift a rental out of the passive category: it is passive by definition, not for want of participation." }
+    }
+  },
+  {
+    ru: "Супруги подают совместную декларацию. Муж отработал в сфере недвижимости 500 часов, жена — 400 часов; у обоих это единственная работа. Признаётся ли кто-то профессионалом рынка недвижимости?",
+    en: "Spouses file jointly. The husband worked 500 hours in real property trades and the wife 400 hours; for both it is their only work. Does either qualify as a real estate professional?",
+    opts: [
+      { k: "A", ru: "Да: вместе 900 часов, порог взят", en: "Yes: together 900 hours clears the threshold" },
+      { k: "B", ru: "Нет: ни один из супругов в одиночку не набрал более 750 часов", en: "No: neither spouse alone exceeded 750 hours" },
+      { k: "C", ru: "Да: достаточно, чтобы порог взял хотя бы один из супругов, а совместная декларация распространяет статус", en: "Yes: it is enough for one spouse to qualify, and a joint return extends the status" },
+      { k: "D", ru: "Да, у мужа: 500 часов — это тест существенного участия", en: "Yes, the husband: 500 hours is the material participation test" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Часы супругов для этого порога не складываются, даже при совместной декларации.", en: "Spouses’ hours are not added for this threshold, even on a joint return." },
+      B: { ru: "Верно. Порог в 750 часов должен взять кто-то один. 500 и 400 по отдельности его не достигают, и статус не возникает ни у кого.", en: "Correct. One spouse must clear the 750 hours alone. Neither 500 nor 400 does, and neither spouse qualifies." },
+      C: { ru: "Условие верное по форме, но по факту порог не взял никто.", en: "The condition is correctly stated but on these facts nobody cleared the threshold." },
+      D: { ru: "500 часов — тест существенного участия, а не порог профессионала. Это разные величины из разных правил.", en: "500 hours is the material participation test, not the professional threshold. They are different figures from different rules." }
+    }
+  },
+  {
+    ru: "Налогоплательщик владеет 6% долей в товариществе, сдающем жилой комплекс, и участвует в одобрении арендаторов и утверждении расходов. Его доля убытка — $9 000, MAGI — $80 000. Сколько он вычтет по особому вычету?",
+    en: "A taxpayer owns a 6% interest in a partnership renting out a housing complex and takes part in approving tenants and expenditures. The share of loss is $9,000 and MAGI is $80,000. How much may be deducted under the special allowance?",
+    opts: [
+      { k: "A", ru: "$9 000: убыток меньше $25 000, а MAGI ниже порога", en: "$9,000: the loss is under $25,000 and MAGI is below the threshold" },
+      { k: "B", ru: "$25 000", en: "$25,000" },
+      { k: "C", ru: "Ноль: доля меньше 10% по стоимости", en: "Zero: the interest is less than 10% by value" },
+      { k: "D", ru: "$1 500 — пропорционально доле", en: "$1,500 — in proportion to the interest" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Оба факта верны, но проверено не то: до размера убытка и дохода нужно убедиться в активном участии.", en: "Both facts are true but the wrong thing was checked: before the loss and the income comes active participation." },
+      B: { ru: "Это максимум вычета, а не вычитаемая сумма, и права на него в этой ситуации нет.", en: "That is the maximum allowance, not the amount deductible, and here there is no right to it." },
+      C: { ru: "Верно. Активно участвующим не признаётся тот, чья доля вместе с долей супруга составляет менее 10% по стоимости всех долей. Управленческие решения этого не восполняют, и весь убыток приостанавливается.", en: "Correct. Someone whose interest, together with a spouse’s, is under 10% by value of all interests is not treated as actively participating. Management decisions do not make up for it, and the whole loss is suspended." },
+      D: { ru: "Пропорционального уменьшения вычета правило не предусматривает: условие о доле работает как порог допуска.", en: "The rule provides for no pro-rata reduction: the interest requirement is a gate, not a scale." }
+    }
+  },
+  {
+    ru: "Одинокий налогоплательщик активно участвует в сдаче квартиры, доля 100%. Убыток от аренды $23 000, MAGI $141 000, пассивного дохода нет. Сколько вычитается в 2025 году?",
+    en: "A single taxpayer actively participates in renting out a flat and owns 100% of it. The rental loss is $23,000, MAGI is $141,000 and there is no passive income. How much is deductible in 2025?",
+    opts: [
+      { k: "A", ru: "$4 500", en: "$4,500" },
+      { k: "B", ru: "$23 000", en: "$23,000" },
+      { k: "C", ru: "$25 000", en: "$25,000" },
+      { k: "D", ru: "Ноль", en: "Zero" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Превышение MAGI над $100 000 составляет $41 000, сокращение — половина, то есть $20 500. Вычет $25 000 − $20 500 = $4 500. Оставшиеся $18 500 приостанавливаются.", en: "Correct. MAGI exceeds $100,000 by $41,000 and the reduction is half of that, $20,500. The allowance is $25,000 − $20,500 = $4,500. The remaining $18,500 is suspended." },
+      B: { ru: "Весь убыток вычитался бы при MAGI ниже $100 000.", en: "The whole loss would be deductible with MAGI below $100,000." },
+      C: { ru: "$25 000 — это потолок вычета до сокращения, а сокращение здесь значительное.", en: "$25,000 is the cap before the phaseout, and here the phaseout is substantial." },
+      D: { ru: "Ноль был бы при MAGI $150 000 и выше. $141 000 до этого не дотягивает.", en: "Zero would apply at MAGI of $150,000 or more. $141,000 falls short of that." }
+    }
+  },
+  {
+    ru: "У налогоплательщика приостановленный пассивный убыток $34 000 по единственному объекту аренды. Он продаёт объект посторонней компании с прибылью $12 000. Что происходит?",
+    en: "A taxpayer has $34,000 of suspended passive losses on a single rental property and sells it to an unrelated company at a $12,000 gain. What happens?",
+    opts: [
+      { k: "A", ru: "Вычитается $12 000, остаток $22 000 продолжает ждать", en: "$12,000 is deducted and the $22,000 balance keeps waiting" },
+      { k: "B", ru: "Весь убыток $34 000 высвобождается, прибыль $12 000 облагается", en: "The full $34,000 is released and the $12,000 gain is taxed" },
+      { k: "C", ru: "Убыток пропадает: объект продан", en: "The loss is lost: the property is gone" },
+      { k: "D", ru: "Вычитается $25 000 — предел особого вычета", en: "$25,000 is deducted — the special allowance cap" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так работает обычное погашение пассивным доходом. При полном выбытии правило другое.", en: "That is how ordinary absorption by passive income works. A complete disposition follows a different rule." },
+      B: { ru: "Верно. Все три условия соблюдены: выбытие полное, сделка налогооблагаемая, покупатель посторонний. Приостановленный убыток высвобождается целиком, а не только против прибыли от продажи.", en: "Correct. All three conditions are met: the disposition is complete, the transaction is taxable, and the buyer is unrelated. The suspended loss is released in full, not merely against the gain on sale." },
+      C: { ru: "Полное выбытие убыток как раз высвобождает, а не уничтожает.", en: "A complete disposition releases the loss rather than destroying it." },
+      D: { ru: "Предел особого вычета к высвобождению при выбытии отношения не имеет.", en: "The special allowance cap has nothing to do with release on disposition." }
+    }
+  },
+  {
+    ru: "Владелец продаёт объект аренды с приостановленным убытком $16 000 своему брату по рыночной цене. Высвобождается ли убыток?",
+    en: "An owner sells a rental property carrying $16,000 of suspended losses to his brother at fair market value. Are the losses released?",
+    opts: [
+      { k: "A", ru: "Да: сделка возмездная и налогооблагаемая", en: "Yes: the sale is for value and taxable" },
+      { k: "B", ru: "Нет: покупатель — связанное лицо", en: "No: the buyer is a related party" },
+      { k: "C", ru: "Да, но только наполовину", en: "Yes, but only half of it" },
+      { k: "D", ru: "Нет: убыток прибавляется к базису у брата", en: "No: the loss is added to the brother’s basis" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Двух условий из трёх мало. Третье — сделка с посторонним лицом.", en: "Two of the three conditions are not enough. The third is a transfer to an unrelated party." },
+      B: { ru: "Верно. Продажа связанному лицу высвобождения не даёт: убыток остаётся приостановленным у продавца и ждёт выбытия объекта из круга связанных лиц.", en: "Correct. A sale to a related party gives no release: the loss stays suspended with the seller and waits until the property leaves the related group." },
+      C: { ru: "Частичного высвобождения правило не знает.", en: "The rule knows no partial release." },
+      D: { ru: "Прибавление к базису происходит при дарении, а не при продаже связанному лицу.", en: "Adding to basis happens on a gift, not on a sale to a related party." }
+    }
+  },
+  {
+    ru: "Налогоплательщик подаёт декларацию как одинокий. После применения базиса, риска и пассивных правил его совокупный убыток от бизнеса составил $402 000. Сколько вычитается в 2025 году?",
+    en: "A single filer’s aggregate business loss, after applying basis, at-risk and the passive rules, is $402,000. How much is deductible in 2025?",
+    opts: [
+      { k: "A", ru: "$402 000", en: "$402,000" },
+      { k: "B", ru: "$313 000; остальное переносится вперёд как чистый операционный убыток", en: "$313,000; the rest carries forward as a net operating loss" },
+      { k: "C", ru: "$626 000", en: "$626,000" },
+      { k: "D", ru: "$313 000; остальные $89 000 пропадают", en: "$313,000; the other $89,000 is lost" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Четвёртый фильтр ограничивает совокупный убыток порогом.", en: "The fourth filter caps the aggregate loss at the threshold." },
+      B: { ru: "Верно. Порог на 2025 год — $313 000 для одинокого налогоплательщика. Избыточные $89 000 не пропадают: они переносятся вперёд как чистый операционный убыток.", en: "Correct. The 2025 threshold is $313,000 for a single filer. The excess $89,000 is not lost: it carries forward as a net operating loss." },
+      C: { ru: "$626 000 — порог при совместной подаче супругов.", en: "$626,000 is the threshold on a joint return." },
+      D: { ru: "Сумма верна, вывод — нет. Избыточный убыток переносится вперёд.", en: "The figure is right but the conclusion is not. The excess loss carries forward." }
+    }
+  },
+  {
+    ru: "К кому правила пассивной деятельности применяются напрямую?",
+    en: "To whom do the passive activity rules apply directly?",
+    opts: [
+      { k: "A", ru: "К партнёрствам и S-корпорациям", en: "To partnerships and S corporations" },
+      { k: "B", ru: "К физическим лицам, наследственным массам, трастам, корпорациям личных услуг и закрытым корпорациям", en: "To individuals, estates and trusts, and to closely held corporations and personal service corporations" },
+      { k: "C", ru: "К любым корпорациям без исключения", en: "To all corporations without exception" },
+      { k: "D", ru: "К доверительным трастам учредителя", en: "To grantor trusts" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "К ним правила напрямую не применяются — они применяются к их владельцам, получающим K-1.", en: "They are not subject directly — the rules apply to their owners, who receive Schedule K-1." },
+      B: { ru: "Верно. Именно этот перечень. Партнёрства и S-корпорации в него не входят, но их владельцы применяют правила у себя.", en: "Correct. That is the list. Partnerships and S corporations are outside it, but their owners apply the rules at their own level." },
+      C: { ru: "Обычная C-корпорация под пассивные правила не подпадает, если она не закрытая и не корпорация личных услуг.", en: "An ordinary C corporation is outside the passive rules unless it is closely held or a personal service corporation." },
+      D: { ru: "Доверительные трасты учредителя прямо исключены: доход и вычеты отражаются у учредителя.", en: "Grantor trusts are expressly excluded: the income and deductions are reported by the grantor." }
+    }
+  }
+];
+</script>
+</body>
+</html>
