@@ -21,6 +21,15 @@ import os
 import re
 import sys
 
+# Консоль Windows по умолчанию не в UTF-8, и печать русского текста роняет
+# сборку с UnicodeEncodeError уже после записи файла. Переключаем поток вывода.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8")
+        except (ValueError, OSError):
+            pass
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "ea-part2.html")
 

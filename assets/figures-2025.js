@@ -11,6 +11,8 @@
    unit: usd | pct | int | date | text
    =================================================================== */
 
+var SRC_P225 = { t: "Publication 225 (2025), Farmer's Tax Guide", u: "https://www.irs.gov/publications/p225" };
+
 window.FIGURES = {
   meta: {
     taxYear: 2025,
@@ -291,13 +293,29 @@ window.FIGURES = {
       note_en: "Rule: the 15th day of the 3rd month. Moved from Sunday, March 15, 2026.",
       src: { t: "Instructions for Form 1120-S (2025)", u: "https://www.irs.gov/instructions/i1120s" }
     },
+    due_1120: {
+      d: "2026-04-15", unit: "date",
+      ru: "Форма 1120 за 2025 год",
+      en: "Form 1120 for 2025",
+      note_ru: "Правило: 15-й день 4-го месяца после конца года. Исключение — фискальный год, заканчивающийся 30 июня: 15-й день 3-го месяца.",
+      note_en: "Rule: the 15th day of the 4th month after year end. Exception for a fiscal year ending June 30: the 15th day of the 3rd month.",
+      src: { t: "Instructions for Form 1120 (2025)", u: "https://www.irs.gov/instructions/i1120" }
+    },
     due_farm_estimated: {
       d: "2026-03-02", unit: "date",
       ru: "Фермеры и рыбаки: подать и уплатить без штрафа",
       en: "Farmers and fishermen: file and pay to avoid the estimated tax penalty",
       note_ru: "Правило: 1 марта. В 2026 году это воскресенье, срок переносится.",
       note_en: "Rule: March 1. In 2026 that is a Sunday, so the date moves.",
-      src: { t: "Instructions for Schedule F (2025)", u: "https://www.irs.gov/instructions/i1040sf" }
+      src: SRC_P225
+    },
+    due_farm_payment: {
+      d: "2026-01-15", unit: "date",
+      ru: "Фермеры и рыбаки: единственный платёж расчётного налога",
+      en: "Farmers and fishermen: the single estimated tax payment",
+      note_ru: "Обязательный годовой платёж — меньшая из двух величин: 66⅔% налога за 2025 год или 100% налога за 2024 год.",
+      note_en: "The required annual payment is the smaller of 66 2/3% of the 2025 tax or 100% of the tax shown on the 2024 return.",
+      src: SRC_P225
     },
     due_1099_recipient: {
       d: "2026-02-02", unit: "date",
@@ -316,7 +334,39 @@ window.FIGURES = {
       en: "Share of gross income from farming or fishing",
       note_ru: "Ровно две трети валового дохода за 2024 или 2025 год. Даёт право на особый порядок расчётного налога.",
       note_en: "Exactly two-thirds of gross income for 2024 or 2025. Qualifies the taxpayer for the special estimated tax rule.",
-      src: { t: "Instructions for Schedule F (2025)", u: "https://www.irs.gov/instructions/i1040sf" }
+      src: SRC_P225
+    },
+    livestock_hold_cattle: {
+      n: 24, unit: "int",
+      ru: "Срок владения для лошадей и КРС, месяцев",
+      en: "Holding period for horses and cattle, months",
+      note_ru: "Продажа скота, использовавшегося для тягла, разведения, спорта или молочного производства, подпадает под §1231 при владении не менее этого срока.",
+      note_en: "A sale of livestock held for draft, breeding, sport or dairy purposes is a section 1231 transaction if held at least this long.",
+      src: SRC_P225
+    },
+    livestock_hold_other: {
+      n: 12, unit: "int",
+      ru: "Срок владения для прочего скота, месяцев",
+      en: "Holding period for other livestock, months",
+      note_ru: "Свиньи, овцы, козы, мулы, ослы, пушные и прочие млекопитающие. Птица к скоту для целей §1231 не относится.",
+      note_en: "Hogs, sheep, goats, mules, donkeys, fur-bearing and other mammals. Poultry is not livestock for section 1231.",
+      src: SRC_P225
+    },
+    farm_prepaid_limit: {
+      n: 50, unit: "pct",
+      ru: "Предел вычета предоплаченных фермерских припасов",
+      en: "Limit on deducting prepaid farm supplies",
+      note_ru: "При кассовом методе вычет в году оплаты ограничен этой долей прочих вычитаемых фермерских расходов года.",
+      note_en: "On the cash method the deduction in the year of payment is limited to this share of the year's other deductible farm expenses.",
+      src: SRC_P225
+    },
+    farm_replace_1033e: {
+      n: 4, unit: "int",
+      ru: "Срок замены скота по §1033(e) в зоне бедствия, лет",
+      en: "Section 1033(e) replacement period in a disaster area, years",
+      note_ru: "Общий срок — два года с конца налогового года продажи; четыре года, если местность признана имеющей право на федеральную помощь.",
+      note_en: "The general period is two years from the end of the tax year of sale; four years if the area is eligible for federal assistance.",
+      src: SRC_P225
     }
   },
 
@@ -337,8 +387,8 @@ window.FIGURES = {
       keys: ["pen_6698", "pen_6699", "pen_k1", "pen_k1_max_small", "pen_k1_max_large",
              "pen_k1_intentional", "pen_6651_min"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
-      keys: ["due_1065", "due_1120s", "due_farm_estimated", "due_1099_recipient"] },
+      keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment", "due_1099_recipient"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
-      keys: ["farm_income_share"] }
+      keys: ["farm_income_share", "farm_prepaid_limit", "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
   ]
 };

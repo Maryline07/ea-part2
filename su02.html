@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=7">
-<script defer src="assets/figures-2025.js?v=7"></script>
+<link rel="stylesheet" href="assets/style.css?v=8">
+<script defer src="assets/figures-2025.js?v=8"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=7"></script>
+<script defer src="assets/app.js?v=8"></script>
 </head>
 <body data-module="su02">
 
@@ -211,6 +211,97 @@
       </div>
     </div>
 
+
+    <h3><span lang="ru">Возврат того, что уже было вычтено</span><span lang="en">Recovering what was already deducted</span></h3>
+
+    <p lang="ru">Списанный как безнадёжный долг вернулся; поставщик возместил расход; страховая
+      покрыла убыток, который уже уменьшил прибыль. Во всех этих случаях действует одно правило:
+      возвращённая сумма — доход того года, в котором она получена, и показывается как
+      <strong>прочий доход в Schedule C</strong>, а не в форме 1040 и не уточнением прошлой
+      декларации.</p>
+    <p lang="en">A debt written off as bad comes back; a supplier refunds an expense; insurance
+      covers a loss that already reduced profit. One rule governs all of them: the amount recovered
+      is income of the year received and is reported as <strong>Other income on Schedule C</strong> —
+      not on Form 1040 and not by amending the earlier return.</p>
+
+    <p lang="ru">У правила есть оговорка, и именно на ней строится расчёт. Возврат включается в
+      доход лишь в той части, в какой прежний вычет <strong>действительно уменьшил налог</strong>.
+      Если вычет пропал впустую — например, расходы и без него превышали доход, — соответствующая
+      часть возврата в доход не идёт. К декларации прилагается расчёт исключаемой суммы.</p>
+    <p lang="en">The rule carries a qualification, and the computation turns on it. A recovery is
+      income only to the extent the earlier deduction <strong>actually reduced tax</strong>. Where
+      the deduction went to waste — because expenses already exceeded income without it — that part
+      of the recovery is not income. A computation of the excluded amount is attached to the return.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-2. Возврат безнадёжного долга</span><span lang="en">Example 2-2. Recovering a bad debt</span></div>
+      <div class="example__body">
+        <p lang="ru">Бизнес на методе начисления. В 2024 году валовой доход
+          <span data-num="310000"></span>, вычет по безнадёжному долгу
+          <span data-num="9000"></span>, прочие расходы <span data-num="268000"></span>.
+          В 2025 году взыскано <span data-num="7200"></span> из ранее списанного долга.</p>
+        <p lang="en">An accrual-basis business. For 2024: gross income <span data-num="310000"></span>,
+          a bad debt deduction of <span data-num="9000"></span>, other expenses of
+          <span data-num="268000"></span>. In 2025 it recovered <span data-num="7200"></span> of the
+          debt written off.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Валовой доход 2024 года</span><span lang="en">2024 gross income</span></td><td data-num="310000"></td></tr>
+            <tr><td><span lang="ru">Минус прочие расходы</span><span lang="en">Less other expenses</span></td><td data-num="-268000"></td></tr>
+            <tr><td><span lang="ru">Минус безнадёжный долг</span><span lang="en">Less the bad debt</span></td><td data-num="-9000"></td></tr>
+            <tr><td><span lang="ru">Прибыль 2024 года осталась положительной</span><span lang="en">2024 profit remained positive</span></td><td data-num="33000"></td></tr>
+            <tr class="total">
+              <td><span lang="ru">Значит вычет дал выгоду полностью. Прочий доход в Schedule C за 2025 год</span><span lang="en">So the deduction gave full benefit. Other income on the 2025 Schedule C</span></td>
+              <td data-num="7200"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Проверка на выгоду делается всегда, но в большинстве вопросов прибыль года
+          вычета положительна, и в доход идёт вся взысканная сумма. Ловушка не в арифметике, а в
+          месте: <span data-num="7200"></span> показываются в Schedule C, а не как прочий доход
+          физического лица.</p>
+        <p lang="en">The benefit test is always applied, but in most questions the year of deduction
+          shows a profit and the whole recovery is income. The trap is not the arithmetic but the
+          place: the <span data-num="7200"></span> goes on Schedule C, not into an individual’s other
+          income.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Три неверных места для одной суммы</span><span lang="en">Three wrong homes for one amount</span></h3>
+      <p lang="ru">Варианты в этих вопросах всегда одни и те же: уточнить прошлогоднюю декларацию,
+        уменьшить вычет по безнадёжным долгам текущего года, показать сумму как прочий доход в
+        Schedule 1. Все три неверны. Прошлый год не трогают — тогда всё было учтено правильно;
+        вычет текущего года ни при чём; доход остаётся деловым, а значит место ему в Schedule C.</p>
+      <p lang="en">The answer choices are always the same: amend last year’s return, reduce this
+        year’s bad debt deduction, report the amount as other income on Schedule 1. All three are
+        wrong. The earlier year is untouched — it was correct at the time; this year’s deduction is
+        unrelated; and the income stays business income, so it belongs on Schedule C.</p>
+    </div>
+
+    <h3><span lang="ru">Списание долга: где показывать</span><span lang="en">Cancelled debt: where it goes</span></h3>
+
+    <p lang="ru">Прощённый долг по общему правилу — доход, если только это не дар и не завещание.
+      Место зависит от происхождения долга, а не от того, кто его простил: долг, возникший в
+      бизнесе, показывается в <strong>Schedule C</strong>; личный — в Schedule 1. Один и тот же
+      кредитор, простивший обе задолженности сразу, порождает две записи в разных местах, и обе
+      суммы облагаются.</p>
+    <p lang="en">Forgiven debt is generally income unless it is a gift or bequest. Where it goes
+      depends on the origin of the debt, not on who forgave it: debt incurred in the business is
+      reported on <strong>Schedule C</strong>, personal debt on Schedule 1. One creditor forgiving
+      both at once produces two entries in two places, and both amounts are taxable.</p>
+
+    <p lang="ru">Исключение из общего правила стоит держать в голове отдельно: если долг вы должны
+      <em>продавцу</em> за купленное имущество и продавец уменьшил сумму долга, дохода, как правило,
+      не возникает — уменьшается базис имущества. Условие существенное: снисхождение должно исходить
+      именно от продавца и относиться к цене покупки. Банк, простивший часть кредита на покупку
+      станка, продавцом не является, и его прощение даёт доход.</p>
+    <p lang="en">One exception is worth holding separately: if you owe the debt to the <em>seller</em>
+      for property you bought and the seller reduces what you owe, there is generally no income — the
+      basis of the property is reduced instead. The condition matters: the relief must come from the
+      seller and relate to the purchase price. A bank that forgives part of a loan used to buy a
+      machine is not the seller, and its forgiveness produces income.</p>
+
     <!-- ============================================================ -->
     <section class="sub" id="s22">
       <h2><span class="num">2.2</span>
@@ -256,7 +347,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-2. Расчёт при прибыли ниже предела базы</span><span lang="en">Example 2-2. Computation below the base limit</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-3. Расчёт при прибыли ниже предела базы</span><span lang="en">Example 2-3. Computation below the base limit</span></div>
       <div class="example__body">
         <p lang="ru">Чистая прибыль консультанта по Schedule C за 2025 год — $80 000. Заработной
           платы у него нет.</p>
@@ -297,7 +388,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-3. Прибыль выше предела базы</span><span lang="en">Example 2-3. Profit above the base limit</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-4. Прибыль выше предела базы</span><span lang="en">Example 2-4. Profit above the base limit</span></div>
       <div class="example__body">
         <p lang="ru">Чистая прибыль архитектора за 2025 год — $200 000, заработной платы нет.</p>
         <p lang="en">An architect’s net profit for 2025 is $200,000, with no wages.</p>
@@ -332,18 +423,138 @@
       </div>
     </div>
 
-    <h3><span lang="ru">Что в базу не входит</span><span lang="en">What is outside the base</span></h3>
+    <h3><span lang="ru">Что входит в базу и что нет</span><span lang="en">What is inside the base and what is not</span></h3>
+
+    <p lang="ru">Половина вопросов темы устроена одинаково: даётся список поступлений, и требуется
+      сложить те, что образуют чистый заработок от самозанятости. Поэтому перечень стоит держать
+      целиком, а не по частям.</p>
+    <p lang="en">Half the questions in this topic are built the same way: a list of receipts is given
+      and you must add up those that make net earnings from self-employment. So the list is worth
+      holding whole rather than in pieces.</p>
 
     <div class="scroller">
-    <table class="numbered">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Входит в базу</span><span lang="en">Inside the base</span></th>
+          <th><span lang="ru">Не входит</span><span lang="en">Outside</span></th>
+        </tr>
+      </thead>
       <tbody>
-        <tr><th>1</th><td><span lang="ru">Доход от аренды недвижимости, если не оказываются существенные услуги</span><span lang="en">Rental income from real estate, absent substantial services</span></td></tr>
-        <tr><th>2</th><td><span lang="ru">Проценты, дивиденды и прирост капитала, не связанные с торговой деятельностью</span><span lang="en">Interest, dividends and capital gains outside a dealing business</span></td></tr>
-        <tr><th>3</th><td><span lang="ru">Распределяемая доля ограниченного партнёра, кроме гарантированных выплат за услуги</span><span lang="en">A limited partner’s distributive share, other than guaranteed payments for services</span></td></tr>
-        <tr><th>4</th><td><span lang="ru">Заработная плата акционера S-корпорации и его доля прибыли</span><span lang="en">An S corporation shareholder’s wages and distributive share</span></td></tr>
-        <tr><th>5</th><td><span lang="ru">Доход от аренды фермы по форме 4835 при отсутствии материального участия</span><span lang="en">Farm rental income reported on Form 4835 without material participation</span></td></tr>
+        <tr>
+          <td><span lang="ru">Чистая прибыль индивидуального предпринимателя по Schedule C и фермера по Schedule F</span><span lang="en">Net profit of a sole proprietor on Schedule C and of a farmer on Schedule F</span></td>
+          <td><span lang="ru">Заработная плата работника, в том числе полученная от собственной корпорации</span><span lang="en">Wages as an employee, including wages from your own corporation</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Распределяемая доля <strong>полного</strong> партнёра от деятельности партнёрства</span><span lang="en">A <strong>general</strong> partner’s distributive share from the partnership’s business</span></td>
+          <td><span lang="ru">Распределяемая доля <strong>ограниченного</strong> партнёра</span><span lang="en">A <strong>limited</strong> partner’s distributive share</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Гарантированные выплаты за услуги — <strong>даже ограниченному партнёру</strong></span><span lang="en">Guaranteed payments for services — <strong>even to a limited partner</strong></span></td>
+          <td><span lang="ru">Заработная плата акционера S-корпорации и его доля прибыли</span><span lang="en">An S corporation shareholder’s wages and distributive share</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru"><strong>Вознаграждение члена совета директоров корпорации</strong></span><span lang="en"><strong>Fees for services as a director of a corporation</strong></span></td>
+          <td><span lang="ru">Вознаграждение нотариуса</span><span lang="en">Fees for services as a notary public</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Аренда недвижимости, полученная <strong>дилером недвижимости</strong> в рамках его деятельности, и доход владельца гостиницы, оказывающего услуги постояльцам</span><span lang="en">Rental income received by a <strong>real estate dealer</strong> in the course of that business, and income of a hotel owner providing services to guests</span></td>
+          <td><span lang="ru">Аренда недвижимости во всех прочих случаях — Schedule E</span><span lang="en">Rental income from real estate in every other case — Schedule E</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Проценты, полученные в рамках деятельности, — например по векселям и счетам покупателей</span><span lang="en">Interest received in the course of the business, such as on notes or accounts receivable</span></td>
+          <td><span lang="ru">Проценты и дивиденды по вложениям, если вы не дилер ценных бумаг</span><span lang="en">Interest and dividends on investments unless you are a dealer in securities</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Возмещение упущенной прибыли, в том числе страховая выплата за перерыв в деятельности</span><span lang="en">Damages and insurance for lost profits, including business interruption proceeds</span></td>
+          <td><span lang="ru">Аренда фермы по форме 4835 при отсутствии материального участия</span><span lang="en">Farm rental on Form 4835 without material participation</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Возврат вычета по §179 и §280F, если деловое использование упало до 50% и ниже</span><span lang="en">Section 179 and 280F recapture where business use dropped to 50% or less</span></td>
+          <td><span lang="ru"><strong>Прибыль и убыток от продажи имущества</strong>, кроме товарных запасов и имущества, предназначенного для продажи покупателям</span><span lang="en"><strong>Gain and loss on the disposition of property</strong>, other than stock in trade or property held primarily for sale to customers</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Гонорары профессионального доверительного управляющего</span><span lang="en">Fees received as a professional fiduciary</span></td>
+          <td><span lang="ru"><strong>Чистые операционные убытки прошлых лет</strong></span><span lang="en"><strong>Net operating losses from other years</strong></span></td>
+        </tr>
       </tbody>
     </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Гонорар директора — самозанятость, а не зарплата</span><span lang="en">A director’s fee is self-employment, not salary</span></h3>
+      <p lang="ru">Член совета директоров не является работником корпорации: он не подчинён ей в
+        исполнении функций и получает вознаграждение за самостоятельно оказанные услуги. Поэтому его
+        гонорар <strong>входит</strong> в базу налога на самозанятость, даже если тот же человек
+        получает от этой корпорации заработную плату по другой должности. Конструкция вопроса всегда
+        одна: зарплата от S-корпорации, доля её прибыли, гонорар директора и страховая выплата за
+        упущенный доход. Первые два не облагаются, последние два облагаются.</p>
+      <p lang="en">A director is not an employee of the corporation: they are not subject to its
+        control in performing the role and are paid for services rendered independently. So the fee
+        <strong>is</strong> in the self-employment tax base, even where the same person also draws a
+        salary from that corporation in another capacity. The question is always assembled the same
+        way: wages from an S corporation, a share of its profit, a director’s fee and insurance for
+        lost income. The first two are out; the last two are in.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Аренда у дилера недвижимости облагается</span><span lang="en">A real estate dealer’s rent is taxed</span></h3>
+      <p lang="ru">Общее правило исключает аренду недвижимости из базы, и вопрос строится на
+        исключении из исключения. Дилер недвижимости — тот, кто занят продажей недвижимости
+        покупателям ради прибыли от таких продаж. Арендная плата с имущества, которое он держит для
+        продажи покупателям, <strong>облагается</strong> налогом на самозанятость. Так же
+        облагается доход владельца гостиницы или мотеля, оказывающего постояльцам услуги: уборку,
+        смену белья. Признак один и тот же — деятельность, а не пассивное владение.</p>
+      <p lang="en">The general rule keeps rental income out of the base, and the question is built on
+        the exception to that exception. A real estate dealer is someone in the business of selling
+        real estate to customers for profit on those sales. Rent from property held for sale to
+        customers <strong>is</strong> subject to self-employment tax. So is the income of a hotel or
+        motel owner who provides services to guests — cleaning, linen. The test is the same:
+        activity, not passive ownership.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-5. Чистый заработок по статьям</span><span lang="en">Example 2-5. Net earnings, item by item</span></div>
+      <div class="example__body">
+        <p lang="ru">Владелец магазина держит его на первом этаже собственного двухэтажного здания;
+          верхний этаж сдан внаём. Требуется вывести чистый заработок от самозанятости.</p>
+        <p lang="en">A shop owner runs the store on the ground floor of a two-storey building they
+          own; the upper floor is let. Derive net earnings from self-employment.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Валовая прибыль магазина</span><span lang="en">Gross profit of the store</span></td><td data-num="148000"></td></tr>
+            <tr><td><span lang="ru">Минус коммунальные платежи первого этажа</span><span lang="en">Less utilities for the ground floor</span></td><td data-num="-6200"></td></tr>
+            <tr><td><span lang="ru">Минус амортизация транспорта, используемого в деятельности</span><span lang="en">Less depreciation on business vehicles</span></td><td data-num="-4300"></td></tr>
+            <tr><td><span lang="ru">Минус прочие расходы магазина</span><span lang="en">Less other costs of running the store</span></td><td data-num="-17500"></td></tr>
+            <tr><td><span lang="ru">Минус амортизация здания и проценты по ипотеке в доле магазина</span><span lang="en">Less building depreciation and mortgage interest allocable to the store</span></td><td data-num="-24000"></td></tr>
+            <tr class="total"><td><span lang="ru">Чистый заработок от самозанятости</span><span lang="en">Net earnings from self-employment</span></td><td data-num="96000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Чего в расчёте <strong>нет</strong> и почему: арендная плата с верхнего этажа —
+          доход Schedule E, в базу не входит; прибыль от продажи фургона, использовавшегося в
+          деятельности, — выбытие имущества, а не товар; взносы в пенсионный план и страховые премии
+          на здоровье самозанятого — вычеты Schedule 1, они ниже Schedule C и базу не уменьшают;
+          чистый операционный убыток прошлого года — прямо исключён.</p>
+        <p lang="en">What the computation <strong>omits</strong>, and why: rent from the upper floor is
+          Schedule E income and stays out; gain on the sale of a van used in the business is a
+          disposition of property, not stock in trade; the owner’s retirement plan contribution and
+          self-employed health insurance premium are Schedule 1 deductions, sitting below Schedule C
+          and leaving the base untouched; and a prior-year net operating loss is expressly excluded.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Ниже Schedule C — значит база не тронута</span><span lang="en">Below Schedule C means the base is untouched</span></h3>
+      <p lang="ru">Schedule SE берёт одну строку: чистую прибыль Schedule C или Schedule F. Всё, что
+        вычитается <em>после</em> неё, на налог на самозанятость не влияет вовсе — ни взносы в
+        пенсионный план для себя, ни премии по медицинскому страхованию самозанятого, ни половина
+        самого налога на самозанятость. Эти три вычета уменьшают облагаемый подоходным налогом
+        доход, и только его.</p>
+      <p lang="en">Schedule SE takes a single line: the net profit of Schedule C or Schedule F.
+        Everything deducted <em>after</em> that line leaves the self-employment tax untouched — the
+        owner’s own retirement plan contribution, the self-employed health insurance premium and the
+        deduction for half of the self-employment tax itself. Those three reduce income subject to
+        income tax, and nothing else.</p>
     </div>
 
     <div class="trap">
@@ -414,7 +625,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-4. Зарплата и самозанятость вместе</span><span lang="en">Example 2-4. Wages and self-employment combined</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-6. Зарплата и самозанятость вместе</span><span lang="en">Example 2-6. Wages and self-employment combined</span></div>
       <div class="example__body">
         <p lang="ru">Незамужняя женщина получила заработную плату $150 000 и имеет чистый
           заработок от самозанятости $80 000.</p>
@@ -540,28 +751,407 @@
     </table>
     </div>
 
+    <h3><span lang="ru">Куда идёт выручка от продажи</span><span lang="en">Where a sale is reported</span></h3>
+
+    <p lang="ru">Это самая продуктивная тема раздела: на ней строится примерно треть фермерских
+      вопросов. Разделительная черта проходит не по виду имущества, а по <strong>назначению</strong>:
+      то, что выращено или куплено <em>для продажи</em>, идёт в Schedule F; то, что служило ферме как
+      средство производства, — в форму 4797.</p>
+    <p lang="en">This is the most productive theme in the topic: about a third of farming questions
+      rest on it. The dividing line is not the kind of property but its <strong>purpose</strong>: what
+      is raised or bought <em>for sale</em> goes on Schedule F; what served the farm as a means of
+      production goes on Form 4797.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что продано</span><span lang="en">Item sold</span></th>
+          <th>Schedule F</th>
+          <th>4797</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Продукция и скот, выращенные на продажу</span><span lang="en">Farm products raised for sale</span></td>
+          <td>✓</td><td></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Продукция и скот, купленные для перепродажи</span><span lang="en">Farm products bought for resale</span></td>
+          <td>✓</td><td></td>
+        </tr>
+        <tr>
+          <td><span lang="ru"><strong>Скот для тягла, разведения, спорта или молочного производства</strong> — купленный или выращенный, — а также оборудование</span><span lang="en"><strong>Livestock held for draft, breeding, sport or dairy purposes</strong> — bought or raised — and equipment</span></td>
+          <td></td><td>✓</td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Здания и сооружения</span><span lang="en">Buildings and structures</span></td>
+          <td></td><td>✓</td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Земля</span><span lang="en">Land</span></td>
+          <td></td><td>✓</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Племенная корова в Schedule F не попадает</span><span lang="en">A breeding cow never reaches Schedule F</span></h3>
+      <p lang="ru">Животное, которое держали для разведения или дойки, — не товар, а средство
+        производства фермы, такое же как трактор. Его продажа отражается в форме 4797 и при
+        достаточном сроке владения даёт прирост по <strong>§1231</strong>. Заготовленных неверных
+        варианта обычно три: та же сумма в Schedule F как обычный фермерский доход, та же сумма в
+        форме 4797, но как прирост по §1245, и убыток, посчитанный от «затрат на выращивание».</p>
+      <p lang="en">An animal held for breeding or dairy is not merchandise but a means of production,
+        no different from a tractor. Its sale goes on Form 4797 and, if held long enough, produces a
+        <strong>section 1231</strong> gain. Three wrong answers are usually prepared: the same amount
+        on Schedule F as ordinary farm income, the same amount on Form 4797 but as a section 1245
+        gain, and a loss computed from the “cost of raising” the animal.</p>
+    </div>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Условие §1231 для скота</span><span lang="en">The section 1231 test for livestock</span></th>
+          <th><span lang="ru">Содержание</span><span lang="en">Content</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Назначение</span><span lang="en">Purpose</span></th>
+          <td><span lang="ru">Тягло, разведение, спорт или молочное производство</span><span lang="en">Draft, breeding, sport or dairy</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Срок владения</span><span lang="en">Holding period</span></th>
+          <td><span lang="ru"><span data-fig="livestock_hold_other"></span> месяцев и более; для <strong>лошадей и крупного рогатого скота</strong> — <span data-fig="livestock_hold_cattle"></span> месяца и более</span><span lang="en"><span data-fig="livestock_hold_other"></span> months or more; for <strong>horses and cattle</strong>, <span data-fig="livestock_hold_cattle"></span> months or more</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Что считается скотом</span><span lang="en">What counts as livestock</span></th>
+          <td><span lang="ru">Крупный рогатый скот, свиньи, лошади, мулы, ослы, овцы, козы, пушные и прочие млекопитающие. <strong>Птица не считается</strong>: куры, индейки, голуби, гуси, эму, страусы, нанду</span><span lang="en">Cattle, hogs, horses, mules, donkeys, sheep, goats, fur-bearing and other mammals. <strong>Poultry does not count</strong>: chickens, turkeys, pigeons, geese, emus, ostriches, rheas</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-7. Продажа выращенного племенного быка</span><span lang="en">Example 2-7. Selling a raised breeding bull</span></div>
+      <div class="example__body">
+        <p lang="ru">Бык выращен на ферме, использовался для разведения четыре года и продан за
+          <span data-num="5200"></span>. Расходы на доставку и комиссию продавца —
+          <span data-num="420"></span>. Корма и уход обошлись примерно в
+          <span data-num="3100"></span> и были вычтены в те годы, когда их несли.</p>
+        <p lang="en">A bull raised on the farm, used for breeding for four years, was sold for
+          <span data-num="5200"></span>. Shipping and selling commissions came to
+          <span data-num="420"></span>. Feed and care cost roughly <span data-num="3100"></span> and
+          were deducted in the years they were incurred.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Выручка</span><span lang="en">Amount realised</span></td><td data-num="5200"></td></tr>
+            <tr><td><span lang="ru">Минус расходы на продажу</span><span lang="en">Less selling expenses</span></td><td data-num="-420"></td></tr>
+            <tr><td><span lang="ru">Минус скорректированный базис выращенного животного</span><span lang="en">Less the adjusted basis of a raised animal</span></td><td data-num="0"></td></tr>
+            <tr class="total"><td><span lang="ru">Прирост по §1231, форма 4797</span><span lang="en">Section 1231 gain, Form 4797</span></td><td data-num="4780"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Двойного вычета не бывает: корма и уход уже уменьшили доход прошлых лет,
+          поэтому базиса у выращенного животного нет и вычитать его повторно нельзя. Расходы на
+          продажу — другое дело: они уменьшают прирост. Срок владения четыре года превышает
+          <span data-fig="livestock_hold_cattle"></span> месяца, требуемые для КРС, значит §1231
+          применяется.</p>
+        <p lang="en">There is no double deduction: feed and care already reduced income in earlier
+          years, so a raised animal has no basis and none may be subtracted again. Selling expenses
+          are different — they reduce the gain. Four years exceeds the
+          <span data-fig="livestock_hold_cattle"></span> months required for cattle, so section 1231
+          applies.</p>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-8. Что показать в Schedule F</span><span lang="en">Example 2-8. What goes on Schedule F</span></div>
+      <div class="example__body">
+        <p lang="ru">Фермер вырастил и продал сою, продал племенных тёлок, получил кооперативные
+          выплаты от местного кормового склада, платёж по программе охраны земель и плату за уборку
+          урожая комбайном у соседа.</p>
+        <p lang="en">A farmer sold soybeans and breeding heifers, and received patronage dividends from
+          the local feed store, a conservation program payment, and a fee for custom combining on a
+          neighbour’s land.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Продажа сои</span><span lang="en">Soybean sales</span></td><td data-num="58000"></td></tr>
+            <tr><td><span lang="ru">Кооперативные выплаты</span><span lang="en">Patronage dividends</span></td><td data-num="615"></td></tr>
+            <tr><td><span lang="ru">Платёж по программе охраны земель</span><span lang="en">Conservation program payment</span></td><td data-num="2400"></td></tr>
+            <tr><td><span lang="ru">Уборка урожая комбайном у соседа</span><span lang="en">Custom combining for a neighbour</span></td><td data-num="3700"></td></tr>
+            <tr class="total"><td><span lang="ru">Итого в Schedule F</span><span lang="en">Total on Schedule F</span></td><td data-num="64715"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Продажа племенных тёлок на сумму <span data-num="31500"></span> в этот итог
+          <strong>не входит</strong> — она идёт в форму 4797. Три остальные мелкие суммы, наоборот,
+          входят все: кооперативные выплаты и государственная помощь относятся к деятельности фермы,
+          а работа на соседа — обычная фермерская услуга. Неверные варианты строятся ровно на этих
+          четырёх слагаемых: то добавляют скот, то выбрасывают кооперативные выплаты.</p>
+        <p lang="en">The <span data-num="31500"></span> from selling breeding heifers is
+          <strong>not</strong> in this total — it goes on Form 4797. The three small items, by
+          contrast, all belong: patronage dividends and government assistance relate to the farming
+          business, and custom work for a neighbour is ordinary farm work. The wrong answers are
+          built from exactly these four addends: some add the livestock back, some drop the patronage
+          dividends.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Продажа скота из-за погоды</span><span lang="en">Selling livestock because of the weather</span></h3>
+
+    <p lang="ru">Засуха или наводнение вынуждают продать больше животных, чем обычно, и весь доход
+      двух лет сходится в одном. На этот случай существуют <strong>две разные нормы</strong>, и в
+      вопросе их постоянно подменяют одну другой.</p>
+    <p lang="en">Drought or flood forces the sale of more animals than usual, and two years of income
+      lands in one. There are <strong>two separate provisions</strong> for this, and questions
+      constantly substitute one for the other.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Признак</span><span lang="en">Feature</span></th>
+          <th>§451(g)</th>
+          <th>§1033(e)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Какой скот</span><span lang="en">Qualified livestock</span></th>
+          <td><span lang="ru"><strong>Любой, включая птицу</strong></span><span lang="en"><strong>All livestock, including poultry</strong></span></td>
+          <td><span lang="ru">Только для тягла, разведения или молочного производства</span><span lang="en">Only livestock held for draft, breeding or dairy</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Нужно ли покупать замену</span><span lang="en">Replacements required</span></th>
+          <td><span lang="ru">Нет</span><span lang="en">No</span></td>
+          <td><span lang="ru">Да</span><span lang="en">Yes</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Нужно ли объявление зоны бедствия</span><span lang="en">Disaster declaration required</span></th>
+          <td><span lang="ru"><strong>Да</strong></span><span lang="en"><strong>Yes</strong></span></td>
+          <td><span lang="ru">Нет</span><span lang="en">No</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Срок замены</span><span lang="en">Replacement period</span></th>
+          <td><span lang="ru">Не применяется</span><span lang="en">Not applicable</span></td>
+          <td><span lang="ru">Два года с конца налогового года продажи; <span data-fig="farm_replace_1033e"></span> года, если местность признана имеющей право на федеральную помощь</span><span lang="en">Two years from the end of the tax year of sale; <span data-fig="farm_replace_1033e"></span> years if the area is eligible for federal assistance</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Что даёт</span><span lang="en">Effect</span></th>
+          <td><span lang="ru">Отсрочка признания дохода от <strong>лишних</strong> животных на один год</span><span lang="en">Postpones the gain on the <strong>additional</strong> animals for one year</span></td>
+          <td><span lang="ru">Непризнание прироста как при вынужденном выбытии, если куплена замена</span><span lang="en">Nonrecognition as an involuntary conversion where replacements are bought</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Для отсрочки по §451(g) должны выполняться <strong>все четыре</strong> условия.</p>
+    <p lang="en">The section 451(g) postponement requires <strong>all four</strong> conditions.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Основная деятельность налогоплательщика — фермерство</span><span lang="en">The taxpayer’s principal trade or business is farming</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Применяется <strong>кассовый метод</strong> учёта</span><span lang="en">The taxpayer uses the <strong>cash method</strong> of accounting</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Можно показать, что при обычном ведении дел лишние животные в этом году проданы бы не были</span><span lang="en">It can be shown that under usual business practices the additional animals would not have been sold this year</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Погодные условия послужили причиной признания местности имеющей право на федеральную помощь</span><span lang="en">The weather-related condition caused an area to be designated as eligible for federal assistance</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Продажа до объявления зоны тоже годится</span><span lang="en">A sale before the designation still qualifies</span></h3>
+      <p lang="ru">Условие не требует, чтобы продажа состоялась <em>после</em> признания местности
+        зоной бедствия. Достаточно, чтобы то же самое погодное явление, из-за которого пришлось
+        продать животных, впоследствии привело к такому признанию. Точно так же не требуется, чтобы
+        животные были выращены или проданы внутри зоны: важна причина продажи, а не география.
+        В вопросе обычно перечисляют три таких утверждения и предлагают выбрать верное — верны все.</p>
+      <p lang="en">Nothing requires the sale to occur <em>after</em> the area was designated. It is
+        enough that the same weather condition that forced the sale later caused the designation.
+        Equally, the animals need not have been raised or sold inside the area: the cause of the sale
+        matters, not the geography. Questions usually list three such statements and ask which is
+        true — all of them are.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-9. Сколько дохода можно отложить</span><span lang="en">Example 2-9. How much may be postponed</span></div>
+      <div class="example__body">
+        <p lang="ru">Фермер на кассовом методе обычно продаёт <span data-num="90" data-unit="plain"></span>
+          голов скота в год. Из-за засухи в 2025 году продано <span data-num="126" data-unit="plain"></span>
+          голов на <span data-num="75600"></span>. Местность признана зоной бедствия.</p>
+        <p lang="en">A cash-method farmer normally sells <span data-num="90" data-unit="plain"></span>
+          head of cattle a year. Because of drought, <span data-num="126" data-unit="plain"></span>
+          head were sold in 2025 for <span data-num="75600"></span>. The area was declared a disaster
+          area.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Выручка за 126 голов</span><span lang="en">Proceeds for 126 head</span></td><td data-num="75600"></td></tr>
+            <tr><td><span lang="ru">Приходится на одну голову: 75 600 ÷ 126</span><span lang="en">Per head: 75,600 ÷ 126</span></td><td data-num="600"></td></tr>
+            <tr><td><span lang="ru">Лишних голов: 126 − 90</span><span lang="en">Additional head: 126 − 90</span></td><td data-num="36" data-unit="plain"></td></tr>
+            <tr class="total"><td><span lang="ru">Можно отложить на 2026 год: 36 × $600</span><span lang="en">May be postponed to 2026: 36 × $600</span></td><td data-num="21600"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Откладывается доход только от <strong>лишних</strong> животных, а не вся выручка.
+          Вариант «<span data-num="75600"></span>» в перечне присутствует всегда. Обычное число голов
+          берётся из практики самого фермера, а не из отраслевого среднего.</p>
+        <p lang="en">Only the income from the <strong>additional</strong> animals is postponed, not the
+          whole proceeds. The “<span data-num="75600"></span>” choice is always on the list. The
+          normal number of head comes from the farmer’s own practice, not from an industry average.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Предоплаченные припасы</span><span lang="en">Prepaid farm supplies</span></h3>
+
+    <p lang="ru">Кассовый метод позволял бы фермеру закупить корма и удобрения в декабре, вычесть
+      всю сумму и перенести прибыль на следующий год. Норма ограничивает это: вычет предоплаченных
+      припасов в году оплаты не может превышать <span data-fig="farm_prepaid_limit"></span> прочих
+      вычитаемых фермерских расходов года — то есть всех вычетов Schedule F, включая амортизацию, но
+      не считая самих предоплаченных припасов.</p>
+    <p lang="en">The cash method would otherwise let a farmer buy feed and fertiliser in December,
+      deduct the lot and push profit into the next year. The rule limits that: the deduction for
+      prepaid farm supplies in the year of payment may not exceed
+      <span data-fig="farm_prepaid_limit"></span> of the year’s other deductible farm expenses — that
+      is, all Schedule F deductions including depreciation, but not the prepaid supplies themselves.</p>
+
+    <p lang="ru">Излишек не пропадает: он вычитается в году, когда припасы использованы или
+      израсходованы. Ограничение не действует, если превышение вызвано необычными обстоятельствами
+      или если за три предыдущих года доля предоплаты у фермера была невелика. Птица, купленная для
+      использования на ферме, подчиняется собственному порядку, а корма, которые были бы
+      израсходованы в году, если бы не пожар, буря, наводнение, иное бедствие, болезнь или засуха,
+      предоплаченными припасами не считаются вовсе.</p>
+    <p lang="en">The excess is not lost: it is deducted in the year the supplies are used or consumed.
+      The limit does not apply where the excess arises from unusual circumstances, or where the
+      farmer’s prepayment share was small over the three preceding years. Poultry bought for use in
+      the farm business follows its own rule, and supplies that would have been consumed during the
+      year but for a fire, storm, flood, other casualty, disease or drought are not prepaid farm
+      supplies at all.</p>
+
     <h3><span lang="ru">Особый порядок расчётного налога</span><span lang="en">The special estimated tax rule</span></h3>
 
-    <p lang="ru">Если не менее двух третей валового дохода за 2024 или 2025 год получено от
-      фермерства или рыболовства, действует упрощение: достаточно одного платежа расчётного налога
-      15 января либо можно вовсе обойтись без него, подав декларацию и уплатив налог полностью до
-      <span data-fig="due_farm_estimated"></span>.</p>
-    <p lang="en">Where at least two-thirds of gross income for 2024 or 2025 comes from farming or
-      fishing, a simplification applies: a single estimated payment on January 15 suffices, or none at
-      all if the return is filed and the tax paid in full by
-      <span data-fig="due_farm_estimated"></span>.</p>
+    <p lang="ru">Доход фермера приходит одним куском осенью, а расчётный налог требует равномерных
+      платежей в течение года. Норма снимает это противоречие для того, кто получает от фермерства
+      или рыболовства не менее <span data-fig="farm_income_share"></span> валового дохода за 2024
+      <strong>или</strong> 2025 год. Достаточно выполнения условия за любой из двух лет.</p>
+    <p lang="en">A farmer’s income arrives in one lump in the autumn, while estimated tax calls for
+      level payments across the year. The rule resolves that for anyone whose farming or fishing
+      income is at least <span data-fig="farm_income_share"></span> of gross income for 2024
+      <strong>or</strong> 2025. Meeting the test in either year is enough.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Вариант</span><span lang="en">Option</span></th>
+          <th><span lang="ru">Что нужно сделать</span><span lang="en">What it requires</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Обойтись без расчётного налога</span><span lang="en">Skip estimated tax</span></th>
+          <td><span lang="ru">Подать декларацию за 2025 год и уплатить весь налог до <span data-fig="due_farm_estimated"></span></span><span lang="en">File the 2025 return and pay all the tax due by <span data-fig="due_farm_estimated"></span></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Один платёж</span><span lang="en">A single payment</span></th>
+          <td><span lang="ru">Внести <strong>обязательный годовой платёж</strong> до <span data-fig="due_farm_payment"></span>, а декларацию подать в обычный срок</span><span lang="en">Pay the <strong>required annual payment</strong> by <span data-fig="due_farm_payment"></span> and file at the ordinary time</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Обойтись удержаниями</span><span lang="en">Rely on withholding</span></th>
+          <td><span lang="ru">Удержанный за 2025 год налог составляет 66⅔% налога за 2025 год либо 100% налога за 2024 год</span><span lang="en">2025 withholding equals 66 2/3% of the 2025 tax or 100% of the 2024 tax</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Обязательный годовой платёж — <em>меньшая</em> из двух величин</span><span lang="en">The required annual payment is the <em>smaller</em> of two figures</span></h3>
+      <p lang="ru">Это <strong>66⅔% налога за текущий 2025 год</strong> либо <strong>100% налога,
+        показанного в декларации за 2024 год</strong> — берётся меньшая. Ограничение по величине
+        скорректированного валового дохода, действующее для обычных налогоплательщиков, здесь не
+        применяется: сто процентов прошлогоднего налога годятся при любом доходе.</p>
+      <p lang="en">It is <strong>66 2/3% of the tax for the current year 2025</strong> or
+        <strong>100% of the tax shown on the 2024 return</strong> — whichever is smaller. The adjusted
+        gross income limitation that applies to ordinary taxpayers does not apply here: one hundred
+        percent of last year’s tax works at any income level.</p>
+      <p lang="ru">В вариантах ответа всегда присутствует зеркальная подмена — «бо́льшая из двух»
+        и перепутанные годы: две трети от прошлого года и сто процентов от текущего. Держите порядок:
+        две трети — от <em>текущего</em>, сто процентов — от <em>прошлого</em>.</p>
+      <p lang="en">The answer choices always include the mirror image — “the larger of the two” and the
+        years swapped: two-thirds of last year and one hundred percent of this year. Hold the order:
+        two-thirds of the <em>current</em> year, one hundred percent of the <em>prior</em> year.</p>
+    </div>
 
     <div class="trap">
       <h3><span lang="ru">Правило говорит «1 марта», а дата — <span data-fig="due_farm_estimated"></span></span><span lang="en">The rule says March 1, the date is <span data-fig="due_farm_estimated"></span></span></h3>
       <p lang="ru">1 марта 2026 года приходится на воскресенье, поэтому срок сдвигается на
         следующий рабочий день. Вопрос может проверять либо правило, либо фактическую дату —
-        держите в голове обе.</p>
+        держите в голове обе. Просрочка лишает послабления целиком: штраф за недоплату расчётного
+        налога считается так, будто особого порядка не было.</p>
       <p lang="en">March 1, 2026 falls on a Sunday, so the date moves to the next business day. A
-        question may test either the rule or the actual date — hold both.</p>
+        question may test either the rule or the actual date — hold both. Missing it forfeits the
+        relief entirely: the underpayment penalty is computed as though the special rule never
+        applied.</p>
+    </div>
+
+    <h3><span lang="ru">Что считается валовым доходом от фермерства</span><span lang="en">What counts as gross income from farming</span></h3>
+
+    <p lang="ru">Дробь считается по <strong>валовому</strong> доходу, а не по чистой прибыли, и
+      числитель собирается по своим правилам.</p>
+    <p lang="en">The fraction uses <strong>gross</strong> income, not net profit, and the numerator is
+      assembled by its own rules.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Входит в фермерский доход</span><span lang="en">Counts as farm income</span></th>
+          <th><span lang="ru">Не входит</span><span lang="en">Does not count</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Валовой фермерский доход из Schedule F</span><span lang="en">Gross farm income from Schedule F</span></td>
+          <td><span lang="ru"><strong>Заработная плата, полученная как наёмный работник фермы</strong></span><span lang="en"><strong>Wages received as a farm employee</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Валовой доход от аренды фермы из формы 4835 и <strong>доля урожая за пользование землёй</strong></span><span lang="en">Gross farm rental income from Form 4835 and <strong>crop shares for the use of your land</strong></span></td>
+          <td><span lang="ru">Проценты, дивиденды и прирост от продажи ценных бумаг</span><span lang="en">Interest, dividends and gains on securities</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Фермерский доход из Schedule E, частей II и III, — доли в партнёрствах, S-корпорациях, наследственных массах и трастах</span><span lang="en">Farm income from Schedule E, Parts II and III — shares from partnerships, S corporations, estates and trusts</span></td>
+          <td><span lang="ru">Обычная арендная плата за нефермерскую недвижимость</span><span lang="en">Ordinary rent from non-farm property</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru"><strong>Прирост от продажи скота для тягла, разведения, молочного производства или спорта</strong></span><span lang="en"><strong>Gains from sales of draft, breeding, dairy or sporting livestock</strong></span></td>
+          <td><span lang="ru">Пенсии, пособия и социальные выплаты</span><span lang="en">Pensions, benefits and social security</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Работа на ферме и владение фермой — не одно и то же</span><span lang="en">Working on a farm and owning one are different things</span></h3>
+      <p lang="ru">Заработная плата наёмного работника фермы фермерским доходом не является: она
+        входит в знаменатель дроби и не входит в числитель. Знаменатель вообще берёт всё —
+        заработную плату, проценты, дивиденды, доход Schedule C, прирост капитала, пенсии, аренду и
+        роялти. Убытки при этом не сальдируются: берутся только <em>положительные</em> суммы.</p>
+      <p lang="en">Wages as a farm employee are not farm income: they go into the denominator and stay
+        out of the numerator. The denominator takes everything — wages, interest, dividends, Schedule
+        C income, capital gains, pensions, rents and royalties. Losses are not netted against them:
+        only <em>positive</em> amounts are counted.</p>
+      <p lang="ru">Заметьте: величина «валовой доход от фермерства» определяется в публикации
+        по-разному для <strong>трёх</strong> разных целей — для 25-процентного предела вычета
+        расходов на охрану почв и вод, для усреднения дохода и для расчётного налога. Сопоставляйте
+        определение с задачей, а не переносите его по памяти из соседней темы.</p>
+      <p lang="en">Note that the publication defines “gross income from farming” differently for
+        <strong>three</strong> separate purposes: the 25% limit on soil and water conservation
+        expenses, income averaging, and estimated tax. Match the definition to the question rather
+        than carrying it over from a neighbouring topic.</p>
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-5. Проверка доли фермерского дохода</span><span lang="en">Example 2-5. Testing the two-thirds share</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-10. Проверка доли фермерского дохода</span><span lang="en">Example 2-10. Testing the two-thirds share</span></div>
       <div class="example__body">
         <p lang="ru">За 2025 год фермер получил доход от продажи урожая, а также проценты по
           вкладу и заработную плату на зимней подработке.</p>
@@ -590,10 +1180,12 @@
             </tr>
           </tbody>
         </table>
-        <p lang="ru">Две трети — это 66,7%. Полученные 67,6% порог превышают, значит особый
-          порядок применим. Обратите внимание: сравнивается валовой доход, а не чистая прибыль.</p>
-        <p lang="en">Two-thirds is 66.7%. The 67.6% obtained clears the threshold, so the special rule
-          applies. Note that the comparison uses gross income, not net profit.</p>
+        <p lang="ru">Две трети — это <span data-fig="farm_income_share"></span>. Полученные 67,6%
+          порог превышают, значит особый порядок применим. Обратите внимание: сравнивается валовой
+          доход, а не чистая прибыль, и заработная плата фермера идёт только в знаменатель.</p>
+        <p lang="en">Two-thirds is <span data-fig="farm_income_share"></span>. The 67.6% obtained
+          clears the threshold, so the special rule applies. Note that the comparison uses gross
+          income, not net profit, and the farmer’s wages go into the denominator only.</p>
       </div>
     </div>
 
@@ -601,12 +1193,58 @@
 
     <p lang="ru">Фермер вправе перенести часть дохода текущего года на три предыдущих года и
       обложить её по ставкам тех лет. Расчёт делается в Schedule J. Приём полезен, когда удачный
-      год выталкивает доход в более высокую ставку. Возможность доступна фермерам и рыбакам и не
-      предоставляется другим видам бизнеса.</p>
+      год выталкивает доход в более высокую ставку.</p>
     <p lang="en">A farmer may elect to spread part of the current year’s income back over the three
       prior years and tax it at those years’ rates, computed on Schedule J. It helps when a good year
-      pushes income into a higher bracket. The election is open to farmers and fishermen and to no
-      other business.</p>
+      pushes income into a higher bracket.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Вопрос</span><span lang="en">Question</span></th>
+          <th><span lang="ru">Ответ</span><span lang="en">Answer</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Кто вправе</span><span lang="en">Who may use it</span></th>
+          <td><span lang="ru">Физическое лицо, ведущее фермерскую или рыболовную деятельность <strong>само, как партнёр партнёрства либо как акционер S-корпорации</strong></span><span lang="en">An individual engaged in a farming or fishing business <strong>directly, as a partner in a partnership, or as a shareholder in an S corporation</strong></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Кто не вправе</span><span lang="en">Who may not</span></th>
+          <td><span lang="ru">Корпорации, партнёрства, S-корпорации, наследственные массы и трасты — <strong>как субъекты</strong>. Услуги в качестве наёмного работника в расчёт не принимаются</span><span lang="en">Corporations, partnerships, S corporations, estates and trusts — <strong>as entities</strong>. Services performed as an employee are disregarded</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Нужно ли фермерствовать в базовые годы</span><span lang="en">Must you have farmed in the base years</span></th>
+          <td><span lang="ru"><strong>Нет.</strong> В предыдущих трёх годах заниматься фермерством не требуется, и статус подачи мог быть иным</span><span lang="en"><strong>No.</strong> You need not have been in the business in any base year, and your filing status may have differed</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Когда можно заявить</span><span lang="en">When it may be made</span></th>
+          <td><span lang="ru">С декларацией, поданной в срок или с продлением; на поздно поданной декларации; а также заявить, изменить или отменить в уточнённой декларации, пока не истёк срок требования возврата налога</span><span lang="en">With a timely filed return including extensions; on a late return; and it may be used, changed or cancelled on an amended return while the refund period is open</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Что можно усреднить</span><span lang="en">What may be averaged</span></th>
+          <td><span lang="ru">Любой доход от фермерской деятельности, но <strong>не более облагаемого дохода года</strong>. Прибыль и убыток от продажи <em>земли</em>, прав на застройку и прав выпаса не включаются</span><span lang="en">Any income attributable to the farming business, but <strong>not more than taxable income</strong>. Gain or loss on the sale of <em>land</em>, development rights and grazing rights is excluded</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Партнёр вправе, партнёрство — нет</span><span lang="en">The partner may, the partnership may not</span></h3>
+      <p lang="ru">Различие субъекта и участника решает половину вопросов темы. Само партнёрство или
+        сама S-корпорация усреднение применить не могут, потому что налог на прибыль они не платят.
+        Но физическое лицо, получившее фермерский доход через них, усреднение применяет — в своей
+        декларации. C-корпорация исключена в любом качестве. Акционер S-корпорации вправе учесть как
+        фермерский доход и полученную от неё заработную плату, если она относится к фермерской
+        деятельности.</p>
+      <p lang="en">The distinction between the entity and its owner decides half the questions here.
+        A partnership or an S corporation cannot average, because neither pays income tax on the
+        profit. But an individual receiving farm income through one does average — on their own
+        return. A C corporation is excluded in every capacity. An S corporation shareholder may treat
+        compensation received from it as farm income where it is attributable to the farming business.</p>
+    </div>
 
     <!-- ============================================================ -->
     <section class="sub" id="traps">
@@ -628,6 +1266,23 @@
         <tr><th>10</th><td><span lang="ru">Доля в две трети проверяется по валовому доходу, а не по чистой прибыли</span><span lang="en">The two-thirds share is tested on gross income, not net profit</span></td></tr>
         <tr><th>11</th><td><span lang="ru">Срок для фермеров за 2025 год — <span data-fig="due_farm_estimated"></span>, потому что 1 марта выпало на воскресенье</span><span lang="en">The farmer’s date for 2025 is <span data-fig="due_farm_estimated"></span>, because March 1 fell on a Sunday</span></td></tr>
         <tr><th>12</th><td><span lang="ru">Усреднение дохода по Schedule J доступно только фермерам и рыбакам</span><span lang="en">Income averaging on Schedule J is available to farmers and fishermen only</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Вознаграждение члена совета директоров <strong>входит</strong> в базу налога на самозанятость, даже если тот же человек получает от корпорации зарплату</span><span lang="en">A corporate director’s fee <strong>is</strong> in the self-employment tax base, even where the same person also draws a salary from the corporation</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Аренда недвижимости у <strong>дилера недвижимости</strong> облагается налогом на самозанятость; у всех прочих — нет</span><span lang="en">Rental income of a <strong>real estate dealer</strong> is subject to self-employment tax; everyone else’s is not</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">Прибыль от продажи делового имущества в базу не входит — кроме товарных запасов и имущества, предназначенного для продажи покупателям</span><span lang="en">Gain on the disposition of business property is outside the base — except stock in trade and property held primarily for sale to customers</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">Взносы в собственный пенсионный план, премии на медицинское страхование самозанятого и убытки прошлых лет базу <strong>не уменьшают</strong>: они ниже Schedule C</span><span lang="en">The owner’s retirement contribution, self-employed health insurance and prior-year losses <strong>do not</strong> reduce the base: they sit below Schedule C</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">Возврат ранее списанного долга — прочий доход <strong>в Schedule C</strong>, а не в Schedule 1 и не уточнением прошлой декларации</span><span lang="en">A recovered bad debt is other income <strong>on Schedule C</strong> — not on Schedule 1 and not by amending the earlier return</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Возврат включается в доход лишь в той части, в какой прежний вычет действительно уменьшил налог</span><span lang="en">A recovery is income only to the extent the earlier deduction actually reduced tax</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Уменьшение долга <strong>продавцом</strong> имущества дохода обычно не даёт — уменьшается базис. Прощение банком даёт доход</span><span lang="en">A debt reduction by the <strong>seller</strong> of property generally gives no income — basis is reduced. Forgiveness by a bank gives income</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Скот для тягла, разведения, спорта или дойки идёт в <strong>форму 4797</strong>, а не в Schedule F, — куплен он или выращен</span><span lang="en">Livestock held for draft, breeding, sport or dairy goes on <strong>Form 4797</strong>, not Schedule F — whether bought or raised</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Срок владения для §1231: <span data-fig="livestock_hold_other"></span> месяцев, для лошадей и КРС — <span data-fig="livestock_hold_cattle"></span>. Птица скотом не считается</span><span lang="en">Section 1231 holding period: <span data-fig="livestock_hold_other"></span> months, and <span data-fig="livestock_hold_cattle"></span> for horses and cattle. Poultry is not livestock</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Расходы на продажу уменьшают прирост от продажи скота; «затраты на выращивание» второй раз не вычитаются</span><span lang="en">Selling expenses reduce the gain on livestock; the “cost of raising” is not deducted a second time</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">§451(g) — любой скот, включая птицу, объявление зоны обязательно, замена не нужна. §1033(e) — только тягловый, племенной и молочный, замена обязательна, объявление не нужно</span><span lang="en">Section 451(g): all livestock including poultry, designation required, no replacement. Section 1033(e): draft, breeding and dairy only, replacement required, no designation</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Откладывается доход только от <strong>лишних</strong> животных, а не вся выручка. Продажа до объявления зоны бедствия тоже годится</span><span lang="en">Only the income from the <strong>additional</strong> animals is postponed, not the whole proceeds. A sale before the designation still qualifies</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Обязательный годовой платёж фермера — <strong>меньшая</strong> из величин: 66⅔% налога текущего года или 100% налога прошлого года</span><span lang="en">A farmer’s required annual payment is the <strong>smaller</strong> of 66 2/3% of the current year’s tax or 100% of the prior year’s</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Заработная плата наёмного работника фермы фермерским доходом не является. Доля урожая за землю и прирост от продажи племенного скота — являются</span><span lang="en">Wages as a farm employee are not farm income. Crop shares for the use of land and gains on breeding livestock are</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Вычет предоплаченных фермерских припасов ограничен <span data-fig="farm_prepaid_limit"></span> прочих фермерских расходов года; излишек вычитается при использовании</span><span lang="en">Prepaid farm supplies are deductible up to <span data-fig="farm_prepaid_limit"></span> of the year’s other farm expenses; the excess is deducted when consumed</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Усреднение применяет физическое лицо, в том числе партнёр и акционер S-корпорации. Сами партнёрство, S-корпорация, траст и корпорация — не вправе</span><span lang="en">Averaging is used by an individual, including a partner and an S corporation shareholder. The partnership, S corporation, trust and corporation themselves may not</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Заниматься фермерством в базовые годы для усреднения не требуется; заявить его можно и в уточнённой декларации, пока открыт срок возврата налога</span><span lang="en">Averaging needs no farming in the base years, and may be elected on an amended return while the refund period is open</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -695,6 +1350,88 @@
         <p lang="en">Yes. Combined $290,000 against the joint threshold of
           <span data-fig="addl_medicare_mfj"></span>; the excess of $40,000 × 0.9% =
           <strong>$360</strong>.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">7. За год получено: зарплата от собственной S-корпорации $14 000, её распределяемая прибыль $38 000, гонорар члена совета директоров другой корпорации $3 200, гарантированная выплата за услуги от партнёрства, где вы ограниченный партнёр, $6 500. Каков чистый заработок от самозанятости?</span><span lang="en">7. For the year: $14,000 salary from your own S corporation, $38,000 of its distributive income, a $3,200 director’s fee from another corporation, and a $6,500 guaranteed payment for services from a partnership in which you are a limited partner. What are net earnings from self-employment?</span></summary>
+      <div>
+        <p lang="ru"><strong>$9 700</strong> = гонорар директора $3 200 + гарантированная выплата
+          $6 500. Зарплата от S-корпорации — доход работника, а её распределяемая прибыль в базу не
+          входит. Гарантированная выплата за услуги облагается даже у ограниченного партнёра —
+          именно потому, что это плата за труд, а не доля от капитала.</p>
+        <p lang="en"><strong>$9,700</strong> = the $3,200 director’s fee plus the $6,500 guaranteed
+          payment. The S corporation salary is employee income and its distributive share is outside
+          the base. A guaranteed payment for services is taxed even to a limited partner, precisely
+          because it pays for work rather than for capital.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">8. В 2024 году бизнес на методе начисления списал безнадёжный долг $14 000 и закончил год с прибылью. В 2025 году должник вернул $9 300. Как это отражается?</span><span lang="en">8. In 2024 an accrual-basis business wrote off a $14,000 bad debt and ended the year with a profit. In 2025 the debtor repaid $9,300. How is that reported?</span></summary>
+      <div>
+        <p lang="ru">$9 300 в прочий доход <strong>Schedule C</strong> за 2025 год. Прибыль 2024 года
+          была положительной, значит вычет дал налоговую выгоду полностью и возврат облагается весь.
+          Декларацию 2024 года не уточняют и вычет 2025 года не уменьшают.</p>
+        <p lang="en">$9,300 as other income on the 2025 <strong>Schedule C</strong>. The 2024 profit
+          was positive, so the deduction gave full tax benefit and the whole recovery is taxable. The
+          2024 return is not amended and the 2025 deduction is not reduced.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">9. Фермер продал выращенную племенную корову, которой было три года, за $1 840. Расходы на продажу $165. Где и в каком размере отражается результат?</span><span lang="en">9. A farmer sold a raised breeding cow, three years old, for $1,840. Selling expenses were $165. Where and in what amount is the result reported?</span></summary>
+      <div>
+        <p lang="ru">Прирост $1 675 в <strong>форме 4797</strong> как прирост по §1231. У выращенного
+          животного базиса нет: корма и уход уже вычтены в прошлые годы. Три года превышают
+          <span data-fig="livestock_hold_cattle"></span> месяца, требуемые для КРС. В Schedule F эта
+          продажа не попадает вовсе.</p>
+        <p lang="en">A $1,675 gain on <strong>Form 4797</strong> as a section 1231 gain. A raised
+          animal has no basis: feed and care were deducted in earlier years. Three years exceeds the
+          <span data-fig="livestock_hold_cattle"></span> months required for cattle. The sale never
+          reaches Schedule F.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">10. Фермер на кассовом методе обычно продаёт 220 голов свиней в год. Из-за наводнения в 2025 году продано 275 голов на $41 250. Местность признана зоной бедствия. Сколько можно отложить на 2026 год?</span><span lang="en">10. A cash-method farmer normally sells 220 hogs a year. Because of flooding, 275 were sold in 2025 for $41,250. The area was declared eligible for assistance. How much may be postponed to 2026?</span></summary>
+      <div>
+        <p lang="ru"><strong>$8 250</strong>. Цена одной головы $41 250 ÷ 275 = $150; лишних голов
+          275 − 220 = 55; 55 × $150 = $8 250. Откладывается доход только от лишних животных.
+          Вариант «$41 250» в перечне присутствует всегда и всегда неверен.</p>
+        <p lang="en"><strong>$8,250</strong>. Per head: $41,250 ÷ 275 = $150; additional head:
+          275 − 220 = 55; 55 × $150 = $8,250. Only the income from the extra animals is postponed.
+          The “$41,250” choice is always offered and always wrong.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">11. Налог фермера за 2025 год — $46 000, за 2024 год было показано $28 500. Каков обязательный годовой платёж и когда его внести?</span><span lang="en">11. A farmer’s 2025 tax is $46,000; the 2024 return showed $28,500. What is the required annual payment and when is it due?</span></summary>
+      <div>
+        <p lang="ru">Меньшая из двух величин: 66⅔% от $46 000 = $30 667 либо 100% от $28 500 =
+          $28 500. Платёж — <strong>$28 500</strong>, срок — <span data-fig="due_farm_payment"></span>.
+          Ограничение по скорректированному валовому доходу, действующее для прочих
+          налогоплательщиков, здесь не применяется. Альтернатива — вовсе не платить расчётный налог,
+          подав декларацию и уплатив всё до <span data-fig="due_farm_estimated"></span>.</p>
+        <p lang="en">The smaller of 66 2/3% of $46,000 = $30,667 and 100% of $28,500 = $28,500. The
+          payment is <strong>$28,500</strong>, due <span data-fig="due_farm_payment"></span>. The
+          adjusted gross income limitation that applies to other taxpayers does not apply here. The
+          alternative is to pay no estimated tax at all by filing and paying in full by
+          <span data-fig="due_farm_estimated"></span>.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">12. Валовой доход фермера за 2025 год: Schedule F — $60 000, аренда фермы по форме 4835 — $12 000, прирост от продажи племенного скота — $8 000, зарплата на ферме соседа — $30 000, проценты — $2 000. Применим ли особый порядок?</span><span lang="en">12. A farmer’s 2025 gross income: Schedule F $60,000, farm rental on Form 4835 $12,000, gain on breeding livestock $8,000, wages working on a neighbour’s farm $30,000, interest $2,000. Does the special rule apply?</span></summary>
+      <div>
+        <p lang="ru">Да. Фермерский доход $60 000 + $12 000 + $8 000 = $80 000. Всего валового
+          дохода $112 000. Доля 71,4% превышает <span data-fig="farm_income_share"></span>.
+          Заработная плата на чужой ферме идёт <em>только в знаменатель</em>: работа по найму
+          фермерским доходом не является, кем бы ни был работодатель.</p>
+        <p lang="en">Yes. Farm income is $60,000 + $12,000 + $8,000 = $80,000. Total gross income is
+          $112,000. The 71.4% share clears <span data-fig="farm_income_share"></span>. Wages on
+          someone else’s farm go <em>into the denominator only</em>: employment is not farm income,
+          whoever the employer is.</p>
       </div>
     </details>
 
@@ -1032,6 +1769,245 @@ window.QUIZZES.su02 = [
       C: { ru: "Продажи скота информационной декларацией такого вида не оформляются.", en: "Livestock sales are not reported on this type of information return." },
       D: { ru: "Страховые выплаты поступают от страховой компании, а не от государственного органа.", en: "Insurance proceeds come from an insurer, not from a government agency." }
     }
+  },
+  {
+    ru: "За год получено: зарплата от собственной S-корпорации $12 000, её распределяемая прибыль $34 000, гонорар члена совета директоров $3 500 и страховая выплата за упущенный доход от прекращения деятельности $7 600. Каков чистый заработок от самозанятости?",
+    en: "For the year: $12,000 salary from your own S corporation, $34,000 of its distributive income, a $3,500 director’s fee, and $7,600 of insurance for income lost when a business ceased. What are net earnings from self-employment?",
+    opts: [
+      { k: "A", ru: "$3 500", en: "$3,500" },
+      { k: "B", ru: "$11 100", en: "$11,100" },
+      { k: "C", ru: "$23 100", en: "$23,100" },
+      { k: "D", ru: "$57 100", en: "$57,100" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Гонорар директора действительно входит, но возмещение упущенного дохода входит тоже: оно замещает прибыль, которая облагалась бы налогом на самозанятость.", en: "The director’s fee does belong, but so does the payment for lost income: it stands in for profit that would itself have borne self-employment tax." },
+      B: { ru: "Верно. $3 500 гонорара + $7 600 возмещения упущенного дохода. Зарплата от S-корпорации — доход работника, доля прибыли S-корпорации в базу не входит.", en: "Correct. The $3,500 fee plus $7,600 for lost income. The S corporation salary is employee income and its distributive share stays out of the base." },
+      C: { ru: "Здесь ошибочно добавлена зарплата от S-корпорации: она облагается обычными взносами через удержание, а не налогом на самозанятость.", en: "This wrongly adds the S corporation salary: it bears ordinary payroll taxes through withholding, not self-employment tax." },
+      D: { ru: "Добавлена вся доля прибыли S-корпорации — самая частая ошибка темы.", en: "This adds the entire S corporation distributive share, the commonest error in the topic." }
+    }
+  },
+  {
+    ru: "Чей доход от аренды недвижимости облагается налогом на самозанятость?",
+    en: "Whose rental income from real estate is subject to self-employment tax?",
+    opts: [
+      { k: "A", ru: "Владельца жилого дома, сдающего квартиры без дополнительных услуг", en: "The owner of an apartment house who provides no services to tenants" },
+      { k: "B", ru: "Дилера недвижимости, получающего аренду с имущества, предназначенного к продаже покупателям", en: "A real estate dealer receiving rent on property held for sale to customers" },
+      { k: "C", ru: "Владельца земли, сдающего её фермеру за долю урожая без материального участия", en: "A landowner renting to a farmer for a crop share without material participation" },
+      { k: "D", ru: "Наследника, сдающего унаследованное помещение по долгосрочному договору", en: "An heir letting inherited premises on a long-term lease" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Без оказания услуг это пассивная аренда: Schedule E, налога на самозанятость нет.", en: "Without services this is passive renting: Schedule E, no self-employment tax." },
+      B: { ru: "Верно. Аренда, полученная в рамках деятельности дилера недвижимости, входит в базу. Так же облагается доход владельца гостиницы, оказывающего услуги постояльцам.", en: "Correct. Rent received in the course of a real estate dealer’s business is in the base. So is the income of a hotel owner providing services to guests." },
+      C: { ru: "Это аренда фермы без материального участия: форма 4835, налога на самозанятость нет.", en: "That is farm rental without material participation: Form 4835, no self-employment tax." },
+      D: { ru: "Способ получения имущества к базе отношения не имеет; значение имеет только деятельность.", en: "How the property was acquired is irrelevant; only the activity matters." }
+    }
+  },
+  {
+    ru: "Что из перечисленного уменьшает базу налога на самозанятость?",
+    en: "Which of the following reduces the self-employment tax base?",
+    opts: [
+      { k: "A", ru: "Взносы владельца в собственный пенсионный план", en: "The owner’s contributions to their own retirement plan" },
+      { k: "B", ru: "Премии по медицинскому страхованию самозанятого", en: "The self-employed health insurance premium" },
+      { k: "C", ru: "Коммунальные расходы помещения, где ведётся деятельность", en: "Utilities for the premises where the business operates" },
+      { k: "D", ru: "Чистый операционный убыток прошлого года", en: "A prior-year net operating loss" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Взнос вычитается в Schedule 1, то есть ниже Schedule C. Облагаемый подоходным налогом доход он уменьшает, базу самозанятости — нет.", en: "The contribution is deducted on Schedule 1, below Schedule C. It reduces income subject to income tax, not the self-employment base." },
+      B: { ru: "Премия тоже вычитается в Schedule 1 и базу не затрагивает.", en: "The premium is likewise a Schedule 1 deduction and leaves the base untouched." },
+      C: { ru: "Верно. Это обычный деловой расход Schedule C, а Schedule SE берёт именно чистую прибыль Schedule C.", en: "Correct. It is an ordinary Schedule C business expense, and Schedule SE takes the Schedule C net profit." },
+      D: { ru: "Чистые операционные убытки прошлых лет прямо исключены из расчёта чистого заработка.", en: "Net operating losses from other years are expressly excluded from net earnings." }
+    }
+  },
+  {
+    ru: "В 2024 году бизнес на методе начисления вычел безнадёжный долг $11 000; год закончен с прибылью. В 2025 году взыскано $6 800. Как отражается взыскание?",
+    en: "In 2024 an accrual-basis business deducted an $11,000 bad debt and ended the year profitable. In 2025 it recovered $6,800. How is the recovery reported?",
+    opts: [
+      { k: "A", ru: "Прочий доход в Schedule C за 2025 год", en: "Other income on the 2025 Schedule C" },
+      { k: "B", ru: "Прочий доход в Schedule 1 формы 1040 за 2025 год", en: "Other income on Schedule 1 of the 2025 Form 1040" },
+      { k: "C", ru: "Уменьшение вычета по безнадёжным долгам в Schedule C за 2025 год", en: "A reduction of the 2025 Schedule C bad debt deduction" },
+      { k: "D", ru: "Уточнённая декларация за 2024 год", en: "An amended 2024 return" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Доход остаётся деловым, значит показывается прочим доходом в Schedule C того года, когда получен.", en: "Correct. The income stays business income and is reported as other income on the Schedule C of the year received." },
+      B: { ru: "Schedule 1 предназначен для внеделовых поступлений; здесь долг возник в бизнесе.", en: "Schedule 1 is for non-business receipts; here the debt arose in the business." },
+      C: { ru: "Вычет текущего года к прошлому взысканию отношения не имеет: это разные долги.", en: "The current year’s deduction is unrelated to an earlier recovery: these are different debts." },
+      D: { ru: "Прошлый год не уточняют: тогда списание было правомерным, и ошибки в декларации нет.", en: "The earlier year is not amended: the write-off was correct then and the return contains no error." }
+    }
+  },
+  {
+    ru: "Заёмщик взял в банке $20 000 на покупку станка. Банк продавцом станка не был. Позже банк, при том что заёмщик платёжеспособен, уменьшил долг на $10 000. Что происходит?",
+    en: "A borrower took a $20,000 bank loan to buy a machine. The bank was not the seller. Later, while the borrower was solvent, the bank reduced the debt by $10,000. What follows?",
+    opts: [
+      { k: "A", ru: "Уменьшается базис станка, дохода нет", en: "The machine’s basis is reduced and there is no income" },
+      { k: "B", ru: "Возникает доход $10 000", en: "There is $10,000 of income" },
+      { k: "C", ru: "Последствия откладываются до окончательного погашения", en: "The tax effect waits until the debt is finally repaid" },
+      { k: "D", ru: "Стоимость станка списывается на величину снисхождения", en: "The machine’s carrying cost is written down by the amount of the relief" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Уменьшение базиса вместо дохода возможно, когда долг уменьшил сам <em>продавец</em> имущества. Банк продавцом не был.", en: "Reducing basis instead of income applies when the <em>seller</em> of the property reduces the debt. The bank was not the seller." },
+      B: { ru: "Верно. Прощение долга даёт доход, если нет банкротства, неплатёжеспособности или иного специального исключения.", en: "Correct. Cancelled debt produces income absent bankruptcy, insolvency or another specific exception." },
+      C: { ru: "Доход возникает в году прощения, а не в году погашения остатка.", en: "The income arises in the year of forgiveness, not when the balance is repaid." },
+      D: { ru: "Списание стоимости вместо дохода — это правило для снисхождения от продавца, а не от постороннего кредитора.", en: "Writing the cost down instead of reporting income is the seller-relief rule, not one for an outside lender." }
+    }
+  },
+  {
+    ru: "Фермер продал выращенную трёхлетнюю молочную корову за $1 450, заплатив $130 за доставку и комиссию. Как отражается сделка?",
+    en: "A farmer sold a raised three-year-old dairy cow for $1,450, paying $130 in shipping and commissions. How is the sale reported?",
+    opts: [
+      { k: "A", ru: "Прирост $1 320 по §1231 в форме 4797", en: "A $1,320 section 1231 gain on Form 4797" },
+      { k: "B", ru: "Прирост $1 320 по §1245 в форме 4797", en: "A $1,320 section 1245 gain on Form 4797" },
+      { k: "C", ru: "Доход $1 320 в Schedule F как обычный фермерский доход", en: "$1,320 of ordinary farm income on Schedule F" },
+      { k: "D", ru: "Убыток, поскольку выращивание коровы обошлось дороже", en: "A loss, since raising the cow cost more than that" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Молочный скот — средство производства фермы; при владении не менее 24 месяцев продажа даёт прирост по §1231. Расходы на продажу уменьшают выручку: $1 450 − $130.", en: "Correct. Dairy livestock is a means of production; held at least 24 months, the sale gives a section 1231 gain. Selling expenses reduce the amount realised: $1,450 − $130." },
+      B: { ru: "Форма верна, норма — нет: §1245 возвращает ранее взятую амортизацию, а у выращенного животного её не было.", en: "The form is right, the provision is not: section 1245 recaptures depreciation, and a raised animal had none." },
+      C: { ru: "В Schedule F идут выращенные и купленные <em>на продажу</em> продукция и скот. Молочное стадо к ним не относится.", en: "Schedule F carries products and livestock raised or bought <em>for sale</em>. A dairy herd is not among them." },
+      D: { ru: "Затраты на корма и уход уже вычтены в те годы, когда они понесены; базиса у выращенного животного нет, и второй раз их не вычитают.", en: "Feed and care were already deducted in the years incurred; a raised animal has no basis and they are not deducted twice." }
+    }
+  },
+  {
+    ru: "Фермер продал сена на $37 500, племенных коров на $19 800, получил кооперативные выплаты $268, помощь на корма $940 и $2 150 за прессование сена у соседа. Какая сумма идёт в Schedule F?",
+    en: "A farmer sold $37,500 of hay and $19,800 of breeding cows, and received $268 of patronage dividends, $940 of feed assistance and $2,150 for custom baling on a neighbour’s land. What goes on Schedule F?",
+    opts: [
+      { k: "A", ru: "$40 590", en: "$40,590" },
+      { k: "B", ru: "$40 858", en: "$40,858" },
+      { k: "C", ru: "$60 390", en: "$60,390" },
+      { k: "D", ru: "$60 658", en: "$60,658" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Здесь выброшены кооперативные выплаты: они относятся к деятельности фермы и в Schedule F входят.", en: "This drops the patronage dividends: they relate to the farming business and belong on Schedule F." },
+      B: { ru: "Верно. $37 500 + $268 + $940 + $2 150 = $40 858. Продажа племенных коров идёт в форму 4797.", en: "Correct. $37,500 + $268 + $940 + $2,150 = $40,858. The breeding cows go on Form 4797." },
+      C: { ru: "Добавлены племенные коровы и выброшены кооперативные выплаты — обе ошибки сразу.", en: "This adds the breeding cows and drops the patronage dividends — both errors at once." },
+      D: { ru: "Добавлены племенные коровы: их продажа в Schedule F не показывается никогда.", en: "This adds the breeding cows, whose sale never appears on Schedule F." }
+    }
+  },
+  {
+    ru: "Какое условие не требуется для отсрочки дохода по §451(g) при вынужденной погодной продаже скота?",
+    en: "Which condition is NOT required for the section 451(g) postponement on a weather-forced sale of livestock?",
+    opts: [
+      { k: "A", ru: "Основная деятельность налогоплательщика — фермерство", en: "The taxpayer’s principal business is farming" },
+      { k: "B", ru: "Применяется метод начисления", en: "The taxpayer uses the accrual method" },
+      { k: "C", ru: "Погодные условия вызвали признание местности имеющей право на федеральную помощь", en: "The weather caused the area to be designated eligible for federal assistance" },
+      { k: "D", ru: "При обычном ведении дел лишние животные в этом году проданы бы не были", en: "Under usual practice the additional animals would not have been sold this year" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это одно из четырёх обязательных условий.", en: "That is one of the four required conditions." },
+      B: { ru: "Верно, поскольку требуется прямо обратное: отсрочка доступна только при <strong>кассовом</strong> методе учёта.", en: "Correct, because the opposite is required: the postponement is available only on the <strong>cash</strong> method." },
+      C: { ru: "Объявление зоны для §451(g) обязательно — в отличие от §1033(e), где оно не требуется.", en: "The designation is required for section 451(g) — unlike section 1033(e), where it is not." },
+      D: { ru: "Это тоже одно из четырёх условий.", en: "That too is one of the four conditions." }
+    }
+  },
+  {
+    ru: "Фермер на кассовом методе обычно продаёт 150 голов коз в год. Из-за засухи в 2025 году продано 180 голов на $27 000, местность объявлена зоной бедствия. Какую сумму можно отложить на 2026 год?",
+    en: "A cash-method farmer normally sells 150 goats a year. Because of drought, 180 were sold in 2025 for $27,000 and the area was declared a disaster area. How much may be postponed to 2026?",
+    opts: [
+      { k: "A", ru: "$4 500", en: "$4,500" },
+      { k: "B", ru: "$5 400", en: "$5,400" },
+      { k: "C", ru: "$27 000", en: "$27,000" },
+      { k: "D", ru: "Ничего: правило действует только при засухе в отношении племенного скота", en: "Nothing: the rule covers only breeding livestock in a drought" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Цена головы $27 000 ÷ 180 = $150; лишних голов 180 − 150 = 30; 30 × $150 = $4 500.", en: "Correct. Per head: $27,000 ÷ 180 = $150; additional head: 180 − 150 = 30; 30 × $150 = $4,500." },
+      B: { ru: "$5 400 получается, если разделить выручку на обычные 150 голов вместо фактически проданных 180. Цена головы берётся из фактической продажи.", en: "$5,400 divides the proceeds by the normal 150 head instead of the 180 actually sold. The per-head price comes from the actual sale." },
+      C: { ru: "Откладывается доход только от лишних животных, а не вся выручка года.", en: "Only the income from the additional animals is postponed, not the year’s whole proceeds." },
+      D: { ru: "§451(g) охватывает любой скот, включая птицу, и любое погодное явление — засуху, наводнение или иное.", en: "Section 451(g) covers all livestock including poultry, and any weather-related condition — drought, flood or otherwise." }
+    }
+  },
+  {
+    ru: "Чем §1033(e) отличается от §451(g) при продаже скота из-за погоды?",
+    en: "How does section 1033(e) differ from section 451(g) on a weather-related sale of livestock?",
+    opts: [
+      { k: "A", ru: "Требует объявления зоны бедствия, но не требует покупки замены", en: "It requires a disaster designation but no replacement purchase" },
+      { k: "B", ru: "Требует покупки замены, но не требует объявления зоны бедствия", en: "It requires a replacement purchase but no disaster designation" },
+      { k: "C", ru: "Охватывает любой скот, включая птицу", en: "It covers all livestock, including poultry" },
+      { k: "D", ru: "Даёт отсрочку ровно на один год", en: "It postpones the income for exactly one year" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Всё наоборот: объявление зоны обязательно для §451(g), а замена — для §1033(e).", en: "It is the other way round: the designation belongs to section 451(g), the replacement to section 1033(e)." },
+      B: { ru: "Верно. §1033(e) работает как вынужденное выбытие: прирост не признаётся, если куплена замена — в течение двух лет с конца года продажи, а в местности, имеющей право на федеральную помощь, — четырёх.", en: "Correct. Section 1033(e) works as an involuntary conversion: the gain is not recognised if replacements are bought within two years of the end of the year of sale, or four years where the area is eligible for federal assistance." },
+      C: { ru: "Любой скот, включая птицу, охватывает §451(g). §1033(e) — только тягловый, племенной и молочный.", en: "All livestock including poultry belongs to section 451(g). Section 1033(e) covers draft, breeding and dairy only." },
+      D: { ru: "Отсрочку на один год даёт §451(g); §1033(e) даёт непризнание прироста при замене.", en: "The one-year postponement is section 451(g); section 1033(e) gives nonrecognition on replacement." }
+    }
+  },
+  {
+    ru: "Фермер обязан внести расчётный налог. Налог за 2025 год составит $30 000, в декларации за 2024 год показано $19 000. Каков обязательный годовой платёж?",
+    en: "A qualified farmer must pay estimated tax. The 2025 tax will be $30,000 and the 2024 return showed $19,000. What is the required annual payment?",
+    opts: [
+      { k: "A", ru: "$12 667 — две трети налога за 2024 год", en: "$12,667 — two-thirds of the 2024 tax" },
+      { k: "B", ru: "$19 000 — 100% налога за 2024 год", en: "$19,000 — 100% of the 2024 tax" },
+      { k: "C", ru: "$20 000 — 66⅔% налога за 2025 год", en: "$20,000 — 66 2/3% of the 2025 tax" },
+      { k: "D", ru: "$30 000 — весь налог за 2025 год", en: "$30,000 — the whole 2025 tax" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Годы перепутаны: две трети берутся от налога <em>текущего</em> года, а от прошлого берутся все сто процентов.", en: "The years are swapped: two-thirds applies to the <em>current</em> year, while the prior year is taken at one hundred percent." },
+      B: { ru: "Верно. Платёж — меньшая из величин: 66⅔% от $30 000 = $20 000 либо 100% от $19 000 = $19 000. Меньшая — $19 000.", en: "Correct. The payment is the smaller of 66 2/3% of $30,000 = $20,000 and 100% of $19,000 = $19,000. The smaller is $19,000." },
+      C: { ru: "Это одна из двух величин, но берётся не бо́льшая, а меньшая.", en: "That is one of the two figures, but the smaller is taken, not the larger." },
+      D: { ru: "Полная сумма налога уплачивается, если фермер выбирает подать декларацию и уплатить всё к сроку в марте, а не платить расчётный налог.", en: "The full tax is paid where the farmer chooses to file and pay everything by the March date instead of paying estimated tax." }
+    }
+  },
+  {
+    ru: "Что не входит в валовой доход от фермерства при проверке доли в две трети?",
+    en: "Which is NOT gross income from farming for the two-thirds test?",
+    opts: [
+      { k: "A", ru: "Доля урожая, полученная за пользование вашей землёй", en: "Crop shares received for the use of your land" },
+      { k: "B", ru: "Валовой доход от аренды фермы по форме 4835", en: "Gross farm rental income from Form 4835" },
+      { k: "C", ru: "Заработная плата, полученная как наёмный работник фермы", en: "Wages received as a farm employee" },
+      { k: "D", ru: "Прирост от продажи скота для разведения, тягла, спорта или дойки", en: "Gains from sales of breeding, draft, sporting or dairy livestock" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Доли урожая за пользование землёй прямо названы фермерским доходом.", en: "Crop shares for the use of land are expressly farm income." },
+      B: { ru: "Валовой доход от аренды фермы по форме 4835 входит в числитель.", en: "Gross farm rental income on Form 4835 belongs in the numerator." },
+      C: { ru: "Верно. Работа по найму фермерским доходом не является: зарплата попадает только в знаменатель, каким бы ни был работодатель.", en: "Correct. Employment is not farm income: wages go into the denominator only, whoever the employer is." },
+      D: { ru: "Прирост от продажи племенного, тяглового, спортивного и молочного скота прямо включён.", en: "Gains from breeding, draft, sporting and dairy livestock are expressly included." }
+    }
+  },
+  {
+    ru: "Кто вправе применить усреднение дохода по Schedule J?",
+    en: "Who may use income averaging on Schedule J?",
+    opts: [
+      { k: "A", ru: "Физическое лицо, партнёр партнёрства и акционер S-корпорации", en: "An individual, a partner in a partnership and an S corporation shareholder" },
+      { k: "B", ru: "Физическое лицо, а также партнёрство и S-корпорация как самостоятельные субъекты", en: "An individual, plus a partnership and an S corporation acting as entities in their own right" },
+      { k: "C", ru: "Физическое лицо, наследственная масса и траст", en: "An individual, an estate and a trust" },
+      { k: "D", ru: "Только физическое лицо, лично ведущее ферму", en: "Only an individual personally operating a farm" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Усреднение применяет тот, кто ведёт фермерскую деятельность сам, через партнёрство либо через S-корпорацию. Услуги в качестве работника при этом не учитываются.", en: "Correct. Averaging is for someone engaged in the farming business directly, through a partnership or through an S corporation. Services as an employee are disregarded." },
+      B: { ru: "Партнёрства, S-корпорации и корпорации усреднение применять не могут — только их участники как физические лица.", en: "Partnerships, S corporations and corporations may not average — only their owners as individuals." },
+      C: { ru: "Наследственные массы и трасты прямо лишены этой возможности.", en: "Estates and trusts are expressly barred." },
+      D: { ru: "Ограничение слишком узкое: фермерский доход, полученный через партнёрство или S-корпорацию, тоже подходит.", en: "That is too narrow: farm income received through a partnership or an S corporation qualifies too." }
+    }
+  },
+  {
+    ru: "Фермер на кассовом методе в декабре 2025 года купил удобрений на $7 500 для внесения в 2026 году. Прочие вычитаемые фермерские расходы 2025 года — $9 000. В прошлые годы предоплата у него тоже превышала обычную. Когда вычитаются удобрения?",
+    en: "In December 2025 a cash-method farmer bought $7,500 of fertiliser to be applied in 2026. Other deductible farm expenses for 2025 were $9,000, and prepayments exceeded the norm in earlier years too. When is the fertiliser deductible?",
+    opts: [
+      { k: "A", ru: "$7 500 в 2025 году", en: "$7,500 in 2025" },
+      { k: "B", ru: "$4 500 в 2025 году и $3 000 в 2026 году", en: "$4,500 in 2025 and $3,000 in 2026" },
+      { k: "C", ru: "$3 750 в 2025 году и $3 750 в 2026 году", en: "$3,750 in 2025 and $3,750 in 2026" },
+      { k: "D", ru: "$7 500 в 2026 году", en: "$7,500 in 2026" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Полный вычет в году оплаты и есть то, что норма ограничивает: иначе кассовый метод позволял бы переносить прибыль закупками в декабре.", en: "A full deduction in the year of payment is exactly what the rule limits: otherwise the cash method would let profit be shifted by December buying." },
+      B: { ru: "Верно. Предел — 50% прочих вычитаемых фермерских расходов года: 50% от $9 000 = $4 500. Излишек $3 000 вычитается в году, когда удобрения внесены.", en: "Correct. The limit is 50% of the year’s other deductible farm expenses: 50% of $9,000 = $4,500. The $3,000 excess is deducted in the year the fertiliser is applied." },
+      C: { ru: "Предел считается от прочих расходов года, а не делением предоплаты пополам.", en: "The limit is measured against the year’s other expenses, not by halving the prepayment." },
+      D: { ru: "Разрешённая часть вычитается уже в году оплаты; переносится только излишек.", en: "The permitted part is deducted in the year of payment; only the excess carries forward." }
+    }
+
   }
 ];
 </script>
