@@ -3065,16 +3065,26 @@
       отчётностью: их <strong>депонируют</strong>, и график депозитов определяется заранее — по
       контрольному периоду, а не по текущим суммам. Контрольный период — четыре квартала,
       закончившиеся 30 июня года, предшествующего календарному.</p>
+
+    <p lang="ru">Суммируется при этом не фонд оплаты труда и не выплаченные деньги, а
+      <strong>налог, показанный по строке 12 формы 941</strong> за эти четыре квартала:
+      удержанный у работников подоходный налог плюс обе доли социального обеспечения и
+      Medicare — работника и работодателя.</p>
     <p lang="en">Taxes withheld from employees, and the employer's own share, cannot simply be paid
       with the return: they are <strong>deposited</strong>, and the schedule is fixed in advance by
       the lookback period rather than by current amounts. The lookback period is the four quarters
       ending June 30 of the year before the calendar year.</p>
 
+    <p lang="en">What is totalled is neither payroll nor money paid out, but the
+      <strong>tax reported on line 12 of Form 941</strong> for those four quarters: the
+      federal income tax withheld from employees plus both shares of social security and
+      Medicare — the employee’s and the employer’s.</p>
+
     <div class="scroller">
     <table>
       <thead>
         <tr>
-          <th><span lang="ru">Итог контрольного периода</span><span lang="en">Lookback period total</span></th>
+          <th><span lang="ru">Показано по строке 12 за контрольный период</span><span lang="en">Line 12 total for the lookback period</span></th>
           <th><span lang="ru">График</span><span lang="en">Schedule</span></th>
         </tr>
       </thead>
@@ -3085,7 +3095,7 @@
         </tr>
         <tr>
           <th><span lang="ru">Выше <span data-fig="dep_lookback"></span></span><span lang="en">Above <span data-fig="dep_lookback"></span></span></th>
-          <td><span lang="ru">Полунедельный: выплаты со среды по пятницу — до следующей среды, выплаты с субботы по вторник — до следующей пятницы</span><span lang="en">Semiweekly: wages paid Wednesday through Friday are due the following Wednesday; Saturday through Tuesday, the following Friday</span></td>
+          <td><span lang="ru"><strong>Дважды в неделю</strong> (<span class="orig">semiweekly</span>): выплаты со среды по пятницу — до следующей среды, выплаты с субботы по вторник — до следующей пятницы. Депозитов при этом <strong>больше</strong>, чем при ежемесячном графике, а не меньше</span><span lang="en"><strong>Semiweekly</strong> — twice a week: wages paid Wednesday through Friday are due the following Wednesday; Saturday through Tuesday, the following Friday. This schedule means <strong>more</strong> deposits than the monthly one, not fewer</span></td>
         </tr>
         <tr class="total">
           <th><span lang="ru">Накоплено <span data-fig="dep_nextday"></span> и более за один день</span><span lang="en"><span data-fig="dep_nextday"></span> or more accumulated on any one day</span></th>
@@ -3093,6 +3103,20 @@
         </tr>
       </tbody>
     </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Налог по безработице в этот счёт не входит</span><span lang="en">FUTA tax is not part of this count</span></h3>
+      <p lang="ru">Контрольный период считает только то, что показано в форме 941. Налог по
+        безработице идёт по форме 940, в контрольный период не попадает и на график депозитов не
+        влияет. У него своё правило: депонировать, когда накопленная за квартал сумма превысила
+        <span data-fig="futa_deposit"></span>, иначе переносить на следующий квартал. Вопрос,
+        добавляющий FUTA к итогу контрольного периода, проверяет именно это.</p>
+      <p lang="en">The lookback period counts only what Form 941 reports. FUTA tax is reported on
+        Form 940, never enters the lookback period and does not affect the deposit schedule. It has
+        its own rule: deposit when the amount accumulated for the quarter exceeds
+        <span data-fig="futa_deposit"></span>, otherwise carry it to the next quarter. A question
+        that adds FUTA to the lookback total is testing exactly this.</p>
     </div>
 
     <div class="trap">
@@ -3203,6 +3227,7 @@
         <tr><th>50</th><td><span lang="ru">Штраф за информационную декларацию зависит от того, <strong>когда</strong> нарушение исправлено: 30 дней, 1 августа, позже. У штрафа за налоговую декларацию такой лестницы нет</span><span lang="en">The information return penalty depends on <strong>when</strong> the failure is corrected: 30 days, August 1, later. The income tax return penalty has no such ladder</span></td></tr>
         <tr><th>51</th><td><span lang="ru">Штраф за K-1 берётся по §6722 и не зависит от штрафа за декларацию: 1065 подана вовремя, K-1 не разосланы — §6698 нет, §6722 есть</span><span lang="en">The Schedule K-1 penalty comes from section 6722 and is independent of the return penalty: Form 1065 filed on time with no K-1s sent means no section 6698 penalty and a section 6722 one</span></td></tr>
         <tr><th>52</th><td><span lang="ru">Форма 7004 двигает срок K-1 вместе с декларацией, но на W-2 и формы 1099 не действует: у них своё продление по форме 8809, и для W-2 и 1099-NEC оно даётся только по основанию</span><span lang="en">Form 7004 moves the Schedule K-1 date along with the return but does nothing for Forms W-2 and 1099: those have their own extension on Form 8809, and for W-2 and 1099-NEC it is granted only on stated grounds</span></td></tr>
+        <tr><th>53</th><td><span lang="ru">Контрольный период считает налог по строке 12 формы 941, а не фонд оплаты труда. Налог по безработице в него не входит вовсе</span><span lang="en">The lookback period counts the tax reported on line 12 of Form 941, not payroll. FUTA tax is not part of it at all</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -4211,7 +4236,7 @@ window.QUIZZES.su01 = [
     opts: [
       { k: "A", ru: "На следующий рабочий день", en: "By the next business day" },
       { k: "B", ru: "До 15 апреля 2026 года: график ежемесячный", en: "By April 15, 2026: the schedule is monthly" },
-      { k: "C", ru: "По полунедельному графику: сумма превысила $50 000", en: "On the semiweekly schedule: the amount exceeded $50,000" },
+      { k: "C", ru: "По графику дважды в неделю: сумма превысила $50 000", en: "On the semiweekly schedule: the amount exceeded $50,000" },
       { k: "D", ru: "Вместе с формой 941 за первый квартал", en: "With the Form 941 for the first quarter" }
     ],
     correct: "A",
