@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=21">
-<script defer src="assets/figures-2025.js?v=21"></script>
+<link rel="stylesheet" href="assets/style.css?v=22">
+<script defer src="assets/figures-2025.js?v=22"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=21"></script>
+<script defer src="assets/app.js?v=22"></script>
 </head>
 <body data-module="su01">
 
@@ -2873,7 +2873,7 @@
         </tr>
         <tr>
           <th><span lang="ru">K-1</span><span lang="en">Schedule K-1</span></th>
-          <td><span lang="ru">Не позднее дня, к которому должна быть подана сама декларация: <span data-fig="due_1065"></span></span><span lang="en">On or before the day the return itself is due: <span data-fig="due_1065"></span></span></td>
+          <td><span lang="ru">Не позднее дня, к которому должна быть подана сама декларация, <strong>считая продление</strong>: <span data-fig="due_1065"></span> без продления, <span data-fig="due_pass_ext"></span> с формой 7004</span><span lang="en">On or before the day the return itself is due, <strong>including any extension</strong>: <span data-fig="due_1065"></span> without one, <span data-fig="due_pass_ext"></span> with Form 7004</span></td>
           <td><span lang="ru">Вместе с декларацией: K-1 подаются как её часть, отдельного срока у них нет</span><span lang="en">With the return: the Schedules K-1 are filed as part of it and have no date of their own</span></td>
         </tr>
       </tbody>
@@ -2892,6 +2892,59 @@
         The threshold <strong>does not apply separately to each type of form</strong>: four Forms
         1098 and six Forms 1099 already make ten, and the requirement applies. The answer “no single
         form reached ten” is the error the question is built on.</p>
+    </div>
+
+    <h3><span lang="ru">Продление: у каждой формы своё</span><span lang="en">Extensions: each form has its own</span></h3>
+
+    <p lang="ru">Продление декларации и продление информационных форм — разные механизмы с
+      разными бланками. Форма 7004 продлевает саму декларацию; форма 8809 продлевает подачу
+      информационных деклараций в налоговую службу. Ни одна из них не продлевает выдачу формы
+      получателю — для этого подаётся отдельная просьба письмом.</p>
+    <p lang="en">Extending the return and extending the information forms are separate mechanisms on
+      separate forms. Form 7004 extends the return itself; Form 8809 extends the filing of
+      information returns with the IRS. Neither extends the furnishing of a statement to the
+      recipient, which takes a separate request by letter.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что продлевается</span><span lang="en">What is extended</span></th>
+          <th><span lang="ru">Чем</span><span lang="en">On what form</span></th>
+          <th><span lang="ru">Как даётся</span><span lang="en">How it is granted</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">K-1 участникам</span><span lang="en">Schedules K-1 to the owners</span></th>
+          <td><span lang="ru">Форма 7004 — отдельного бланка нет</span><span lang="en">Form 7004: there is no separate form</span></td>
+          <td><span lang="ru">Автоматически вместе с декларацией: <span data-fig="due_1065"></span> становится <span data-fig="due_pass_ext"></span></span><span lang="en">Automatically, along with the return: <span data-fig="due_1065"></span> becomes <span data-fig="due_pass_ext"></span></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Подача прочих 1099 в налоговую службу</span><span lang="en">Filing other Forms 1099 with the IRS</span></th>
+          <td><span lang="ru">Форма 8809</span><span lang="en">Form 8809</span></td>
+          <td><span lang="ru"><span data-fig="ext_8809_days"></span> дней <strong>автоматически</strong>, обоснование не требуется</span><span lang="en"><span data-fig="ext_8809_days"></span> days <strong>automatically</strong>; no justification is required</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Подача W-2 и 1099-NEC в налоговую службу</span><span lang="en">Filing Forms W-2 and 1099-NEC with the IRS</span></th>
+          <td><span lang="ru">Форма 8809</span><span lang="en">Form 8809</span></td>
+          <td><span lang="ru"><span data-fig="ext_8809_days"></span> дней <strong>только по основанию</strong>: стихийное бедствие или пожар, смерть либо тяжёлая болезнь ответственного лица, первый год деятельности, неполучение данных от третьей стороны</span><span lang="en"><span data-fig="ext_8809_days"></span> days <strong>only on stated grounds</strong>: a catastrophic event or fire, the death or serious illness of the person responsible, the filer’s first year of operation, or data not received from a third party</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Продление декларации двигает K-1, но не двигает 1099</span><span lang="en">Extending the return moves the K-1, not the Forms 1099</span></h3>
+      <p lang="ru">Срок K-1 не самостоятельный: он следует за сроком декларации и уезжает вместе с
+        ним. На W-2 и формы 1099 форма 7004 не действует вовсе — у них своё продление и свой
+        бланк. Партнёрство, продлившее 1065 до <span data-fig="due_pass_ext"></span>, обязано выдать
+        1099-NEC подрядчику всё равно к <span data-fig="due_1099_recipient"></span>.</p>
+      <p lang="en">The Schedule K-1 date is not independent: it follows the return’s date and moves
+        with it. Form 7004 does nothing for Forms W-2 and 1099 — they have their own extension on
+        their own form. A partnership that extended Form 1065 to
+        <span data-fig="due_pass_ext"></span> must still furnish the Form 1099-NEC to its contractor
+        by <span data-fig="due_1099_recipient"></span>.</p>
     </div>
 
     <h3><span lang="ru">Штраф за непредставление информационной декларации</span><span lang="en">The penalty for not filing an information return</span></h3>
@@ -3149,6 +3202,7 @@
         <tr><th>49</th><td><span lang="ru">§6721 и §6722 — независимые штрафы: непредставленная в налоговую службу и невыданная получателю форма стоит вдвое</span><span lang="en">Sections 6721 and 6722 are independent: a form neither filed with the IRS nor furnished to the payee costs twice</span></td></tr>
         <tr><th>50</th><td><span lang="ru">Штраф за информационную декларацию зависит от того, <strong>когда</strong> нарушение исправлено: 30 дней, 1 августа, позже. У штрафа за налоговую декларацию такой лестницы нет</span><span lang="en">The information return penalty depends on <strong>when</strong> the failure is corrected: 30 days, August 1, later. The income tax return penalty has no such ladder</span></td></tr>
         <tr><th>51</th><td><span lang="ru">Штраф за K-1 берётся по §6722 и не зависит от штрафа за декларацию: 1065 подана вовремя, K-1 не разосланы — §6698 нет, §6722 есть</span><span lang="en">The Schedule K-1 penalty comes from section 6722 and is independent of the return penalty: Form 1065 filed on time with no K-1s sent means no section 6698 penalty and a section 6722 one</span></td></tr>
+        <tr><th>52</th><td><span lang="ru">Форма 7004 двигает срок K-1 вместе с декларацией, но на W-2 и формы 1099 не действует: у них своё продление по форме 8809, и для W-2 и 1099-NEC оно даётся только по основанию</span><span lang="en">Form 7004 moves the Schedule K-1 date along with the return but does nothing for Forms W-2 and 1099: those have their own extension on Form 8809, and for W-2 and 1099-NEC it is granted only on stated grounds</span></td></tr>
       </tbody>
     </table>
     </div>

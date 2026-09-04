@@ -18,6 +18,7 @@ var SRC_I461 = { t: "Instructions for Form 461 (2025)", u: "https://www.irs.gov/
 var SRC_P463 = { t: "Publication 463 (2025), Travel, Gift, and Car Expenses", u: "https://www.irs.gov/publications/p463" };
 var SRC_P587 = { t: "Publication 587 (2025), Business Use of Your Home", u: "https://www.irs.gov/publications/p587" };
 var SRC_RP2440 = { t: "Rev. Proc. 2024-40, §2.27", u: "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf" };
+var SRC_F8809 = { t: "Form 8809, Application for Extension of Time To File Information Returns", u: "https://www.irs.gov/forms-pubs/about-form-8809" };
 var SRC_I1099GI = { t: "General Instructions for Certain Information Returns (2025)", u: "https://www.irs.gov/instructions/i1099gi" };
 var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/publications/p15" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
@@ -458,6 +459,22 @@ window.FIGURES = {
       note_en: "Rule: the 15th day of the 3rd month. Moved from Sunday, March 15, 2026.",
       src: { t: "Instructions for Form 1120-S (2025)", u: "https://www.irs.gov/instructions/i1120s" }
     },
+    due_pass_ext: {
+      d: "2026-09-15", unit: "date",
+      ru: "Продлённый срок форм 1065 и 1120-S за 2025 год",
+      en: "Extended due date for Forms 1065 and 1120-S for 2025",
+      note_ru: "Форма 7004 даёт автоматические шесть месяцев. Срок выдачи K-1 участникам следует за этим днём.",
+      note_en: "Form 7004 grants an automatic six months. The date for furnishing Schedules K-1 follows it.",
+      src: { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" }
+    },
+    ext_8809_days: {
+      n: 30, unit: "int",
+      ru: "Продление подачи информационных деклараций по форме 8809, дней",
+      en: "Extension of time to file information returns on Form 8809, days",
+      note_ru: "Автоматическое для большинства форм. Для W-2 и 1099-NEC даётся только по одному из перечисленных оснований.",
+      note_en: "Automatic for most forms. For Forms W-2 and 1099-NEC it is granted only on one of the listed grounds.",
+      src: SRC_F8809
+    },
     due_1120: {
       d: "2026-04-15", unit: "date",
       ru: "Форма 1120 за 2025 год",
@@ -880,7 +897,7 @@ window.FIGURES = {
              "pen_6651_min", "dep_lookback", "dep_nextday", "dep_pen_5",
              "dep_pen_15", "dep_pen_16", "dep_pen_notice"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
-      keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment",
+      keys: ["due_1065", "due_1120s", "due_pass_ext", "due_1120", "ext_8809_days", "due_farm_estimated", "due_farm_payment",
              "due_1099_recipient", "due_1099_recipient_late", "due_1099_irs_paper",
              "due_1099_irs_efile"] },
     { id: "rental", ru: "Аренда и лимиты убытков", en: "Rental property and loss limitations",
