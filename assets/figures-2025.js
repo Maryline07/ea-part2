@@ -15,6 +15,10 @@ var SRC_P225 = { t: "Publication 225 (2025), Farmer's Tax Guide", u: "https://ww
 var SRC_P527 = { t: "Publication 527 (2025), Residential Rental Property", u: "https://www.irs.gov/publications/p527" };
 var SRC_P925 = { t: "Publication 925 (2025), Passive Activity and At-Risk Rules", u: "https://www.irs.gov/publications/p925" };
 var SRC_I461 = { t: "Instructions for Form 461 (2025)", u: "https://www.irs.gov/instructions/i461" };
+var SRC_P463 = { t: "Publication 463 (2025), Travel, Gift, and Car Expenses", u: "https://www.irs.gov/publications/p463" };
+var SRC_P587 = { t: "Publication 587 (2025), Business Use of Your Home", u: "https://www.irs.gov/publications/p587" };
+var SRC_RP2440 = { t: "Rev. Proc. 2024-40, §2.27", u: "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf" };
+var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
 
 window.FIGURES = {
   meta: {
@@ -330,6 +334,153 @@ window.FIGURES = {
     },
 
 
+
+    /* --- Поездки, подарки, домашний офис, QBI -------------------------- */
+
+    mileage_2025: {
+      n: 0.70, unit: "usd",
+      ru: "Стандартная ставка за милю, деловое использование",
+      en: "Standard mileage rate, business use",
+      note_ru: "Альтернатива фактическим расходам. Выбрав фактические расходы в первый год эксплуатации автомобиля, перейти на стандартную ставку по нему уже нельзя.",
+      note_en: "An alternative to actual expenses. If actual expenses are used in the first year a car is in service, the standard rate may not be used for that car later.",
+      src: SRC_P463
+    },
+
+    meals_limit: {
+      n: 50, unit: "pct",
+      ru: "Предел вычета расходов на деловое питание",
+      en: "Limit on the business meals deduction",
+      note_ru: "Расходы на развлечения не вычитаются вовсе. Питание, выделенное в счёте отдельно от развлечения, сохраняет право на 50%.",
+      note_en: "Entertainment is not deductible at all. Meals stated separately from entertainment on the bill keep the 50% deduction.",
+      src: SRC_P463
+    },
+
+    gift_limit: {
+      n: 25, unit: "usd",
+      ru: "Предел вычета делового подарка одному лицу за год",
+      en: "Limit on business gifts to any one person per year",
+      note_ru: "Считается прямой и косвенный подарок вместе. Подарок компании, предназначенный конкретному человеку, считается подарком этому человеку.",
+      note_en: "Direct and indirect gifts count together. A gift to a company intended for a particular person is a gift to that person.",
+      src: SRC_P463
+    },
+
+    gift_incidental: {
+      n: 4, unit: "usd",
+      ru: "Порог рекламного предмета, не считающегося подарком",
+      en: "Threshold for a promotional item that is not a gift",
+      note_ru: "Предмет дешевле этой суммы, с несмываемым названием фирмы, распространяемый широко и одинаково, под предел подарка не подпадает.",
+      note_en: "An item costing less than this, permanently imprinted with your name and widely distributed as one of many identical items, is outside the gift limit.",
+      src: SRC_P463
+    },
+
+    temp_assignment_months: {
+      n: 12, unit: "int",
+      ru: "Граница временного и бессрочного назначения, месяцев",
+      en: "Boundary between a temporary and an indefinite assignment, months",
+      note_ru: "Временным считается назначение, которое реально ожидается не дольше года И фактически столько и длится. Ожидание дольше года делает назначение бессрочным сразу, независимо от фактического срока.",
+      note_en: "Temporary means realistically expected to last one year or less AND in fact lasting that long. An expectation of more than a year makes it indefinite at once, whatever actually happens.",
+      src: SRC_P463
+    },
+
+    home_office_rate: {
+      n: 5, unit: "usd",
+      ru: "Упрощённый метод: ставка за квадратный фут",
+      en: "Simplified method: rate per square foot",
+      note_ru: "Выбрав упрощённый метод, фактические расходы по домашнему офису вычесть уже нельзя, и амортизация за этот год равна нулю.",
+      note_en: "If the simplified method is elected, actual home office expenses cannot be deducted and depreciation for that year is zero.",
+      src: SRC_P587
+    },
+
+    home_office_max_sqft: {
+      n: 300, unit: "int",
+      ru: "Упрощённый метод: предел площади, кв. футов",
+      en: "Simplified method: maximum area, square feet",
+      note_ru: "Площадь сверх этого предела в расчёт не берётся.",
+      note_en: "Area above this limit is disregarded.",
+      src: SRC_P587
+    },
+
+    home_office_max: {
+      n: 1500, unit: "usd",
+      ru: "Упрощённый метод: максимальный вычет за год",
+      en: "Simplified method: maximum deduction for the year",
+      note_ru: "$5 × 300 кв. футов. Вычет не может превысить валовой доход от деятельности за вычетом прочих деловых расходов.",
+      note_en: "$5 × 300 square feet. The deduction cannot exceed gross income from the activity less other business expenses.",
+      src: SRC_P587
+    },
+
+    startup_deduction: {
+      n: 5000, unit: "usd",
+      ru: "Единовременный вычет затрат на создание бизнеса",
+      en: "Immediate deduction of business start-up costs",
+      note_ru: "Меньшая из фактических затрат и этой суммы, уменьшенной на превышение затрат над порогом. Остаток амортизируется.",
+      note_en: "The lesser of actual costs and this amount, reduced by the excess of the costs over the threshold. The remainder is amortized.",
+      src: SRC_I4562
+    },
+
+    startup_phaseout: {
+      n: 50000, unit: "usd",
+      ru: "Порог, выше которого единовременный вычет сокращается",
+      en: "Threshold above which the immediate deduction is reduced",
+      note_ru: "Сокращение доллар за доллар, но не ниже нуля. При затратах $55 000 и выше единовременного вычета не остаётся.",
+      note_en: "Dollar for dollar, but not below zero. At $55,000 of costs and above nothing is deductible immediately.",
+      src: SRC_I4562
+    },
+
+    startup_amort_months: {
+      n: 180, unit: "int",
+      ru: "Срок амортизации остатка затрат на создание бизнеса, месяцев",
+      en: "Amortization period for the remaining start-up costs, months",
+      note_ru: "Отсчёт начинается с месяца, в котором началась активная деятельность.",
+      note_en: "The period starts with the month the active trade or business begins.",
+      src: SRC_I4562
+    },
+
+    qbi_rate: {
+      n: 20, unit: "pct",
+      ru: "Ставка вычета квалифицированного дохода бизнеса",
+      en: "Rate of the qualified business income deduction",
+      note_ru: "Вычет применяется к доходу сквозных субъектов и не уменьшает базу налога на самозанятость.",
+      note_en: "The deduction applies to pass-through income and does not reduce the self-employment tax base.",
+      src: SRC_RP2440
+    },
+
+    qbi_threshold_single: {
+      n: 197300, unit: "usd",
+      ru: "Порог вычета QBI, кроме совместной подачи",
+      en: "QBI threshold amount, other than joint returns",
+      note_ru: "Ниже порога ограничения по зарплате, по стоимости имущества и по виду деятельности не применяются вовсе.",
+      note_en: "Below the threshold the wage, property and specified-service limitations do not apply at all.",
+      src: SRC_RP2440
+    },
+
+    qbi_threshold_mfj: {
+      n: 394600, unit: "usd",
+      ru: "Порог вычета QBI при совместной подаче супругов",
+      en: "QBI threshold amount, married filing jointly",
+      note_ru: "Ровно вдвое больше порога для остальных.",
+      note_en: "Exactly twice the threshold for other filers.",
+      src: SRC_RP2440
+    },
+
+    qbi_phasein_single: {
+      n: 247300, unit: "usd",
+      ru: "Верх диапазона ввода ограничений QBI, кроме совместной подачи",
+      en: "Top of the QBI phase-in range, other than joint returns",
+      note_ru: "Диапазон в $50 000. Выше него ограничения действуют полностью, а деятельность из перечня специальных услуг вычета не даёт вовсе.",
+      note_en: "A $50,000 range. Above it the limitations apply in full, and a specified service trade or business gets no deduction at all.",
+      src: SRC_RP2440
+    },
+
+    qbi_phasein_mfj: {
+      n: 494600, unit: "usd",
+      ru: "Верх диапазона ввода ограничений QBI при совместной подаче",
+      en: "Top of the QBI phase-in range, married filing jointly",
+      note_ru: "Диапазон в $100 000 — вдвое шире, чем у остальных.",
+      note_en: "A $100,000 range — twice as wide as for other filers.",
+      src: SRC_RP2440
+    },
+
     /* --- Аренда и лимиты убытков ------------------------------------- */
 
     dwelling_personal_days: {
@@ -525,6 +676,13 @@ window.FIGURES = {
              "depr_residential", "depr_nonresidential", "matpart_hours", "matpart_hours_sig",
              "rep_hours", "pal_allowance", "pal_allowance_mfs", "pal_phaseout_start",
              "pal_phaseout_end", "ebl_single", "ebl_mfj"] },
+    { id: "deductions", ru: "Поездки, подарки, домашний офис", en: "Travel, gifts and the home office",
+      keys: ["mileage_2025", "meals_limit", "gift_limit", "gift_incidental",
+             "temp_assignment_months", "home_office_rate", "home_office_max_sqft",
+             "home_office_max", "startup_deduction", "startup_phaseout", "startup_amort_months"] },
+    { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
+      keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
+             "qbi_phasein_single", "qbi_phasein_mfj"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
       keys: ["farm_income_share", "farm_prepaid_limit", "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
   ]
