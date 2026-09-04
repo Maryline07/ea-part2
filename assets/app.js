@@ -250,29 +250,147 @@
     }
   }
 
+  /* ---- Оглавление на узком экране ------------------------------------
+
+     Оглавление не дублируется: тот же <nav class="toc"> служит и боковой
+     колонкой, и липкой строкой. Дубль разошёлся бы с оригиналом при
+     первой же правке, а подсветка текущего раздела работала бы лишь в
+     одной из копий.
+
+     Узел переносится между двумя точками монтирования, потому что
+     position: sticky отсчитывается от родительского блока: оставшись
+     ячейкой грида .layout, строка прилипала бы к своей собственной
+     высоте, то есть исчезала бы сразу. Снаружи грида её родитель — вся
+     страница, и прилипание работает. */
+
+  function setTocLabel(html) {
+    var now = document.querySelector(".toc__now");
+    if (now) now.innerHTML = html;
+  }
+
+  function initTocBar() {
+    /* В собранном артефакте все модули лежат в одном <main>, и переносить
+       наружу пять оглавлений сразу нельзя: они прилипли бы одно поверх
+       другого. Там оглавления остаются обычными списками. */
+    if (document.querySelectorAll(".layout").length !== 1) return;
+
+    var toc = document.querySelector("nav.toc");
+    var layout = document.querySelector(".layout");
+    var list = toc && toc.querySelector("ol");
+    if (!toc || !layout || !list) return;
+
+    list.id = "toc-list";
+
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "toc__toggle";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", "toc-list");
+    button.innerHTML =
+      '<span class="toc__now">' +
+      '<span lang="ru">В этом модуле</span><span lang="en">In this module</span>' +
+      '</span><span class="toc__chev" aria-hidden="true">▼</span>';
+    toc.insertBefore(button, toc.firstChild);
+
+    function close() { toc.classList.remove("is-open"); button.setAttribute("aria-expanded", "false"); }
+    function open() { toc.classList.add("is-open"); button.setAttribute("aria-expanded", "true"); }
+
+    button.addEventListener("click", function () {
+      if (toc.classList.contains("is-open")) close(); else open();
+    });
+
+    /* Переход по ссылке закрывает список: иначе он закрывает собой раздел,
+       к которому только что перешли. */
+    list.addEventListener("click", function (e) {
+      if (e.target.closest && e.target.closest("a")) close();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && toc.classList.contains("is-open")) { close(); button.focus(); }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!toc.classList.contains("is-open")) return;
+      if (!toc.contains(e.target)) close();
+    });
+
+    /* Перенос узла и замер высот липких полос. */
+    var narrow = window.matchMedia("(max-width: 62em)");
+    var root = document.documentElement;
+    var topbar = document.querySelector(".topbar");
+
+    function place() {
+      if (narrow.matches) {
+        if (toc.parentNode !== layout.parentNode) layout.parentNode.insertBefore(toc, layout);
+      } else {
+        close();
+        if (toc.parentNode !== layout) layout.insertBefore(toc, layout.firstChild);
+      }
+      measure();
+    }
+
+    function measure() {
+      if (topbar) root.style.setProperty("--topbar-h", topbar.offsetHeight + "px");
+      root.style.setProperty("--tocbar-h", narrow.matches ? button.offsetHeight + "px" : "0px");
+    }
+
+    place();
+    if (narrow.addEventListener) narrow.addEventListener("change", place);
+    else if (narrow.addListener) narrow.addListener(place);
+    window.addEventListener("resize", measure);
+  }
+
   /* ---- Оглавление: подсветка текущего раздела ------------------------ */
 
   function initScrollSpy() {
     var links = document.querySelectorAll(".toc a[href^='#']");
-    if (!links.length || !("IntersectionObserver" in window)) return;
+    if (!links.length) return;
 
-    var byId = {};
-    var targets = [];
+    /* Секции .sub — это только заголовки, а не обёртки над содержимым:
+       наблюдатель за их видимостью гасил бы подсветку, едва заголовок
+       уходит за верх экрана, то есть почти всё время чтения. Поэтому
+       текущим считается последний заголовок, поднявшийся выше линии
+       липких панелей. */
+
+    var items = [];
     for (var i = 0; i < links.length; i++) {
       var id = links[i].getAttribute("href").slice(1);
       var section = document.getElementById(id);
-      if (section) { byId[id] = links[i]; targets.push(section); }
+      if (section) items.push({ link: links[i], section: section });
+    }
+    if (!items.length) return;
+
+    function chromeOffset() {
+      var css = getComputedStyle(document.documentElement);
+      var a = parseFloat(css.getPropertyValue("--topbar-h")) || 0;
+      var b = parseFloat(css.getPropertyValue("--tocbar-h")) || 0;
+      return a + b + 8;
     }
 
-    var visible = {};
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) { visible[entry.target.id] = entry.isIntersecting; });
-      var active = null;
-      targets.forEach(function (section) { if (!active && visible[section.id]) active = section.id; });
-      for (var id in byId) byId[id].classList.toggle("is-current", id === active);
-    }, { rootMargin: "-72px 0px -70% 0px" });
+    var pending = false;
+    function update() {
+      pending = false;
+      var line = chromeOffset();
+      var active = items[0];
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].section.getBoundingClientRect().top <= line) active = items[i];
+      }
+      for (var j = 0; j < items.length; j++) {
+        items[j].link.classList.toggle("is-current", items[j] === active);
+      }
+      setTocLabel(active.link.innerHTML);
+    }
 
-    targets.forEach(function (section) { observer.observe(section); });
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      if (window.requestAnimationFrame) window.requestAnimationFrame(update);
+      else setTimeout(update, 100);
+    }
+
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    update();
   }
 
   /* ---- Тренажёр -------------------------------------------------------
@@ -446,6 +564,7 @@
     initQuiz();
     applyLang(currentLang());
     fillProgress();
+    initTocBar();
     initScrollSpy();
   }
 

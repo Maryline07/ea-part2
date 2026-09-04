@@ -141,6 +141,17 @@ html[data-lang="en"] span[lang="en"] { display: inline; }
   font-size: 0.86rem;
 }
 
+/* Три строки шапки на телефоне съедали 128 px, и вместе с липкой строкой
+   разделов постоянная обстановка занимала пятую часть экрана. Порядок
+   меняется так, чтобы переключатели поднялись к названию: остаётся две
+   строки, ничего не убирая. */
+@media (max-width: 40em) {
+  .topbar { row-gap: 0.35rem; padding: 0.45rem 1.25rem; }
+  .topbar__mark { order: 1; }
+  .switches { order: 2; }
+  .topbar nav { order: 3; flex-basis: 100%; gap: 0.9rem; }
+}
+
 .topbar__mark {
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -302,9 +313,77 @@ html[data-lang="en"] span[lang="en"] { display: inline; }
   background: var(--accent);
 }
 
+/* ---------- Переключатель разделов на узком экране --------------------
+
+   На широком экране оглавление живёт в левой колонке и липнет само.
+   На узком колонка схлопывается, и список остаётся только в самом верху
+   страницы: из середины модуля до него не добраться иначе как прокруткой
+   к началу. Поэтому оглавление превращается в одну липкую строку с
+   названием текущего подраздела, раскрывающуюся по нажатию.
+
+   Высоты обеих липких полос считает app.js и кладёт в переменные:
+   верхняя панель переносит строки на узком экране, и угадать её высоту
+   в CSS нельзя. Из тех же переменных берётся отступ прокрутки к якорю,
+   иначе заголовок раздела уезжает под панели. */
+
+.toc__toggle { display: none; }
+
+@media (max-width: 62em) {
+  .toc {
+    position: sticky;
+    top: var(--topbar-h, 3rem);
+    z-index: 10;
+    margin: 0 -1.25rem 1.5rem;
+    padding: 0 1.25rem;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .toc h2 { display: none; }
+
+  .toc__toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    color: var(--ink);
+    text-align: left;
+    cursor: pointer;
+  }
+  .toc__now {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .toc__chev {
+    flex: none;
+    color: var(--ink-faint);
+    font-size: 0.7em;
+  }
+  .toc.is-open .toc__chev { transform: rotate(180deg); }
+
+  .toc ol { display: none; }
+  .toc.is-open ol {
+    display: block;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Крупнее для пальца: минимальная цель нажатия. */
+  .toc a { padding: 0.6rem 0; }
+}
+
 /* ---------- Заголовки разделов --------------------------------------- */
 
-.sub { margin: 3rem 0 1.2rem; scroll-margin-top: 4.5rem; }
+.sub { margin: 3rem 0 1.2rem;
+  scroll-margin-top: calc(var(--topbar-h, 3rem) + var(--tocbar-h, 0px) + 1rem); }
 .sub:first-child { margin-top: 0; }
 
 .sub h2 {
