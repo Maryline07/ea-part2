@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=16">
-<script defer src="assets/figures-2025.js?v=16"></script>
+<link rel="stylesheet" href="assets/style.css?v=17">
+<script defer src="assets/figures-2025.js?v=17"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=16"></script>
+<script defer src="assets/app.js?v=17"></script>
 </head>
 <body data-module="su03">
 
@@ -769,6 +769,26 @@
         only at the end the overall cap.</p>
     </div>
 
+    <h3><span lang="ru">Лимит базиса: когда он вообще работает</span><span lang="en">The basis limit: when it operates at all</span></h3>
+
+    <p lang="ru">Первый фильтр работает не у всех. Он ограничивает убыток размером базиса
+      <strong>доли в партнёрстве или акций S-корпорации</strong>: партнёр вычитает убыток не выше
+      базиса своей доли, акционер — не выше базиса акций плюс базиса своих займов компании.
+      Неиспользованный остаток переносится вперёд и ждёт восстановления базиса.</p>
+    <p lang="en">The first filter does not operate for everyone. It caps the loss at the basis of
+      <strong>a partnership interest or S corporation stock</strong>: a partner deducts no more than
+      the basis of the interest, a shareholder no more than stock basis plus the basis of loans made
+      to the corporation. The unused remainder carries forward and waits for basis to be restored.</p>
+
+    <p lang="ru">Если объект недвижимости принадлежит вам напрямую и показывается в Schedule E,
+      отдельного лимита базиса нет: первым работающим фильтром становится лимит риска. Условие
+      задачи почти всегда сообщает, через что объект держится, — это и есть подсказка, с какого
+      фильтра начинать.</p>
+    <p lang="en">Where the property is owned directly and reported on Schedule E there is no separate
+      basis limit: the first filter that actually operates is the at-risk limit. The facts of a
+      question almost always say how the property is held — that is the cue for which filter to start
+      from.</p>
+
     <h3><span lang="ru">Лимит риска</span><span lang="en">The at-risk limit</span></h3>
 
     <p lang="ru">Под риском находятся деньги и скорректированный базис имущества, вложенного в
@@ -823,10 +843,12 @@
 
     <p lang="ru">Пассивной считается деятельность двух видов: торговля или бизнес, в котором вы
       не участвуете существенно, и <strong>любая аренда</strong> — независимо от того, сколько
-      вы в неё вложили труда.</p>
+      вы в неё вложили труда. У второго вида есть шесть исключений, и они разобраны сразу
+      ниже: деятельность, подпадающая под любое из них, арендой для этих правил не считается.</p>
     <p lang="en">Two kinds of activity are passive: a trade or business in which you do not
       materially participate, and <strong>any rental activity</strong> — however much work you put
-      into it.</p>
+      into it. The second kind has six exceptions, set out immediately below: an activity that meets
+      any one of them is not a rental activity for these rules.</p>
 
     <p lang="ru">Правила применяются к физическим лицам, наследственным массам, трастам (кроме
       доверительных трастов учредителя), корпорациям личных услуг и закрытым корпорациям. К
@@ -835,6 +857,48 @@
     <p lang="en">The rules reach individuals, estates and trusts — grantor trusts excepted — and also
       closely held corporations together with personal service corporations. They do not reach
       partnerships and S corporations directly — but they do reach their owners.</p>
+
+    <h4><span lang="ru">Когда аренда не считается арендой</span><span lang="en">When a rental is not a rental activity</span></h4>
+
+    <p lang="ru">Слово «аренда» в §469 имеет собственное значение. Деятельность выпадает из него,
+      если верно <strong>хотя бы одно</strong> из шести условий.</p>
+    <p lang="en">The word “rental” has its own meaning under section 469. An activity falls outside
+      it if <strong>any one</strong> of six conditions holds.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Средний срок пользования объектом — <span data-fig="rental_avg_use_7"></span> дней или меньше. Средний срок = все дни всех периодов сдачи, делённые на число сдач за год</span><span lang="en">The average period of customer use is <span data-fig="rental_avg_use_7"></span> days or less. The average is all days in all rental periods divided by the number of rentals for the year</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Средний срок — <span data-fig="rental_avg_use_30"></span> дней или меньше, и вы оказываете <strong>значимые личные услуги</strong>. Уборка мест общего пользования и обычный ремонт значимыми услугами не являются</span><span lang="en">The average period is <span data-fig="rental_avg_use_30"></span> days or less and you provide <strong>significant personal services</strong>. Cleaning common areas and routine repairs are not significant services</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Вы оказываете <strong>исключительные личные услуги</strong>: пользование объектом сопутствует получению этих услуг, а не наоборот. Срок здесь не важен вовсе</span><span lang="en">You provide <strong>extraordinary personal services</strong>: the use of the property is incidental to receiving those services rather than the other way round. Here the period does not matter at all</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Аренда <strong>сопутствует</strong> неарендной деятельности: валовой арендный доход меньше <span data-fig="rental_incidental_pct"></span> от меньшей из нескорректированного базиса и рыночной стоимости объекта</span><span lang="en">The rental is <strong>incidental</strong> to a nonrental activity: gross rental income is less than <span data-fig="rental_incidental_pct"></span> of the smaller of the property’s unadjusted basis and its fair market value</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Объект обычно доступен в определённые часы работы для неисключительного пользования разными клиентами</span><span lang="en">The property is customarily available during defined business hours for nonexclusive use by various customers</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Вы предоставляете объект для неарендной деятельности партнёрства, S-корпорации или совместного предприятия как владелец доли в нём</span><span lang="en">You provide the property for use in a nonrental activity of a partnership, S corporation or joint venture in your capacity as an owner of an interest in it</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Выпасть из аренды — не значит выпасть из пассивности</span><span lang="en">Leaving the rental definition is not leaving passivity</span></h3>
+      <p lang="ru">Посуточная сдача со средним сроком <span data-fig="rental_avg_use_7"></span> дней
+        или меньше арендой для §469 не является — и это <strong>ещё не ответ</strong>. Деятельность
+        просто переходит в первый вид: торговля или бизнес. Пассивной она быть перестанет, только
+        если вы <strong>существенно участвуете</strong> по одному из семи тестов ниже. Не участвуете
+        — убыток снова пассивный, но уже по другому основанию.</p>
+      <p lang="en">A short-term rental averaging <span data-fig="rental_avg_use_7"></span> days or
+        less is not a rental activity for section 469 — and that is <strong>not yet the
+        answer</strong>. The activity simply moves into the first kind: a trade or business. It stops
+        being passive only if you <strong>materially participate</strong> under one of the seven
+        tests below. If you do not, the loss is passive again, on the other ground.</p>
+      <p lang="ru">Отсюда и польза исключения: особый вычет и его порог по доходу такой
+        деятельности не нужны — при существенном участии убыток вычитается против любого дохода
+        без потолка. Второе следствие: правила профессионала рынка недвижимости к ней тоже
+        неприменимы, потому что они снимают именно автоматическую пассивность аренды.</p>
+      <p lang="en">Hence the value of the exception: the special allowance and its income phase-out
+        are not needed for such an activity — with material participation the loss offsets any income
+        with no ceiling. A second consequence: the real estate professional rules do not apply to it
+        either, because what they lift is precisely the automatic passivity of a rental.</p>
+    </div>
 
     <h4><span lang="ru">Семь тестов существенного участия</span><span lang="en">The seven material participation tests</span></h4>
 
@@ -859,12 +923,22 @@
       <h3><span lang="ru">Существенное участие аренду не спасает</span><span lang="en">Material participation does not rescue a rental</span></h3>
       <p lang="ru">Владелец, отдавший аренде 900 часов, тесты существенного участия проходит — и
         всё равно остаётся в пассивной деятельности, потому что аренда пассивна
-        <em>по определению</em>, а не из-за нехватки участия. Выход из этого правила один и
-        называется он профессионалом рынка недвижимости.</p>
+        <em>по определению</em>, а не из-за нехватки участия.</p>
       <p lang="en">An owner who spends 900 hours on a rental passes the material participation
         tests — and is still in a passive activity, because a rental is passive <em>by
-        definition</em>, not for want of participation. There is exactly one way out, and it is
-        called being a real estate professional.</p>
+        definition</em>, not for want of participation.</p>
+      <p lang="ru">Речь идёт о деятельности, которая <strong>действительно является арендой</strong>
+        в смысле этих правил: ни одно из шести исключений выше не выполнено. Тогда выход
+        единственный и называется он профессионалом рынка недвижимости. Не путайте два разных
+        пути: исключение означает, что аренды не было вовсе, и дальше решают семь тестов;
+        профессионал рынка недвижимости — что аренда есть, но её автоматическая пассивность
+        снята.</p>
+      <p lang="en">This concerns an activity that <strong>really is a rental</strong> for these
+        rules: none of the six exceptions above applies. Then there is exactly one way out, and it
+        is called being a real estate professional. Do not conflate the two routes: an exception
+        means there was no rental at all and the seven tests decide from there, while the real
+        estate professional rules mean there is a rental whose automatic passivity has been
+        lifted.</p>
     </div>
 
     <h4><span lang="ru">Профессионал рынка недвижимости</span><span lang="en">Real estate professional</span></h4>
@@ -1140,6 +1214,8 @@
         <tr><th>28</th><td><span lang="ru">При раздельной подаче супругов вычет равен нулю, если они жили вместе хотя бы часть года</span><span lang="en">On separate returns the allowance is zero if the spouses lived together at any time during the year</span></td></tr>
         <tr><th>29</th><td><span lang="ru">Приостановленный убыток высвобождается только при <strong>полном</strong> выбытии в <strong>налогооблагаемой</strong> сделке с <strong>посторонним</strong> лицом</span><span lang="en">A suspended loss is released only on a <strong>complete</strong> disposition in a <strong>taxable</strong> transaction to an <strong>unrelated</strong> party</span></td></tr>
         <tr><th>30</th><td><span lang="ru">При дарении приостановленный убыток прибавляется к базису имущества, а не переходит к одаряемому как убыток</span><span lang="en">On a gift the suspended loss is added to the property’s basis rather than passing to the donee as a loss</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Средний срок пользования <span data-fig="rental_avg_use_7"></span> дней или меньше выводит деятельность из определения аренды, но <strong>не из пассивности</strong>: дальше нужен один из семи тестов существенного участия</span><span lang="en">An average period of customer use of <span data-fig="rental_avg_use_7"></span> days or less takes the activity out of the rental definition but <strong>not out of passivity</strong>: one of the seven material participation tests is still required</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Лимит базиса ограничивает долю в партнёрстве или акции S-корпорации. У объекта, принадлежащего напрямую, первым работающим фильтром становится лимит риска</span><span lang="en">The basis limit caps a partnership interest or S corporation stock. For property owned directly the first filter that actually operates is the at-risk limit</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -1891,6 +1967,40 @@ window.QUIZZES.su03 = [
       B: { ru: "Верно. Именно этот перечень. Партнёрства и S-корпорации в него не входят, но их владельцы применяют правила у себя.", en: "Correct. That is the list. Partnerships and S corporations are outside it, but their owners apply the rules at their own level." },
       C: { ru: "Обычная C-корпорация под пассивные правила не подпадает, если она не закрытая и не корпорация личных услуг.", en: "An ordinary C corporation is outside the passive rules unless it is closely held or a personal service corporation." },
       D: { ru: "Доверительные трасты учредителя прямо исключены: доход и вычеты отражаются у учредителя.", en: "Grantor trusts are expressly excluded: the income and deductions are reported by the grantor." }
+    }
+  },
+  {
+    ru: "Владелец сдаёт дачу через сайт бронирования: за 2025 год 40 сдач, всего 200 дней, то есть в среднем 5 дней за одну сдачу. Владелец сам занимается уборкой и встречает гостей, набрав за год 620 часов. Убыток за год $19 000, пассивного дохода нет. Как он отражается?",
+    en: "An owner rents out a cabin through a booking site: 40 rentals over 2025 totalling 200 days, an average of 5 days per rental. The owner does the cleaning and meets the guests, logging 620 hours for the year. The loss is $19,000 and there is no passive income. How is it treated?",
+    opts: [
+      { k: "A", ru: "Вычитается полностью: деятельность не является арендой, а участие существенно", en: "Fully deductible: the activity is not a rental and participation is material" },
+      { k: "B", ru: "Вычитается $19 000 как особый вычет для активного участия", en: "$19,000 is deductible under the special allowance for active participation" },
+      { k: "C", ru: "Приостанавливается целиком: аренда пассивна по определению", en: "Suspended in full: a rental is passive by definition" },
+      { k: "D", ru: "Вычитается только $12 500", en: "Only $12,500 is deductible" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Средний срок пользования — 5 дней, то есть не больше семи, поэтому деятельность арендой для этих правил не считается. Она переходит в первый вид — торговля или бизнес, — а 620 часов дают существенное участие по тесту более 500 часов. Убыток непассивный и вычитается без потолка.", en: "Correct. The average period of customer use is 5 days, which is not more than seven, so the activity is not a rental for these rules. It moves into the first kind — a trade or business — and 620 hours meet material participation under the more-than-500-hours test. The loss is nonpassive and deductible with no ceiling." },
+      B: { ru: "Особый вычет предназначен для пассивной аренды с активным участием и ограничен $25 000 с сокращением по доходу. Здесь он не нужен и не применяется.", en: "The special allowance is for a passive rental with active participation and is capped at $25,000 with an income phase-out. It is neither needed nor available here." },
+      C: { ru: "Аренда пассивна по определению, но у определения шесть исключений. Средний срок в пять дней — первое из них.", en: "A rental is passive by definition, but the definition has six exceptions. A five-day average is the first of them." },
+      D: { ru: "$12 500 — половина особого вычета при раздельной подаче супругов. К этому условию величина отношения не имеет.", en: "$12,500 is half the special allowance for married taxpayers filing separately. It has nothing to do with these facts." }
+    }
+  },
+  {
+    ru: "Налогоплательщик владеет долей в партнёрстве, которое сдаёт складское помещение. Базис его доли на конец 2025 года — $8 000, сумма под риском — $14 000, распределённый ему убыток — $23 000, пассивного дохода нет. Какая сумма доходит до проверки на пассивность?",
+    en: "A taxpayer holds an interest in a partnership that rents out a warehouse. At the end of 2025 the basis of the interest is $8,000, the amount at risk is $14,000, and the loss allocated to the taxpayer is $23,000, with no passive income. How much reaches the passive activity test?",
+    opts: [
+      { k: "A", ru: "$8 000", en: "$8,000" },
+      { k: "B", ru: "$14 000", en: "$14,000" },
+      { k: "C", ru: "$23 000", en: "$23,000" },
+      { k: "D", ru: "$0: пассивный убыток без пассивного дохода не вычитается", en: "$0: a passive loss with no passive income is not deductible" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Первым работает лимит базиса: до проверки на риск доходит $8 000, а не $23 000. Сумма под риском больше базиса и потому ничего не отсекает. На пассивность проверяется $8 000; остальные $15 000 ждут восстановления базиса.", en: "Correct. The basis limit operates first: $8,000 reaches the at-risk test, not $23,000. The amount at risk exceeds basis and so cuts nothing. The passive test examines $8,000; the other $15,000 waits for basis to be restored." },
+      B: { ru: "Сумма под риском применяется вторым фильтром и к тому, что пропустил первый. Начинать с неё — самая частая ошибка порядка.", en: "The at-risk amount is the second filter and applies to what the first let through. Starting there is the commonest ordering error." },
+      C: { ru: "Полная сумма убытка не доходит даже до второго фильтра.", en: "The full loss does not reach even the second filter." },
+      D: { ru: "Вопрос не о том, сколько вычитается в итоге, а о том, сколько доходит до третьего фильтра.", en: "The question is not how much is finally deductible but how much reaches the third filter." }
     }
   }
 ];

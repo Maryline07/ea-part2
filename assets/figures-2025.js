@@ -535,6 +535,28 @@ window.FIGURES = {
       src: SRC_P527
     },
 
+    rental_avg_use_7: {
+      n: 7, unit: "int",
+      ru: "Средний срок пользования: деятельность не считается арендой",
+      en: "Average period of customer use at or below which the activity is not a rental",
+      note_ru: "Средний срок пользования объектом не выше семи дней выводит деятельность из определения аренды для §469.",
+      note_en: "An average period of customer use of seven days or less takes the activity out of the section 469 definition of a rental.",
+      src: SRC_P925
+    },
+    rental_avg_use_30: {
+      n: 30, unit: "int",
+      ru: "Средний срок пользования при значимых личных услугах",
+      en: "Average period of customer use where significant personal services are provided",
+      src: SRC_P925
+    },
+    rental_incidental_pct: {
+      n: 2, unit: "pct",
+      ru: "Порог сопутствующей аренды: доля валового дохода от аренды",
+      en: "Incidental rental threshold: gross rental income as a share of basis or value",
+      note_ru: "Доля от меньшей из нескорректированного базиса и рыночной стоимости объекта.",
+      note_en: "Measured against the smaller of the property's unadjusted basis and its fair market value.",
+      src: SRC_P925
+    },
     rental_min_days: {
       n: 15, unit: "int",
       ru: "Сдача жилья менее 15 дней в году",
@@ -707,7 +729,8 @@ window.FIGURES = {
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
       keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment", "due_1099_recipient"] },
     { id: "rental", ru: "Аренда и лимиты убытков", en: "Rental property and loss limitations",
-      keys: ["dwelling_personal_days", "dwelling_personal_pct", "rental_min_days",
+      keys: ["dwelling_personal_days", "dwelling_personal_pct", "rental_min_days", "rental_avg_use_7", "rental_avg_use_30",
+             "rental_incidental_pct",
              "depr_residential", "depr_nonresidential", "matpart_hours", "matpart_hours_sig",
              "rep_hours", "pal_allowance", "pal_allowance_mfs", "pal_phaseout_start",
              "pal_phaseout_end", "ebl_single", "ebl_mfj"] },
