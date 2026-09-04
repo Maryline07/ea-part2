@@ -380,6 +380,26 @@ html[data-lang="en"] span[lang="en"] { display: inline; }
   .toc a { padding: 0.6rem 0; }
 }
 
+/* Части внутри подраздела. Появились там, где правила двух методов идут
+   вперемешку: область действия должна задаваться структурой, а не оговоркой
+   в каждом абзаце. Заголовок части тяжелее обычного и отбит линией сверху. */
+h3.part {
+  margin: 3.4rem 0 0.9rem;
+  padding-top: 1.1rem;
+  border-top: 2px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+.part__note {
+  margin: 0 0 1.8rem;
+  max-width: 34em;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Заголовки разделов --------------------------------------- */
 
 .sub { margin: 3rem 0 1.2rem;
