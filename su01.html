@@ -2871,6 +2871,11 @@
           <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а для 1099-B, 1099-DA, 1099-S и 1099-MISC с суммами в боксах 8 или 10 — <span data-fig="due_1099_recipient_late"></span></span><span lang="en">, and <span data-fig="due_1099_recipient_late"></span> for Forms 1099-B, 1099-DA, 1099-S and 1099-MISC reporting amounts in boxes 8 or 10</span></td>
           <td><span lang="ru"><span data-fig="due_1099_irs_paper"></span> на бумаге, <span data-fig="due_1099_irs_efile"></span> электронно</span><span lang="en"><span data-fig="due_1099_irs_paper"></span> on paper; <span data-fig="due_1099_irs_efile"></span> electronically</span></td>
         </tr>
+        <tr>
+          <th><span lang="ru">K-1</span><span lang="en">Schedule K-1</span></th>
+          <td><span lang="ru">Не позднее дня, к которому должна быть подана сама декларация: <span data-fig="due_1065"></span></span><span lang="en">On or before the day the return itself is due: <span data-fig="due_1065"></span></span></td>
+          <td><span lang="ru">Вместе с декларацией: K-1 подаются как её часть, отдельного срока у них нет</span><span lang="en">With the return: the Schedules K-1 are filed as part of it and have no date of their own</span></td>
+        </tr>
       </tbody>
     </table>
     </div>
@@ -2901,6 +2906,35 @@
       is not furnished to the payee. The amounts are the same, but the two penalties run
       <strong>independently</strong>. The amount depends on when the failure is corrected, and the
       annual cap depends on average annual gross receipts for the three preceding years.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Нарушение</span><span lang="en">The failure</span></th>
+          <th><span lang="ru">Норма</span><span lang="en">Section</span></th>
+          <th><span lang="ru">Особенность</span><span lang="en">What is peculiar to it</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">W-2 или 1099 не подана в налоговую службу</span><span lang="en">A Form W-2 or 1099 not filed with the IRS</span></th>
+          <td>§6721</td>
+          <td><span lang="ru">Размер по таблице ниже</span><span lang="en">Amount from the table below</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">W-2 или 1099 не выдана получателю</span><span lang="en">A Form W-2 or 1099 not furnished to the payee</span></th>
+          <td>§6722</td>
+          <td><span lang="ru">Тот же размер, начисляется <strong>отдельно</strong> от §6721</span><span lang="en">The same amount, charged <strong>separately</strong> from section 6721</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">K-1 не выдан участнику</span><span lang="en">A Schedule K-1 not furnished to the owner</span></th>
+          <td>§6722</td>
+          <td><span lang="ru">Тот же размер. Не зависит от штрафа за саму декларацию: считается по числу участников, которым K-1 не дошёл</span><span lang="en">The same amount. Independent of the penalty on the return itself: it counts the owners who did not get one</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 
     <div class="scroller">
     <table>
@@ -2955,21 +2989,19 @@
         answer showing a single amount is the error the question is built on.</p>
     </div>
 
-    <h3><span lang="ru">K-1: тот же штраф, другая привязка</span><span lang="en">Schedule K-1: the same penalty, a different link</span></h3>
-
-    <p lang="ru">Приложение K-1 — такая же выдаваемая получателю форма, как 1099, поэтому
-      штраф за него берётся по §6722 и по таблице выше: те же <span data-fig="pen_infret"></span>,
-      те же максимумы, то же умышленное пренебрежение.</p>
-    <p lang="en">A Schedule K-1 is a payee statement just as a Form 1099 is, so the penalty comes
-      from section 6722 and from the table above: the same <span data-fig="pen_infret"></span>, the
-      same caps, the same rule for intentional disregard.</p>
-
-    <p lang="ru">Особенность одна, и она в привязке: этот штраф не зависит от штрафа за саму
-      декларацию. Партнёрство, подавшее 1065 в срок, но не разославшее K-1, штрафа по §6698 не
-      платит вовсе, а по §6722 платит за каждого участника.</p>
-    <p lang="en">One thing is peculiar to it, and it is the link: this penalty is independent of the
-      penalty on the return itself. A partnership that filed Form 1065 on time but sent no Schedules
-      K-1 owes nothing under section 6698 and owes the section 6722 penalty for every partner.</p>
+    <div class="trap">
+      <h3><span lang="ru">Штраф за K-1 живёт отдельно от штрафа за декларацию</span><span lang="en">The Schedule K-1 penalty is independent of the return penalty</span></h3>
+      <p lang="ru">Партнёрство подало 1065 в срок, но не разослало K-1. Штрафа по §6698 нет вовсе —
+        декларация подана. Штраф по §6722 есть, и считается он за каждого участника, которому K-1 не
+        дошёл. Обратный случай тоже бывает: декларация опоздала, а K-1 розданы вовремя — тогда
+        наоборот. Вопрос обычно даёт обе даты и ждёт, что вы сложите оба штрафа, хотя работает
+        только один.</p>
+      <p lang="en">A partnership filed Form 1065 on time but sent no Schedules K-1. There is no
+        section 6698 penalty at all — the return was filed. There is a section 6722 penalty, counted
+        for every owner who did not receive one. The reverse happens too: the return is late while
+        the K-1s went out on time. A question usually supplies both dates and expects you to add both
+        penalties when only one is running.</p>
+    </div>
 
     <h3 class="part"><span lang="ru">Депозиты зарплатных налогов</span><span lang="en">Depositing employment taxes</span></h3>
 
