@@ -142,6 +142,14 @@ window.FIGURES = {
       en: "Net profit threshold for the optional methods",
       src: { t: "Instructions for Schedule SE (2025)", u: "https://www.irs.gov/instructions/i1040sse" }
     },
+    farm_syndicate_losses: {
+      n: 35, unit: "pct",
+      ru: "Фермерский синдикат: доля убытков у ограниченных участников",
+      en: "Farming syndicate: share of losses allocable to limited partners",
+      note_ru: "Превышение этой доли делает хозяйство налоговым убежищем: кассовый метод недоступен при любой выручке.",
+      note_en: "Exceeding this share makes the operation a tax shelter: the cash method is unavailable at any level of receipts.",
+      src: SRC_P225
+    },
     farm_opt_max: {
       n: 7240, unit: "usd",
       ru: "Максимум, показываемый по дополнительному методу",
@@ -711,6 +719,7 @@ window.FIGURES = {
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
-      keys: ["farm_income_share", "farm_prepaid_limit", "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
+      keys: ["farm_income_share", "farm_prepaid_limit", "farm_syndicate_losses",
+             "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
   ]
 };

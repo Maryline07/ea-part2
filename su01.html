@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=12">
-<script defer src="assets/figures-2025.js?v=12"></script>
+<link rel="stylesheet" href="assets/style.css?v=13">
+<script defer src="assets/figures-2025.js?v=13"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=12"></script>
+<script defer src="assets/app.js?v=13"></script>
 </head>
 <body data-module="su01">
 
@@ -1278,15 +1278,75 @@
     <h3><span lang="ru">Фермерский бизнес</span><span lang="en">A farming business</span></h3>
 
     <p lang="ru">Ведущий фермерское дело по общему правилу вправе применять кассовый метод.
-      Исключение касается организаций: C-корпорация и партнёрство, среди партнёров которого
-      есть C-корпорация, обязаны применять метод начисления к фермерской деятельности,
-      <strong>если не проходят тест валовой выручки</strong>. S-корпорация под это исключение
-      не подпадает.</p>
+      Ограничение касается только организаций: C-корпорация и партнёрство, среди партнёров
+      которого есть C-корпорация, применяют метод начисления к фермерской деятельности,
+      <strong>если не проходят тест валовой выручки</strong>. S-корпорация не ограничена.</p>
     <p lang="en">A taxpayer in the trade or business of farming may generally use the cash
-      method. The exception is for entities: a C corporation, and a partnership with a C
-      corporation as a partner, must use an accrual method for the farming business
-      <strong>unless they meet the gross receipts test</strong>. An S corporation is outside
-      the exception.</p>
+      method. The restriction reaches entities only: a C corporation, and a partnership with a
+      C corporation as a partner, must use an accrual method for the farming business
+      <strong>unless they meet the gross receipts test</strong>. An S corporation is not
+      restricted.</p>
+
+    <p lang="ru"><strong>До сих пор это дословно общее правило для корпораций.</strong> Порог
+      тот же <span data-fig="gross_receipts_448c"></span>, состав ограниченных лиц тот же,
+      результат для обычного фермерского хозяйства тот же. Отдельным правилом фермерство стоит
+      из-за двух краёв, которых у нефермерских корпораций нет, и спрашивают именно о них.</p>
+    <p lang="en"><strong>So far this restates the general corporate rule word for word.</strong>
+      The same <span data-fig="gross_receipts_448c"></span> threshold, the same list of restricted
+      entities, the same outcome for an ordinary farming operation. Farming is stated separately
+      because of two edges that non-farming corporations do not have, and those edges are what
+      gets tested.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Хозяйство</span><span lang="en">Operation</span></th>
+          <th><span lang="ru">Метод учёта</span><span lang="en">Accounting method</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Питомник, дерновая ферма, выращивание и заготовка деревьев, кроме плодовых и ореховых</span><span lang="en">A nursery, a sod farm, or the raising or harvesting of trees other than fruit and nut trees</span></th>
+          <td><span lang="ru"><strong>Кассовый метод при любой выручке</strong> — даже для C-корпорации. Тест валовой выручки к такому хозяйству не применяется вовсе</span><span lang="en"><strong>The cash method at any level of receipts</strong>, C corporation included. The gross receipts test does not reach such an operation at all</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Фермерский синдикат</span><span lang="en">A farming syndicate</span></th>
+          <td><span lang="ru"><strong>Только метод начисления</strong>, и прохождение теста валовой выручки не помогает: синдикат считается налоговым убежищем</span><span lang="en"><strong>An accrual method only</strong>, and meeting the gross receipts test does not help: a syndicate is a tax shelter</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прочие фермерские C-корпорации и партнёрства с корпоративным партнёром</span><span lang="en">All other farming C corporations and partnerships with a corporate partner</span></th>
+          <td><span lang="ru">Как у нефермерских: метод начисления, если не пройден тест <span data-fig="gross_receipts_448c"></span></span><span lang="en">As for non-farming entities: accrual unless the <span data-fig="gross_receipts_448c"></span> test is met</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Индивидуальный предприниматель, S-корпорация, партнёрство без корпоративных партнёров</span><span lang="en">A sole proprietor, an S corporation, a partnership with no corporate partner</span></th>
+          <td><span lang="ru">Кассовый метод</span><span lang="en">The cash method</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Тест валовой выручки синдикат не спасает</span><span lang="en">The gross receipts test does not save a syndicate</span></h3>
+      <p lang="ru">Небольшое хозяйство легко проходит порог по выручке, и отсюда вывод, что
+        кассовый метод ему доступен. Для синдиката это неверно: запрет наложен не размером, а
+        строением, и снять его выручкой нельзя. Синдикатом хозяйство становится, если верно
+        хотя бы одно:</p>
+      <p lang="en">A small operation clears the receipts threshold easily, and the conclusion
+        follows that the cash method is open to it. For a syndicate that is wrong: the bar comes
+        from how the operation is structured, not from its size, and receipts cannot lift it. An
+        operation is a syndicate if either is true:</p>
+      <table class="numbered">
+        <tbody>
+          <tr><th>1</th><td><span lang="ru">Доли в деятельности предлагались к продаже в размещении, подлежащем регистрации у федерального органа или органа штата, регулирующего продажу ценных бумаг</span><span lang="en">Interests in the activity were offered for sale in an offering required to be registered with a federal or state securities regulator</span></td></tr>
+          <tr><th>2</th><td><span lang="ru">Более <span data-fig="farm_syndicate_losses"></span> убытков за налоговый год приходится на ограниченных партнёров или ограниченных предпринимателей — то есть на тех, кто не участвует в управлении лично</span><span lang="en">More than <span data-fig="farm_syndicate_losses"></span> of the losses for the tax year are allocable to limited partners or limited entrepreneurs — those who do not actively manage the operation</span></td></tr>
+        </tbody>
+      </table>
+      <p lang="ru">Второй признак и есть ловушка: он срабатывает без всякого размещения долей,
+        по одному лишь распределению убытков между теми, кто фермой не управляет.</p>
+      <p lang="en">The second test is the trap: it applies with no offering of interests at all,
+        purely from how losses fall among those who do not run the farm.</p>
+    </div>
 
     <h3><span lang="ru">Два и более бизнеса у одного владельца</span><span lang="en">Two or more businesses of one owner</span></h3>
 
@@ -2359,9 +2419,10 @@
         <tr><th>32</th><td><span lang="ru">Три прибыльных года из пяти лишь перекладывают бремя доказывания; их отсутствие хобби не создаёт. Для лошадей — два года из семи</span><span lang="en">Three profitable years out of five only shift the burden of proof; their absence does not create a hobby. For horses it is two years out of seven</span></td></tr>
         <tr><th>33</th><td><span lang="ru">Оплата картой — вычет в год списания по карте, а не оплаты счёта банка. Собственный вексель, выданный продавцу, платежом не является</span><span lang="en">A card charge is deducted in the year of the charge, not when the card company is paid. The taxpayer’s own note given to the seller is not payment</span></td></tr>
         <tr><th>34</th><td><span lang="ru">Корпорация личных услуг применяет кассовый метод при любой выручке, но акции <strong>членов семьи</strong> работника в тесте собственников не засчитываются</span><span lang="en">A qualified personal service corporation may use the cash method at any level of receipts, but stock held by an employee’s <strong>family</strong> does not count for the ownership test</span></td></tr>
-        <tr><th>35</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
-        <tr><th>36</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
-        <tr><th>37</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">Фермерский синдикат обязан применять метод начисления независимо от выручки, а питомник, дерновая ферма и лесоводство вправе применять кассовый метод при любой выручке — даже будучи C-корпорацией</span><span lang="en">A farming syndicate must use an accrual method whatever its receipts, while a nursery, a sod farm and tree operations may use the cash method at any level of receipts — even as a C corporation</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
+        <tr><th>38</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -3277,6 +3338,23 @@ window.QUIZZES.su01 = [
       B: { ru: "Это и есть основная ошибка: по каждому работнику отдельно считается база $7 000, а не порог $1 500.", en: "That is the central error: it is the $7,000 wage base that is computed per employee, not the $1,500 threshold." },
       C: { ru: "Тесты соединены союзом «либо». Недельный тест действительно не выполнен, но выплатного достаточно самого по себе.", en: "The two tests are joined by “or”. The weeks test indeed fails, but the wage test alone suffices." },
       D: { ru: "Порог решает, возникает ли обязанность, но из базы не вычитается. Каждый работник заработал меньше $7 000, поэтому облагаются все $1 600.", en: "The threshold decides whether the obligation arises; it is not subtracted from the base. Each employee earned less than $7,000, so the whole $1,600 is taxable." }
+    }
+  },
+  {
+    ru: "Фермерское партнёрство со средней годовой валовой выручкой $2 400 000 распределяет 48% убытков ограниченным партнёрам, не занятым управлением. Доли в размещении не предлагались, корпоративных партнёров нет. Какой метод учёта доступен партнёрству?",
+    en: "A farming partnership with average annual gross receipts of $2,400,000 allocates 48% of its losses to limited partners who take no part in management. No interests were offered in a registered offering and there is no corporate partner. Which accounting method is available?",
+    opts: [
+      { k: "A", ru: "Кассовый: выручка много ниже порога", en: "Cash: receipts are far below the threshold" },
+      { k: "B", ru: "Кассовый: корпоративных партнёров нет", en: "Cash: there is no corporate partner" },
+      { k: "C", ru: "Только метод начисления", en: "An accrual method only" },
+      { k: "D", ru: "Кассовый, поскольку доли не размещались публично", en: "Cash, because the interests were not publicly offered" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Тест валовой выручки здесь не работает: запрет наложен строением хозяйства, а не его размером.", en: "The gross receipts test does not operate here: the bar comes from how the operation is structured, not from its size." },
+      B: { ru: "Отсутствие корпоративного партнёра снимает общее ограничение, но не признак синдиката.", en: "The absence of a corporate partner lifts the general restriction but not the syndicate test." },
+      C: { ru: "Верно. Более 35% убытков приходится на ограниченных партнёров — хозяйство является фермерским синдикатом, то есть налоговым убежищем, и кассовый метод ему недоступен при любой выручке.", en: "Correct. More than 35% of the losses go to limited partners, so the operation is a farming syndicate — a tax shelter — and the cash method is unavailable at any level of receipts." },
+      D: { ru: "Признака два, и они соединены союзом «либо». Отсутствие размещения снимает только первый.", en: "There are two tests joined by “or”. The absence of an offering disposes of the first one only." }
     }
   }
 
