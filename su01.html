@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20">
-<script defer src="assets/figures-2025.js?v=20"></script>
+<link rel="stylesheet" href="assets/style.css?v=21">
+<script defer src="assets/figures-2025.js?v=21"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=20"></script>
+<script defer src="assets/app.js?v=21"></script>
 </head>
 <body data-module="su01">
 
@@ -2622,6 +2622,24 @@
       </h2>
     </section>
 
+    <p lang="ru">Слово «декларация» встречается в этом подразделе в двух значениях, и различать
+      их обязательно. <strong>Налоговая декларация</strong> — 1065, 1120-S, 1120 — сообщает
+      о доходе самого подающего. <strong>Информационная декларация</strong> — W-2, формы 1099,
+      приложение K-1 — сообщает о том, что подающий выплатил другому лицу. У них разные сроки,
+      разные штрафы и разная база счёта. По-английски обе называются <span class="orig">return</span>,
+      но экзамен всегда уточняет: <span class="orig">income tax return</span> или
+      <span class="orig">information return</span>.</p>
+    <p lang="en">The word “return” carries two meanings in this subsection, and they must be kept
+      apart. An <strong>income tax return</strong> — Form 1065, 1120-S or 1120 — reports the
+      filer’s own income. An <strong>information return</strong> — Form W-2, a Form 1099, a
+      Schedule K-1 — reports what the filer paid to someone else. They carry different dates,
+      different penalties and different measuring bases. The exam always says which one it means.</p>
+
+    <h3 class="part"><span lang="ru">Налоговая декларация: срок и штраф</span><span lang="en">The income tax return: due date and penalty</span></h3>
+
+    <p class="part__note" lang="ru">Формы 1065, 1120-S и 1120 сообщают о доходе самого подающего. Всё в этой части относится к ним и только к ним: и сроки, и продление, и штрафы.</p>
+    <p class="part__note" lang="en">Forms 1065, 1120-S and 1120 report the filer’s own income. Everything in this part applies to them and to nothing else: the dates, the extension and the penalties.</p>
+
     <p lang="ru">Срок задаётся не датой, а формулой: столько-то месяцев от конца налогового периода.
       Знать нужно и формулу, и её результат для 2025 года, потому что вопрос спрашивает то одно, то
       другое, а при фискальном периоде дату придётся вывести самостоятельно.</p>
@@ -2692,59 +2710,7 @@
         tests both the rule and the resulting date — hold both.</p>
     </div>
 
-    <h3><span lang="ru">Информационные декларации: два адреса и два срока</span><span lang="en">Information returns: two recipients, two dates</span></h3>
-
-    <p lang="ru">Информационная декларация уходит дважды: получателю выплаты и налоговой службе.
-      У большинства форм эти два срока разные, и вопрос обычно спрашивает про один из них, называя
-      другой в вариантах ответа. Совпадают они только у W-2 и 1099-NEC.</p>
-    <p lang="en">An information return goes out twice: to the payee and to the IRS. For most forms
-      the two dates differ, and a question usually asks about one of them while offering the other
-      among the answers. Only Form W-2 and Form 1099-NEC share a single date.</p>
-
-    <div class="scroller">
-    <table>
-      <thead>
-        <tr>
-          <th><span lang="ru">Форма</span><span lang="en">Form</span></th>
-          <th><span lang="ru">Получателю</span><span lang="en">To the payee</span></th>
-          <th><span lang="ru">В налоговую службу</span><span lang="en">To the IRS</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>W-2</th>
-          <td><span data-fig="due_1099_recipient"></span></td>
-          <td><span lang="ru">Тогда же — но адресат не налоговая служба, а Управление социального обеспечения</span><span lang="en">The same date — but the recipient is the Social Security Administration, not the IRS</span></td>
-        </tr>
-        <tr class="total">
-          <th>1099-NEC</th>
-          <td><span data-fig="due_1099_recipient"></span></td>
-          <td><span lang="ru">Тогда же: из всех форм 1099 только NEC уходит в налоговую службу в тот же срок, что и получателю. Прочим дан ещё месяц</span><span lang="en">The same date: of all the Forms 1099 only the NEC goes to the IRS on the day it goes to the payee. The rest get another month</span></td>
-        </tr>
-        <tr>
-          <th><span lang="ru">Прочие 1099</span><span lang="en">Other Forms 1099</span></th>
-          <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а для 1099-B, 1099-DA, 1099-S и 1099-MISC с суммами в боксах 8 или 10 — <span data-fig="due_1099_recipient_late"></span></span><span lang="en">, and <span data-fig="due_1099_recipient_late"></span> for Forms 1099-B, 1099-DA, 1099-S and 1099-MISC reporting amounts in boxes 8 or 10</span></td>
-          <td><span lang="ru"><span data-fig="due_1099_irs_paper"></span> на бумаге, <span data-fig="due_1099_irs_efile"></span> электронно</span><span lang="en"><span data-fig="due_1099_irs_paper"></span> on paper; <span data-fig="due_1099_irs_efile"></span> electronically</span></td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-    <div class="trap">
-      <h3><span lang="ru">Порог электронной подачи считается по всем формам сразу</span><span lang="en">The electronic filing threshold counts every form together</span></h3>
-      <p lang="ru">Подавать электронно обязан тот, у кого за календарный год набирается
-        <span data-fig="efile_threshold"></span> и более информационных деклараций. Порог
-        <strong>не применяется отдельно к каждому виду формы</strong>: четыре формы 1098 и шесть
-        форм 1099 — это уже десять, и обязанность возникает. Вариант ответа «нет, ни одной формы
-        не набралось десяти» и есть ошибка, ради которой вопрос задан.</p>
-      <p lang="en">Electronic filing is required of anyone who files
-        <span data-fig="efile_threshold"></span> or more information returns for the calendar year.
-        The threshold <strong>does not apply separately to each type of form</strong>: four Forms
-        1098 and six Forms 1099 already make ten, and the requirement applies. The answer “no single
-        form reached ten” is the error the question is built on.</p>
-    </div>
-
-    <h3><span lang="ru">Штраф за непредставление декларации</span><span lang="en">The failure to file penalty</span></h3>
+    <h3><span lang="ru">Штраф за непредставление налоговой декларации</span><span lang="en">The penalty for not filing the income tax return</span></h3>
 
     <p lang="ru">У партнёрства и S-корпорации штраф считается не от суммы налога — налога у них
       нет, — а <strong>от числа участников</strong>. Это единственное место в курсе, где штраф
@@ -2866,45 +2832,149 @@
       </div>
     </div>
 
-    <h3><span lang="ru">Штраф за K-1</span><span lang="en">The Schedule K-1 penalty</span></h3>
+    <h3 class="part"><span lang="ru">Информационные декларации: сроки и штрафы</span><span lang="en">Information returns: due dates and penalties</span></h3>
 
-    <p lang="ru">Отдельный штраф — за то, что K-1 не выдан участнику вовремя либо выдан с неполными
-      или неверными данными. Он не связан со штрафом за саму декларацию: партнёрство, подавшее 1065
-      в срок, но не разославшее K-1, платит только этот.</p>
-    <p lang="en">A separate penalty covers a Schedule K-1 not furnished to the owner on time, or
-      furnished with information missing or wrong. It is independent of the penalty on the return
-      itself: a partnership that filed Form 1065 on time but sent no K-1s pays only this one.</p>
+    <p class="part__note" lang="ru">Формы W-2, 1099 и приложение K-1 сообщают не о доходе подающего, а о том, что он выплатил другому лицу. У них свои сроки, свои штрафы и свой способ счёта — ничто из первой части сюда не переносится.</p>
+    <p class="part__note" lang="en">Forms W-2, the Forms 1099 and Schedule K-1 report not the filer’s income but what the filer paid to someone else. They carry their own dates, their own penalties and their own way of counting: nothing from the first part carries over.</p>
+
+    <h3><span lang="ru">Сроки: два адреса и два срока</span><span lang="en">Due dates: two recipients, two dates</span></h3>
+
+    <p lang="ru">Информационная декларация уходит дважды: получателю выплаты и налоговой службе.
+      У большинства форм эти два срока разные, и вопрос обычно спрашивает про один из них, называя
+      другой в вариантах ответа. Совпадают они только у W-2 и 1099-NEC.</p>
+    <p lang="en">An information return goes out twice: to the payee and to the IRS. For most forms
+      the two dates differ, and a question usually asks about one of them while offering the other
+      among the answers. Only Form W-2 and Form 1099-NEC share a single date.</p>
 
     <div class="scroller">
     <table>
       <thead>
         <tr>
-          <th><span lang="ru">Случай</span><span lang="en">Case</span></th>
-          <th><span lang="ru">Размер</span><span lang="en">Amount</span></th>
+          <th><span lang="ru">Форма</span><span lang="en">Form</span></th>
+          <th><span lang="ru">Получателю</span><span lang="en">To the payee</span></th>
+          <th><span lang="ru">В налоговую службу</span><span lang="en">To the IRS</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th><span lang="ru">Обычное нарушение</span><span lang="en">An ordinary failure</span></th>
-          <td><span lang="ru"><span data-fig="pen_k1"></span> за каждый K-1</span><span lang="en"><span data-fig="pen_k1"></span> for each Schedule K-1</span></td>
-        </tr>
-        <tr>
-          <th><span lang="ru">Годовой максимум: выручка не выше <span data-fig="pen_k1_receipts"></span></span><span lang="en">Annual cap: gross receipts at or below <span data-fig="pen_k1_receipts"></span></span></th>
-          <td><span data-fig="pen_k1_max_small"></span></td>
-        </tr>
-        <tr>
-          <th><span lang="ru">Годовой максимум: выручка выше</span><span lang="en">Annual cap: gross receipts above that</span></th>
-          <td><span data-fig="pen_k1_max_large"></span></td>
+          <th>W-2</th>
+          <td><span data-fig="due_1099_recipient"></span></td>
+          <td><span lang="ru">Тогда же — но адресат не налоговая служба, а Управление социального обеспечения</span><span lang="en">The same date — but the recipient is the Social Security Administration, not the IRS</span></td>
         </tr>
         <tr class="total">
-          <th><span lang="ru">Умышленное пренебрежение</span><span lang="en">Intentional disregard</span></th>
-          <td><span lang="ru"><span data-fig="pen_k1_intentional"></span> за каждый K-1 либо 10% суммы, подлежавшей отражению, — <strong>большая</strong> из двух. Годового максимума здесь нет вовсе</span><span lang="en"><span data-fig="pen_k1_intentional"></span> for each Schedule K-1 or 10% of the amount that should have been reported — the <strong>greater</strong> of the two. Here there is no annual cap at all</span></td>
+          <th>1099-NEC</th>
+          <td><span data-fig="due_1099_recipient"></span></td>
+          <td><span lang="ru">Тогда же: из всех форм 1099 только NEC уходит в налоговую службу в тот же срок, что и получателю. Прочим дан ещё месяц</span><span lang="en">The same date: of all the Forms 1099 only the NEC goes to the IRS on the day it goes to the payee. The rest get another month</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прочие 1099</span><span lang="en">Other Forms 1099</span></th>
+          <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а для 1099-B, 1099-DA, 1099-S и 1099-MISC с суммами в боксах 8 или 10 — <span data-fig="due_1099_recipient_late"></span></span><span lang="en">, and <span data-fig="due_1099_recipient_late"></span> for Forms 1099-B, 1099-DA, 1099-S and 1099-MISC reporting amounts in boxes 8 or 10</span></td>
+          <td><span lang="ru"><span data-fig="due_1099_irs_paper"></span> на бумаге, <span data-fig="due_1099_irs_efile"></span> электронно</span><span lang="en"><span data-fig="due_1099_irs_paper"></span> on paper; <span data-fig="due_1099_irs_efile"></span> electronically</span></td>
         </tr>
       </tbody>
     </table>
     </div>
 
-    <h3><span lang="ru">Депозиты зарплатных налогов</span><span lang="en">Depositing employment taxes</span></h3>
+    <div class="trap">
+      <h3><span lang="ru">Порог электронной подачи считается по всем формам сразу</span><span lang="en">The electronic filing threshold counts every form together</span></h3>
+      <p lang="ru">Подавать электронно обязан тот, у кого за календарный год набирается
+        <span data-fig="efile_threshold"></span> и более информационных деклараций. Порог
+        <strong>не применяется отдельно к каждому виду формы</strong>: четыре формы 1098 и шесть
+        форм 1099 — это уже десять, и обязанность возникает. Вариант ответа «нет, ни одной формы
+        не набралось десяти» и есть ошибка, ради которой вопрос задан.</p>
+      <p lang="en">Electronic filing is required of anyone who files
+        <span data-fig="efile_threshold"></span> or more information returns for the calendar year.
+        The threshold <strong>does not apply separately to each type of form</strong>: four Forms
+        1098 and six Forms 1099 already make ten, and the requirement applies. The answer “no single
+        form reached ten” is the error the question is built on.</p>
+    </div>
+
+    <h3><span lang="ru">Штраф за непредставление информационной декларации</span><span lang="en">The penalty for not filing an information return</span></h3>
+
+    <p lang="ru">Форма уходит по двум адресам — и за каждый адрес свой штраф. §6721 наказывает
+      за то, что она не подана в налоговую службу; §6722 — за то, что она не выдана получателю.
+      Суммы у них одинаковые, но начисляются они <strong>независимо друг от друга</strong>. Размер
+      зависит от того, когда нарушение исправлено, а годовой максимум — от средней годовой
+      выручки за три последних года.</p>
+    <p lang="en">The form goes to two addresses, and each address carries its own penalty. Section
+      6721 applies when the return is not filed with the IRS; section 6722 applies when the statement
+      is not furnished to the payee. The amounts are the same, but the two penalties run
+      <strong>independently</strong>. The amount depends on when the failure is corrected, and the
+      annual cap depends on average annual gross receipts for the three preceding years.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Когда исправлено</span><span lang="en">When corrected</span></th>
+          <th><span lang="ru">За форму</span><span lang="en">Per return</span></th>
+          <th><span lang="ru">Максимум за год: выручка выше <span data-fig="pen_infret_receipts"></span></span><span lang="en">Annual cap: receipts above <span data-fig="pen_infret_receipts"></span></span></th>
+          <th><span lang="ru">Максимум за год: выручка не выше</span><span lang="en">Annual cap: receipts at or below that</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">В течение 30 дней после срока</span><span lang="en">Within 30 days of the due date</span></th>
+          <td><span data-fig="pen_infret_30"></span></td>
+          <td><span data-fig="pen_infret_max30_large"></span></td>
+          <td><span data-fig="pen_infret_max30_small"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">С 31-го дня по 1 августа</span><span lang="en">After 30 days but by August 1</span></th>
+          <td><span data-fig="pen_infret_aug"></span></td>
+          <td><span data-fig="pen_infret_maxaug_large"></span></td>
+          <td><span data-fig="pen_infret_maxaug_small"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">После 1 августа или не подана вовсе</span><span lang="en">After August 1, or not filed at all</span></th>
+          <td><span data-fig="pen_infret"></span></td>
+          <td><span data-fig="pen_infret_max_large"></span></td>
+          <td><span data-fig="pen_infret_max_small"></span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Умышленное пренебрежение</span><span lang="en">Intentional disregard</span></th>
+          <td><span lang="ru"><span data-fig="pen_infret_intentional"></span> либо 10% суммы, подлежавшей отражению, — <strong>большая</strong> из двух</span><span lang="en"><span data-fig="pen_infret_intentional"></span> or 10% of the amount that should have been reported — the <strong>greater</strong> of the two</span></td>
+          <td><span lang="ru">Максимума нет</span><span lang="en">No cap</span></td>
+          <td><span lang="ru">Максимума нет</span><span lang="en">No cap</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Одна форма — два штрафа</span><span lang="en">One form, two penalties</span></h3>
+      <p lang="ru">§6721 и §6722 не альтернативы, из которых надо выбрать. Не отправили 1099-NEC в
+        налоговую службу и не выдали её подрядчику — это два разных нарушения, и штраф выходит
+        <span data-fig="pen_infret"></span> плюс <span data-fig="pen_infret"></span> за одну бумагу.
+        Годовые максимумы у каждого штрафа тоже свои. Вариант ответа с одной суммой и есть та
+        ошибка, ради которой задан вопрос.</p>
+      <p lang="en">Sections 6721 and 6722 are not alternatives to choose between. Failing to file a
+        Form 1099-NEC with the IRS and failing to furnish it to the contractor are two separate
+        failures, so a single piece of paper costs <span data-fig="pen_infret"></span> plus
+        <span data-fig="pen_infret"></span>. Each penalty carries its own annual cap as well. The
+        answer showing a single amount is the error the question is built on.</p>
+    </div>
+
+    <h3><span lang="ru">K-1: тот же штраф, другая привязка</span><span lang="en">Schedule K-1: the same penalty, a different link</span></h3>
+
+    <p lang="ru">Приложение K-1 — такая же выдаваемая получателю форма, как 1099, поэтому
+      штраф за него берётся по §6722 и по таблице выше: те же <span data-fig="pen_infret"></span>,
+      те же максимумы, то же умышленное пренебрежение.</p>
+    <p lang="en">A Schedule K-1 is a payee statement just as a Form 1099 is, so the penalty comes
+      from section 6722 and from the table above: the same <span data-fig="pen_infret"></span>, the
+      same caps, the same rule for intentional disregard.</p>
+
+    <p lang="ru">Особенность одна, и она в привязке: этот штраф не зависит от штрафа за саму
+      декларацию. Партнёрство, подавшее 1065 в срок, но не разославшее K-1, штрафа по §6698 не
+      платит вовсе, а по §6722 платит за каждого участника.</p>
+    <p lang="en">One thing is peculiar to it, and it is the link: this penalty is independent of the
+      penalty on the return itself. A partnership that filed Form 1065 on time but sent no Schedules
+      K-1 owes nothing under section 6698 and owes the section 6722 penalty for every partner.</p>
+
+    <h3 class="part"><span lang="ru">Депозиты зарплатных налогов</span><span lang="en">Depositing employment taxes</span></h3>
+
+    <p class="part__note" lang="ru">Здесь речь не о подаче, а об уплате. Деньги вносятся до и независимо от любой декларации, и опоздание с ними наказывается отдельно.</p>
+    <p class="part__note" lang="en">This part is about paying rather than filing. The money goes in before, and independently of, any return, and being late with it is penalised separately.</p>
 
     <p lang="ru">Удержанные у работников налоги и долю работодателя нельзя просто уплатить вместе с
       отчётностью: их <strong>депонируют</strong>, и график депозитов определяется заранее — по
@@ -3040,10 +3110,13 @@
         <tr><th>42</th><td><span lang="ru">Предоплата аренды у сторон отражается по-разному: плательщик растягивает вычет по мере пользования, получатель включает всю сумму в доход сразу. Зеркальности между сторонами не требуется</span><span lang="en">Prepaid rent falls differently on the two sides: the payer spreads the deduction as the property is used, while the recipient takes the whole amount into income at once. The two sides are not required to mirror each other</span></td></tr>
         <tr><th>43</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
         <tr><th>44</th><td><span lang="ru">Порог электронной подачи в <span data-fig="efile_threshold"></span> деклараций считается по <strong>всем видам форм вместе</strong>, а не по каждой форме отдельно</span><span lang="en">The <span data-fig="efile_threshold"></span>-return electronic filing threshold counts <strong>all form types together</strong>, not each form separately</span></td></tr>
-        <tr><th>45</th><td><span lang="ru">Штраф партнёрства и S-корпорации за непредставление считается по <strong>числу участников</strong> и не зависит от того, есть ли налог к уплате</span><span lang="en">The partnership and S corporation late filing penalty is measured by the <strong>number of owners</strong> and does not depend on whether any tax is due</span></td></tr>
+        <tr><th>45</th><td><span lang="ru">Штраф партнёрства и S-корпорации за непредставление <strong>налоговой</strong> декларации считается по <strong>числу участников</strong> и не зависит от того, есть ли налог к уплате</span><span lang="en">The partnership and S corporation late filing penalty is measured by the <strong>number of owners</strong> and does not depend on whether any tax is due</span></td></tr>
         <tr><th>46</th><td><span lang="ru">Потолок в <span data-fig="pen_6698_months"></span> месяцев и счёт по лицам, бывшим владельцами в любой части года, одинаковы у §6698 и §6699. У S-корпорации сверх этого начисляется <span data-fig="pen_6651_rate"></span> в месяц, если есть налог к уплате</span><span lang="en">The <span data-fig="pen_6698_months"></span>-month cap and the count of persons who were owners during any part of the year are identical under sections 6698 and 6699. An S corporation adds <span data-fig="pen_6651_rate"></span> a month on top where tax is due</span></td></tr>
         <tr><th>47</th><td><span lang="ru">В месяцы, когда идут оба штрафа, штраф за непредставление уменьшается на штраф за неуплату: 4,5%, а не <span data-fig="pen_6651_rate"></span> плюс <span data-fig="pen_6651_pay"></span></span><span lang="en">In months when both penalties run, the failure-to-file penalty is reduced by the failure-to-pay penalty: 4.5%, not <span data-fig="pen_6651_rate"></span> plus <span data-fig="pen_6651_pay"></span></span></td></tr>
         <tr><th>48</th><td><span lang="ru">График депозитов задан контрольным периодом прошлого года и внутри года не меняется. Новый работодатель — ежемесячный. Вмешивается только правило <span data-fig="dep_nextday"></span></span><span lang="en">The deposit schedule is fixed by last year’s lookback period and does not change mid-year. A new employer is monthly. Only the <span data-fig="dep_nextday"></span> rule intervenes</span></td></tr>
+        <tr><th>49</th><td><span lang="ru">§6721 и §6722 — независимые штрафы: непредставленная в налоговую службу и невыданная получателю форма стоит вдвое</span><span lang="en">Sections 6721 and 6722 are independent: a form neither filed with the IRS nor furnished to the payee costs twice</span></td></tr>
+        <tr><th>50</th><td><span lang="ru">Штраф за информационную декларацию зависит от того, <strong>когда</strong> нарушение исправлено: 30 дней, 1 августа, позже. У штрафа за налоговую декларацию такой лестницы нет</span><span lang="en">The information return penalty depends on <strong>when</strong> the failure is corrected: 30 days, August 1, later. The income tax return penalty has no such ladder</span></td></tr>
+        <tr><th>51</th><td><span lang="ru">Штраф за K-1 берётся по §6722 и не зависит от штрафа за декларацию: 1065 подана вовремя, K-1 не разосланы — §6698 нет, §6722 есть</span><span lang="en">The Schedule K-1 penalty comes from section 6722 and is independent of the return penalty: Form 1065 filed on time with no K-1s sent means no section 6698 penalty and a section 6722 one</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -4061,6 +4134,40 @@ window.QUIZZES.su01 = [
       B: { ru: "Ежемесячный график определён верно, но правило ста тысяч его перебивает.", en: "The monthly schedule is identified correctly, but the hundred-thousand rule overrides it." },
       C: { ru: "График задан контрольным периодом прошлого года — $46 000, — а не текущей суммой. Внутри года он не меняется.", en: "The schedule comes from last year's lookback period — $46,000 — not from the current amount. It does not change mid-year." },
       D: { ru: "Уплата вместе с декларацией вместо депозита сама по себе даёт штраф в 10%.", en: "Paying with the return instead of depositing is itself a 10% penalty." }
+    }
+  },
+  {
+    ru: "Бизнес выплатил подрядчику $9 000 за услуги и не подал форму 1099-NEC ни в налоговую службу, ни самому подрядчику. К декабрю 2026 года нарушение не исправлено. Какой штраф за эту форму?",
+    en: "A business paid a contractor $9,000 for services and neither filed the Form 1099-NEC with the IRS nor furnished it to the contractor. By December 2026 nothing has been corrected. What is the penalty for that one form?",
+    opts: [
+      { k: "A", ru: "$680: по $340 за каждое из двух нарушений", en: "$680: $340 for each of the two failures" },
+      { k: "B", ru: "$340: форма одна, значит и штраф один", en: "$340: one form, therefore one penalty" },
+      { k: "C", ru: "$900: 10% от выплаченной суммы", en: "$900: 10% of the amount paid" },
+      { k: "D", ru: "$60: минимальный размер штрафа", en: "$60: the minimum penalty amount" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. §6721 наказывает за неподачу в налоговую службу, §6722 — за невыдачу получателю. Это два самостоятельных нарушения, и после 1 августа каждое стоит $340.", en: "Correct. Section 6721 covers the failure to file with the IRS and section 6722 the failure to furnish the payee. They are separate failures, and after August 1 each costs $340." },
+      B: { ru: "Именно эта ошибка и проверяется: форма уходит по двум адресам, и штрафы за адреса независимы.", en: "That is exactly the error being tested: the form goes to two addresses, and the penalties for them are independent." },
+      C: { ru: "10% применяется только при умышленном пренебрежении и берётся как большая из двух величин, а не вместо них.", en: "The 10% figure applies only to intentional disregard, and then as the greater of the two amounts, not instead of them." },
+      D: { ru: "$60 — размер штрафа, если нарушение исправлено в течение 30 дней. Здесь оно не исправлено вовсе.", en: "$60 applies when the failure is corrected within 30 days. Here it was never corrected." }
+    }
+  },
+  {
+    ru: "Работодатель должен был подать 25 форм 1099-NEC к 2 февраля 2026 года, а подал 20 февраля. Средняя годовая выручка за три года — $2 000 000. Какой штраф по §6721?",
+    en: "An employer had to file 25 Forms 1099-NEC by February 2, 2026 and filed them on February 20. Average annual gross receipts for three years are $2,000,000. What is the section 6721 penalty?",
+    opts: [
+      { k: "A", ru: "$1 500", en: "$1,500" },
+      { k: "B", ru: "$3 250", en: "$3,250" },
+      { k: "C", ru: "$8 500", en: "$8,500" },
+      { k: "D", ru: "Штрафа нет: формы поданы до 1 августа", en: "No penalty: the forms were filed before August 1" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Просрочка 18 дней укладывается в 30 дней после срока, значит $60 за форму: $60 × 25 = $1 500. Годовой максимум для выручки не выше $5 000 000 здесь не достигнут.", en: "Correct. Eighteen days is within 30 days of the due date, so the rate is $60 per return: $60 × 25 = $1,500. The annual cap for receipts of $5,000,000 or less is nowhere near." },
+      B: { ru: "$130 за форму берётся с 31-го дня и до 1 августа. Здесь просрочка короче.", en: "The $130 rate starts on the 31st day and runs to August 1. Here the delay was shorter." },
+      C: { ru: "$340 за форму — ставка для нарушения, исправленного после 1 августа либо не исправленного вовсе.", en: "The $340 rate applies to a failure corrected after August 1 or never corrected at all." },
+      D: { ru: "1 августа — граница между ставками, а не дата, до которой штрафа нет.", en: "August 1 divides one rate from another; it is not a date before which no penalty applies." }
     }
   }
 

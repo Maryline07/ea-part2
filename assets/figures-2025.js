@@ -285,25 +285,61 @@ window.FIGURES = {
       note_en: "Up to 12 months.",
       src: { t: "Instructions for Form 1120-S (2025)", u: "https://www.irs.gov/instructions/i1120s" }
     },
-    pen_k1: {
+    pen_infret: {
       n: 340, unit: "usd",
       ru: "Штраф за непредставление K-1",
       en: "Penalty for each failure to furnish Schedule K-1",
       src: { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" }
     },
-    pen_k1_max_small: {
+    pen_infret_30: {
+      n: 60, unit: "usd",
+      ru: "Штраф за информационную декларацию: исправлено в течение 30 дней",
+      en: "Information return penalty: corrected within 30 days",
+      src: SRC_RP2440
+    },
+    pen_infret_aug: {
+      n: 130, unit: "usd",
+      ru: "Штраф за информационную декларацию: исправлено до 1 августа",
+      en: "Information return penalty: corrected by August 1",
+      src: SRC_RP2440
+    },
+    pen_infret_max30_large: {
+      n: 683000, unit: "usd",
+      ru: "Годовой максимум при исправлении за 30 дней: выручка выше границы",
+      en: "Annual cap when corrected within 30 days: receipts above the line",
+      src: SRC_RP2440
+    },
+    pen_infret_max30_small: {
+      n: 239000, unit: "usd",
+      ru: "Годовой максимум при исправлении за 30 дней: выручка не выше границы",
+      en: "Annual cap when corrected within 30 days: receipts at or below the line",
+      src: SRC_RP2440
+    },
+    pen_infret_maxaug_large: {
+      n: 2049000, unit: "usd",
+      ru: "Годовой максимум при исправлении до 1 августа: выручка выше границы",
+      en: "Annual cap when corrected by August 1: receipts above the line",
+      src: SRC_RP2440
+    },
+    pen_infret_maxaug_small: {
+      n: 683000, unit: "usd",
+      ru: "Годовой максимум при исправлении до 1 августа: выручка не выше границы",
+      en: "Annual cap when corrected by August 1: receipts at or below the line",
+      src: SRC_RP2440
+    },
+    pen_infret_max_small: {
       n: 1366000, unit: "usd",
       ru: "Годовой максимум при выручке до $5 млн",
       en: "Annual maximum, gross receipts at or below $5 million",
       src: { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" }
     },
-    pen_k1_max_large: {
+    pen_infret_max_large: {
       n: 4098500, unit: "usd",
       ru: "Годовой максимум при выручке свыше $5 млн",
       en: "Annual maximum, gross receipts over $5 million",
       src: { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" }
     },
-    pen_k1_intentional: {
+    pen_infret_intentional: {
       n: 680, unit: "usd",
       ru: "Умышленное нарушение: штраф за K-1",
       en: "Intentional disregard: penalty per Schedule K-1",
@@ -389,7 +425,7 @@ window.FIGURES = {
       en: "Sections 6698 and 6699: maximum number of months",
       src: SRC_I1065
     },
-    pen_k1_receipts: {
+    pen_infret_receipts: {
       n: 5000000, unit: "usd",
       ru: "Граница выручки для годового максимума штрафов за K-1",
       en: "Gross receipts dividing line for the annual K-1 penalty caps",
@@ -836,8 +872,10 @@ window.FIGURES = {
     { id: "info", ru: "Информационные декларации", en: "Information returns",
       keys: ["nec_threshold_2025", "k1099_amount", "k1099_count", "efile_threshold"] },
     { id: "penalties", ru: "Штрафы", en: "Penalties",
-      keys: ["pen_6698", "pen_6699", "pen_6698_months", "pen_k1", "pen_k1_max_small",
-             "pen_k1_max_large", "pen_k1_intentional", "pen_k1_receipts",
+      keys: ["pen_6698", "pen_6699", "pen_6698_months", "pen_infret", "pen_infret_30", "pen_infret_aug",
+             "pen_infret_max30_large", "pen_infret_max30_small",
+             "pen_infret_maxaug_large", "pen_infret_maxaug_small", "pen_infret_max_small",
+             "pen_infret_max_large", "pen_infret_intentional", "pen_infret_receipts",
              "pen_6651_rate", "pen_6651_max", "pen_6651_pay", "pen_6651_days",
              "pen_6651_min", "dep_lookback", "dep_nextday", "dep_pen_5",
              "dep_pen_15", "dep_pen_16", "dep_pen_notice"] },
