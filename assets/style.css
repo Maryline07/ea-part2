@@ -399,6 +399,9 @@ table.numbered tbody th { width: 2.5rem; color: var(--accent); font-variant-nume
   background: var(--paper-sunk);
 }
 
+/* Расчётные таблицы примеров и самопроверок не влезают в 360 px: прокрутка
+   остаётся внутри блока, иначе вбок едет вся страница. */
+.example__body, details.check > div { overflow-x: auto; }
 .example__body { padding: 0.9rem; }
 .example__body > p { font-size: 0.95rem; }
 .example__body > p:last-of-type { margin-bottom: 0; }
