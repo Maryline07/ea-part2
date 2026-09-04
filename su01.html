@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=19">
-<script defer src="assets/figures-2025.js?v=19"></script>
+<link rel="stylesheet" href="assets/style.css?v=20">
+<script defer src="assets/figures-2025.js?v=20"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=19"></script>
+<script defer src="assets/app.js?v=20"></script>
 </head>
 <body data-module="su01">
 
@@ -2695,11 +2695,11 @@
     <h3><span lang="ru">Информационные декларации: два адреса и два срока</span><span lang="en">Information returns: two recipients, two dates</span></h3>
 
     <p lang="ru">Информационная декларация уходит дважды: получателю выплаты и налоговой службе.
-      Сроки у этих двух отправок разные, и вопрос обычно спрашивает про один из них, называя
-      другой в вариантах ответа.</p>
-    <p lang="en">An information return goes out twice: to the payee and to the IRS. The two dates
-      differ, and a question usually asks about one of them while offering the other among the
-      answers.</p>
+      У большинства форм эти два срока разные, и вопрос обычно спрашивает про один из них, называя
+      другой в вариантах ответа. Совпадают они только у W-2 и 1099-NEC.</p>
+    <p lang="en">An information return goes out twice: to the payee and to the IRS. For most forms
+      the two dates differ, and a question usually asks about one of them while offering the other
+      among the answers. Only Form W-2 and Form 1099-NEC share a single date.</p>
 
     <div class="scroller">
     <table>
@@ -2714,17 +2714,17 @@
         <tr>
           <th>W-2</th>
           <td><span data-fig="due_1099_recipient"></span></td>
-          <td><span lang="ru">Тогда же, в Управление социального обеспечения</span><span lang="en">The same date, to the Social Security Administration</span></td>
+          <td><span lang="ru">Тогда же — но адресат не налоговая служба, а Управление социального обеспечения</span><span lang="en">The same date — but the recipient is the Social Security Administration, not the IRS</span></td>
         </tr>
         <tr class="total">
           <th>1099-NEC</th>
           <td><span data-fig="due_1099_recipient"></span></td>
-          <td><span lang="ru">Тогда же — эта форма единственная, у которой обе даты совпадают</span><span lang="en">The same date — this form is the one where both dates coincide</span></td>
+          <td><span lang="ru">Тогда же: из всех форм 1099 только NEC уходит в налоговую службу в тот же срок, что и получателю. Прочим дан ещё месяц</span><span lang="en">The same date: of all the Forms 1099 only the NEC goes to the IRS on the day it goes to the payee. The rest get another month</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Прочие 1099</span><span lang="en">Other Forms 1099</span></th>
-          <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а по отдельным формам — 17 февраля 2026 года</span><span lang="en">, and February 17, 2026 for certain forms</span></td>
-          <td><span lang="ru">2 марта 2026 года на бумаге, 31 марта 2026 года электронно</span><span lang="en">March 2, 2026 on paper; March 31, 2026 electronically</span></td>
+          <td><span data-fig="due_1099_recipient"></span><span lang="ru">, а для 1099-B, 1099-DA, 1099-S и 1099-MISC с суммами в боксах 8 или 10 — <span data-fig="due_1099_recipient_late"></span></span><span lang="en">, and <span data-fig="due_1099_recipient_late"></span> for Forms 1099-B, 1099-DA, 1099-S and 1099-MISC reporting amounts in boxes 8 or 10</span></td>
+          <td><span lang="ru"><span data-fig="due_1099_irs_paper"></span> на бумаге, <span data-fig="due_1099_irs_efile"></span> электронно</span><span lang="en"><span data-fig="due_1099_irs_paper"></span> on paper; <span data-fig="due_1099_irs_efile"></span> electronically</span></td>
         </tr>
       </tbody>
     </table>

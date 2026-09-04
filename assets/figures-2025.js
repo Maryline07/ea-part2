@@ -18,6 +18,7 @@ var SRC_I461 = { t: "Instructions for Form 461 (2025)", u: "https://www.irs.gov/
 var SRC_P463 = { t: "Publication 463 (2025), Travel, Gift, and Car Expenses", u: "https://www.irs.gov/publications/p463" };
 var SRC_P587 = { t: "Publication 587 (2025), Business Use of Your Home", u: "https://www.irs.gov/publications/p587" };
 var SRC_RP2440 = { t: "Rev. Proc. 2024-40, §2.27", u: "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf" };
+var SRC_I1099GI = { t: "General Instructions for Certain Information Returns (2025)", u: "https://www.irs.gov/instructions/i1099gi" };
 var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/publications/p15" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
@@ -451,7 +452,31 @@ window.FIGURES = {
       en: "Furnishing Forms 1099 and W-2 to recipients",
       note_ru: "Правило: 31 января. В 2026 году это суббота, срок переносится.",
       note_en: "Rule: January 31. In 2026 that is a Saturday, so the date moves.",
-      src: { t: "Publication 1099, General Instructions for Certain Information Returns", u: "https://www.irs.gov/publications/p1099" }
+      src: SRC_I1099GI
+    },
+    due_1099_recipient_late: {
+      d: "2026-02-17", unit: "date",
+      ru: "Выдача отдельных форм 1099 получателям",
+      en: "Furnishing certain Forms 1099 to recipients",
+      note_ru: "Формы 1099-B, 1099-DA, 1099-S и 1099-MISC с суммами в боксах 8 или 10. Правило: 15 февраля. В 2026 году это воскресенье, а 16 февраля — федеральный праздник.",
+      note_en: "Forms 1099-B, 1099-DA, 1099-S and 1099-MISC reporting amounts in boxes 8 or 10. Rule: February 15. In 2026 that is a Sunday and February 16 is a federal holiday.",
+      src: SRC_I1099GI
+    },
+    due_1099_irs_paper: {
+      d: "2026-03-02", unit: "date",
+      ru: "Подача форм 1099 в налоговую службу на бумаге",
+      en: "Filing Forms 1099 with the IRS on paper",
+      note_ru: "Правило: 28 февраля. В 2026 году это суббота, срок переносится. Для 1099-NEC срок другой — 2 февраля.",
+      note_en: "Rule: February 28. In 2026 that is a Saturday, so the date moves. Form 1099-NEC has a different date: February 2.",
+      src: SRC_I1099GI
+    },
+    due_1099_irs_efile: {
+      d: "2026-03-31", unit: "date",
+      ru: "Подача форм 1099 в налоговую службу электронно",
+      en: "Filing Forms 1099 with the IRS electronically",
+      note_ru: "Электронная подача даёт лишний месяц против бумаги — но не для 1099-NEC.",
+      note_en: "Filing electronically buys a further month over paper — but not for Form 1099-NEC.",
+      src: SRC_I1099GI
     },
 
 
@@ -817,7 +842,9 @@ window.FIGURES = {
              "pen_6651_min", "dep_lookback", "dep_nextday", "dep_pen_5",
              "dep_pen_15", "dep_pen_16", "dep_pen_notice"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
-      keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment", "due_1099_recipient"] },
+      keys: ["due_1065", "due_1120s", "due_1120", "due_farm_estimated", "due_farm_payment",
+             "due_1099_recipient", "due_1099_recipient_late", "due_1099_irs_paper",
+             "due_1099_irs_efile"] },
     { id: "rental", ru: "Аренда и лимиты убытков", en: "Rental property and loss limitations",
       keys: ["dwelling_personal_days", "dwelling_personal_pct", "rental_min_days", "rental_avg_use_7", "rental_avg_use_30",
              "rental_incidental_pct",
