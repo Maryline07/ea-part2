@@ -7,10 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=10">
-<script defer src="assets/figures-2025.js?v=10"></script>
+<link rel="stylesheet" href="assets/style.css?v=11">
+<script defer src="assets/figures-2025.js?v=11"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=10"></script>
+<script defer src="assets/app.js?v=11"></script>
 </head>
 <body data-module="su01">
 
@@ -855,13 +855,123 @@
     <h3><span lang="ru">Налог по безработице</span><span lang="en">Federal unemployment tax</span></h3>
 
     <p lang="ru">Налог платит работодатель из собственных средств; из зарплаты работника он не
-      удерживается. Обязанность возникает, если за квартал текущего или предыдущего года выплачено
-      от <span data-fig="futa_test_wages"></span> либо работник был занят хотя бы часть дня в
-      <span data-fig="futa_test_weeks"></span> и более различных неделях.</p>
+      удерживается. Отчётность годовая — форма 940.</p>
     <p lang="en">The employer pays this tax from its own funds; nothing is withheld from the
-      employee. The obligation arises if wages of <span data-fig="futa_test_wages"></span> or more
-      were paid in any calendar quarter of the current or prior year, or an employee worked at least
-      part of a day in <span data-fig="futa_test_weeks"></span> or more different weeks.</p>
+      employee. The return is annual: Form 940.</p>
+
+    <p lang="ru"><strong>Когда обязанность возникает.</strong> Достаточно любого одного условия из
+      двух. Выплаты считаются по всем работникам вместе, а не по каждому отдельно: порог относится
+      к фонду оплаты труда за квартал целиком.</p>
+    <p lang="en"><strong>When the obligation arises.</strong> Either one of the two tests is enough.
+      Wages are counted for all employees together, not employee by employee: the threshold applies
+      to the quarterly payroll as a whole.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Работодатель</span><span lang="en">Type of employer</span></th>
+          <th><span lang="ru">Тест по выплатам за квартал</span><span lang="en">Quarterly wage test</span></th>
+          <th><span lang="ru">Тест по числу недель</span><span lang="en">Weeks test</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Обычный</span><span lang="en">General</span></th>
+          <td><span lang="ru">Всем работникам вместе выплачено <span data-fig="futa_test_wages"></span> и более за любой календарный квартал текущего или предыдущего года</span><span lang="en">Wages of <span data-fig="futa_test_wages"></span> or more paid to employees in any calendar quarter of the current or prior year</span></td>
+          <td><span lang="ru">У работодателя был хотя бы один работник хотя бы часть дня в <span data-fig="futa_test_weeks"></span> и более различных неделях</span><span lang="en">One or more employees for at least some part of a day in <span data-fig="futa_test_weeks"></span> or more different weeks</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Домашние работники</span><span lang="en">Household employees</span></th>
+          <td><span lang="ru">Наличной зарплаты <span data-fig="futa_test_household"></span> и более за квартал</span><span lang="en">Cash wages of <span data-fig="futa_test_household"></span> or more in a quarter</span></td>
+          <td><span lang="ru">Не применяется</span><span lang="en">Does not apply</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Сельхозработники</span><span lang="en">Farmworkers</span></th>
+          <td><span lang="ru">Наличной зарплаты <span data-fig="futa_test_farm_wages"></span> и более за квартал</span><span lang="en">Cash wages of <span data-fig="futa_test_farm_wages"></span> or more in a quarter</span></td>
+          <td><span lang="ru"><span data-fig="futa_test_farm_workers"></span> и более сельхозработников хотя бы часть дня в <span data-fig="futa_test_weeks"></span> и более различных неделях</span><span lang="en"><span data-fig="futa_test_farm_workers"></span> or more farmworkers for some part of a day in <span data-fig="futa_test_weeks"></span> or more different weeks</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">В тесте по неделям недели не обязаны идти подряд, и это не обязательно один и тот
+      же человек: считается, была ли у работодателя занятость вообще. Учитываются работники полной
+      и частичной занятости и временные; партнёры партнёрства работниками не считаются.</p>
+    <p lang="en">The weeks in the second test need not be consecutive, and need not involve the same
+      person: what counts is whether the employer had any employee at all. Full-time, part-time and
+      temporary employees are all counted; the partners of a partnership are not.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Порог <span data-fig="futa_test_wages"></span> — на весь фонд оплаты труда, а не на работника</span><span lang="en">The <span data-fig="futa_test_wages"></span> threshold applies to the payroll, not to one employee</span></h3>
+      <p lang="ru">Порог сравнивается с суммой, выплаченной <strong>всем работникам вместе</strong> за
+        квартал. Четверо работников по $400 за квартал дают $1 600 — обязанность возникает, хотя ни
+        одному не выплачено и половины порога. Ошибка обратного направления столь же частая: увидев
+        одного работника с $900 за квартал, решить, что порог не достигнут, не сложив выплаты
+        остальным.</p>
+      <p lang="en">The threshold is measured against wages paid to <strong>all employees together</strong>
+        during the quarter. Four employees at $400 each come to $1,600, so the tax applies even
+        though no single employee was paid half the threshold. The reverse error is just as common:
+        seeing one employee at $900 for the quarter and concluding the threshold was not met,
+        without adding in what the others were paid.</p>
+      <p lang="ru">Не путайте порог с базой <span data-fig="futa_base"></span>: она, наоборот,
+        отсчитывается строго по каждому работнику отдельно. Одна цифра общая на всех, другая — на
+        каждого.</p>
+      <p lang="en">Do not confuse the threshold with the <span data-fig="futa_base"></span> wage base,
+        which works the other way round: that one is computed strictly per employee. One figure is
+        collective, the other individual.</p>
+    </div>
+
+    <p lang="ru"><strong>Как считается сам налог.</strong> Облагается не весь заработок, а первые
+      <span data-fig="futa_base"></span> заработка <em>каждого</em> работника за год: выплаты сверх
+      этой суммы в базу не входят, и база отсчитывается заново на каждого работника.</p>
+    <p lang="en"><strong>How the tax is computed.</strong> The tax falls not on all wages but on the
+      first <span data-fig="futa_base"></span> of <em>each</em> employee&#8217;s wages for the year:
+      anything above that is outside the base, and the base starts afresh for every employee.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Параметр</span><span lang="en">Item</span></th>
+          <th><span lang="ru">Значение</span><span lang="en">Amount</span></th>
+          <th><span lang="ru">Условие</span><span lang="en">Condition</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">База на работника за год</span><span lang="en">Wage base per employee</span></th>
+          <td><span data-fig="futa_base"></span></td>
+          <td><span lang="ru">Отсчитывается отдельно по каждому работнику</span><span lang="en">Computed separately for each employee</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Ставка до кредита</span><span lang="en">Rate before the credit</span></th>
+          <td><span data-fig="futa_rate"></span></td>
+          <td><span lang="ru">Начисляется на облагаемую базу</span><span lang="en">Applied to the taxable wage base</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Кредит за взносы в фонд штата</span><span lang="en">Credit for state contributions</span></th>
+          <td><span data-fig="futa_credit"></span></td>
+          <td><span lang="ru">В полном размере, если взносы уплачены полностью и в срок</span><span lang="en">In full if the state contributions were paid in full and on time</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Эффективная ставка</span><span lang="en">Net rate</span></th>
+          <td><span data-fig="futa_net"></span></td>
+          <td><span lang="ru">Ставка за вычетом полного кредита — обычный случай</span><span lang="en">The rate net of the full credit — the ordinary case</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Взносы уплачены с опозданием</span><span lang="en">State contributions paid late</span></th>
+          <td><span data-fig="futa_late_credit"></span></td>
+          <td><span lang="ru">Просроченная часть даёт лишь такую долю кредита, поэтому эффективная ставка окажется выше <span data-fig="futa_net"></span></span><span lang="en">The late portion earns only this share of the credit, so the net rate exceeds <span data-fig="futa_net"></span></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Порог депонирования</span><span lang="en">Deposit threshold</span></th>
+          <td><span data-fig="futa_deposit"></span></td>
+          <td><span lang="ru">Задолженность свыше этой суммы депонируется по итогам квартала; не свыше — переносится на следующий квартал</span><span lang="en">A liability above this amount is deposited by the end of the quarter; at or below it, carry it forward to the next quarter</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 
     <div class="example">
       <div class="example__head"><span lang="ru">Пример 1-3. Расчёт налога по безработице</span><span lang="en">Example 1-3. Computing the FUTA tax</span></div>
@@ -899,12 +1009,10 @@
             </tr>
           </tbody>
         </table>
-        <p lang="ru">Выплаты сверх $7 000 каждому работнику в базу не входят. Если накопленная
-          задолженность за квартал превысит <span data-fig="futa_deposit"></span>, её нужно
-          депонировать, не дожидаясь конца года.</p>
-        <p lang="en">Wages above $7,000 per employee are outside the base. If the accumulated
-          liability exceeds <span data-fig="futa_deposit"></span> in a quarter, it must be deposited
-          rather than held to year end.</p>
+        <p lang="ru">Каждый работник заработал больше базы, поэтому в расчёт входит ровно
+          <span data-fig="futa_base"></span> на человека, а не фактическая зарплата.</p>
+        <p lang="en">Every employee earned more than the base, so exactly
+          <span data-fig="futa_base"></span> per person enters the computation, not the actual wages.</p>
       </div>
     </div>
 
@@ -2223,36 +2331,37 @@
         <tr><th>4</th><td><span lang="ru">Форма 1099-K требует одновременного превышения и суммы, и числа операций</span><span lang="en">Form 1099-K requires both the dollar amount and the transaction count to be exceeded</span></td></tr>
         <tr><th>5</th><td><span lang="ru">Статутный работник получает W-2, налога на самозанятость не платит, но расходы вычитает в Schedule C</span><span lang="en">A statutory employee receives a W-2, pays no self-employment tax, yet deducts expenses on Schedule C</span></td></tr>
         <tr><th>6</th><td><span lang="ru">Налог по безработице платит работодатель; из зарплаты он не удерживается</span><span lang="en">The employer pays the unemployment tax; nothing is withheld from the employee</span></td></tr>
-        <tr><th>7</th><td><span lang="ru">Конструктивное получение делает доходом чек, который вы могли получить, но не получили</span><span lang="en">Constructive receipt makes income of a cheque you could have collected but did not</span></td></tr>
-        <tr><th>8</th><td><span lang="ru">Тест валовой выручки применяется к среднему за три года, а не к каждому году в отдельности</span><span lang="en">The gross receipts test applies to the three-year average, not to any single year</span></td></tr>
-        <tr><th>9</th><td><span lang="ru">Налоговое убежище не вправе применять кассовый метод даже при малой выручке</span><span lang="en">A tax shelter may not use the cash method even with small receipts</span></td></tr>
-        <tr><th>10</th><td><span lang="ru">Требование соответствия отчётности относится только к LIFO</span><span lang="en">The financial statement conformity requirement applies to LIFO only</span></td></tr>
-        <tr><th>11</th><td><span lang="ru">Завышение конечных запасов уменьшает себестоимость и увеличивает прибыль</span><span lang="en">Overstating ending inventory lowers cost of goods sold and raises profit</span></td></tr>
-        <tr><th>12</th><td><span lang="ru">Три теста периода партнёрства применяются строго по порядку, а не на выбор</span><span lang="en">The three partnership year tests apply in sequence, not at the taxpayer’s option</span></td></tr>
-        <tr><th>13</th><td><span lang="ru">Выбор по §444 ограничивает отсрочку тремя месяцами и требует платежа по форме 8752</span><span lang="en">A section 444 election caps deferral at three months and requires the payment on Form 8752</span></td></tr>
-        <tr><th>14</th><td><span lang="ru">Смена метода учёта — форма 3115, смена налогового периода — форма 1128. Арифметическая ошибка методом не является</span><span lang="en">Form 3115 changes a method, Form 1128 changes a year. An arithmetical error is not a method</span></td></tr>
-        <tr><th>15</th><td><span lang="ru">Отечественный субъект по умолчанию корпорацией не становится. Вариант «объединение, облагаемое как корпорация» относится только к иностранным</span><span lang="en">A domestic entity is never a corporation by default. The “association taxable as a corporation” outcome belongs to foreign entities only</span></td></tr>
-        <tr><th>16</th><td><span lang="ru">Страховая компания — корпорация по определению и партнёрством быть не может ни при каких условиях</span><span lang="en">An insurance company is a corporation by definition and can never be a partnership</span></td></tr>
-        <tr><th>17</th><td><span lang="ru">Новый EIN нужен при смене вида организации; смена названия и выбор статуса S-корпорации нового номера не требуют</span><span lang="en">A new EIN is needed when the type of organisation changes; a name change or an S corporation election requires none</span></td></tr>
-        <tr><th>18</th><td><span lang="ru">Статутный неработник теряет статус, если вознаграждение считается от отработанных часов. Нужны оба условия сразу</span><span lang="en">A statutory nonemployee loses the status if pay is measured by hours worked. Both conditions must hold at once</span></td></tr>
-        <tr><th>19</th><td><span lang="ru">Разносчики газет относятся к прямым продавцам; оценщик недвижимости — нет, он лицензированный агент</span><span lang="en">Newspaper distributors are direct sellers; a real estate appraiser is not — that is a licensed real estate agent</span></td></tr>
-        <tr><th>20</th><td><span lang="ru">Получение денег вашим агентом — ваше получение. Средства на эскроу — нет: распоряжение ограничено по существу</span><span lang="en">Receipt by your agent is receipt by you. Funds in escrow are not: your control is substantially restricted</span></td></tr>
-        <tr><th>21</th><td><span lang="ru">Аванс при методе начисления откладывается ровно на один год вперёд. Предоплата аренды не откладывается вовсе</span><span lang="en">An advance payment may be deferred one year only. Prepaid rent may not be deferred at all</span></td></tr>
-        <tr><th>22</th><td><span lang="ru">Расход перед связанным лицом на кассовом методе вычитается лишь после уплаты, даже если экономическое исполнение состоялось</span><span lang="en">An expense owed to a related person on the cash method is deductible only when paid, even if economic performance has occurred</span></td></tr>
-        <tr><th>23</th><td><span lang="ru">Смена метода — та, что меняет <em>год</em> отражения статьи. Арифметическая ошибка и корректировка срока полезного использования методом не являются</span><span lang="en">A change of method is one that changes the <em>year</em> an item is reported. A math error and a useful-life adjustment are not methods</span></td></tr>
-        <tr><th>24</th><td><span lang="ru">Титул решает состав запасов: отправленный на консигнацию товар остаётся вашим, принятый на консигнацию — чужой</span><span lang="en">Title decides what is in inventory: goods sent out on consignment stay yours, goods consigned to you are someone else’s</span></td></tr>
-        <tr><th>25</th><td><span lang="ru">Меньшая из себестоимости и рыночной цены берётся <strong>по каждой позиции</strong>. Сравнение итога с итогом — заготовленный неверный ответ</span><span lang="en">Lower of cost or market is applied <strong>item by item</strong>. Comparing total against total is the prepared wrong answer</span></td></tr>
-        <tr><th>26</th><td><span lang="ru">Торговая скидка уменьшает себестоимость всегда; денежная скидка, отнесённая на отдельный счёт, — не уменьшает, а становится доходом</span><span lang="en">A trade discount always reduces cost; a cash discount credited to a separate account does not — it becomes income</span></td></tr>
-        <tr><th>27</th><td><span lang="ru">Изъятие товара для личных нужд уменьшает закупки на <strong>себестоимость</strong>, а не на рыночную цену. Резерв на обесценение запасов не признаётся</span><span lang="en">Goods withdrawn for personal use reduce purchases by <strong>cost</strong>, not market value. A reserve for inventory write-downs is not recognised</span></td></tr>
-        <tr><th>28</th><td><span lang="ru">Не ведёте книг — календарный год обязателен. Фискальный год принимается ведением книг по нему, разрешения не требует и короткого периода не создаёт</span><span lang="en">Keep no books and the calendar year is compulsory. A fiscal year is adopted by keeping books on that basis: no approval, no short period</span></td></tr>
-        <tr><th>29</th><td><span lang="ru">Формы 1065 и 1120-S — 15-й день 3-го месяца, форма 1120 — 4-го. Исключение одно: фискальный год, заканчивающийся 30 июня</span><span lang="en">Forms 1065 and 1120-S: the 15th day of the 3rd month. Form 1120: the 4th. One exception — a fiscal year ending June 30</span></td></tr>
-        <tr><th>30</th><td><span lang="ru">Деятельность не для прибыли: доход идёт в Schedule 1, строку 8j, а расходы за 2025 год не вычитаются вовсе. Себестоимость проданных товаров выручку всё же уменьшает — это не вычет</span><span lang="en">A not-for-profit activity: income goes on Schedule 1, line 8j, and for 2025 the expenses are not deductible at all. Cost of goods sold still reduces receipts — it is not a deduction</span></td></tr>
-        <tr><th>31</th><td><span lang="ru">Три прибыльных года из пяти лишь перекладывают бремя доказывания; их отсутствие хобби не создаёт. Для лошадей — два года из семи</span><span lang="en">Three profitable years out of five only shift the burden of proof; their absence does not create a hobby. For horses it is two years out of seven</span></td></tr>
-        <tr><th>32</th><td><span lang="ru">Оплата картой — вычет в год списания по карте, а не оплаты счёта банка. Собственный вексель, выданный продавцу, платежом не является</span><span lang="en">A card charge is deducted in the year of the charge, not when the card company is paid. The taxpayer’s own note given to the seller is not payment</span></td></tr>
-        <tr><th>33</th><td><span lang="ru">Корпорация личных услуг применяет кассовый метод при любой выручке, но акции <strong>членов семьи</strong> работника в тесте собственников не засчитываются</span><span lang="en">A qualified personal service corporation may use the cash method at any level of receipts, but stock held by an employee’s <strong>family</strong> does not count for the ownership test</span></td></tr>
-        <tr><th>34</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
-        <tr><th>35</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
-        <tr><th>36</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Порог <span data-fig="futa_test_wages"></span> за квартал считается по <strong>всем работникам вместе</strong>, а база <span data-fig="futa_base"></span> — по <strong>каждому в отдельности</strong></span><span lang="en">The <span data-fig="futa_test_wages"></span> quarterly threshold counts wages paid to <strong>all employees together</strong>, while the <span data-fig="futa_base"></span> wage base is computed <strong>for each employee separately</strong></span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Конструктивное получение делает доходом чек, который вы могли получить, но не получили</span><span lang="en">Constructive receipt makes income of a cheque you could have collected but did not</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Тест валовой выручки применяется к среднему за три года, а не к каждому году в отдельности</span><span lang="en">The gross receipts test applies to the three-year average, not to any single year</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Налоговое убежище не вправе применять кассовый метод даже при малой выручке</span><span lang="en">A tax shelter may not use the cash method even with small receipts</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Требование соответствия отчётности относится только к LIFO</span><span lang="en">The financial statement conformity requirement applies to LIFO only</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Завышение конечных запасов уменьшает себестоимость и увеличивает прибыль</span><span lang="en">Overstating ending inventory lowers cost of goods sold and raises profit</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Три теста периода партнёрства применяются строго по порядку, а не на выбор</span><span lang="en">The three partnership year tests apply in sequence, not at the taxpayer’s option</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Выбор по §444 ограничивает отсрочку тремя месяцами и требует платежа по форме 8752</span><span lang="en">A section 444 election caps deferral at three months and requires the payment on Form 8752</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">Смена метода учёта — форма 3115, смена налогового периода — форма 1128. Арифметическая ошибка методом не является</span><span lang="en">Form 3115 changes a method, Form 1128 changes a year. An arithmetical error is not a method</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">Отечественный субъект по умолчанию корпорацией не становится. Вариант «объединение, облагаемое как корпорация» относится только к иностранным</span><span lang="en">A domestic entity is never a corporation by default. The “association taxable as a corporation” outcome belongs to foreign entities only</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">Страховая компания — корпорация по определению и партнёрством быть не может ни при каких условиях</span><span lang="en">An insurance company is a corporation by definition and can never be a partnership</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Новый EIN нужен при смене вида организации; смена названия и выбор статуса S-корпорации нового номера не требуют</span><span lang="en">A new EIN is needed when the type of organisation changes; a name change or an S corporation election requires none</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Статутный неработник теряет статус, если вознаграждение считается от отработанных часов. Нужны оба условия сразу</span><span lang="en">A statutory nonemployee loses the status if pay is measured by hours worked. Both conditions must hold at once</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Разносчики газет относятся к прямым продавцам; оценщик недвижимости — нет, он лицензированный агент</span><span lang="en">Newspaper distributors are direct sellers; a real estate appraiser is not — that is a licensed real estate agent</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Получение денег вашим агентом — ваше получение. Средства на эскроу — нет: распоряжение ограничено по существу</span><span lang="en">Receipt by your agent is receipt by you. Funds in escrow are not: your control is substantially restricted</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Аванс при методе начисления откладывается ровно на один год вперёд. Предоплата аренды не откладывается вовсе</span><span lang="en">An advance payment may be deferred one year only. Prepaid rent may not be deferred at all</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Расход перед связанным лицом на кассовом методе вычитается лишь после уплаты, даже если экономическое исполнение состоялось</span><span lang="en">An expense owed to a related person on the cash method is deductible only when paid, even if economic performance has occurred</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Смена метода — та, что меняет <em>год</em> отражения статьи. Арифметическая ошибка и корректировка срока полезного использования методом не являются</span><span lang="en">A change of method is one that changes the <em>year</em> an item is reported. A math error and a useful-life adjustment are not methods</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Титул решает состав запасов: отправленный на консигнацию товар остаётся вашим, принятый на консигнацию — чужой</span><span lang="en">Title decides what is in inventory: goods sent out on consignment stay yours, goods consigned to you are someone else’s</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Меньшая из себестоимости и рыночной цены берётся <strong>по каждой позиции</strong>. Сравнение итога с итогом — заготовленный неверный ответ</span><span lang="en">Lower of cost or market is applied <strong>item by item</strong>. Comparing total against total is the prepared wrong answer</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Торговая скидка уменьшает себестоимость всегда; денежная скидка, отнесённая на отдельный счёт, — не уменьшает, а становится доходом</span><span lang="en">A trade discount always reduces cost; a cash discount credited to a separate account does not — it becomes income</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Изъятие товара для личных нужд уменьшает закупки на <strong>себестоимость</strong>, а не на рыночную цену. Резерв на обесценение запасов не признаётся</span><span lang="en">Goods withdrawn for personal use reduce purchases by <strong>cost</strong>, not market value. A reserve for inventory write-downs is not recognised</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Не ведёте книг — календарный год обязателен. Фискальный год принимается ведением книг по нему, разрешения не требует и короткого периода не создаёт</span><span lang="en">Keep no books and the calendar year is compulsory. A fiscal year is adopted by keeping books on that basis: no approval, no short period</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Формы 1065 и 1120-S — 15-й день 3-го месяца, форма 1120 — 4-го. Исключение одно: фискальный год, заканчивающийся 30 июня</span><span lang="en">Forms 1065 and 1120-S: the 15th day of the 3rd month. Form 1120: the 4th. One exception — a fiscal year ending June 30</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Деятельность не для прибыли: доход идёт в Schedule 1, строку 8j, а расходы за 2025 год не вычитаются вовсе. Себестоимость проданных товаров выручку всё же уменьшает — это не вычет</span><span lang="en">A not-for-profit activity: income goes on Schedule 1, line 8j, and for 2025 the expenses are not deductible at all. Cost of goods sold still reduces receipts — it is not a deduction</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Три прибыльных года из пяти лишь перекладывают бремя доказывания; их отсутствие хобби не создаёт. Для лошадей — два года из семи</span><span lang="en">Three profitable years out of five only shift the burden of proof; their absence does not create a hobby. For horses it is two years out of seven</span></td></tr>
+        <tr><th>33</th><td><span lang="ru">Оплата картой — вычет в год списания по карте, а не оплаты счёта банка. Собственный вексель, выданный продавцу, платежом не является</span><span lang="en">A card charge is deducted in the year of the charge, not when the card company is paid. The taxpayer’s own note given to the seller is not payment</span></td></tr>
+        <tr><th>34</th><td><span lang="ru">Корпорация личных услуг применяет кассовый метод при любой выручке, но акции <strong>членов семьи</strong> работника в тесте собственников не засчитываются</span><span lang="en">A qualified personal service corporation may use the cash method at any level of receipts, but stock held by an employee’s <strong>family</strong> does not count for the ownership test</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">Разные методы в разных бизнесах допустимы только при полном отдельном комплекте книг по каждому — и не для переноса прибыли между ними</span><span lang="en">Different methods in different businesses are allowed only with a complete separate set of books for each — and not to shift profits between them</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Оспариваемое обязательство по начислению вычитается лишь при передаче денег, причём спор должен продолжаться <strong>после</strong> передачи. Резерв передачей не является</span><span lang="en">A contested liability is deductible on the accrual method only if money is transferred, and the contest must continue <strong>after</strong> the transfer. A reserve is not a transfer</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Скользящее среднее: соответствие финансовой отчётности — лишь входное условие. Нужны ещё частота пересчёта и <em>либо</em> отклонение до 1%, <em>либо</em> четыре оборота запасов в год</span><span lang="en">The rolling average: conformity with the financial statements is only the entry condition. The recomputation frequency is also required, plus <em>either</em> a variance of 1% or less <em>or</em> four inventory turns a year</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -3151,6 +3260,23 @@ window.QUIZZES.su01 = [
       B: { ru: "Превышение отклонения снимается вторым признаком: достаточно любого из двух.", en: "The excess variance is cured by the other test: either one is enough." },
       C: { ru: "Пересчёт при каждом поступлении — одна из двух допустимых частот. Регулярный пересчёт не реже раза в месяц равноценен.", en: "Recomputing on each purchase is one of two permitted frequencies. Recomputing regularly and at least monthly is equally acceptable." },
       D: { ru: "Соответствие финансовой отчётности — лишь входное условие; к нему нужны частота пересчёта и один из двух количественных признаков.", en: "Conformity with the financial statements is only the entry condition; the recomputation frequency and one of the two quantitative tests are also required." }
+    }
+  },
+  {
+    ru: "В третьем квартале 2025 года в мастерской работали трое: им выплачено $700, $500 и $400. В остальных кварталах 2025 года и в течение всего 2024 года работников не было. Возникает ли у мастерской обязанность по федеральному налогу по безработице?",
+    en: "In the third quarter of 2025 a workshop had three employees, paid $700, $500 and $400. There were no employees in the other quarters of 2025 or at any time during 2024. Does the workshop owe federal unemployment tax?",
+    opts: [
+      { k: "A", ru: "Да: за квартал выплачено $1 600 — не ниже порога", en: "Yes: $1,600 was paid for the quarter, at or above the threshold" },
+      { k: "B", ru: "Нет: ни одному работнику не выплачено $1 500", en: "No: no single employee was paid $1,500" },
+      { k: "C", ru: "Нет: работники были менее чем в 20 различных неделях", en: "No: there were employees in fewer than 20 different weeks" },
+      { k: "D", ru: "Да, но налог начисляется только на $100 сверх порога", en: "Yes, but the tax applies only to the $100 above the threshold" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Порог сравнивается с выплатами всем работникам вместе: $700 + $500 + $400 = $1 600. Достаточно одного квартала за текущий или предыдущий год.", en: "Correct. The threshold is measured against wages paid to all employees together: $700 + $500 + $400 = $1,600. A single quarter in the current or prior year is enough." },
+      B: { ru: "Это и есть основная ошибка: по каждому работнику отдельно считается база $7 000, а не порог $1 500.", en: "That is the central error: it is the $7,000 wage base that is computed per employee, not the $1,500 threshold." },
+      C: { ru: "Тесты соединены союзом «либо». Недельный тест действительно не выполнен, но выплатного достаточно самого по себе.", en: "The two tests are joined by “or”. The weeks test indeed fails, but the wage test alone suffices." },
+      D: { ru: "Порог решает, возникает ли обязанность, но из базы не вычитается. Каждый работник заработал меньше $7 000, поэтому облагаются все $1 600.", en: "The threshold decides whether the obligation arises; it is not subtracted from the base. Each employee earned less than $7,000, so the whole $1,600 is taxable." }
     }
   }
 

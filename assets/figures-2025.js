@@ -189,6 +189,32 @@ window.FIGURES = {
       en: "FUTA filing test: wages paid in any calendar quarter",
       src: { t: "Instructions for Form 940 (2025)", u: "https://www.irs.gov/instructions/i940" }
     },
+    futa_test_household: {
+      n: 1000, unit: "usd",
+      ru: "Тест по домашним работникам: выплаты за квартал",
+      en: "Household employee test: cash wages in any calendar quarter",
+      src: { t: "Instructions for Form 940 (2025)", u: "https://www.irs.gov/instructions/i940" }
+    },
+    futa_test_farm_wages: {
+      n: 20000, unit: "usd",
+      ru: "Тест по сельхозработникам: выплаты за квартал",
+      en: "Farmworker test: cash wages in any calendar quarter",
+      src: { t: "Instructions for Form 940 (2025)", u: "https://www.irs.gov/instructions/i940" }
+    },
+    futa_test_farm_workers: {
+      n: 10, unit: "int",
+      ru: "Тест по сельхозработникам: число работников",
+      en: "Farmworker test: number of farmworkers",
+      src: { t: "Instructions for Form 940 (2025)", u: "https://www.irs.gov/instructions/i940" }
+    },
+    futa_late_credit: {
+      n: 90, unit: "pct",
+      ru: "Доля кредита при просроченных взносах в фонд штата",
+      en: "Portion of the credit allowed for state contributions paid late",
+      note_ru: "Взносы, уплаченные после срока подачи формы 940, дают кредит только в этой доле.",
+      note_en: "Contributions paid after the Form 940 due date earn the credit only at this rate.",
+      src: { t: "Instructions for Form 940 (2025)", u: "https://www.irs.gov/instructions/i940" }
+    },
     futa_test_weeks: {
       n: 20, unit: "int",
       ru: "Тест обязанности по FUTA: число недель с работником",
@@ -662,8 +688,9 @@ window.FIGURES = {
              "se_threshold", "se_church", "addl_medicare_rate", "addl_medicare_single",
              "addl_medicare_mfj", "addl_medicare_mfs", "farm_opt_gross", "farm_opt_profit", "farm_opt_max"] },
     { id: "futa", ru: "Налог по безработице (FUTA)", en: "Federal unemployment tax (FUTA)",
-      keys: ["futa_rate", "futa_base", "futa_credit", "futa_net", "futa_deposit",
-             "futa_test_wages", "futa_test_weeks"] },
+      keys: ["futa_rate", "futa_base", "futa_credit", "futa_net", "futa_late_credit",
+             "futa_deposit", "futa_test_wages", "futa_test_weeks", "futa_test_household",
+             "futa_test_farm_wages", "futa_test_farm_workers"] },
     { id: "info", ru: "Информационные декларации", en: "Information returns",
       keys: ["nec_threshold_2025", "k1099_amount", "k1099_count", "efile_threshold"] },
     { id: "penalties", ru: "Штрафы", en: "Penalties",
