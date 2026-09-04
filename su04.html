@@ -1,0 +1,1454 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 4. Расходы бизнеса: оплата труда, проценты, аренда, налоги — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=9">
+<script defer src="assets/figures-2025.js?v=9"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=9"></script>
+</head>
+<body data-module="su04">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">04</span>
+      <h1>
+        <span lang="ru">Расходы бизнеса: оплата труда, проценты, аренда, налоги</span>
+        <span lang="en">Business expenses: pay, interest, rent and taxes</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Подготовка деклараций бизнеса</span><span lang="en">Business Tax Preparation</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>Schedule C · Schedule 1 · Schedule 1-A · 8990 · W-2 · 940 · 941</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>334 · 15 · 15-B · 538 · 946</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su04" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s41"><span lang="ru">4.1 Что вообще вычитается</span><span lang="en">4.1 What is deductible at all</span></a></li>
+        <li><a href="#s42"><span lang="ru">4.2 Оплата труда</span><span lang="en">4.2 Employees’ pay</span></a></li>
+        <li><a href="#s43"><span lang="ru">4.3 Проценты</span><span lang="en">4.3 Interest</span></a></li>
+        <li><a href="#s44"><span lang="ru">4.4 Аренда как расход</span><span lang="en">4.4 Rent expense</span></a></li>
+        <li><a href="#s45"><span lang="ru">4.5 Налоги</span><span lang="en">4.5 Taxes</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">Бизнес потратил доллар. Вычитается ли он — и если да, то <em>когда</em> и
+        <em>целиком ли</em>?</p>
+      <p lang="en">A business spent a dollar. Is it deductible — and if so, <em>when</em>, and
+        <em>in full</em>?</p>
+      <p lang="ru">Каждый расход проходит одну и ту же воронку из четырёх вопросов. Обычен ли он
+        и необходим ли для этого бизнеса. Не создаёт ли он актив, живущий дольше года, —
+        тогда это не расход, а вложение в базис. Не является ли он личным, полностью или
+        частично. И, наконец, не попал ли он в короткий список того, что не вычитается
+        никогда, каким бы деловым ни выглядело.</p>
+      <p lang="en">Every outlay runs the same four-question funnel. Is it ordinary and necessary
+        for this business? Does it create an asset lasting beyond the year — in which case it is
+        not an expense but an addition to basis? Is it personal, wholly or partly? And finally,
+        is it on the short list of things that are never deductible however business-like they
+        look?</p>
+      <p lang="ru">Дальше начинаются частности, и именно они дают большинство вопросов: собственная
+        зарплата предпринимателя, проценты по смешанному займу, аренда у родственника, налог,
+        который надо не вычесть, а прибавить к базису. Себестоимость проданных товаров живёт
+        отдельно — она разобрана в <a href="su01.html#s15">модуле 1</a>, потому что неразрывно
+        связана с учётом запасов.</p>
+      <p lang="en">After that come the particulars, and it is the particulars that generate most of
+        the questions: the proprietor’s own salary, interest on a mixed-purpose loan, rent paid to
+        a relative, a tax that must be added to basis rather than deducted. Cost of goods sold
+        lives separately — it is covered in <a href="su01.html#s15">module 1</a>, because it is
+        inseparable from inventory accounting.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s41">
+      <h2><span class="num">4.1</span>
+        <span lang="ru">Что вообще вычитается</span>
+        <span lang="en">What is deductible at all</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Расход вычитается, если он <strong>обычный и необходимый</strong>
+      <span class="orig">(ordinary and necessary)</span> для ведения именно этого бизнеса.
+      «Обычный» значит принятый и общепринятый в вашей отрасли; «необходимый» — полезный и
+      уместный, а вовсе не незаменимый. Планка ниже, чем кажется по слову «необходимый».</p>
+    <p lang="en">An expense is deductible if it is <strong>ordinary and necessary</strong> for
+      carrying on this particular business. “Ordinary” means common and accepted in your trade;
+      “necessary” means helpful and appropriate, not indispensable. The bar is lower than the
+      word “necessary” suggests.</p>
+
+    <h3><span lang="ru">Расход или вложение</span><span lang="en">Expense or investment</span></h3>
+
+    <p lang="ru">Ключевая развилка проходит по сроку жизни того, что вы получили за деньги.</p>
+    <p lang="en">The decisive fork runs along the life of what the money bought.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Создан ли актив, польза от которого выходит существенно за пределы года?</span>
+        <span lang="en">Was an asset created whose usefulness extends substantially beyond the year?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет — текущий расход</span><span lang="en">No — a current expense</span></b>
+          <span lang="ru">Вычитается целиком в году уплаты или начисления, по вашему методу учёта</span>
+          <span lang="en">Deducted in full in the year paid or accrued, under your accounting method</span>
+        </div>
+        <div class="fork__b">
+          <b><span lang="ru">Да — капитальные затраты</span><span lang="en">Yes — a capital outlay</span></b>
+          <span lang="ru">Идёт в базис и возмещается через амортизацию, истощение или при продаже</span>
+          <span lang="en">Goes into basis and is recovered through depreciation, depletion or on sale</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Предоплата не ускоряет вычет</span><span lang="en">Prepaying does not accelerate the deduction</span></h3>
+      <p lang="ru">Заплатить вперёд — не значит вычесть вперёд. Расход, оплаченный настолько
+        заранее, что фактически создаёт актив с полезным сроком за пределами года, вычитается
+        по годам, к которым относится. Трёхлетний страховой полис, оплаченный целиком в 2025
+        году, даёт вычет только за 2025 год; премии 2026 и 2027 годов вычитаются в свои годы.
+        Исключение — правило двенадцати месяцев из <a href="su01.html#s14">модуля 1</a>.</p>
+      <p lang="en">Paying early is not deducting early. An expense paid far enough in advance to
+        create in effect an asset lasting beyond the year is deducted over the years to which it
+        applies. A three-year insurance policy paid in full in 2025 gives a deduction only for
+        2025; the 2026 and 2027 premiums are deducted in those years. The exception is the
+        twelve-month rule from <a href="su01.html#s14">module 1</a>.</p>
+    </div>
+
+    <h3><span lang="ru">Чего нельзя вычесть никогда</span><span lang="en">What is never deductible</span></h3>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Взятки и откаты</span><span lang="en">Bribes and kickbacks</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Благотворительные взносы — у индивидуального предпринимателя они идут в Schedule A, а не в Schedule C</span><span lang="en">Charitable contributions — for a sole proprietor they go on Schedule A, not Schedule C</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Расходы и убытки от сноса зданий</span><span lang="en">Demolition expenses and losses</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Взносы в деловые, общественные, спортивные, обеденные, авиационные и гостиничные клубы</span><span lang="en">Dues to business, social, athletic, luncheon, sporting, airline and hotel clubs</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Расходы на развлечения</span><span lang="en">Entertainment expenses</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Улучшения имущества: betterment, restoration, adaptation — они капитализируются</span><span lang="en">Improvements to property: betterment, restoration, adaptation — these are capitalized</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Расходы на лоббирование</span><span lang="en">Lobbying expenses</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Штрафы и пени государственному органу за нарушение закона</span><span lang="en">Penalties and fines paid to a government agency for breaking the law</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Личные, бытовые и семейные расходы</span><span lang="en">Personal, living and family expenses</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Политические взносы</span><span lang="en">Political contributions</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Выплаты по мировым соглашениям о сексуальных домогательствах, если соглашение содержит условие о неразглашении, — вместе с относящимися к ним гонорарами юристов</span><span lang="en">Settlements for sexual harassment or abuse subject to a nondisclosure agreement — together with the related attorney fees</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Штраф и неустойка — не одно и то же</span><span lang="en">A fine and a penalty are not the same thing</span></h3>
+      <p lang="ru">Не вычитается штраф, уплаченный <strong>государственному органу за нарушение
+        закона</strong>. Неустойка контрагенту за нарушение договора — обычный деловой расход и
+        вычитается. Проверяйте не слово «штраф», а <em>кому</em> и <em>за что</em> уплачено.</p>
+      <p lang="en">What is nondeductible is a fine paid to a <strong>government body for breaking
+        the law</strong>. A penalty paid to a counterparty for breaching a contract is an ordinary
+        business expense and is deductible. Look not at the word “penalty” but at <em>to whom</em>
+        and <em>for what</em> it was paid.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s42">
+      <h2><span class="num">4.2</span>
+        <span lang="ru">Оплата труда</span>
+        <span lang="en">Employees’ pay</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Оплата труда работников вычитается, если она обычна и необходима, уплачена или
+      начислена в налоговом году и отвечает <strong>обоим</strong> дополнительным условиям.</p>
+    <p lang="en">Employees’ pay is deductible if it is ordinary and necessary, paid or incurred in
+      the tax year, and meets <strong>both</strong> further tests.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Оплата <strong>разумна</strong> по размеру</span><span lang="en">The pay is <strong>reasonable</strong> in amount</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Оплата произведена <strong>за фактически оказанные услуги</strong></span><span lang="en">The pay is <strong>for services actually performed</strong></span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Предприниматель не платит зарплату себе</span><span lang="en">A proprietor pays himself no salary</span></h3>
+      <p lang="ru">Индивидуальный предприниматель <strong>не является работником</strong> своего
+        бизнеса. Ни «зарплата», которую он себе назначил, ни изъятия средств
+        <span class="orig">(draws)</span> в Schedule C не вычитаются: прибыль и так облагается
+        у него. Это отличается от S-корпорации, где владелец, работающий в компании, обязан
+        получать разумную зарплату, — сравните с <a href="su02.html#s22">модулем 2</a>.</p>
+      <p lang="en">A sole proprietor is <strong>not an employee</strong> of the business. Neither a
+        “salary” he assigns himself nor his draws are deductible on Schedule C: the profit is
+        taxed to him in any event. This differs from an S corporation, where an owner working in
+        the company must take reasonable compensation — compare
+        <a href="su02.html#s22">module 2</a>.</p>
+    </div>
+
+    <h3><span lang="ru">Что считается оплатой труда</span><span lang="en">What counts as pay</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Вид выплаты</span><span lang="en">Kind of pay</span></th>
+          <th><span lang="ru">Замечание</span><span lang="en">Note</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Премии и награды</span><span lang="en">Bonuses and awards</span></td>
+          <td><span lang="ru">Вычитаются как оплата труда, если общая сумма вознаграждения остаётся разумной</span><span lang="en">Deductible as pay so long as total compensation stays reasonable</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Отпускные и оплата по болезни</span><span lang="en">Vacation pay and sick pay</span></td>
+          <td><span lang="ru">Вычитаются как оплата труда</span><span lang="en">Deductible as pay</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Расходы на обучение работника</span><span lang="en">Employee education expenses</span></td>
+          <td><span lang="ru">Вычитаются; часть может быть освобождена от налога у работника</span><span lang="en">Deductible; part may be tax-free to the employee</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Дополнительные льготы</span><span lang="en">Fringe benefits</span></td>
+          <td><span lang="ru">Питание и жильё, служебный автомобиль, перелёты, скидки на товары и услуги</span><span lang="en">Meals and lodging, use of a car, flights, discounts on property or services</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Имущество, переданное работнику за услуги</span><span lang="en">Property transferred for services</span></td>
+          <td><span lang="ru">Оплата в натуральной форме, а не подарок</span><span lang="en">Payment in kind, not a gift</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Займы и авансы, которые вы не рассчитываете вернуть</span><span lang="en">Loans or advances you do not expect to be repaid</span></td>
+          <td><span lang="ru">Считаются оплатой труда, если даны за фактически оказанные личные услуги</span><span lang="en">Treated as pay if given for personal services actually performed</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Возмещение деловых расходов работника</span><span lang="en">Reimbursements of employee business expenses</span></td>
+          <td><span lang="ru">Вычитаются; порядок зависит от того, подотчётный ли план</span><span lang="en">Deductible; the treatment depends on whether the plan is accountable</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Родственник в штате — вопрос не о родстве</span><span lang="en">A relative on the payroll — the issue is not kinship</span></h3>
+      <p lang="ru">Зарплата сыну или супругу вычитается на общих основаниях: два условия те же —
+        разумность и фактически оказанные услуги. Проверяющий смотрит не на фамилию, а на то,
+        выполнялась ли работа и сопоставима ли оплата с рыночной. Вариант ответа «выплаты
+        членам семьи не вычитаются» неверен; неверен и «вычитаются в любом размере, раз работа
+        выполнялась».</p>
+      <p lang="en">Wages to a son or a spouse are deductible on the ordinary terms: the same two
+        tests, reasonableness and services actually performed. What is examined is not the surname
+        but whether the work was done and whether the pay matches the market. The choice “payments
+        to family members are not deductible” is wrong; so is “deductible in any amount as long as
+        work was done”.</p>
+    </div>
+
+    <p lang="ru">Отдельный вопрос — <strong>когда</strong> вычитается начисленная, но не
+      выплаченная оплата. Если получатель — связанное лицо на кассовом методе, действует
+      правило соответствия §267: вычет откладывается до года, в котором сумма попадает в доход
+      получателя. Это правило разобрано в <a href="su01.html#s14">модуле 1</a>.</p>
+    <p lang="en">A separate question is <strong>when</strong> accrued but unpaid pay is deducted.
+      If the recipient is a related person on the cash method, the section 267 matching rule
+      applies: the deduction waits for the year the amount enters the recipient’s income. That
+      rule is covered in <a href="su01.html#s14">module 1</a>.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s43">
+      <h2><span class="num">4.3</span>
+        <span lang="ru">Проценты</span>
+        <span lang="en">Interest</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Проценты по долгам, связанным с бизнесом, вычитаются — но только если долг
+      настоящий. Три условия проверяются всегда.</p>
+    <p lang="en">Interest on debts related to the business is deductible — but only if the debt is
+      genuine. Three conditions are always tested.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Вы юридически отвечаете по этому долгу</span><span lang="en">You are legally liable for the debt</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">И вы, и кредитор рассчитываете на его возврат</span><span lang="en">Both you and the lender intend that it be repaid</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Между вами настоящие отношения должника и кредитора</span><span lang="en">You and the lender have a true debtor-creditor relationship</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Решает назначение денег, а не залог</span><span lang="en">The use of the money decides, not the security</span></h3>
+
+    <p lang="ru">Проценты относятся к бизнесу, если <strong>средства займа израсходованы на
+      деловые цели</strong>. Чем именно обеспечен заём, значения не имеет. Заём под залог
+      личного дома, потраченный на закупку товара, даёт деловые проценты; заём под залог
+      складского оборудования, потраченный на семейный отдых, — личные.</p>
+    <p lang="en">Interest relates to the business if the <strong>loan proceeds were spent for
+      business purposes</strong>. What secures the loan does not matter. A loan against your home
+      spent on inventory yields business interest; a loan against warehouse equipment spent on a
+      family holiday yields personal interest.</p>
+
+    <p lang="ru">Смешанный заём делится пропорционально использованию: деловая часть идёт в
+      Schedule C, личная — по правилам личных процентов.</p>
+    <p lang="en">A mixed-purpose loan is divided by use: the business share goes on Schedule C and
+      the personal share follows the rules for personal interest.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Проценты по автокредиту: новый вычет 2025 года</span><span lang="en">Car loan interest: a new deduction for 2025</span></h3>
+      <p lang="ru">Для самозанятого деловая доля процентов по автокредиту идёт в Schedule C. За
+        2025 год личная доля может быть вычтена отдельно — как проценты по квалифицированному
+        займу на легковой автомобиль, в Schedule 1-A. Одну и ту же сумму нельзя заявить дважды:
+        заявив личную часть в Schedule 1-A, её нельзя повторить в Schedule C.</p>
+      <p lang="en">For a self-employed taxpayer the business share of car loan interest goes on
+        Schedule C. For 2025 the personal share may be deducted separately as qualified passenger
+        vehicle loan interest on Schedule 1-A. The same amount cannot be claimed twice: once the
+        personal share is taken on Schedule 1-A, it cannot be repeated on Schedule C.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 4-1. Деление процентов по использованию</span><span lang="en">Example 4-1. Splitting interest by use</span></div>
+      <div class="example__body">
+        <p lang="ru">Самозанятый уплатил за 2025 год $2 400 процентов по автокредиту. Автомобиль
+          использовался на 65% в бизнесе и на 35% лично; заявлены фактические расходы.</p>
+        <p lang="en">A self-employed taxpayer paid $2,400 of car loan interest for 2025. The car
+          was used 65% for business and 35% personally; actual expenses are claimed.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Проценты за год</span><span lang="en">Interest for the year</span></td>
+              <td data-num="2400"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Деловая доля 65% — Schedule C</span><span lang="en">Business share 65% — Schedule C</span></td>
+              <td data-num="1560"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Личная доля 35% — Schedule 1-A</span><span lang="en">Personal share 35% — Schedule 1-A</span></td>
+              <td data-num="840"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заявить $2 400 целиком в Schedule C нельзя. Заявить $840 и там, и там —
+          тоже.</p>
+        <p lang="en">The full $2,400 cannot go on Schedule C. Nor can the $840 be claimed in both
+          places.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Ограничение вычета деловых процентов</span><span lang="en">The business interest limitation</span></h3>
+
+    <p lang="ru">У крупных налогоплательщиков вычет деловых процентов ограничен по §163(j) и
+      считается в форме 8990. Существенно для 2025 года: при расчёте скорректированного
+      налогооблагаемого дохода <strong>обратно прибавляются</strong> амортизация, амортизация
+      нематериальных активов и истощение. То есть база стала шире, а ограничение — мягче.</p>
+    <p lang="en">For larger taxpayers the business interest deduction is limited under section
+      163(j) and computed on Form 8990. What matters for 2025: in figuring adjusted taxable
+      income, depreciation, amortization and depletion are <strong>added back</strong>. The base
+      is therefore wider and the limitation looser.</p>
+
+    <p lang="ru">Малый налогоплательщик, проходящий тест валовой выручки
+      (<span data-fig="gross_receipts_448c"></span> в среднем за три предшествующих года),
+      под ограничение не подпадает вовсе.</p>
+    <p lang="en">A small business taxpayer meeting the gross receipts test
+      (<span data-fig="gross_receipts_448c"></span> averaged over the three prior years) is not
+      subject to the limitation at all.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Проценты по налоговой недоимке деловыми не становятся</span><span lang="en">Interest on a tax underpayment is not business interest</span></h3>
+      <p lang="ru">Проценты, начисленные IRS на недоплаченный подоходный налог физического лица,
+        считаются личными и в Schedule C не идут — даже если недоимка возникла из-за дохода от
+        бизнеса. Это правило регулярно проверяется вместе с вопросом о вычете самих налогов.</p>
+      <p lang="en">Interest charged by the IRS on an individual’s underpaid income tax is personal
+        and does not belong on Schedule C — even where the underpayment arose from business
+        income. This is regularly tested alongside the question of deducting the taxes
+        themselves.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s44">
+      <h2><span class="num">4.4</span>
+        <span lang="ru">Аренда как расход</span>
+        <span lang="en">Rent expense</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Аренда — это плата за пользование имуществом, которым вы <strong>не
+      владеете</strong>. Отсюда следует главное ограничение: если вы уже имеете или получите в
+      будущем долю в праве собственности либо титул на это имущество, вычет аренды
+      <strong>не полагается</strong>.</p>
+    <p lang="en">Rent is what you pay for the use of property you <strong>do not own</strong>. From
+      that follows the central limitation: if you have or will receive equity in or title to the
+      property, the rent is <strong>not deductible</strong>.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Получите ли вы долю в собственности или титул по итогам договора?</span>
+        <span lang="en">Will the agreement give you equity or title?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет — это аренда</span><span lang="en">No — this is a lease</span></b>
+          <span lang="ru">Платежи вычитаются как расход по мере пользования имуществом</span>
+          <span lang="en">The payments are deducted as an expense as the property is used</span>
+        </div>
+        <div class="fork__b">
+          <b><span lang="ru">Да — это покупка в рассрочку</span><span lang="en">Yes — this is a purchase</span></b>
+          <span lang="ru">Платежи вычету не подлежат: они формируют базис, который возмещается через амортизацию</span>
+          <span lang="en">The payments are not deductible: they build basis, recovered through depreciation</span>
+        </div>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Разумность и связанные лица</span><span lang="en">Reasonableness and related parties</span></h3>
+
+    <p lang="ru">Неразумно завышенная аренда вычету не подлежит. На практике вопрос о разумности
+      возникает, только когда арендодатель — связанное лицо. Критерий прост: аренда связанному
+      лицу разумна, если равна тому, что вы заплатили бы постороннему за то же имущество.</p>
+    <p lang="en">Unreasonable rent is not deductible. In practice the question of reasonableness
+      arises only where the lessor is a related person. The test is simple: rent to a related
+      person is reasonable if it equals what you would pay a stranger for the same property.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Процент от выручки — не признак неразумности</span><span lang="en">A percentage of receipts is not a sign of unreasonableness</span></h3>
+      <p lang="ru">Аренда, рассчитанная как доля валовой выручки, <strong>не становится
+        неразумной только из-за способа расчёта</strong>. Это стандартное условие торговых
+        договоров. Вариант ответа, где аренда отклоняется именно потому, что привязана к
+        обороту, неверен.</p>
+      <p lang="en">Rent computed as a share of gross receipts is <strong>not unreasonable merely
+        because of how it is figured</strong>. That is a standard retail arrangement. The answer
+        choice rejecting rent precisely because it tracks turnover is wrong.</p>
+    </div>
+
+    <p lang="ru">Связанными лицами здесь считаются, в частности, супруг, братья и сёстры (полно- и
+      неполнородные), предки и потомки; полный перечень — в §267 Кодекса.</p>
+    <p lang="en">Related persons here include a spouse, siblings (whole or half), ancestors and
+      lineal descendants; the full list is in section 267 of the Code.</p>
+
+    <h3><span lang="ru">Четыре частных случая</span><span lang="en">Four particular cases</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Ситуация</span><span lang="en">Situation</span></th>
+          <th><span lang="ru">Как учитывается</span><span lang="en">Treatment</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Аренда уплачена вперёд</span><span lang="en">Rent paid in advance</span></th>
+          <td><span lang="ru">Вычитается только та часть, что приходится на пользование имуществом <strong>в этом году</strong>. Остальное — по годам, к которым относится</span><span lang="en">Only the part covering your use of the property <strong>this year</strong> is deducted. The rest goes to the years it applies to</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Плата за приобретение самого договора аренды</span><span lang="en">A sum paid to acquire the leasehold</span></th>
+          <td><span lang="ru">Не вычитается сразу: распределяется равными долями на оставшийся срок аренды</span><span lang="en">Not deducted at once: spread in equal parts over the remaining term of the lease</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налоги, уплаченные арендатором за арендодателя</span><span lang="en">Taxes the tenant pays for the landlord</span></th>
+          <td><span lang="ru">Считаются <strong>дополнительной арендной платой</strong>: вычитаются у арендатора и образуют доход у арендодателя</span><span lang="en">Treated as <strong>additional rent</strong>: deductible by the tenant and income to the landlord</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Улучшения, сделанные арендатором на чужом имуществе</span><span lang="en">Improvements made by the tenant on the lessor’s property</span></th>
+          <td><span lang="ru">Капитализируются и возмещаются через амортизацию, а не вычитаются как аренда</span><span lang="en">Capitalized and recovered through depreciation, not deducted as rent</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 4-2. Аренда, уплаченная вперёд</span><span lang="en">Example 4-2. Rent paid in advance</span></div>
+      <div class="example__body">
+        <p lang="ru">1 октября 2025 года предприниматель на кассовом методе заплатил $36 000 —
+          аренду помещения за двенадцать месяцев с октября 2025 по сентябрь 2026 года. Кроме
+          того, он уплатил $4 800 налога на имущество, лежавшего на арендодателе, как того
+          требовал договор.</p>
+        <p lang="en">On October 1, 2025, a cash-method proprietor paid $36,000 for twelve months’
+          rent covering October 2025 through September 2026. He also paid $4,800 of property tax
+          that was the landlord’s obligation, as the lease required.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Уплачено аренды</span><span lang="en">Rent paid</span></td>
+              <td data-num="36000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Приходится на 2025 год: три месяца из двенадцати</span><span lang="en">Allocable to 2025: three months of twelve</span></td>
+              <td data-num="9000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Налог за арендодателя — дополнительная арендная плата</span><span lang="en">The landlord’s tax — additional rent</span></td>
+              <td data-num="4800"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет по аренде за 2025 год</span><span lang="en">Rent deduction for 2025</span></td>
+              <td data-num="13800"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Оставшиеся $27 000 вычитаются в 2026 году. Заметьте асимметрию с
+          <a href="su03.html#s31">модулем 3</a>: у <em>арендодателя</em> авансовая плата —
+          доход сразу и целиком, а у <em>арендатора</em> расход растягивается по периодам
+          пользования. Одна и та же сумма, разные правила у двух сторон.</p>
+        <p lang="en">The remaining $27,000 is deducted in 2026. Note the asymmetry with
+          <a href="su03.html#s31">module 3</a>: for the <em>landlord</em> advance rent is income
+          at once and in full, while for the <em>tenant</em> the expense is spread over the
+          periods of use. The same money, different rules on the two sides.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s45">
+      <h2><span class="num">4.5</span>
+        <span lang="ru">Налоги</span>
+        <span lang="en">Taxes</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Вычитаются федеральные, штатные, местные и иностранные налоги, прямо относящиеся
+      к бизнесу. Вопрос почти всегда не в том, вычитается ли налог вообще, а в том,
+      <strong>где</strong> он вычитается — и не нужно ли вместо вычета прибавить его к базису.</p>
+    <p lang="en">Federal, state, local and foreign taxes directly attributable to the business are
+      deductible. The question is almost never whether a tax is deductible at all, but
+      <strong>where</strong> it is deducted — and whether it should be added to basis instead.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Налог</span><span lang="en">Tax</span></th>
+          <th><span lang="ru">Куда идёт</span><span lang="en">Where it goes</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Федеральный подоходный налог</span><span lang="en">Federal income tax</span></th>
+          <td><span lang="ru"><strong>Никуда</strong>: не вычитается</span><span lang="en"><strong>Nowhere</strong>: not deductible</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налог штата на <em>валовой</em> доход бизнеса</span><span lang="en">A state tax on <em>gross</em> business income</span></th>
+          <td><span lang="ru">Schedule C</span><span lang="en">Schedule C</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прочие подоходные налоги штата и местные</span><span lang="en">Other state and local income taxes</span></th>
+          <td><span lang="ru">Schedule A, при детализации вычетов</span><span lang="en">Schedule A, if the taxpayer itemizes</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налоги с фонда оплаты труда, уплаченные вами как работодателем</span><span lang="en">Employment taxes paid by you as employer</span></th>
+          <td><span lang="ru">Schedule C: доля работодателя по социальному страхованию, Medicare и FUTA, а также взносы в фонды штата по безработице, оплачиваемым отпускам и нетрудоспособности</span><span lang="en">Schedule C: the employer share of social security, Medicare and FUTA, plus contributions to state unemployment, paid family and medical leave and disability funds</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Половина налога на самозанятость</span><span lang="en">One-half of self-employment tax</span></th>
+          <td><span lang="ru"><strong>Schedule 1, строка 15</strong> — не Schedule C</span><span lang="en"><strong>Schedule 1, line 15</strong> — not Schedule C</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налог на недвижимость, используемую в бизнесе</span><span lang="en">Real estate tax on business property</span></th>
+          <td><span lang="ru">Schedule C, если налог взимается единообразно и в пользу общества</span><span lang="en">Schedule C, if levied uniformly for the general public welfare</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налог на движимое имущество бизнеса и регистрационные сборы</span><span lang="en">Personal property tax on business assets and registration fees</span></th>
+          <td><span lang="ru">Schedule C, в доле делового использования</span><span lang="en">Schedule C, in the business-use proportion</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налог с продаж, уплаченный при покупке</span><span lang="en">Sales tax paid on a purchase</span></th>
+          <td><span lang="ru">Входит в <strong>стоимость</strong> купленного: в себестоимость товара или в базу амортизируемого актива</span><span lang="en">Becomes part of the <strong>cost</strong> of what was bought: cost of merchandise or basis of a depreciable asset</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налог с продаж, собранный с покупателя</span><span lang="en">Sales tax collected from the buyer</span></th>
+          <td><span lang="ru">Не вычитается и не включается в валовую выручку: вы лишь передаёте его государству</span><span lang="en">Neither deducted nor included in gross receipts: you merely pass it to the government</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Акцизы</span><span lang="en">Excise taxes</span></th>
+          <td><span lang="ru">Schedule C, если они обычны и необходимы для бизнеса</span><span lang="en">Schedule C, if ordinary and necessary for the business</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Налоги на топливо</span><span lang="en">Fuel taxes</span></th>
+          <td><span lang="ru">Входят в стоимость топлива; отдельной строкой не вычитаются. Возможен кредит или возврат акциза</span><span lang="en">Included in the cost of the fuel; not deducted separately. A credit or refund of the excise may be available</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Три налога, которые не вычитаются, хотя выглядят как расход</span><span lang="en">Three taxes that look like an expense but are not deducted</span></h3>
+      <p lang="ru">Первый — федеральный подоходный налог. Второй — налог с продаж на покупку: он
+        не вычитается <em>отдельно</em>, а прибавляется к стоимости купленного и уходит в
+        себестоимость либо в амортизацию. Третий — удержанная из зарплаты работника половина
+        социального налога: это его деньги, а не ваш дополнительный расход; вы вычитаете
+        только <strong>свою</strong> половину как работодателя.</p>
+      <p lang="en">First, federal income tax. Second, sales tax on a purchase: it is not deducted
+        <em>separately</em> but added to the cost of what was bought, ending up in cost of goods
+        sold or in depreciation. Third, the employee’s half of social security withheld from
+        wages: that is the employee’s money, not an extra cost of yours; you deduct only
+        <strong>your own</strong> employer half.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 4-3. Налог на автомобиль в доле использования</span><span lang="en">Example 4-3. Vehicle taxes in the business proportion</span></div>
+      <div class="example__body">
+        <p lang="ru">За год автомобиль прошёл 24 000 миль, из них 18 000 по делам бизнеса.
+          Уплачены: налог на движимое имущество $310, номерные знаки штата $45, городская
+          регистрационная наклейка $25. Заявлены фактические расходы.</p>
+        <p lang="en">The car ran 24,000 miles in the year, 18,000 of them on business. Paid:
+          personal property tax $310, state licence plates $45, city registration sticker $25.
+          Actual expenses are claimed.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Налог на движимое имущество</span><span lang="en">Personal property tax</span></td>
+              <td data-num="310"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Номерные знаки и регистрация</span><span lang="en">Plates and registration</span></td>
+              <td data-num="70"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Всего</span><span lang="en">Total</span></td>
+              <td data-num="380"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля делового использования: 18 000 ÷ 24 000</span><span lang="en">Business-use share: 18,000 ÷ 24,000</span></td>
+              <td data-num="75" data-unit="pct"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет в Schedule C</span><span lang="en">Deduction on Schedule C</span></td>
+              <td data-num="285"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Регистрационные сборы за право пользоваться имуществом в штате
+          приравниваются к налогу и делятся в той же пропорции.</p>
+        <p lang="en">Registration fees for the right to use the property within a state are treated
+          like the tax and split in the same proportion.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">«Необходимый» означает полезный и уместный, а не незаменимый. Планка ниже, чем кажется по слову</span><span lang="en">“Necessary” means helpful and appropriate, not indispensable. The bar is lower than the word suggests</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Предоплата вычет не ускоряет: расход относится к годам, к которым применяется. Исключение — правило двенадцати месяцев</span><span lang="en">Prepaying does not accelerate the deduction: the expense belongs to the years it applies to. The twelve-month rule is the exception</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Улучшения имущества не вычитаются: betterment, restoration и adaptation капитализируются</span><span lang="en">Improvements are not deducted: betterment, restoration and adaptation are capitalized</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Не вычитается штраф государственному органу за нарушение закона. Неустойка контрагенту по договору вычитается</span><span lang="en">A fine to a government body for breaking the law is not deductible. A contractual penalty to a counterparty is</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Благотворительный взнос индивидуального предпринимателя идёт в Schedule A, а не в Schedule C</span><span lang="en">A sole proprietor’s charitable contribution goes on Schedule A, not Schedule C</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Взносы в клубы — деловые, спортивные, обеденные, авиационные, гостиничные — не вычитаются</span><span lang="en">Club dues — business, athletic, luncheon, airline, hotel — are not deductible</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Выплата по соглашению о домогательствах с условием о неразглашении не вычитается вместе с гонорарами юристов по ней</span><span lang="en">A harassment settlement under a nondisclosure agreement is not deductible, and neither are the related attorney fees</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Оплата труда должна пройти <strong>оба</strong> теста: разумность размера и фактически оказанные услуги</span><span lang="en">Pay must pass <strong>both</strong> tests: reasonable in amount and for services actually performed</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Индивидуальный предприниматель не работник своего бизнеса: ни «зарплата» себе, ни изъятия средств не вычитаются</span><span lang="en">A sole proprietor is not an employee of the business: neither a salary to himself nor his draws are deductible</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Зарплата родственнику вычитается по общим правилам. Ни автоматического запрета, ни автоматического разрешения нет</span><span lang="en">Wages to a relative are deductible on the ordinary terms. There is neither an automatic bar nor an automatic pass</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Аванс работнику, возврата которого вы не ждёте, — оплата труда, если он дан за фактически оказанные услуги</span><span lang="en">An advance you do not expect to be repaid is pay, if given for services actually performed</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Имущество, переданное работнику за услуги, — оплата в натуральной форме, а не подарок</span><span lang="en">Property transferred to an employee for services is payment in kind, not a gift</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Начисленная связанному лицу на кассовом методе оплата вычитается только когда попадёт в его доход — правило §267</span><span lang="en">Pay accrued to a related cash-method person is deductible only when it enters that person’s income — the section 267 rule</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Проценты вычитаются, только если вы юридически отвечаете по долгу, стороны рассчитывают на возврат и отношения настоящие</span><span lang="en">Interest is deductible only if you are legally liable, both sides intend repayment, and the relationship is genuine</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">Деловой характер процентов определяется <strong>назначением средств</strong>, а не тем, чем обеспечен заём</span><span lang="en">Interest is business interest by the <strong>use of the proceeds</strong>, not by what secures the loan</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">Смешанный заём делится: деловая часть в Schedule C, личная — по правилам личных процентов</span><span lang="en">A mixed-purpose loan is split: the business part on Schedule C, the personal part under the personal interest rules</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">За 2025 год личная доля процентов по автокредиту может идти в Schedule 1-A, но <strong>ту же сумму нельзя заявить дважды</strong></span><span lang="en">For 2025 the personal share of car loan interest may go on Schedule 1-A, but <strong>the same amount cannot be claimed twice</strong></span></td></tr>
+        <tr><th>18</th><td><span lang="ru">При расчёте лимита §163(j) за 2025 год амортизация, амортизация нематериальных активов и истощение <strong>прибавляются обратно</strong></span><span lang="en">In figuring the section 163(j) limit for 2025, depreciation, amortization and depletion are <strong>added back</strong></span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Малый налогоплательщик, проходящий тест валовой выручки, под ограничение процентов не подпадает вовсе</span><span lang="en">A small business taxpayer meeting the gross receipts test is not subject to the interest limitation at all</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Проценты, начисленные на недоплаченный личный подоходный налог, деловым расходом не являются</span><span lang="en">Interest on an underpayment of personal income tax is not a business expense</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Аренда не вычитается, если вы имеете или получите долю в собственности либо титул: это покупка, а не аренда</span><span lang="en">Rent is not deductible if you have or will get equity or title: that is a purchase, not a lease</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Аренда, рассчитанная как процент от валовой выручки, неразумной от одного этого не становится</span><span lang="en">Rent figured as a percentage of gross receipts is not unreasonable for that reason alone</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Вопрос о разумности аренды практически всегда возникает только при связанном арендодателе</span><span lang="en">The reasonableness of rent is in practice raised only where the lessor is related</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Аренда, уплаченная вперёд, вычитается по годам пользования — в отличие от авансовой платы у арендодателя, которая доход сразу</span><span lang="en">Rent paid in advance is deducted over the years of use — unlike advance rent for the landlord, which is income at once</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Сумма, уплаченная за приобретение самого договора аренды, распределяется на оставшийся срок аренды</span><span lang="en">A sum paid to acquire the leasehold is spread over the remaining term of the lease</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Налоги арендодателя, уплаченные арендатором, — дополнительная арендная плата: вычет у арендатора, доход у арендодателя</span><span lang="en">The landlord’s taxes paid by the tenant are additional rent: a deduction for the tenant, income for the landlord</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Улучшения арендатора на чужом имуществе капитализируются, а не вычитаются как аренда</span><span lang="en">A tenant’s improvements on the lessor’s property are capitalized, not deducted as rent</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Половина налога на самозанятость вычитается в <strong>Schedule 1, строке 15</strong>, а не в Schedule C</span><span lang="en">One-half of self-employment tax is deducted on <strong>Schedule 1, line 15</strong>, not on Schedule C</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Налог с продаж при покупке прибавляется к стоимости приобретённого, а не вычитается отдельной строкой</span><span lang="en">Sales tax on a purchase is added to the cost of what was bought rather than deducted as a separate item</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Удержанная из зарплаты половина социального налога работника вашим расходом не является: вычитается только доля работодателя</span><span lang="en">The employee’s half of social security withheld from wages is not your expense: only the employer share is deducted</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Налог с продаж, собранный с покупателей, не идёт ни в валовую выручку, ни в вычеты</span><span lang="en">Sales tax collected from customers goes neither into gross receipts nor into deductions</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Налоги на топливо входят в стоимость топлива; отдельной строкой их не вычитают</span><span lang="en">Fuel taxes are part of the cost of the fuel; they are not deducted separately</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. Предприниматель выписал себе «зарплату» $60 000 за год и работал в бизнесе полный день. Вычитается ли она в Schedule C?</span><span lang="en">1. A proprietor paid himself a $60,000 “salary” and worked full time in the business. Is it deductible on Schedule C?</span></summary>
+      <div>
+        <p lang="ru">Нет. Индивидуальный предприниматель не является работником своего бизнеса;
+          выплаты себе — это изъятие средств, а не расход. Прибыль облагается у него
+          независимо от того, сколько он себе перечислил.</p>
+        <p lang="en">No. A sole proprietor is not an employee of the business; payments to himself
+          are draws, not an expense. The profit is taxed to him whatever he transferred to
+          himself.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. В 2025 году заключён трёхлетний договор страхования, вся премия $9 000 уплачена сразу. Сколько вычитается за 2025 год?</span><span lang="en">2. In 2025 a three-year insurance contract was signed and the entire $9,000 premium paid at once. How much is deductible for 2025?</span></summary>
+      <div>
+        <p lang="ru">$3 000 — премия, приходящаяся на 2025 год. Оплата вперёд вычет не ускоряет:
+          премии 2026 и 2027 годов вычитаются в свои годы.</p>
+        <p lang="en">$3,000 — the premium allocable to 2025. Paying early does not accelerate the
+          deduction: the 2026 and 2027 premiums are deducted in those years.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Компания уплатила $12 000 штрафа природоохранному ведомству за превышение выбросов и $8 000 неустойки заказчику за срыв срока поставки. Что вычитается?</span><span lang="en">3. A company paid a $12,000 fine to an environmental agency for exceeding emissions and $8,000 of contractual damages to a customer for late delivery. What is deductible?</span></summary>
+      <div>
+        <p lang="ru">$8 000. Неустойка контрагенту по договору — обычный деловой расход. Штраф
+          государственному органу за нарушение закона не вычитается.</p>
+        <p lang="en">$8,000. Damages to a counterparty under a contract are an ordinary business
+          expense. A fine to a government agency for breaking the law is not deductible.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Владелец магазина нанял дочь-старшеклассницу для работы в зале и платит ей $45 в час при рыночной ставке $16. Что вычитается?</span><span lang="en">4. A shop owner hired his teenage daughter to work the floor and pays her $45 an hour when the market rate is $16. What is deductible?</span></summary>
+      <div>
+        <p lang="ru">Только разумная часть, то есть примерно рыночные $16 в час за фактически
+          отработанные часы. Родство само по себе вычет не запрещает, но оба теста —
+          разумность и фактически оказанные услуги — должны выполняться.</p>
+        <p lang="en">Only the reasonable portion, roughly the market $16 an hour for the hours
+          actually worked. Kinship does not bar the deduction, but both tests — reasonableness
+          and services actually performed — must be met.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Предприниматель взял заём под залог личного дома и потратил все средства на закупку товара для магазина. Куда идут проценты?</span><span lang="en">5. A proprietor borrowed against his personal home and spent all the proceeds on inventory for the shop. Where does the interest go?</span></summary>
+      <div>
+        <p lang="ru">В Schedule C целиком. Деловой характер процентов определяется назначением
+          средств, а не предметом залога. Дом здесь лишь обеспечение.</p>
+        <p lang="en">Entirely on Schedule C. Interest is business interest by the use of the
+          proceeds, not by what secures the loan. The house is only collateral here.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. IRS начислил $2 300 процентов на недоплаченный подоходный налог, возникший из-за занижения прибыли Schedule C. Вычитаются ли они как деловой расход?</span><span lang="en">6. The IRS charged $2,300 of interest on an income tax underpayment caused by understated Schedule C profit. Is it deductible as a business expense?</span></summary>
+      <div>
+        <p lang="ru">Нет. Проценты по личному подоходному налогу остаются личными, даже если
+          недоимка возникла из-за дохода бизнеса.</p>
+        <p lang="en">No. Interest on personal income tax stays personal, even where the
+          underpayment arose from business income.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">7. Договор на оборудование предусматривает 48 платежей по $900, после чего оборудование переходит в собственность плательщика за $1. Вычитаются ли платежи как аренда?</span><span lang="en">7. An equipment agreement calls for 48 payments of $900, after which title passes to the payer for $1. Are the payments deductible as rent?</span></summary>
+      <div>
+        <p lang="ru">Нет. Плательщик получит титул, значит это покупка в рассрочку, а не аренда.
+          Платежи формируют базис оборудования и возмещаются через амортизацию.</p>
+        <p lang="en">No. The payer will take title, so this is a purchase in instalments, not a
+          lease. The payments build the equipment’s basis and are recovered through
+          depreciation.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">8. Арендная плата составляет 6% валовой выручки магазина; арендодатель — посторонняя компания. Есть ли основание отказать в вычете?</span><span lang="en">8. Rent is 6% of the shop’s gross receipts and the lessor is an unrelated company. Is there any ground to deny the deduction?</span></summary>
+      <div>
+        <p lang="ru">Нет. Расчёт аренды как доли выручки — обычное условие торговых договоров и
+          неразумной её не делает. К тому же вопрос о разумности практически не возникает,
+          когда арендодатель не связан с арендатором.</p>
+        <p lang="en">No. Figuring rent as a share of receipts is a standard retail arrangement and
+          does not make it unreasonable. Besides, reasonableness is scarcely an issue where the
+          lessor is unrelated.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">9. 1 ноября 2025 года уплачено $24 000 аренды за год вперёд (ноябрь 2025 — октябрь 2026). Метод кассовый. Сколько вычитается за 2025 год?</span><span lang="en">9. On November 1, 2025, $24,000 of rent was paid a year in advance (November 2025 – October 2026). The method is cash. How much is deductible for 2025?</span></summary>
+      <div>
+        <p lang="ru">$4 000 — два месяца из двенадцати. Аренда вперёд вычитается только в части,
+          относящейся к пользованию имуществом в этом году; остальные $20 000 — в 2026 году.</p>
+        <p lang="en">$4,000 — two months of twelve. Rent paid in advance is deducted only to the
+          extent it covers use of the property this year; the other $20,000 falls in 2026.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">10. Арендатор по условиям договора уплатил налог на недвижимость арендодателя $7 200. Как это учитывается у обеих сторон?</span><span lang="en">10. Under the lease a tenant paid $7,200 of the landlord’s real estate tax. How is it treated on both sides?</span></summary>
+      <div>
+        <p lang="ru">Это дополнительная арендная плата: арендатор вычитает $7 200 как расход по
+          аренде, арендодатель включает $7 200 в доход. Обратите внимание, что арендатор
+          вычитает именно <em>аренду</em>, а не налог.</p>
+        <p lang="en">It is additional rent: the tenant deducts $7,200 as rent expense and the
+          landlord includes $7,200 in income. Note that what the tenant deducts is
+          <em>rent</em>, not the tax.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">11. Предприниматель уплатил за год: федеральный подоходный налог $19 000, налог штата на валовой доход бизнеса $2 400, долю работодателя по социальному страхованию и Medicare $6 100, половину налога на самозанятость $5 300. Что и куда идёт?</span><span lang="en">11. For the year a proprietor paid: $19,000 federal income tax, $2,400 state tax on gross business income, $6,100 employer share of social security and Medicare, and $5,300 as one-half of self-employment tax. What goes where?</span></summary>
+      <div>
+        <p lang="ru">В Schedule C — $2 400 налога штата на валовой доход и $6 100 доли
+          работодателя, итого $8 500. Половина налога на самозанятость $5 300 идёт в
+          <strong>Schedule 1, строку 15</strong>. Федеральный подоходный налог $19 000 не
+          вычитается нигде.</p>
+        <p lang="en">Schedule C takes the $2,400 state gross income tax and the $6,100 employer
+          share, $8,500 in all. The $5,300 half of self-employment tax goes on
+          <strong>Schedule 1, line 15</strong>. The $19,000 of federal income tax is deducted
+          nowhere.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">12. Куплен станок за $40 000 плюс налог с продаж $3 200. Как учитывается налог?</span><span lang="en">12. A machine was bought for $40,000 plus $3,200 of sales tax. How is the tax treated?</span></summary>
+      <div>
+        <p lang="ru">Прибавляется к базе амортизации: она составит $43 200. Отдельной строкой
+          расхода налог с продаж не вычитается.</p>
+        <p lang="en">It is added to the depreciable basis, which becomes $43,200. Sales tax is not
+          deducted as a separate expense item.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">13. Магазин собрал с покупателей $18 500 налога с продаж и перечислил их штату. Как это отражается?</span><span lang="en">13. A shop collected $18,500 of sales tax from customers and remitted it to the state. How is that reported?</span></summary>
+      <div>
+        <p lang="ru">Никак: сумма не включается ни в валовую выручку, ни в вычеты. Магазин лишь
+          передаёт чужие деньги государству.</p>
+        <p lang="en">It is not reported at all: the amount goes neither into gross receipts nor
+          into deductions. The shop merely passes on money that was never its own.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">14. Компания заплатила $30 000 прежнему арендатору за уступку договора аренды, до конца которого остаётся 10 лет. Как учитывается эта сумма?</span><span lang="en">14. A company paid $30,000 to a previous tenant to take over a lease with 10 years left to run. How is that treated?</span></summary>
+      <div>
+        <p lang="ru">Распределяется равными долями на оставшийся срок аренды: $3 000 в год.
+          Единовременно как арендная плата эта сумма не вычитается.</p>
+        <p lang="en">Spread in equal parts over the remaining term: $3,000 a year. It is not
+          deducted at once as rent.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div id="quiz-body" data-quiz="su04"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 334, 15, 15-B, 538 и 946, инструкциями к
+        Schedule C, Schedule 1-A и форме 8990, а также §§162, 163(j), 267 Кодекса и
+        регламентом §1.162-11. Данные проверены 4 сентября 2026 года и относятся к налоговому
+        периоду 2025. Не является налоговой консультацией.</p>
+      <p lang="en">Check against IRS Publications 334, 15, 15-B, 538 and 946, the instructions to
+        Schedule C, Schedule 1-A and Form 8990, Code sections 162, 163(j) and 267, and
+        Regulations section 1.162-11. Verified September 4, 2026 for the 2025 tax year. Not tax
+        advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+window.QUIZZES = window.QUIZZES || {};
+window.QUIZZES.su04 = [
+  {
+    ru: "Какое утверждение о требовании «обычный и необходимый» верно?",
+    en: "Which statement about the “ordinary and necessary” requirement is correct?",
+    opts: [
+      { k: "A", ru: "«Необходимый» означает, что без этого расхода вести бизнес невозможно", en: "“Necessary” means the business could not be carried on without the expense" },
+      { k: "B", ru: "«Обычный» означает принятый в вашей отрасли, «необходимый» — полезный и уместный", en: "“Ordinary” means common in your trade; “necessary” means helpful and appropriate" },
+      { k: "C", ru: "Расход должен быть и обычным, и необходимым для любого бизнеса, а не только для вашего", en: "The expense must be ordinary and necessary for any business, not merely for yours" },
+      { k: "D", ru: "Достаточно выполнения одного из двух условий", en: "Meeting either one of the two conditions is enough" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это завышенная планка. Незаменимости закон не требует.", en: "That sets the bar too high. Indispensability is not required." },
+      B: { ru: "Верно. Оба слова понимаются мягче, чем звучат: обычность оценивается по отрасли, необходимость — по полезности и уместности для этого бизнеса.", en: "Correct. Both words are read more mildly than they sound: ordinariness is judged by the trade, necessity by helpfulness and appropriateness for this business." },
+      C: { ru: "Оценка привязана именно к вашему виду деятельности, а не к бизнесу вообще.", en: "The test is tied to your particular trade or business, not to business in general." },
+      D: { ru: "Нужны оба условия сразу.", en: "Both conditions are required together." }
+    }
+  },
+  {
+    ru: "В ноябре 2025 года уплачено $18 000 за трёхлетнее обслуживание оборудования с декабря 2025 по ноябрь 2028 года. Сколько вычитается за 2025 год у налогоплательщика на кассовом методе?",
+    en: "In November 2025, $18,000 was paid for three years of equipment servicing running December 2025 to November 2028. How much is deductible for 2025 by a cash-method taxpayer?",
+    opts: [
+      { k: "A", ru: "$18 000: деньги уплачены в 2025 году", en: "$18,000: the money was paid in 2025" },
+      { k: "B", ru: "$500", en: "$500" },
+      { k: "C", ru: "$6 000", en: "$6,000" },
+      { k: "D", ru: "Ноль: услуги ещё не оказаны", en: "Zero: the services have not been performed" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Кассовый метод не отменяет правило о предоплате: платёж создал актив со сроком далеко за пределами года.", en: "The cash method does not override the prepayment rule: the payment created an asset lasting well beyond the year." },
+      B: { ru: "Верно. На 2025 год приходится один месяц из тридцати шести: $18 000 ÷ 36 = $500. Правило двенадцати месяцев здесь не спасает — период превышает год.", en: "Correct. One month of thirty-six falls in 2025: $18,000 ÷ 36 = $500. The twelve-month rule does not help — the period exceeds a year." },
+      C: { ru: "$6 000 — это годовая доля. За 2025 год отработан лишь один месяц.", en: "$6,000 is a full year’s share. Only one month of 2025 is covered." },
+      D: { ru: "Часть услуг за декабрь оказана, и эта часть вычитается.", en: "The December portion was performed and that part is deductible." }
+    }
+  },
+  {
+    ru: "Что из перечисленного вычитается как деловой расход?",
+    en: "Which of the following is deductible as a business expense?",
+    opts: [
+      { k: "A", ru: "Взнос в местный деловой клуб", en: "Dues to a local business club" },
+      { k: "B", ru: "Пожертвование благотворительному фонду от имени магазина", en: "A donation to a charity made in the shop’s name" },
+      { k: "C", ru: "Неустойка поставщику за досрочное расторжение договора поставки", en: "Damages paid to a supplier for terminating a supply contract early" },
+      { k: "D", ru: "Взнос в поддержку кандидата на местных выборах", en: "A contribution supporting a candidate in a local election" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Взносы в клубы — деловые, общественные, спортивные, обеденные, авиационные, гостиничные — не вычитаются.", en: "Club dues — business, social, athletic, luncheon, airline, hotel — are not deductible." },
+      B: { ru: "У индивидуального предпринимателя благотворительный взнос идёт в Schedule A, а не в расходы бизнеса.", en: "For a sole proprietor a charitable contribution goes on Schedule A, not into business expenses." },
+      C: { ru: "Верно. Это неустойка контрагенту по договору, а не штраф государственному органу за нарушение закона. Обычный деловой расход.", en: "Correct. This is contractual damages to a counterparty, not a fine to a government body for breaking the law. An ordinary business expense." },
+      D: { ru: "Политические взносы не вычитаются никогда.", en: "Political contributions are never deductible." }
+    }
+  },
+  {
+    ru: "Ресторан заплатил $4 500 штрафа санитарной службе за нарушение правил хранения продуктов и $2 800 адвокату, защищавшему его в этом деле. Что вычитается?",
+    en: "A restaurant paid a $4,500 fine to the health authority for breaching food storage rules and $2,800 to the lawyer who defended it. What is deductible?",
+    opts: [
+      { k: "A", ru: "$7 300", en: "$7,300" },
+      { k: "B", ru: "$2 800", en: "$2,800" },
+      { k: "C", ru: "$4 500", en: "$4,500" },
+      { k: "D", ru: "Ничего", en: "Nothing" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Сам штраф государственному органу за нарушение закона не вычитается.", en: "The fine itself, paid to a government body for breaking the law, is not deductible." },
+      B: { ru: "Верно. Не вычитается только штраф. Гонорар юриста за защиту бизнеса — обычный и необходимый расход и вычету подлежит.", en: "Correct. Only the fine is disallowed. Legal fees for defending the business are an ordinary and necessary expense and remain deductible." },
+      C: { ru: "Здесь вычтено ровно то, что вычесть нельзя.", en: "This deducts precisely the item that cannot be deducted." },
+      D: { ru: "Запрет распространяется на штраф, а не на сопутствующие юридические расходы.", en: "The bar covers the fine, not the associated legal costs." }
+    }
+  },
+  {
+    ru: "Компания потратила $23 000 на замену изношенной кровли склада и $1 900 на устранение течи в одном месте той же кровли годом ранее. Как учитываются эти суммы?",
+    en: "A company spent $23,000 replacing the worn roof of its warehouse and, a year earlier, $1,900 fixing a single leak in that roof. How are the amounts treated?",
+    opts: [
+      { k: "A", ru: "Обе вычитаются как ремонт", en: "Both are deducted as repairs" },
+      { k: "B", ru: "Обе капитализируются", en: "Both are capitalized" },
+      { k: "C", ru: "$1 900 вычитается, $23 000 капитализируется", en: "$1,900 is deducted and $23,000 is capitalized" },
+      { k: "D", ru: "$23 000 вычитается, $1 900 капитализируется", en: "$23,000 is deducted and $1,900 is capitalized" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Замена всей кровли — восстановление существенной части объекта.", en: "Replacing the whole roof is a restoration of a major component." },
+      B: { ru: "Устранение течи в одном месте объект не улучшает и к новому использованию не приспосабливает.", en: "Fixing a single leak neither betters the property nor adapts it to a new use." },
+      C: { ru: "Верно. Точечный ремонт вычитается целиком в своём году, а полная замена кровли капитализируется и возмещается через амортизацию.", en: "Correct. A spot repair is deducted in full in its year, while a full roof replacement is capitalized and recovered through depreciation." },
+      D: { ru: "Всё ровно наоборот.", en: "This is exactly backwards." }
+    }
+  },
+  {
+    ru: "Компания урегулировала спор о домогательствах, выплатив $90 000, и включила в соглашение условие о неразглашении. Гонорар юристов по этому делу — $15 000. Что вычитается?",
+    en: "A company settled a harassment claim for $90,000 and included a nondisclosure clause in the agreement. Legal fees on the matter were $15,000. What is deductible?",
+    opts: [
+      { k: "A", ru: "$105 000", en: "$105,000" },
+      { k: "B", ru: "$90 000", en: "$90,000" },
+      { k: "C", ru: "$15 000", en: "$15,000" },
+      { k: "D", ru: "Ничего", en: "Nothing" }
+    ],
+    correct: "D",
+    why: {
+      A: { ru: "Запрет распространяется и на выплату, и на относящиеся к ней гонорары юристов.", en: "The bar covers both the payment and the related attorney fees." },
+      B: { ru: "Именно выплата и оказывается под запретом при наличии условия о неразглашении.", en: "It is the payment that is barred once a nondisclosure clause is present." },
+      C: { ru: "Гонорары юристов, относящиеся к такой выплате, тоже не вычитаются.", en: "Attorney fees related to such a payment are also nondeductible." },
+      D: { ru: "Верно. Условие о неразглашении лишает вычета и саму выплату, и юридические расходы по ней. Без такого условия обе суммы вычитались бы.", en: "Correct. The nondisclosure clause denies a deduction both for the payment and for the legal costs. Without that clause both would be deductible." }
+    }
+  },
+  {
+    ru: "Какое условие НЕ требуется для вычета оплаты труда работника?",
+    en: "Which condition is NOT required for deducting an employee’s pay?",
+    opts: [
+      { k: "A", ru: "Оплата разумна по размеру", en: "The pay is reasonable in amount" },
+      { k: "B", ru: "Оплата произведена за фактически оказанные услуги", en: "The pay is for services actually performed" },
+      { k: "C", ru: "Оплата уплачена или начислена в налоговом году", en: "The pay is paid or incurred in the tax year" },
+      { k: "D", ru: "Оплата произведена деньгами, а не имуществом или услугами", en: "The pay is made in money rather than property or services" }
+    ],
+    correct: "D",
+    why: {
+      A: { ru: "Разумность — одно из двух прямо названных условий.", en: "Reasonableness is one of the two expressly stated tests." },
+      B: { ru: "Услуги должны быть фактически оказаны — второе условие.", en: "The services must actually have been performed — the second test." },
+      C: { ru: "Требование по времени сохраняется во всех случаях.", en: "The timing requirement applies in every case." },
+      D: { ru: "Верно. Оплата может быть деньгами, имуществом или услугами. Форма значения не имеет — важны размер и встречное предоставление.", en: "Correct. Pay may be in cash, property or services. The form does not matter — the amount and the services rendered do." }
+    }
+  },
+  {
+    ru: "Владелец кафе, действующего как индивидуальное предприятие, перечислил себе $52 000 и оформил на себя W-2. Что он вычитает в Schedule C?",
+    en: "The owner of a café operated as a sole proprietorship transferred $52,000 to himself and issued himself a Form W-2. What does he deduct on Schedule C?",
+    opts: [
+      { k: "A", ru: "$52 000 как заработную плату", en: "$52,000 as wages" },
+      { k: "B", ru: "Ничего: он не работник своего бизнеса", en: "Nothing: he is not an employee of his own business" },
+      { k: "C", ru: "$52 000, но только если сумма разумна", en: "$52,000, but only if the amount is reasonable" },
+      { k: "D", ru: "Половину суммы", en: "Half the amount" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Оформление W-2 положения не меняет: индивидуальный предприниматель работником своего бизнеса не является.", en: "Issuing a W-2 changes nothing: a sole proprietor is not an employee of his own business." },
+      B: { ru: "Верно. Перечисление себе — изъятие средств, а не расход. Прибыль облагается у владельца в любом случае, а разумность обсуждается у S-корпораций, а не здесь.", en: "Correct. A transfer to himself is a draw, not an expense. The profit is taxed to the owner in any event, and reasonable compensation is an S corporation issue, not this one." },
+      C: { ru: "Условие разумности к собственным изъятиям неприменимо: они не вычитаются в принципе.", en: "The reasonableness test does not apply to a proprietor’s own draws: they are not deductible at all." },
+      D: { ru: "Половина вычитается у налога на самозанятость, и это другое правило.", en: "One-half relates to self-employment tax, which is a different rule." }
+    }
+  },
+  {
+    ru: "Магазин выдал продавцу аванс $3 000 и в том же году решил не требовать его назад, поскольку продавец отработал сезон. Как это учитывается у магазина?",
+    en: "A shop advanced $3,000 to a salesperson and later that year decided not to seek repayment, since the salesperson had worked the season. How does the shop treat it?",
+    opts: [
+      { k: "A", ru: "Как невозвратный заём: убыток по безнадёжному долгу", en: "As an uncollectible loan: a bad debt loss" },
+      { k: "B", ru: "Как оплату труда, вычитаемую в Schedule C", en: "As pay, deductible on Schedule C" },
+      { k: "C", ru: "Как подарок работнику, не вычитаемый вовсе", en: "As a gift to the employee, not deductible" },
+      { k: "D", ru: "Никак: деньги были выданы авансом", en: "Not at all: the money was an advance" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Безнадёжный долг возникает там, где возврата ждали. Здесь возврата не ждут, а выплата привязана к отработанному сезону.", en: "A bad debt arises where repayment was expected. Here it is not, and the payment tracks the season worked." },
+      B: { ru: "Верно. Заём или аванс, возврата которого вы не ждёте, считается оплатой труда, если он дан за фактически оказанные личные услуги.", en: "Correct. A loan or advance you do not expect to be repaid is treated as pay if given for personal services actually performed." },
+      C: { ru: "Передача работнику за услуги подарком не является — это оплата.", en: "A transfer to an employee for services is not a gift — it is pay." },
+      D: { ru: "Расход возник в момент, когда стало ясно, что возврата не будет.", en: "The expense arose when it became clear there would be no repayment." }
+    }
+  },
+  {
+    ru: "Компания на методе начисления начислила в декабре 2025 года премию $40 000 своему единственному акционеру, работающему в ней; акционер на кассовом методе, выплата произведена в июле 2026 года. Когда вычитается премия?",
+    en: "An accrual-method company accrued a $40,000 bonus in December 2025 to its sole shareholder-employee, who is on the cash method; the bonus was paid in July 2026. When is it deductible?",
+    opts: [
+      { k: "A", ru: "В 2025 году: расход начислен", en: "In 2025: the expense was accrued" },
+      { k: "B", ru: "В 2026 году, когда сумма попадёт в доход получателя", en: "In 2026, when the amount enters the recipient’s income" },
+      { k: "C", ru: "Половина в 2025, половина в 2026 году", en: "Half in 2025 and half in 2026" },
+      { k: "D", ru: "Не вычитается вовсе", en: "Not deductible at all" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Обычное правило начисления здесь вытесняется правилом соответствия для связанных лиц.", en: "The ordinary accrual rule is displaced here by the matching rule for related persons." },
+      B: { ru: "Верно. По §267 расход перед связанным лицом на кассовом методе вычитается не раньше года, в котором сумма включается в доход получателя. Правило разобрано в модуле 1.", en: "Correct. Under section 267 an expense owed to a related cash-method person is deductible no earlier than the year the amount is included in the recipient’s income. The rule is covered in module 1." },
+      C: { ru: "Деления правило не предусматривает.", en: "The rule provides for no split." },
+      D: { ru: "Вычет не теряется, а откладывается.", en: "The deduction is deferred, not lost." }
+    }
+  },
+  {
+    ru: "Владелец мастерской платит сыну-студенту $28 000 в год за работу приёмщиком; на рынке такая работа стоит около $27 000, сын действительно работает полный день. Что вычитается?",
+    en: "A workshop owner pays his student son $28,000 a year as a service adviser; the market rate for the role is about $27,000 and the son genuinely works full time. What is deductible?",
+    opts: [
+      { k: "A", ru: "Ничего: выплаты членам семьи не вычитаются", en: "Nothing: payments to family members are not deductible" },
+      { k: "B", ru: "$28 000", en: "$28,000" },
+      { k: "C", ru: "$27 000, а разница считается подарком", en: "$27,000, with the difference treated as a gift" },
+      { k: "D", ru: "Половина суммы", en: "Half the amount" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Автоматического запрета на выплаты родственникам нет. Проверяются те же два условия, что и для любого работника.", en: "There is no automatic bar on paying relatives. The same two tests apply as for any employee." },
+      B: { ru: "Верно. Оба условия выполнены: работа фактически выполняется полный день, а $28 000 против рыночных $27 000 — сумма разумная. Точного совпадения с рынком закон не требует.", en: "Correct. Both tests are met: the work is genuinely performed full time and $28,000 against a $27,000 market rate is reasonable. Exact equality with the market is not required." },
+      C: { ru: "Небольшое превышение над средней рыночной ставкой разумности не разрушает.", en: "A modest excess over the average market rate does not destroy reasonableness." },
+      D: { ru: "Оснований делить сумму пополам нет.", en: "There is no ground for halving the amount." }
+    }
+  },
+  {
+    ru: "Что из перечисленного НЕ является дополнительной льготой работнику?",
+    en: "Which of the following is NOT a fringe benefit?",
+    opts: [
+      { k: "A", ru: "Предоставление служебного автомобиля", en: "The use of a company car" },
+      { k: "B", ru: "Скидки на товары компании", en: "Discounts on the company’s goods" },
+      { k: "C", ru: "Питание и жильё, предоставленные работодателем", en: "Meals and lodging provided by the employer" },
+      { k: "D", ru: "Возмещение работнику подтверждённых командировочных расходов", en: "Reimbursement of an employee’s substantiated travel costs" }
+    ],
+    correct: "D",
+    why: {
+      A: { ru: "Служебный автомобиль — классический пример дополнительной льготы.", en: "A company car is a classic fringe benefit." },
+      B: { ru: "Скидки на товары и услуги прямо названы среди льгот.", en: "Discounts on property or services are expressly listed as fringe benefits." },
+      C: { ru: "Питание и жильё — тоже льгота, хотя часть её может быть освобождена от налога.", en: "Meals and lodging are a fringe benefit too, though part may be tax-free." },
+      D: { ru: "Верно. Возмещение подтверждённых деловых расходов — не форма вознаграждения, а возврат работнику его же затрат по подотчётному плану. У работника оно не образует дохода.", en: "Correct. Reimbursing substantiated business costs is not a form of pay but a return of the employee’s own outlay under an accountable plan. It produces no income for the employee." }
+    }
+  },
+  {
+    ru: "Компания передала работнику в счёт вознаграждения оборудование рыночной стоимостью $9 000; её база в оборудовании — $5 500. Какую сумму компания вычитает как оплату труда?",
+    en: "A company transferred equipment worth $9,000 to an employee as compensation; its basis in the equipment is $5,500. How much does it deduct as pay?",
+    opts: [
+      { k: "A", ru: "$5 500", en: "$5,500" },
+      { k: "B", ru: "$9 000", en: "$9,000" },
+      { k: "C", ru: "$3 500", en: "$3,500" },
+      { k: "D", ru: "Ничего: оплата произведена не деньгами", en: "Nothing: the payment was not in money" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "База важна для расчёта прибыли от передачи имущества, но не для размера вознаграждения.", en: "Basis matters in computing gain on the transfer, not in measuring the compensation." },
+      B: { ru: "Верно. Оплата в натуральной форме измеряется рыночной стоимостью переданного. У работника в доход тоже войдут $9 000.", en: "Correct. Payment in kind is measured by the fair market value of what was transferred. The employee likewise takes $9,000 into income." },
+      C: { ru: "$3 500 — это прирост стоимости имущества, отдельная величина.", en: "$3,500 is the appreciation in the property, a separate figure." },
+      D: { ru: "Оплата может быть деньгами, имуществом или услугами.", en: "Pay may be in cash, property or services." }
+    }
+  },
+  {
+    ru: "Предприниматель взял в банке $80 000: $60 000 потрачены на оборудование мастерской, $20 000 — на семейный отпуск. За год уплачено $6 400 процентов. Сколько идёт в Schedule C?",
+    en: "A proprietor borrowed $80,000: $60,000 went on workshop equipment and $20,000 on a family holiday. Interest for the year was $6,400. How much goes on Schedule C?",
+    opts: [
+      { k: "A", ru: "$6 400: заём взят предпринимателем на бизнес", en: "$6,400: the loan was taken by a business owner" },
+      { k: "B", ru: "$4 800", en: "$4,800" },
+      { k: "C", ru: "$1 600", en: "$1,600" },
+      { k: "D", ru: "Ничего: заём смешанный", en: "Nothing: the loan is mixed" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Смешанный заём делится по назначению средств.", en: "A mixed-purpose loan is split according to the use of the proceeds." },
+      B: { ru: "Верно. Деловая доля — $60 000 из $80 000, то есть 75%: $6 400 × 0,75 = $4 800. Остальное следует правилам личных процентов.", en: "Correct. The business share is $60,000 of $80,000, that is 75%: $6,400 × 0.75 = $4,800. The rest follows the personal interest rules." },
+      C: { ru: "$1 600 — это личная доля, а не деловая.", en: "$1,600 is the personal share, not the business one." },
+      D: { ru: "Смешанный характер займа не лишает вычета деловую часть.", en: "A mixed purpose does not disallow the business portion." }
+    }
+  },
+  {
+    ru: "Предприниматель заложил станки своей мастерской и все полученные средства направил на покупку дачи для семьи. Как учитываются проценты по этому займу?",
+    en: "A proprietor pledged his workshop machinery and spent all the proceeds buying a holiday house for the family. How is the interest treated?",
+    opts: [
+      { k: "A", ru: "Деловые проценты: заём обеспечен имуществом бизнеса", en: "Business interest: the loan is secured by business property" },
+      { k: "B", ru: "Личные проценты: средства израсходованы на личные цели", en: "Personal interest: the proceeds were spent personally" },
+      { k: "C", ru: "Делятся пополам", en: "Split evenly" },
+      { k: "D", ru: "Не вычитаются вовсе", en: "Not deductible at all" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Предмет залога не определяет характер процентов — это и есть проверяемая ошибка.", en: "The collateral does not determine the character of the interest — that is the very error being tested." },
+      B: { ru: "Верно. Решает назначение средств. Заём под деловое имущество, потраченный лично, даёт личные проценты — как и обратный случай даёт деловые.", en: "Correct. The use of the proceeds decides. A loan against business property spent personally yields personal interest — just as the reverse case yields business interest." },
+      C: { ru: "Делить нечего: все средства пошли на одну цель.", en: "There is nothing to split: all the proceeds went to one purpose." },
+      D: { ru: "Личные проценты по такому займу могут быть вычитаемы по своим правилам, но в Schedule C они не идут.", en: "Personal interest on such a loan may be deductible under its own rules, but it does not belong on Schedule C." }
+    }
+  },
+  {
+    ru: "Самозанятый уплатил $1 800 процентов по автокредиту; автомобиль используется на 40% в бизнесе. Он заявил личную долю как проценты по квалифицированному автозайму в Schedule 1-A. Что он вправе поставить в Schedule C?",
+    en: "A self-employed taxpayer paid $1,800 of car loan interest; the car is 40% business. He claimed the personal share as qualified passenger vehicle loan interest on Schedule 1-A. What may he put on Schedule C?",
+    opts: [
+      { k: "A", ru: "$1 800", en: "$1,800" },
+      { k: "B", ru: "$720", en: "$720" },
+      { k: "C", ru: "$1 080", en: "$1,080" },
+      { k: "D", ru: "Ничего: вычет уже заявлен в Schedule 1-A", en: "Nothing: the deduction was already claimed on Schedule 1-A" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Личная доля в Schedule C не идёт никогда, а здесь она к тому же уже заявлена в другом месте.", en: "The personal share never belongs on Schedule C, and here it has already been claimed elsewhere." },
+      B: { ru: "Верно. Деловая доля 40% от $1 800 — это $720, и она идёт в Schedule C. В Schedule 1-A заявлены остальные $1 080 личной доли; удвоение запрещено, но деловая часть не затрагивается.", en: "Correct. The business share, 40% of $1,800, is $720 and goes on Schedule C. The other $1,080 personal share went on Schedule 1-A; double-claiming is barred, but the business portion is untouched." },
+      C: { ru: "$1 080 — это личная доля, заявленная в Schedule 1-A.", en: "$1,080 is the personal share claimed on Schedule 1-A." },
+      D: { ru: "Запрет касается повторного заявления одной и той же суммы, а не делового вычета вообще.", en: "The bar covers claiming the same amount twice, not the business deduction as such." }
+    }
+  },
+  {
+    ru: "Какое изменение действует при расчёте лимита вычета деловых процентов за налоговые годы, начинающиеся в 2025 году?",
+    en: "What change applies in figuring the business interest limitation for tax years beginning in 2025?",
+    opts: [
+      { k: "A", ru: "Амортизация, амортизация нематериальных активов и истощение прибавляются обратно к налогооблагаемому доходу", en: "Depreciation, amortization and depletion are added back to taxable income" },
+      { k: "B", ru: "Ограничение отменено для всех налогоплательщиков", en: "The limitation is repealed for all taxpayers" },
+      { k: "C", ru: "Ограничение распространено на всех независимо от выручки", en: "The limitation now covers everyone regardless of receipts" },
+      { k: "D", ru: "Лимит считается от валовой выручки, а не от дохода", en: "The limit is figured on gross receipts rather than on income" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Возврат к базе, из которой не вычитаются амортизация и истощение, расширяет скорректированный налогооблагаемый доход и тем смягчает ограничение.", en: "Correct. Returning to a base that does not subtract depreciation and depletion widens adjusted taxable income and so loosens the limitation." },
+      B: { ru: "Ограничение сохраняется; изменилась лишь база его расчёта.", en: "The limitation remains; only the base for computing it changed." },
+      C: { ru: "Освобождение малого налогоплательщика по тесту валовой выручки действует по-прежнему.", en: "The small business exemption under the gross receipts test still applies." },
+      D: { ru: "Лимит по-прежнему считается от скорректированного налогооблагаемого дохода.", en: "The limit is still computed on adjusted taxable income." }
+    }
+  },
+  {
+    ru: "Предприниматель уплатил IRS $1 400 процентов на недоплаченный подоходный налог, возникший из-за занижения прибыли по Schedule C, и $900 процентов по кредиту на закупку товара. Что идёт в Schedule C?",
+    en: "A proprietor paid the IRS $1,400 of interest on an income tax underpayment caused by understated Schedule C profit, and $900 of interest on a loan used to buy inventory. What goes on Schedule C?",
+    opts: [
+      { k: "A", ru: "$2 300", en: "$2,300" },
+      { k: "B", ru: "$900", en: "$900" },
+      { k: "C", ru: "$1 400", en: "$1,400" },
+      { k: "D", ru: "Ничего", en: "Nothing" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Проценты по личному подоходному налогу деловыми не становятся от происхождения недоимки.", en: "Interest on personal income tax does not become business interest because of where the underpayment came from." },
+      B: { ru: "Верно. Вычитаются только проценты по займу, средства которого пошли на бизнес.", en: "Correct. Only the interest on the loan whose proceeds went into the business is deductible." },
+      C: { ru: "Это как раз невычитаемая часть.", en: "That is precisely the nondeductible part." },
+      D: { ru: "Проценты по товарному кредиту — обычный деловой расход.", en: "Interest on an inventory loan is an ordinary business expense." }
+    }
+  },
+  {
+    ru: "Договор на погрузчик: 60 месячных платежей по $1 200, по окончании срока право собственности переходит к плательщику без дополнительной оплаты. Как учитываются платежи?",
+    en: "A forklift agreement calls for 60 monthly payments of $1,200, after which title passes to the payer at no further cost. How are the payments treated?",
+    opts: [
+      { k: "A", ru: "Вычитаются как аренда по $14 400 в год", en: "Deducted as rent at $14,400 a year" },
+      { k: "B", ru: "Не вычитаются как аренда: формируют базис и амортизируются", en: "Not deducted as rent: they build basis and are depreciated" },
+      { k: "C", ru: "Вычитаются как аренда, но только половина", en: "Deducted as rent, but only half" },
+      { k: "D", ru: "Вычитаются в последний год договора", en: "Deducted in the final year of the agreement" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Аренда — плата за пользование имуществом, которым вы не владеете и не станете владеть.", en: "Rent is payment for the use of property you do not own and will not own." },
+      B: { ru: "Верно. Переход титула по окончании срока делает договор покупкой в рассрочку: платежи формируют базис погрузчика и возмещаются через амортизацию.", en: "Correct. Title passing at the end makes this a purchase in instalments: the payments build the forklift’s basis and are recovered through depreciation." },
+      C: { ru: "Частичного вычета такой договор не даёт.", en: "Such an agreement gives no partial rent deduction." },
+      D: { ru: "Отложить вычет на последний год оснований нет.", en: "There is no ground for deferring the deduction to the final year." }
+    }
+  },
+  {
+    ru: "Компания арендует склад у своего единственного акционера за $9 000 в месяц; аналогичные склады в районе сдаются за $5 500. Что вычитается?",
+    en: "A company rents a warehouse from its sole shareholder for $9,000 a month; comparable warehouses in the area let for $5,500. What is deductible?",
+    opts: [
+      { k: "A", ru: "$108 000 за год", en: "$108,000 for the year" },
+      { k: "B", ru: "$66 000 за год", en: "$66,000 for the year" },
+      { k: "C", ru: "Ничего: арендодатель — связанное лицо", en: "Nothing: the lessor is a related party" },
+      { k: "D", ru: "$54 000 за год", en: "$54,000 for the year" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Неразумно завышенная часть аренды вычету не подлежит.", en: "The unreasonably inflated portion of the rent is not deductible." },
+      B: { ru: "Верно. Разумной признаётся аренда в размере того, что заплатили бы постороннему: $5 500 × 12 = $66 000. Превышение вычету не подлежит.", en: "Correct. Reasonable rent is what would be paid to a stranger: $5,500 × 12 = $66,000. The excess is not deductible." },
+      C: { ru: "Связанность сама по себе вычета не отменяет — она лишь заставляет проверять разумность.", en: "Relatedness alone does not deny the deduction — it merely makes reasonableness an issue." },
+      D: { ru: "Половины рыночной ставки правило не требует.", en: "The rule does not call for half the market rate." }
+    }
+  },
+  {
+    ru: "Арендная плата магазина установлена как 7% валовой выручки; арендодатель — посторонняя компания. За год выручка составила $1 400 000, аренда — $98 000. Что вычитается?",
+    en: "A shop’s rent is set at 7% of gross receipts and the lessor is unrelated. Receipts for the year were $1,400,000 and rent $98,000. What is deductible?",
+    opts: [
+      { k: "A", ru: "$98 000", en: "$98,000" },
+      { k: "B", ru: "Ничего: аренда не может зависеть от выручки", en: "Nothing: rent cannot depend on receipts" },
+      { k: "C", ru: "Только часть, соответствующая рыночной ставке за площадь", en: "Only the portion matching a market rate per square foot" },
+      { k: "D", ru: "$70 000 — максимум 5% выручки", en: "$70,000 — a maximum of 5% of receipts" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Расчёт аренды как доли валовой выручки — обычное условие торговых договоров и неразумной её не делает. Арендодатель к тому же не связан с арендатором.", en: "Correct. Figuring rent as a share of gross receipts is a standard retail arrangement and does not make it unreasonable. The lessor is unrelated besides." },
+      B: { ru: "Такого запрета не существует.", en: "No such prohibition exists." },
+      C: { ru: "Пересчёт по ставке за площадь потребовался бы при связанном арендодателе и явно завышенной плате.", en: "Recomputing at a per-area rate would arise only with a related lessor and clearly inflated rent." },
+      D: { ru: "Потолка в процентах от выручки закон не устанавливает.", en: "The law sets no percentage-of-receipts ceiling." }
+    }
+  },
+  {
+    ru: "1 сентября 2025 года компания на кассовом методе уплатила $30 000 аренды за период с сентября 2025 по август 2026 года. Сколько вычитается за 2025 год?",
+    en: "On September 1, 2025, a cash-method company paid $30,000 of rent covering September 2025 through August 2026. How much is deductible for 2025?",
+    opts: [
+      { k: "A", ru: "$30 000", en: "$30,000" },
+      { k: "B", ru: "$10 000", en: "$10,000" },
+      { k: "C", ru: "$20 000", en: "$20,000" },
+      { k: "D", ru: "Ничего до окончания срока аренды", en: "Nothing until the lease period ends" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Аренда вперёд вычитается только в части, приходящейся на пользование имуществом в этом году.", en: "Rent paid in advance is deducted only to the extent it covers use of the property this year." },
+      B: { ru: "Верно. На 2025 год приходятся четыре месяца из двенадцати: $30 000 × 4 ÷ 12 = $10 000. Оставшиеся $20 000 вычитаются в 2026 году.", en: "Correct. Four of the twelve months fall in 2025: $30,000 × 4 ÷ 12 = $10,000. The other $20,000 is deducted in 2026." },
+      C: { ru: "$20 000 — это доля 2026 года.", en: "$20,000 is the 2026 share." },
+      D: { ru: "Часть периода в 2025 году уже использована, и она вычитается.", en: "Part of the period fell in 2025 and that part is deductible." }
+    }
+  },
+  {
+    ru: "Арендатор по условиям договора уплатил налог на недвижимость арендодателя $11 000. Как это учитывается?",
+    en: "Under the lease a tenant paid $11,000 of the landlord’s real estate tax. How is that treated?",
+    opts: [
+      { k: "A", ru: "Арендатор вычитает $11 000 как налог; у арендодателя дохода нет", en: "The tenant deducts $11,000 as tax; the landlord has no income" },
+      { k: "B", ru: "Арендатор вычитает $11 000 как дополнительную арендную плату; арендодатель включает $11 000 в доход", en: "The tenant deducts $11,000 as additional rent; the landlord includes $11,000 in income" },
+      { k: "C", ru: "Ни у кого ничего не возникает: налог просто уплачен", en: "Nothing arises for either party: the tax was simply paid" },
+      { k: "D", ru: "Арендодатель вычитает налог, арендатор — ничего", en: "The landlord deducts the tax and the tenant deducts nothing" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Половина верна: вычет у арендатора есть. Но обязанность была не его, поэтому вычитается аренда, а у арендодателя возникает доход.", en: "Half right: the tenant does get a deduction. But the obligation was not his, so what he deducts is rent, and the landlord has income." },
+      B: { ru: "Верно. Налоги, уплаченные арендатором за арендодателя по деловому имуществу, считаются дополнительной арендной платой: вычет у одного, доход у другого.", en: "Correct. Taxes a tenant pays for a landlord on business property are additional rent: a deduction for one and income for the other." },
+      C: { ru: "Обе стороны обязаны отразить операцию.", en: "Both sides must report the transaction." },
+      D: { ru: "Арендодатель включает сумму в доход и одновременно вычитает уплаченный за него налог — но не вместо арендатора.", en: "The landlord takes the amount into income and also deducts the tax paid on his behalf — but not instead of the tenant." }
+    }
+  },
+  {
+    ru: "Арендатор за свой счёт возвёл на арендованном участке склад стоимостью $260 000. Срок аренды — 20 лет. Как учитываются затраты?",
+    en: "A tenant built a $260,000 warehouse on leased land at his own expense. The lease runs 20 years. How is the cost treated?",
+    opts: [
+      { k: "A", ru: "Вычитаются как дополнительная арендная плата в год постройки", en: "Deducted as additional rent in the year of construction" },
+      { k: "B", ru: "Капитализируются и возмещаются через амортизацию", en: "Capitalized and recovered through depreciation" },
+      { k: "C", ru: "Вычитаются равными долями по $13 000 в год как арендная плата", en: "Deducted as rent in equal parts of $13,000 a year" },
+      { k: "D", ru: "Не учитываются вовсе: имущество чужое", en: "Not accounted for at all: the property belongs to someone else" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Постройка создала долгоживущий актив, а не оплатила пользование за год.", en: "The building created a long-lived asset rather than paying for a year’s use." },
+      B: { ru: "Верно. Стоимость зданий и постоянных улучшений, возведённых арендатором на чужом имуществе, капитализируется и возмещается через амортизацию, а не вычитается как аренда.", en: "Correct. The cost of buildings and permanent improvements a tenant erects on the lessor’s property is capitalized and recovered through depreciation, not deducted as rent." },
+      C: { ru: "Равномерное распределение по сроку аренды применяется к плате за приобретение самого договора, а не к постройкам.", en: "Spreading over the lease term applies to a sum paid to acquire the leasehold, not to buildings." },
+      D: { ru: "Затраты понесены арендатором и подлежат возмещению им же.", en: "The tenant incurred the cost and recovers it himself." }
+    }
+  },
+  {
+    ru: "Компания заплатила $45 000 предыдущему арендатору за передачу договора аренды, до конца которого остаётся 15 лет. Как учитывается эта сумма?",
+    en: "A company paid $45,000 to a previous tenant to take over a lease with 15 years remaining. How is that treated?",
+    opts: [
+      { k: "A", ru: "Вычитается целиком в год уплаты", en: "Deducted in full in the year paid" },
+      { k: "B", ru: "$3 000 в год в течение оставшегося срока аренды", en: "$3,000 a year over the remaining term of the lease" },
+      { k: "C", ru: "Амортизируется как нежилая недвижимость за 39 лет", en: "Depreciated as nonresidential real property over 39 years" },
+      { k: "D", ru: "Не вычитается: это плата за нематериальное право", en: "Not deductible: it buys an intangible right" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Сумма куплена ради выгоды на весь оставшийся срок и на один год не относится.", en: "The payment buys a benefit for the whole remaining term and does not belong to one year." },
+      B: { ru: "Верно. Приобретение самого договора аренды за определённую сумму даёт вычет равными долями исходя из числа лет, которые договору осталось действовать: $45 000 ÷ 15 = $3 000.", en: "Correct. Acquiring a leasehold for a specified sum gives a deduction of an aliquot part each year over the years the lease has to run: $45,000 ÷ 15 = $3,000." },
+      C: { ru: "Срок амортизации недвижимости к стоимости договора отношения не имеет.", en: "The recovery period for real property has nothing to do with the cost of a lease." },
+      D: { ru: "Вычет полагается, но растянутый во времени.", en: "A deduction is allowed, but spread over time." }
+    }
+  },
+  {
+    ru: "Куда идёт половина налога на самозанятость?",
+    en: "Where does one-half of self-employment tax go?",
+    opts: [
+      { k: "A", ru: "В Schedule C как расход бизнеса", en: "On Schedule C as a business expense" },
+      { k: "B", ru: "В Schedule 1, строку 15", en: "On Schedule 1, line 15" },
+      { k: "C", ru: "В Schedule A при детализации вычетов", en: "On Schedule A if the taxpayer itemizes" },
+      { k: "D", ru: "Не вычитается вовсе", en: "It is not deductible at all" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это самая частая ошибка: вычет существует, но он не уменьшает прибыль Schedule C и потому не уменьшает саму базу налога на самозанятость.", en: "This is the commonest error: the deduction exists but does not reduce Schedule C profit, and so does not reduce the self-employment tax base itself." },
+      B: { ru: "Верно. Половина налога на самозанятость вычитается в Schedule 1, строке 15 — выше линии, но за пределами Schedule C.", en: "Correct. One-half of self-employment tax is deducted on Schedule 1, line 15 — above the line, but outside Schedule C." },
+      C: { ru: "Schedule A предназначен для постатейных вычетов, а этот вычет доступен независимо от детализации.", en: "Schedule A is for itemized deductions, and this one is available whether or not the taxpayer itemizes." },
+      D: { ru: "Вычет существует и предоставляется всем плательщикам налога на самозанятость.", en: "The deduction exists and is available to every payer of self-employment tax." }
+    }
+  },
+  {
+    ru: "Какой налог вычитается в Schedule C?",
+    en: "Which tax is deducted on Schedule C?",
+    opts: [
+      { k: "A", ru: "Федеральный подоходный налог владельца", en: "The owner’s federal income tax" },
+      { k: "B", ru: "Налог штата на валовой доход бизнеса", en: "A state tax on the gross income of the business" },
+      { k: "C", ru: "Подоходный налог штата с чистого дохода владельца", en: "State income tax on the owner’s net income" },
+      { k: "D", ru: "Удержанная из зарплаты работников доля социального налога", en: "The employees’ share of social security withheld from wages" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Федеральный подоходный налог не вычитается нигде.", en: "Federal income tax is deducted nowhere." },
+      B: { ru: "Верно. Налог штата на <em>валовой</em> доход, прямо относящийся к бизнесу, идёт в Schedule C. Именно валовой, а не чистый — в этом и различие.", en: "Correct. A state tax on <em>gross</em> income directly attributable to the business goes on Schedule C. Gross, not net — that is the distinction." },
+      C: { ru: "Подоходные налоги штата с чистого дохода идут в Schedule A при детализации вычетов.", en: "State income taxes on net income go on Schedule A if the taxpayer itemizes." },
+      D: { ru: "Удержанная доля работника — его деньги. Вычитается только доля работодателя.", en: "The withheld employee share is the employee’s money. Only the employer share is deducted." }
+    }
+  },
+  {
+    ru: "Компания начислила работникам зарплату $200 000, удержала $15 300 их доли социального налога и Medicare и уплатила столько же как работодатель. Какую сумму она вычитает?",
+    en: "A company accrued $200,000 of wages, withheld $15,300 as the employees’ share of social security and Medicare, and paid the same amount as employer. What does it deduct?",
+    opts: [
+      { k: "A", ru: "$200 000", en: "$200,000" },
+      { k: "B", ru: "$215 300", en: "$215,300" },
+      { k: "C", ru: "$230 600", en: "$230,600" },
+      { k: "D", ru: "$184 700", en: "$184,700" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Пропущена доля работодателя — это отдельный вычитаемый расход.", en: "This omits the employer share, which is a separate deductible expense." },
+      B: { ru: "Верно. Зарплата $200 000 вычитается целиком, включая удержанную часть, плюс $15 300 доли работодателя. Итого $215 300.", en: "Correct. The $200,000 of wages is deducted in full, withholding included, plus the $15,300 employer share. That is $215,300." },
+      C: { ru: "Здесь доля работника посчитана дважды: она уже сидит внутри $200 000 зарплаты.", en: "This counts the employee share twice: it is already inside the $200,000 of wages." },
+      D: { ru: "Удержанная сумма из вычета не исключается: она часть начисленной зарплаты.", en: "The withheld amount is not excluded from the deduction: it is part of the wages accrued." }
+    }
+  },
+  {
+    ru: "Магазин купил витрины за $22 000 и уплатил налог с продаж $1 760. Как учитывается налог с продаж?",
+    en: "A shop bought display cases for $22,000 and paid $1,760 of sales tax. How is the sales tax treated?",
+    opts: [
+      { k: "A", ru: "Вычитается в Schedule C как налог", en: "Deducted on Schedule C as a tax" },
+      { k: "B", ru: "Прибавляется к базе амортизации витрин", en: "Added to the depreciable basis of the display cases" },
+      { k: "C", ru: "Вычитается в Schedule A", en: "Deducted on Schedule A" },
+      { k: "D", ru: "Не учитывается вовсе", en: "Not accounted for at all" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Налог с продаж на покупку отдельной строкой расхода не вычитается.", en: "Sales tax on a purchase is not deducted as a separate expense item." },
+      B: { ru: "Верно. Налог с продаж входит в стоимость приобретённого: база амортизации витрин составит $23 760. Если бы купили товар для перепродажи, налог вошёл бы в себестоимость.", en: "Correct. Sales tax becomes part of the cost of what was bought: the depreciable basis is $23,760. Had it been merchandise for resale, the tax would enter cost of goods sold." },
+      C: { ru: "Schedule A к покупкам для бизнеса отношения не имеет.", en: "Schedule A has nothing to do with business purchases." },
+      D: { ru: "Сумма учитывается — через стоимость актива.", en: "The amount is accounted for — through the asset’s cost." }
+    }
+  },
+  {
+    ru: "Автомобиль прошёл за год 30 000 миль, из них 21 000 по делам бизнеса. Уплачены налог на движимое имущество $420 и регистрационный сбор штата $80. Сколько вычитается при учёте фактических расходов?",
+    en: "A car ran 30,000 miles in the year, 21,000 of them on business. Personal property tax of $420 and a state registration fee of $80 were paid. How much is deductible under the actual expense method?",
+    opts: [
+      { k: "A", ru: "$500", en: "$500" },
+      { k: "B", ru: "$350", en: "$350" },
+      { k: "C", ru: "$294", en: "$294" },
+      { k: "D", ru: "$420", en: "$420" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это вся сумма без учёта личного использования.", en: "That is the whole amount, ignoring personal use." },
+      B: { ru: "Верно. Доля бизнеса — 21 000 ÷ 30 000 = 70%. Регистрационный сбор за право пользоваться имуществом в штате приравнивается к налогу: ($420 + $80) × 0,70 = $350.", en: "Correct. The business share is 21,000 ÷ 30,000 = 70%. A registration fee for the right to use property within a state is treated like the tax: ($420 + $80) × 0.70 = $350." },
+      C: { ru: "Здесь взяты 70% только от налога, а регистрационный сбор пропущен.", en: "This takes 70% of the tax alone and leaves out the registration fee." },
+      D: { ru: "Это налог целиком, без деления по использованию.", en: "That is the full tax, undivided by use." }
+    }
+  },
+  {
+    ru: "Магазин собрал с покупателей $26 000 налога с продаж и перечислил их в бюджет штата. Как это отражается в декларации?",
+    en: "A shop collected $26,000 of sales tax from customers and remitted it to the state. How does that appear on the return?",
+    opts: [
+      { k: "A", ru: "$26 000 в валовую выручку и $26 000 в вычеты", en: "$26,000 into gross receipts and $26,000 into deductions" },
+      { k: "B", ru: "$26 000 только в вычеты", en: "$26,000 into deductions only" },
+      { k: "C", ru: "Не отражается ни в выручке, ни в вычетах", en: "Neither in receipts nor in deductions" },
+      { k: "D", ru: "$26 000 только в валовую выручку", en: "$26,000 into gross receipts only" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Итог получился бы верный, но правило прямо предписывает не включать эти суммы ни туда, ни туда.", en: "The net result would be right, but the rule expressly says to include the amounts in neither." },
+      B: { ru: "Вычета нет, поскольку сумма и в доход не включалась.", en: "There is no deduction, because the amount never entered income." },
+      C: { ru: "Верно. Налог, собранный с покупателя и переданный государству, проходит мимо декларации: это не ваш доход и не ваш расход.", en: "Correct. Tax collected from the buyer and passed to the government bypasses the return: it is neither your income nor your expense." },
+      D: { ru: "Включение в выручку без вычета завысило бы прибыль.", en: "Including it in receipts without a deduction would overstate profit." }
+    }
+  },
+  {
+    ru: "Транспортная компания уплатила $34 000 налога на дизельное топливо, использованное в перевозках. Как это отражается?",
+    en: "A haulage company paid $34,000 of tax on diesel fuel used in its operations. How is that reported?",
+    opts: [
+      { k: "A", ru: "Отдельной строкой налогов в Schedule C", en: "As a separate tax line on Schedule C" },
+      { k: "B", ru: "Входит в стоимость топлива и отдельно не вычитается", en: "Included in the cost of the fuel and not deducted separately" },
+      { k: "C", ru: "Не вычитается вовсе", en: "Not deductible at all" },
+      { k: "D", ru: "Капитализируется как часть стоимости транспортных средств", en: "Capitalized into the basis of the vehicles" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Именно этого правило и просит не делать.", en: "That is precisely what the rule asks you not to do." },
+      B: { ru: "Верно. Налоги на бензин, дизельное топливо и другие моторные топлива обычно входят в стоимость топлива. При этом за акциз на топливо, использованное в определённых целях, может полагаться кредит или возврат.", en: "Correct. Taxes on gasoline, diesel and other motor fuels are ordinarily part of the cost of the fuel. A credit or refund of federal excise tax may still be available for fuel used for certain purposes." },
+      C: { ru: "Сумма вычитается — но в составе стоимости топлива.", en: "The amount is deducted — inside the cost of the fuel." },
+      D: { ru: "Топливо расходуется, а не входит в стоимость транспортных средств.", en: "Fuel is consumed; it does not become part of the vehicles’ cost." }
+    }
+  }
+];
+</script>
+</body>
+</html>
