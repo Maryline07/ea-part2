@@ -517,6 +517,21 @@
     writeStore(quizKey(moduleId), JSON.stringify(answers));
   }
 
+  /* Запись ответа бывает двух видов. Строка "B" осталась от списка
+     вопросов в модуле, объект { a: "B", c: 1 } пишет тренажёр, где
+     после выбора спрашивают об уверенности. Читатели понимают оба,
+     поэтому накопленный прогресс не пропадает. */
+
+  function answerOf(value) {
+    if (typeof value === "string") return value;
+    if (value && typeof value.a === "string") return value.a;
+    return null;
+  }
+
+  function confOf(value) {
+    return (value && typeof value.c === "number") ? value.c : null;
+  }
+
   function renderQuiz(lang) {
     var hosts = document.querySelectorAll("[data-quiz]");
     for (var i = 0; i < hosts.length; i++) renderOneQuiz(hosts[i], lang);
@@ -531,8 +546,8 @@
     var html = "";
 
     questions.forEach(function (question, index) {
-      var given = answers[index];
-      var answered = typeof given === "string";
+      var given = answerOf(answers[index]);
+      var answered = given !== null;
 
       html += '<div class="q' + (answered ? " is-answered" : "") + '" data-q="' + index + '">';
       html += '<p class="q__stem"><span class="qnum">' + (index + 1) + "</span>" +
@@ -593,8 +608,8 @@
   function adviceHtml(questions, answers, moduleId) {
     var missed = {}, order = [], any = false;
     questions.forEach(function (question, index) {
-      var given = answers[index];
-      if (typeof given !== "string" || given === question.correct) return;
+      var given = answerOf(answers[index]);
+      if (given === null || given === question.correct) return;
       any = true;
       var sec = question.sec;
       if (!sec) return;
@@ -634,9 +649,10 @@
     var answers = loadAnswers(moduleId);
     var answered = 0, right = 0;
     questions.forEach(function (question, index) {
-      if (typeof answers[index] === "string") {
+      var given = answerOf(answers[index]);
+      if (given !== null) {
         answered++;
-        if (answers[index] === question.correct) right++;
+        if (given === question.correct) right++;
       }
     });
 
@@ -726,6 +742,23 @@
       } catch (e) { /* повреждённая запись игнорируется */ }
     }
   }
+
+  /* ---- Общее с тренажёром --------------------------------------------
+
+     Тренажёр живёт в отдельном файле, но хранилище ответов у него общее
+     со страницей модуля. Второй набор функций чтения разошёлся бы с этим
+     при первой же правке формата записи, поэтому он открывается здесь. */
+
+  window.EA = {
+    read: readStore,
+    write: writeStore,
+    lang: currentLang,
+    loadAnswers: loadAnswers,
+    saveAnswers: saveAnswers,
+    answerOf: answerOf,
+    confOf: confOf,
+    sectionTitle: sectionTitle
+  };
 
   /* ---- Запуск --------------------------------------------------------- */
 

@@ -164,6 +164,279 @@ html[data-lang="en"] span[lang="en"] { display: inline; }
 .topbar nav a:hover { color: var(--accent); text-decoration: underline; }
 .topbar nav a[aria-current="page"] { color: var(--ink); font-weight: 500; }
 
+/* ===================================================================
+   Тренажёр
+
+   Вопрос, варианты и разбор берут готовые классы .q / .opt / .why со
+   страницы модуля: тренажёр — тот же материал в другом режиме, и
+   выглядеть он должен так же. Здесь только то, чего в модуле нет:
+   экран настройки, строка состояния захода и экран итога.
+   =================================================================== */
+
+.trainer > div[hidden] { display: none !important; }
+
+.tr__group { margin: 0 0 2.2rem; }
+.tr__group h2 {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  margin: 0 0 0.7rem;
+}
+
+.tr__group--row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 40em) { .tr__group--row { grid-template-columns: 1fr; gap: 1.6rem; } }
+
+/* --- выбор модулей --- */
+
+.tr__mods { display: grid; border-top: 1px solid var(--rule-hair); }
+
+.tr__mod {
+  display: grid;
+  grid-template-columns: auto 2rem 1fr auto;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.5rem 0.2rem;
+  border-bottom: 1px solid var(--rule-hair);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  cursor: pointer;
+  color: var(--ink-faint);
+}
+.tr__mod.is-on { color: var(--ink); }
+.tr__mod input { margin: 0; accent-color: var(--accent); }
+.tr__mod-no { font-weight: 600; color: inherit; }
+.tr__mod.is-on .tr__mod-no { color: var(--accent); }
+.tr__mod-n { font-size: 0.8rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+
+.tr__modacts { display: flex; gap: 1rem; margin-top: 0.5rem; }
+
+.tr__link {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.tr__link:hover { color: var(--accent); text-decoration: underline; }
+
+/* --- отбор --- */
+
+.tr__filters { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+@media (max-width: 34em) { .tr__filters { grid-template-columns: 1fr; } }
+
+.tr__filter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  text-align: left;
+  padding: 0.55rem 0.8rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  cursor: pointer;
+}
+.tr__filter:hover { border-color: var(--accent); }
+.tr__filter.is-on { border-color: var(--accent); background: var(--accent-pale); font-weight: 500; }
+
+/* Пустая корзина не прячется: ноль рядом с «с ошибкой» — сам по себе ответ. */
+.tr__filter.is-empty { color: var(--ink-faint); }
+.tr__filter-n { font-variant-numeric: tabular-nums; color: var(--ink-faint); }
+.tr__filter.is-on .tr__filter-n { color: var(--accent); }
+
+/* --- объём и порядок --- */
+
+.tr__chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.tr__chip {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  padding: 0.35rem 0.85rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  cursor: pointer;
+}
+.tr__chip:hover { border-color: var(--accent); }
+.tr__chip.is-on { border-color: var(--accent); background: var(--accent-pale); font-weight: 500; }
+
+/* --- запуск --- */
+
+.tr__start {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 2.5rem;
+}
+
+.tr__go {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+}
+.tr__go:hover:not([disabled]) { filter: brightness(1.08); }
+.tr__go[disabled] { opacity: 0.45; cursor: default; }
+.tr__go--quiet { background: none; color: var(--ink); border-color: var(--rule); }
+.tr__go--quiet:hover { border-color: var(--accent); color: var(--accent); }
+
+.tr__will { font-family: var(--sans); font-size: 0.88rem; color: var(--ink-soft); }
+.tr__empty { font-family: var(--sans); color: var(--ink-soft); }
+
+/* --- история заходов --- */
+
+.tr__runs table {
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+.tr__runs th, .tr__runs td {
+  text-align: left;
+  padding: 0.35rem 1.2rem 0.35rem 0;
+  border-bottom: 1px solid var(--rule-hair);
+}
+.tr__runs thead th { color: var(--ink-faint); font-weight: 500; font-size: 0.8rem; }
+.tr__runs-pct { font-variant-numeric: tabular-nums; }
+
+/* --- заход --- */
+
+.run__bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 1.5px solid var(--ink);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+.run__pos { font-weight: 600; }
+.run__tally { display: flex; gap: 0.9rem; font-variant-numeric: tabular-nums; }
+.run__ok { color: var(--accent); }
+.run__no { color: var(--stamp); }
+.run__pct { color: var(--ink-soft); }
+
+.trainer .q { border-bottom: 0; padding-top: 0; }
+.opt.is-picked { border-color: var(--accent); background: var(--accent-pale); }
+
+.run__where {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.9rem 0 0;
+}
+
+.run__acts { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.4rem 0 0; }
+
+.run__flag, .run__sure, .run__next {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.run__flag.is-on { border-color: var(--stamp); color: var(--stamp); background: var(--stamp-pale); }
+.run__sure[disabled] { opacity: 0.4; cursor: default; }
+.run__sure:not([disabled]):hover { border-color: var(--accent); }
+.run__sure--yes:not([disabled]) { border-color: var(--ink); }
+.run__next {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.run__move { display: flex; justify-content: space-between; margin: 1.2rem 0 0; }
+.run__quit { margin: 2.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule-hair); }
+
+/* --- итог --- */
+
+.done__head { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.6rem; }
+
+.done__pct {
+  font-family: var(--sans);
+  font-size: clamp(2.6rem, 9vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.done__lines p { margin: 0 0 0.3rem; font-family: var(--sans); font-size: 0.95rem; }
+.done__sure { color: var(--ink-soft); font-size: 0.87rem !important; max-width: 34em; }
+
+.done__strip { display: flex; gap: 3px; margin: 0 0 2.5rem; flex-wrap: wrap; }
+.done__tick { width: 10px; height: 26px; background: var(--rule); }
+.done__tick.is-ok { background: var(--accent); }
+.done__tick.is-no { background: var(--stamp); }
+.done__tick.is-skip { background: var(--rule); }
+
+.done__secs {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
+.done__secs th, .done__secs td {
+  text-align: left;
+  padding: 0.45rem 0.8rem 0.45rem 0;
+  border-bottom: 1px solid var(--rule-hair);
+  font-weight: 400;
+}
+.done__secs thead th { color: var(--ink-faint); font-size: 0.8rem; }
+.done__secs tbody td { font-variant-numeric: tabular-nums; width: 5.5rem; }
+.done__secs tbody th a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.done__secs tbody th a:hover { border-bottom-color: var(--accent); }
+
+.done__item { border-bottom: 1px solid var(--rule-hair); }
+.done__item > summary {
+  display: grid;
+  grid-template-columns: 1.4rem 1.6rem 1fr;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.6rem 0.2rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  list-style: none;
+}
+.done__item > summary::-webkit-details-marker { display: none; }
+.done__item[open] > summary { font-weight: 500; }
+.done__no { color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.done__stem { color: var(--ink); }
+.done__mark { font-weight: 600; }
+.done__mark.is-ok { color: var(--accent); }
+.done__mark.is-no { color: var(--stamp); }
+.done__mark.is-skip { color: var(--ink-faint); }
+.done__item .q { padding: 0.4rem 0 1.2rem 3rem; }
+@media (max-width: 40em) { .done__item .q { padding-left: 0; } }
+.done__item .opt { cursor: default; }
+
+.done__acts { display: flex; gap: 0.7rem; flex-wrap: wrap; margin: 2.5rem 0 0; }
+
 /* ---------- Список модулей в верхней панели --------------------------
 
    Нативный <details>: открывается щелчком и клавиатурой без единой
