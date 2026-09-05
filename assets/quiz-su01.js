@@ -999,5 +999,23 @@ window.QUIZZES.su01 = [
       C: { ru: "Норма обращена к заказчику. На обязанности исполнителя она не влияет: свой доход он показывает и свои налоги платит по общим правилам.", en: "The provision is addressed to the payer. It does not affect the worker\u2019s own obligations: the worker reports the income and pays tax under the ordinary rules." },
       D: { ru: "Наоборот: подача всех требуемых информационных деклараций в соответствии с обращением как с подрядчиком — третье условие защиты. Не выдал 1099 — защиты нет.", en: "The opposite: filing all required information returns consistently with contractor treatment is the third requirement. No Forms 1099, no relief." }
     }
+  },
+  {
+    sec: "s14",
+    ru: "15 января 2025 года фирма на методе начисления получила $12 000 за обслуживание в течение двадцати четырёх месяцев начиная с 1 февраля 2025 года. Финансовой отчётности у фирмы нет, выбор отсрочки сделан. Как признаётся доход?",
+    en: "On January 15, 2025 an accrual-method firm received $12,000 for twenty-four months of service beginning February 1, 2025. The firm has no applicable financial statement and the deferral election was made. How is the income recognised?",
+    opts: [
+      { k: "A", ru: "$5 500 в 2025 году, $6 000 в 2026 и $500 в 2027 — по мере оказания услуг", en: "$5,500 in 2025, $6,000 in 2026 and $500 in 2027 \u2014 as the services are performed" },
+      { k: "B", ru: "$5 500 в 2025 году и $6 500 в 2026", en: "$5,500 in 2025 and $6,500 in 2026" },
+      { k: "C", ru: "$12 000 в 2025 году: договор длиннее двенадцати месяцев, отсрочка не положена", en: "$12,000 in 2025: the contract runs beyond twelve months, so no deferral is available" },
+      { k: "D", ru: "$12 000 в 2026 году: доход признаётся в году, когда услуги оказаны в основном", en: "$12,000 in 2026: the income belongs to the year in which most of the services are performed" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это и есть проверяемая ошибка. Заработанная часть определяет только сумму года получения; весь остаток включается в следующий год независимо от того, когда услуги будут оказаны. Третьего года у отсрочки не бывает.", en: "This is the error being tested. The earned portion fixes only the amount for the year of receipt; the entire remainder goes into the following year regardless of when the services will be performed. There is no third year to a deferral." },
+      B: { ru: "Верно. За 2025 год заработано одиннадцать месяцев из двадцати четырёх: 12 000 ÷ 24 × 11 = $5 500. Остальные $6 500 включаются в доход 2026 года целиком, хотя часть услуг придётся на 2027-й. Отсрочка — это год получения плюс один налоговый год.", en: "Correct. Eleven of the twenty-four months are earned in 2025: 12,000 \u00f7 24 \u00d7 11 = $5,500. The remaining $6,500 goes into 2026 income in full, even though some of the service falls in 2027. The deferral is the year of receipt plus one tax year." },
+      C: { ru: "Сюда перенесено чужое правило. Двенадцать месяцев — граница из правила о предоплаченных расходах <strong>у плательщика</strong>: она решает, капитализировать расход или вычесть сразу. К отсрочке дохода у получателя она отношения не имеет, и срок договора права на отсрочку не отнимает.", en: "A rule has been imported from elsewhere. Twelve months is the boundary in the prepaid-expense rule that applies to the <strong>payer</strong>: it decides whether the expense is capitalised or deducted at once. It has nothing to do with the recipient\u2019s income deferral, and the length of the contract costs no one that deferral." },
+      D: { ru: "Год получения пропустить нельзя: заработанная в нём часть включается в доход именно тогда. Отложить целиком всю сумму отсрочка не позволяет.", en: "The year of receipt cannot be skipped: the portion earned in it is included then. The deferral never allows the whole amount to be pushed forward." }
+    }
   }
 ];
