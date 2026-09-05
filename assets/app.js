@@ -250,6 +250,108 @@
     }
   }
 
+  /* ---- Переход между модулями ----------------------------------------
+
+     Оба элемента строятся из window.MODULES (assets/modules.js). Если
+     файл не загрузился, ни один из них не появляется, а страница
+     работает по-прежнему: список модулей — удобство, а не опора. */
+
+  function currentModuleId() {
+    return document.body.dataset.module || "";
+  }
+
+  function openModules() {
+    if (!window.MODULES) return [];
+    return window.MODULES.filter(function (module) { return module.open; });
+  }
+
+  /* Выпадающий список в верхней панели. Нативный <details> не требует
+     состояния в JS и открывается с клавиатуры. */
+  function initModuleMenu() {
+    if (!window.MODULES) return;
+    var link = document.querySelector('.topbar nav a[href="index.html"], .topbar nav a[data-page="index"]');
+    if (!link) return;
+
+    var here = currentModuleId();
+    var box = document.createElement("details");
+    box.className = "modmenu";
+
+    var summary = document.createElement("summary");
+    summary.innerHTML =
+      '<span lang="ru">Модули</span><span lang="en">Modules</span>' +
+      '<span class="modmenu__chev" aria-hidden="true">▼</span>';
+    box.appendChild(summary);
+
+    var list = document.createElement("div");
+    list.className = "modmenu__list";
+
+    var html = '<a class="modmenu__all" href="index.html">' +
+               '<span lang="ru">Все модули</span><span lang="en">All modules</span></a>';
+
+    window.MODULES.forEach(function (module) {
+      var name = '<span class="modmenu__no">' + module.no + "</span>" +
+                 '<span lang="ru">' + module.ru + "</span>" +
+                 '<span lang="en">' + module.en + "</span>";
+      if (module.open) {
+        html += '<a href="' + module.id + '.html"' +
+                (module.id === here ? ' aria-current="page"' : "") + ">" + name + "</a>";
+      } else {
+        html += '<span class="modmenu__soon">' + name + "</span>";
+      }
+    });
+
+    list.innerHTML = html;
+    box.appendChild(list);
+    link.parentNode.replaceChild(box, link);
+
+    /* Список закрывается при уходе фокуса и по Escape — иначе он
+       остаётся раскрытым поверх текста после перехода назад. */
+    list.addEventListener("click", function () { box.open = false; });
+    document.addEventListener("click", function (event) {
+      if (box.open && !box.contains(event.target)) box.open = false;
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && box.open) { box.open = false; summary.focus(); }
+    });
+  }
+
+  /* Переход «предыдущий / все / следующий» внизу страницы модуля.
+     Ненаписанные модули пропускаются, поэтому у последнего готового
+     модуля правой стрелки нет. */
+  function initModulePager() {
+    var here = currentModuleId();
+    if (!/^su\d\d$/.test(here)) return;
+
+    var list = openModules();
+    var at = -1;
+    for (var i = 0; i < list.length; i++) if (list[i].id === here) at = i;
+    if (at === -1) return;
+
+    var foot = document.querySelector(".pagefoot");
+    if (!foot) return;
+
+    function side(module, dir) {
+      if (!module) return '<span class="modnav__end"></span>';
+      var arrow = dir < 0 ? "← " : "";
+      var tail = dir > 0 ? " →" : "";
+      return '<a class="modnav__step" href="' + module.id + '.html">' +
+             '<span class="modnav__no">' + arrow + module.no + tail + "</span>" +
+             '<span lang="ru">' + module.ru + "</span>" +
+             '<span lang="en">' + module.en + "</span></a>";
+    }
+
+    var nav = document.createElement("nav");
+    nav.className = "modnav";
+    nav.setAttribute("aria-label", "Соседние модули");
+    nav.innerHTML =
+      side(list[at - 1], -1) +
+      '<a class="modnav__all" href="index.html">' +
+      '<span lang="ru">Все модули</span><span lang="en">All modules</span></a>' +
+      side(list[at + 1], 1);
+
+    foot.parentNode.insertBefore(nav, foot);
+  }
+
   /* ---- Оглавление на узком экране ------------------------------------
 
      Оглавление не дублируется: тот же <nav class="toc"> служит и боковой
@@ -624,6 +726,8 @@
   function start() {
     initLangSwitch();
     initThemeSwitch();
+    initModuleMenu();
+    initModulePager();
     buildReference();
     fillXref();
     initQuiz();

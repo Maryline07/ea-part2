@@ -22,6 +22,7 @@
 !exam-map.html
 !sources.html
 !su[0-9][0-9].html
+!trainer.html
 !build_artifact.py
 
 # --- assets: open the directory, then allow files one by one ----------
@@ -29,7 +30,10 @@
 assets/*
 !assets/style.css
 !assets/app.js
+!assets/modules.js
+!assets/trainer.js
 !assets/figures-2025.js
+!assets/quiz-su[0-9][0-9].js
 
 # =====================================================================
 #  Hard bans. Listed last so they win over every "!" rule above.
