@@ -963,5 +963,41 @@ window.QUIZZES.su01 = [
       C: { ru: "С работника взыскивать нечего: налог у него уже удержан, и в его декларации он засчитывается как уплаченный. Потерял деньги бюджет, а не работник.", en: "There is nothing to collect from the employee: the tax was already withheld and is credited as paid on their return. It is the Treasury that lost the money, not the employee." },
       D: { ru: "Нужны оба условия сразу — полномочия и умышленность. Работник без права распоряжаться средствами ответственным лицом не является.", en: "Both requirements must hold at once \u2014 authority and willfulness. An employee with no power over the funds is not a responsible person." }
     }
+  },
+  {
+    sec: "s13",
+    ru: "Компания четыре года держала мастера в штате, затем уволила его и через месяц заключила с ним договор подряда на разовый проект: твёрдая сумма, свой инструмент, свой график, указаний по способу работы нет. Как это оценивается?",
+    en: "A company carried a technician on its payroll for four years, laid him off, and a month later engaged him under a contract for a one-off project: a flat fee, his own tools, his own schedule, no direction as to how the work is done. How is this assessed?",
+    opts: [
+      { k: "A", ru: "Он остаётся работником: закон не позволяет перевести бывшего работника в подрядчики раньше установленного срока", en: "He remains an employee: the law bars converting a former employee to contractor before a set period has passed" },
+      { k: "B", ru: "Он подрядчик, но компания лишилась защиты по разделу 530 на случай спора о классификации", en: "He is a contractor, but the company has lost section 530 relief should the classification be challenged" },
+      { k: "C", ru: "Он подрядчик, и прошлое трудоустройство не влечёт для компании никаких последствий", en: "He is a contractor, and the past employment carries no consequences for the company" },
+      { k: "D", ru: "Он работник, поскольку выполняет ту же работу, что и раньше", en: "He is an employee, because he does the same work he did before" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Такого срока в федеральном налоговом праве нет вовсе. Периода ожидания между увольнением и договором подряда закон не устанавливает; уволенный может стать подрядчиком той же компании хоть на следующий день.", en: "No such period exists in federal tax law at all. There is no waiting time between a layoff and a contract engagement; a laid-off worker may become a contractor to the same company the very next day." },
+      B: { ru: "Верно. Статус решает тест контроля, и по нему это подрядчик: твёрдая сумма, свой инструмент, свой график, указаний по способу работы нет. Но второе условие раздела 530 требует, чтобы заказчик не относил к работникам никого со <strong>по существу сходной должности</strong> начиная с 1978 года. Компания сама держала этого человека в штате, значит защиты у неё нет: если классификацию оспорят, налоги придётся уплатить полностью.", en: "Correct. Status turns on the control test, and under it this is a contractor: a flat fee, his own tools, his own schedule, no direction as to method. But the second section 530 requirement is that the payer treated no one in a <strong>substantially similar position</strong> as an employee in any period after 1977. The company itself carried this person on its payroll, so the relief is unavailable: if the classification is challenged, the taxes are payable in full." },
+      C: { ru: "Вывод о статусе верен, а последствия есть. Прошлое трудоустройство отсекает компанию от защиты по разделу 530 — риск спора для неё существенно выше обычного.", en: "The status conclusion is right, but there are consequences. The past employment cuts the company off from section 530 relief, so its exposure in a dispute is materially higher than usual." },
+      D: { ru: "Совпадение содержания работы само по себе ничего не решает. Проверяют не что делается, а кто вправе указывать, <strong>как</strong> это делать, — и здесь такого права у компании нет.", en: "Doing the same work decides nothing by itself. What is examined is not what is done but who has the right to direct <strong>how</strong> it is done \u2014 and here the company has no such right." }
+    }
+  },
+  {
+    sec: "s13",
+    ru: "Что даёт заказчику защита по разделу 530 Закона о доходах 1978 года?",
+    en: "What does relief under section 530 of the Revenue Act of 1978 give the payer?",
+    opts: [
+      { k: "A", ru: "Признаёт исполнителя подрядчиком, даже если по общему праву он работник", en: "It makes the worker a contractor even where the common-law rules say employee" },
+      { k: "B", ru: "Освобождает заказчика от налогов на занятость по этому исполнителю, не меняя его статуса по общему праву", en: "It relieves the payer of employment taxes for that worker without changing the worker\u2019s common-law status" },
+      { k: "C", ru: "Освобождает исполнителя от налога на самозанятость", en: "It relieves the worker of self-employment tax" },
+      { k: "D", ru: "Даёт заказчику право не выдавать формы 1099", en: "It lets the payer skip furnishing Forms 1099" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Статус норма не меняет. Она обращена к последствиям: исполнитель по общему праву может оставаться работником, а налоги с заказчика при этом не взыскиваются.", en: "The provision does not change status. It addresses consequences: the worker may remain an employee under the common-law rules while the taxes are still not collected from the payer." },
+      B: { ru: "Верно. Раздел 530 — норма о защите, а не о классификации. При соблюдении трёх условий — разумное основание, последовательность по существу и последовательность в отчётности — заказчик не платит налоги на занятость за прошедшие годы, хотя по общему праву исполнитель мог быть работником.", en: "Correct. Section 530 is a relief provision, not a classification rule. Where the three requirements hold \u2014 reasonable basis, substantive consistency and reporting consistency \u2014 the payer does not pay employment taxes for the past years, even though the worker may have been an employee under the common-law rules." },
+      C: { ru: "Норма обращена к заказчику. На обязанности исполнителя она не влияет: свой доход он показывает и свои налоги платит по общим правилам.", en: "The provision is addressed to the payer. It does not affect the worker\u2019s own obligations: the worker reports the income and pays tax under the ordinary rules." },
+      D: { ru: "Наоборот: подача всех требуемых информационных деклараций в соответствии с обращением как с подрядчиком — третье условие защиты. Не выдал 1099 — защиты нет.", en: "The opposite: filing all required information returns consistently with contractor treatment is the third requirement. No Forms 1099, no relief." }
+    }
   }
 ];
