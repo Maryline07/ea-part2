@@ -27,6 +27,7 @@ window.QUIZSECS.su05 = {
 
 window.QUIZZES.su05 = [
   {
+    sec: "s51",
     ru: "Инженер живёт в Портленде, а его единственное постоянное место работы — в Сиэтле, где он снимает квартиру и проводит рабочую неделю. Каждые выходные он ездит домой. Что вычитается?",
     en: "An engineer lives in Portland while his only regular workplace is in Seattle, where he rents a flat and spends the working week. He drives home every weekend. What is deductible?",
     opts: [
@@ -44,6 +45,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Водитель выехал в 5 утра, доставил груз за 400 миль, поспал четыре часа в мотеле и вернулся вечером того же дня. Считается ли он находившимся в отъезде?",
     en: "A driver left at 5 a.m., delivered a load 400 miles away, slept four hours at a motel and returned the same evening. Was he away from home?",
     opts: [
@@ -61,6 +63,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Специалиста направили на объект в другой штат. Изначально работа планировалась на 10 месяцев, но на восьмом месяце срок продлили ещё на год, и он остался. Как учитываются расходы на поездку?",
     en: "A specialist was posted to a site in another state. The job was planned for 10 months, but in the eighth month it was extended by another year and he stayed. How are travel expenses treated?",
     opts: [
@@ -78,6 +81,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "У консультанта есть постоянный офис в городе. В понедельник он поехал из дома прямо к клиенту на другом конце города, а оттуда в свой офис. Что вычитается?",
     en: "A consultant has a regular office in town. On Monday he drove from home straight to a client across town, and from there to his office. What is deductible?",
     opts: [
@@ -95,6 +99,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Владелец использует стандартную ставку за милю. За 2025 год деловой пробег — 14 200 миль. Кроме того, уплачено $1 900 страховки по автомобилю и $640 за замену масла. Какой вычет по автомобилю?",
     en: "An owner uses the standard mileage rate. Business mileage for 2025 is 14,200. He also paid $1,900 of car insurance and $640 for oil changes. What is the car deduction?",
     opts: [
@@ -112,6 +117,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Владелец использовал автомобиль в бизнесе с первого года по фактическим расходам. На третий год он хочет перейти на стандартную ставку. Возможно ли это?",
     en: "An owner used the car in business from the first year on the actual expense method. In the third year he wants to switch to the standard mileage rate. Is that possible?",
     opts: [
@@ -129,6 +135,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Счёт из ресторана: ужин с клиентом $180 и билеты на концерт $220, всё выделено в счёте отдельными строками. Какой вычет?",
     en: "A bill shows dinner with a client of $180 and concert tickets of $220, each stated separately. What is the deduction?",
     opts: [
@@ -146,6 +153,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Командировка на три дня: перелёт $520, гостиница $690, питание $300, конференционный сбор $450. Какова общая сумма вычета?",
     en: "A three-day trip: airfare $520, hotel $690, meals $300, conference fee $450. What is the total deduction?",
     opts: [
@@ -163,6 +171,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Ужин с клиентом обошёлся в $340 в дорогом ресторане отеля. Деловые вопросы обсуждались весь вечер. Что вычитается?",
     en: "Dinner with a client cost $340 at an expensive hotel restaurant. Business was discussed all evening. What is deductible?",
     opts: [
@@ -180,6 +189,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s52",
     ru: "Клиенту подарена ваза за $70; упаковка и доставка обошлись в $22. Какова сумма вычета?",
     en: "A client was given a $70 vase; packaging and delivery cost $22. What is the deduction?",
     opts: [
@@ -197,6 +207,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s52",
     ru: "Поставщик подарил корзину фруктов за $40, из которых $28 приходится на декоративную корзину, а $12 — на фрукты. Какова сумма вычета?",
     en: "A supplier gave a $40 fruit basket, of which $28 was the ornamental basket and $12 the fruit. What is the deduction?",
     opts: [
@@ -214,6 +225,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s52",
     ru: "Компания подарила заказчику — юридическому лицу — набор стоимостью $300, прямо предназначенный его директору для личного пользования. Какова сумма вычета?",
     en: "A company gave a corporate customer a $300 set expressly intended for its director’s personal use. What is the deduction?",
     opts: [
@@ -231,6 +243,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s53",
     ru: "Какая из страховок НЕ вычитается?",
     en: "Which of these insurance premiums is NOT deductible?",
     opts: [
@@ -248,6 +261,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s53",
     ru: "Компания застраховала жизнь ключевого сотрудника и назначила выгодоприобретателем саму себя. Вычитаются ли премии?",
     en: "A company insured a key employee’s life and named itself the beneficiary. Are the premiums deductible?",
     opts: [
@@ -265,6 +279,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s53",
     ru: "Компания не смогла застраховать один из своих рисков и ежегодно относит $50 000 в собственный резерв самострахования. Что вычитается?",
     en: "A company could not insure one of its risks and each year credits $50,000 to a self-insurance reserve. What is deductible?",
     opts: [
@@ -282,6 +297,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s53",
     ru: "Самозанятый уплатил $9 600 за медицинскую страховку для себя и семьи. Его чистая прибыль от самозанятости $70 000; правом участвовать в плане работодателя супруги он не располагал. Где вычитается страховка?",
     en: "A self-employed taxpayer paid $9,600 for health insurance for himself and his family. Net profit from self-employment is $70,000 and he was not eligible for a spouse’s employer plan. Where is the premium deducted?",
     opts: [
@@ -299,6 +315,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s54",
     ru: "Владелец на методе начисления признал доход $22 000 по счёту в 2024 году. В 2025 году заказчик обанкротился, и долг стал полностью безнадёжным. Как это отражается?",
     en: "An accrual-method owner recognised $22,000 of income on an invoice in 2024. In 2025 the customer went bankrupt and the debt became wholly worthless. How is that reported?",
     opts: [
@@ -316,6 +333,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s54",
     ru: "Владелец бизнеса одолжил $15 000 соседу под расписку на личные нужды соседа. Долг стал полностью безнадёжным. Как он вычитается?",
     en: "A business owner lent $15,000 to a neighbour on a note for the neighbour’s personal purposes. The debt became wholly worthless. How is it deducted?",
     opts: [
@@ -333,6 +351,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s54",
     ru: "Деловой долг стал безнадёжным наполовину: должник рассчитался частично и объявил о реструктуризации. Можно ли списать безнадёжную половину сейчас?",
     en: "A business debt became half worthless: the debtor paid part and announced a restructuring. May the worthless half be written off now?",
     opts: [
@@ -350,6 +369,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s54",
     ru: "Мастер на кассовом методе выставил счёт на $6 800, заказчик исчез. Какой вычет по безнадёжному долгу?",
     en: "A cash-method tradesman invoiced $6,800 and the customer vanished. What bad debt deduction is available?",
     opts: [
@@ -367,6 +387,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s55",
     ru: "Компания уплатила $6 000 неустойки заказчику за срыв срока и $6 000 штрафа надзорному ведомству. Что вычитается?",
     en: "A company paid $6,000 of contractual damages to a customer for missing a deadline and a $6,000 fine to a regulator. What is deductible?",
     opts: [
@@ -384,6 +405,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s55",
     ru: "Бухгалтер оплатил курсы: $2 400 на повышение квалификации по налогообложению и $9 000 на программу подготовки к экзамену адвоката. Что вычитается?",
     en: "An accountant paid for courses: $2,400 of continuing tax education and $9,000 for a bar exam preparation programme. What is deductible?",
     opts: [
@@ -401,6 +423,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s55",
     ru: "Перед открытием ресторана потрачено $62 000 на исследования, обучение персонала и подбор помещения. Ресторан открылся 1 декабря 2025 года. Какой вычет за 2025 год?",
     en: "Before opening a restaurant, $62,000 was spent on research, staff training and finding premises. It opened on December 1, 2025. What is the 2025 deduction?",
     opts: [
@@ -418,6 +441,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s55",
     ru: "Компания вернула заказчику $18 000, полученных и обложенных в прошлом году, поскольку услуга была оказана ненадлежаще. Как учитывается возврат?",
     en: "A company refunded $18,000 to a customer, received and taxed in a prior year, because the service was defective. How is the refund treated?",
     opts: [
@@ -435,6 +459,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s55",
     ru: "Что из перечисленного вычитается?",
     en: "Which of the following is deductible?",
     opts: [
@@ -452,6 +477,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s56",
     ru: "Комната площадью 180 кв. футов используется исключительно и регулярно как основное место деятельности. Дом — 1 500 кв. футов. Косвенные расходы за год $14 000. Что даст упрощённый метод и что фактический?",
     en: "A 180 square foot room is the principal place of business, used regularly and for nothing else. The house is 1,500 square feet. Indirect expenses for the year are $14,000. What do the simplified and actual methods give?",
     opts: [
@@ -469,6 +495,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s56",
     ru: "Владелец выбрал упрощённый метод. Валовой доход от деятельности за вычетом прочих расходов составил $800, а расчёт по упрощённому методу дал $1 500. Что происходит с разницей?",
     en: "An owner elected the simplified method. Gross income from the activity less other expenses was $800, while the simplified computation gave $1,500. What happens to the difference?",
     opts: [
@@ -486,6 +513,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s56",
     ru: "Электрик работает у клиентов, а дома в отдельной комнате ведёт всю бухгалтерию, выписывает счета и заказывает материалы. Другого офиса нет. Полагается ли вычет по домашнему офису?",
     en: "An electrician works at clients’ premises and keeps all the books, invoicing and ordering in a separate room at home. There is no other office. Is a home office deduction available?",
     opts: [
@@ -503,6 +531,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s56",
     ru: "Продавец хранит товарные запасы в гараже, который использует также для личного автомобиля. Полагается ли вычет по этой площади?",
     en: "A retailer stores inventory in a garage also used for the family car. Is a deduction available for that space?",
     opts: [
@@ -520,6 +549,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Одинокий владелец кафе: квалифицированный доход $120 000, налогооблагаемый доход $118 000, чистого прироста капитала нет, зарплата работникам $40 000. Какой вычет QBI?",
     en: "A single café owner: qualified business income $120,000, taxable income $118,000, no net capital gain, wages to employees $40,000. What is the QBI deduction?",
     opts: [
@@ -537,6 +567,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Врач подаёт декларацию как одинокий. Налогооблагаемый доход $310 000, квалифицированный доход $280 000. Какой вычет QBI?",
     en: "A doctor files as single. Taxable income is $310,000 and qualified business income $280,000. What is the QBI deduction?",
     opts: [
@@ -554,6 +585,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Что НЕ входит в квалифицированный доход бизнеса?",
     en: "Which of the following is NOT qualified business income?",
     opts: [
@@ -571,6 +603,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Владелец превысил верхнюю границу диапазона. Бизнес не относится к специальным услугам: зарплата по W-2 составила $90 000, первоначальная стоимость квалифицированного имущества $1 200 000. Каков предел вычета по этому бизнесу?",
     en: "An owner is above the top of the range. The business is not a specified service: W-2 wages are $90,000 and the unadjusted basis of qualified property is $1,200,000. What is the limit for this business?",
     opts: [
@@ -588,6 +621,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Уменьшает ли вычет QBI базу налога на самозанятость?",
     en: "Does the QBI deduction reduce the self-employment tax base?",
     opts: [
@@ -605,6 +639,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s57",
     ru: "Одинокий владелец мастерской: квалифицированный доход $210 000, налогооблагаемый доход $205 000. Зарплаты работникам нет, имущества почти нет. Как считается вычет?",
     en: "A single workshop owner: qualified business income $210,000, taxable income $205,000. There are no employee wages and almost no property. How is the deduction computed?",
     opts: [
@@ -622,6 +657,7 @@ window.QUIZZES.su05 = [
     }
   },
   {
+    sec: "s51",
     ru: "Питание в командировке можно считать двумя способами. Какими?",
     en: "Meals on a business trip may be figured in two ways. Which?",
     opts: [

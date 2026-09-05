@@ -24,6 +24,7 @@ window.QUIZSECS.su02 = {
 
 window.QUIZZES.su02 = [
   {
+    sec: "s22",
     ru: "Чистая прибыль по Schedule C составила $60 000, заработной платы нет. Какова база для расчёта налога на самозанятость?",
     en: "Net profit on Schedule C is $60,000 and there are no wages. What is the base for computing self-employment tax?",
     opts: [
@@ -41,6 +42,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Чистый заработок от самозанятости составил $190 000, заработной платы нет. Как считается социальная часть налога?",
     en: "Net earnings from self-employment are $190,000 with no wages. How is the social security portion computed?",
     opts: [
@@ -58,6 +60,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Какое утверждение о вычете половины налога на самозанятость верно?",
     en: "Which statement about the deduction for one half of the self-employment tax is correct?",
     opts: [
@@ -75,6 +78,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "Сантехник получил от частных заказчиков $8 400 наличными и ни одной формы 1099-NEC. Что он показывает в декларации?",
     en: "A plumber received $8,400 in cash from private customers and no Form 1099-NEC. What does he report?",
     opts: [
@@ -92,6 +96,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "Столяр изготовил мебель для юриста, а юрист взамен оформил ему договоры. Обычная цена работ каждого — $4 000. Каковы последствия?",
     en: "A carpenter built furniture for a lawyer, and the lawyer drafted contracts in return. Each service is normally worth $4,000. What are the consequences?",
     opts: [
@@ -109,6 +114,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Что из перечисленного НЕ входит в базу налога на самозанятость?",
     en: "Which of the following is NOT included in the self-employment tax base?",
     opts: [
@@ -126,6 +132,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s23",
     ru: "Незамужняя женщина имеет заработную плату $210 000 и чистый заработок от самозанятости $30 000. С какой суммы взимается дополнительный налог Medicare?",
     en: "A single taxpayer has $210,000 of wages and $30,000 of net earnings from self-employment. On what amount is the Additional Medicare Tax imposed?",
     opts: [
@@ -143,6 +150,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер получил выплату по страхованию урожая в 2025 году из-за градобоя. Обычно урожай продаётся в следующем году. Что он вправе сделать?",
     en: "A farmer received crop insurance proceeds in 2025 after hail damage. The crop is normally sold in the following year. What may the farmer do?",
     opts: [
@@ -160,6 +168,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Валовой доход налогоплательщика за 2025 год: ферма $70 000, аренда квартиры $32 000. Применим ли особый порядок расчётного налога для фермеров?",
     en: "A taxpayer’s 2025 gross income: farming $70,000 and apartment rent $32,000. Does the special estimated tax rule for farmers apply?",
     opts: [
@@ -177,6 +186,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Владелец земли сдаёт её фермеру за долю урожая и в управлении не участвует. Как отражается доход?",
     en: "A landowner rents farmland for a share of the crop and does not participate in management. How is the income reported?",
     opts: [
@@ -194,6 +204,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер продал выращенный им скот за $45 000. Какая сумма является доходом?",
     en: "A farmer sold livestock he raised for $45,000. How much is income?",
     opts: [
@@ -211,6 +222,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Какое утверждение об усреднении дохода по Schedule J верно?",
     en: "Which statement about income averaging on Schedule J is correct?",
     opts: [
@@ -228,6 +240,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Чистый заработок от самозанятости составил $410. Какие обязанности возникают?",
     en: "Net earnings from self-employment are $410. What obligations arise?",
     opts: [
@@ -245,6 +258,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "Ресторан списал долг поставщику: поставщик простил $12 000 задолженности. Налогоплательщик платёжеспособен и в банкротстве не находится. Каковы последствия?",
     en: "A restaurant’s supplier forgave $12,000 of debt. The taxpayer is solvent and not in bankruptcy. What are the consequences?",
     opts: [
@@ -262,6 +276,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Какая часть налога на самозанятость не имеет предела базы?",
     en: "Which portion of the self-employment tax has no base limit?",
     opts: [
@@ -279,6 +294,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Индивидуальный предприниматель получил $6 000 процентов по банковскому вкладу, открытому на средства бизнеса. Как это влияет на налог на самозанятость?",
     en: "A sole proprietor received $6,000 of interest on a bank account holding business funds. How does this affect self-employment tax?",
     opts: [
@@ -296,6 +312,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Пенсионер 70 лет получает социальное пособие и подрабатывает консультантом с чистым заработком $25 000. Платит ли он налог на самозанятость?",
     en: "A 70-year-old retiree draws social security and consults on the side with $25,000 of net earnings. Does self-employment tax apply?",
     opts: [
@@ -313,6 +330,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Что показывает форма 1099-G фермеру?",
     en: "What does a farmer’s Form 1099-G report?",
     opts: [
@@ -330,6 +348,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "За год получено: зарплата от собственной S-корпорации $12 000, её распределяемая прибыль $34 000, гонорар члена совета директоров $3 500 и страховая выплата за упущенный доход от прекращения деятельности $7 600. Каков чистый заработок от самозанятости?",
     en: "For the year: $12,000 salary from your own S corporation, $34,000 of its distributive income, a $3,500 director’s fee, and $7,600 of insurance for income lost when a business ceased. What are net earnings from self-employment?",
     opts: [
@@ -347,6 +366,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Чей доход от аренды недвижимости облагается налогом на самозанятость?",
     en: "Whose rental income from real estate is subject to self-employment tax?",
     opts: [
@@ -364,6 +384,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s22",
     ru: "Что из перечисленного уменьшает базу налога на самозанятость?",
     en: "Which of the following reduces the self-employment tax base?",
     opts: [
@@ -381,6 +402,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "В 2024 году бизнес на методе начисления вычел безнадёжный долг $11 000; год закончен с прибылью. В 2025 году взыскано $6 800. Как отражается взыскание?",
     en: "In 2024 an accrual-basis business deducted an $11,000 bad debt and ended the year profitable. In 2025 it recovered $6,800. How is the recovery reported?",
     opts: [
@@ -398,6 +420,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "Заёмщик взял в банке $20 000 на покупку станка. Банк продавцом станка не был. Позже банк, при том что заёмщик платёжеспособен, уменьшил долг на $10 000. Что происходит?",
     en: "A borrower took a $20,000 bank loan to buy a machine. The bank was not the seller. Later, while the borrower was solvent, the bank reduced the debt by $10,000. What follows?",
     opts: [
@@ -415,6 +438,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер продал выращенную трёхлетнюю молочную корову за $1 450, заплатив $130 за доставку и комиссию. Как отражается сделка?",
     en: "A farmer sold a raised three-year-old dairy cow for $1,450, paying $130 in shipping and commissions. How is the sale reported?",
     opts: [
@@ -432,6 +456,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер продал сена на $37 500, племенных коров на $19 800, получил кооперативные выплаты $268, помощь на корма $940 и $2 150 за прессование сена у соседа. Какая сумма идёт в Schedule F?",
     en: "A farmer sold $37,500 of hay and $19,800 of breeding cows, and received $268 of patronage dividends, $940 of feed assistance and $2,150 for custom baling on a neighbour’s land. What goes on Schedule F?",
     opts: [
@@ -449,6 +474,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Какое условие не требуется для отсрочки дохода по §451(g) при вынужденной погодной продаже скота?",
     en: "Which condition is NOT required for the section 451(g) postponement on a weather-forced sale of livestock?",
     opts: [
@@ -466,6 +492,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер на кассовом методе обычно продаёт 150 голов коз в год. Из-за засухи в 2025 году продано 180 голов на $27 000, местность объявлена зоной бедствия. Какую сумму можно отложить на 2026 год?",
     en: "A cash-method farmer normally sells 150 goats a year. Because of drought, 180 were sold in 2025 for $27,000 and the area was declared a disaster area. How much may be postponed to 2026?",
     opts: [
@@ -483,6 +510,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Чем §1033(e) отличается от §451(g) при продаже скота из-за погоды?",
     en: "How does section 1033(e) differ from section 451(g) on a weather-related sale of livestock?",
     opts: [
@@ -500,6 +528,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер обязан внести расчётный налог. Налог за 2025 год составит $30 000, в декларации за 2024 год показано $19 000. Каков обязательный годовой платёж?",
     en: "A qualified farmer must pay estimated tax. The 2025 tax will be $30,000 and the 2024 return showed $19,000. What is the required annual payment?",
     opts: [
@@ -517,6 +546,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Что не входит в валовой доход от фермерства при проверке доли в две трети?",
     en: "Which is NOT gross income from farming for the two-thirds test?",
     opts: [
@@ -534,6 +564,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Кто вправе применить усреднение дохода по Schedule J?",
     en: "Who may use income averaging on Schedule J?",
     opts: [
@@ -551,6 +582,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s24",
     ru: "Фермер на кассовом методе в декабре 2025 года купил удобрений на $7 500 для внесения в 2026 году. Прочие вычитаемые фермерские расходы 2025 года — $9 000. В прошлые годы предоплата у него тоже превышала обычную. Когда вычитаются удобрения?",
     en: "In December 2025 a cash-method farmer bought $7,500 of fertiliser to be applied in 2026. Other deductible farm expenses for 2025 were $9,000, and prepayments exceeded the norm in earlier years too. When is the fertiliser deductible?",
     opts: [
@@ -569,6 +601,7 @@ window.QUIZZES.su02 = [
 
   },
   {
+    sec: "s21",
     ru: "Владелец бизнеса на кассовом методе поручил заказчику перечислить $12 000 за уже выполненную работу напрямую банку — в погашение личного кредита владельца. Заказчик так и сделал. Как отражается сумма?",
     en: "A cash-method business owner directed a client to send $12,000 for work already done straight to a bank, to pay down the owner’s personal loan. The client did so. How is the amount reported?",
     opts: [
@@ -586,6 +619,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "В марте владелец подарил совершеннолетней дочери сдаваемое в аренду оборудование вместе с договором аренды. Арендная плата за январь—март составила $6 000, за апрель—декабрь — $18 000. Как распределяется доход?",
     en: "In March an owner gave an adult daughter a piece of leased equipment together with the lease. Rent for January–March was $6,000 and for April–December $18,000. How is the income split?",
     opts: [
@@ -603,6 +637,7 @@ window.QUIZZES.su02 = [
     }
   },
   {
+    sec: "s21",
     ru: "По условиям договора арендатор уплатил за арендодателя страховой взнос $3 400 в январе 2026 года. Счёт был выставлен арендодателю в ноябре 2025 года. Арендодатель применяет кассовый метод. Когда сумма попадает в его валовую выручку?",
     en: "Under the lease the tenant paid a $3,400 insurance premium on the landlord’s behalf in January 2026. The bill had been issued to the landlord in November 2025. The landlord uses the cash method. When does the amount enter gross receipts?",
     opts: [

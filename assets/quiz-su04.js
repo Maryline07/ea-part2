@@ -25,6 +25,7 @@ window.QUIZSECS.su04 = {
 
 window.QUIZZES.su04 = [
   {
+    sec: "s41",
     ru: "Какое утверждение о требовании «обычный и необходимый» верно?",
     en: "Which statement about the “ordinary and necessary” requirement is correct?",
     opts: [
@@ -42,6 +43,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s41",
     ru: "В ноябре 2025 года уплачено $18 000 за трёхлетнее обслуживание оборудования с декабря 2025 по ноябрь 2028 года. Сколько вычитается за 2025 год у налогоплательщика на кассовом методе?",
     en: "In November 2025, $18,000 was paid for three years of equipment servicing running December 2025 to November 2028. How much is deductible for 2025 by a cash-method taxpayer?",
     opts: [
@@ -59,6 +61,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s41",
     ru: "Что из перечисленного вычитается как деловой расход?",
     en: "Which of the following is deductible as a business expense?",
     opts: [
@@ -76,6 +79,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s41",
     ru: "Ресторан заплатил $4 500 штрафа санитарной службе за нарушение правил хранения продуктов и $2 800 адвокату, защищавшему его в этом деле. Что вычитается?",
     en: "A restaurant paid a $4,500 fine to the health authority for breaching food storage rules and $2,800 to the lawyer who defended it. What is deductible?",
     opts: [
@@ -93,6 +97,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s41",
     ru: "Компания потратила $23 000 на замену изношенной кровли склада и $1 900 на устранение течи в одном месте той же кровли годом ранее. Как учитываются эти суммы?",
     en: "A company spent $23,000 replacing the worn roof of its warehouse and, a year earlier, $1,900 fixing a single leak in that roof. How are the amounts treated?",
     opts: [
@@ -110,6 +115,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s41",
     ru: "Компания урегулировала спор о домогательствах, выплатив $90 000, и включила в соглашение условие о неразглашении. Гонорар юристов по этому делу — $15 000. Что вычитается?",
     en: "A company settled a harassment claim for $90,000 and included a nondisclosure clause in the agreement. Legal fees on the matter were $15,000. What is deductible?",
     opts: [
@@ -127,6 +133,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Какое условие НЕ требуется для вычета оплаты труда работника?",
     en: "Which condition is NOT required for deducting an employee’s pay?",
     opts: [
@@ -144,6 +151,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Владелец кафе, действующего как индивидуальное предприятие, перечислил себе $52 000 и оформил на себя W-2. Что он вычитает в Schedule C?",
     en: "The owner of a café operated as a sole proprietorship transferred $52,000 to himself and issued himself a Form W-2. What does he deduct on Schedule C?",
     opts: [
@@ -161,6 +169,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Магазин выдал продавцу аванс $3 000 и в том же году решил не требовать его назад, поскольку продавец отработал сезон. Как это учитывается у магазина?",
     en: "A shop advanced $3,000 to a salesperson and later that year decided not to seek repayment, since the salesperson had worked the season. How does the shop treat it?",
     opts: [
@@ -178,6 +187,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Компания на методе начисления начислила в декабре 2025 года премию $40 000 своему единственному акционеру, работающему в ней; акционер на кассовом методе, выплата произведена в июле 2026 года. Когда вычитается премия?",
     en: "An accrual-method company accrued a $40,000 bonus in December 2025 to its sole shareholder-employee, who is on the cash method; the bonus was paid in July 2026. When is it deductible?",
     opts: [
@@ -195,6 +205,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Владелец мастерской платит сыну-студенту $28 000 в год за работу приёмщиком; на рынке такая работа стоит около $27 000, сын действительно работает полный день. Что вычитается?",
     en: "A workshop owner pays his student son $28,000 a year as a service adviser; the market rate for the role is about $27,000 and the son genuinely works full time. What is deductible?",
     opts: [
@@ -212,6 +223,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Что из перечисленного НЕ является дополнительной льготой работнику?",
     en: "Which of the following is NOT a fringe benefit?",
     opts: [
@@ -229,6 +241,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s42",
     ru: "Компания передала работнику в счёт вознаграждения оборудование рыночной стоимостью $9 000; её база в оборудовании — $5 500. Какую сумму компания вычитает как оплату труда?",
     en: "A company transferred equipment worth $9,000 to an employee as compensation; its basis in the equipment is $5,500. How much does it deduct as pay?",
     opts: [
@@ -246,6 +259,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s43",
     ru: "Предприниматель взял в банке $80 000: $60 000 потрачены на оборудование мастерской, $20 000 — на семейный отпуск. За год уплачено $6 400 процентов. Сколько идёт в Schedule C?",
     en: "A proprietor borrowed $80,000: $60,000 went on workshop equipment and $20,000 on a family holiday. Interest for the year was $6,400. How much goes on Schedule C?",
     opts: [
@@ -263,6 +277,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s43",
     ru: "Предприниматель заложил станки своей мастерской и все полученные средства направил на покупку дачи для семьи. Как учитываются проценты по этому займу?",
     en: "A proprietor pledged his workshop machinery and spent all the proceeds buying a holiday house for the family. How is the interest treated?",
     opts: [
@@ -280,6 +295,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s43",
     ru: "Самозанятый уплатил $1 800 процентов по автокредиту; автомобиль используется на 40% в бизнесе. Он заявил личную долю как проценты по квалифицированному автозайму в Schedule 1-A. Что он вправе поставить в Schedule C?",
     en: "A self-employed taxpayer paid $1,800 of car loan interest; the car is 40% business. He claimed the personal share as qualified passenger vehicle loan interest on Schedule 1-A. What may he put on Schedule C?",
     opts: [
@@ -297,6 +313,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s43",
     ru: "Какое изменение действует при расчёте лимита вычета деловых процентов за налоговые годы, начинающиеся в 2025 году?",
     en: "What change applies in figuring the business interest limitation for tax years beginning in 2025?",
     opts: [
@@ -314,6 +331,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s43",
     ru: "Предприниматель уплатил IRS $1 400 процентов на недоплаченный подоходный налог, возникший из-за занижения прибыли по Schedule C, и $900 процентов по кредиту на закупку товара. Что идёт в Schedule C?",
     en: "A proprietor paid the IRS $1,400 of interest on an income tax underpayment caused by understated Schedule C profit, and $900 of interest on a loan used to buy inventory. What goes on Schedule C?",
     opts: [
@@ -331,6 +349,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Договор на погрузчик: 60 месячных платежей по $1 200, по окончании срока право собственности переходит к плательщику без дополнительной оплаты. Как учитываются платежи?",
     en: "A forklift agreement calls for 60 monthly payments of $1,200, after which title passes to the payer at no further cost. How are the payments treated?",
     opts: [
@@ -348,6 +367,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Компания арендует склад у своего единственного акционера за $9 000 в месяц; аналогичные склады в районе сдаются за $5 500. Что вычитается?",
     en: "A company rents a warehouse from its sole shareholder for $9,000 a month; comparable warehouses in the area let for $5,500. What is deductible?",
     opts: [
@@ -365,6 +385,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Арендная плата магазина установлена как 7% валовой выручки; арендодатель — посторонняя компания. За год выручка составила $1 400 000, аренда — $98 000. Что вычитается?",
     en: "A shop’s rent is set at 7% of gross receipts and the lessor is unrelated. Receipts for the year were $1,400,000 and rent $98,000. What is deductible?",
     opts: [
@@ -382,6 +403,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "1 сентября 2025 года компания на кассовом методе уплатила $30 000 аренды за период с сентября 2025 по август 2026 года. Сколько вычитается за 2025 год?",
     en: "On September 1, 2025, a cash-method company paid $30,000 of rent covering September 2025 through August 2026. How much is deductible for 2025?",
     opts: [
@@ -399,6 +421,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Арендатор по условиям договора уплатил налог на недвижимость арендодателя $11 000. Как это учитывается?",
     en: "Under the lease a tenant paid $11,000 of the landlord’s real estate tax. How is that treated?",
     opts: [
@@ -416,6 +439,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Арендатор за свой счёт возвёл на арендованном участке склад стоимостью $260 000. Срок аренды — 20 лет. Как учитываются затраты?",
     en: "A tenant built a $260,000 warehouse on leased land at his own expense. The lease runs 20 years. How is the cost treated?",
     opts: [
@@ -433,6 +457,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s44",
     ru: "Компания заплатила $45 000 предыдущему арендатору за передачу договора аренды, до конца которого остаётся 15 лет. Как учитывается эта сумма?",
     en: "A company paid $45,000 to a previous tenant to take over a lease with 15 years remaining. How is that treated?",
     opts: [
@@ -450,6 +475,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Куда идёт половина налога на самозанятость?",
     en: "Where does one-half of self-employment tax go?",
     opts: [
@@ -467,6 +493,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Какой налог вычитается в Schedule C?",
     en: "Which tax is deducted on Schedule C?",
     opts: [
@@ -484,6 +511,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Компания начислила работникам зарплату $200 000, удержала $15 300 их доли социального налога и Medicare и уплатила столько же как работодатель. Какую сумму она вычитает?",
     en: "A company accrued $200,000 of wages, withheld $15,300 as the employees’ share of social security and Medicare, and paid the same amount as employer. What does it deduct?",
     opts: [
@@ -501,6 +529,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Магазин купил витрины за $22 000 и уплатил налог с продаж $1 760. Как учитывается налог с продаж?",
     en: "A shop bought display cases for $22,000 and paid $1,760 of sales tax. How is the sales tax treated?",
     opts: [
@@ -518,6 +547,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Автомобиль прошёл за год 30 000 миль, из них 21 000 по делам бизнеса. Уплачены налог на движимое имущество $420 и регистрационный сбор штата $80. Сколько вычитается при учёте фактических расходов?",
     en: "A car ran 30,000 miles in the year, 21,000 of them on business. Personal property tax of $420 and a state registration fee of $80 were paid. How much is deductible under the actual expense method?",
     opts: [
@@ -535,6 +565,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Магазин собрал с покупателей $26 000 налога с продаж и перечислил их в бюджет штата. Как это отражается в декларации?",
     en: "A shop collected $26,000 of sales tax from customers and remitted it to the state. How does that appear on the return?",
     opts: [
@@ -552,6 +583,7 @@ window.QUIZZES.su04 = [
     }
   },
   {
+    sec: "s45",
     ru: "Транспортная компания уплатила $34 000 налога на дизельное топливо, использованное в перевозках. Как это отражается?",
     en: "A haulage company paid $34,000 of tax on diesel fuel used in its operations. How is that reported?",
     opts: [

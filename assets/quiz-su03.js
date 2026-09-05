@@ -24,6 +24,7 @@ window.QUIZSECS.su03 = {
 
 window.QUIZZES.su03 = [
   {
+    sec: "s31",
     ru: "1 ноября 2025 года подписан трёхлетний договор аренды. Арендодатель на методе начисления получил при подписании плату за ноябрь и декабрь 2025 года $3 400 и плату за последний месяц срока — октябрь 2028 года — $1 700. Какая сумма войдёт в доход 2025 года?",
     en: "On November 1, 2025, a three-year lease was signed. The accrual-method landlord received $3,400 for November and December 2025 plus $1,700 for the final month of the term, October 2028. How much enters 2025 income?",
     opts: [
@@ -41,6 +42,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Арендатор внёс $2 000, которые по договору возвращаются в конце срока при отсутствии повреждений, и ещё $2 000, которые по договору зачитываются в счёт платы за последний месяц. Что включается в доход в год получения?",
     en: "A tenant paid $2,000 refundable at the end of the term if there is no damage, and another $2,000 that the lease applies to the final month’s rent. What is included in income in the year received?",
     opts: [
@@ -58,6 +60,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "По договору арендатор платит счета за воду напрямую поставщику и вычитает их из арендной платы. За год он уплатил $1 150 и внёс арендодателю $16 850 вместо $18 000. Что отражает арендодатель?",
     en: "Under the lease the tenant pays the water bills directly and deducts them from the rent. Over the year the tenant paid $1,150 and remitted $16,850 instead of $18,000. What does the landlord report?",
     opts: [
@@ -75,6 +78,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Арендатор-электрик перевёл проводку в квартире вместо платы за два месяца. Обычная плата — $1 450 в месяц; стороны согласовали стоимость работ в $2 900, и это соответствует рыночным расценкам. Что отражает арендодатель?",
     en: "A tenant who is an electrician rewired the flat instead of paying two months’ rent. The normal rent is $1,450 a month; the parties agreed the work was worth $2,900, which matches market rates. What does the landlord report?",
     opts: [
@@ -92,6 +96,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Арендатор заплатил $5 500 за право досрочно расторгнуть договор и съехал. Как арендодатель отражает эту сумму?",
     en: "A tenant paid $5,500 to cancel the lease early and moved out. How does the landlord report it?",
     opts: [
@@ -109,6 +114,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Владелец сдаёт четыре квартиры, обеспечивает отопление, освещение, вывоз мусора и убирает лестничные клетки. Никаких услуг внутри квартир он не оказывает. Где отражается результат?",
     en: "An owner rents out four flats and provides heat, light, trash collection and cleaning of the stairwells. No services are provided inside the flats. Where is the result reported?",
     opts: [
@@ -126,6 +132,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Владелец сдаёт домик соседям за символическую плату, много лет получая меньше, чем тратит, и прибыли не ищет. Доход за 2025 год $3 200, расходы $7 400. Как это отражается?",
     en: "An owner rents a cottage to neighbours for a token amount, has spent more than it brings in for years, and seeks no profit. Income for 2025 is $3,200 and expenses $7,400. How is it reported?",
     opts: [
@@ -143,6 +150,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s31",
     ru: "Договор аренды даёт арендатору право выкупить объект. В июне арендатор реализовал это право. Платежи за январь—май составили $7 500, за июнь—декабрь — $10 500. Как отражаются платежи после даты продажи?",
     en: "A lease gives the tenant an option to buy, and in June the tenant exercised it. Payments for January through May were $7,500 and for June through December $10,500. How are the post-sale payments treated?",
     opts: [
@@ -160,6 +168,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "Квартира была свободна с марта по июнь: прежний арендатор съехал, новый въехал в июле. Всё это время объект предлагался к сдаче за $1 600 в месяц. За период простоя уплачены коммунальные $520, страховка $340, налог на имущество $780. Что вычитается за эти четыре месяца?",
     en: "A flat stood empty from March through June: the old tenant left and a new one moved in in July. Throughout, it was offered for rent at $1,600 a month. During the vacancy $520 of utilities, $340 of insurance and $780 of property tax were paid. What is deductible for those four months?",
     opts: [
@@ -177,6 +186,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "Купленный в марте дом требовал ремонта. С марта по июль владелец красил стены и чинил полы, потратив $6 300. В августе объект был выставлен в аренду, а первый арендатор въехал в октябре. Расходы на объявления в августе и сентябре — $400. Что вычитается в 2025 году?",
     en: "A house bought in March needed work. From March to July the owner painted and repaired floors, spending $6,300. In August it was listed for rent and the first tenant moved in in October. Advertising in August and September cost $400. What is deductible in 2025?",
     opts: [
@@ -194,6 +204,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "В сдаваемом доме заменены все двадцать окон за $27 000. Прежние окна были исправны, новые — энергосберегающие. Как учитывается расход?",
     en: "All twenty windows in a rental house were replaced for $27,000. The old windows worked; the new ones are energy-efficient. How is the cost treated?",
     opts: [
@@ -211,6 +222,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "Владелец сам, без подрядчиков, отремонтировал крышу сдаваемого дома. Работа заняла три недели; расценки подрядчиков за такую работу — $9 000. Материалы обошлись в $2 100. Что вычитается?",
     en: "An owner repaired the roof of a rental house personally, without contractors. The job took three weeks; contractors would have charged $9,000. Materials cost $2,100. What is deductible?",
     opts: [
@@ -228,6 +240,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "Квартира, служившая основным жильём, переведена в аренду. Скорректированный базис на дату перевода — $215 000, рыночная стоимость — $186 000. Какова база для амортизации?",
     en: "A flat that served as a main home is converted to rental use. Its adjusted basis at conversion is $215,000 and its fair market value $186,000. What is the depreciable basis?",
     opts: [
@@ -245,6 +258,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s32",
     ru: "Владелец десять лет сдавал дом, но амортизацию в декларациях не заявлял ни разу. Разрешённая за эти годы амортизация составила бы $74 000. Дом продан. Как это влияет на базис?",
     en: "An owner rented out a house for ten years but never claimed depreciation. The allowable depreciation for those years would have been $74,000. The house is sold. How does this affect basis?",
     opts: [
@@ -262,6 +276,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Дача сдавалась по рыночной цене 240 дней. Владелец пользовался ею 22 дня. Использовалась ли она как дом?",
     en: "A holiday home was rented at a fair price for 240 days and used personally for 22 days. Was it used as a home?",
     opts: [
@@ -279,6 +294,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Владелец провёл в сдаваемом доме 19 дней. Из них 5 дней он с утра до вечера менял полы, а вечерами семья отдыхала. Дом сдавался 90 дней по рыночной цене. Сколько дней личного пользования?",
     en: "An owner spent 19 days at a rental house. On five of them he replaced flooring from morning to night while the family relaxed in the evenings. The house was rented at fair price for 90 days. How many days of personal use?",
     opts: [
@@ -296,6 +312,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Сестра владельца живёт в его квартире круглый год, платит рыночную цену и другого жилья не имеет. Брат владельца провёл там две недели отпуска, заплатив половину рыночной цены. Сколько дней личного пользования у владельца?",
     en: "The owner’s sister lives in the flat all year, pays a fair rental price and has no other home. The owner’s brother spent a fortnight there on holiday, paying half the market rate. How many days of personal use does the owner have?",
     opts: [
@@ -313,6 +330,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Владелец живёт в доме сам и в дни городского фестиваля сдал его на 10 дней за $14 000. Расходы, приходящиеся на эти дни, составили $900. Что попадёт в декларацию?",
     en: "An owner lives in the house and let it for 10 days during a city festival for $14,000. Expenses allocable to those days were $900. What goes on the return?",
     opts: [
@@ -330,6 +348,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Жильё признано использованным как дом. Доход от аренды $9 000. Приходящиеся на аренду проценты и налоги — $6 500, операционные расходы — $3 800, амортизация — $2 900. Какая сумма переносится на следующий год?",
     en: "A dwelling is used as a home. Rental income is $9,000. The rental share of interest and taxes is $6,500, operating expenses $3,800 and depreciation $2,900. How much carries forward?",
     opts: [
@@ -347,6 +366,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s33",
     ru: "Дача, признанная домом владельца, принесла в 2025 году убыток по расчёту $5 000, который вычесть не удалось. У владельца есть пассивный доход $12 000 от товарищества. Может ли он погасить остаток этим доходом?",
     en: "A holiday home treated as the owner’s home produced a computed $5,000 loss that could not be deducted. The owner has $12,000 of passive income from a partnership. Can that income absorb the balance?",
     opts: [
@@ -364,6 +384,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "В каком порядке применяются ограничения к убытку некорпоративного налогоплательщика?",
     en: "In what order are the limitations applied to a noncorporate taxpayer’s loss?",
     opts: [
@@ -381,6 +402,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Налогоплательщик вложил в деятельность $60 000 собственных средств и взял безоборотный заём $40 000 под залог оборудования этой же деятельности. Доля убытка за год — $85 000. Сколько проходит лимит риска?",
     en: "A taxpayer put $60,000 of their own money into an activity and took a $40,000 nonrecourse loan secured by that activity’s own equipment. The year’s share of loss is $85,000. How much passes the at-risk limit?",
     opts: [
@@ -398,6 +420,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Инвестор владеет доходным зданием. Оно приобретено за счёт безоборотного займа от независимого банка, обеспеченного этим же зданием, не конвертируемого в долю участия. Под риском ли эта сумма?",
     en: "An investor owns a commercial building bought with a nonrecourse loan from an unrelated bank, secured by that building and not convertible into an ownership interest. Is that amount at risk?",
     opts: [
@@ -415,6 +438,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Совладелец мастерской отработал в ней 140 часов за год. Второй совладелец отработал 130 часов, наёмный управляющий — 900 часов. Существенно ли участие первого?",
     en: "A co-owner of a workshop worked 140 hours in it during the year. The other co-owner worked 130 hours and a hired manager 900 hours. Does the first co-owner materially participate?",
     opts: [
@@ -432,6 +456,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Владелец лично управляет четырьмя доходными домами и тратит на это 1 900 часов в год. Другой работы у него нет. Является ли деятельность пассивной?",
     en: "An owner personally manages four rental buildings and spends 1,900 hours a year doing it. He has no other work. Is the activity passive?",
     opts: [
@@ -449,6 +474,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Супруги подают совместную декларацию. Муж отработал в сфере недвижимости 500 часов, жена — 400 часов; у обоих это единственная работа. Признаётся ли кто-то профессионалом рынка недвижимости?",
     en: "Spouses file jointly. The husband worked 500 hours in real property trades and the wife 400 hours; for both it is their only work. Does either qualify as a real estate professional?",
     opts: [
@@ -466,6 +492,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Налогоплательщик владеет 6% долей в товариществе, сдающем жилой комплекс, и участвует в одобрении арендаторов и утверждении расходов. Его доля убытка — $9 000, MAGI — $80 000. Сколько он вычтет по особому вычету?",
     en: "A taxpayer owns a 6% interest in a partnership renting out a housing complex and takes part in approving tenants and expenditures. The share of loss is $9,000 and MAGI is $80,000. How much may be deducted under the special allowance?",
     opts: [
@@ -483,6 +510,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Одинокий налогоплательщик активно участвует в сдаче квартиры, доля 100%. Убыток от аренды $23 000, MAGI $141 000, пассивного дохода нет. Сколько вычитается в 2025 году?",
     en: "A single taxpayer actively participates in renting out a flat and owns 100% of it. The rental loss is $23,000, MAGI is $141,000 and there is no passive income. How much is deductible in 2025?",
     opts: [
@@ -500,6 +528,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "У налогоплательщика приостановленный пассивный убыток $34 000 по единственному объекту аренды. Он продаёт объект посторонней компании с прибылью $12 000. Что происходит?",
     en: "A taxpayer has $34,000 of suspended passive losses on a single rental property and sells it to an unrelated company at a $12,000 gain. What happens?",
     opts: [
@@ -517,6 +546,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Владелец продаёт объект аренды с приостановленным убытком $16 000 своему брату по рыночной цене. Высвобождается ли убыток?",
     en: "An owner sells a rental property carrying $16,000 of suspended losses to his brother at fair market value. Are the losses released?",
     opts: [
@@ -534,6 +564,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Налогоплательщик подаёт декларацию как одинокий. После применения базиса, риска и пассивных правил его совокупный убыток от бизнеса составил $402 000. Сколько вычитается в 2025 году?",
     en: "A single filer’s aggregate business loss, after applying basis, at-risk and the passive rules, is $402,000. How much is deductible in 2025?",
     opts: [
@@ -551,6 +582,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "К кому правила пассивной деятельности применяются напрямую?",
     en: "To whom do the passive activity rules apply directly?",
     opts: [
@@ -568,6 +600,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Владелец сдаёт дачу через сайт бронирования: за 2025 год 40 сдач, всего 200 дней, то есть в среднем 5 дней за одну сдачу. Владелец сам занимается уборкой и встречает гостей, набрав за год 620 часов. Убыток за год $19 000, пассивного дохода нет. Как он отражается?",
     en: "An owner rents out a cabin through a booking site: 40 rentals over 2025 totalling 200 days, an average of 5 days per rental. The owner does the cleaning and meets the guests, logging 620 hours for the year. The loss is $19,000 and there is no passive income. How is it treated?",
     opts: [
@@ -585,6 +618,7 @@ window.QUIZZES.su03 = [
     }
   },
   {
+    sec: "s34",
     ru: "Налогоплательщик владеет долей в партнёрстве, которое сдаёт складское помещение. Базис его доли на конец 2025 года — $8 000, сумма под риском — $14 000, распределённый ему убыток — $23 000, пассивного дохода нет. Какая сумма доходит до проверки на пассивность?",
     en: "A taxpayer holds an interest in a partnership that rents out a warehouse. At the end of 2025 the basis of the interest is $8,000, the amount at risk is $14,000, and the loss allocated to the taxpayer is $23,000, with no passive income. How much reaches the passive activity test?",
     opts: [
