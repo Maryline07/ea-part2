@@ -1036,6 +1036,71 @@ table.numbered tbody th { width: 2.5rem; color: var(--accent); font-variant-nume
   .steps > li { padding-left: 2rem; }
 }
 
+/* ---------- Рисунки: величина, ось, шкала времени --------------------- */
+
+/* Схема отвечает на вопрос «что за чем», рисунок — на вопрос «сколько».
+   Там, где у величины есть масштаб или ось времени, словами передаётся
+   только результат, а соотношение теряется.
+
+   Встроенный SVG, без внешних файлов: артефакт собирается в один файл.
+   Внутри рисунков нет ни одного id — namespace_ids() в build_artifact.py
+   переписывает все id при сборке, и ссылка вида url(#…) распалась бы.
+   Поэтому стрелки нарисованы треугольниками, а не <marker>.
+
+   Цвета берутся только из токенов: тогда обе темы работают сами, без
+   второй копии разметки. Подстановка показателей идёт как в тексте —
+   <text data-fig="…">, потому что fillFigures() пишет в textContent,
+   а он есть и у SVG. Числа в рисунке не дублируют справочник. */
+
+.plot { margin: 1.5rem 0 0.6rem; }
+
+/* Мельчить текст нельзя: размер шрифта внутри viewBox сжимается вместе
+   с картинкой. Поэтому рисунок не ужимается ниже 30rem, а прокручивается
+   внутри .scroller — так же, как широкие таблицы. */
+.plot svg {
+  display: block;
+  width: 100%;
+  min-width: 30rem;
+  height: auto;
+}
+
+.plot text {
+  font-family: var(--sans);
+  font-size: 11px;
+  fill: var(--ink);
+}
+
+.plot__val { font-weight: 600; }
+.plot__cap { font-size: 10px; fill: var(--ink-soft); }
+
+.plot__axis { stroke: var(--rule); stroke-width: 1; fill: none; }
+.plot__grid { stroke: var(--rule-hair); stroke-width: 1; fill: none; }
+
+/* Ломаная и стрелки-указатели */
+.plot__line { stroke: var(--accent); stroke-width: 2; fill: none; }
+.plot__link { stroke: var(--ink-faint); stroke-width: 1; stroke-dasharray: 3 3; fill: none; }
+.plot__head { fill: var(--ink-faint); stroke: none; }
+.plot__head--line { fill: var(--accent); }
+
+/* Заливки повторяют значение цветов в остальной вёрстке: акцент — то,
+   что остаётся у налогоплательщика, штемпель — то, что облагается. */
+.plot__box       { fill: var(--paper-sunk); stroke: var(--rule); }
+.plot__box--sunk { fill: var(--ledger);     stroke: var(--rule); }
+.plot__box--keep { fill: var(--accent-pale); stroke: var(--accent); }
+.plot__box--tax  { fill: var(--stamp-pale);  stroke: var(--stamp); }
+
+/* Граница, дальше которой правило не пускает */
+.plot__edge { stroke: var(--stamp); stroke-width: 1.5; stroke-dasharray: 4 3; fill: none; }
+
+/* Подпись под рисунком: условия, при которых он верен */
+.plot__note {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 2rem;
+}
+
 /* ---------- Ловушки списком и «Проверь себя» -------------------------- */
 
 .pitfalls { margin: 2.5rem 0; }
@@ -1243,6 +1308,6 @@ a.module:hover { background: var(--accent-pale); }
   body { font-size: 10.5pt; background: #fff; }
   .q.is-answered .why, .why { display: block; }
   details.check[open] > div, details.check > div { display: block; }
-  .ladder > li, .steps > li, .fork { break-inside: avoid; }
+  .plot, .ladder > li, .steps > li, .fork { break-inside: avoid; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
 }

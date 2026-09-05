@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=30">
-<script defer src="assets/figures-2025.js?v=30"></script>
-<script defer src="assets/modules.js?v=30"></script>
-<script defer src="assets/quiz-su02.js?v=30"></script>
+<link rel="stylesheet" href="assets/style.css?v=31">
+<script defer src="assets/figures-2025.js?v=31"></script>
+<script defer src="assets/modules.js?v=31"></script>
+<script defer src="assets/quiz-su02.js?v=31"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=30"></script>
+<script defer src="assets/app.js?v=31"></script>
 </head>
 <body data-module="su02">
 
@@ -1153,6 +1153,61 @@
       </tbody>
     </table>
     </div>
+
+    <div class="scroller">
+    <div class="plot">
+      <svg viewBox="0 0 640 300" role="img">
+        <title lang="ru">Предельная ставка налога по мере роста чистого заработка: 15,3% до предела базы, затем 2,9%, затем 3,8%</title>
+        <title lang="en">Marginal rate as net earnings rise: 15.3% up to the wage base, then 2.9%, then 3.8%</title>
+
+        <line class="plot__grid" x1="56" y1="37.25" x2="616" y2="37.25" />
+        <line class="plot__grid" x1="56" y1="103.5" x2="616" y2="103.5" />
+        <line class="plot__grid" x1="56" y1="169.75" x2="616" y2="169.75" />
+
+        <line class="plot__axis" x1="56" y1="24" x2="56" y2="236" />
+        <line class="plot__axis" x1="56" y1="236" x2="620" y2="236" />
+
+        <text class="plot__cap" x="48" y="41.25" text-anchor="end">15%</text>
+        <text class="plot__cap" x="48" y="107.5" text-anchor="end">10%</text>
+        <text class="plot__cap" x="48" y="173.75" text-anchor="end">5%</text>
+        <text class="plot__cap" x="48" y="240" text-anchor="end">0%</text>
+
+        <text class="plot__cap" lang="ru" x="56" y="16">ставка на следующий доллар</text>
+        <text class="plot__cap" lang="en" x="56" y="16">rate on the next dollar</text>
+
+        <polyline class="plot__line" points="56,33.3 435.3,33.3 435.3,197.6 486.8,197.6 486.8,185.6 616,185.6" />
+
+        <text class="plot__val" data-fig="se_rate_total" x="245" y="52" text-anchor="middle"></text>
+        <text class="plot__val" data-fig="se_rate_medicare" x="461" y="215" text-anchor="middle"></text>
+        <text class="plot__val" data-num="3.8" data-unit="pct" x="551" y="177" text-anchor="middle"></text>
+
+        <line class="plot__axis" x1="435.3" y1="236" x2="435.3" y2="243" />
+        <line class="plot__axis" x1="486.8" y1="236" x2="486.8" y2="243" />
+
+        <text lang="ru" class="plot__cap" x="431" y="256" text-anchor="end">предел базы</text>
+        <text lang="en" class="plot__cap" x="431" y="256" text-anchor="end">wage base</text>
+        <text data-fig="se_wage_base" x="431" y="270" text-anchor="end"></text>
+
+        <text lang="ru" class="plot__cap" x="491" y="256">порог 0,9%</text>
+        <text lang="en" class="plot__cap" x="491" y="256">0.9% threshold</text>
+        <text data-fig="addl_medicare_single" x="491" y="270"></text>
+
+        <text lang="ru" class="plot__cap" x="56" y="292">чистый заработок от самозанятости →</text>
+        <text lang="en" class="plot__cap" x="56" y="292">net earnings from self-employment →</text>
+      </svg>
+    </div>
+    </div>
+
+    <p class="plot__note" lang="ru">Незамужний налогоплательщик без заработной платы. По горизонтали
+      отложен чистый заработок, то есть прибыль <em>уже после</em> множителя
+      <span data-fig="se_net_factor"></span>. Социальная часть обрывается на пределе базы, медицинская
+      идёт дальше без потолка, а на пороге ставка снова <strong>растёт</strong>. Предел базы
+      индексируется ежегодно, порог дополнительного налога — нет и зависит от статуса подачи.</p>
+    <p class="plot__note" lang="en">A single taxpayer with no wages. The horizontal axis is net
+      earnings — profit <em>already multiplied</em> by the <span data-fig="se_net_factor"></span>
+      factor. The social security portion stops at the wage base, the Medicare portion runs on with no
+      ceiling, and at the threshold the rate <strong>rises</strong> again. The wage base is indexed
+      each year; the additional tax threshold is not, and it depends on filing status.</p>
 
     <div class="example">
       <div class="example__head"><span lang="ru">Пример 2-7. Зарплата и самозанятость вместе</span><span lang="en">Example 2-7. Wages and self-employment combined</span></div>
@@ -2395,6 +2450,63 @@
           excluded <span data-num="35000"></span> free: attributes must be cut by that much.</p>
       </div>
     </div>
+
+    <div class="scroller">
+    <div class="plot">
+      <svg viewBox="0 0 640 300" role="img">
+        <title lang="ru">Обязательства выше стоимости имущества на 35 000; прощенные 50 000 разрезаны по высоте этого разрыва</title>
+        <title lang="en">Liabilities exceed the value of assets by 35,000; the 50,000 cancelled is cut at the height of that gap</title>
+
+        <line class="plot__axis" x1="40" y1="250" x2="620" y2="250" />
+
+        <rect class="plot__box" x="70" y="96.9" width="100" height="153.1" />
+        <rect class="plot__box--keep" x="70" y="60" width="100" height="36.9" />
+
+        <text class="plot__val" data-num="180000" x="120" y="52" text-anchor="middle"></text>
+        <text lang="ru" x="120" y="268" text-anchor="middle">Обязательства</text>
+        <text lang="en" x="120" y="268" text-anchor="middle">Liabilities</text>
+
+        <text lang="ru" class="plot__cap" x="120" y="168" text-anchor="middle">покрыто имуществом</text>
+        <text lang="en" class="plot__cap" x="120" y="168" text-anchor="middle">covered by assets</text>
+        <text data-num="145000" x="120" y="183" text-anchor="middle"></text>
+
+        <line class="plot__link" x1="170" y1="78" x2="186" y2="78" />
+        <text lang="ru" class="plot__cap" x="192" y="76">неплатёжеспособность</text>
+        <text lang="en" class="plot__cap" x="192" y="76">insolvency</text>
+        <text class="plot__val" data-num="35000" x="192" y="91"></text>
+
+        <polyline class="plot__link" points="174,60 340,60 340,213.1 372,213.1" />
+        <polygon class="plot__head" points="372,209 380,213.1 372,217.2" />
+        <text lang="ru" class="plot__cap" x="257" y="52" text-anchor="middle">столько же</text>
+        <text lang="en" class="plot__cap" x="257" y="52" text-anchor="middle">the same amount</text>
+
+        <rect class="plot__box--keep" x="380" y="213.1" width="100" height="36.9" />
+        <rect class="plot__box--tax" x="380" y="197.2" width="100" height="15.9" />
+
+        <text class="plot__val" data-num="50000" x="430" y="189" text-anchor="middle"></text>
+        <text lang="ru" x="430" y="268" text-anchor="middle">Прощено</text>
+        <text lang="en" x="430" y="268" text-anchor="middle">Cancelled</text>
+
+        <line class="plot__link" x1="480" y1="205" x2="496" y2="205" />
+        <text lang="ru" class="plot__cap" x="502" y="209">в доход <tspan class="plot__val" data-num="15000"></tspan></text>
+        <text lang="en" class="plot__cap" x="502" y="209">into income <tspan class="plot__val" data-num="15000"></tspan></text>
+
+        <line class="plot__link" x1="480" y1="231" x2="496" y2="231" />
+        <text lang="ru" class="plot__cap" x="502" y="235">исключается <tspan class="plot__val" data-num="35000"></tspan></text>
+        <text lang="en" class="plot__cap" x="502" y="235">excluded <tspan class="plot__val" data-num="35000"></tspan></text>
+      </svg>
+    </div>
+    </div>
+
+    <p class="plot__note" lang="ru">Обязательства разложены на покрытые имуществом и непокрытый
+      остаток: этот разрыв и есть неплатёжеспособность. Прощенная сумма разрезана ровно по его
+      высоте — исключение не может быть больше разрыва, сколько бы ни простили. Обе величины берутся
+      <strong>непосредственно перед</strong> прощением, и в имущество входит всё, включая личное.</p>
+    <p class="plot__note" lang="en">Liabilities are split into the part covered by assets and the
+      uncovered remainder: that gap is the insolvency. The cancelled amount is cut at exactly the
+      height of the gap — the exclusion can never exceed it, however much was forgiven. Both figures
+      are taken <strong>immediately before</strong> the cancellation, and every asset counts,
+      personal property included.</p>
 
     <div class="trap">
       <h3><span lang="ru">В расчёт идёт всё имущество, а не только заложенное</span><span lang="en">Every asset counts, not only the pledged one</span></h3>
