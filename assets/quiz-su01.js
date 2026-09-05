@@ -891,5 +891,77 @@ window.QUIZZES.su01 = [
       D: { ru: "1 августа — граница между ставками, а не дата, до которой штрафа нет.", en: "August 1 divides one rate from another; it is not a date before which no penalty applies." }
     }
   }
-
+,
+  {
+    sec: "s13",
+    ru: "Программиста уволили по сокращению, и бывший работодатель тут же нанял его на разовый проект за твёрдую сумму. Сроки не оговорены, минимума за потраченные часы нет, указаний сверх технического задания не даётся, на планёрки его не зовут, льгот нет. В договоре он назван независимым подрядчиком, по итогам года ему выдадут форму 1099-NEC. Кем он является?",
+    en: "A programmer was laid off, and the former employer immediately hired him for a one-off project at a flat fee. No deadline is set, no minimum is guaranteed for the hours spent, no instructions are given beyond the specification, he is not expected at staff meetings and receives no benefits. The contract calls him an independent contractor and he will receive a Form 1099-NEC. What is he?",
+    opts: [
+      { k: "A", ru: "По-прежнему штатным работником: он работает на прежнего работодателя", en: "Still a regular employee: he is working for his former employer" },
+      { k: "B", ru: "Временным работником, поскольку проект ограничен по объёму", en: "A temporary employee, because the project is limited in scope" },
+      { k: "C", ru: "Независимым подрядчиком", en: "An independent contractor" },
+      { k: "D", ru: "Независимым подрядчиком только потому, что так написано в договоре", en: "An independent contractor solely because the contract says so" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Прежние отношения сами по себе ничего не переносят в новые. Каждое соглашение оценивается по своему содержанию, и здесь контроля почти нет.", en: "The earlier relationship carries nothing over by itself. Each arrangement is judged on its own substance, and here there is almost no control." },
+      B: { ru: "«Временный работник» — не категория налогового права. Работник он или подрядчик, решает степень контроля, а не срок работы.", en: "\u201cTemporary employee\u201d is not a category in tax law. Whether someone is an employee or a contractor turns on control, not on how long the work lasts." },
+      C: { ru: "Верно. Заказчик задаёт только требования к результату: ни как выполнять работу, ни сколько часов на неё тратить он не указывает, не обучает, не возмещает расходов, не даёт льгот и не требует присутствия на совещаниях. Поведенческий и финансовый контроль отсутствуют, характер отношений разовый — это независимый подрядчик.", en: "Correct. The payer sets only the specification for the result: it does not direct how the work is done or how many hours it takes, provides no training, reimburses nothing, gives no benefits and does not require attendance at meetings. Behavioral and financial control are both absent and the relationship is a one-off \u2014 this is an independent contractor." },
+      D: { ru: "Вывод верный, а основание нет. Название в договоре и форма 1099-NEC статуса не создают: работай он под указаниями заказчика, он был бы работником при том же договоре.", en: "The conclusion is right but the reason is not. The contract label and the Form 1099-NEC create no status: had he worked under the payer\u2019s direction he would be an employee under that same contract." }
+    }
+  },
+  {
+    sec: "s17",
+    ru: "Что относится к налогам доверительного фонда?",
+    en: "Which amounts are trust fund taxes?",
+    opts: [
+      { k: "A", ru: "Средства, которые работодатель откладывает на льготы работникам", en: "Amounts the employer sets aside to provide benefits to employees" },
+      { k: "B", ru: "Доля работодателя в социальном обеспечении и Medicare", en: "The employer\u2019s matching share of social security and Medicare" },
+      { k: "C", ru: "Удержанные у работника подоходный налог и его доля социального обеспечения и Medicare", en: "The income tax and the employee\u2019s share of social security and Medicare withheld from wages" },
+      { k: "D", ru: "Удержанное у работника вместе с долей работодателя — всё, что уходит одним депозитом", en: "The withheld amounts together with the employer\u2019s share \u2014 everything that goes in as one deposit" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Деньги на льготы — расход работодателя, а не удержанный налог. К доверительному фонду они отношения не имеют.", en: "Money for benefits is an employer expense, not a withheld tax. It has nothing to do with the trust fund." },
+      B: { ru: "Доля работодателя — его собственный налог. Ни у кого не удерживалась, значит ни для кого и не удерживается в доверительном управлении.", en: "The employer\u2019s share is its own tax. It was withheld from no one, so it is held in trust for no one." },
+      C: { ru: "Верно. Доверительный фонд — то, что <strong>удержано у работника</strong>: подоходный налог с его зарплаты и его доля социального обеспечения и Medicare. Работодатель эти деньги не зарабатывал: он держит их для казначейства, пока не внесёт. Это деньги работника.", en: "Correct. The trust fund is what is <strong>withheld from the employee</strong>: the income tax on their wages and their share of social security and Medicare. The employer never earned that money; it holds it for the Treasury until it is deposited. It is the employee\u2019s money." },
+      D: { ru: "Соблазнительно, потому что обе суммы уходят одним депозитом в один срок. Но общий платёж не делает долю работодателя доверительным фондом — и штраф с неё не считается.", en: "Tempting, because both amounts go in as one deposit on one date. But sharing a payment does not make the employer\u2019s share trust fund money \u2014 and the penalty is not computed on it." }
+    }
+  },
+  {
+    sec: "s17",
+    ru: "За квартал работодатель удержал у работников $52 000 подоходного налога и социальных взносов и должен ещё $18 000 собственной доли. В казначейство не внесено ничего: деньги ушли поставщикам, о недоимке распорядитель средств знал. От какой суммы считается штраф за взыскание доверительного фонда?",
+    en: "For the quarter an employer withheld $52,000 of income tax and payroll taxes from employees and owes a further $18,000 as its own share. Nothing was paid over: the money went to suppliers, and the person controlling the funds knew of the shortfall. On what amount is the trust fund recovery penalty computed?",
+    opts: [
+      { k: "A", ru: "$70 000 — вся недоимка", en: "$70,000 \u2014 the entire shortfall" },
+      { k: "B", ru: "$52 000", en: "$52,000" },
+      { k: "C", ru: "$26 000 — половина удержанного", en: "$26,000 \u2014 half of the withheld amount" },
+      { k: "D", ru: "$18 000", en: "$18,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "В $70 000 входит доля работодателя. Она остаётся долгом бизнеса, но в базу этого штрафа не входит.", en: "The $70,000 includes the employer\u2019s share. That remains a debt of the business but is outside the base of this penalty." },
+      B: { ru: "Верно. Штраф равен <span data-fig=\"tfrp_rate\"></span> неуплаченного налога доверительного фонда, то есть удержанного у работников: $52 000. Оба условия налицо — распорядитель средств вправе решать, кому платить, и знал, что налог не вносится. Заплатить поставщику вместо казначейства, зная о недоимке, — это и есть умышленность.", en: "Correct. The penalty is <span data-fig=\"tfrp_rate\"></span> of the unpaid trust fund tax, that is, of the amounts withheld from employees: $52,000. Both requirements are met \u2014 the person controlling the funds decides who gets paid and knew the tax was not being paid over. Paying a supplier instead of the Treasury while knowing of the shortfall is willfulness." },
+      C: { ru: "Половина возникает при делении взносов между работником и работодателем, но к этому штрафу отношения не имеет: он равен полной сумме удержанного.", en: "Halving comes from splitting payroll taxes between employee and employer and has nothing to do with this penalty: it equals the full withheld amount." },
+      D: { ru: "$18 000 — как раз доля работодателя, единственная часть, которая доверительным фондом не является.", en: "$18,000 is precisely the employer\u2019s share, the one part that is not trust fund money." }
+    }
+  },
+  {
+    sec: "s17",
+    ru: "С кого может быть взыскан штраф за взыскание доверительного фонда, если получить налог с самого бизнеса не удалось?",
+    en: "From whom may the trust fund recovery penalty be collected where the tax could not be obtained from the business itself?",
+    opts: [
+      { k: "A", ru: "Только с должностных лиц корпорации: у прочих обязанности нет", en: "Only from officers of a corporation: no one else bears the duty" },
+      { k: "B", ru: "С любого, кто обязан собирать, учитывать или вносить налог и не сделал этого умышленно, — включая бухгалтера и директора на общественных началах", en: "From anyone required to collect, account for or pay over the tax who willfully failed to do so \u2014 including an accountant or a volunteer director" },
+      { k: "C", ru: "С работников, у которых налог был удержан: это их деньги", en: "From the employees whose wages the tax was withheld from: it is their money" },
+      { k: "D", ru: "С любого работника бизнеса независимо от полномочий и осведомлённости", en: "From any employee of the business regardless of authority or knowledge" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Должность в перечне не главное. Ответственным признаётся всякий, у кого есть полномочия распоряжаться средствами бизнеса, — вплоть до того, кто просто подписывает платёжные документы.", en: "A job title is not the point. A responsible person is anyone with authority over the business\u2019s funds \u2014 down to whoever signs its cheques." },
+      B: { ru: "Верно. Перечень строится по полномочиям, а не по должности: должностное лицо или работник корпорации, партнёр или работник партнёрства, бухгалтер, директор или попечитель на общественных началах, работник индивидуального предпринимателя — всякий, кто вправе распоряжаться средствами. Вторым условием требуется умышленность.", en: "Correct. The list is built on authority rather than title: an officer or employee of a corporation, a partner or employee of a partnership, an accountant, a volunteer director or trustee, an employee of a sole proprietorship \u2014 anyone with authority over the funds. The second requirement is willfulness." },
+      C: { ru: "С работника взыскивать нечего: налог у него уже удержан, и в его декларации он засчитывается как уплаченный. Потерял деньги бюджет, а не работник.", en: "There is nothing to collect from the employee: the tax was already withheld and is credited as paid on their return. It is the Treasury that lost the money, not the employee." },
+      D: { ru: "Нужны оба условия сразу — полномочия и умышленность. Работник без права распоряжаться средствами ответственным лицом не является.", en: "Both requirements must hold at once \u2014 authority and willfulness. An employee with no power over the funds is not a responsible person." }
+    }
+  }
 ];

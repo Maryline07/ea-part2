@@ -390,6 +390,14 @@ window.FIGURES = {
       en: "Still unpaid more than 10 days after the first IRS notice",
       src: SRC_P15
     },
+    tfrp_rate: {
+      n: 100, unit: "pct",
+      ru: "Штраф за взыскание доверительного фонда",
+      en: "Trust fund recovery penalty",
+      note_ru: "Взимается от неуплаченного налога доверительного фонда — то есть удержанного у работников. Доля работодателя в эту сумму не входит.",
+      note_en: "Computed on the unpaid trust fund tax, that is, the amounts withheld from employees. The employer’s own share is not part of it.",
+      src: SRC_P15
+    },
     pen_6651_rate: {
       n: 5, unit: "pct",
       ru: "Штраф за непредставление: за месяц просрочки",
@@ -895,7 +903,7 @@ window.FIGURES = {
              "pen_infret_max_large", "pen_infret_intentional", "pen_infret_receipts",
              "pen_6651_rate", "pen_6651_max", "pen_6651_pay", "pen_6651_days",
              "pen_6651_min", "dep_lookback", "dep_nextday", "dep_pen_5",
-             "dep_pen_15", "dep_pen_16", "dep_pen_notice"] },
+             "dep_pen_15", "dep_pen_16", "dep_pen_notice", "tfrp_rate"] },
     { id: "dates", ru: "Сроки за период 2025", en: "Due dates for the 2025 tax year",
       keys: ["due_1065", "due_1120s", "due_pass_ext", "due_1120", "ext_8809_days", "due_farm_estimated", "due_farm_payment",
              "due_1099_recipient", "due_1099_recipient_late", "due_1099_irs_paper",
