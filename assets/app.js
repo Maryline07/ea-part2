@@ -575,16 +575,22 @@
 
   /* Название подраздела берётся из самой страницы: заголовок уже
      двуязычный, дублировать его в данных теста незачем. */
-  function sectionTitle(id, lang) {
+  function sectionTitle(id, lang, moduleId) {
     var box = document.getElementById(id);
-    if (!box) return null;
-    var num = box.querySelector(".num");
-    var name = box.querySelector('h2 [lang="' + lang + '"]');
-    if (!name) return null;
-    return (num ? num.textContent.trim() + " " : "") + name.textContent.trim();
+    if (box) {
+      var num = box.querySelector(".num");
+      var name = box.querySelector('h2 [lang="' + lang + '"]');
+      if (name) return (num ? num.textContent.trim() + " " : "") + name.textContent.trim();
+    }
+    /* На странице тренажёра заголовков модуля нет — там название берётся
+       из карты, порождённой из этих же заголовков. */
+    var map = window.QUIZSECS && moduleId && window.QUIZSECS[moduleId];
+    var item = map && map[id];
+    if (!item) return null;
+    return item.no + " " + (lang === "ru" ? item.ru : item.en);
   }
 
-  function adviceHtml(questions, answers) {
+  function adviceHtml(questions, answers, moduleId) {
     var missed = {}, order = [], any = false;
     questions.forEach(function (question, index) {
       var given = answers[index];
@@ -601,7 +607,7 @@
 
     var items = "";
     order.forEach(function (sec) {
-      var ru = sectionTitle(sec, "ru"), en = sectionTitle(sec, "en");
+      var ru = sectionTitle(sec, "ru", moduleId), en = sectionTitle(sec, "en", moduleId);
       if (!ru && !en) return;
       items += '<li><a href="#' + sec + '">' +
                '<span lang="ru">' + (ru || "") + "</span>" +
@@ -649,7 +655,7 @@
        нужен только тогда, когда есть ошибки. */
     var advice = box && box.querySelector(".quiz__advice");
     if (advice) advice.parentNode.removeChild(advice);
-    var html = adviceHtml(questions, answers);
+    var html = adviceHtml(questions, answers, moduleId);
     if (html && box) {
       var reset = box.querySelector(".quiz__reset");
       var node = document.createElement("div");
