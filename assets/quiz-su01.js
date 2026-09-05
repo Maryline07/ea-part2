@@ -254,7 +254,7 @@ window.QUIZZES.su01 = [
     ],
     correct: "A",
     why: {
-      A: { ru: "Верно. Отсрочка составляет три месяца — ровно предел нормы. Выбор оформляется формой 8716 и сопровождается платежом по форме 8752.", en: "Correct. The deferral is three months, exactly the statutory cap. The election is made on Form 8716 and carries the required payment on Form 8752." },
+      A: { ru: "Верно. Отсрочка составляет три месяца — ровно предел нормы. Выбор оформляется формой 8716. Платежа по форме 8752 у корпорации личных услуг не возникает: он предусмотрен для партнёрства и S-корпорации, а корпорация личных услуг вместо него соблюдает минимальные распределения работникам-собственникам.", en: "Correct. The deferral is three months, exactly the statutory cap, and the election is made on Form 8716. No Form 8752 payment arises for a personal service corporation: that payment applies to a partnership and an S corporation, while a PSC must instead meet minimum distribution requirements to its employee-owners." },
       B: { ru: "Форма 3115 меняет метод учёта, а не налоговый период.", en: "Form 3115 changes an accounting method, not a tax year." },
       C: { ru: "Исключения есть: выбор по §444, 52—53-недельный год и обоснованная деловая цель.", en: "Exceptions exist: a section 444 election, a 52-53-week year, and an established business purpose." },
       D: { ru: "Форма 8832 меняет классификацию субъекта, а не его период.", en: "Form 8832 changes an entity’s classification, not its year." }
@@ -472,7 +472,7 @@ window.QUIZZES.su01 = [
     why: {
       A: { ru: "Арифметическая ошибка и ошибка в переносе суммы прямо названы не являющимися сменой метода.", en: "A math or posting error is expressly not a change of method." },
       B: { ru: "Ошибка в исчислении налога методом не является: она не меняет год отражения статьи.", en: "An error in figuring tax is not a method: it changes no year of reporting." },
-      C: { ru: "Верно. Смена метода или базы оценки запасов требует согласия и оформляется формой 3115; для LIFO подаётся также форма 970.", en: "Correct. A change in the method or basis of valuing inventory requires consent on Form 3115; LIFO also requires Form 970." },
+      C: { ru: "Верно. Смена метода или базы оценки запасов прямо названа сменой метода учёта. Оформляется она по-разному: переход <strong>к</strong> LIFO — формой 970 вместе со своевременно поданной декларацией, а переход <strong>с</strong> LIFO и прочие смены метода оценки запасов — формой 3115.", en: "Correct. A change in the method or basis of valuing inventory is expressly a change in accounting method. The paperwork differs: adopting LIFO is done on Form 970 with a timely filed return, while changing <strong>from</strong> LIFO and other inventory method changes go on Form 3115." },
       D: { ru: "Отдельные корректировки срока полезного использования прямо отнесены к изменениям, согласия не требующим.", en: "Certain adjustments to useful life are expressly among the changes that need no consent." }
     }
   },

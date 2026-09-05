@@ -532,8 +532,8 @@ window.QUIZZES.su05 = [
   },
   {
     sec: "s56",
-    ru: "Продавец хранит товарные запасы в гараже, который использует также для личного автомобиля. Полагается ли вычет по этой площади?",
-    en: "A retailer stores inventory in a garage also used for the family car. Is a deduction available for that space?",
+    ru: "Розничный продавец регулярно хранит товарные запасы в обособленной части гаража, которую использует также для личного автомобиля. Другого постоянного места у этой торговли нет. Полагается ли вычет по этой площади?",
+    en: "A retailer regularly stores inventory in a separately identifiable part of a garage that is also used for the family car. The business has no other fixed location. Is a deduction available for that space?",
     opts: [
       { k: "A", ru: "Нет: нарушено требование исключительного использования", en: "No: the exclusive use requirement is broken" },
       { k: "B", ru: "Да: хранение запасов — исключение из требования исключительности", en: "Yes: storing inventory is an exception to the exclusive use requirement" },
@@ -543,7 +543,7 @@ window.QUIZZES.su05 = [
     correct: "B",
     why: {
       A: { ru: "Требование исключительности здесь как раз не действует.", en: "The exclusivity requirement does not apply here." },
-      B: { ru: "Верно. Хранение запасов или образцов товара — одно из двух исключений из требования исключительного использования. Второе — помещение детского сада.", en: "Correct. Storing inventory or product samples is one of the two exceptions to the exclusive use requirement. The other is a daycare facility." },
+      B: { ru: "Верно. Хранение запасов или образцов товара — одно из двух исключений из требования исключительного использования; второе — помещение детского сада. Само по себе хранение исключения не даёт: нужны все пять условий, и решающее здесь — <strong>дом является единственным постоянным местом этой торговли</strong>. Прочие соблюдены: торговля розничная, хранение регулярное, часть гаража обособлена.", en: "Correct. Storing inventory or product samples is one of the two exceptions to the exclusive use requirement; the other is a daycare facility. Storage alone is not enough: all five conditions must hold, and the decisive one here is that <strong>the home is the only fixed location of that selling business</strong>. The rest are met — retail sales, regular storage, a separately identifiable part of the garage." },
       C: { ru: "Исключение действует при обоих методах расчёта.", en: "The exception applies under either computation method." },
       D: { ru: "Гараж входит в состав жилого помещения вместе с прочими постройками.", en: "The garage is part of the dwelling unit along with its other structures." }
     }
