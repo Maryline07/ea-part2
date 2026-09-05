@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=29">
-<script defer src="assets/figures-2025.js?v=29"></script>
-<script defer src="assets/modules.js?v=29"></script>
-<script defer src="assets/quiz-su02.js?v=29"></script>
+<link rel="stylesheet" href="assets/style.css?v=30">
+<script defer src="assets/figures-2025.js?v=30"></script>
+<script defer src="assets/modules.js?v=30"></script>
+<script defer src="assets/quiz-su02.js?v=30"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=29"></script>
+<script defer src="assets/app.js?v=30"></script>
 </head>
 <body data-module="su02">
 
@@ -1231,30 +1231,23 @@
       first, then railroad retirement compensation, then net earnings from self-employment. Each
       later kind gets whatever of the threshold the earlier ones left unused.</p>
 
-    <div class="scroller">
-    <table>
-      <thead>
-        <tr>
-          <th><span lang="ru">Шаг</span><span lang="en">Step</span></th>
-          <th><span lang="ru">Что делается</span><span lang="en">What is done</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>1</th>
-          <td><span lang="ru">Заработная плата сравнивается с порогом статуса подачи. Превышение облагается</span><span lang="en">Wages are compared with the threshold for the filing status. The excess is taxed</span></td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td><span lang="ru">Порог уменьшается на всю заработную плату, <strong>но не ниже нуля</strong></span><span lang="en">The threshold is reduced by the whole of the wages, <strong>but not below zero</strong></span></td>
-        </tr>
-        <tr class="total">
-          <th>3</th>
-          <td><span lang="ru">Чистый заработок от самозанятости сравнивается с <strong>остатком</strong> порога. Превышение облагается. Если заработок отрицателен, он считается нулём</span><span lang="en">Net earnings from self-employment are compared with the <strong>remaining</strong> threshold. The excess is taxed. Negative earnings count as zero</span></td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <ol class="steps">
+      <li>
+        <b><span lang="ru">Заработная плата против порога</span><span lang="en">Wages against the threshold</span></b>
+        <span lang="ru">Вся заработная плата сравнивается с порогом своего статуса подачи. Превышение облагается</span>
+        <span lang="en">All the wages are compared with the threshold for the filing status. The excess is taxed</span>
+      </li>
+      <li>
+        <b><span lang="ru">Порог уменьшается на заработную плату</span><span lang="en">The threshold is reduced by the wages</span></b>
+        <span lang="ru">На <em>всю</em> её сумму — <strong>но не ниже нуля</strong>. Отрицательного остатка порога не бывает</span>
+        <span lang="en">By the <em>whole</em> of it — <strong>but not below zero</strong>. There is no such thing as a negative remaining threshold</span>
+      </li>
+      <li>
+        <b><span lang="ru">Самозанятость против остатка порога</span><span lang="en">Self-employment against what is left</span></b>
+        <span lang="ru">Чистый заработок сравнивается с остатком. Превышение облагается. Отрицательный заработок считается нулём</span>
+        <span lang="en">Net earnings are compared with the remainder. The excess is taxed. Negative earnings count as zero</span>
+      </li>
+    </ol>
 
     <p lang="ru">Вознаграждение по железнодорожному пенсионному закону идёт своей дорогой:
       оно сравнивается с порогом <strong>отдельно</strong> и с заработной платой не складывается.</p>
@@ -1435,6 +1428,21 @@
     </div>
 
     <h3><span lang="ru">Куда идёт выручка от продажи</span><span lang="en">Where a sale is reported</span></h3>
+
+    <ol class="ladder">
+      <li>
+        <p class="ladder__q"><span lang="ru">Это продукция или скот, <strong>выращенные на продажу</strong> либо <strong>купленные для перепродажи</strong>?</span><span lang="en">Is it produce or livestock <strong>raised for sale</strong> or <strong>bought for resale</strong>?</span></p>
+        <p class="ladder__out"><span lang="ru">Это товар. <strong>Schedule F</strong>, обычный фермерский доход</span><span lang="en">It is stock in trade. <strong>Schedule F</strong>, ordinary farm income</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Это скот для тягла, разведения, спорта или дойки — куплен он или выращен?</span><span lang="en">Is it livestock held for draft, breeding, sport or dairy use — bought or raised?</span></p>
+        <p class="ladder__out"><span lang="ru">Это средство производства. <strong>Форма 4797</strong>; при достаточном сроке владения — §1231</span><span lang="en">It is a means of production. <strong>Form 4797</strong>; with a long enough holding period, §1231</span></p>
+      </li>
+      <li class="is-rest">
+        <p class="ladder__q"><span lang="ru">Оборудование, постройки, земля</span><span lang="en">Equipment, buildings, land</span></p>
+        <p class="ladder__out"><span lang="ru">Тоже средства производства. <strong>Форма 4797</strong>. В Schedule F не попадает ничего из этого</span><span lang="en">Means of production as well. <strong>Form 4797</strong>. None of this reaches Schedule F</span></p>
+      </li>
+    </ol>
 
     <p lang="ru">Это самая продуктивная тема раздела: на ней строится примерно треть фермерских
       вопросов. Разделительная черта проходит не по виду имущества, а по <strong>назначению</strong>:
@@ -2281,33 +2289,52 @@
       computational questions are built on: <strong>how much</strong> of the forgiven amount reaches
       income, and when none of it does.</p>
 
-    <p lang="ru">Порядок разбора всегда один и тот же, и путать ступени нельзя.</p>
-    <p lang="en">The order of analysis is always the same, and the steps must not be mixed up.</p>
+    <p lang="ru">Порядок разбора всегда один и тот же. Схема ниже читается сверху вниз:
+      <strong>сработала ступень — разбор окончен</strong>, не сработала — спускаемся к следующей.
+      Ветки «нет» на схеме нет: ею служит сама лестница.</p>
+    <p lang="en">The order of analysis is always the same. The ladder below reads downwards:
+      <strong>a rung that applies ends the analysis</strong>; one that does not sends you to the
+      next. There is no “no” branch drawn: the ladder itself is that branch.</p>
 
-    <div class="scroller">
-    <table>
-      <thead>
-        <tr>
-          <th><span lang="ru">Ступень</span><span lang="en">Step</span></th>
-          <th><span lang="ru">Вопрос</span><span lang="en">The question</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th><span lang="ru">Изъятие</span><span lang="en">Exception</span></th>
-          <td><span lang="ru">Дохода не возникает <strong>вовсе</strong>: дар, завещание, вычитаемый долг, уменьшение цены продавцом</span><span lang="en">No income arises <strong>at all</strong>: a gift, a bequest, deductible debt, a seller's price reduction</span></td>
-        </tr>
-        <tr>
-          <th><span lang="ru">Исключение</span><span lang="en">Exclusion</span></th>
-          <td><span lang="ru">Доход <strong>возник</strong>, но из валового дохода выводится: банкротство, неплатёжеспособность, долг фермера, долг по деловой недвижимости</span><span lang="en">Income <strong>did</strong> arise but is kept out of gross income: bankruptcy, insolvency, farm debt, real property business debt</span></td>
-        </tr>
-        <tr class="total">
-          <th><span lang="ru">Цена исключения</span><span lang="en">The price of an exclusion</span></th>
-          <td><span lang="ru">Уменьшаются налоговые атрибуты. Форма 982</span><span lang="en">Tax attributes are reduced. Form 982</span></td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <ol class="ladder">
+      <li>
+        <p class="ladder__q"><span lang="ru">Долг прощён как дар, завещание или наследство?</span><span lang="en">Was the debt cancelled as a gift, bequest or inheritance?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Изъятие.</strong> Дохода не возникает вовсе. Атрибуты целы, форма 982 не подаётся</span><span lang="en"><strong>An exception.</strong> No income arises at all. Attributes are untouched and no Form 982 is filed</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Уплата этого долга дала бы вычет?</span><span lang="en">Would paying the debt have produced a deduction?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Изъятие</strong> в той же части. У должника на кассовом методе неоплаченный расход и не вычитался — прощение возвращать нечему</span><span lang="en">An <strong>exception</strong> to that extent. For a cash-method debtor the unpaid expense was never deducted, so the forgiveness has nothing to reverse</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Долг уменьшил <strong>продавец</strong> имущества, должник платёжеспособен и не в банкротстве?</span><span lang="en">Did the <strong>seller</strong> of the property reduce the debt, with the debtor solvent and out of bankruptcy?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Изъятие.</strong> Корректировка цены покупки: дохода нет, уменьшается базис имущества</span><span lang="en">An <strong>exception.</strong> A purchase price adjustment: no income, and the basis of the property goes down</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Долг списан в деле о банкротстве?</span><span lang="en">Was the debt discharged in a bankruptcy case?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Исключение</strong> целиком, без предела по сумме. Идёт впереди всех прочих</span><span lang="en">An <strong>exclusion</strong> in full, with no ceiling. It comes ahead of every other</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Должник был неплатёжеспособен непосредственно перед прощением?</span><span lang="en">Was the debtor insolvent immediately before the cancellation?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Исключение</strong> в пределах суммы неплатёжеспособности. Остаток спускается ниже</span><span lang="en">An <strong>exclusion</strong> up to the amount of the insolvency. Any remainder goes on down</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Это долг фермера или долг по деловой недвижимости?</span><span lang="en">Is it qualified farm debt or real property business debt?</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Исключение</strong> при своих условиях и в своих пределах</span><span lang="en">An <strong>exclusion</strong> on its own conditions and within its own limits</span></p>
+      </li>
+      <li class="is-rest">
+        <p class="ladder__q"><span lang="ru">Ничего не сработало</span><span lang="en">Nothing applied</span></p>
+        <p class="ladder__out"><span lang="ru">Остаток — <strong>доход</strong> там, откуда долг родом: деловой в Schedule C, личный в Schedule 1</span><span lang="en">The remainder is <strong>income</strong> where the debt came from: business debt on Schedule C, personal debt on Schedule 1</span></p>
+      </li>
+    </ol>
+
+    <p lang="ru">Ступени 1—3 — <strong>изъятия</strong>: дохода не было. Ступени 4—6 —
+      <strong>исключения</strong>: доход был и выведен, а платой стало уменьшение налоговых
+      атрибутов по форме 982. Разница между этими двумя половинами лестницы и решает большинство
+      вопросов темы.</p>
+    <p lang="en">Rungs 1–3 are <strong>exceptions</strong>: there was no income. Rungs 4–6 are
+      <strong>exclusions</strong>: income arose and was removed, paid for by a reduction of tax
+      attributes on Form 982. The difference between the two halves of the ladder decides most of
+      the questions on this subject.</p>
 
     <div class="trap">
       <h3><span lang="ru">Изъятие и исключение — не синонимы</span><span lang="en">An exception is not an exclusion</span></h3>
@@ -2442,19 +2469,15 @@
       the things that would have cut the taxpayer's tax later. The reduction is made at the end of
       the year of the cancellation, in a prescribed order.</p>
 
-    <div class="scroller">
-    <table>
-      <tbody>
-        <tr><th>1</th><td><span lang="ru">Чистый операционный убыток года и перенесённый на этот год</span><span lang="en">The net operating loss of the year and any carried to it</span></td></tr>
-        <tr><th>2</th><td><span lang="ru">Перенос общего делового кредита</span><span lang="en">General business credit carryover</span></td></tr>
-        <tr><th>3</th><td><span lang="ru">Кредит по минимальному налогу</span><span lang="en">Minimum tax credit</span></td></tr>
-        <tr><th>4</th><td><span lang="ru">Перенос убытка от прироста капитала</span><span lang="en">Capital loss carryover</span></td></tr>
-        <tr><th>5</th><td><span lang="ru"><strong>Базис имущества</strong></span><span lang="en"><strong>Basis of property</strong></span></td></tr>
-        <tr><th>6</th><td><span lang="ru">Перенос пассивного убытка и пассивного кредита</span><span lang="en">Passive activity loss and credit carryovers</span></td></tr>
-        <tr class="total"><th>7</th><td><span lang="ru">Перенос кредита по иностранным налогам</span><span lang="en">Foreign tax credit carryover</span></td></tr>
-      </tbody>
-    </table>
-    </div>
+    <ol class="steps">
+      <li><span lang="ru">Чистый операционный убыток года и перенесённый на этот год</span><span lang="en">The net operating loss of the year and any carried to it</span></li>
+      <li><span lang="ru">Перенос общего делового кредита</span><span lang="en">General business credit carryover</span></li>
+      <li><span lang="ru">Кредит по минимальному налогу</span><span lang="en">Minimum tax credit</span></li>
+      <li><span lang="ru">Перенос убытка от прироста капитала</span><span lang="en">Capital loss carryover</span></li>
+      <li><b><span lang="ru">Базис имущества</span><span lang="en">Basis of property</span></b><span lang="ru">Сюда можно встать первым — по прямому выбору налогоплательщика</span><span lang="en">This may be moved to the front by an express election</span></li>
+      <li><span lang="ru">Перенос пассивного убытка и пассивного кредита</span><span lang="en">Passive activity loss and credit carryovers</span></li>
+      <li><span lang="ru">Перенос кредита по иностранным налогам</span><span lang="en">Foreign tax credit carryover</span></li>
+    </ol>
 
     <p lang="ru">Убытки уменьшаются доллар за доллар, а кредиты — по <strong>33⅓ цента</strong> на
       каждый исключённый доллар: кредит уменьшает налог напрямую, а убыток лишь доход, и курс

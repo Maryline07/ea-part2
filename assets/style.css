@@ -949,6 +949,93 @@ table.numbered tbody th { width: 2.5rem; color: var(--accent); font-variant-nume
 .fork__b b { display: block; font-weight: 600; margin-bottom: 0.1rem; }
 .fork__b--no { border-left-color: var(--stamp); }
 
+/* ---------- Схемы: каскад проверок и последовательность --------------- */
+
+/* .ladder — порядок проверок: сработала — вышли, не сработала — вниз.
+   .steps  — порядок действий: выполняются все, но по очереди.
+   Отличаются они только тем, что у ступени лестницы есть выход, а у шага
+   нет; оформление общее, чтобы обе читались как одна семья схем. */
+
+.ladder,
+.steps {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: rung;
+}
+
+.ladder > li,
+.steps > li {
+  position: relative;
+  counter-increment: rung;
+  padding: 0 0 1rem 2.4rem;
+  line-height: 1.45;
+}
+
+.ladder > li:last-child,
+.steps > li:last-child { padding-bottom: 0; }
+
+/* Номер ступени — квадрат, а не круг: остальная страница свёрстана
+   бланком, скруглений в ней нет. */
+.ladder > li::before,
+.steps > li::before {
+  content: counter(rung);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.4rem;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: var(--paper);
+}
+
+/* Линия, связывающая ступени. У последней её нет: лестница кончилась. */
+.ladder > li::after,
+.steps > li::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 1.5rem;
+  bottom: 0.1rem;
+  border-left: 1px solid var(--rule);
+}
+
+.ladder > li:last-child::after,
+.steps > li:last-child::after { content: none; }
+
+.ladder__q {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.ladder__out {
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  background: var(--paper-sunk);
+  border-left: 3px solid var(--accent);
+}
+
+/* Последняя ступень — не проверка, а то, что остаётся, когда ни одна
+   не сработала. Красная кромка та же, что у отрицательной ветки .fork. */
+.ladder > li.is-rest .ladder__out { border-left-color: var(--stamp); }
+
+.steps > li b { display: block; font-weight: 600; }
+
+.ladder p,
+.steps li { max-width: var(--measure); }
+
+@media (max-width: 30rem) {
+  .ladder > li,
+  .steps > li { padding-left: 2rem; }
+}
+
 /* ---------- Ловушки списком и «Проверь себя» -------------------------- */
 
 .pitfalls { margin: 2.5rem 0; }
@@ -1156,5 +1243,6 @@ a.module:hover { background: var(--accent-pale); }
   body { font-size: 10.5pt; background: #fff; }
   .q.is-answered .why, .why { display: block; }
   details.check[open] > div, details.check > div { display: block; }
+  .ladder > li, .steps > li, .fork { break-inside: avoid; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
 }
