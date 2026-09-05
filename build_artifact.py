@@ -213,6 +213,15 @@ def build():
     check_clean(figures, "figures-2025.js")
     check_clean(modules_js, "modules.js")
     check_clean(trainer, "trainer.js")
+
+    # Заметки тоже коммитятся. В артефакт они не попадают, но лежат в публичном
+    # репозитории, и название курса в них разгласило бы ровно то, что проверка
+    # призвана не пропускать. Всё, что требует назвать источник по имени, живёт
+    # в памятке выше корня репозитория.
+    for name in ("CLAUDE.md", "README.md"):
+        if os.path.exists(os.path.join(HERE, name)):
+            check_clean(read(name), name)
+
     check_sections()
 
     router = r"""

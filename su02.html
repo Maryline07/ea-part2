@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=28">
-<script defer src="assets/figures-2025.js?v=28"></script>
-<script defer src="assets/modules.js?v=28"></script>
-<script defer src="assets/quiz-su02.js?v=28"></script>
+<link rel="stylesheet" href="assets/style.css?v=29">
+<script defer src="assets/figures-2025.js?v=29"></script>
+<script defer src="assets/modules.js?v=29"></script>
+<script defer src="assets/quiz-su02.js?v=29"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=28"></script>
+<script defer src="assets/app.js?v=29"></script>
 </head>
 <body data-module="su02">
 
@@ -345,6 +345,18 @@
         <p lang="en">Each reports the income on their own Schedule C, and for each it enters the
           self-employment tax base. The dental work remains a personal expense of the electrician and
           does not become a business deduction.</p>
+        <p lang="ru">Заготовленные неверные ответы держатся на отсутствии денег:
+          <span data-num="0"></span> у обоих — «расчётов не было, значит и дохода нет»; доход
+          только у одной стороны — у той, чья работа дороже; и
+          <span data-num="3200"></span> дохода у электрика при
+          <span data-num="3200"></span> вычета за лечение. Последний соблазнителен тем, что даёт
+          ноль к уплате, — но лечение зубов остаётся личным расходом.</p>
+        <p lang="en">The prepared wrong answers all rest on the absence of money:
+          <span data-num="0"></span> for both — “nothing was paid, so nothing is income”; income for
+          one side only, whichever's work was worth more; and <span data-num="3200"></span> of income
+          for the electrician against <span data-num="3200"></span> of deduction for the dental work.
+          The last is tempting because it nets to zero — but the dental work stays a personal
+          expense.</p>
       </div>
     </div>
 
@@ -646,6 +658,14 @@
           остаётся прежним. Это разные расчёты, и путать их нельзя.</p>
         <p lang="en">The deduction for one half reduces taxable income, but the self-employment tax
           itself is unchanged. These are separate computations and must not be merged.</p>
+        <p lang="ru">Заготовленный неверный ответ — <span data-num="12240"></span>: множитель
+          <span data-fig="se_net_factor"></span> пропущен и ставка взята прямо с прибыли. Второй —
+          <span data-num="5651.82"></span> в качестве самого налога: это половина, и она идёт в
+          вычет, а не в уплату.</p>
+        <p lang="en">The prepared wrong answer is <span data-num="12240"></span>: the
+          <span data-fig="se_net_factor"></span> factor skipped and the rate applied straight to the
+          profit. The second is <span data-num="5651.82"></span> taken as the tax itself: that is the
+          half, and it goes into the deduction, not into the payment.</p>
       </div>
     </div>
 
@@ -682,6 +702,16 @@
           всего чистого заработка — потолка у неё нет.</p>
         <p lang="en">The base limit cut back only the social security portion. The Medicare portion is
           computed on all net earnings — it has no ceiling.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="26943.3"></span> — предел
+          базы применён ко <em>всему</em> налогу, то есть 176 100 × <span data-fig="se_rate_total"></span>;
+          и <span data-num="28259.1"></span> — предела не заметили вовсе, 184 700 ×
+          <span data-fig="se_rate_total"></span>. Обе цифры выглядят правдоподобно именно потому,
+          что считаются в одно действие.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="26943.3"></span> — the wage base
+          applied to the <em>whole</em> tax, that is 176,100 × <span data-fig="se_rate_total"></span>;
+          and <span data-num="28259.1"></span> — the base overlooked entirely, 184,700 ×
+          <span data-fig="se_rate_total"></span>. Both look plausible precisely because each takes
+          only one step.</p>
       </div>
     </div>
 
@@ -841,6 +871,15 @@
           disposition of property, not stock in trade; the owner’s retirement plan contribution and
           self-employed health insurance premium are Schedule 1 deductions, sitting below Schedule C
           and leaving the base untouched; and a prior-year net operating loss is expressly excluded.</p>
+        <p lang="ru">Каждое из перечисленного и есть заготовленный неверный ответ: прибавьте
+          арендную плату — получится одна цифра, прибавьте прибыль от фургона — другая, вычтите
+          пенсионные взносы и премии — третья. Условие такой задачи всегда длиннее, чем нужно, и
+          проверяется не арифметика, а умение вычеркнуть лишние строки.</p>
+        <p lang="en">Every one of those is a prepared wrong answer: add the rent and you get one
+          figure, add the gain on the van and you get another, subtract the retirement contributions
+          and premiums and you get a third. The facts in such a question are always longer than
+          needed, and what is tested is not the arithmetic but the ability to strike out the lines
+          that do not belong.</p>
       </div>
     </div>
 
@@ -934,6 +973,48 @@
       <p lang="en">The <span data-fig="farm_opt_max"></span> ceiling is a <strong>single</strong>
         one. Someone using both methods in the same year reports no more than that in total, not
         that much under each.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-6. Дополнительный метод и его потолок</span><span lang="en">Example 2-6. An optional method and its ceiling</span></div>
+      <div class="example__body">
+        <p lang="ru">Валовой доход фермера от фермерства за год — <span data-num="13500"></span>,
+          чистая прибыль — <span data-num="700"></span>. Он хочет сохранить страховой стаж.</p>
+        <p lang="en">A farmer's gross income from farming for the year is <span data-num="13500"></span>
+          and his net profit <span data-num="700"></span>. He wants to preserve his social security
+          credits.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Валовой доход выше порога <span data-fig="farm_opt_gross"></span> — первое условие не выполнено</span><span lang="en">Gross income exceeds the <span data-fig="farm_opt_gross"></span> threshold — the first condition fails</span></td><td><span lang="ru">—</span><span lang="en">—</span></td></tr>
+            <tr><td><span lang="ru">Но прибыль ниже <span data-fig="farm_opt_profit"></span> — второго условия довольно</span><span lang="en">But the profit is below <span data-fig="farm_opt_profit"></span> — the second condition suffices</span></td><td><span lang="ru">право есть</span><span lang="en">eligible</span></td></tr>
+            <tr><td><span lang="ru">Две трети валового дохода: 13 500 × ⅔</span><span lang="en">Two-thirds of gross income: 13,500 × ⅔</span></td><td data-num="9000"></td></tr>
+            <tr class="total"><td><span lang="ru">Ограничено потолком <span data-fig="farm_opt_max"></span> — столько и показывается вместо <span data-num="700"></span></span><span lang="en">Capped at <span data-fig="farm_opt_max"></span> — that is reported instead of <span data-num="700"></span></span></td><td><span data-fig="farm_opt_max"></span></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="9000"></span> — посчитали две
+          трети и забыли про потолок; <span data-num="700"></span> — решили, что метод недоступен,
+          раз валовой доход выше <span data-fig="farm_opt_gross"></span>; и сам
+          <span data-fig="farm_opt_gross"></span> — порог приняли за показываемую сумму.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="9000"></span> — two-thirds taken and
+          the cap forgotten; <span data-num="700"></span> — the method assumed unavailable because
+          gross income exceeds <span data-fig="farm_opt_gross"></span>; and
+          <span data-fig="farm_opt_gross"></span> itself — the threshold mistaken for the amount
+          reportable.</p>
+        <p lang="ru">А теперь то, ради чего союзы и различаются. Возьмите валовой доход
+          <span data-num="9000"></span> и прибыль <span data-num="7000"></span>. Фермеру метод
+          доступен: валовой доход ниже <span data-fig="farm_opt_gross"></span>, и этого достаточно.
+          Нефермеру — нет: прибыль <span data-num="7000"></span> хоть и ниже
+          <span data-fig="farm_opt_profit"></span>, но превышает
+          <span data-fig="nonfarm_opt_pct"></span> от <span data-num="9000"></span>, то есть
+          <span data-num="6497"></span>, а там нужны <em>оба</em> условия.</p>
+        <p lang="en">And now what the difference between the conjunctions is for. Take gross income of
+          <span data-num="9000"></span> and a profit of <span data-num="7000"></span>. The farmer may
+          use the method: gross income is below <span data-fig="farm_opt_gross"></span>, and that is
+          enough. The nonfarmer may not: the <span data-num="7000"></span> profit is indeed below
+          <span data-fig="farm_opt_profit"></span> but exceeds <span data-fig="nonfarm_opt_pct"></span>
+          of <span data-num="9000"></span>, that is <span data-num="6497"></span> — and there
+          <em>both</em> conditions are required.</p>
+      </div>
     </div>
 
     <h3><span lang="ru">Супруги считают налог порознь</span><span lang="en">Spouses compute the tax separately</span></h3>
@@ -1074,7 +1155,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-6. Зарплата и самозанятость вместе</span><span lang="en">Example 2-6. Wages and self-employment combined</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-7. Зарплата и самозанятость вместе</span><span lang="en">Example 2-7. Wages and self-employment combined</span></div>
       <div class="example__body">
         <p lang="ru">Незамужняя женщина получила заработную плату $150 000 и имеет чистый
           заработок от самозанятости $80 000.</p>
@@ -1114,6 +1195,14 @@
         <p lang="en">An employer begins withholding this tax only once wages alone exceed $200,000,
           regardless of filing status. Here they do not, so nothing was withheld and the tax is
           computed on the return using Form 8959.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="0"></span> — ни один вид
+          дохода порога сам по себе не достиг, и на этом остановились; и
+          <span data-num="2070"></span> — <span data-fig="addl_medicare_rate"></span> взяты со всей
+          суммы, без вычета порога.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="0"></span> — neither kind of
+          income reached the threshold on its own, and the count stopped there; and
+          <span data-num="2070"></span> — <span data-fig="addl_medicare_rate"></span> applied to the
+          whole amount, with no threshold subtracted.</p>
       </div>
     </div>
 
@@ -1171,6 +1260,43 @@
       оно сравнивается с порогом <strong>отдельно</strong> и с заработной платой не складывается.</p>
     <p lang="en">Railroad retirement compensation goes its own way: it is compared with the
       threshold <strong>separately</strong> and is not added to wages.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-8. Заработная плата двоих и самозанятость</span><span lang="en">Example 2-8. Two people's wages and self-employment</span></div>
+      <div class="example__body">
+        <p lang="ru">Совместная декларация супругов. Заработная плата мужа
+          <span data-num="220000"></span>, жены — <span data-num="60000"></span>, и у жены есть
+          чистый заработок от самозанятости <span data-num="50000"></span>.</p>
+        <p lang="en">A married couple filing jointly. The husband's wages are
+          <span data-num="220000"></span>, the wife's <span data-num="60000"></span>, and the wife
+          also has <span data-num="50000"></span> of net earnings from self-employment.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Шаг 1. Заработная плата вместе: 220 000 + 60 000</span><span lang="en">Step 1. Wages together: 220,000 + 60,000</span></td><td data-num="280000"></td></tr>
+            <tr><td><span lang="ru">Порог для совместной декларации</span><span lang="en">Threshold for a joint return</span></td><td><span data-fig="addl_medicare_mfj"></span></td></tr>
+            <tr><td><span lang="ru">Облагается по заработной плате: 280 000 − 250 000</span><span lang="en">Taxed on wages: 280,000 − 250,000</span></td><td data-num="30000"></td></tr>
+            <tr><td><span lang="ru">Шаг 2. Порог минус заработная плата, <strong>но не ниже нуля</strong></span><span lang="en">Step 2. Threshold less wages, <strong>but not below zero</strong></span></td><td data-num="0"></td></tr>
+            <tr><td><span lang="ru">Шаг 3. Облагается по самозанятости: 50 000 − 0</span><span lang="en">Step 3. Taxed on self-employment: 50,000 − 0</span></td><td data-num="50000"></td></tr>
+            <tr class="total"><td><span lang="ru">Налог: (30 000 + 50 000) × <span data-fig="addl_medicare_rate"></span></span><span lang="en">Tax: (30,000 + 50,000) × <span data-fig="addl_medicare_rate"></span></span></td><td data-num="720"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Ради чего второй шаг оговаривает «не ниже нуля», видно из заготовленного
+          неверного ответа <span data-num="990"></span>. Он получается, если вычесть буквально:
+          250 000 − 280 000 = −30 000, а затем 50 000 − (−30 000) = <span data-num="80000"></span>
+          по самозанятости. Превышение по заработной плате оказалось бы засчитано дважды.</p>
+        <p lang="en">What the “not below zero” in step 2 is for shows in the prepared wrong answer of
+          <span data-num="990"></span>. It comes from subtracting literally: 250,000 − 280,000 =
+          −30,000, and then 50,000 − (−30,000) = <span data-num="80000"></span> of self-employment.
+          The excess over the threshold would be counted twice.</p>
+        <p lang="ru">Второй неверный ответ — <span data-num="270"></span>: посчитали только
+          заработную плату и остановились, решив, что порог уже израсходован и до самозанятости
+          дело не дойдёт. Дойдёт: остаток порога равен нулю, а не «недоступен».</p>
+        <p lang="en">The second wrong answer is <span data-num="270"></span>: wages alone were
+          computed and the count stopped there, on the view that the threshold was used up and
+          self-employment never comes into it. It does: the remaining threshold is zero, not
+          “unavailable”.</p>
+      </div>
+    </div>
 
     <div class="trap">
       <h3><span lang="ru">Убыток от самозанятости заработную плату не уменьшает</span><span lang="en">A self-employment loss does not reduce wages</span></h3>
@@ -1393,7 +1519,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-7. Продажа выращенного племенного быка</span><span lang="en">Example 2-7. Selling a raised breeding bull</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-9. Продажа выращенного племенного быка</span><span lang="en">Example 2-9. Selling a raised breeding bull</span></div>
       <div class="example__body">
         <p lang="ru">Бык выращен на ферме, использовался для разведения четыре года и продан за
           <span data-num="5200"></span>. Расходы на доставку и комиссию продавца —
@@ -1421,11 +1547,20 @@
           are different — they reduce the gain. Four years exceeds the
           <span data-fig="livestock_hold_cattle"></span> months required for cattle, so section 1231
           applies.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="1680"></span> — корма и уход
+          вычтены вторично, как будто они базис; <span data-num="5200"></span> — забыты расходы на
+          продажу; и та же сумма, отнесённая к §1245. Возврата по §1245 здесь нет и быть не может:
+          выращенное животное не амортизировалось, возвращать нечего.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="1680"></span> — feed and care
+          deducted a second time as though they were basis; <span data-num="5200"></span> — the
+          selling expenses forgotten; and the same amount assigned to §1245. There is no §1245
+          recapture here and cannot be: a raised animal was never depreciated, so there is nothing
+          to recapture.</p>
       </div>
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-8. Продажа купленной племенной коровы</span><span lang="en">Example 2-8. Selling a purchased breeding cow</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-10. Продажа купленной племенной коровы</span><span lang="en">Example 2-10. Selling a purchased breeding cow</span></div>
       <div class="example__body">
         <p lang="ru">Корова куплена за <span data-num="2400"></span>, использовалась для разведения,
           амортизации начислено <span data-num="1540"></span>. Продана за
@@ -1479,7 +1614,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-9. Что показать в Schedule F</span><span lang="en">Example 2-9. What goes on Schedule F</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-11. Что показать в Schedule F</span><span lang="en">Example 2-11. What goes on Schedule F</span></div>
       <div class="example__body">
         <p lang="ru">Фермер вырастил и продал сою, продал племенных тёлок, получил кооперативные
           выплаты от местного кормового склада, платёж по программе охраны земель и плату за уборку
@@ -1587,7 +1722,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-10. Сколько дохода можно отложить</span><span lang="en">Example 2-10. How much may be postponed</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-12. Сколько дохода можно отложить</span><span lang="en">Example 2-12. How much may be postponed</span></div>
       <div class="example__body">
         <p lang="ru">Фермер на кассовом методе обычно продаёт <span data-num="90" data-unit="plain"></span>
           голов скота в год. Из-за засухи в 2025 году продано <span data-num="126" data-unit="plain"></span>
@@ -1638,6 +1773,38 @@
       the farm business follows its own rule, and supplies that would have been consumed during the
       year but for a fire, storm, flood, other casualty, disease or drought are not prepaid farm
       supplies at all.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-13. Предоплата кормов в декабре</span><span lang="en">Example 2-13. Feed prepaid in December</span></div>
+      <div class="example__body">
+        <p lang="ru">Фермер на кассовом методе в декабре закупил кормов и удобрений на
+          <span data-num="40000"></span> впрок. Прочие вычитаемые фермерские расходы года,
+          включая амортизацию, составили <span data-num="60000"></span>.</p>
+        <p lang="en">In December a cash-method farmer bought <span data-num="40000"></span> of feed
+          and fertiliser in advance. The year's other deductible farm expenses, depreciation
+          included, came to <span data-num="60000"></span>.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Прочие фермерские расходы года</span><span lang="en">The year's other farm expenses</span></td><td data-num="60000"></td></tr>
+            <tr><td><span lang="ru">Предел: <span data-fig="farm_prepaid_limit"></span> от них</span><span lang="en">The limit: <span data-fig="farm_prepaid_limit"></span> of them</span></td><td data-num="30000"></td></tr>
+            <tr><td><span lang="ru">Вычитается в году оплаты</span><span lang="en">Deducted in the year of payment</span></td><td data-num="30000"></td></tr>
+            <tr class="total"><td><span lang="ru">Излишек — в год, когда припасы израсходуют</span><span lang="en">The excess — in the year the supplies are consumed</span></td><td data-num="10000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Весь вопрос в том, <strong>от чего</strong> берутся
+          <span data-fig="farm_prepaid_limit"></span>, и заготовленные ответы перебирают все
+          неверные базы: <span data-num="20000"></span> — половина самой предоплаты;
+          <span data-num="50000"></span> — половина от общей суммы расходов
+          <span data-num="100000"></span>; <span data-num="40000"></span> — предел не применён
+          вовсе. Правильная база — прочие расходы года, без самих предоплаченных припасов.</p>
+        <p lang="en">Everything turns on <strong>what</strong> the
+          <span data-fig="farm_prepaid_limit"></span> is taken of, and the prepared answers run
+          through every wrong base: <span data-num="20000"></span> — half of the prepayment itself;
+          <span data-num="50000"></span> — half of the combined <span data-num="100000"></span>;
+          <span data-num="40000"></span> — no limit applied at all. The right base is the year's
+          other expenses, excluding the prepaid supplies themselves.</p>
+      </div>
+    </div>
 
     <h3><span lang="ru">Расходы на охрану почв и вод</span><span lang="en">Soil and water conservation expenses</span></h3>
 
@@ -1781,6 +1948,41 @@
         provision is in force and worth knowing, but it does not reach facts set in
         <span data-num="2025" data-unit="plain"></span> — and an answer choice that applies it is
         wrong for precisely that reason.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-14. Перенос природоохранных расходов</span><span lang="en">Example 2-14. Carrying conservation expenses forward</span></div>
+      <div class="example__body">
+        <p lang="ru">Первый год: валовой доход от фермерства <span data-num="60000"></span>,
+          затраты на террасирование по утверждённому плану <span data-num="22000"></span>.
+          Второй год: валовой доход <span data-num="88000"></span>, новых природоохранных затрат
+          <span data-num="4000"></span>.</p>
+        <p lang="en">Year one: gross income from farming <span data-num="60000"></span>, terracing
+          under an approved plan <span data-num="22000"></span>. Year two: gross income
+          <span data-num="88000"></span>, new conservation spending
+          <span data-num="4000"></span>.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Год 1. Предел: <span data-fig="soil_water_limit"></span> от 60 000</span><span lang="en">Year 1. The limit: <span data-fig="soil_water_limit"></span> of 60,000</span></td><td data-num="15000"></td></tr>
+            <tr><td><span lang="ru">Год 1. Вычитается</span><span lang="en">Year 1. Deducted</span></td><td data-num="15000"></td></tr>
+            <tr><td><span lang="ru">Год 1. Переносится вперёд: 22 000 − 15 000</span><span lang="en">Year 1. Carried forward: 22,000 − 15,000</span></td><td data-num="7000"></td></tr>
+            <tr><td><span lang="ru">Год 2. Предел: <span data-fig="soil_water_limit"></span> от 88 000</span><span lang="en">Year 2. The limit: <span data-fig="soil_water_limit"></span> of 88,000</span></td><td data-num="22000"></td></tr>
+            <tr class="total"><td><span lang="ru">Год 2. Вычитается: новые 4 000 плюс перенесённые 7 000 — в предел укладываются</span><span lang="en">Year 2. Deducted: the new 4,000 plus the 7,000 carried over — both fit inside the limit</span></td><td data-num="11000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заготовленные неверные ответы первого года: <span data-num="22000"></span> —
+          предел не применён; <span data-num="7000"></span> — исключаемое перепутано с вычитаемым.
+          Второго года: <span data-num="4000"></span> — про перенос забыли, будто излишек пропал.
+          Он не пропадает и срока давности не имеет — но и предел на него распространяется:
+          перенесённое вычитается <em>внутри</em> <span data-fig="soil_water_limit"></span>
+          следующего года, а не сверх них.</p>
+        <p lang="en">The prepared wrong answers for year one: <span data-num="22000"></span> — no
+          limit applied; <span data-num="7000"></span> — the carried amount mistaken for the
+          deducted one. For year two: <span data-num="4000"></span> — the carryforward forgotten, as
+          though the excess had lapsed. It does not lapse and has no time limit — but the cap
+          applies to it too: what is carried forward is deducted <em>within</em> the next year's
+          <span data-fig="soil_water_limit"></span>, not on top of them.</p>
+      </div>
     </div>
 
     <h3><span lang="ru">Отсрочка по страхованию урожая</span><span lang="en">Deferring crop insurance proceeds</span></h3>
@@ -1956,7 +2158,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-11. Проверка доли фермерского дохода</span><span lang="en">Example 2-11. Testing the two-thirds share</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-15. Проверка доли фермерского дохода</span><span lang="en">Example 2-15. Testing the two-thirds share</span></div>
       <div class="example__body">
         <p lang="ru">За 2025 год фермер получил доход от продажи урожая, а также проценты по
           вкладу и заработную плату на зимней подработке.</p>
@@ -1991,6 +2193,18 @@
         <p lang="en">Two-thirds is <span data-fig="farm_income_share"></span>. The 67.6% obtained
           clears the threshold, so the special rule applies. Note that the comparison uses gross
           income, not net profit, and the farmer’s wages go into the denominator only.</p>
+        <p lang="ru">Заготовленные неверные ответы строятся на подмене одной из двух величин
+          дроби. Положите заработную плату <span data-num="41000"></span> в числитель — выйдет
+          97,8%, и порог будет пройден с запасом. Возьмите вместо валового дохода чистую прибыль —
+          доля изменится непредсказуемо, потому что расходы у фермерской и нефермерской части
+          разные. Числитель и знаменатель здесь собираются по разным правилам, и это не описка
+          составителя.</p>
+        <p lang="en">The prepared wrong answers all substitute one of the two terms of the
+          fraction. Put the <span data-num="41000"></span> of wages into the numerator and you get
+          97.8%, clearing the threshold comfortably. Use net profit in place of gross income and the
+          share moves unpredictably, because the farm and nonfarm sides carry different expenses.
+          Numerator and denominator here are built by different rules, and that is not an oversight
+          of the drafter.</p>
       </div>
     </div>
 
@@ -2123,7 +2337,7 @@
       is exactly the amount of the insolvency — the remainder goes into income.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-12. Прощение долга при неплатёжеспособности</span><span lang="en">Example 2-12. Cancellation while insolvent</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-16. Прощение долга при неплатёжеспособности</span><span lang="en">Example 2-16. Cancellation while insolvent</span></div>
       <div class="example__body">
         <p lang="ru">Непосредственно перед прощением обязательства предпринимателя составляли
           <span data-num="180000"></span>, справедливая стоимость всего имущества —
@@ -2263,6 +2477,50 @@
         of selling the property would rather keep the loss.</p>
     </div>
 
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-17. Чем оплачено исключение</span><span lang="en">Example 2-17. What the exclusion was paid with</span></div>
+      <div class="example__body">
+        <p lang="ru">По неплатёжеспособности исключено <span data-num="60000"></span>. На конец
+          года у налогоплательщика: чистый операционный убыток <span data-num="18000"></span>,
+          перенос общего делового кредита <span data-num="9000"></span>, перенос убытка от прироста
+          капитала <span data-num="5000"></span>, базис имущества
+          <span data-num="200000"></span>. Кредита по минимальному налогу нет.</p>
+        <p lang="en">The insolvency exclusion removed <span data-num="60000"></span>. At year end the
+          taxpayer has: a net operating loss of <span data-num="18000"></span>, a general business
+          credit carryover of <span data-num="9000"></span>, a capital loss carryover of
+          <span data-num="5000"></span>, and property with a basis of
+          <span data-num="200000"></span>. There is no minimum tax credit.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Исключено, и на столько уменьшаются атрибуты</span><span lang="en">Excluded, and attributes fall by that much</span></td><td data-num="60000"></td></tr>
+            <tr><td><span lang="ru">1. Чистый операционный убыток — доллар за доллар</span><span lang="en">1. Net operating loss — dollar for dollar</span></td><td data-num="-18000"></td></tr>
+            <tr><td><span lang="ru">2. Кредит <span data-num="9000"></span> по 33⅓ цента за доллар поглощает</span><span lang="en">2. The <span data-num="9000"></span> credit, at 33⅓ cents per dollar, absorbs</span></td><td data-num="-27000"></td></tr>
+            <tr><td><span lang="ru">4. Перенос убытка от прироста капитала</span><span lang="en">4. Capital loss carryover</span></td><td data-num="-5000"></td></tr>
+            <tr class="total"><td><span lang="ru">5. Остаток уменьшает базис имущества</span><span lang="en">5. The remainder reduces the basis of property</span></td><td data-num="10000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заготовленный неверный ответ — <span data-num="28000"></span> уменьшения
+          базиса. Он получается, если кредит уменьшить доллар за доллаpом, как убыток: тогда он
+          поглотит <span data-num="9000"></span>, а не <span data-num="27000"></span>. Курс 33⅓
+          существует потому, что кредит уменьшает <em>налог</em>, а убыток лишь
+          <em>облагаемый доход</em>: чтобы отдать столько же, кредита нужно втрое меньше.</p>
+        <p lang="en">The prepared wrong answer is a basis reduction of
+          <span data-num="28000"></span>. It comes from cutting the credit dollar for dollar, as if
+          it were a loss: then it would absorb <span data-num="9000"></span> rather than
+          <span data-num="27000"></span>. The 33⅓ rate exists because a credit reduces
+          <em>tax</em> while a loss reduces only <em>taxable income</em>: to give up as much, three
+          times less credit is needed.</p>
+        <p lang="ru">Второй неверный ответ — <span data-num="60000"></span> уменьшения базиса:
+          очередь пропущена, и всё списано на базис сразу. На базис он попал бы первым только по
+          прямому выбору налогоплательщика — и такой выбор берут те, кто продавать имущество не
+          собирается, а убыток хочет сохранить.</p>
+        <p lang="en">The second wrong answer is a <span data-num="60000"></span> basis reduction: the
+          queue skipped and everything charged to basis at once. Basis would come first only by an
+          express election — and that election is made by those with no intention of selling the
+          property who would rather keep the loss.</p>
+      </div>
+    </div>
+
     <h3><span lang="ru">Долг погашен не деньгами</span><span lang="en">A debt settled otherwise than in money</span></h3>
 
     <p lang="ru">Кредитор может согласиться взять вместо денег имущество или собственные акции
@@ -2274,7 +2532,7 @@
       cancellation of debt income.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-13. Долг закрыт собственными акциями</span><span lang="en">Example 2-13. A debt settled with the debtor's own stock</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-18. Долг закрыт собственными акциями</span><span lang="en">Example 2-18. A debt settled with the debtor's own stock</span></div>
       <div class="example__body">
         <p lang="ru">Платёжеспособная корпорация передала кредитору собственные акции в погашение
           долга <span data-num="30000"></span>. Справедливая стоимость акций —
@@ -2364,7 +2622,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-14. Одно здание, два вида долга</span><span lang="en">Example 2-14. One building, two kinds of debt</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-19. Одно здание, два вида долга</span><span lang="en">Example 2-19. One building, two kinds of debt</span></div>
       <div class="example__body">
         <p lang="ru">Базис здания магазина — <span data-num="145000"></span>, справедливая стоимость
           — <span data-num="120000"></span>, долг под него —
@@ -2387,6 +2645,16 @@
           larger but ordinary income of <span data-num="14000"></span> appears, against which the
           exclusions may still be tried. Without personal liability everything collapses into one
           line and there is nothing to exclude — no cancellation income arose.</p>
+        <p lang="ru">Заготовленные неверные ответы получаются перестановкой строк между
+          столбцами: убыток <span data-num="-25000"></span> при отсутствии личной ответственности;
+          доход от списания <span data-num="14000"></span> там же; и оба результата сразу для долга
+          без личной ответственности. Проверяйте первым делом не цифры, а <strong>одно слово
+          условия</strong> — отвечал ли должник лично.</p>
+        <p lang="en">The prepared wrong answers come from swapping rows between the columns: the
+          <span data-num="-25000"></span> loss where there is no personal liability;
+          <span data-num="14000"></span> of cancellation income in the same place; and both results
+          at once for a nonrecourse debt. What to check first is not the figures but
+          <strong>one word in the facts</strong> — was the borrower personally liable.</p>
       </div>
     </div>
 
