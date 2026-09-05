@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=31">
-<script defer src="assets/figures-2025.js?v=31"></script>
-<script defer src="assets/modules.js?v=31"></script>
-<script defer src="assets/quiz-su01.js?v=31"></script>
+<link rel="stylesheet" href="assets/style.css?v=32">
+<script defer src="assets/figures-2025.js?v=32"></script>
+<script defer src="assets/modules.js?v=32"></script>
+<script defer src="assets/quiz-su01.js?v=32"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=31"></script>
+<script defer src="assets/app.js?v=32"></script>
 </head>
 <body data-module="su01">
 
@@ -62,7 +62,7 @@
       </div>
       <div class="field">
         <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
-        <dd>SS-4 · 8832 · W-2 · W-4 · 1099-NEC · 940 · 3115 · 1128 · 8716</dd>
+        <dd>SS-4 · 8832 · W-2 · W-4 · 1099-NEC · 940 · 970 · 3115 · 1128 · 8716</dd>
       </div>
       <div class="field">
         <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
@@ -268,6 +268,16 @@
         <p lang="en">Each spouse also files a separate Schedule SE. The point of the election is not
           the amount of tax but that the partnership return and its penalties disappear, and each
           spouse builds their own social security earnings record.</p>
+        <p lang="ru">Заготовленные неверные ответы: одна Schedule C на <span data-num="84000"></span> у того из супругов,
+          кто «числится хозяином», — но выбор совместного предприятия в том и состоит, чтобы
+          разделить; форма 1065 с двумя K-1 по <span data-num="42000"></span> — режим, от которого выбор как раз
+          освобождает; и «выбор недоступен» — недоступен он был бы, если бы мастерскую оформили
+          юридическим лицом: совместное предприятие открыто только неинкорпорированному бизнесу.</p>
+        <p lang="en">The prepared wrong answers: a single Schedule C for <span data-num="84000"></span> filed by whichever
+          spouse “counts as the owner” — but dividing the income is the whole point of the election;
+          Form 1065 with two K-1s of <span data-num="42000"></span> each — the regime the election exists to avoid; and “the
+          election is not available” — it would not be, had the shop been put into a legal entity, as
+          a qualified joint venture is open only to an unincorporated business.</p>
       </div>
     </div>
 
@@ -448,8 +458,152 @@
           Налога на самозанятость во втором случае нет, но это слабое утешение.</p>
         <p lang="en">The swing in taxable income is $13,200: a $3,800 reduction against a $9,400
           addition. There is no self-employment tax in the second case, which is small comfort.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="13200"></span> вычета при отнесении к хобби —
+          расходы хобби не вычитаются вовсе, ни постатейно, ни как-либо ещё; убыток <span data-num="3800"></span> в обоих
+          столбцах — при хобби убытка не бывает по определению; и <span data-num="0"></span> дохода, как будто отсутствие
+          бизнеса отменяет и выручку. Проверяется здесь не арифметика, а асимметрия: доход
+          показывается целиком, расходы — никак.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="13200"></span> of deductions on the hobby side — hobby
+          expenses are not deductible at all, itemised or otherwise; a <span data-num="3800"></span> loss in both columns —
+          a hobby cannot produce a loss by definition; and <span data-num="0"></span> of income, as though the absence of a
+          business also cancelled the receipts. What is tested is not the arithmetic but the
+          asymmetry: the income is reported in full, the expenses not at all.</p>
       </div>
     </div>
+
+    <h3><span lang="ru">Освобождённые организации и ассоциации</span><span lang="en">Tax-exempt organisations and associations</span></h3>
+
+    <p lang="ru">Организация, описанная в §501(c), освобождается от федерального подоходного налога
+      по §501(a). Освобождение не возникает само собой: организация §501(c)(3) просит его формой
+      1023 или 1023-EZ, большинство остальных — формой 1024, а организация социального
+      благосостояния §501(c)(4) — формой 1024-A. И освобождение не отменяет ни ежегодной
+      отчётности, ни налога на доход от деятельности, к освобождённой цели не относящейся.</p>
+    <p lang="en">An organisation described in section 501(c) is exempt from federal income tax under
+      section 501(a). The exemption does not arise on its own: a section 501(c)(3) organisation asks
+      for it on Form 1023 or 1023-EZ, most others on Form 1024, and a section 501(c)(4) social
+      welfare organisation on Form 1024-A. Nor does exemption remove either the annual reporting or
+      the tax on income from activity unrelated to the exempt purpose.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Размер организации</span><span lang="en">Size of the organisation</span></th>
+          <th><span lang="ru">Что подаётся за год</span><span lang="en">What is filed for the year</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Обычная валовая выручка не выше <span data-fig="ex_990n_receipts"></span></span><span lang="en">Gross receipts normally at or below <span data-fig="ex_990n_receipts"></span></span></th>
+          <td><span lang="ru">990-N — электронная открытка. Полную форму можно подать и добровольно</span><span lang="en">Form 990-N, the e-Postcard. A full return may be filed voluntarily</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Выручка ниже <span data-fig="ex_990ez_receipts"></span> <strong>и</strong> активы ниже <span data-fig="ex_990ez_assets"></span></span><span lang="en">Receipts below <span data-fig="ex_990ez_receipts"></span> <strong>and</strong> assets below <span data-fig="ex_990ez_assets"></span></span></th>
+          <td><span lang="ru">990-EZ либо полная 990. Оба условия должны выполняться одновременно</span><span lang="en">Form 990-EZ or the full Form 990. Both conditions must hold at once</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Всё, что выше</span><span lang="en">Anything above that</span></th>
+          <td><span lang="ru">Полная форма 990</span><span lang="en">The full Form 990</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Частный фонд</span><span lang="en">A private foundation</span></th>
+          <td><span lang="ru">990-PF — при любом размере, порогов для него нет</span><span lang="en">Form 990-PF — whatever its size; the thresholds do not apply</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Валовой доход от несвязанной деятельности от <span data-fig="ubit_file"></span></span><span lang="en">Gross income of <span data-fig="ubit_file"></span> or more from an unrelated business</span></th>
+          <td><span lang="ru">Дополнительно 990-T — независимо от того, какая форма серии 990 подаётся</span><span lang="en">Form 990-T as well, whichever return of the 990 series is filed</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Срок для форм 990, 990-EZ и 990-PF — <strong>15-е число 5-го месяца</strong> после
+      конца учётного периода: у календарной организации 15 мая. Продление даёт форма 8868 —
+      автоматические шесть месяцев. Форма 990-T идёт по тому же сроку, кроме трастов работников и
+      счетов IRA: у них 15-е число 4-го месяца.
+      <span class="cite">Instructions for Forms 990, 990-T</span></p>
+    <p lang="en">Forms 990, 990-EZ and 990-PF are due on the <strong>15th day of the 5th month</strong>
+      after the end of the accounting period — May 15 for a calendar-year organisation. Form 8868
+      grants an automatic six-month extension. Form 990-T follows the same date, except for
+      employees' trusts and IRAs, which file by the 15th day of the 4th month.
+      <span class="cite">Instructions for Forms 990, 990-T</span></p>
+
+    <div class="trap">
+      <h3><span lang="ru">Три года молчания стоят освобождения</span><span lang="en">Three silent years cost the exemption</span></h3>
+      <p lang="ru">Если организация <span data-fig="ex_revoke_years"></span> года подряд не подаёт ни
+        декларацию серии 990, ни электронную открытку, освобождение отзывается
+        <strong>автоматически</strong> — по сроку подачи третьей из непредставленных деклараций.
+        Ни проверки, ни отдельного решения для этого не нужно, и уведомление отзыв не создаёт, а лишь
+        сообщает о нём. Вернуть освобождение можно только новым заявлением, с пошлиной и, как
+        правило, без восстановления задним числом.</p>
+      <p lang="en">If an organisation files neither a return of the 990 series nor the e-Postcard for
+        <span data-fig="ex_revoke_years"></span> consecutive years, the exemption is revoked
+        <strong>automatically</strong> — as of the due date of the third missed return. No
+        examination and no separate determination are required, and the notice does not create the
+        revocation but merely reports it. The exemption comes back only on a fresh application, with
+        a user fee and generally without retroactive reinstatement.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Освобождение — не от всякого дохода</span><span lang="en">Exemption is not exemption from every kind of income</span></h3>
+      <p lang="ru">Доход от <em>регулярно ведущейся</em> деятельности, которая к освобождённой цели
+        не относится, облагается налогом, и освобождение здесь не помогает. Считается он отдельно:
+        валовой доход минус прямо связанные с этой деятельностью расходы минус специальный вычет
+        <span data-fig="ubit_deduction"></span>. Вычет один <strong>на всю организацию</strong>,
+        сколько бы несвязанных дел она ни вела, — именно на удвоении этого вычета и строится
+        неверный вариант. Ставка — <span data-fig="ubit_rate"></span>; у трастов, освобождённых по
+        §501(a), — ставки трастов.
+        <span class="cite">§§511—513; Instructions for Form 990-T</span></p>
+      <p lang="en">Income from a <em>regularly carried on</em> activity unrelated to the exempt
+        purpose is taxed, and the exemption does not help. It is computed separately: gross income
+        less the expenses directly connected with that activity less the specific deduction of
+        <span data-fig="ubit_deduction"></span>. There is one deduction <strong>for the whole
+        organisation</strong>, however many unrelated businesses it runs — and doubling that
+        deduction is exactly how the wrong answer is built. The rate is
+        <span data-fig="ubit_rate"></span>; trusts exempt under section 501(a) use trust rates.
+        <span class="cite">Sections 511–513; Instructions for Form 990-T</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 1-3. Несвязанный доход благотворительной организации</span><span lang="en">Example 1-3. Unrelated business income of a charity</span></div>
+      <div class="example__body">
+        <p lang="ru">Благотворительный фонд с календарным годом владеет прачечной самообслуживания,
+          открытой для всех желающих. Выручка прачечной за год — <span data-num="28000"></span>,
+          прямо связанные с ней расходы — <span data-num="19500"></span>. К уставной цели фонда
+          стирка отношения не имеет.</p>
+        <p lang="en">A calendar-year charitable foundation owns a self-service laundry open to the
+          general public. Its receipts for the year are <span data-num="28000"></span> and the
+          expenses directly connected with it <span data-num="19500"></span>. The laundry has nothing
+          to do with the foundation's exempt purpose.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Валовой доход от несвязанной деятельности</span><span lang="en">Gross income from the unrelated business</span></td><td data-num="28000"></td></tr>
+            <tr><td><span lang="ru">Минус прямо связанные расходы</span><span lang="en">Less directly connected expenses</span></td><td data-num="-19500"></td></tr>
+            <tr><td><span lang="ru">Минус специальный вычет</span><span lang="en">Less the specific deduction</span></td><td data-num="-1000"></td></tr>
+            <tr class="total"><td><span lang="ru">Несвязанный облагаемый доход</span><span lang="en">Unrelated business taxable income</span></td><td data-num="7500"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Валовой доход <span data-num="28000"></span> выше
+          <span data-fig="ubit_file"></span>, поэтому форма 990-T подаётся — и подавалась бы, даже
+          если бы после вычетов налога не осталось. Обязанность подать привязана к валовому доходу,
+          а не к результату.</p>
+        <p lang="en">Gross income of <span data-num="28000"></span> exceeds
+          <span data-fig="ubit_file"></span>, so Form 990-T is filed — and would be filed even if
+          nothing were left after the deductions. The duty to file attaches to gross income, not to
+          the result.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="8500"></span> — специальный
+          вычет забыт; <span data-num="0"></span> — «организация освобождена, значит налога нет»,
+          самый частый из них; и <span data-num="28000"></span> — расходы не вычтены вовсе. Если бы
+          фонд вёл ещё и вторую несвязанную деятельность, добавился бы четвёртый вариант со вторым
+          специальным вычетом: он один на организацию, а не на каждое дело.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="8500"></span> — the specific
+          deduction forgotten; <span data-num="0"></span> — “the organisation is exempt, so there is
+          no tax”, the commonest of them; and <span data-num="28000"></span> — no expenses deducted
+          at all. Had the foundation run a second unrelated business, a fourth answer would appear
+          with a second specific deduction: there is one per organisation, not one per business.</p>
+      </div>
+    </div>
+
 
     <!-- ============================================================ -->
     <section class="sub" id="s12">
@@ -1069,7 +1223,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-3. Расчёт налога по безработице</span><span lang="en">Example 1-3. Computing the FUTA tax</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-4. Расчёт налога по безработице</span><span lang="en">Example 1-4. Computing the FUTA tax</span></div>
       <div class="example__body">
         <p lang="ru">У пекарни четыре работника, каждому за 2025 год выплачено более $7 000.
           Взносы в фонд штата уплачены полностью и в срок, поэтому кредит предоставляется в
@@ -1108,6 +1262,14 @@
           <span data-fig="futa_base"></span> на человека, а не фактическая зарплата.</p>
         <p lang="en">Every employee earned more than the base, so exactly
           <span data-fig="futa_base"></span> per person enters the computation, not the actual wages.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="1680"></span> — ставка <span data-fig="futa_rate"></span> применена без
+          кредита за взносы в штат; <span data-num="42"></span> — умножение на число работников потеряно; и вариант, где
+          налог посчитан с фактической заработной платы вместо <span data-fig="futa_base"></span> на человека. Каждый
+          получается в одно действие, оттого и выглядит убедительно.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="1680"></span> — the <span data-fig="futa_rate"></span> rate applied without the
+          state credit; <span data-num="42"></span> — the multiplication by the number of employees lost; and a figure
+          computed on actual wages instead of <span data-fig="futa_base"></span> per employee. Each takes a single step,
+          which is precisely why each looks convincing.</p>
       </div>
     </div>
 
@@ -1193,7 +1355,7 @@
     <p lang="en">A tax shelter has no exception: passing the gross receipts test does not help it.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-4. Тест валовой выручки</span><span lang="en">Example 1-4. The gross receipts test</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-5. Тест валовой выручки</span><span lang="en">Example 1-5. The gross receipts test</span></div>
       <div class="example__body">
         <p lang="ru">Корпорация решает, вправе ли она применять кассовый метод в 2025 году.
           Берутся три предшествующих года.</p>
@@ -1224,6 +1386,15 @@
         <p lang="en">The average is below the threshold, so the cash method is available. Note that
           receipts in 2023 alone exceeded the threshold: the test applies to the three-year average,
           not to each year separately.</p>
+        <p lang="ru">Заготовленный неверный ответ — «нет»: в 2023 году выручка <span data-num="32000000"></span> сама по
+          себе превысила порог <span data-fig="gross_receipts_448c"></span>. Тест смотрит на среднее за три года, а не на
+          худший год из трёх. Второй вариант строится на наборе лет — среднее за четыре года или с
+          участием текущего: какие годы берутся, здесь такая же часть правила, как и сам порог.</p>
+        <p lang="en">The prepared wrong answer is “no”: in 2023 receipts of <span data-num="32000000"></span> exceeded the
+          <span data-fig="gross_receipts_448c"></span> threshold on their own. The test looks at the three-year average, not
+          at the worst of the three years. A second answer plays on which years are taken — a
+          four-year average, or one including the current year: the set of years is as much part of
+          the rule as the threshold itself.</p>
       </div>
     </div>
 
@@ -1653,7 +1824,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-5. Предоплата страховки</span><span lang="en">Example 1-5. Prepaid insurance</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-6. Предоплата страховки</span><span lang="en">Example 1-6. Prepaid insurance</span></div>
       <div class="example__body">
         <p lang="ru">1 октября 2025 года бизнес <strong>на кассовом методе</strong> оплачивает
           страховой полис на 12 месяцев за $6 000. Действие полиса — с 1 октября 2025 по
@@ -1688,6 +1859,14 @@
           would have to be spread across the years. On the accrual method the answer here would be
           the same <span data-num="6000"></span>: for insurance, economic performance occurs as
           payment is made. The methods would part company if rent stood in place of insurance.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="1500"></span> — полис разложен по месяцам, и в 2025 год
+          попали только три из двенадцати; и <span data-num="0"></span> — вычет целиком отложен на 2026-й, «когда услуга
+          получена». Оба верны для полиса, который за границы правила выходит, и оба неверны для
+          этого.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="1500"></span> — the policy spread over its months, with
+          only three of the twelve falling in 2025; and <span data-num="0"></span> — the whole deduction pushed into 2026,
+          “when the cover is received”. Both are right for a policy that falls outside the rule, and
+          both are wrong for this one.</p>
       </div>
     </div>
 
@@ -1763,7 +1942,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-6. Аванс за услуги и перенос занятия</span><span lang="en">Example 1-6. An advance payment and a postponed lesson</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-7. Аванс за услуги и перенос занятия</span><span lang="en">Example 1-7. An advance payment and a postponed lesson</span></div>
       <div class="example__body">
         <p lang="ru">1 декабря 2024 года языковая школа получила <span data-num="3600"></span> за
           восемнадцать уроков: два в 2024 году, шестнадцать — в 2025. Один урок из 2025 года
@@ -1793,6 +1972,12 @@
         <p lang="en">The temptation to spread the money over three years — <span data-num="400"></span>,
           <span data-num="3000"></span> and <span data-num="200"></span> — is precisely the error
           being tested. The year of receipt plus one: no further deferral exists.</p>
+        <p lang="ru">Второй заготовленный ответ — <span data-num="3600"></span> целиком в 2024 году: так вышло бы, если бы
+          выбор отсрочки не был сделан. Оговорка о нём стоит в условии не для красоты — без выбора
+          аванс включается в доход в год получения полностью.</p>
+        <p lang="en">The second prepared answer is the whole <span data-num="3600"></span> in 2024: that is the result if
+          the deferral election was never made. The words about it in the facts are not decoration —
+          without the election the advance goes into income in full in the year of receipt.</p>
       </div>
     </div>
 
@@ -2016,7 +2201,7 @@
           <td><span lang="ru">Исправление арифметической ошибки или ошибки в переносе суммы</span><span lang="en">Correction of a math or posting error</span></td>
         </tr>
         <tr>
-          <td><span lang="ru">Смена метода или базы оценки запасов — в том числе переход на LIFO</span><span lang="en">A change in the method or basis used to value inventory, including adopting LIFO</span></td>
+          <td><span lang="ru">Смена метода или базы оценки запасов</span><span lang="en">A change in the method or basis used to value inventory</span></td>
           <td><span lang="ru">Исправление ошибки в исчислении налога — например, в расчёте кредита</span><span lang="en">Correction of an error in figuring tax liability, such as an error in a credit</span></td>
         </tr>
         <tr>
@@ -2035,14 +2220,40 @@
       <h3><span lang="ru">Проверьте, меняется ли год</span><span lang="en">Ask whether the year changes</span></h3>
       <p lang="ru">Единственный признак, по которому различаются два столбца, — влияет ли изменение
         на <em>год</em> отражения статьи. Ошибка в сложении года не меняет: сумма всё равно
-        относилась к тому же периоду, просто была посчитана неверно. Переход с FIFO на LIFO год
-        меняет — и потому требует согласия. Пробуйте каждый вариант на этот вопрос, и перечень
+        относилась к тому же периоду, просто была посчитана неверно. Переход с кассового метода на метод
+        начисления год меняет — и потому требует согласия. Пробуйте каждый вариант на этот вопрос, и перечень
         запоминать не придётся.</p>
       <p lang="en">The single feature separating the two columns is whether the change affects the
         <em>year</em> in which an item is reported. An addition error changes no year: the amount
-        always belonged to that period, it was merely computed wrong. Moving from FIFO to LIFO does
-        change the year, and so needs consent. Test each answer choice against that question and the
+        always belonged to that period, it was merely computed wrong. Moving from the cash method to an accrual
+        method does change the year, and so needs consent. Test each answer choice against that question and the
         lists need not be memorised.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">На LIFO и с LIFO — разные бумаги</span><span lang="en">Going to LIFO and leaving LIFO take different paperwork</span></h3>
+      <p lang="ru">Смена базы оценки запасов стоит в перечне выше справедливо, но
+        <strong>направление</strong> решает, чем она оформляется. Переход <strong>на</strong> LIFO —
+        это выбор по §472: форма 970 подаётся вместе со своевременно поданной декларацией за первый
+        год применения, и отдельного разрешения не запрашивают — его даёт сама норма. Переход
+        <strong>с</strong> LIFO — согласие Комиссара по форме 3115, где у этого изменения свой номер
+        в перечне автоматических.</p>
+      <p lang="en">A change in the basis of valuing inventory belongs on the list above, but the
+        <strong>direction</strong> decides the paperwork. Going <strong>to</strong> LIFO is an
+        election under section 472: Form 970 is filed with a timely filed return for the first year
+        of use, and no separate permission is requested — the provision itself grants it. Leaving
+        LIFO takes the Commissioner's consent on Form 3115, where the change has its own number
+        among the automatic ones.</p>
+      <p lang="ru">Отсюда утверждение, которое попадается в сторонних конспектах: «на LIFO согласия
+        не требуется». Оно верно про порядок оформления и обманчиво про существо — сменой метода
+        учёта переход остаётся. Формулировка вопроса и решает: спрашивают про <em>разрешение</em> —
+        его не просят; спрашивают, <em>является ли это сменой метода</em>, — является.
+        <span class="cite">§472(d); Reg. 1.472-3, 1.472-5; Pub. 538, Adopting LIFO method</span></p>
+      <p lang="en">Hence a statement met in outside notes: “no consent is needed to adopt LIFO.” It is
+        right about the paperwork and misleading about the substance — the move remains a change of
+        accounting method. The wording of the question decides: asked about <em>permission</em>, none
+        is requested; asked whether it <em>is a change of method</em>, it is.
+        <span class="cite">Section 472(d); Regs. 1.472-3, 1.472-5; Pub. 538, Adopting LIFO method</span></p>
     </div>
 
     <!-- ============================================================ -->
@@ -2121,7 +2332,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Формула себестоимости проданного</span><span lang="en">The cost of goods sold formula</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-8. Формула себестоимости проданного</span><span lang="en">Example 1-8. The cost of goods sold formula</span></div>
       <div class="example__body">
         <table class="ledger">
           <tbody>
@@ -2138,6 +2349,15 @@
         <p lang="en">Overstating ending inventory reduces cost of goods sold and increases profit.
           This relationship is tested constantly: when a question changes one figure, you are
           expected to state which way the other moves.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="270000"></span> — конечные запасы прибавлены вместо
+          вычитания; <span data-num="135000"></span> — прямой труд и прочие затраты не включены; и утверждение, что
+          завышение конечных запасов на прибыль не влияет. Влияет: припишите к остатку лишние
+          <span data-num="10000"></span> — себестоимость упадёт до <span data-num="150000"></span>, а прибыль вырастет ровно на <span data-num="10000"></span>.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="270000"></span> — ending inventory added instead of
+          subtracted; <span data-num="135000"></span> — labour and other costs left out; and the claim that overstating
+          ending inventory does not affect profit. It does: add <span data-num="10000"></span> too much to the closing
+          stock and cost of goods sold falls to <span data-num="150000"></span> while profit rises by exactly
+          <span data-num="10000"></span>.</p>
       </div>
     </div>
 
@@ -2213,7 +2433,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Одна скидка, два метода</span><span lang="en">One discount, two methods</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-9. Одна скидка, два метода</span><span lang="en">Example 1-9. One discount, two methods</span></div>
       <div class="example__body">
         <p lang="ru">Товар закуплен по счёту на <span data-num="100"></span>, скидка за быструю
           оплату <span data-num="10"></span>, уплачено <span data-num="90"></span>. Запасов на
@@ -2249,6 +2469,14 @@
           <span data-num="45"></span> is exactly what the rule against reducing closing inventory by
           estimated discounts forbids. Had every item been sold, both columns would read
           <span data-num="-90"></span> and the choice of method would mean nothing.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="45"></span> в обеих колонках — методы не различили;
+          <span data-num="40"></span> в качестве себестоимости проданного — влияние на прибыль принято за себестоимость; и
+          остаток второго метода, уценённый до <span data-num="45"></span>. Последнее прямо запрещено: уменьшать конечный
+          остаток на расчётные скидки нельзя.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="45"></span> in both columns — the two methods not told
+          apart; <span data-num="40"></span> taken as cost of goods sold — the effect on profit mistaken for the cost
+          itself; and the closing stock under the second method written down to <span data-num="45"></span>. That last one
+          is expressly forbidden: closing inventory may not be reduced by anticipated discounts.</p>
       </div>
     </div>
 
@@ -2302,7 +2530,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-7. Меньшая из себестоимости и рыночной цены</span><span lang="en">Example 1-7. Lower of cost or market</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-10. Меньшая из себестоимости и рыночной цены</span><span lang="en">Example 1-10. Lower of cost or market</span></div>
       <div class="example__body">
         <p lang="ru">В остатке три позиции. Требуется оценить запасы на конец года.</p>
         <p lang="en">Three items remain on hand. Value the closing inventory.</p>
@@ -2334,6 +2562,14 @@
           <span data-num="950"></span> with the total market of <span data-num="800"></span> and
           taking the lower would give <span data-num="800"></span> — and that is wrong. Each item is
           valued separately, so the result mixes costs and market values.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="800"></span> — итог рынка сравнён с итогом
+          себестоимости; <span data-num="950"></span> — взята одна себестоимость, будто правила нет; и вариант, где то же
+          правило применено к товару, законтрактованному по твёрдой цене, — такой товар показывается
+          по себестоимости, и меньшая из двух величин к нему не применяется.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="800"></span> — the market total compared with the cost
+          total; <span data-num="950"></span> — cost taken alone, as though the rule did not exist; and the same rule applied
+          to goods under a firm sales contract — those stay at cost, and the lower of the two figures
+          does not reach them.</p>
       </div>
     </div>
 
@@ -2350,7 +2586,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-8. FIFO и LIFO на одних данных</span><span lang="en">Example 1-8. FIFO and LIFO on the same facts</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-11. FIFO и LIFO на одних данных</span><span lang="en">Example 1-11. FIFO and LIFO on the same facts</span></div>
       <div class="example__body">
         <p lang="ru">Начальный остаток и две закупки года. На конец года осталось
           <span data-num="1400" data-unit="plain"></span> единиц товара.</p>
@@ -2384,10 +2620,19 @@
         </table>
         <p lang="ru">При растущих ценах LIFO оставляет в остатке дешёвый товар, значит
           себестоимость проданного выше, а прибыль ниже. FIFO даёт обратную картину. Именно поэтому
-          выбор метода — предмет разрешения, а не свободного усмотрения.</p>
+          метод нельзя переключать из года в год под ситуацию: на LIFO переходят выбором по форме
+          970, и он связывает на будущее, а уйти с него можно только с согласия по форме 3115.</p>
         <p lang="en">With rising prices LIFO leaves the cheap layers in inventory, so cost of goods
-          sold is higher and profit lower. FIFO does the reverse. That is why the choice of method
-          is subject to consent rather than free preference.</p>
+          sold is higher and profit lower. FIFO does the reverse. That is why the method cannot be
+          switched year by year to suit: LIFO is taken up by election on Form 970 and binds for the
+          future, and leaving it needs consent on Form 3115.</p>
+        <p lang="ru">Заготовленные неверные ответы получаются перестановкой двух цифр: <span data-num="10200"></span>
+          как LIFO и <span data-num="7600"></span> как FIFO. Проверять надо не арифметику, а направление — при растущих
+          ценах в остатке LIFO лежит <em>дешёвый</em> товар, отсюда и меньшая цифра.</p>
+        <p lang="en">The prepared wrong answers come from swapping the two figures: <span data-num="10200"></span> as LIFO
+          and <span data-num="7600"></span> as FIFO. What needs checking is not the arithmetic but the direction — with
+          rising prices LIFO leaves the <em>cheap</em> goods in inventory, which is where the smaller
+          figure comes from.</p>
       </div>
     </div>
 
@@ -2458,7 +2703,7 @@
       dividing the result by the aggregate rolling-average cost of the inventory.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-9. Проверка отклонения</span><span lang="en">Example 1-9. Testing the variance</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-12. Проверка отклонения</span><span lang="en">Example 1-12. Testing the variance</span></div>
       <div class="example__body">
         <p lang="ru">Компания ведёт запасы по скользящему среднему и пересчитывает среднюю
           себестоимость ежемесячно. На конец года запасы по скользящему среднему стоят
@@ -2491,6 +2736,16 @@
           достаточно любого.</p>
         <p lang="en">The variance is under 1% and the method stands — even though the turnover
           falls short of four times. The two tests are joined by “or”: either one is enough.</p>
+        <p lang="ru">Заготовленные неверные ответы: «нет, оборачиваемость меньше четырёх раз» —
+          два признака соединены союзом «либо», и отклонения ниже 1% довольно; «нет, пересчитывать
+          надо при каждом поступлении товара» — регулярного пересчёта не реже раза в месяц хватает;
+          и «да, потому что тот же метод применён в финансовой отчётности» — соответствие отчётности
+          входит в условия, но само по себе метод не оправдывает.</p>
+        <p lang="en">The prepared wrong answers: “no, the inventory turns fewer than four times” —
+          the two tests are joined by <em>or</em>, and a variance under 1% is enough; “no, the average
+          must be recomputed on every purchase” — recomputing regularly and at least monthly will do;
+          and “yes, because the same method is used in the financial statements” — conformity is one
+          of the conditions, but on its own it does not justify the method.</p>
       </div>
     </div>
 
@@ -2607,37 +2862,36 @@
 
     <h3><span lang="ru">Требуемый период партнёрства — три теста по порядку</span><span lang="en">A partnership’s required year — three tests in order</span></h3>
 
-    <div class="scroller">
-    <table class="numbered">
-      <thead>
-        <tr>
-          <th>№</th>
-          <th><span lang="ru">Тест</span><span lang="en">Test</span></th>
-          <th><span lang="ru">Содержание</span><span lang="en">Content</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>1</th>
-          <td><span lang="ru">Мажоритарной доли</span><span lang="en">Majority interest</span></td>
-          <td><span lang="ru">Если партнёры с одинаковым налоговым периодом владеют более чем 50% прибыли и капитала, партнёрство берёт их период</span><span lang="en">If partners with the same tax year own more than 50% of profits and capital, the partnership takes their year</span></td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td><span lang="ru">Основных партнёров</span><span lang="en">Principal partners</span></td>
-          <td><span lang="ru">Если мажоритарной группы нет — берётся общий период всех партнёров с долей 5% и более</span><span lang="en">If there is no majority group, the common year of all partners holding 5% or more is used</span></td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td><span lang="ru">Наименьшей совокупной отсрочки</span><span lang="en">Least aggregate deferral</span></td>
-          <td><span lang="ru">Если и это не сработало — выбирается период, дающий наименьшую суммарную отсрочку дохода для партнёров</span><span lang="en">If neither applies, the year producing the least aggregate deferral of income to the partners is chosen</span></td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
+    <ol class="ladder">
+      <li>
+        <p class="ladder__q"><span lang="ru">Владеют ли партнёры с <strong>одинаковым</strong> налоговым периодом более чем 50% прибыли <em>и</em> капитала?</span><span lang="en">Do partners with the <strong>same</strong> tax year own more than 50% of profits <em>and</em> capital?</span></p>
+        <p class="ladder__out"><span lang="ru">Тест мажоритарной доли. Партнёрство берёт период этой группы</span><span lang="en">The majority interest test. The partnership takes that group's year</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Есть ли общий налоговый период у <strong>всех</strong> партнёров с долей 5% и более?</span><span lang="en">Do <strong>all</strong> partners holding 5% or more share a common tax year?</span></p>
+        <p class="ladder__out"><span lang="ru">Тест основных партнёров. Партнёрство берёт этот период</span><span lang="en">The principal partners test. The partnership takes that year</span></p>
+      </li>
+      <li class="is-rest">
+        <p class="ladder__q"><span lang="ru">Не сработал ни один из двух</span><span lang="en">Neither test applied</span></p>
+        <p class="ladder__out"><span lang="ru">Считается <strong>наименьшая совокупная отсрочка</strong>: каждый возможный конец года проверяется расчётом, побеждает наименьший итог</span><span lang="en">The <strong>least aggregate deferral</strong> is computed: every candidate year end is tested and the smallest total wins</span></p>
+      </li>
+    </ol>
+
+    <p lang="ru">Порядок идёт от согласия к арифметике и потому не переставляется. Сначала
+      спрашивают, есть ли общий год у тех, кому принадлежит большая часть бизнеса; если такого
+      большинства нет — есть ли общий год хотя бы у крупных партнёров; и лишь когда не нашлось ни
+      того ни другого, включается расчёт, который ничьего мнения не спрашивает. Отсюда главная
+      ошибка темы: наименьшую совокупную отсрочку начинают считать сразу, не проверив две ступени
+      выше, — а считать её нужно только тогда, когда обе пусты.</p>
+    <p lang="en">The order runs from agreement to arithmetic, and that is why it cannot be permuted.
+      First ask whether those who own most of the business share a year; if there is no such
+      majority, whether the large partners at least share one; and only when neither is found does
+      the computation take over, and it asks nobody's view. Hence the classic mistake: the least
+      aggregate deferral gets computed straight away, without testing the two rungs above it — and
+      it is to be computed only when both come up empty.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-10. Наименьшая совокупная отсрочка</span><span lang="en">Example 1-10. Least aggregate deferral</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-13. Наименьшая совокупная отсрочка</span><span lang="en">Example 1-13. Least aggregate deferral</span></div>
       <div class="example__body">
         <p lang="ru">В партнёрстве два партнёра с равными долями по 50%. У первого налоговый год
           заканчивается 30 июня, у второго — 31 декабря. Мажоритарной группы с одинаковым периодом
@@ -2691,6 +2945,16 @@
         <p lang="en">Where the totals tie, the partnership may choose either of the matching years.
           Deferral is counted in months forward from the end of the candidate partnership year to the
           end of the partner’s year.</p>
+        <p lang="ru">Заготовленные неверные ответы: вариант A как «первый по списку» — при равенстве
+          партнёрство выбирает, а не берёт верхний; отсрочка, посчитанная назад по календарю, — тогда
+          <span data-num="6"></span> и <span data-num="0"></span> меняются местами и «побеждает» другой вариант; и год партнёра с большей долей —
+          доли здесь равны, а сам признак работает только на первой ступени, в тесте мажоритарной
+          доли.</p>
+        <p lang="en">The prepared wrong answers: option A as “the first on the list” — on a tie the
+          partnership chooses rather than takes the top one; deferral counted backwards through the
+          calendar — then the <span data-num="6"></span> and the <span data-num="0"></span> swap places and the other option “wins”; and the year of
+          the partner with the larger interest — the interests here are equal, and that feature
+          belongs to the first rung only, the majority interest test.</p>
       </div>
     </div>
 
@@ -2869,7 +3133,7 @@
       not hand out an unwarranted benefit merely because a partial year holds less income.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-11. Приведение к годовому эквиваленту</span><span lang="en">Example 1-11. Annualizing a short period</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-14. Приведение к годовому эквиваленту</span><span lang="en">Example 1-14. Annualizing a short period</span></div>
       <div class="example__body">
         <p lang="ru">Налогоплательщик сменил налоговый период и подаёт декларацию за четыре месяца
           2025 года. Скорректированный валовой доход — <span data-num="52800"></span>,
@@ -2897,6 +3161,15 @@
           period <strong>deductions must be itemized</strong>: the standard deduction is unavailable.
           Self-employment tax is the exception — it is figured on the actual self-employment income
           of the short period and is not annualized.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="158400"></span> — к годовому эквиваленту приведён
+          валовой доход, а вычеты забыты; налог, посчитанный прямо с <span data-num="31200"></span> без приведения, —
+          короткий период тогда выглядел бы дешевле полного, ради чего правило и написано; и вариант
+          со стандартным вычетом, который при коротком периоде недоступен.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="158400"></span> — gross income annualised with the
+          deductions forgotten; the tax computed straight on <span data-num="31200"></span> without annualising — a short
+          period would then come out cheaper than a full one, which is the very thing the rule
+          prevents; and an answer using the standard deduction, which a short period does not
+          allow.</p>
       </div>
     </div>
 
@@ -3067,6 +3340,79 @@
         rates together.</p>
     </div>
 
+    <div class="scroller">
+    <div class="plot">
+      <svg viewBox="0 0 640 320" role="img">
+        <title lang="ru">Накопление двух штрафов: за непредставление 4,5% в месяц пять месяцев и стоп, за неуплату 0,5% в месяц до 25%</title>
+        <title lang="en">How the two penalties accumulate: failure to file at 4.5% a month for five months then stops, failure to pay at 0.5% a month up to 25%</title>
+
+        <line class="plot__grid" x1="56" y1="30" x2="616" y2="30" />
+        <line class="plot__grid" x1="56" y1="74" x2="616" y2="74" />
+        <line class="plot__grid" x1="56" y1="118" x2="616" y2="118" />
+        <line class="plot__grid" x1="56" y1="162" x2="616" y2="162" />
+        <line class="plot__grid" x1="56" y1="206" x2="616" y2="206" />
+
+        <polygon class="plot__box" points="56,250 112,151 616,151 616,250" />
+        <polygon class="plot__box--tax" points="56,250 112,140 616,41 616,151 112,151" />
+
+        <line class="plot__axis" x1="56" y1="30" x2="56" y2="250" />
+        <line class="plot__axis" x1="56" y1="250" x2="620" y2="250" />
+
+        <text class="plot__cap" x="48" y="34" text-anchor="end">50%</text>
+        <text class="plot__cap" x="48" y="78" text-anchor="end">40%</text>
+        <text class="plot__cap" x="48" y="122" text-anchor="end">30%</text>
+        <text class="plot__cap" x="48" y="166" text-anchor="end">20%</text>
+        <text class="plot__cap" x="48" y="210" text-anchor="end">10%</text>
+        <text class="plot__cap" x="48" y="254" text-anchor="end">0%</text>
+
+        <text lang="ru" class="plot__cap" x="56" y="20">накоплено, % неуплаченного налога</text>
+        <text lang="en" class="plot__cap" x="56" y="20">accrued, % of the unpaid tax</text>
+
+        <line class="plot__link" x1="112" y1="140" x2="112" y2="250" />
+        <text class="plot__cap" x="112" y="266" text-anchor="middle">5</text>
+        <text class="plot__cap" x="168" y="266" text-anchor="middle">10</text>
+        <text class="plot__cap" x="280" y="266" text-anchor="middle">20</text>
+        <text class="plot__cap" x="392" y="266" text-anchor="middle">30</text>
+        <text class="plot__cap" x="504" y="266" text-anchor="middle">40</text>
+        <text class="plot__cap" x="616" y="266" text-anchor="middle">50</text>
+
+        <text lang="ru" class="plot__cap" x="56" y="296">месяцев просрочки →</text>
+        <text lang="en" class="plot__cap" x="56" y="296">months late →</text>
+
+        <text lang="ru" class="plot__cap" x="360" y="200" text-anchor="middle">за непредставление</text>
+        <text lang="en" class="plot__cap" x="360" y="200" text-anchor="middle">failure to file</text>
+        <text lang="ru" class="plot__cap" x="360" y="216" text-anchor="middle">останавливается на <tspan class="plot__val" data-num="22.5" data-unit="pct"></tspan></text>
+        <text lang="en" class="plot__cap" x="360" y="216" text-anchor="middle">stops at <tspan class="plot__val" data-num="22.5" data-unit="pct"></tspan></text>
+
+        <text lang="ru" class="plot__cap" x="400" y="106" text-anchor="middle">за неуплату</text>
+        <text lang="en" class="plot__cap" x="400" y="106" text-anchor="middle">failure to pay</text>
+        <text lang="ru" class="plot__cap" x="400" y="122" text-anchor="middle">идёт до <tspan class="plot__val" data-fig="pen_6651_max"></tspan></text>
+        <text lang="en" class="plot__cap" x="400" y="122" text-anchor="middle">runs on to <tspan class="plot__val" data-fig="pen_6651_max"></tspan></text>
+
+        <text lang="ru" class="plot__val" x="614" y="32" text-anchor="end">вместе <tspan data-num="47.5" data-unit="pct"></tspan></text>
+        <text lang="en" class="plot__val" x="614" y="32" text-anchor="end">together <tspan data-num="47.5" data-unit="pct"></tspan></text>
+      </svg>
+    </div>
+    </div>
+
+    <p class="plot__note" lang="ru">Первые пять месяцев верхняя граница растёт на
+      <span data-fig="pen_6651_rate"></span> в месяц — но это не два штрафа подряд, а
+      <span data-num="4.5" data-unit="pct"></span> плюс <span data-fig="pen_6651_pay"></span>. На
+      пятом месяце нижняя полоса замирает: штраф за непредставление исчерпан. Дальше растёт только
+      верхняя, и к пятидесятому месяцу она догоняет собственный потолок
+      <span data-fig="pen_6651_max"></span>. Ставка за неуплату не всегда
+      <span data-fig="pen_6651_pay"></span>: при действующем соглашении о рассрочке она вдвое
+      меньше, а после уведомления о взыскании — вдвое больше.</p>
+    <p class="plot__note" lang="en">For the first five months the upper edge climbs by
+      <span data-fig="pen_6651_rate"></span> a month — but that is not two penalties in a row, it is
+      <span data-num="4.5" data-unit="pct"></span> plus <span data-fig="pen_6651_pay"></span>. In the
+      fifth month the lower band freezes: the failure-to-file penalty is spent. Only the upper band
+      grows after that, and by the fiftieth month it reaches its own
+      <span data-fig="pen_6651_max"></span> ceiling. The failure-to-pay rate is not always
+      <span data-fig="pen_6651_pay"></span>: under an approved payment plan it is halved, and after a
+      notice of intent to levy it doubles.</p>
+
+
     <div class="trap">
       <h3><span lang="ru">Минимальный штраф привязан к сроку подачи, а не к налоговому году</span><span lang="en">The minimum penalty follows the due date, not the tax year</span></h3>
       <p lang="ru">Величина <span data-fig="pen_6651_min"></span> применяется к декларациям, срок
@@ -3081,7 +3427,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 1-12. Штраф партнёрства за просрочку</span><span lang="en">Example 1-12. A partnership's late filing penalty</span></div>
+      <div class="example__head"><span lang="ru">Пример 1-15. Штраф партнёрства за просрочку</span><span lang="en">Example 1-15. A partnership's late filing penalty</span></div>
       <div class="example__body">
         <p lang="ru">Партнёрство с четырьмя партнёрами должно было подать форму 1065 за 2025 год
           <span data-fig="due_1065"></span>. Декларация подана 2 июля 2026 года, продление не
@@ -3115,6 +3461,14 @@
         <p lang="en">A part of a month counts as a whole one: June 2 to July 2 is the fourth month and
           counts in full. Having no tax to pay does not remove the penalty — it is measured by
           partners, not by tax.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="3060"></span> — сосчитаны три полных месяца, а часть
+          четвёртого отброшена; <span data-num="1020"></span> — штраф не умножен на число партнёров; и <span data-num="0"></span> — «налога нет,
+          значит и штрафа нет». Последний самый частый: штраф §6698 считается по партнёрам и о
+          налоге ничего не знает.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="3060"></span> — three whole months counted and the part
+          of the fourth dropped; <span data-num="1020"></span> — the penalty not multiplied by the number of partners; and
+          <span data-num="0"></span> — “no tax, so no penalty”. That last is the commonest: the section 6698 penalty counts
+          partners and knows nothing of tax.</p>
       </div>
     </div>
 
@@ -3625,6 +3979,10 @@
         <tr><th>56</th><td><span lang="ru">Название в договоре и выданная форма 1099-NEC статуса исполнителя не определяют. Решает <strong>право</strong> заказчика указывать, что и как делать, — независимо от того, пользовался ли он им</span><span lang="en">The label in the contract and the Form 1099-NEC issued decide nothing about the worker's status. What decides is the payer's <strong>right</strong> to direct what is done and how — whether or not that right was exercised</span></td></tr>
         <tr><th>57</th><td><span lang="ru">Условие раздела 530 «никого со сходной должности не относили к работникам» — <strong>не запрет</strong> нанимать бывшего работника подрядчиком. Периода ожидания в федеральном налоговом праве нет. Прошлое трудоустройство лишает заказчика защиты, но статус исполнителя решает только тест контроля</span><span lang="en">The section 530 condition that no one in a substantially similar position was treated as an employee is <strong>not a bar</strong> on engaging a former employee as a contractor. Federal tax law has no waiting period. Past employment costs the payer the relief, but the worker's status is decided by the control test alone</span></td></tr>
         <tr><th>58</th><td><span lang="ru">Правило двенадцати месяцев и отсрочка аванса — разные нормы: первая про <strong>вычет у плательщика</strong>, вторая про <strong>доход у получателя</strong>. Отсрочка дохода месяцами не меряется: остаток падает в следующий налоговый год независимо от срока договора</span><span lang="en">The twelve-month rule and the advance-payment deferral are different rules: the first governs the <strong>payer’s deduction</strong>, the second the <strong>recipient’s income</strong>. The income deferral is not measured in months: the remainder drops into the following tax year whatever the term of the contract</span></td></tr>
+        <tr><th>59</th><td><span lang="ru">Переход <strong>на</strong> LIFO и переход <strong>с</strong> LIFO — оба смена метода учёта, но бумаги разные: на LIFO — выбор по форме 970 вместе со своевременно поданной декларацией, разрешения не запрашивают; с LIFO — согласие по форме 3115</span><span lang="en">Going <strong>to</strong> LIFO and leaving LIFO are both changes of accounting method, but the paperwork differs: to LIFO by election on Form 970 with a timely filed return, with no permission requested; away from LIFO by consent on Form 3115</span></td></tr>
+        <tr><th>60</th><td><span lang="ru">Освобождение по §501(a) не отменяет отчётности. <span data-fig="ex_revoke_years"></span> года подряд без декларации серии 990 или электронной открытки — освобождение отзывается <strong>автоматически</strong>, по сроку третьей непредставленной, без проверки и без отдельного решения</span><span lang="en">Exemption under section 501(a) does not remove the reporting. <span data-fig="ex_revoke_years"></span> consecutive years with no return of the 990 series and no e-Postcard, and the exemption is revoked <strong>automatically</strong>, as of the due date of the third missed return, with no examination and no separate determination</span></td></tr>
+        <tr><th>61</th><td><span lang="ru">Освобождённая организация платит налог с дохода от регулярной деятельности, не связанной с уставной целью. Форма 990-T подаётся с валового дохода от <span data-fig="ubit_file"></span>, а специальный вычет <span data-fig="ubit_deduction"></span> берётся <strong>один на организацию</strong>, а не на каждое дело</span><span lang="en">An exempt organisation pays tax on income from a regularly carried on activity unrelated to its exempt purpose. Form 990-T is filed once gross income reaches <span data-fig="ubit_file"></span>, and the specific deduction of <span data-fig="ubit_deduction"></span> is taken <strong>once for the organisation</strong>, not once per business</span></td></tr>
+        <tr><th>62</th><td><span lang="ru">Срок форм 990, 990-EZ и 990-PF — 15-е число <strong>5-го</strong> месяца после конца периода, у календарной организации 15 мая; продление даёт форма 8868. Четвёртый месяц здесь только у трастов работников и счетов IRA по форме 990-T</span><span lang="en">Forms 990, 990-EZ and 990-PF are due on the 15th day of the <strong>5th</strong> month after the period ends — May 15 for a calendar-year organisation; Form 8868 extends it. The 4th month here belongs only to employees' trusts and IRAs filing Form 990-T</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -3737,14 +4095,18 @@
     </details>
 
     <details class="check">
-      <summary><span lang="ru">10. Что из перечисленного требует согласия IRS: исправление ошибки в сложении; переход с FIFO на LIFO; уточнение срока полезного использования станка?</span><span lang="en">10. Which requires IRS consent: correcting an addition error; moving from FIFO to LIFO; adjusting the useful life of a machine?</span></summary>
+      <summary><span lang="ru">10. Что из перечисленного требует согласия IRS: исправление ошибки в сложении; переход с кассового метода на метод начисления; уточнение срока полезного использования станка?</span><span lang="en">10. Which requires IRS consent: correcting an addition error; moving from the cash method to an accrual method; adjusting the useful life of a machine?</span></summary>
       <div>
-        <p lang="ru">Только переход с FIFO на LIFO — это смена базы оценки запасов, и она меняет
-          год, в котором затраты попадут в себестоимость. Ошибка в сложении года не меняет, а
-          корректировка срока полезного использования прямо названа не являющейся сменой метода.</p>
-        <p lang="en">Only the move from FIFO to LIFO: that is a change in the basis of valuing
-          inventory and it changes the year in which costs enter cost of goods sold. An addition
-          error changes no year, and a useful-life adjustment is expressly not a change of method.</p>
+        <p lang="ru">Только переход с кассового метода на метод начисления: он меняет год, в
+          котором доход попадёт в декларацию. Ошибка в сложении года не меняет, а корректировка срока
+          полезного использования прямо названа не являющейся сменой метода. Отдельно держите LIFO:
+          переход на него — тоже смена метода, но оформляется он выбором по форме 970, а не запросом
+          разрешения.</p>
+        <p lang="en">Only the move from the cash method to an accrual method: it changes the year in
+          which income reaches the return. An addition error changes no year, and a useful-life
+          adjustment is expressly not a change of method. Keep LIFO separate: adopting it is also a
+          change of method, but it is made by election on Form 970 rather than by requesting
+          permission.</p>
       </div>
     </details>
 

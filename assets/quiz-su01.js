@@ -460,8 +460,8 @@ window.QUIZZES.su01 = [
   },
   {
     sec: "s14",
-    ru: "Что из перечисленного является сменой метода учёта и требует согласия IRS?",
-    en: "Which of the following is a change of accounting method requiring IRS consent?",
+    ru: "Что из перечисленного является сменой метода учёта?",
+    en: "Which of the following is a change of accounting method?",
     opts: [
       { k: "A", ru: "Исправление ошибки в сложении сумм за прошлый год", en: "Correcting an addition error from a prior year" },
       { k: "B", ru: "Исправление ошибки в расчёте налогового кредита", en: "Correcting an error in figuring a tax credit" },
@@ -1016,6 +1016,78 @@ window.QUIZZES.su01 = [
       B: { ru: "Верно. За 2025 год заработано одиннадцать месяцев из двадцати четырёх: 12 000 ÷ 24 × 11 = $5 500. Остальные $6 500 включаются в доход 2026 года целиком, хотя часть услуг придётся на 2027-й. Отсрочка — это год получения плюс один налоговый год.", en: "Correct. Eleven of the twenty-four months are earned in 2025: 12,000 \u00f7 24 \u00d7 11 = $5,500. The remaining $6,500 goes into 2026 income in full, even though some of the service falls in 2027. The deferral is the year of receipt plus one tax year." },
       C: { ru: "Сюда перенесено чужое правило. Двенадцать месяцев — граница из правила о предоплаченных расходах <strong>у плательщика</strong>: она решает, капитализировать расход или вычесть сразу. К отсрочке дохода у получателя она отношения не имеет, и срок договора права на отсрочку не отнимает.", en: "A rule has been imported from elsewhere. Twelve months is the boundary in the prepaid-expense rule that applies to the <strong>payer</strong>: it decides whether the expense is capitalised or deducted at once. It has nothing to do with the recipient\u2019s income deferral, and the length of the contract costs no one that deferral." },
       D: { ru: "Год получения пропустить нельзя: заработанная в нём часть включается в доход именно тогда. Отложить целиком всю сумму отсрочка не позволяет.", en: "The year of receipt cannot be skipped: the portion earned in it is included then. The deferral never allows the whole amount to be pushed forward." }
+    }
+  },
+  {
+    sec: "s15",
+    ru: "Компания оценивала запасы методом FIFO и хочет перейти на LIFO начиная с 2025 года. Что она подаёт?",
+    en: "A company has valued inventory under FIFO and wants to move to LIFO starting with 2025. What does it file?",
+    opts: [
+      { k: "A", ru: "Форму 3115 и ждёт согласия IRS до начала применения метода", en: "Form 3115, and waits for IRS consent before using the method" },
+      { k: "B", ru: "Форму 970 вместе со своевременно поданной декларацией за 2025 год", en: "Form 970 with a timely filed 2025 return" },
+      { k: "C", ru: "Ничего: смена метода оценки запасов оформления не требует", en: "Nothing: a change in the basis of valuing inventory needs no paperwork" },
+      { k: "D", ru: "Форму 1128, поскольку меняется порядок отражения статьи по годам", en: "Form 1128, since the timing of an item changes between years" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Направление перепутано. Форма 3115 нужна, чтобы <strong>уйти</strong> с LIFO: там у этого изменения свой номер в перечне автоматических. Переход на LIFO ждать согласия не заставляет.", en: "The direction is reversed. Form 3115 is what it takes to <strong>leave</strong> LIFO, where the change has its own number among the automatic ones. Going to LIFO waits for no consent." },
+      B: { ru: "Верно. Переход на LIFO — выбор по §472: форма 970 подаётся с декларацией за первый год применения, отдельного разрешения не запрашивают. Сменой метода учёта переход при этом остаётся, и на будущее он связывает.", en: "Correct. Adopting LIFO is an election under section 472: Form 970 goes in with the return for the first year of use, and no separate permission is requested. It remains a change of accounting method for all that, and it binds for the future." },
+      C: { ru: "Оформление требуется — без формы 970 выбор не сделан, и метод применять нельзя.", en: "Paperwork is required: without Form 970 the election has not been made and the method may not be used." },
+      D: { ru: "Форма 1128 меняет налоговый <em>период</em>, а не метод. Периоды здесь ни при чём.", en: "Form 1128 changes the tax <em>year</em>, not the method. Periods are not in question here." }
+    }
+  },
+  {
+    sec: "s11",
+    ru: "Освобождённая организация с календарным годом получила $34 000 валового дохода от регулярной деятельности, не связанной с уставной целью; прямо связанные с ней расходы — $30 000. Что следует из этих цифр?",
+    en: "A calendar-year exempt organisation had $34,000 of gross income from a regularly carried on activity unrelated to its exempt purpose, with $30,000 of directly connected expenses. What follows from these figures?",
+    opts: [
+      { k: "A", ru: "990-T не подаётся: после расходов остаётся меньше порога", en: "No Form 990-T: what is left after expenses is below the threshold" },
+      { k: "B", ru: "990-T подаётся, несвязанный облагаемый доход — $3 000", en: "Form 990-T is filed and unrelated business taxable income is $3,000" },
+      { k: "C", ru: "990-T подаётся, несвязанный облагаемый доход — $4 000", en: "Form 990-T is filed and unrelated business taxable income is $4,000" },
+      { k: "D", ru: "Организация освобождена, поэтому налога нет ни при каких цифрах", en: "The organisation is exempt, so there is no tax whatever the figures" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Порог смотрит на <strong>валовой</strong> доход, а не на результат: $34 000 его прошли, и подать придётся, даже если бы налога не осталось вовсе.", en: "The threshold looks at <strong>gross</strong> income, not at the result: $34,000 clears it, and the return would be due even if no tax were left at all." },
+      B: { ru: "Верно. 34 000 − 30 000 − 1 000 специального вычета = $3 000. Вычет один на организацию независимо от числа несвязанных дел.", en: "Correct. 34,000 − 30,000 − 1,000 specific deduction = $3,000. There is one deduction per organisation, however many unrelated businesses it runs." },
+      C: { ru: "Забыт специальный вычет $1 000. Это самый частый неверный вариант в теме.", en: "The $1,000 specific deduction has been forgotten. It is the commonest wrong answer in this area." },
+      D: { ru: "Освобождение снимает налог с дохода, служащего уставной цели, но не с дохода от деятельности, к ней не относящейся.", en: "Exemption removes the tax on income serving the exempt purpose, not on income from activity unrelated to it." }
+    }
+  },
+  {
+    sec: "s11",
+    ru: "Небольшая освобождённая организация с календарным годом три года подряд не подавала ни декларацию серии 990, ни электронную открытку. Что происходит с её освобождением?",
+    en: "A small calendar-year exempt organisation has filed neither a return of the 990 series nor the e-Postcard for three consecutive years. What happens to its exemption?",
+    opts: [
+      { k: "A", ru: "Ничего до тех пор, пока IRS не проведёт проверку и не вынесет решение", en: "Nothing until the IRS examines it and issues a determination" },
+      { k: "B", ru: "Освобождение отзывается автоматически по сроку третьей непредставленной декларации", en: "The exemption is revoked automatically as of the due date of the third missed return" },
+      { k: "C", ru: "Ничего: организация мала, и отчётность для неё необязательна", en: "Nothing: the organisation is small and reporting is optional for it" },
+      { k: "D", ru: "Освобождение приостанавливается до подачи всех трёх деклараций", en: "The exemption is suspended until all three returns are filed" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Ни проверки, ни отдельного решения не требуется. Уведомление отзыв не создаёт, а лишь сообщает о нём.", en: "Neither examination nor a separate determination is needed. The notice does not create the revocation; it reports it." },
+      B: { ru: "Верно. Отзыв наступает сам, по сроку третьей из непредставленных. Вернуть освобождение можно только новым заявлением, с пошлиной и, как правило, без восстановления задним числом.", en: "Correct. The revocation happens by operation of law, as of the due date of the third missed return. The exemption returns only on a fresh application, with a user fee and generally without retroactive reinstatement." },
+      C: { ru: "Малый размер освобождает от полной формы, но не от отчётности: вместо неё подаётся электронная открытка 990-N.", en: "Small size excuses the full return, not the reporting: the 990-N e-Postcard takes its place." },
+      D: { ru: "Приостановки в этой норме нет — есть отзыв, и последующая подача его не отменяет.", en: "The provision knows no suspension — only revocation, and filing afterwards does not undo it." }
+    }
+  },
+  {
+    sec: "s16",
+    ru: "У партнёрства три партнёра: двое с долями по 45% и налоговым годом, заканчивающимся 30 июня, и один с долей 10% и календарным годом. Какой налоговый период требуется?",
+    en: "A partnership has three partners: two with 45% interests and a June 30 year end, and one with a 10% interest and a calendar year. What tax year is required?",
+    opts: [
+      { k: "A", ru: "Календарный: он требуется партнёрствам по общему правилу", en: "The calendar year: partnerships are required to use it as a rule" },
+      { k: "B", ru: "Заканчивающийся 30 июня — по тесту мажоритарной доли", en: "The year ending June 30, under the majority interest test" },
+      { k: "C", ru: "Определяется расчётом наименьшей совокупной отсрочки", en: "It is determined by computing the least aggregate deferral" },
+      { k: "D", ru: "Любой на выбор партнёрства: единого периода у партнёров нет", en: "Any year the partnership chooses: the partners share no common year" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Общего правила о календарном годе для партнёрств нет: период определяется тремя тестами по порядку.", en: "There is no general calendar-year rule for partnerships: the year comes from three tests applied in order." },
+      B: { ru: "Верно. Партнёры с одинаковым периодом владеют 90% — больше половины прибыли и капитала, и первая же ступень срабатывает. Ниже спускаться незачем.", en: "Correct. Partners sharing a year hold 90% — more than half of profits and capital — so the first rung applies and there is no need to go further down." },
+      C: { ru: "Наименьшую совокупную отсрочку считают только тогда, когда не сработали обе ступени выше. Здесь сработала первая.", en: "The least aggregate deferral is computed only when both rungs above come up empty. Here the first one applied." },
+      D: { ru: "Свободного выбора у партнёрства нет; исключения дают только §444 или деловая цель.", en: "The partnership has no free choice; only section 444 or a business purpose provides an exception." }
     }
   }
 ];

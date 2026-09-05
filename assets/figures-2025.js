@@ -904,11 +904,69 @@ window.FIGURES = {
       note_ru: "Общий срок — два года с конца налогового года продажи; четыре года, если местность признана имеющей право на федеральную помощь.",
       note_en: "The general period is two years from the end of the tax year of sale; four years if the area is eligible for federal assistance.",
       src: SRC_P225
-    }
+    },
+
+    /* --- Освобождённые организации ------------------------------------ */
+
+    ex_990n_receipts: {
+      n: 50000, unit: "usd",
+      ru: "Выручка, до которой хватает e-Postcard 990-N",
+      en: "Gross receipts up to which Form 990-N is enough",
+      note_ru: "Считается обычная валовая выручка. Подать полную форму можно и добровольно.",
+      note_en: "Gross receipts normally at or below this. A full return may be filed voluntarily.",
+      src: { t: "Form 990 Series — Which Forms Do Exempt Organizations File", u: "https://www.irs.gov/charities-non-profits/form-990-series-which-forms-do-exempt-organizations-file-filing-phase-in" }
+    },
+    ex_990ez_receipts: {
+      n: 200000, unit: "usd",
+      ru: "Выручка, ниже которой допустима 990-EZ",
+      en: "Gross receipts below which Form 990-EZ is available",
+      src: { t: "Form 990 Series — Which Forms Do Exempt Organizations File", u: "https://www.irs.gov/charities-non-profits/form-990-series-which-forms-do-exempt-organizations-file-filing-phase-in" }
+    },
+    ex_990ez_assets: {
+      n: 500000, unit: "usd",
+      ru: "Активы, ниже которых допустима 990-EZ",
+      en: "Total assets below which Form 990-EZ is available",
+      note_ru: "Оба условия — и выручка, и активы — должны выполняться одновременно.",
+      note_en: "Both conditions — receipts and assets — must hold at once.",
+      src: { t: "Form 990 Series — Which Forms Do Exempt Organizations File", u: "https://www.irs.gov/charities-non-profits/form-990-series-which-forms-do-exempt-organizations-file-filing-phase-in" }
+    },
+    ex_revoke_years: {
+      n: 3, unit: "int",
+      ru: "Лет без отчётности до автоматического отзыва освобождения",
+      en: "Years without a return before exemption is automatically revoked",
+      src: { t: "Instructions for Form 990 (2025)", u: "https://www.irs.gov/instructions/i990" }
+    },
+    ubit_file: {
+      n: 1000, unit: "usd",
+      ru: "Валовой доход от несвязанной деятельности, с которого подаётся 990-T",
+      en: "Gross income from an unrelated trade or business requiring Form 990-T",
+      note_ru: "Валовой доход здесь — валовая выручка за вычетом себестоимости проданного.",
+      note_en: "Gross income here is gross receipts less cost of goods sold.",
+      src: { t: "Instructions for Form 990-T (2025)", u: "https://www.irs.gov/instructions/i990t" }
+    },
+    ubit_deduction: {
+      n: 1000, unit: "usd",
+      ru: "Специальный вычет при расчёте несвязанного дохода",
+      en: "Specific deduction in computing unrelated business taxable income",
+      note_ru: "Вычет один на всю организацию, сколько бы несвязанных видов деятельности она ни вела.",
+      note_en: "One deduction for the whole organisation, however many unrelated businesses it runs.",
+      src: { t: "Instructions for Form 990-T (2025)", u: "https://www.irs.gov/instructions/i990t" }
+    },
+    ubit_rate: {
+      n: 21, unit: "pct",
+      ru: "Ставка налога на несвязанный доход организации",
+      en: "Tax rate on an organisation's unrelated business income",
+      note_ru: "Ставка налога на прибыль корпораций. Трасты, освобождённые по §501(a), считают по ставкам трастов.",
+      note_en: "The corporate rate. Trusts exempt under section 501(a) are taxed at trust rates.",
+      src: { t: "Instructions for Form 990-T (2025)", u: "https://www.irs.gov/instructions/i990t" }
+    },
   },
 
   /* Группировка для страницы справочника */
   groups: [
+    { id: "exempt", ru: "Освобождённые организации", en: "Tax-exempt organisations",
+      keys: ["ex_990n_receipts", "ex_990ez_receipts", "ex_990ez_assets",
+             "ex_revoke_years", "ubit_file", "ubit_deduction", "ubit_rate"] },
     { id: "methods", ru: "Методы и периоды учёта", en: "Accounting methods and periods",
       keys: ["gross_receipts_448c", "sec444_deferral"] },
     { id: "se", ru: "Налог на самозанятость", en: "Self-employment tax",
