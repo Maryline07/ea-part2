@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=27">
-<script defer src="assets/figures-2025.js?v=27"></script>
-<script defer src="assets/modules.js?v=27"></script>
-<script defer src="assets/quiz-su02.js?v=27"></script>
+<link rel="stylesheet" href="assets/style.css?v=28">
+<script defer src="assets/figures-2025.js?v=28"></script>
+<script defer src="assets/modules.js?v=28"></script>
+<script defer src="assets/quiz-su02.js?v=28"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=27"></script>
+<script defer src="assets/app.js?v=28"></script>
 </head>
 <body data-module="su02">
 
@@ -81,6 +81,7 @@
         <li><a href="#s22"><span lang="ru">2.2 Налог на самозанятость</span><span lang="en">2.2 Self-employment tax</span></a></li>
         <li><a href="#s23"><span lang="ru">2.3 Дополнительный Medicare</span><span lang="en">2.3 Additional Medicare Tax</span></a></li>
         <li><a href="#s24"><span lang="ru">2.4 Фермеры</span><span lang="en">2.4 Farmers</span></a></li>
+        <li><a href="#s25"><span lang="ru">2.5 Списание долга</span><span lang="en">2.5 Cancelled debt</span></a></li>
         <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
         <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
         <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
@@ -159,7 +160,15 @@
         </tr>
         <tr>
           <th><span lang="ru">Проценты и дивиденды бизнеса</span><span lang="en">Business interest and dividends</span></th>
-          <td><span lang="ru">Как правило, показываются отдельно, а не в Schedule C, и не облагаются налогом на самозанятость</span><span lang="en">Generally reported separately rather than on Schedule C, and are not subject to self-employment tax</span></td>
+          <td><span lang="ru">Доход от <strong>вложений</strong> показывается отдельно, а не в Schedule C, и налогом на самозанятость не облагается. Но проценты, <strong>заработанные в самой деятельности</strong>, — по векселям и счетам покупателей — идут в <strong>прочий доход</strong> Schedule C и в базу самозанятости: см. <a href="#s22">2.2</a></span><span lang="en">Income from <strong>investments</strong> is reported separately rather than on Schedule C and is not subject to self-employment tax. But interest <strong>earned in the business itself</strong> — on notes and accounts receivable — goes into Schedule C <strong>other income</strong> and into the self-employment base: see <a href="#s22">2.2</a></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Премия по выпущенной облигации</span><span lang="en">Premium on a bond you issued</span></th>
+          <td><span lang="ru">Заняв больше номинала, эмитент показывает доход по мере <strong>амортизации премии</strong> — равномерно за срок обращения, а не всю сумму сразу</span><span lang="en">Having borrowed more than face value, the issuer reports income as the <strong>premium is amortised</strong> — spread over the life of the bond, not all at once</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Долг погашен вашей работой</span><span lang="en">A debt worked off</span></th>
+          <td><span lang="ru">Оказали услуги в счёт долга — показываете доход в размере погашенного долга. Это плата за труд, а не прощение</span><span lang="en">Services rendered against a debt produce income equal to the debt discharged. That is pay for work, not forgiveness</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Аванс за услуги</span><span lang="en">Advance payment for services</span></th>
@@ -167,6 +176,131 @@
         </tr>
       </tbody>
     </table>
+    </div>
+
+    <h3><span lang="ru">Из чего складывается валовой доход бизнеса</span><span lang="en">How business gross income is built up</span></h3>
+
+    <p lang="ru">У того, кто продаёт товар, «валовой доход» — не выручка. Себестоимость проданного
+      возвращает вложенный капитал, а возврат капитала доходом не является, поэтому он вычитается
+      <strong>до</strong> всего остального.</p>
+    <p lang="en">For a business selling goods, “gross income” is not receipts. The cost of goods sold
+      returns invested capital, and a return of capital is not income, so it comes out
+      <strong>before</strong> anything else.</p>
+
+    <table class="ledger">
+      <tbody>
+        <tr><td><span lang="ru">Валовая выручка от продаж</span><span lang="en">Gross receipts from sales</span></td><td><span lang="ru">строка 1</span><span lang="en">line 1</span></td></tr>
+        <tr><td><span lang="ru">Минус возвраты и скидки покупателям</span><span lang="en">Less returns and allowances</span></td><td><span lang="ru">строка 2</span><span lang="en">line 2</span></td></tr>
+        <tr><td><span lang="ru">Минус себестоимость проданного</span><span lang="en">Less cost of goods sold</span></td><td><span lang="ru">строка 4</span><span lang="en">line 4</span></td></tr>
+        <tr><td><span lang="ru">Плюс прочий доход</span><span lang="en">Plus other income</span></td><td><span lang="ru">строка 6</span><span lang="en">line 6</span></td></tr>
+        <tr class="total"><td><span lang="ru">Валовой доход бизнеса</span><span lang="en">Gross income of the business</span></td><td><span lang="ru">строка 7</span><span lang="en">line 7</span></td></tr>
+      </tbody>
+    </table>
+
+    <p lang="ru">Сама себестоимость считается так же, как всегда: остаток на начало плюс закупки
+      года минус остаток на конец. Метод оценки запасов должен применяться
+      <strong>последовательно</strong> из года в год — подробнее в
+      <a href="su01.html#s15">1.5</a>.</p>
+    <p lang="en">The cost of goods sold is figured as always: opening inventory plus purchases for
+      the year less closing inventory. The inventory method must be applied
+      <strong>consistently</strong> from year to year — see <a href="su01.html#s15">1.5</a>.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Налог с продаж, собранный с покупателя, — не доход</span><span lang="en">Sales tax collected from the buyer is not income</span></h3>
+      <p lang="ru">Налог с продаж, который закон возлагает на <strong>покупателя</strong>, а
+        продавец обязан лишь собрать и перечислить, доходом продавца не является: с момента
+        продажи это его обязательство перед бюджетом, а не выручка. В выручку он не включается и
+        в расходы, соответственно, тоже. Условие вопроса обычно даёт «выручку с налогом» и
+        предлагает вариант, где налог оставлен внутри.</p>
+      <p lang="en">A sales tax the law imposes on the <strong>buyer</strong>, which the seller merely
+        collects and remits, is not the seller's income: from the moment of sale it is a liability
+        to the state, not a receipt. It goes neither into receipts nor, correspondingly, into
+        expenses. The facts usually give “receipts including tax” and offer an answer that leaves
+        the tax inside.</p>
+    </div>
+
+    <h3><span lang="ru">Прочий доход: строка 6</span><span lang="en">Other income: line 6</span></h3>
+
+    <p lang="ru">Между строкой 1 и строкой 6 проходит граница, на которой строится отдельный вид
+      вопроса. В <strong>строку 1</strong> идёт только выручка от того, чем бизнес занимается.
+      Всё остальное, что бизнес всё же заработал, идёт в <strong>строку 6</strong>. Обе строки в
+      итоге складываются в прибыль, поэтому на налог на самозанятость обе влияют одинаково — а вот
+      ответ на вопрос «чему равна валовая выручка» они дают разный.</p>
+    <p lang="en">Between line 1 and line 6 runs a boundary on which a question type of its own is
+      built. <strong>Line 1</strong> takes only the receipts from what the business does.
+      Everything else the business nonetheless earned goes on <strong>line 6</strong>. Both feed
+      into profit in the end, so both bear on self-employment tax alike — but they give different
+      answers to “what are the gross receipts”.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">В строку 6 — прочий доход</span><span lang="en">On line 6 — other income</span></th>
+          <th><span lang="ru">Не в Schedule C вовсе</span><span lang="en">Not on Schedule C at all</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Проценты, заработанные в деятельности: по векселям и счетам покупателей</span><span lang="en">Interest earned in the business: on notes and accounts receivable</span></td>
+          <td><span lang="ru">Прирост и убыток от продажи делового имущества — форма 4797</span><span lang="en">Gain and loss on the sale of business property — Form 4797</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Взысканные ранее списанные долги</span><span lang="en">Bad debts recovered</span></td>
+          <td><span lang="ru">Проценты и дивиденды по вложениям — Schedule B</span><span lang="en">Interest and dividends on investments — Schedule B</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Возврат налога штата на топливо, топливные кредиты</span><span lang="en">State fuel tax refunds and fuel credits</span></td>
+          <td><span lang="ru">Заработная плата работника — форма W-2</span><span lang="en">Wages as an employee — Form W-2</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Продажа лома и отходов</span><span lang="en">Scrap sales</span></td>
+          <td><span lang="ru">Аренда недвижимости без услуг постояльцам — Schedule E</span><span lang="en">Real estate rents without services to occupants — Schedule E</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Доход финансового резерва у продавца в рассрочку</span><span lang="en">Finance reserve income of an instalment seller</span></td>
+          <td><span lang="ru">Доход от занятия, которое ведётся не ради прибыли (хобби) — Schedule 1</span><span lang="en">Income from an activity not engaged in for profit (a hobby) — Schedule 1</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Кооперативные выплаты, относящиеся к деятельности</span><span lang="en">Patronage dividends relating to the business</span></td>
+          <td><span lang="ru">Выигрыши в лотерею, призы, плата присяжному, награды — Schedule 1</span><span lang="en">Lottery winnings, prizes, jury duty pay, awards — Schedule 1</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Возмещение расходов, вычтенных в прошлые годы; страховая выплата за перерыв в деятельности</span><span lang="en">Reimbursement of expenses deducted in earlier years; business interruption insurance</span></td>
+          <td><span lang="ru">Сдача личного имущества, если это не ваш промысел, — Schedule 1</span><span lang="en">Rental of personal property outside that line of business — Schedule 1</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Валовая выручка и валовой доход — разные величины</span><span lang="en">Gross receipts and gross income are different amounts</span></h3>
+      <p lang="ru">Вопрос даёт три-четыре суммы и спрашивает про <strong>валовую выручку</strong> —
+        то есть строку 1. Проценты по счетам покупателей и взысканный долг туда не идут: они в
+        строке 6. Прирост от продажи станка не идёт никуда в Schedule C: он в форме 4797. При
+        выручке от услуг <span data-num="25000"></span>, приросте от продажи актива
+        <span data-num="1500"></span> и процентах по счетам покупателей
+        <span data-num="3000"></span> валовая выручка — <span data-num="25000"></span>.</p>
+      <p lang="en">A question gives three or four amounts and asks for <strong>gross receipts</strong>,
+        that is, line 1. Interest on accounts receivable and a recovered debt do not go there: they
+        are on line 6. The gain on selling a machine goes nowhere on Schedule C: it is on Form 4797.
+        With <span data-num="25000"></span> of service income, a <span data-num="1500"></span> gain
+        on an asset and <span data-num="3000"></span> of interest on accounts receivable, gross
+        receipts are <span data-num="25000"></span>.</p>
+      <p lang="ru">Но не переносите этот вывод на налог на самозанятость. Проценты по счетам
+        покупателей стоят <em>не в той строке</em>, а <strong>в базе они есть</strong>: строка 6
+        входит в прибыль, а Schedule SE берёт прибыль целиком. Из базы выпадает только прирост от
+        продажи имущества. Утверждение «проценты по счетам покупателей не входят в налог на
+        самозанятость» встречается в пособиях и неверно: инструкция к Schedule SE прямо относит к
+        базе «проценты, полученные в рамках любой деятельности, — например по векселям и счетам
+        покупателей».</p>
+      <p lang="en">But do not carry that conclusion over to self-employment tax. Interest on accounts
+        receivable is on <em>the wrong line</em>, yet it <strong>is in the base</strong>: line 6
+        feeds into profit, and Schedule SE takes the whole profit. Only the gain on selling property
+        drops out. The statement that “interest on accounts receivable is not self-employment
+        income” appears in study materials and is wrong: the Schedule SE instructions put
+        “interest received in the course of any trade or business, such as interest on notes or
+        accounts receivable” squarely in the base.</p>
     </div>
 
     <div class="trap">
@@ -302,6 +436,15 @@
       the interest accruing <em>after</em> the gift; the coupon already earned by you at that
       moment stays yours.</p>
 
+    <p lang="ru">Передача источника засчитывается не всегда. Нужны три условия сразу: передача
+      <strong>полная и настоящая</strong>; над имуществом и приносимым им доходом
+      <strong>не сохранено контроля</strong>; и совершена она <strong>прежде</strong>, чем доход
+      заработан. Не хватает любого — доход остаётся вашим.</p>
+    <p lang="en">A transfer of the source does not always count. Three conditions must hold at once:
+      the transfer is <strong>complete and bona fide</strong>; <strong>no control is retained</strong>
+      over the property or the income it produces; and it happens <strong>before</strong> the income
+      is earned. Fail any one and the income stays yours.</p>
+
     <div class="scroller">
     <table>
       <thead>
@@ -348,6 +491,16 @@
     </div>
 
     <h3><span lang="ru">Списание долга: где показывать</span><span lang="en">Cancelled debt: where it goes</span></h3>
+
+    <p lang="ru">Кредитор, простивший <span data-num="600"></span> и более, присылает
+      <strong>форму 1099-C</strong>. Она сообщает сумму и дату, но не решает вопрос об
+      облагаемости: изъятия и исключения применяются независимо от того, пришла форма или нет — как
+      и во всём остальном, что касается информационных деклараций. Подробный разбор — в
+      <a href="#s25">2.5</a>.</p>
+    <p lang="en">A creditor forgiving <span data-num="600"></span> or more sends a
+      <strong>Form 1099-C</strong>. It reports the amount and the date but settles nothing about
+      taxability: the exceptions and exclusions apply whether or not the form arrived — as with
+      information returns generally. The full treatment is in <a href="#s25">2.5</a>.</p>
 
     <p lang="ru">Прощённый долг по общему правилу — доход, если только это не дар и не завещание.
       Место зависит от происхождения долга, а не от того, кто его простил: долг, возникший в
@@ -410,6 +563,20 @@
         <span data-fig="se_church"></span> threshold does not reach it. Ministers have their own
         branch of rules and their own exemption forms, 4361 and 4029. The question turns on the fact
         that both people are paid by a church while different rules apply to them.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Жильё служителя: из подоходного налога вон, в самозанятость — да</span><span lang="en">A minister's housing: out of income tax, into self-employment</span></h3>
+      <p lang="ru">Рукоположённый, лицензированный или уполномоченный служитель, которому церковь
+        предоставила жильё или платит на него содержание, <strong>не включает</strong> его
+        стоимость в доход для подоходного налога. Но для налога на самозанятость эта же стоимость
+        в заработок <strong>входит</strong>. Одна и та же сумма ведёт себя в двух расчётах
+        по-разному, и вопрос строится ровно на этом.</p>
+      <p lang="en">An ordained, licensed or commissioned minister given a home by the church, or paid
+        an allowance for one, <strong>does not include</strong> its value in income for income tax
+        purposes. Yet for self-employment tax that same value <strong>is</strong> in earnings. One
+        amount behaves differently in the two computations, and the question is built on exactly
+        that.</p>
     </div>
 
     <div class="scroller">
@@ -576,6 +743,45 @@
     </table>
     </div>
 
+    <h3><span lang="ru">Четыре уточнения к перечню</span><span lang="en">Four refinements to the list</span></h3>
+
+    <div class="scroller">
+    <table>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Несколько занятий сразу</span><span lang="en">More than one business</span></th>
+          <td><span lang="ru">База считается по <strong>совокупному</strong> чистому заработку: прибыль одного дела уменьшается убытком другого, и порог <span data-fig="se_threshold"></span> с пределом базы применяются к сумме, а не к каждому делу порознь. Отдельных расчётов не бывает — но и складывать сюда заработок супруга нельзя</span><span lang="en">The base is the <strong>combined</strong> net earnings: a profit in one business is reduced by a loss in another, and the <span data-fig="se_threshold"></span> threshold and the wage base apply to the total, not to each business separately. There are no separate computations — but a spouse's earnings may not be added in either</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Дилер недвижимости с двумя портфелями</span><span lang="en">A dealer holding two portfolios</span></th>
+          <td><span lang="ru">Дилер может держать одну недвижимость <strong>для продажи покупателям</strong>, а другую <strong>для вложения</strong>. Налогом на самозанятость облагается аренда только с первой. Вторая — обычный Schedule E, как у всех</span><span lang="en">A dealer may hold some property <strong>for sale to customers</strong> and other property <strong>for investment</strong>. Only rent from the first is subject to self-employment tax. The second is ordinary Schedule E, as for anyone</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Услуги постояльцам</span><span lang="en">Services to occupants</span></th>
+          <td><span lang="ru">Аренда выходит из-под изъятия, когда услуги оказываются <strong>ради удобства проживающего</strong> и обычной сдачей помещения не объясняются: уборка номера, смена белья, питание. Отопление, вода, вывоз мусора, уборка мест общего пользования — обычные услуги, статуса не меняют</span><span lang="en">Rent leaves the exclusion where services are provided <strong>primarily for the occupant's convenience</strong> and are not those normally provided with letting a room: maid service, fresh linen, meals. Heat, water, rubbish collection and cleaning of common areas are ordinary and change nothing</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Смерть партнёра</span><span lang="en">A partner's death</span></th>
+          <td><span lang="ru">В последнюю декларацию умершего партнёра включается доход партнёрства <strong>по конец месяца смерти</strong>, а не по её день и не за весь год</span><span lang="en">The deceased partner's final return includes partnership income <strong>through the end of the month of death</strong>, not to the day of it and not for the whole year</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Выбытие имущества из базы уходит, но не всякое</span><span lang="en">Disposing of property leaves the base — but not always</span></h3>
+      <p lang="ru">Прибыль от продажи делового имущества в базу не входит — это общее правило. Изъятие
+        из него одно и проверяется: <strong>товарные запасы</strong> и имущество, предназначенное
+        для продажи покупателям. Причём не только их продажа: страховое возмещение и прочие
+        поступления при <strong>гибели или хищении запасов</strong> в базу тоже входят. Сгорел
+        склад с товаром — выплата облагается; сгорел сам склад — нет.</p>
+      <p lang="en">Gain on the sale of business property is outside the base — that is the general
+        rule. It has one exception, and it is tested: <strong>stock in trade</strong> and property
+        held for sale to customers. And not only sales of it: insurance and other proceeds from the
+        <strong>casualty or theft of inventory</strong> are in the base as well. A warehouse of
+        goods burns down and the payout is taxed; the warehouse itself burns down and it is not.</p>
+    </div>
+
     <div class="trap">
       <h3><span lang="ru">Гонорар директора — самозанятость, а не зарплата</span><span lang="en">A director’s fee is self-employment, not salary</span></h3>
       <p lang="ru">Член совета директоров не является работником корпорации: он не подчинён ей в
@@ -669,15 +875,163 @@
     <h3><span lang="ru">Дополнительные методы расчёта</span><span lang="en">The optional methods</span></h3>
 
     <p lang="ru">Когда доход мал или получен убыток, самозанятый может добровольно показать
-      больший заработок, чтобы сохранить страховой стаж. Фермерский метод доступен, если валовой
-      доход от фермерства не превысил <span data-fig="farm_opt_gross"></span> либо чистая прибыль
-      оказалась ниже <span data-fig="farm_opt_profit"></span>. Показать по любому из методов можно
-      не более <span data-fig="farm_opt_max"></span>.</p>
-    <p lang="en">Where income is small or a loss arises, a self-employed person may voluntarily report
-      higher earnings to preserve social security credits. The farm optional method is available if
-      gross farm income was <span data-fig="farm_opt_gross"></span> or less, or net farm profit was
-      below <span data-fig="farm_opt_profit"></span>. No more than
-      <span data-fig="farm_opt_max"></span> may be reported under either method.</p>
+      <strong>больший</strong> заработок, чем вышел на самом деле, — и заплатить больший налог.
+      Смысл в страховом стаже: год без заработка не идёт в зачёт при назначении пенсии и пособия по
+      нетрудоспособности. Методов два, и путать их условия нельзя.</p>
+    <p lang="en">Where income is small or a loss arises, a self-employed person may voluntarily
+      report <strong>more</strong> than was actually earned, and pay more tax. The point is social
+      security credits: a year with no earnings counts for nothing towards a retirement or
+      disability benefit. There are two methods, and their conditions must not be mixed up.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th><span lang="ru">Фермерский</span><span lang="en">Farm</span></th>
+          <th><span lang="ru">Нефермерский</span><span lang="en">Nonfarm</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Когда доступен</span><span lang="en">When available</span></th>
+          <td><span lang="ru">Валовой доход от фермерства не выше <span data-fig="farm_opt_gross"></span> <strong>либо</strong> чистая прибыль ниже <span data-fig="farm_opt_profit"></span></span><span lang="en">Gross farm income at or below <span data-fig="farm_opt_gross"></span> <strong>or</strong> net farm profit below <span data-fig="farm_opt_profit"></span></span></td>
+          <td><span lang="ru">Чистая нефермерская прибыль ниже <span data-fig="farm_opt_profit"></span> <strong>и</strong> ниже <span data-fig="nonfarm_opt_pct"></span> валового нефермерского дохода</span><span lang="en">Net nonfarm profit below <span data-fig="farm_opt_profit"></span> <strong>and</strong> below <span data-fig="nonfarm_opt_pct"></span> of gross nonfarm income</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Дополнительное условие</span><span lang="en">Further condition</span></th>
+          <td><span lang="ru">Нет</span><span lang="en">None</span></td>
+          <td><span lang="ru">Регулярная самозанятость: чистый заработок <span data-fig="se_threshold"></span> и более в <strong>двух из трёх</strong> предшествующих лет</span><span lang="en">Regular self-employment: net earnings of <span data-fig="se_threshold"></span> or more in <strong>two of the three</strong> preceding years</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Сколько раз</span><span lang="en">How many times</span></th>
+          <td><span lang="ru">Без ограничения</span><span lang="en">No limit</span></td>
+          <td><span lang="ru">Не более <strong>пяти</strong> раз за жизнь</span><span lang="en">No more than <strong>five</strong> times in a lifetime</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Сколько можно показать</span><span lang="en">How much may be reported</span></th>
+          <td colspan="2"><span lang="ru">Две трети валового дохода соответствующего вида, но не более <span data-fig="farm_opt_max"></span> — общий потолок на оба метода вместе</span><span lang="en">Two-thirds of the corresponding gross income, but no more than <span data-fig="farm_opt_max"></span> — a single ceiling covering both methods together</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">«Либо» у фермера, «и» у всех остальных</span><span lang="en">“Or” for the farmer, “and” for everyone else</span></h3>
+      <p lang="ru">Условия выглядят похоже и потому переносятся с одного метода на другой. Фермеру
+        достаточно <strong>одного</strong> из двух: либо валовой доход невелик, либо прибыль мала.
+        Нефермеру нужны <strong>оба</strong> сразу, да ещё регулярная самозанятость в прошлом и
+        неисчерпанный лимит в пять применений. Нефермерский метод заметно уже, и вопрос обычно
+        даёт фактуру, проходящую по одному условию и не проходящую по второму.</p>
+      <p lang="en">The conditions look alike and so get carried from one method to the other. A
+        farmer needs <strong>one</strong> of the two: either gross income is low or profit is small.
+        A nonfarmer needs <strong>both</strong> at once, plus regular self-employment in the past
+        and an unexhausted allowance of five uses. The nonfarm method is markedly narrower, and the
+        facts of a question usually satisfy one condition while failing the other.</p>
+      <p lang="ru">Потолок <span data-fig="farm_opt_max"></span> — <strong>общий</strong>. Кто
+        применяет оба метода в одном году, показывает по ним вместе не больше этой суммы, а не по
+        стольку каждым.</p>
+      <p lang="en">The <span data-fig="farm_opt_max"></span> ceiling is a <strong>single</strong>
+        one. Someone using both methods in the same year reports no more than that in total, not
+        that much under each.</p>
+    </div>
+
+    <h3><span lang="ru">Супруги считают налог порознь</span><span lang="en">Spouses compute the tax separately</span></h3>
+
+    <p lang="ru">Совместная декларация объединяет подоходный налог, но не налог на самозанятость.
+      Каждый супруг подаёт <strong>свою</strong> Schedule SE и считает свой чистый заработок по
+      своей деятельности. Убыток одного другому не помогает: жена с прибылью
+      <span data-num="15000"></span> платит налог со своей прибыли полностью, даже если у мужа по
+      его ферме убыток <span data-num="7000"></span>.</p>
+    <p lang="en">A joint return combines income tax, but not self-employment tax. Each spouse files
+      <strong>their own</strong> Schedule SE and computes their own net earnings from their own
+      activity. One spouse's loss does not help the other: a wife with a
+      <span data-num="15000"></span> profit pays tax on the whole of it even if her husband's farm
+      shows a <span data-num="7000"></span> loss.</p>
+
+    <p lang="ru">Причина в назначении налога: он покупает страховой стаж <em>конкретному
+      человеку</em>. Сальдировать чужой убыток со своим заработком значило бы уменьшить свои
+      будущие выплаты за чужой счёт. По той же причине предел базы социальной части —
+      <span data-fig="se_wage_base"></span> — применяется к каждому супругу отдельно, а не к паре.</p>
+    <p lang="en">The reason lies in what the tax buys: social security credits for <em>a particular
+      person</em>. Netting someone else's loss against your own earnings would cut your own future
+      benefits to pay for theirs. For the same reason the social security wage base —
+      <span data-fig="se_wage_base"></span> — applies to each spouse separately, not to the couple.</p>
+
+    <h3><span lang="ru">Кто не платит налог на самозанятость</span><span lang="en">Who does not pay self-employment tax</span></h3>
+
+    <p lang="ru">Отдельный вид вопроса: даётся список людей, и требуется найти того, кто под налог
+      не подпадает. Перечень исключений закрытый, и держать его стоит целиком.</p>
+    <p lang="en">A question type of its own: a list of people is given and the one outside the tax
+      must be found. The list of exclusions is closed, and worth holding whole.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Не платит</span><span lang="en">Does not pay</span></th>
+          <th><span lang="ru">Почему</span><span lang="en">Why</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Нотариус — с гонорара за нотариальные действия</span><span lang="en">A notary public, on fees for notarial acts</span></th>
+          <td><span lang="ru">Прямое изъятие. Если прочего заработка набралось <span data-fig="se_threshold"></span> и более, Schedule SE подаётся, но гонорар нотариуса из неё исключается</span><span lang="en">An outright exclusion. If other earnings reach <span data-fig="se_threshold"></span> or more, Schedule SE is filed but the notary fees are backed out of it</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Приравненный к работнику (statutory employee)</span><span lang="en">A statutory employee</span></th>
+          <td><span lang="ru">Взносы уже удержаны работодателем. Расходы он показывает в Schedule C, но Schedule SE не подаёт — см. <a href="su01.html#s13">1.3</a></span><span lang="en">The payroll taxes were already withheld by the employer. Expenses go on Schedule C, but no Schedule SE — see <a href="su01.html#s13">1.3</a></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Служитель церкви с действующей формой 4361 или 4029</span><span lang="en">A minister with an effective Form 4361 or 4029</span></th>
+          <td><span lang="ru">Освобождение по религиозным убеждениям. Без одобренной формы служитель налог платит — и со своего жилищного содержания тоже</span><span lang="en">An exemption on religious grounds. Without an approved form the minister does pay — including on the housing allowance</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Ограниченный партнёр — со своей распределяемой доли</span><span lang="en">A limited partner, on their distributive share</span></th>
+          <td><span lang="ru">Доля от капитала, а не плата за труд. Гарантированная выплата за услуги облагается и у него</span><span lang="en">A return on capital, not pay for work. A guaranteed payment for services is taxed even for them</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Акционер S-корпорации — с доли прибыли</span><span lang="en">An S corporation shareholder, on the share of profit</span></th>
+          <td><span lang="ru">С разумной заработной платы взносы удерживаются обычным порядком; остаток прибыли налогом на самозанятость не облагается</span><span lang="en">Payroll taxes are withheld on the reasonable salary in the ordinary way; the remaining profit bears no self-employment tax</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Разносчик газет и журналов <strong>моложе 18 лет</strong></span><span lang="en">A newspaper and magazine carrier <strong>under age 18</strong></span></th>
+          <td><span lang="ru">С 18 лет тот же заработок в базу входит. Возраст здесь решает всё</span><span lang="en">From age 18 the same earnings are in the base. Age decides everything here</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Отставной партнёр, получающий пожизненные периодические выплаты по плану</span><span lang="en">A retired partner receiving lifelong periodic payments under a plan</span></th>
+          <td><span lang="ru">Условие строгое: иной доли в партнёрстве нет и услуг ему в этом году он не оказывал</span><span lang="en">The condition is strict: no other interest in the partnership and no services performed for it during the year</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Бывший страховой агент — с выплаты при прекращении</span><span lang="en">A former insurance salesperson, on a termination payment</span></th>
+          <td><span lang="ru">Требуется совпадение нескольких условий, в том числе прекращение всех отношений с компанией</span><span lang="en">Several conditions must coincide, among them the ending of all relations with the company</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Похожие фигуры по разные стороны</span><span lang="en">Similar figures on opposite sides</span></h3>
+      <p lang="ru">В перечень исключений так и просятся четыре человека, которым там не место, и
+        вопрос обычно ставит рядом кого-то из них.</p>
+      <p lang="en">Four people ask to be let into the list of exclusions and do not belong there;
+        a question usually seats one of them next to those who do.</p>
+      <p lang="ru"><strong>Полный партнёр</strong> платит со своей доли, даже если в делах
+        партнёрства не участвует, — в отличие от ограниченного.
+        <strong>Член совета директоров</strong> платит: он не работник корпорации.
+        <strong>Работник на гонорарной основе в органе штата или местного самоуправления</strong>
+        платит, если должность не покрыта соглашением о социальном страховании, — обычный
+        государственный служащий не платит, а этот платит.
+        <strong>Служитель церкви без одобренной формы 4361</strong> платит, хотя зарплату от церкви
+        получает так же, как церковный работник.</p>
+      <p lang="en">A <strong>general partner</strong> pays on their share even without taking part in
+        the partnership's affairs — unlike a limited partner. A <strong>corporate director</strong>
+        pays: they are not an employee of the corporation. A <strong>fee-basis state or local
+        government official</strong> pays where the position is not covered by a social security
+        agreement — an ordinary public employee does not, but this one does. A
+        <strong>minister without an approved Form 4361</strong> pays, though the pay comes from the
+        church exactly as a church employee's does.</p>
+    </div>
 
     <!-- ============================================================ -->
     <section class="sub" id="s23">
@@ -775,6 +1129,101 @@
         For the same reason it does not enter the deduction for one half of the tax.</p>
     </div>
 
+
+    <h3><span lang="ru">Порядок расчёта: что за чем</span><span lang="en">The order of the computation</span></h3>
+
+    <p lang="ru">Порог один на все виды трудового дохода, но проходят они его <strong>по
+      очереди</strong>, а не общей суммой. Форма 8959 расставляет их так: сначала заработная
+      плата, затем вознаграждение по железнодорожному пенсионному закону, затем чистый заработок
+      от самозанятости. Каждый следующий вид получает <strong>остаток</strong> порога, не
+      израсходованный предыдущими.</p>
+    <p lang="en">There is a single threshold for every kind of earned income, but the kinds pass
+      through it <strong>in turn</strong> rather than as one sum. Form 8959 lines them up: wages
+      first, then railroad retirement compensation, then net earnings from self-employment. Each
+      later kind gets whatever of the threshold the earlier ones left unused.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Шаг</span><span lang="en">Step</span></th>
+          <th><span lang="ru">Что делается</span><span lang="en">What is done</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td><span lang="ru">Заработная плата сравнивается с порогом статуса подачи. Превышение облагается</span><span lang="en">Wages are compared with the threshold for the filing status. The excess is taxed</span></td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td><span lang="ru">Порог уменьшается на всю заработную плату, <strong>но не ниже нуля</strong></span><span lang="en">The threshold is reduced by the whole of the wages, <strong>but not below zero</strong></span></td>
+        </tr>
+        <tr class="total">
+          <th>3</th>
+          <td><span lang="ru">Чистый заработок от самозанятости сравнивается с <strong>остатком</strong> порога. Превышение облагается. Если заработок отрицателен, он считается нулём</span><span lang="en">Net earnings from self-employment are compared with the <strong>remaining</strong> threshold. The excess is taxed. Negative earnings count as zero</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Вознаграждение по железнодорожному пенсионному закону идёт своей дорогой:
+      оно сравнивается с порогом <strong>отдельно</strong> и с заработной платой не складывается.</p>
+    <p lang="en">Railroad retirement compensation goes its own way: it is compared with the
+      threshold <strong>separately</strong> and is not added to wages.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Убыток от самозанятости заработную плату не уменьшает</span><span lang="en">A self-employment loss does not reduce wages</span></h3>
+      <p lang="ru">Заработная плата <span data-num="230000"></span> и убыток по Schedule C
+        <span data-num="-40000"></span> у незамужней женщины дают не
+        <span data-num="190000"></span>, а прежние <span data-num="230000"></span>: облагается
+        превышение над <span data-fig="addl_medicare_single"></span>, то есть
+        <span data-num="30000"></span>. Отрицательный чистый заработок принимается за ноль и с
+        заработной платой не сальдируется — в отличие от подоходного налога, где убыток бизнеса
+        уменьшает общий доход.</p>
+      <p lang="en">Wages of <span data-num="230000"></span> and a Schedule C loss of
+        <span data-num="-40000"></span> for a single filer give not
+        <span data-num="190000"></span> but the same <span data-num="230000"></span>: the excess
+        over <span data-fig="addl_medicare_single"></span> is taxed, that is
+        <span data-num="30000"></span>. Negative net earnings are taken as zero and are not netted
+        against wages — unlike income tax, where a business loss reduces total income.</p>
+      <p lang="ru">Тот же порядок объясняет и обратное: сложить всё в кучу и сравнить сумму с
+        порогом — арифметически то же самое, <em>пока все слагаемые положительны</em>. Как только
+        среди них появляется убыток, короткий путь даёт неверный ответ.</p>
+      <p lang="en">The same ordering explains the converse: piling everything together and comparing
+        the sum with the threshold gives the same arithmetic <em>as long as every item is
+        positive</em>. The moment a loss appears among them, the short cut gives the wrong answer.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Удержанное и начисленное не обязаны совпадать</span><span lang="en">What was withheld and what is owed need not match</span></h3>
+      <p lang="ru">Работодатель удерживает дополнительный налог, как только выплаченная
+        <strong>им</strong> заработная плата превысит <span data-fig="addl_medicare_withhold"></span>.
+        Он не знает ни статуса подачи, ни зарплаты супруга, ни вашей самозанятости — и знать не
+        обязан. Отсюда два расхождения, и оба проверяются.</p>
+      <p lang="en">An employer withholds the additional tax as soon as the wages
+        <strong>it</strong> paid exceed <span data-fig="addl_medicare_withhold"></span>. It knows
+        nothing of the filing status, of a spouse's wages, or of any self-employment — and is not
+        required to. Hence two mismatches, and both are tested.</p>
+      <p lang="ru"><strong>Удержали, а налога нет:</strong> супруги подают совместно, у мужа
+        заработная плата <span data-num="210000"></span>, у жены дохода нет. Работодатель удержал,
+        потому что перешагнул <span data-fig="addl_medicare_withhold"></span>, но порог для
+        совместной декларации — <span data-fig="addl_medicare_mfj"></span>, и налога не возникает.
+        Удержанное возвращается по декларации.</p>
+      <p lang="en"><strong>Withheld, but nothing owed:</strong> a couple files jointly, the husband
+        has <span data-num="210000"></span> of wages, the wife no income. The employer withheld
+        because it crossed <span data-fig="addl_medicare_withhold"></span>, but the joint threshold
+        is <span data-fig="addl_medicare_mfj"></span> and no tax arises. The amount withheld comes
+        back on the return.</p>
+      <p lang="ru"><strong>Не удержали, а налог есть:</strong> двое работодателей платят по
+        <span data-num="150000"></span>. Ни один порога удержания не достиг, а совокупные
+        <span data-num="300000"></span> порог статуса перешагнули. Налог считается в декларации.</p>
+      <p lang="en"><strong>Not withheld, but owed:</strong> two employers pay
+        <span data-num="150000"></span> each. Neither reached the withholding level, yet the
+        combined <span data-num="300000"></span> crossed the threshold for the status. The tax is
+        computed on the return.</p>
+    </div>
+
     <!-- ============================================================ -->
     <section class="sub" id="s24">
       <h2><span class="num">2.4</span>
@@ -841,15 +1290,15 @@
         </tr>
         <tr>
           <th><span lang="ru">Страхование урожая</span><span lang="en">Crop insurance proceeds</span></th>
-          <td><span lang="ru">Доход года получения. Возможен выбор отсрочки на следующий год, если фермер обычно продавал урожай в следующем году</span><span lang="en">Income in the year received. An election may defer it one year if the farmer normally sells the crop in the following year</span></td>
+          <td><span lang="ru">Доход года получения. При кассовом методе возможен выбор отсрочки на следующий год — условия ниже</span><span lang="en">Income in the year of receipt. On the cash method a deferral to the following year may be elected — conditions below</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Выплаты по государственным программам</span><span lang="en">Agricultural program payments</span></th>
-          <td><span lang="ru">Доход. Показываются в форме 1099-G</span><span lang="en">Income. Reported on Form 1099-G</span></td>
+          <td><span lang="ru">Доход. Показываются в форме 1099-G. Изъятие узкое: отдельные платежи по программам <strong>долевого участия</strong> в природоохранных работах из дохода исключаются</span><span lang="en">Income. Reported on Form 1099-G. The exception is narrow: certain payments under <strong>cost-sharing</strong> conservation programmes are excluded from income</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Кооперативные выплаты</span><span lang="en">Patronage dividends</span></th>
-          <td><span lang="ru">Доход, если относятся к деятельности фермы</span><span lang="en">Income where they relate to the farming business</span></td>
+          <td><span lang="ru">Доход, если относятся к деятельности фермы. Приходят по <strong>форме 1099-PATR</strong>. Продающий продукцию через кооператив может получить вместо выплаты <strong>сертификат на удержание с единицы</strong> — он тоже доход Schedule F</span><span lang="en">Income where they relate to the farming business. Reported on <strong>Form 1099-PATR</strong>. A farmer selling through a co-operative may receive a <strong>per-unit retain certificate</strong> instead — also Schedule F income</span></td>
         </tr>
         <tr>
           <th><span lang="ru">Заём товарного кредита</span><span lang="en">Commodity Credit Corporation loan</span></th>
@@ -976,7 +1425,61 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-8. Что показать в Schedule F</span><span lang="en">Example 2-8. What goes on Schedule F</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-8. Продажа купленной племенной коровы</span><span lang="en">Example 2-8. Selling a purchased breeding cow</span></div>
+      <div class="example__body">
+        <p lang="ru">Корова куплена за <span data-num="2400"></span>, использовалась для разведения,
+          амортизации начислено <span data-num="1540"></span>. Продана за
+          <span data-num="3200"></span>, расходы на продажу <span data-num="150"></span>.</p>
+        <p lang="en">A cow was bought for <span data-num="2400"></span>, used for breeding, and
+          <span data-num="1540"></span> of depreciation was allowed. It was sold for
+          <span data-num="3200"></span> with <span data-num="150"></span> of selling expenses.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Выручка за вычетом расходов на продажу</span><span lang="en">Amount realised net of selling expenses</span></td><td data-num="3050"></td></tr>
+            <tr><td><span lang="ru">Минус скорректированный базис: 2 400 − 1 540</span><span lang="en">Less the adjusted basis: 2,400 − 1,540</span></td><td data-num="-860"></td></tr>
+            <tr><td><span lang="ru">Прирост всего</span><span lang="en">Total gain</span></td><td data-num="2190"></td></tr>
+            <tr><td><span lang="ru">Из него обычный доход по §1245 — в пределах начисленной амортизации</span><span lang="en">Of which ordinary income under §1245 — up to the depreciation allowed</span></td><td data-num="1540"></td></tr>
+            <tr class="total"><td><span lang="ru">Остаток — прирост по §1231</span><span lang="en">The remainder — section 1231 gain</span></td><td data-num="650"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Обе суммы идут в форму 4797, но в разные её части и с разными последствиями:
+          возврат по §1245 облагается как обычный доход, а прирост по §1231 при благоприятном
+          итоге года получает ставку долгосрочного прироста. Порядок жёсткий: сначала
+          <strong>возвращается вся амортизация</strong>, и лишь то, что осталось сверх неё,
+          становится §1231.</p>
+        <p lang="en">Both amounts go on Form 4797, but into different parts of it and with different
+          consequences: the §1245 recapture is taxed as ordinary income, while the §1231 gain, if
+          the year's netting is favourable, gets the long-term capital rate. The order is rigid:
+          <strong>the depreciation is recaptured first</strong>, and only what is left over becomes
+          §1231.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">«У животного нет базиса» — только про выращенных</span><span lang="en">“An animal has no basis” holds only for raised ones</span></h3>
+      <p lang="ru">Правило верно ровно потому, что корма и уход уже вычтены: вычитать их второй раз
+        как базис нельзя. У <strong>купленного</strong> животного всё иначе — цена покупки нигде
+        не вычиталась, она амортизировалась, и остаток амортизации есть базис.</p>
+      <p lang="en">The rule holds precisely because feed and care were already deducted: they may not
+        be deducted a second time as basis. A <strong>purchased</strong> animal is different — the
+        price was never deducted, it was depreciated, and what is left of it is the basis.</p>
+      <p lang="ru">Отличать их в условии просто: сказано «выращена на ферме» — базис ноль, весь
+        прирост по §1231; названа цена покупки и амортизация — базис есть, и амортизация
+        возвращается первой. Вопрос обычно даёт оба животных сразу и просит общий результат.</p>
+      <p lang="en">Telling them apart in the facts is easy: “raised on the farm” means zero basis and
+        the whole gain under §1231; a purchase price and depreciation mean there is a basis and the
+        depreciation comes back first. A question usually gives both animals at once and asks for
+        the combined result.</p>
+      <p lang="ru">Заметьте и обратное: срок владения на это деление не влияет вовсе. Он решает
+        только, применяется ли §1231 к остатку, — <span data-fig="livestock_hold_cattle"></span>
+        месяца для КРС и лошадей.</p>
+      <p lang="en">Note the converse too: the holding period has no bearing on this split. It decides
+        only whether §1231 applies to the remainder —
+        <span data-fig="livestock_hold_cattle"></span> months for cattle and horses.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-9. Что показать в Schedule F</span><span lang="en">Example 2-9. What goes on Schedule F</span></div>
       <div class="example__body">
         <p lang="ru">Фермер вырастил и продал сою, продал племенных тёлок, получил кооперативные
           выплаты от местного кормового склада, платёж по программе охраны земель и плату за уборку
@@ -1084,7 +1587,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-9. Сколько дохода можно отложить</span><span lang="en">Example 2-9. How much may be postponed</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-10. Сколько дохода можно отложить</span><span lang="en">Example 2-10. How much may be postponed</span></div>
       <div class="example__body">
         <p lang="ru">Фермер на кассовом методе обычно продаёт <span data-num="90" data-unit="plain"></span>
           голов скота в год. Из-за засухи в 2025 году продано <span data-num="126" data-unit="plain"></span>
@@ -1135,6 +1638,200 @@
       the farm business follows its own rule, and supplies that would have been consumed during the
       year but for a fire, storm, flood, other casualty, disease or drought are not prepaid farm
       supplies at all.</p>
+
+    <h3><span lang="ru">Расходы на охрану почв и вод</span><span lang="en">Soil and water conservation expenses</span></h3>
+
+    <p lang="ru">Выравнивание земли, террасы, отводные канавы, пруды, борьба с эрозией — по общему
+      правилу это улучшения земли, а земля не амортизируется: затраты пришлось бы держать в базисе
+      до самой продажи. Для фермера сделано изъятие: такие расходы разрешено <strong>вычитать
+      сразу</strong>.</p>
+    <p lang="en">Levelling, terracing, diversion channels, ponds, erosion control — as a general
+      matter these are improvements to land, and land is not depreciable: the cost would sit in
+      basis until the land was sold. Farmers get an exception: such expenses may be
+      <strong>deducted at once</strong>.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Условие</span><span lang="en">Requirement</span></th>
+          <th><span lang="ru">Содержание</span><span lang="en">What it means</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Кто вправе</span><span lang="en">Who qualifies</span></th>
+          <td><span lang="ru">Тот, кто ведёт фермерство <strong>ради прибыли</strong>, — владелец или арендатор. Ферма для удовольствия не годится; лесоводство и выращивание леса фермерством здесь не считаются</span><span lang="en">Anyone farming <strong>for profit</strong>, owner or tenant. A farm kept for pleasure does not qualify; forestry and growing timber are not farming for this purpose</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Какая земля</span><span lang="en">Which land</span></th>
+          <td><span lang="ru">Земля, <strong>использовавшаяся под ферму</strong> вами или до вас. Целина, впервые вводимая в оборот, не подходит. Земля за пределами страны исключена</span><span lang="en">Land <strong>used for farming</strong> by you or by someone before you. Land newly brought into cultivation does not qualify. Land outside the country is excluded</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Соответствие плану</span><span lang="en">Conformity to a plan</span></th>
+          <td><span lang="ru">Расходы должны отвечать плану, утверждённому службой охраны природных ресурсов или сопоставимым планом штата</span><span lang="en">The expenses must be consistent with a plan approved by the Natural Resources Conservation Service, or a comparable state plan</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Предел</span><span lang="en">The limit</span></th>
+          <td><span lang="ru"><span data-fig="soil_water_limit"></span> валового дохода от фермерства за год. Излишек переносится вперёд и вычитается в следующие годы — <strong>без ограничения срока</strong>, но в каждом году в пределах того же предела</span><span lang="en"><span data-fig="soil_water_limit"></span> of gross income from farming for the year. The excess carries forward to later years — <strong>with no time limit</strong> — subject to the same cap in each of them</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Не всё, что делается на земле, — охрана почв</span><span lang="en">Not everything done to the land is conservation</span></h3>
+      <p lang="ru">Вне этого правила остаются обычные текущие работы: расчистка кустарника на уже
+        используемой земле, ремонт готовых сооружений, регулярная очистка канавы от наносов,
+        проценты и налоги. Они и без того вычитаются как обычные фермерские расходы, поэтому в
+        <span data-fig="soil_water_limit"></span> не упираются. Вопрос строится на том, что
+        читатель загоняет под предел то, что под ним стоять не должно.</p>
+      <p lang="en">Ordinary running work falls outside this rule: clearing brush from land already in
+        use, repairing completed structures, routine removal of sediment from a ditch, interest and
+        taxes. They are deductible anyway as ordinary farm expenses and so never meet the
+        <span data-fig="soil_water_limit"></span> cap. The question turns on the reader pushing
+        under the cap what does not belong there.</p>
+      <p lang="ru">Второй край того же различия: <strong>покупка</strong> амортизируемого имущества
+        — насосов, труб, техники — расходом на охрану почв не становится вовсе. Она
+        амортизируется своим порядком.</p>
+      <p lang="en">The other edge of the same distinction: <strong>buying</strong> depreciable
+        property — pumps, pipes, machinery — is not a conservation expense at all. It is depreciated
+        in the ordinary way.</p>
+    </div>
+
+    <h3><span lang="ru">Что фермер амортизирует, а что нет</span><span lang="en">What a farmer depreciates and what not</span></h3>
+
+    <p lang="ru">Разделительная черта та же, что и при продаже: <strong>средства производства</strong>
+      амортизируются, <strong>товар</strong> — нет. Отсюда и то, что скот попадает по обе стороны.</p>
+    <p lang="en">The dividing line is the same as on a sale: <strong>the means of production</strong>
+      are depreciated, <strong>the goods</strong> are not. Which is why livestock appears on both
+      sides.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Амортизируется</span><span lang="en">Depreciable</span></th>
+          <th><span lang="ru">Не амортизируется</span><span lang="en">Not depreciable</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Постройки, сооружения и улучшения</span><span lang="en">Buildings, structures and improvements</span></td>
+          <td><span lang="ru"><strong>Земля</strong> — срок службы у неё не истекает</span><span lang="en"><strong>Land</strong> — it has no life to wear out</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Техника, оборудование, машины и грузовики</span><span lang="en">Machinery, equipment, cars and trucks</span></td>
+          <td><span lang="ru">Скот, <strong>купленный или выращенный для перепродажи</strong>, и прочие товарные запасы</span><span lang="en">Livestock <strong>bought or raised for resale</strong>, and other inventory</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Скот, <strong>купленный</strong> для тягла, разведения, спорта или дойки</span><span lang="en">Livestock <strong>bought</strong> for draft, breeding, sport or dairy use</span></td>
+          <td><span lang="ru">Жилой дом, мебель и прочее личное имущество. Скот, <strong>выращенный</strong> для этих же целей: затраты уже вычтены, амортизировать нечего</span><span lang="en">The dwelling, furniture and other personal items. Livestock <strong>raised</strong> for those same uses: the costs were already deducted, so there is nothing left to depreciate</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Сроки восстановления заучивать не требуется, но порядок величин полезен:
+      техника и оборудование, приобретённые после 2017 года, — 5 лет; племенной и молочный скот —
+      5; сельскохозяйственные ограды — 7; одноцелевые сельскохозяйственные сооружения — 10;
+      водозаборные скважины — 15; фермерские постройки — 20.</p>
+    <p lang="en">The recovery periods need not be memorised, but the orders of magnitude help:
+      machinery and equipment acquired after 2017 — 5 years; breeding and dairy cattle — 5;
+      agricultural fences — 7; single-purpose agricultural structures — 10; water wells — 15; farm
+      buildings — 20.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Правила капитализации: у фермера есть выход</span><span lang="en">The capitalisation rules: a farmer has a way out</span></h3>
+      <p lang="ru">Общее правило требует включать в стоимость выращенного прямые затраты и долю
+        косвенных — то есть капитализировать их, а не вычитать сразу. Фермерам сделано изъятие:
+        хозяйство, не являющееся налоговым убежищем, вправе <strong>не применять</strong> этот
+        порядок к тому, что оно выращивает. Цена выхода — обязанность амортизировать
+        предпочтительным линейным способом по удлинённой системе, и решение это связывает надолго.</p>
+      <p lang="en">The general rule requires the direct costs of what is grown, and a share of the
+        indirect ones, to be capitalised rather than deducted at once. Farmers get an exception: an
+        operation that is not a tax shelter may <strong>elect out</strong> of that treatment for
+        what it grows. The price is a duty to depreciate under the alternative system using the
+        straight line method, and the choice binds for a long time.</p>
+      <p lang="ru">Изъятие не безусловно: растения с периодом созревания <strong>более двух
+        лет</strong> — сады, виноградники — под него не подпадают, если хозяйство от порядка не
+        отказалось.</p>
+      <p lang="en">The exception is not unconditional: plants with a preproductive period of
+        <strong>more than two years</strong> — orchards, vineyards — fall outside it unless the
+        operation has elected out.</p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Новое: налог с продажи земли фермеру можно платить частями</span><span lang="en">New: tax on selling farmland to a farmer may be paid in instalments</span></h3>
+      <p lang="ru">Закон 2025 года ввёл <strong>§1062</strong>: продавец подходящей
+        сельскохозяйственной земли <strong>подходящему фермеру</strong> вправе выбрать уплату
+        налога с прироста <strong>четырьмя равными ежегодными платежами</strong>, начиная с года
+        продажи. Заявляется по форме 1062.</p>
+      <p lang="en">The 2025 legislation introduced <strong>section 1062</strong>: the seller of
+        qualified farmland to a <strong>qualified farmer</strong> may elect to pay the tax on the
+        gain in <strong>four equal annual instalments</strong>, beginning with the year of sale.
+        The election is made on Form 1062.</p>
+      <p lang="ru">Обратите внимание на дату: выбор доступен для налоговых периодов,
+        <strong>начинающихся после 4 июля 2025 года</strong>. У фермера на календарном годе это
+        значит не 2025 год, а 2026-й. Норма действующая, знать её надо, но к фактуре за
+        <span data-num="2025" data-unit="plain"></span> год она не применяется — и вариант ответа,
+        предлагающий её применить, неверен именно по этой причине.</p>
+      <p lang="en">Note the date: the election is available for tax years <strong>beginning after
+        July 4, 2025</strong>. For a calendar-year farmer that means not 2025 but 2026. The
+        provision is in force and worth knowing, but it does not reach facts set in
+        <span data-num="2025" data-unit="plain"></span> — and an answer choice that applies it is
+        wrong for precisely that reason.</p>
+    </div>
+
+    <h3><span lang="ru">Отсрочка по страхованию урожая</span><span lang="en">Deferring crop insurance proceeds</span></h3>
+
+    <p lang="ru">Страховая выплата за погибший урожай и государственная помощь при бедствии — доход
+      года <strong>получения</strong>. Но если бы урожай уцелел, деньги за него пришли бы в
+      следующем году, и выплата сдвигает доход на год раньше. Норма позволяет вернуть его на место:
+      выплату разрешено показать в <strong>следующем</strong> году.</p>
+    <p lang="en">Insurance for a destroyed crop, and federal disaster assistance, are income of the
+      year of <strong>receipt</strong>. But had the crop survived, the money for it would have come
+      in the following year, so the payment pulls income a year forward. The rule lets it be put
+      back: the proceeds may be reported in the <strong>following</strong> year.</p>
+
+    <p lang="ru">Условий три, и нужны все:</p>
+    <p lang="en">Three conditions, all required:</p>
+
+    <div class="scroller">
+    <table>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td><span lang="ru">Применяется <strong>кассовый</strong> метод учёта</span><span lang="en">The <strong>cash</strong> method is used</span></td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td><span lang="ru">Выплата получена в том же году, в котором урожай пострадал</span><span lang="en">The payment was received in the same year the crop was damaged</span></td>
+        </tr>
+        <tr class="total">
+          <th>3</th>
+          <td><span lang="ru">Фермер может показать, что при обычном ведении дел доход от этого урожая он отразил бы <strong>в следующем году</strong></span><span lang="en">The farmer can show that under normal practice the income from that crop would have been reported <strong>in the following year</strong></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Выбор один на все выплаты года</span><span lang="en">One election covers every payment of the year</span></h3>
+      <p lang="ru">Выбрать нельзя выборочно: сделанный выбор распространяется на <strong>все</strong>
+        такие поступления года, а не на удобную часть. Отложить страховку по одному полю и
+        оставить в текущем году помощь по другому не получится.</p>
+      <p lang="en">The election is not selective: once made it covers <strong>every</strong> such
+        receipt of the year, not a convenient part of them. Deferring the insurance on one field
+        while leaving the assistance on another in the current year is not possible.</p>
+      <p lang="ru">Отсрочка — <strong>на один год</strong>, как и у аванса: третьего года не бывает.
+        И не путайте её с отсрочкой при погодной продаже скота — там откладывается доход от
+        <em>лишних животных</em>, здесь от <em>погибшего урожая</em>, и условия у норм разные.</p>
+      <p lang="en">The deferral runs <strong>one year</strong>, as with an advance payment: there is
+        no third year. And do not confuse it with the deferral for weather-related livestock sales —
+        there it is the income from the <em>extra animals</em>, here from the <em>lost crop</em>,
+        and the conditions differ.</p>
+    </div>
 
     <h3><span lang="ru">Особый порядок расчётного налога</span><span lang="en">The special estimated tax rule</span></h3>
 
@@ -1259,7 +1956,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 2-10. Проверка доли фермерского дохода</span><span lang="en">Example 2-10. Testing the two-thirds share</span></div>
+      <div class="example__head"><span lang="ru">Пример 2-11. Проверка доли фермерского дохода</span><span lang="en">Example 2-11. Testing the two-thirds share</span></div>
       <div class="example__body">
         <p lang="ru">За 2025 год фермер получил доход от продажи урожая, а также проценты по
           вкладу и заработную плату на зимней подработке.</p>
@@ -1355,6 +2052,345 @@
     </div>
 
     <!-- ============================================================ -->
+    <section class="sub" id="s25">
+      <h2><span class="num">2.5</span>
+        <span lang="ru">Списание долга</span>
+        <span lang="en">Cancelled debt</span>
+      </h2>
+    </section>
+
+    <p lang="ru">В <a href="#s21">2.1</a> уже сказано главное: прощённый долг — доход, и место ему
+      там, откуда долг родом. Здесь — вторая половина темы, на которой строятся расчётные вопросы:
+      <strong>сколько</strong> из прощённого попадает в доход и когда не попадает вовсе.</p>
+    <p lang="en">The main point was made in <a href="#s21">2.1</a>: a forgiven debt is income, and it
+      belongs where the debt came from. Here is the other half of the subject, the half the
+      computational questions are built on: <strong>how much</strong> of the forgiven amount reaches
+      income, and when none of it does.</p>
+
+    <p lang="ru">Порядок разбора всегда один и тот же, и путать ступени нельзя.</p>
+    <p lang="en">The order of analysis is always the same, and the steps must not be mixed up.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Ступень</span><span lang="en">Step</span></th>
+          <th><span lang="ru">Вопрос</span><span lang="en">The question</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Изъятие</span><span lang="en">Exception</span></th>
+          <td><span lang="ru">Дохода не возникает <strong>вовсе</strong>: дар, завещание, вычитаемый долг, уменьшение цены продавцом</span><span lang="en">No income arises <strong>at all</strong>: a gift, a bequest, deductible debt, a seller's price reduction</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Исключение</span><span lang="en">Exclusion</span></th>
+          <td><span lang="ru">Доход <strong>возник</strong>, но из валового дохода выводится: банкротство, неплатёжеспособность, долг фермера, долг по деловой недвижимости</span><span lang="en">Income <strong>did</strong> arise but is kept out of gross income: bankruptcy, insolvency, farm debt, real property business debt</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Цена исключения</span><span lang="en">The price of an exclusion</span></th>
+          <td><span lang="ru">Уменьшаются налоговые атрибуты. Форма 982</span><span lang="en">Tax attributes are reduced. Form 982</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Изъятие и исключение — не синонимы</span><span lang="en">An exception is not an exclusion</span></h3>
+      <p lang="ru">Различие кажется словесным, а решает исход. При <strong>изъятии</strong> дохода
+        не было, и платить нечем: атрибуты остаются целы, форма 982 не подаётся. При
+        <strong>исключении</strong> доход был и его вывели из-под налога, а взамен уменьшили
+        атрибуты — то есть налог отложили, а не простили. Вопрос обычно спрашивает не про сумму, а
+        про последствия, и верный ответ разводит эти два случая.</p>
+      <p lang="en">The distinction looks verbal and decides the outcome. Under an
+        <strong>exception</strong> there was no income and nothing to pay: attributes stay intact
+        and no Form 982 is filed. Under an <strong>exclusion</strong> income did arise and was kept
+        out of tax, and attributes were cut in exchange — the tax was deferred, not forgiven. The
+        question usually asks not about the amount but about the consequences, and the right answer
+        separates these two.</p>
+    </div>
+
+    <h3><span lang="ru">Неплатёжеспособность: считается до прощения</span><span lang="en">Insolvency: measured before the cancellation</span></h3>
+
+    <p lang="ru">Самое частое исключение и единственное, где нужен расчёт. Неплатёжеспособность —
+      это превышение <strong>всех</strong> обязательств над справедливой рыночной стоимостью
+      <strong>всех</strong> активов, определённое <strong>непосредственно перед</strong> прощением.
+      Исключить можно ровно столько, на сколько человек был неплатёжеспособен, — остаток идёт в
+      доход.</p>
+    <p lang="en">The commonest exclusion, and the only one requiring a computation. Insolvency is the
+      excess of <strong>all</strong> liabilities over the fair market value of <strong>all</strong>
+      assets, determined <strong>immediately before</strong> the cancellation. The amount excludable
+      is exactly the amount of the insolvency — the remainder goes into income.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-12. Прощение долга при неплатёжеспособности</span><span lang="en">Example 2-12. Cancellation while insolvent</span></div>
+      <div class="example__body">
+        <p lang="ru">Непосредственно перед прощением обязательства предпринимателя составляли
+          <span data-num="180000"></span>, справедливая стоимость всего имущества —
+          <span data-num="145000"></span>. Кредитор простил <span data-num="50000"></span> делового
+          долга.</p>
+        <p lang="en">Immediately before the cancellation the proprietor's liabilities were
+          <span data-num="180000"></span> and the fair market value of all assets was
+          <span data-num="145000"></span>. A creditor forgave <span data-num="50000"></span> of
+          business debt.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Обязательства</span><span lang="en">Liabilities</span></td><td data-num="180000"></td></tr>
+            <tr><td><span lang="ru">Минус стоимость активов</span><span lang="en">Less the value of assets</span></td><td data-num="-145000"></td></tr>
+            <tr><td><span lang="ru">Неплатёжеспособность</span><span lang="en">Insolvency</span></td><td data-num="35000"></td></tr>
+            <tr><td><span lang="ru">Прощено</span><span lang="en">Amount cancelled</span></td><td data-num="50000"></td></tr>
+            <tr><td><span lang="ru">Исключается — в пределах неплатёжеспособности</span><span lang="en">Excluded — up to the insolvency</span></td><td data-num="35000"></td></tr>
+            <tr class="total"><td><span lang="ru">В доход: 50 000 − 35 000</span><span lang="en">Into income: 50,000 − 35,000</span></td><td data-num="15000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заготовленные неверные варианты — <span data-num="50000"></span> (исключение
+          не заметили), <span data-num="0"></span> (исключили всё) и
+          <span data-num="35000"></span> (перепутали исключаемое с облагаемым). И
+          <span data-num="35000"></span> исключённых не бесплатны: на эту сумму придётся уменьшить
+          атрибуты.</p>
+        <p lang="en">The prepared wrong answers are <span data-num="50000"></span> (the exclusion was
+          missed), <span data-num="0"></span> (everything was excluded) and
+          <span data-num="35000"></span> (the excluded amount taken for the taxable one). Nor is the
+          excluded <span data-num="35000"></span> free: attributes must be cut by that much.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">В расчёт идёт всё имущество, а не только заложенное</span><span lang="en">Every asset counts, not only the pledged one</span></h3>
+      <p lang="ru">В обязательства входят <strong>все</strong> долги — деловые и личные, включая
+        ипотеку и долги без личной ответственности. В активы входит <strong>всё</strong>
+        имущество, в том числе не связанное с бизнесом и защищённое от взыскания по закону штата:
+        пенсионные счета, доля в жилье. Условие вопроса обычно перечисляет и лишнее, и нужное,
+        а проверяется именно полнота обеих сторон.</p>
+      <p lang="en">Liabilities include <strong>every</strong> debt — business and personal alike,
+        mortgages and nonrecourse debt among them. Assets include <strong>everything</strong> owned,
+        including property outside the business and property exempt from creditors under state law:
+        retirement accounts, equity in a home. The facts usually list both what belongs and what
+        does not, and completeness on both sides is what is being tested.</p>
+      <p lang="ru">Момент оценки — <strong>непосредственно перед</strong> прощением. Стоимость,
+        сложившаяся после него или на конец года, к делу не относится, хотя в вариантах ответа
+        такая цифра обычно есть.</p>
+      <p lang="en">The moment of measurement is <strong>immediately before</strong> the cancellation.
+        Values as of afterwards, or as of year end, are irrelevant, though such a figure is usually
+        among the answer choices.</p>
+    </div>
+
+    <h3><span lang="ru">Остальные исключения</span><span lang="en">The other exclusions</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Исключение</span><span lang="en">Exclusion</span></th>
+          <th><span lang="ru">Условия и пределы</span><span lang="en">Conditions and limits</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Банкротство</span><span lang="en">Bankruptcy</span></th>
+          <td><span lang="ru">Долг списан по делу о банкротстве и под контролем суда. Предела нет: исключается всё. Идёт <strong>впереди</strong> всех прочих исключений</span><span lang="en">The debt was discharged in a bankruptcy case under the court's supervision. No limit: everything is excluded. It comes <strong>ahead</strong> of every other exclusion</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Неплатёжеспособность</span><span lang="en">Insolvency</span></th>
+          <td><span lang="ru">В пределах суммы неплатёжеспособности. Идёт <strong>после</strong> банкротства и <strong>впереди</strong> двух следующих</span><span lang="en">Up to the amount of the insolvency. It comes <strong>after</strong> bankruptcy and <strong>ahead</strong> of the two below</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Долг фермера</span><span lang="en">Qualified farm debt</span></th>
+          <td><span lang="ru">Долг возник <strong>прямо в связи</strong> с фермерской деятельностью; не менее <strong>половины</strong> валовой выручки за три предшествующих года — от фермерства; кредитор — лицо, регулярно занятое кредитованием, а не продавец и не связанное лицо</span><span lang="en">The debt was incurred <strong>directly in connection with</strong> farming; at least <strong>half</strong> of gross receipts for the three preceding years came from farming; the lender is a person regularly engaged in lending, not the seller and not a related party</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Долг по деловой недвижимости</span><span lang="en">Qualified real property business debt</span></th>
+          <td><span lang="ru">Долг взят в связи с недвижимостью, используемой в деятельности, и обеспечен ею. Недвижимость, предназначенная для продажи покупателям, не годится. Доступен всем, кроме корпораций категории C</span><span lang="en">The debt was incurred in connection with real property used in a trade or business and is secured by it. Real property held for sale to customers does not qualify. Available to everyone except a C corporation</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Очередь исключений жёсткая</span><span lang="en">The order of exclusions is fixed</span></h3>
+      <p lang="ru">Выбрать между ними нельзя. Долг фермера, прощённый в деле о банкротстве,
+        исключается <strong>по банкротству</strong>, а не как долг фермера. Если фермер был
+        неплатёжеспособен, сначала применяется неплатёжеспособность, и только остаток — по
+        фермерскому исключению. Вопрос строится на том, что фактура подходит сразу под два, и
+        просит назвать применимое.</p>
+      <p lang="en">There is no choosing between them. Farm debt discharged in a bankruptcy case is
+        excluded <strong>under bankruptcy</strong>, not as farm debt. If the farmer was insolvent,
+        insolvency applies first and only the remainder falls under the farm exclusion. A question
+        is built on facts that fit two at once and asks which one governs.</p>
+    </div>
+
+    <h3><span lang="ru">Чем платят за исключение</span><span lang="en">What an exclusion costs</span></h3>
+
+    <p lang="ru">Исключённая сумма не исчезает: на неё уменьшаются <strong>налоговые атрибуты</strong>
+      — то, чем налогоплательщик уменьшил бы налог в будущем. Уменьшение делается в конце года,
+      в котором долг прощён, и в установленном порядке.</p>
+    <p lang="en">The excluded amount does not vanish: it reduces <strong>tax attributes</strong> —
+      the things that would have cut the taxpayer's tax later. The reduction is made at the end of
+      the year of the cancellation, in a prescribed order.</p>
+
+    <div class="scroller">
+    <table>
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Чистый операционный убыток года и перенесённый на этот год</span><span lang="en">The net operating loss of the year and any carried to it</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Перенос общего делового кредита</span><span lang="en">General business credit carryover</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Кредит по минимальному налогу</span><span lang="en">Minimum tax credit</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Перенос убытка от прироста капитала</span><span lang="en">Capital loss carryover</span></td></tr>
+        <tr><th>5</th><td><span lang="ru"><strong>Базис имущества</strong></span><span lang="en"><strong>Basis of property</strong></span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Перенос пассивного убытка и пассивного кредита</span><span lang="en">Passive activity loss and credit carryovers</span></td></tr>
+        <tr class="total"><th>7</th><td><span lang="ru">Перенос кредита по иностранным налогам</span><span lang="en">Foreign tax credit carryover</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Убытки уменьшаются доллар за доллар, а кредиты — по <strong>33⅓ цента</strong> на
+      каждый исключённый доллар: кредит уменьшает налог напрямую, а убыток лишь доход, и курс
+      выравнивает их. Налогоплательщик вправе выбрать уменьшение базиса амортизируемого имущества
+      <strong>в первую очередь</strong>, до чистого операционного убытка.</p>
+    <p lang="en">Losses are cut dollar for dollar, credits at <strong>33⅓ cents</strong> per excluded
+      dollar: a credit reduces tax directly while a loss only reduces income, and the rate equalises
+      them. The taxpayer may elect to reduce the basis of depreciable property <strong>first</strong>,
+      ahead of the net operating loss.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Исключение — отсрочка, а не прощение</span><span lang="en">An exclusion defers; it does not forgive</span></h3>
+      <p lang="ru">Уменьшенный базис вернётся приростом при продаже; израсходованный убыток не
+        уменьшит доход будущего года. Правильный ответ на вопрос «что даёт исключение» —
+        не «налога не будет», а «налога не будет сейчас». Отсюда и смысл выбора уменьшать базис
+        первым: тот, у кого имущество продаваться не собирается, предпочтёт сохранить убыток.</p>
+      <p lang="en">A reduced basis comes back as gain on sale; a spent loss will not reduce next
+        year's income. The right answer to “what does the exclusion give you” is not “no tax” but
+        “no tax now”. Hence the point of electing to reduce basis first: someone with no intention
+        of selling the property would rather keep the loss.</p>
+    </div>
+
+    <h3><span lang="ru">Долг погашен не деньгами</span><span lang="en">A debt settled otherwise than in money</span></h3>
+
+    <p lang="ru">Кредитор может согласиться взять вместо денег имущество или собственные акции
+      должника. Правило простое: такая передача приравнивается к уплате <strong>суммы, равной
+      справедливой стоимости</strong> переданного. Непокрытый остаток долга — доход от списания.</p>
+    <p lang="en">A creditor may agree to take property, or the debtor's own stock, instead of money.
+      The rule is simple: such a transfer is treated as payment of <strong>an amount equal to the
+      fair market value</strong> of what was transferred. Whatever of the debt is left uncovered is
+      cancellation of debt income.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-13. Долг закрыт собственными акциями</span><span lang="en">Example 2-13. A debt settled with the debtor's own stock</span></div>
+      <div class="example__body">
+        <p lang="ru">Платёжеспособная корпорация передала кредитору собственные акции в погашение
+          долга <span data-num="30000"></span>. Справедливая стоимость акций —
+          <span data-num="21000"></span>, их балансовая стоимость —
+          <span data-num="16000"></span>.</p>
+        <p lang="en">A solvent corporation transferred its own stock to a creditor in satisfaction of
+          a <span data-num="30000"></span> debt. The fair market value of the stock was
+          <span data-num="21000"></span> and its book value <span data-num="16000"></span>.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">Долг</span><span lang="en">The debt</span></td><td data-num="30000"></td></tr>
+            <tr><td><span lang="ru">Минус справедливая стоимость акций</span><span lang="en">Less the fair market value of the stock</span></td><td data-num="-21000"></td></tr>
+            <tr class="total"><td><span lang="ru">Обычный доход от списания долга</span><span lang="en">Ordinary cancellation of debt income</span></td><td data-num="9000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Балансовая стоимость в расчёт не входит вовсе — она приведена в условии затем,
+          чтобы из неё посчитали <span data-num="14000"></span>. И прироста от выпуска собственных
+          акций у корпорации не возникает: своими акциями она распоряжается не как имуществом.
+          То же правило действует для партнёрства, передающего кредитору долю в себе.</p>
+        <p lang="en">Book value plays no part at all — it is in the facts so that
+          <span data-num="14000"></span> can be computed from it. Nor does the corporation realise
+          gain on issuing its own stock: its own shares are not property in its hands. The same rule
+          applies to a partnership transferring an interest in itself to a creditor.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Подорожавшее имущество даёт два дохода сразу</span><span lang="en">Appreciated property produces two amounts at once</span></h3>
+      <p lang="ru">Если долг закрывается <strong>имуществом</strong>, а не собственными акциями,
+        событий два, и считать их надо порознь. Первое: имущество считается проданным за свою
+        справедливую стоимость — отсюда прирост или убыток, а его характер определяется характером
+        имущества. Второе: непокрытый остаток долга — обычный доход от списания.</p>
+      <p lang="en">Where the debt is settled with <strong>property</strong> rather than the debtor's
+        own stock, there are two events and they must be computed separately. First, the property is
+        treated as sold for its fair market value — hence a gain or loss, whose character follows
+        the character of the property. Second, whatever of the debt remains uncovered is ordinary
+        cancellation of debt income.</p>
+      <p lang="ru">Земля с базисом <span data-num="40000"></span> и стоимостью
+        <span data-num="55000"></span>, отданная в погашение долга <span data-num="70000"></span>,
+        даёт прирост <span data-num="15000"></span> и доход от списания
+        <span data-num="15000"></span>. Совпадение сумм здесь случайно, а вот их
+        <strong>разная природа</strong> — нет: прирост капитальный, доход от списания обычный.
+        Неверный вариант всегда предлагает одну сумму <span data-num="30000"></span>.</p>
+      <p lang="en">Land with a basis of <span data-num="40000"></span> and a value of
+        <span data-num="55000"></span>, handed over against a <span data-num="70000"></span> debt,
+        yields a <span data-num="15000"></span> gain and <span data-num="15000"></span> of
+        cancellation income. That the two coincide here is an accident; that their
+        <strong>natures differ</strong> is not: the gain is capital, the cancellation income
+        ordinary. The wrong answer always offers a single <span data-num="30000"></span>.</p>
+    </div>
+
+    <h3><span lang="ru">Обращение взыскания: решает личная ответственность</span><span lang="en">Foreclosure: personal liability decides</span></h3>
+
+    <p lang="ru">Когда кредитор забирает предмет залога, налоговый итог зависит от того, отвечал ли
+      должник по долгу <strong>лично</strong>. Различие даёт разные суммы и разный характер дохода.</p>
+    <p lang="en">When a lender takes the collateral, the tax outcome turns on whether the borrower was
+      <strong>personally</strong> liable for the debt. The distinction yields different amounts and a
+      different character of income.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th><span lang="ru">Долг с личной ответственностью</span><span lang="en">Recourse debt</span></th>
+          <th><span lang="ru">Долг без личной ответственности</span><span lang="en">Nonrecourse debt</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Выручка от выбытия</span><span lang="en">Amount realised</span></th>
+          <td><span lang="ru">Справедливая стоимость имущества</span><span lang="en">The fair market value of the property</span></td>
+          <td><span lang="ru"><strong>Весь непогашенный долг</strong>, даже если он больше стоимости</span><span lang="en"><strong>The entire unpaid debt</strong>, even where it exceeds the value</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Прирост или убыток</span><span lang="en">Gain or loss</span></th>
+          <td><span lang="ru">Стоимость минус базис</span><span lang="en">Value less basis</span></td>
+          <td><span lang="ru">Долг минус базис</span><span lang="en">Debt less basis</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Доход от списания</span><span lang="en">Cancellation of debt income</span></th>
+          <td><span lang="ru">Прощённое превышение долга над стоимостью — обычный доход</span><span lang="en">The forgiven excess of debt over value — ordinary income</span></td>
+          <td><span lang="ru"><strong>Не возникает</strong>: превышение уже вошло в выручку</span><span lang="en"><strong>None arises</strong>: the excess is already in the amount realised</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 2-14. Одно здание, два вида долга</span><span lang="en">Example 2-14. One building, two kinds of debt</span></div>
+      <div class="example__body">
+        <p lang="ru">Базис здания магазина — <span data-num="145000"></span>, справедливая стоимость
+          — <span data-num="120000"></span>, долг под него —
+          <span data-num="134000"></span>. Кредитор обратил взыскание и остаток простил.</p>
+        <p lang="en">A shop building has a basis of <span data-num="145000"></span>, a fair market
+          value of <span data-num="120000"></span>, and carries <span data-num="134000"></span> of
+          debt. The lender foreclosed and forgave the remainder.</p>
+        <table class="ledger">
+          <tbody>
+            <tr><td><span lang="ru">С личной ответственностью — убыток: 120 000 − 145 000</span><span lang="en">Recourse — loss: 120,000 − 145,000</span></td><td data-num="-25000"></td></tr>
+            <tr><td><span lang="ru">С личной ответственностью — доход от списания: 134 000 − 120 000</span><span lang="en">Recourse — cancellation income: 134,000 − 120,000</span></td><td data-num="14000"></td></tr>
+            <tr class="total"><td><span lang="ru">Без личной ответственности — убыток: 134 000 − 145 000, дохода от списания нет</span><span lang="en">Nonrecourse — loss: 134,000 − 145,000, and no cancellation income</span></td><td data-num="-11000"></td></tr>
+          </tbody>
+        </table>
+        <p lang="ru">Одни и те же цифры дают разный итог. При личной ответственности убыток больше,
+          но появляется обычный доход <span data-num="14000"></span>, к которому ещё можно
+          примерить исключения. Без личной ответственности всё сходится в одну строку, и
+          исключать нечего — дохода от списания просто нет.</p>
+        <p lang="en">The same figures give different results. With personal liability the loss is
+          larger but ordinary income of <span data-num="14000"></span> appears, against which the
+          exclusions may still be tried. Without personal liability everything collapses into one
+          line and there is nothing to exclude — no cancellation income arose.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
     <section class="sub" id="traps">
       <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
     </section>
@@ -1393,6 +2429,28 @@
         <tr><th>29</th><td><span lang="ru">Заниматься фермерством в базовые годы для усреднения не требуется; заявить его можно и в уточнённой декларации, пока открыт срок возврата налога</span><span lang="en">Averaging needs no farming in the base years, and may be elected on an amended return while the refund period is open</span></td></tr>
         <tr><th>30</th><td><span lang="ru">Доход облагается у того, кто его заработал. Указание перечислить оплату третьему лицу налогоплательщика не меняет: передать можно источник дохода, но не сам доход</span><span lang="en">Income is taxed to the one who earned it. Directing payment to a third party does not change the taxpayer: the source may be transferred, the income may not</span></td></tr>
         <tr><th>31</th><td><span lang="ru">Платёж арендатора по вашим обязательствам — ваша валовая выручка <strong>в момент его уплаты</strong>, а не тогда, когда счёт был выставлен вам</span><span lang="en">A lessee’s payment of your obligations is your gross receipts <strong>when the lessee pays</strong>, not when the bill was issued to you</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Валовая выручка — только строка 1 Schedule C. Проценты по счетам покупателей, взысканные долги и лом идут в <strong>строку 6</strong>, прирост от продажи имущества — в форму 4797. В базу самозанятости строка 6 всё равно входит</span><span lang="en">Gross receipts are line 1 of Schedule C alone. Interest on accounts receivable, recovered debts and scrap go on <strong>line 6</strong>; gain on selling property goes on Form 4797. Line 6 is still in the self-employment base</span></td></tr>
+        <tr><th>33</th><td><span lang="ru">Налог с продаж, возложенный законом на покупателя, в доход продавца не входит: он собран для бюджета</span><span lang="en">A sales tax the law imposes on the buyer is not the seller's income: it was collected for the state</span></td></tr>
+        <tr><th>34</th><td><span lang="ru">Себестоимость проданного — возврат капитала, а не расход: она вычитается до валового дохода, а не после</span><span lang="en">Cost of goods sold is a return of capital, not an expense: it comes out before gross income, not after</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">Передача источника дохода засчитывается только при трёх условиях сразу: передача полная и настоящая, контроль не сохранён, совершена <strong>до</strong> того, как доход заработан</span><span lang="en">A transfer of the source counts only where three conditions hold at once: the transfer is complete and bona fide, no control is retained, and it happens <strong>before</strong> the income is earned</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Условия дополнительных методов соединены разными союзами: фермерский — <strong>либо/либо</strong>, нефермерский — <strong>и то, и другое</strong>, плюс регулярная самозанятость и не более пяти применений</span><span lang="en">The optional methods join their conditions differently: the farm method by <strong>either/or</strong>, the nonfarm method by <strong>both</strong>, plus regular self-employment and no more than five uses</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Потолок <span data-fig="farm_opt_max"></span> — общий на оба дополнительных метода вместе, а не по стольку каждым</span><span lang="en">The <span data-fig="farm_opt_max"></span> ceiling covers both optional methods together, not each of them</span></td></tr>
+        <tr><th>38</th><td><span lang="ru">Супруги считают налог на самозанятость <strong>порознь</strong>: убыток одного базу другого не уменьшает, и предел базы применяется к каждому отдельно</span><span lang="en">Spouses compute self-employment tax <strong>separately</strong>: one spouse's loss does not reduce the other's base, and the wage base applies to each of them</span></td></tr>
+        <tr><th>39</th><td><span lang="ru">Несколько занятий у одного человека, наоборот, складываются: база одна, и убыток одного дела уменьшает прибыль другого</span><span lang="en">One person's several businesses, by contrast, are combined: there is a single base, and a loss in one reduces the profit of another</span></td></tr>
+        <tr><th>40</th><td><span lang="ru">Стоимость жилья, предоставленного служителю церкви, из подоходного налога исключена, а в базу самозанятости входит</span><span lang="en">The value of a home provided to a minister is excluded from income tax yet included in the self-employment base</span></td></tr>
+        <tr><th>41</th><td><span lang="ru">Прибыль от продажи имущества в базу не входит, но поступления при гибели или хищении <strong>товарных запасов</strong> — входят</span><span lang="en">Gain on selling property is outside the base, but proceeds from the casualty or theft of <strong>inventory</strong> are inside it</span></td></tr>
+        <tr><th>42</th><td><span lang="ru">Дополнительный налог Medicare считается по очереди: сначала заработная плата, затем порог уменьшается на неё <strong>не ниже нуля</strong>, и лишь остаток порога сравнивается с самозанятостью. Убыток от самозанятости заработную плату не уменьшает</span><span lang="en">The Additional Medicare Tax is computed in turn: wages first, then the threshold is reduced by them <strong>but not below zero</strong>, and only the remaining threshold is set against self-employment. A self-employment loss does not reduce wages</span></td></tr>
+        <tr><th>43</th><td><span lang="ru">Удержание работодателем начинается с <span data-fig="addl_medicare_withhold"></span> выплаченной им заработной платы независимо от статуса подачи. Поэтому удержать могут там, где налога нет, и не удержать там, где он есть</span><span lang="en">Employer withholding starts at <span data-fig="addl_medicare_withhold"></span> of wages it paid, whatever the filing status. So it may be withheld where no tax is due and not withheld where it is</span></td></tr>
+        <tr><th>44</th><td><span lang="ru">У <strong>купленного</strong> племенного животного базис есть: цена минус амортизация. Возврат амортизации по §1245 идёт впереди прироста по §1231. Нулевой базис — только у выращенного</span><span lang="en">A <strong>purchased</strong> breeding animal does have a basis: cost less depreciation. The §1245 recapture comes ahead of any §1231 gain. Only a raised animal has none</span></td></tr>
+        <tr><th>45</th><td><span lang="ru">Вычет расходов на охрану почв и вод ограничен <span data-fig="soil_water_limit"></span> валового дохода от фермерства; излишек переносится вперёд без ограничения срока. Текущий уход за землёй и покупка техники сюда не относятся</span><span lang="en">The deduction for soil and water conservation is capped at <span data-fig="soil_water_limit"></span> of gross income from farming, with the excess carried forward indefinitely. Routine upkeep and buying equipment are outside it</span></td></tr>
+        <tr><th>46</th><td><span lang="ru">Выбор отсрочки по страхованию урожая распространяется на <strong>все</strong> такие поступления года и требует кассового метода. Не путать с отсрочкой при погодной продаже скота</span><span lang="en">The crop insurance deferral election covers <strong>every</strong> such receipt of the year and requires the cash method. Not to be confused with the deferral for weather-related livestock sales</span></td></tr>
+        <tr><th>47</th><td><span lang="ru">Изъятие и исключение — разное: при изъятии дохода не возникает вовсе, при исключении доход возник и выведен ценой уменьшения налоговых атрибутов. Исключение откладывает налог, а не отменяет</span><span lang="en">An exception and an exclusion differ: under an exception no income arises at all; under an exclusion income arose and was removed at the cost of reduced tax attributes. An exclusion defers the tax, it does not cancel it</span></td></tr>
+        <tr><th>48</th><td><span lang="ru">Неплатёжеспособность считается как обязательства минус справедливая стоимость активов <strong>непосредственно перед</strong> прощением; в расчёт идут все долги и всё имущество, включая личное и защищённое от взыскания</span><span lang="en">Insolvency is liabilities less the fair market value of assets <strong>immediately before</strong> the cancellation; every debt and every asset counts, personal and creditor-exempt property included</span></td></tr>
+        <tr><th>49</th><td><span lang="ru">Очередь исключений жёсткая: банкротство впереди неплатёжеспособности, неплатёжеспособность впереди долга фермера и долга по деловой недвижимости. Выбрать нельзя</span><span lang="en">The order of exclusions is fixed: bankruptcy ahead of insolvency, insolvency ahead of farm debt and real property business debt. There is no choosing</span></td></tr>
+        <tr><th>50</th><td><span lang="ru">Долг, закрытый собственными акциями должника, даёт доход в размере разницы между долгом и <strong>справедливой стоимостью</strong> акций. Балансовая стоимость ни при чём</span><span lang="en">A debt settled with the debtor's own stock produces income equal to the debt less the <strong>fair market value</strong> of the stock. Book value is irrelevant</span></td></tr>
+        <tr><th>51</th><td><span lang="ru">Долг, закрытый подорожавшим имуществом, даёт <strong>два</strong> результата: прирост от выбытия имущества по его стоимости и обычный доход от списания остатка</span><span lang="en">A debt settled with appreciated property produces <strong>two</strong> results: gain on disposing of the property at its value, and ordinary income on the remaining debt</span></td></tr>
+        <tr><th>52</th><td><span lang="ru">При обращении взыскания по долгу <strong>без личной ответственности</strong> дохода от списания не возникает: весь долг уже вошёл в выручку от выбытия</span><span lang="en">On foreclosure of a <strong>nonrecourse</strong> debt no cancellation income arises: the whole debt is already in the amount realised</span></td></tr>
+        <tr><th>53</th><td><span lang="ru">Уплата налога частями при продаже земли фермеру по §1062 доступна для периодов, начинающихся <strong>после 4 июля 2025 года</strong>: на календарный 2025 год она не распространяется</span><span lang="en">Paying the tax in instalments on a sale of farmland under section 1062 is available for tax years beginning <strong>after July 4, 2025</strong>: it does not reach calendar year 2025</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -1557,7 +2615,7 @@
     </details>
 
     <details class="check">
-      <summary><span lang="ru">14. По договору аренды налог на имущество в размере $4 200, лежащий на арендодателе, платит арендатор. Счёт выставлен в декабре 2025 года, арендатор уплатил его в феврале 2026 года. Когда арендодатель отражает доход?</span><span lang="en">14. Under a lease, a $4,200 property tax that is the landlord’s obligation is paid by the tenant. The bill was issued in December 2025 and the tenant paid it in February 2026. When does the landlord report the income?</span></summary>
+      <summary><span lang="ru">14. Арендодатель на кассовом методе. По договору аренды налог на имущество в размере $4 200, лежащий на нём, платит арендатор. Счёт выставлен в декабре 2025 года, арендатор уплатил его в феврале 2026 года. Когда арендодатель отражает доход?</span><span lang="en">14. The landlord is on the cash method. Under the lease, a $4,200 property tax that is the landlord’s obligation is paid by the tenant. The bill was issued in December 2025 and the tenant paid it in February 2026. When does the landlord report the income?</span></summary>
       <div>
         <p lang="ru">В 2026 году — <strong>в момент уплаты арендатором</strong>. Сумма входит в
           валовую выручку арендодателя, потому что арендатор погасил его обязательство; дата
@@ -1565,6 +2623,54 @@
         <p lang="en">In 2026 — <strong>when the tenant makes the payment</strong>. The amount is
           included in the landlord’s gross receipts because the tenant discharged the
           landlord’s obligation; the date the bill was issued does not matter.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">15. Бизнес получил: выручку от услуг $70 000, проценты по счетам покупателей $2 000, взысканный ранее списанный долг $3 500 и прирост от продажи фургона $4 000. Какова валовая выручка Schedule C и какова база налога на самозанятость?</span><span lang="en">15. A business received: $70,000 of service income, $2,000 of interest on accounts receivable, $3,500 of recovered bad debt and a $4,000 gain on selling a van. What are Schedule C gross receipts and what is the self-employment base?</span></summary>
+      <div>
+        <p lang="ru">Валовая выручка — <strong>$70 000</strong>: строка 1 берёт только выручку от деятельности. Проценты и взысканный долг идут в строку 6, прирост от фургона — в форму 4797. В базу самозанятости входит <strong>$75 500</strong>: строка 6 попадает в прибыль, а выбытие имущества — нет.</p>
+        <p lang="en">Gross receipts are <strong>$70,000</strong>: line 1 takes only the receipts of the business. The interest and the recovered debt go on line 6, the gain on the van on Form 4797. The self-employment base is <strong>$75,500</strong>: line 6 feeds into profit, the disposal of property does not.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">16. Незамужний работник получил заработную плату $190 000 и имеет чистый заработок от самозанятости $60 000. Работодатель дополнительный налог Medicare не удерживал. Сколько придётся уплатить?</span><span lang="en">16. A single employee has $190,000 of wages and $60,000 of net earnings from self-employment. The employer withheld no Additional Medicare Tax. How much is owed?</span></summary>
+      <div>
+        <p lang="ru"><strong>$450</strong>. Заработная плата ниже $200 000, налога с неё нет и удерживать было нечего. Порог уменьшается на неё: 200 000 − 190 000 = $10 000. Самозанятость сравнивается с остатком: 60 000 − 10 000 = $50 000, и 50 000 × 0,9% = $450.</p>
+        <p lang="en"><strong>$450</strong>. The wages are below $200,000, so no tax on them and nothing to withhold. The threshold is reduced by them: 200,000 − 190,000 = $10,000. Self-employment is set against the remainder: 60,000 − 10,000 = $50,000, and 50,000 × 0.9% = $450.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">17. Фермер продал выращенную племенную тёлку за $1 900 и купленного племенного быка за $4 000. Бык обошёлся в $3 000, амортизации по нему начислено $1 800. Расходов на продажу нет. Каков результат по каждому животному?</span><span lang="en">17. A farmer sold a raised breeding heifer for $1,900 and a purchased breeding bull for $4,000. The bull cost $3,000 and $1,800 of depreciation was allowed. There were no selling expenses. What is the result for each animal?</span></summary>
+      <div>
+        <p lang="ru">Тёлка: прирост <strong>$1 900</strong> целиком по §1231 — базиса у выращенного животного нет. Бык: базис 3 000 − 1 800 = $1 200, прирост $2 800, из которого <strong>$1 800</strong> возвращаются по §1245 как обычный доход и <strong>$1 000</strong> идут по §1231. Оба животных — в форму 4797, в Schedule F ни одно не попадает.</p>
+        <p lang="en">The heifer: a <strong>$1,900</strong> gain, all under §1231 — a raised animal has no basis. The bull: basis of 3,000 − 1,800 = $1,200 and a gain of $2,800, of which <strong>$1,800</strong> is recaptured under §1245 as ordinary income and <strong>$1,000</strong> falls under §1231. Both animals go on Form 4797; neither touches Schedule F.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">18. Непосредственно перед прощением у предпринимателя было обязательств на $240 000 и имущества справедливой стоимостью $260 000. Кредитор простил $20 000 делового долга. Сколько попадает в доход?</span><span lang="en">18. Immediately before the cancellation a proprietor had $240,000 of liabilities and property with a fair market value of $260,000. A creditor forgave $20,000 of business debt. How much goes into income?</span></summary>
+      <div>
+        <p lang="ru"><strong>Все $20 000</strong>. Неплатёжеспособности нет: активы превышают обязательства. Исключать нечем, и сумма показывается как доход в Schedule C. Проверка на неплатёжеспособность делается всегда, но выигрывает не всегда.</p>
+        <p lang="en"><strong>The whole $20,000</strong>. There is no insolvency: assets exceed liabilities. There is nothing to exclude, and the amount is reported as income on Schedule C. The insolvency test is always run; it does not always help.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">19. Корпорация передала кредитору принадлежащий ей участок земли в погашение долга $90 000. Базис участка $50 000, справедливая стоимость $75 000. Остаток прощён. Корпорация платёжеспособна. Что она показывает?</span><span lang="en">19. A corporation transferred a parcel of land it owned to a creditor against a $90,000 debt. The land's basis is $50,000 and its fair market value $75,000. The rest was forgiven. The corporation is solvent. What does it report?</span></summary>
+      <div>
+        <p lang="ru">Два результата: прирост <strong>$25 000</strong> от выбытия земли (75 000 − 50 000) и обычный доход от списания <strong>$15 000</strong> (90 000 − 75 000). Если бы вместо земли корпорация отдала <em>собственные акции</em> той же стоимости, прироста не возникло бы вовсе — были бы только $15 000 дохода от списания.</p>
+        <p lang="en">Two results: a <strong>$25,000</strong> gain on disposing of the land (75,000 − 50,000) and <strong>$15,000</strong> of ordinary cancellation income (90,000 − 75,000). Had the corporation handed over <em>its own stock</em> of the same value instead, no gain would have arisen at all — only the $15,000 of cancellation income.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">20. Валовой доход фермера от фермерства — $48 000. Расходы на охрану почв и вод по утверждённому плану — $15 000, из них $3 000 пришлось на покупку насоса. Сколько вычитается в этом году?</span><span lang="en">20. A farmer's gross income from farming is $48,000. Soil and water conservation expenses under an approved plan came to $15,000, of which $3,000 was spent on buying a pump. How much is deductible this year?</span></summary>
+      <div>
+        <p lang="ru"><strong>$12 000</strong>. Насос — амортизируемое имущество, расходом на охрану почв он не становится вовсе и в расчёт предела не входит: остаётся $12 000. Предел — 25% от $48 000, то есть $12 000, и $12 000 в него укладываются. Насос амортизируется своим порядком.</p>
+        <p lang="en"><strong>$12,000</strong>. The pump is depreciable property, is not a conservation expense at all and stays outside the cap computation: $12,000 remains. The cap is 25% of $48,000, that is $12,000, and the $12,000 fits inside it. The pump is depreciated in the ordinary way.</p>
       </div>
     </details>
 

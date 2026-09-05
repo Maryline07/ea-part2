@@ -19,7 +19,8 @@ window.QUIZSECS.su02 = {
   s21: { no: "2.1", ru: "Что считается доходом бизнеса", en: "What counts as business income" },
   s22: { no: "2.2", ru: "Налог на самозанятость", en: "Self-employment tax" },
   s23: { no: "2.3", ru: "Дополнительный налог Medicare", en: "Additional Medicare Tax" },
-  s24: { no: "2.4", ru: "Фермеры", en: "Farmers" }
+  s24: { no: "2.4", ru: "Фермеры", en: "Farmers" },
+  s25: { no: "2.5", ru: "Списание долга", en: "Cancelled debt" }
 };
 
 window.QUIZZES.su02 = [
@@ -653,6 +654,473 @@ window.QUIZZES.su02 = [
       C: { ru: "Арендатор погасил обязательство арендодателя — это доход арендодателя, хотя денег он в руки не получил.", en: "The tenant discharged the landlord’s obligation, which is the landlord’s income even though no money passed through their hands." },
       D: { ru: "Основания для деления нет: платёж совершён один раз и в одном году.", en: "There is nothing to split: the payment was made once and in one year." }
     }
+  },
+  {
+    sec: "s21",
+    ru: "Бизнес на методе начисления получил за год: доход от услуг $25 000, прирост от продажи станка $1 500, проценты по счетам покупателей $3 000. Какова валовая выручка в Schedule C?",
+    en: "For the year an accrual-basis business received: service income of $25,000, a gain of $1,500 on the sale of a machine and $3,000 of interest on accounts receivable. What are its gross receipts on Schedule C?",
+    opts: [
+      { k: "A", ru: "$25 000", en: "$25,000" },
+      { k: "B", ru: "$26 500", en: "$26,500" },
+      { k: "C", ru: "$28 000", en: "$28,000" },
+      { k: "D", ru: "$29 500", en: "$29,500" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Валовая выручка — строка 1, и в неё идёт только выручка от того, чем бизнес занимается. Проценты по счетам покупателей — прочий доход, строка 6; прирост от продажи станка в Schedule C не попадает вовсе, он в форме 4797.", en: "Correct. Gross receipts are line 1, and only the receipts from what the business does go there. Interest on accounts receivable is other income, line 6; the gain on the machine is not on Schedule C at all but on Form 4797." },
+      B: { ru: "Прирост от продажи станка добавлен напрасно. Выбытие делового имущества показывается в форме 4797, а не в Schedule C, — и в базу налога на самозанятость оно тоже не входит.", en: "The gain on the machine has been added in error. Disposing of business property is reported on Form 4797, not Schedule C — and it is outside the self-employment base as well." },
+      C: { ru: "Проценты по счетам покупателей — доход бизнеса, но не валовая выручка: им место в строке 6. В прибыль и в базу самозанятости они попадут, а в ответ на этот вопрос — нет.", en: "Interest on accounts receivable is business income but not gross receipts: its place is line 6. It reaches profit and the self-employment base, but not the answer to this question." },
+      D: { ru: "Сложено всё подряд. Из трёх сумм в строку 1 идёт одна, и различать их приходится именно потому, что вопрос спрашивает про выручку, а не про прибыль.", en: "Everything has simply been added up. Of the three amounts only one belongs on line 1, and telling them apart is required precisely because the question asks about receipts, not profit." }
+    }
+  },
+  {
+    sec: "s21",
+    ru: "Магазин продал товара на $180 000 и дополнительно собрал с покупателей $14 400 налога с продаж, который по закону штата лежит на покупателе. Налог перечислен в бюджет. Что показывается в валовой выручке?",
+    en: "A shop sold $180,000 of goods and additionally collected $14,400 of sales tax from customers, a tax imposed by state law on the buyer. The tax was remitted. What goes into gross receipts?",
+    opts: [
+      { k: "A", ru: "$194 400, а перечисленный налог — вычитаемый расход", en: "$194,400, with the remitted tax as a deductible expense" },
+      { k: "B", ru: "$180 000", en: "$180,000" },
+      { k: "C", ru: "$194 400, и вычета нет: налог платил покупатель", en: "$194,400, with no deduction: the buyer paid the tax" },
+      { k: "D", ru: "$165 600 — выручка за вычетом налога", en: "$165,600 — receipts net of the tax" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Итог по прибыли сойдётся, а ответ всё равно неверен: показывать в доходе и тут же вычитать то, что доходом не было, — не тот порядок. И вопрос спрашивает про выручку.", en: "The bottom line would come out the same, yet the answer is wrong: putting into income what was never income and deducting it again is not the right treatment. And the question asks about receipts." },
+      B: { ru: "Верно. Налог, возложенный законом на покупателя, продавец лишь собирает и перечисляет. С момента продажи это его обязательство перед бюджетом, а не выручка: в доход он не идёт и в расходы, соответственно, тоже.", en: "Correct. A tax the law imposes on the buyer is merely collected and remitted by the seller. From the moment of sale it is a liability to the state, not a receipt: it goes into neither income nor expenses." },
+      C: { ru: "Этот вариант удваивает налог: он и в доход попал, и вычета не получил. Правильный ход — не включать его вовсе.", en: "This choice taxes the amount twice over: it went into income and got no deduction. The right course is to leave it out altogether." },
+      D: { ru: "Вычитать нечего: $14 400 в $180 000 и не входили. Сумма собрана сверх цены.", en: "There is nothing to subtract: the $14,400 was never inside the $180,000. It was collected on top of the price." }
+    }
+  },
+  {
+    sec: "s21",
+    ru: "Владелец облигаций хочет, чтобы проценты за будущие годы облагались у совершеннолетней дочери. В каком случае это получится?",
+    en: "A bondholder wants the interest of future years to be taxed to an adult daughter. When does that work?",
+    opts: [
+      { k: "A", ru: "Если он письменно поручит эмитенту перечислять купон дочери", en: "If he instructs the issuer in writing to pay the coupon to the daughter" },
+      { k: "B", ru: "Если он подарит дочери сами облигации, не сохранив над ними контроля, — на проценты, начисленные после дарения", en: "If he gives her the bonds themselves, retaining no control over them — as to interest accruing after the gift" },
+      { k: "C", ru: "Если он подарит дочери право на проценты, оставив облигации себе", en: "If he gives her the right to the interest, keeping the bonds himself" },
+      { k: "D", ru: "Ни в каком: доход по облигациям всегда облагается у первоначального владельца", en: "In no case: bond income is always taxed to the original owner" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Распоряжение о том, куда направить деньги, меняет получателя, но не налогоплательщика. Передан не источник, а сам доход, и облагается он по-прежнему у владельца.", en: "An instruction about where to send the money changes the recipient, not the taxpayer. What was transferred is the income, not the source, and it is still taxed to the owner." },
+      B: { ru: "Верно, и все три условия здесь налицо: передача полная и настоящая, контроль не сохранён, совершена до того, как проценты заработаны. Купон, уже причитавшийся к моменту дарения, остаётся у дарителя.", en: "Correct, and all three conditions hold: the transfer is complete and bona fide, no control is retained, and it precedes the earning of the interest. The coupon already accrued at the moment of the gift stays with the donor." },
+      C: { ru: "Это передача плода без дерева. Источник остался у владельца, значит и доход остаётся его.", en: "This is handing over the fruit without the tree. The source stayed with the owner, so the income stays his too." },
+      D: { ru: "Слишком сильно. Передать источник можно, и тогда доход после передачи облагается у нового владельца. Нельзя передать доход отдельно от источника.", en: "Too strong. The source may be transferred, and then income arising after the transfer is taxed to the new owner. What cannot be transferred is the income apart from the source." }
+    }
+  },
+  {
+    sec: "s21",
+    ru: "Корпорация выпустила пятилетние облигации номиналом $40 000 и выручила за них $43 000. Как отражается разница?",
+    en: "A corporation issued five-year bonds with a face amount of $40,000 and received $43,000 for them. How is the difference treated?",
+    opts: [
+      { k: "A", ru: "$3 000 дохода в году выпуска", en: "$3,000 of income in the year of issue" },
+      { k: "B", ru: "Доход признаётся по мере амортизации премии — за срок обращения облигаций", en: "Income is recognised as the premium is amortised — over the life of the bonds" },
+      { k: "C", ru: "Дохода нет: это заёмные средства", en: "No income: these are borrowed funds" },
+      { k: "D", ru: "$3 000 дохода в году погашения облигаций", en: "$3,000 of income in the year the bonds are redeemed" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Вся премия сразу — соблазнительный, но неверный ход. Она относится ко всему сроку обращения и распределяется по нему.", en: "The whole premium at once is tempting and wrong. It relates to the entire term and is spread across it." },
+      B: { ru: "Верно. Заняв больше номинала, эмитент получил премию, и она признаётся доходом постепенно, по мере амортизации за срок обращения. Зеркальная сторона — дисконт: заняв меньше номинала, эмитент получает вычет тем же порядком.", en: "Correct. Having borrowed more than face value, the issuer received a premium, and it is taken into income gradually as it is amortised over the term. The mirror image is a discount: having borrowed less than face, the issuer gets a deduction the same way." },
+      C: { ru: "Заём действительно доходом не является, но превышение над номиналом эмитент возвращать не обязан — этим премия от основного долга и отличается.", en: "A loan is indeed not income, but the issuer need not repay the excess over face value — which is what distinguishes the premium from the principal." },
+      D: { ru: "К погашению премия уже полностью самортизирована. Откладывать её туда — значит признать доход не в тех годах.", en: "By redemption the premium is fully amortised. Deferring it to then means recognising income in the wrong years." }
+    }
+  },
+  {
+    sec: "s22",
+    ru: "Консультант получил за 2025 год чистую нефермерская прибыль $5 200 при валовом нефермерском доходе $9 000. Самозанятость у него регулярная, дополнительными методами он пользовался дважды. Может ли он применить нефермерский дополнительный метод?",
+    en: "For 2025 a consultant had net nonfarm profits of $5,200 on gross nonfarm income of $9,000. He is regularly self-employed and has used an optional method twice before. May he use the nonfarm optional method?",
+    opts: [
+      { k: "A", ru: "Нет: прибыль превышает 72,189% валового дохода", en: "No: the profit exceeds 72.189% of gross income" },
+      { k: "B", ru: "Да: оба условия выполнены и лимит применений не исчерпан", en: "Yes: both conditions are met and the limit on uses is not exhausted" },
+      { k: "C", ru: "Нет: нефермерский метод применяется не более двух раз", en: "No: the nonfarm method may be used no more than twice" },
+      { k: "D", ru: "Да, но только если валовой доход не превышает $10 860", en: "Yes, but only if gross income does not exceed $10,860" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Посчитайте: 72,189% от $9 000 — это $6 497. Прибыль $5 200 ниже, значит условие выполнено, а не нарушено.", en: "Do the arithmetic: 72.189% of $9,000 is $6,497. The $5,200 profit is below that, so the condition is met, not failed." },
+      B: { ru: "Верно. Нужны оба условия сразу, и оба соблюдены: $5 200 ниже порога чистой прибыли $7 840 и ниже 72,189% от $9 000, то есть $6 497. Регулярная самозанятость есть, применений было два из пяти.", en: "Correct. Both conditions must hold and both do: $5,200 is below the $7,840 net profit threshold and below 72.189% of $9,000, that is $6,497. He is regularly self-employed, and two of the five permitted uses have been made." },
+      C: { ru: "Ограничение существует, но оно другое: не более пяти раз за жизнь. Двух прошлых применений мало, чтобы его исчерпать.", en: "The limit exists but is different: no more than five times in a lifetime. Two past uses do not exhaust it." },
+      D: { ru: "$10 860 — порог валового дохода в <strong>фермерском</strong> методе. У нефермерского валовой доход участвует иначе: с ним сравнивают прибыль по доле 72,189%.", en: "$10,860 is the gross income threshold in the <strong>farm</strong> method. In the nonfarm method gross income enters differently: profit is compared with 72.189% of it." }
+    }
+  },
+  {
+    sec: "s22",
+    ru: "Супруги подают совместную декларацию. У жены прибыль по Schedule C $15 000, у мужа убыток по Schedule F $7 000. Как считается налог на самозанятость?",
+    en: "A married couple files jointly. The wife has a $15,000 Schedule C profit and the husband a $7,000 Schedule F loss. How is self-employment tax computed?",
+    opts: [
+      { k: "A", ru: "С $8 000: прибыль уменьшается убытком супруга", en: "On $8,000: the profit is reduced by the spouse's loss" },
+      { k: "B", ru: "Жена считает налог со своих $15 000; убыток мужа её базу не уменьшает", en: "The wife computes tax on her $15,000; the husband's loss does not reduce her base" },
+      { k: "C", ru: "Налога нет: в совокупности супруги получили меньше порога", en: "No tax: taken together the couple earned less than the threshold" },
+      { k: "D", ru: "С $15 000, но муж вправе перенести свой убыток на её Schedule SE в следующем году", en: "On $15,000, but the husband may carry his loss to her Schedule SE next year" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это верно для <strong>одного</strong> человека с двумя занятиями: там база одна и убыток уменьшает прибыль. Но у супругов базы разные.", en: "That is right for <strong>one</strong> person with two businesses: there the base is single and the loss reduces the profit. Spouses, however, have separate bases." },
+      B: { ru: "Верно. Совместная декларация объединяет подоходный налог, но не налог на самозанятость: каждый супруг подаёт свою Schedule SE. Налог покупает страховой стаж конкретному человеку, и чужой убыток его уменьшать не может.", en: "Correct. A joint return combines income tax but not self-employment tax: each spouse files their own Schedule SE. The tax buys social security credits for a particular person, and someone else's loss cannot cut them." },
+      C: { ru: "Складывать заработок супругов для проверки порога нельзя по той же причине: пороги применяются к каждому отдельно.", en: "Adding the spouses' earnings together to test the threshold fails for the same reason: the thresholds apply to each of them separately." },
+      D: { ru: "Переноса убытка на чужую Schedule SE не бывает ни в этом году, ни в следующем. Более того, и собственные чистые операционные убытки прошлых лет базу не уменьшают.", en: "There is no carrying a loss to someone else's Schedule SE, this year or next. Indeed, even one's own net operating losses from earlier years do not reduce the base." }
+    }
+  },
+  {
+    sec: "s22",
+    ru: "Рукоположённому служителю церковь предоставила дом. Формы 4361 у него нет. Рыночная стоимость пользования домом — $18 000 за год, денежное содержание — $40 000. Что входит в базу налога на самозанятость?",
+    en: "A church provided an ordained minister with a home. He has no Form 4361. The rental value of the home is $18,000 for the year and his cash pay is $40,000. What is in the self-employment base?",
+    opts: [
+      { k: "A", ru: "$40 000: стоимость жилья из дохода исключена", en: "$40,000: the value of the housing is excluded from income" },
+      { k: "B", ru: "$58 000", en: "$58,000" },
+      { k: "C", ru: "Ничего: доход служителя церкви налогом на самозанятость не облагается", en: "Nothing: a minister's earnings are not subject to self-employment tax" },
+      { k: "D", ru: "$18 000: денежное содержание облагается обычными взносами как заработная плата", en: "$18,000: the cash pay bears ordinary payroll taxes as wages" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Из <strong>подоходного</strong> налога стоимость жилья действительно исключена — но только из него. В базу налога на самозанятость она входит, и на этом расхождении построен вопрос.", en: "From <strong>income</strong> tax the value of the housing is indeed excluded — but only from that. It is inside the self-employment base, and the question is built on that divergence." },
+      B: { ru: "Верно. Служитель считается самозанятым по своей служительской деятельности, и в заработок входит как денежное содержание, так и стоимость предоставленного жилья: $40 000 + $18 000.", en: "Correct. A minister is treated as self-employed as to ministerial services, and earnings include both the cash pay and the rental value of the home provided: $40,000 + $18,000." },
+      C: { ru: "Освобождение существует, но требует одобренной формы 4361 или 4029. Без неё служитель налог платит.", en: "The exemption exists but requires an approved Form 4361 or 4029. Without one the minister pays." },
+      D: { ru: "Наоборот: с содержания служителя обычные взносы работодателем не удерживаются — именно поэтому он платит сам, как самозанятый.", en: "The opposite: ordinary payroll taxes are not withheld from a minister's pay — which is exactly why he pays himself, as a self-employed person." }
+    }
+  },
+  {
+    sec: "s22",
+    ru: "Дилер недвижимости получил за год $90 000 арендной платы с объектов, которые держит для продажи покупателям, и $50 000 с объекта, купленного как вложение. Услуг арендаторам он не оказывает. Что входит в базу налога на самозанятость?",
+    en: "A real estate dealer received $90,000 of rent from properties held for sale to customers and $50,000 from one bought as an investment. He provides no services to tenants. What is in the self-employment base?",
+    opts: [
+      { k: "A", ru: "$140 000: он дилер, значит вся аренда облагается", en: "$140,000: he is a dealer, so all the rent is taxed" },
+      { k: "B", ru: "$90 000", en: "$90,000" },
+      { k: "C", ru: "Ничего: услуг арендаторам он не оказывает", en: "Nothing: he provides no services to tenants" },
+      { k: "D", ru: "$50 000", en: "$50,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Статус дилера сам по себе всю аренду не втягивает. Смотрят на назначение конкретного объекта, а не на род занятий владельца в целом.", en: "Dealer status does not by itself pull in all the rent. What is examined is the purpose for which the particular property is held, not the owner's occupation in general." },
+      B: { ru: "Верно. Изъятие для аренды недвижимости не действует у дилера — но только в отношении имущества, которое он держит <strong>для продажи покупателям</strong>. Объект, купленный как вложение, остаётся обычным Schedule E, как у любого другого владельца.", en: "Correct. The exclusion for real estate rents does not apply to a dealer — but only as to property held <strong>for sale to customers</strong>. Property bought as an investment stays ordinary Schedule E, as for any other owner." },
+      C: { ru: "Услуги постояльцам — второй, самостоятельный путь в базу: он нужен владельцу гостиницы, а не дилеру. У дилера основание другое.", en: "Services to occupants are a second, independent route into the base: that is what a hotel owner needs, not a dealer. The dealer's basis is different." },
+      D: { ru: "Стороны перепутаны. Облагается аренда с товарного запаса, а не с вложения.", en: "The sides have been swapped. It is rent from stock in trade that is taxed, not rent from an investment." }
+    }
+  },
+  {
+    sec: "s22",
+    ru: "Кто из перечисленных НЕ платит налог на самозанятость?",
+    en: "Which of the following does NOT pay self-employment tax?",
+    opts: [
+      { k: "A", ru: "Полный партнёр, не участвующий в делах партнёрства, — со своей распределяемой доли", en: "A general partner taking no part in the partnership's affairs, on their distributive share" },
+      { k: "B", ru: "Член совета директоров корпорации — с гонорара за эту работу", en: "A corporate director, on the fee for that work" },
+      { k: "C", ru: "Отставной партнёр, получающий пожизненные периодические выплаты по плану, если иной доли в партнёрстве у него нет и услуг он не оказывал", en: "A retired partner receiving lifelong periodic payments under a plan, with no other interest in the partnership and no services performed" },
+      { k: "D", ru: "Работник на гонорарной основе в органе местного самоуправления, чья должность не покрыта соглашением о социальном страховании", en: "A fee-basis local government official whose position is not covered by a social security agreement" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Полный партнёр платит независимо от участия — этим он и отличается от ограниченного, у которого доля в базу не входит.", en: "A general partner pays regardless of participation — which is what distinguishes them from a limited partner, whose share is outside the base." },
+      B: { ru: "Гонорар директора в базу входит: директор не работник корпорации, он оказывает услуги самостоятельно.", en: "A director's fee is in the base: a director is not an employee of the corporation but renders services independently." },
+      C: { ru: "Верно. Это прямое изъятие, и условия у него строгие: выплаты пожизненные и периодические, предусмотрены письменным планом, иной доли в партнёрстве нет, услуг в этом году не оказывалось. Уберите любое условие — и изъятие перестанет действовать.", en: "Correct. This is an outright exclusion with strict conditions: the payments are lifelong and periodic, provided for by a written plan, there is no other interest in the partnership, and no services were performed during the year. Remove any one condition and the exclusion falls away." },
+      D: { ru: "Как раз наоборот. Обычный государственный служащий налога не платит, а работник на гонорарной основе вне соглашения о социальном страховании — платит: это прямо названо среди включаемого.", en: "The opposite is true. An ordinary public employee does not pay, but a fee-basis official outside a social security agreement does: it is named expressly among the inclusions." }
+    }
+  },
+  {
+    sec: "s23",
+    ru: "Незамужняя женщина получила заработную плату $130 000 и имеет чистый заработок от самозанятости $145 000. Каков дополнительный налог Medicare?",
+    en: "A single filer has $130,000 of wages and $145,000 of net earnings from self-employment. What is the Additional Medicare Tax?",
+    opts: [
+      { k: "A", ru: "$675 — с $75 000", en: "$675 — on $75,000" },
+      { k: "B", ru: "$0: ни один из видов дохода порога не достиг", en: "$0: neither kind of income reached the threshold" },
+      { k: "C", ru: "$1 305 — с $145 000", en: "$1,305 — on $145,000" },
+      { k: "D", ru: "$495 — с $55 000", en: "$495 — on $55,000" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Заработная плата $130 000 порога $200 000 не достигла, налога с неё нет. Порог уменьшается на всю заработную плату: 200 000 − 130 000 = $70 000. Самозанятость сравнивается с остатком: 145 000 − 70 000 = $75 000, и 75 000 × 0,9% = $675.", en: "Correct. The $130,000 of wages did not reach the $200,000 threshold, so no tax on them. The threshold is reduced by the whole of the wages: 200,000 − 130,000 = $70,000. Self-employment is set against the remainder: 145,000 − 70,000 = $75,000, and 75,000 × 0.9% = $675." },
+      B: { ru: "Каждый вид по отдельности порога действительно не достиг, но в этом и смысл порядка: неизрасходованный остаток порога переходит к следующему виду дохода, а не обнуляется.", en: "Neither kind on its own reached the threshold, and that is the point of the ordering: the unused remainder of the threshold passes to the next kind of income rather than being reset." },
+      C: { ru: "Порог не применён вовсе. Облагается только превышение, а не весь заработок от самозанятости.", en: "The threshold has not been applied at all. Only the excess is taxed, not the whole of the self-employment earnings." },
+      D: { ru: "$55 000 получается, если из совокупных $275 000 вычесть $220 000 или ошибиться в пороге. Верное превышение — $75 000: 275 000 − 200 000.", en: "$55,000 comes from subtracting $220,000 from the combined $275,000, or from an error in the threshold. The correct excess is $75,000: 275,000 − 200,000." }
+    }
+  },
+  {
+    sec: "s23",
+    ru: "Незамужняя женщина получила заработную плату $230 000 и понесла убыток по Schedule C $40 000. Каков дополнительный налог Medicare?",
+    en: "A single filer has $230,000 of wages and a $40,000 Schedule C loss. What is the Additional Medicare Tax?",
+    opts: [
+      { k: "A", ru: "$0: совокупный трудовой доход $190 000 ниже порога", en: "$0: combined earned income of $190,000 is below the threshold" },
+      { k: "B", ru: "$270 — с $30 000", en: "$270 — on $30,000" },
+      { k: "C", ru: "$180 — с $20 000", en: "$180 — on $20,000" },
+      { k: "D", ru: "$2 070 — с $230 000", en: "$2,070 — on $230,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это и есть проверяемая ошибка. Отрицательный чистый заработок от самозанятости принимается за ноль и с заработной платой не сальдируется. В подоходном налоге убыток бизнеса общий доход уменьшает, здесь — нет.", en: "This is the error being tested. Negative net earnings from self-employment are taken as zero and are not netted against wages. In income tax a business loss reduces total income; here it does not." },
+      B: { ru: "Верно. Заработная плата $230 000 сравнивается с порогом $200 000, превышение $30 000 × 0,9% = $270. Убыток по Schedule C в расчёте не участвует вовсе.", en: "Correct. The $230,000 of wages is compared with the $200,000 threshold, the excess of $30,000 × 0.9% = $270. The Schedule C loss plays no part in the computation." },
+      C: { ru: "$20 000 ниоткуда не следует: ни как превышение над порогом, ни как результат сальдирования.", en: "$20,000 follows from nothing: neither as the excess over the threshold nor as a result of netting." },
+      D: { ru: "Порог не применён: облагается превышение, а не вся заработная плата.", en: "The threshold has not been applied: the excess is taxed, not the whole of the wages." }
+    }
+  },
+  {
+    sec: "s23",
+    ru: "Супруги подают совместную декларацию. У мужа заработная плата $210 000 от одного работодателя, у жены дохода нет. Работодатель удержал дополнительный налог Medicare с $10 000. Что будет в декларации?",
+    en: "A married couple files jointly. The husband has $210,000 of wages from one employer; the wife has no income. The employer withheld Additional Medicare Tax on $10,000. What happens on the return?",
+    opts: [
+      { k: "A", ru: "Ничего: удержанное и есть окончательный налог", en: "Nothing: what was withheld is the final tax" },
+      { k: "B", ru: "Удержанные $90 засчитываются как уплаченный налог и возвращаются: обязанности не возникло", en: "The $90 withheld is credited as tax paid and refunded: no liability arose" },
+      { k: "C", ru: "Придётся доплатить: порог для совместной декларации ниже", en: "More is owed: the threshold for a joint return is lower" },
+      { k: "D", ru: "Удержание было ошибкой работодателя, и вернуть его может только он", en: "The withholding was the employer's mistake, and only the employer can refund it" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Удержание — не окончательный расчёт. Налог определяется в декларации по форме 8959, а удержанное лишь засчитывается в счёт него.", en: "Withholding is not the final computation. The tax is determined on the return, on Form 8959, and what was withheld is merely credited against it." },
+      B: { ru: "Верно. Работодатель обязан удерживать с заработной платы свыше $200 000 и о статусе подачи не осведомлён. Порог для совместной декларации — $250 000, а совокупный трудовой доход супругов $210 000, значит налога нет. Удержанные $90 возвращаются.", en: "Correct. An employer must withhold on wages above $200,000 and knows nothing of the filing status. The joint threshold is $250,000 and the couple's combined earned income is $210,000, so no tax is due. The $90 withheld comes back." },
+      C: { ru: "Порог для совместной декларации, наоборот, самый высокий из трёх — $250 000. Ниже он у раздельной декларации супругов: $125 000.", en: "The joint threshold is on the contrary the highest of the three — $250,000. The lower one belongs to married filing separately: $125,000." },
+      D: { ru: "Ошибки не было: работодатель поступил ровно так, как обязан. Излишек возвращается по декларации, а не через работодателя.", en: "There was no mistake: the employer did exactly what it must. The excess is recovered on the return, not through the employer." }
+    }
+  },
+  {
+    sec: "s23",
+    ru: "Незамужний работник получил за год по $150 000 от каждого из двух работодателей. Ни один из них дополнительный налог Medicare не удерживал. Верно ли это и каковы последствия?",
+    en: "A single employee received $150,000 from each of two employers for the year. Neither withheld Additional Medicare Tax. Was that right, and what follows?",
+    opts: [
+      { k: "A", ru: "Работодатели поступили верно, и налога нет: каждый платил ниже порога", en: "The employers were right and no tax is due: each paid below the threshold" },
+      { k: "B", ru: "Работодатели поступили верно, но налог есть: $900 с превышения $100 000, и уплатить его нужно по декларации", en: "The employers were right, but tax is due: $900 on the $100,000 excess, payable on the return" },
+      { k: "C", ru: "Работодатели нарушили обязанность: каждый должен был удержать со своей доли", en: "The employers failed in their duty: each should have withheld on its portion" },
+      { k: "D", ru: "Налог есть, но взыскивается он с работодателей, а не с работника", en: "Tax is due, but it is collected from the employers, not the employee" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Первая половина верна, вторая нет. Работодатель смотрит только на свою выплату, а порог статуса применяется ко всему трудовому доходу человека.", en: "The first half is right, the second is not. An employer looks only at what it paid, while the threshold for the status applies to all of the person's earned income." },
+      B: { ru: "Верно. Ни один работодатель $200 000 не выплатил, поэтому удерживать было не с чего. Но совокупно $300 000 превысили порог для этого статуса на $100 000, и 100 000 × 0,9% = $900 считаются в форме 8959 и уплачиваются с декларацией.", en: "Correct. Neither employer paid $200,000, so there was nothing to withhold. Yet the combined $300,000 exceeded the threshold for the status by $100,000, and 100,000 × 0.9% = $900 is computed on Form 8959 and paid with the return." },
+      C: { ru: "Обязанность удерживать возникает только при выплате свыше $200 000 <strong>одним</strong> работодателем. Складывать чужие выплаты он не может и не обязан.", en: "The duty to withhold arises only where <strong>one</strong> employer pays more than $200,000. It cannot and need not add in what others paid." },
+      D: { ru: "Дополнительный налог Medicare — налог работника. Работодательской половины у него нет, и при недоудержании обязанность остаётся на работнике.", en: "The Additional Medicare Tax is the employee's tax. It has no employer half, and where it was not withheld the liability stays with the employee." }
+    }
+  },
+  {
+    sec: "s23",
+    ru: "Самозанятый заплатил за 2025 год налог на самозанятость $22 000, из которых $400 приходится на дополнительный налог Medicare. Какую сумму он вычитает при расчёте подоходного налога?",
+    en: "For 2025 a self-employed person paid $22,000 of self-employment tax, of which $400 is Additional Medicare Tax. What amount is deductible in computing income tax?",
+    opts: [
+      { k: "A", ru: "$11 000 — половина всей уплаченной суммы", en: "$11,000 — half of everything paid" },
+      { k: "B", ru: "$10 800 — половина суммы без дополнительного налога", en: "$10,800 — half of the amount excluding the additional tax" },
+      { k: "C", ru: "$22 000", en: "$22,000" },
+      { k: "D", ru: "$200 — половина дополнительного налога", en: "$200 — half of the additional tax" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Дополнительный налог включён в базу вычета напрасно. Вычет половины существует потому, что у работника вторую половину платил бы работодатель, — а у дополнительного налога работодательской половины нет вовсе.", en: "The additional tax has been wrongly included in the base of the deduction. The deduction for one half exists because an employer would pay the other half for an employee — and the additional tax has no employer half at all." },
+      B: { ru: "Верно. Вычитается половина от $21 600, то есть $10 800. Дополнительный налог Medicare в расчёт вычета не входит: он целиком лежит на самом человеке.", en: "Correct. Half of $21,600 is deducted, that is $10,800. The Additional Medicare Tax is left out of the deduction: it falls wholly on the person." },
+      C: { ru: "Вычитается половина, а не весь налог. И этот вычет уменьшает облагаемый доход, а не сам налог на самозанятость.", en: "Half is deducted, not the whole tax. And that deduction reduces taxable income, not the self-employment tax itself." },
+      D: { ru: "Половина дополнительного налога не вычитается именно потому, что второй половины у него нет.", en: "Half of the additional tax is not deductible precisely because it has no other half." }
+    }
+  },
+  {
+    sec: "s24",
+    ru: "Фермер продал племенную корову за $3 200, расходы на продажу $150. Корова была куплена за $2 400, начисленной амортизации $1 540. Как отражается результат?",
+    en: "A farmer sold a breeding cow for $3,200 with $150 of selling expenses. The cow had been bought for $2,400 and $1,540 of depreciation was allowed. How is the result reported?",
+    opts: [
+      { k: "A", ru: "Прирост $2 190, весь по §1231", en: "A gain of $2,190, all under §1231" },
+      { k: "B", ru: "Прирост $2 190: $1 540 обычного дохода по §1245 и $650 по §1231", en: "A gain of $2,190: $1,540 of ordinary income under §1245 and $650 under §1231" },
+      { k: "C", ru: "Прирост $3 050, весь по §1231: у племенного скота базиса нет", en: "A gain of $3,050, all under §1231: breeding stock has no basis" },
+      { k: "D", ru: "Прирост $800: из выручки вычитается покупная цена", en: "A gain of $800: the purchase price comes out of the proceeds" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Срок владения соблюдён, и §1231 применим — но только к остатку. Начисленная амортизация возвращается впереди него как обычный доход.", en: "The holding period is met and §1231 does apply — but only to the remainder. The depreciation allowed comes back ahead of it as ordinary income." },
+      B: { ru: "Верно. Выручка за вычетом расходов на продажу $3 050, скорректированный базис 2 400 − 1 540 = $860, прирост $2 190. Возврат по §1245 равен меньшей из двух величин — начисленной амортизации $1 540 или всего прироста, — то есть $1 540. Остаток $650 идёт по §1231.", en: "Correct. Proceeds net of selling expenses are $3,050, the adjusted basis is 2,400 − 1,540 = $860, and the gain is $2,190. The §1245 recapture is the lesser of the depreciation allowed, $1,540, or the whole gain — that is $1,540. The remaining $650 falls under §1231." },
+      C: { ru: "Нулевой базис — правило для <strong>выращенного</strong> животного: его корма уже вычтены. Купленное животное амортизировалось, и остаток амортизации есть базис.", en: "Zero basis is the rule for a <strong>raised</strong> animal: its feed was already deducted. A purchased animal was depreciated, and what is left of it is basis." },
+      D: { ru: "Вычтена полная покупная цена, как если бы амортизации не было. Она была, и базис на неё уменьшен.", en: "The full purchase price has been subtracted as though no depreciation had been taken. It was, and the basis is reduced by it." }
+    }
+  },
+  {
+    sec: "s24",
+    ru: "Валовой доход фермера от фермерства за 2025 год — $80 000. На террасирование и борьбу с эрозией по утверждённому плану он потратил $26 000. Сколько вычитается в 2025 году?",
+    en: "A farmer's gross income from farming for 2025 is $80,000. He spent $26,000 on terracing and erosion control under an approved plan. How much is deductible in 2025?",
+    opts: [
+      { k: "A", ru: "$26 000", en: "$26,000" },
+      { k: "B", ru: "$20 000, остальные $6 000 переносятся на следующие годы", en: "$20,000, with the remaining $6,000 carried to later years" },
+      { k: "C", ru: "$20 000, остальные $6 000 добавляются к базису земли", en: "$20,000, with the remaining $6,000 added to the basis of the land" },
+      { k: "D", ru: "Ничего: улучшения земли капитализируются", en: "Nothing: improvements to land are capitalised" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Предел не применён. Вычет расходов на охрану почв и вод ограничен 25% валового дохода от фермерства за год.", en: "The cap has not been applied. The deduction for soil and water conservation is limited to 25% of gross income from farming for the year." },
+      B: { ru: "Верно. Предел — 25% от $80 000, то есть $20 000. Излишек $6 000 не пропадает и в базис не уходит: он переносится вперёд и вычитается в следующие годы, в каждом в пределах того же процента. Срок переноса не ограничен.", en: "Correct. The cap is 25% of $80,000, that is $20,000. The excess of $6,000 is neither lost nor added to basis: it carries forward and is deducted in later years, each within the same percentage. There is no time limit on the carryforward." },
+      C: { ru: "Излишек именно переносится, а не капитализируется. В базис уходило бы всё, если бы правила о вычете не существовало вовсе.", en: "The excess is carried forward, not capitalised. Everything would go into basis only if the deduction rule did not exist at all." },
+      D: { ru: "Это общее правило, из которого для фермеров как раз сделано изъятие: такие расходы разрешено вычитать, а не держать в базисе до продажи.", en: "That is the general rule, and farmers are the exception to it: these expenses may be deducted rather than held in basis until sale." }
+    }
+  },
+  {
+    sec: "s24",
+    ru: "В июле 2025 года наводнение погубило урожай фермера на кассовом методе. В ноябре 2025 года он получил страховое возмещение $40 000. Обычно доход от этого урожая он показывал в следующем году. Что он вправе сделать?",
+    en: "In July 2025 a flood destroyed the crop of a cash-method farmer. In November 2025 he received $40,000 of insurance proceeds. He would normally have reported the income from that crop in the following year. What may he do?",
+    opts: [
+      { k: "A", ru: "Показать $40 000 в 2026 году, выбрав отсрочку", en: "Report the $40,000 in 2026 by making the deferral election" },
+      { k: "B", ru: "Разделить сумму между 2025 и 2026 годами по своему усмотрению", en: "Split the amount between 2025 and 2026 as he sees fit" },
+      { k: "C", ru: "Показать $40 000 в 2025 году: выбора для страховых выплат не предусмотрено", en: "Report the $40,000 in 2025: no election is available for insurance proceeds" },
+      { k: "D", ru: "Отложить сумму до года, в котором он продаст следующий урожай", en: "Defer the amount to the year in which he sells the next crop" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Все три условия выполнены: кассовый метод, выплата получена в том же году, в котором урожай пострадал, и обычная практика фермера — отражать доход от этого урожая в следующем году. Отсрочка ровно на один год.", en: "Correct. All three conditions are met: the cash method, the payment received in the same year the crop was damaged, and a normal practice of reporting income from that crop in the following year. The deferral is exactly one year." },
+      B: { ru: "Делить нельзя: выбор распространяется на <strong>все</strong> такие поступления года целиком. Удобной частью обойтись не получится.", en: "Splitting is not allowed: the election covers <strong>every</strong> such receipt of the year in full. There is no picking a convenient part." },
+      C: { ru: "Выбор предусмотрен и охватывает как страховые выплаты, так и государственную помощь при бедствии.", en: "The election does exist and covers both insurance proceeds and federal disaster assistance." },
+      D: { ru: "Отсрочка — на один налоговый год, а не до какого-то будущего события. Дальше следующего года откладывать нечего.", en: "The deferral runs one tax year, not until some future event. There is no deferring beyond the following year." }
+    }
+  },
+  {
+    sec: "s24",
+    ru: "Что из перечисленного фермер НЕ амортизирует?",
+    en: "Which of the following does a farmer NOT depreciate?",
+    opts: [
+      { k: "A", ru: "Купленную племенную корову", en: "A purchased breeding cow" },
+      { k: "B", ru: "Сельскохозяйственную ограду", en: "An agricultural fence" },
+      { k: "C", ru: "Выращенную на ферме племенную корову", en: "A breeding cow raised on the farm" },
+      { k: "D", ru: "Зернохранилище", en: "A grain storage building" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Купленный племенной скот амортизируется: покупная цена нигде не вычиталась, и её нужно списать за срок службы животного.", en: "Purchased breeding stock is depreciated: the purchase price was never deducted, and it must be written off over the animal's life." },
+      B: { ru: "Ограда — сооружение с ограниченным сроком службы, она амортизируется.", en: "A fence is a structure with a limited life and is depreciated." },
+      C: { ru: "Верно. Корма и уход уже вычтены в те годы, когда их несли, поэтому амортизировать нечего: базиса у выращенного животного нет. Не амортизируются также земля, товарные запасы, скот для перепродажи и личное имущество.", en: "Correct. Feed and care were already deducted in the years they were incurred, so there is nothing to depreciate: a raised animal has no basis. Also not depreciable are land, inventory, livestock held for resale and personal items." },
+      D: { ru: "Постройки и сооружения фермы амортизируются. Не амортизируется только земля под ними.", en: "Farm buildings and structures are depreciated. Only the land beneath them is not." }
+    }
+  },
+  {
+    sec: "s24",
+    ru: "В октябре 2025 года фермер на календарном году продал сельскохозяйственную землю подходящему фермеру с приростом $400 000. Может ли он уплатить налог с этого прироста четырьмя ежегодными платежами по §1062?",
+    en: "In October 2025 a calendar-year farmer sold farmland to a qualified farmer at a $400,000 gain. May he pay the tax on that gain in four annual instalments under section 1062?",
+    opts: [
+      { k: "A", ru: "Да: продажа состоялась после 4 июля 2025 года", en: "Yes: the sale took place after July 4, 2025" },
+      { k: "B", ru: "Нет: выбор доступен для налоговых периодов, начинающихся после 4 июля 2025 года, а его период начался 1 января", en: "No: the election is available for tax years beginning after July 4, 2025, and his year began on January 1" },
+      { k: "C", ru: "Да, но только если он перейдёт на фискальный год", en: "Yes, but only if he changes to a fiscal year" },
+      { k: "D", ru: "Нет: §1062 распространяется только на продажу построек, но не земли", en: "No: section 1062 covers sales of buildings only, not land" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Дата продажи здесь ни при чём. Норма привязана к началу <strong>налогового периода</strong>, а не к дате сделки, и это различие в вопросе и проверяется.", en: "The date of the sale is beside the point. The provision keys off the beginning of the <strong>tax year</strong>, not the date of the transaction, and that distinction is what the question tests." },
+      B: { ru: "Верно. Выбор доступен для налоговых периодов, начинающихся после 4 июля 2025 года. У фермера на календарном годе период 2025 года начался 1 января, значит впервые норма станет доступна за 2026 год.", en: "Correct. The election is available for tax years beginning after July 4, 2025. For a calendar-year farmer the 2025 year began on January 1, so the provision first becomes available for 2026." },
+      C: { ru: "Смена налогового периода задним числом положения не спасает и требует согласия налоговой службы по собственным основаниям.", en: "Changing the tax year after the fact does not rescue the position and requires the IRS's consent on grounds of its own." },
+      D: { ru: "Наоборот: норма как раз о продаже подходящей сельскохозяйственной <strong>земли</strong> подходящему фермеру.", en: "The opposite: the provision is precisely about selling qualified farm<strong>land</strong> to a qualified farmer." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Непосредственно перед прощением долга обязательства предпринимателя составляли $180 000, а справедливая стоимость всего его имущества — $145 000. Кредитор простил $50 000 делового долга. Банкротства не было. Сколько попадает в доход?",
+    en: "Immediately before the cancellation a proprietor's liabilities were $180,000 and the fair market value of all his property was $145,000. A creditor forgave $50,000 of business debt. There was no bankruptcy. How much goes into income?",
+    opts: [
+      { k: "A", ru: "$50 000", en: "$50,000" },
+      { k: "B", ru: "$15 000", en: "$15,000" },
+      { k: "C", ru: "$0", en: "$0" },
+      { k: "D", ru: "$35 000", en: "$35,000" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Исключение по неплатёжеспособности не применено. Оно действует и вне банкротства, было бы превышение обязательств над стоимостью активов.", en: "The insolvency exclusion has not been applied. It operates outside bankruptcy too, provided liabilities exceeded the value of assets." },
+      B: { ru: "Верно. Неплатёжеспособность равна 180 000 − 145 000 = $35 000, и ровно столько исключается. Остаток 50 000 − 35 000 = $15 000 идёт в доход. Исключённые $35 000 придётся оплатить уменьшением налоговых атрибутов.", en: "Correct. The insolvency is 180,000 − 145,000 = $35,000, and exactly that much is excluded. The remainder, 50,000 − 35,000 = $15,000, goes into income. The excluded $35,000 must be paid for by reducing tax attributes." },
+      C: { ru: "Исключается не всё прощённое, а лишь столько, на сколько должник был неплатёжеспособен. Прощено больше этой суммы.", en: "Not everything forgiven is excluded, only as much as the debtor was insolvent. More than that was forgiven." },
+      D: { ru: "$35 000 — исключаемая часть, а спрашивают об облагаемой. Варианты в таких вопросах всегда содержат обе.", en: "$35,000 is the excluded part, and the question asks for the taxable one. Such questions always offer both." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Фермер, у которого более половины валовой выручки за три предыдущих года пришлось на фермерство, добился списания долга перед банком в деле о банкротстве. Какое исключение применяется?",
+    en: "A farmer, more than half of whose gross receipts for the three preceding years came from farming, had a bank debt discharged in a bankruptcy case. Which exclusion applies?",
+    opts: [
+      { k: "A", ru: "Исключение для долга фермера: оно специальнее", en: "The farm debt exclusion: it is the more specific one" },
+      { k: "B", ru: "Исключение по банкротству", en: "The bankruptcy exclusion" },
+      { k: "C", ru: "Любое на выбор налогоплательщика", en: "Either, at the taxpayer's choice" },
+      { k: "D", ru: "Никакое: в банкротстве прощённый долг облагается на общих основаниях", en: "Neither: debt discharged in bankruptcy is taxed in the ordinary way" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Специальность нормы здесь роли не играет: очередь установлена прямо. Исключение для долга фермера к списанию в деле о банкротстве не применяется вовсе.", en: "Specificity does not decide here: the order is laid down expressly. The farm debt exclusion does not apply to a discharge in a bankruptcy case at all." },
+      B: { ru: "Верно. Очередь жёсткая: банкротство впереди всего. Если бы банкротства не было, но должник оказался неплатёжеспособен, сначала применялась бы неплатёжеспособность и лишь остаток — фермерское исключение.", en: "Correct. The order is fixed: bankruptcy comes first. Had there been no bankruptcy but the debtor was insolvent, insolvency would apply first and only the remainder would fall under the farm exclusion." },
+      C: { ru: "Выбора нет. Именно потому вопрос и задаётся: фактура подходит под два исключения, а применимо одно.", en: "There is no choice. That is exactly why the question is asked: the facts fit two exclusions but only one governs." },
+      D: { ru: "Наоборот: списание в деле о банкротстве исключается полностью и без предела по сумме.", en: "The opposite: a discharge in a bankruptcy case is excluded in full and without any ceiling." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Платёжеспособная корпорация передала кредитору собственные акции в погашение долга $30 000. Справедливая стоимость акций — $21 000, балансовая — $16 000. Какой доход возникает у корпорации?",
+    en: "A solvent corporation transferred its own stock to a creditor in satisfaction of a $30,000 debt. The fair market value of the stock was $21,000 and its book value $16,000. What income does the corporation have?",
+    opts: [
+      { k: "A", ru: "$14 000 обычного дохода", en: "$14,000 of ordinary income" },
+      { k: "B", ru: "$9 000 обычного дохода", en: "$9,000 of ordinary income" },
+      { k: "C", ru: "$5 000 прироста от передачи акций", en: "$5,000 of gain on transferring the stock" },
+      { k: "D", ru: "Дохода нет: долг погашен полностью", en: "No income: the debt was fully satisfied" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Взята балансовая стоимость: 30 000 − 16 000. Она в расчёте не участвует и приведена в условии ровно затем, чтобы её взяли.", en: "Book value has been used: 30,000 − 16,000. It plays no part in the computation and is in the facts precisely so that it will be used." },
+      B: { ru: "Верно. Передача собственных акций приравнивается к уплате суммы, равной их <strong>справедливой стоимости</strong>: 30 000 − 21 000 = $9 000 дохода от списания. То же правило действует для партнёрства, передающего кредитору долю в себе.", en: "Correct. A transfer of the debtor's own stock is treated as payment of an amount equal to its <strong>fair market value</strong>: 30,000 − 21,000 = $9,000 of cancellation income. The same rule applies to a partnership transferring an interest in itself." },
+      C: { ru: "Прироста от выпуска собственных акций у корпорации не возникает: своими акциями она распоряжается не как имуществом. Разница между балансовой и рыночной стоимостью здесь ничего не образует.", en: "A corporation realises no gain on issuing its own stock: its own shares are not property in its hands. The difference between book and market value produces nothing here." },
+      D: { ru: "Долг погашен не полностью, а лишь на $21 000 — на стоимость переданного. Непокрытый остаток и есть доход.", en: "The debt was not fully satisfied but only to the extent of $21,000, the value of what was transferred. The uncovered remainder is the income." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Предприниматель передал кредитору землю в погашение долга $70 000. Базис земли — $40 000, справедливая стоимость — $55 000. Остаток долга кредитор простил. Должник платёжеспособен. Каковы налоговые последствия?",
+    en: "A proprietor transferred land to a creditor against a $70,000 debt. The land's basis is $40,000 and its fair market value $55,000. The creditor forgave the rest. The debtor is solvent. What are the tax consequences?",
+    opts: [
+      { k: "A", ru: "Обычный доход $30 000", en: "$30,000 of ordinary income" },
+      { k: "B", ru: "Прирост $15 000 от выбытия земли и обычный доход от списания $15 000", en: "A $15,000 gain on disposing of the land and $15,000 of ordinary cancellation income" },
+      { k: "C", ru: "Прирост $30 000 от выбытия земли", en: "A $30,000 gain on disposing of the land" },
+      { k: "D", ru: "Обычный доход $15 000; прироста нет, поскольку земля передана, а не продана", en: "$15,000 of ordinary income; no gain, since the land was handed over rather than sold" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Две разные величины сложены в одну и названы одним именем. У них разная природа: прирост капитальный, доход от списания обычный.", en: "Two different amounts have been merged into one and given a single name. Their natures differ: the gain is capital, the cancellation income ordinary." },
+      B: { ru: "Верно. Событий два. Земля считается проданной за справедливую стоимость: 55 000 − 40 000 = $15 000 прироста. Долг погашен на $55 000, непокрытый остаток 70 000 − 55 000 = $15 000 — обычный доход от списания. Совпадение сумм здесь случайно.", en: "Correct. There are two events. The land is treated as sold at fair market value: 55,000 − 40,000 = $15,000 of gain. The debt is satisfied to the extent of $55,000, and the uncovered remainder of 70,000 − 55,000 = $15,000 is ordinary cancellation income. That the two coincide is an accident." },
+      C: { ru: "Прирост считается от справедливой стоимости, а не от суммы долга. Разница между долгом и стоимостью — это уже второе событие.", en: "The gain is measured from fair market value, not from the amount of the debt. The difference between debt and value is the second event." },
+      D: { ru: "Передача имущества в погашение долга — такое же выбытие, как продажа: имущество ушло, обязательство уменьшилось. Прирост возникает.", en: "Handing property over against a debt is a disposition just as a sale is: the property left and the liability fell. A gain arises." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Здание магазина с базисом $145 000 и справедливой стоимостью $120 000 обременено долгом $134 000, по которому владелец лично не отвечает. Кредитор обратил взыскание. Каковы последствия?",
+    en: "A shop building with a basis of $145,000 and a fair market value of $120,000 carries $134,000 of debt for which the owner is not personally liable. The lender foreclosed. What follows?",
+    opts: [
+      { k: "A", ru: "Убыток $25 000 и доход от списания $14 000", en: "A $25,000 loss and $14,000 of cancellation income" },
+      { k: "B", ru: "Убыток $11 000; дохода от списания нет", en: "An $11,000 loss; no cancellation income" },
+      { k: "C", ru: "Убыток $25 000; дохода от списания нет", en: "A $25,000 loss; no cancellation income" },
+      { k: "D", ru: "Дохода и убытка нет: имущество просто выбыло", en: "Neither income nor loss: the property simply went" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это расчёт для долга <strong>с личной ответственностью</strong>. Здесь её нет, и обе величины считаются иначе.", en: "That is the computation for a <strong>recourse</strong> debt. There is none here, and both amounts are figured differently." },
+      B: { ru: "Верно. При отсутствии личной ответственности в выручку от выбытия входит <strong>весь</strong> непогашенный долг: 134 000 − 145 000 = убыток $11 000. Дохода от списания не возникает вовсе — превышение долга над стоимостью уже учтено в выручке.", en: "Correct. Without personal liability the amount realised includes the <strong>entire</strong> unpaid debt: 134,000 − 145,000 = an $11,000 loss. No cancellation income arises at all — the excess of debt over value is already inside the amount realised." },
+      C: { ru: "Убыток $25 000 получается от справедливой стоимости, а она берётся при личной ответственности. Здесь берётся сумма долга.", en: "The $25,000 loss comes from fair market value, which is used where there is personal liability. Here the amount of the debt is used." },
+      D: { ru: "Обращение взыскания приравнивается к продаже имущества, и результат по нему считается всегда.", en: "A foreclosure is treated as a sale of the property, and its result is always computed." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Предприниматель исключил из дохода $35 000 прощённого долга по неплатёжеспособности. Что происходит дальше?",
+    en: "A proprietor excluded $35,000 of forgiven debt from income under the insolvency exclusion. What happens next?",
+    opts: [
+      { k: "A", ru: "Ничего: сумма выведена из-под налога окончательно", en: "Nothing: the amount is out of tax for good" },
+      { k: "B", ru: "На $35 000 уменьшаются налоговые атрибуты — начиная с чистого операционного убытка; форма 982", en: "Tax attributes are reduced by $35,000 — beginning with the net operating loss; Form 982" },
+      { k: "C", ru: "Сумма переносится в доход следующего года", en: "The amount is carried into the following year's income" },
+      { k: "D", ru: "На $35 000 уменьшается базис имущества, и только он", en: "The basis of property is reduced by $35,000, and nothing else" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Исключение откладывает налог, а не отменяет его. Именно поэтому верный ответ на вопрос «что даёт исключение» — «налога не будет сейчас».", en: "An exclusion defers the tax rather than cancelling it. Which is why the right answer to “what does an exclusion give you” is “no tax now”." },
+      B: { ru: "Верно. Порядок установлен: чистый операционный убыток, перенос общего делового кредита, кредит по минимальному налогу, перенос убытка от прироста капитала, базис имущества, пассивные переносы, кредит по иностранным налогам. Убытки уменьшаются доллар за доллар, кредиты — по 33⅓ цента на доллар.", en: "Correct. The order is prescribed: net operating loss, general business credit carryover, minimum tax credit, capital loss carryover, basis of property, passive carryovers, foreign tax credit carryover. Losses are cut dollar for dollar, credits at 33⅓ cents per dollar." },
+      C: { ru: "Переноса самой суммы в доход не происходит. Расплата идёт атрибутами, а не отложенным доходом.", en: "The amount itself is not carried into income. The price is paid in attributes, not in deferred income." },
+      D: { ru: "Базис стоит в очереди пятым, а не первым. Первым он становится только по прямому выбору налогоплательщика — уменьшить базис амортизируемого имущества раньше убытка.", en: "Basis is fifth in the queue, not first. It comes first only by an express election to reduce the basis of depreciable property ahead of the loss." }
+    }
+  },
+  {
+    sec: "s25",
+    ru: "Что из перечисленного НЕ образует дохода от списания долга?",
+    en: "Which of the following does NOT produce cancellation of debt income?",
+    opts: [
+      { k: "A", ru: "Банк уменьшил остаток кредита на покупку станка платёжеспособному заёмщику", en: "A bank reduced the balance of a machine loan for a solvent borrower" },
+      { k: "B", ru: "Продавец станка уменьшил цену и вместе с ней остаток долга покупателя", en: "The seller of the machine reduced the price and with it the buyer's remaining debt" },
+      { k: "C", ru: "Поставщик простил задолженность за поставленные материалы", en: "A supplier forgave the amount owed for materials delivered" },
+      { k: "D", ru: "Кредитор простил часть долга в обмен на досрочное погашение остального", en: "A creditor forgave part of a debt in exchange for early payment of the rest" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Банк продавцом не является, и его снисхождение к цене покупки отношения не имеет: это обычный доход от списания.", en: "A bank is not the seller, and its indulgence has nothing to do with the purchase price: this is ordinary cancellation income." },
+      B: { ru: "Верно. Уменьшение долга <strong>продавцом</strong> имущества у платёжеспособного покупателя вне банкротства считается корректировкой цены покупки: дохода нет, уменьшается базис имущества. Это изъятие, а не исключение, поэтому атрибуты не трогают и форму 982 по этому основанию не подают.", en: "Correct. A reduction of the debt by the <strong>seller</strong> of the property, for a solvent buyer outside bankruptcy, is treated as a purchase price adjustment: no income, and the basis of the property goes down. This is an exception, not an exclusion, so attributes are untouched and no Form 982 is filed on this ground." },
+      C: { ru: "Прощённая задолженность за материалы — доход. Изъятие для вычитаемого долга сюда не подходит: у покупателя на кассовом методе материалы вычитались бы при оплате, но материалы уже поставлены и учтены.", en: "A forgiven amount owed for materials is income. The exception for deductible debt does not fit: for a cash-method buyer the materials would be deducted when paid, but they have already been delivered and accounted for." },
+      D: { ru: "Скидка за досрочное погашение — доход от списания на общих основаниях: часть долга не уплачена и не подлежит уплате.", en: "A discount for early payment is cancellation income on ordinary principles: part of the debt went unpaid and is no longer payable." }
+    }
   }
-
 ];

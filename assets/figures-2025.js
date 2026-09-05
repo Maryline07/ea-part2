@@ -133,6 +133,15 @@ window.FIGURES = {
       src: { t: "Topic no. 560, Additional Medicare Tax", u: "https://www.irs.gov/taxtopics/tc560" }
     },
 
+    addl_medicare_withhold: {
+      n: 200000, unit: "usd",
+      ru: "Порог, с которого удерживает работодатель",
+      en: "Wage level at which the employer must withhold",
+      note_ru: "Работодатель смотрит только на выплаченную им заработную плату и не учитывает ни статус подачи, ни доход супруга, ни самозанятость. Поэтому удержания может не быть там, где налог возникает, и наоборот.",
+      note_en: "The employer looks only at the wages it paid, disregarding filing status, a spouse's wages and self-employment income. So withholding may be absent where the tax is due, and present where it is not.",
+      src: { t: "Instructions for Form 8959 (2025)", u: "https://www.irs.gov/instructions/i8959" }
+    },
+
     /* --- Дополнительные методы расчёта (фермерский и нефермерский) ---- */
 
     farm_opt_gross: {
@@ -154,6 +163,14 @@ window.FIGURES = {
       note_ru: "Превышение этой доли делает хозяйство налоговым убежищем: кассовый метод недоступен при любой выручке.",
       note_en: "Exceeding this share makes the operation a tax shelter: the cash method is unavailable at any level of receipts.",
       src: SRC_P225
+    },
+    nonfarm_opt_pct: {
+      n: 72.189, unit: "pct",
+      ru: "Нефермерский метод: доля валового нефермерского дохода",
+      en: "Nonfarm optional method: share of gross nonfarm income",
+      note_ru: "Метод доступен, только если чистая нефермерская прибыль меньше и этой доли, и порога чистой прибыли. Оба условия сразу.",
+      note_en: "The method is available only if net nonfarm profits are below both this share and the net profit threshold. Both conditions at once.",
+      src: { t: "Instructions for Schedule SE (2025)", u: "https://www.irs.gov/instructions/i1040sse" }
     },
     farm_opt_max: {
       n: 7240, unit: "usd",
@@ -864,6 +881,14 @@ window.FIGURES = {
       note_en: "Hogs, sheep, goats, mules, donkeys, fur-bearing and other mammals. Poultry is not livestock for section 1231.",
       src: SRC_P225
     },
+    soil_water_limit: {
+      n: 25, unit: "pct",
+      ru: "Предел вычета расходов на охрану почв и вод",
+      en: "Limit on deducting soil and water conservation expenses",
+      note_ru: "Считается от валового дохода от фермерства за год. Излишек переносится на следующие годы без ограничения срока.",
+      note_en: "Computed on gross income from farming for the year. The excess carries forward to later years with no time limit.",
+      src: SRC_P225
+    },
     farm_prepaid_limit: {
       n: 50, unit: "pct",
       ru: "Предел вычета предоплаченных фермерских припасов",
@@ -889,7 +914,8 @@ window.FIGURES = {
     { id: "se", ru: "Налог на самозанятость", en: "Self-employment tax",
       keys: ["se_rate_total", "se_rate_ss", "se_rate_medicare", "se_net_factor", "se_wage_base",
              "se_threshold", "se_church", "addl_medicare_rate", "addl_medicare_single",
-             "addl_medicare_mfj", "addl_medicare_mfs", "farm_opt_gross", "farm_opt_profit", "farm_opt_max"] },
+             "addl_medicare_mfj", "addl_medicare_mfs", "addl_medicare_withhold", "farm_opt_gross", "farm_opt_profit",
+             "farm_opt_max", "nonfarm_opt_pct"] },
     { id: "futa", ru: "Налог по безработице (FUTA)", en: "Federal unemployment tax (FUTA)",
       keys: ["futa_rate", "futa_base", "futa_credit", "futa_net", "futa_late_credit",
              "futa_deposit", "futa_test_wages", "futa_test_weeks", "futa_test_household",
@@ -922,7 +948,8 @@ window.FIGURES = {
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
-      keys: ["farm_income_share", "farm_prepaid_limit", "farm_syndicate_losses",
+      keys: ["farm_income_share", "farm_prepaid_limit", "soil_water_limit",
+             "farm_syndicate_losses",
              "livestock_hold_cattle", "livestock_hold_other", "farm_replace_1033e"] }
   ]
 };
