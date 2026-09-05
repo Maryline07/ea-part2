@@ -625,6 +625,41 @@ details.check > div p { max-width: 34em; }
   font-variant-numeric: tabular-nums;
 }
 
+.quiz__advice {
+  margin: 1.6rem 0 0.4rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  background: var(--paper-soft, transparent);
+}
+
+.quiz__advice-head {
+  margin: 0 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.quiz__advice ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.35rem; }
+
+.quiz__advice li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+.quiz__advice a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.quiz__advice a:hover { border-bottom-color: var(--accent); }
+
+.quiz__miss {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
 .q { border-bottom: 1px solid var(--rule-hair); padding: 1.1rem 0 1.3rem; }
 
 .q__stem { max-width: 40em; margin: 0 0 0.8rem; }

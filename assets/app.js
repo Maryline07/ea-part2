@@ -471,11 +471,55 @@
     updateScore(moduleId);
   }
 
+  /* Название подраздела берётся из самой страницы: заголовок уже
+     двуязычный, дублировать его в данных теста незачем. */
+  function sectionTitle(id, lang) {
+    var box = document.getElementById(id);
+    if (!box) return null;
+    var num = box.querySelector(".num");
+    var name = box.querySelector('h2 [lang="' + lang + '"]');
+    if (!name) return null;
+    return (num ? num.textContent.trim() + " " : "") + name.textContent.trim();
+  }
+
+  function adviceHtml(questions, answers) {
+    var missed = {}, order = [], any = false;
+    questions.forEach(function (question, index) {
+      var given = answers[index];
+      if (typeof given !== "string" || given === question.correct) return;
+      any = true;
+      var sec = question.sec;
+      if (!sec) return;
+      if (!missed[sec]) { missed[sec] = 0; order.push(sec); }
+      missed[sec]++;
+    });
+    if (!any || !order.length) return "";
+
+    order.sort(function (a, b) { return missed[b] - missed[a]; });
+
+    var items = "";
+    order.forEach(function (sec) {
+      var ru = sectionTitle(sec, "ru"), en = sectionTitle(sec, "en");
+      if (!ru && !en) return;
+      items += '<li><a href="#' + sec + '">' +
+               '<span lang="ru">' + (ru || "") + "</span>" +
+               '<span lang="en">' + (en || "") + "</span></a>" +
+               '<span class="quiz__miss">' + missed[sec] + "</span></li>";
+    });
+    if (!items) return "";
+
+    return '<div class="quiz__advice">' +
+           '<p class="quiz__advice-head">' +
+           '<span lang="ru">Ошибки пришлись на эти подразделы \u2014 их и стоит перечитать:</span>' +
+           '<span lang="en">The wrong answers fall in these subsections \u2014 re-read them:</span></p>' +
+           "<ul>" + items + "</ul></div>";
+  }
+
   function updateScore(moduleId) {
     var section = document.querySelector('[data-quiz="' + moduleId + '"]');
     if (!section) return;
-    var host = section.closest(".quiz");
-    host = host && host.querySelector(".quiz__score");
+    var box = section.closest(".quiz");
+    var host = box && box.querySelector(".quiz__score");
     var questions = quizData(moduleId);
     if (!host || !questions) return;
 
@@ -488,9 +532,30 @@
       }
     });
 
+    var pct = answered ? Math.round((right / answered) * 100) : 0;
+    var done = answered === questions.length;
+
     host.innerHTML =
-      '<span lang="ru">Верно ' + right + " из " + answered + ", всего вопросов " + questions.length + "</span>" +
-      '<span lang="en">' + right + " correct of " + answered + " answered, " + questions.length + " total</span>";
+      '<span lang="ru">Верно ' + right + " из " + answered +
+      (answered ? " \u2014 " + pct + "%" : "") +
+      (done ? ". Пройдено полностью" : ", всего вопросов " + questions.length) + "</span>" +
+      '<span lang="en">' + right + " correct of " + answered +
+      (answered ? " \u2014 " + pct + "%" : "") +
+      (done ? ". All questions answered" : ", " + questions.length + " in all") + "</span>";
+
+    /* Совет появляется под тестом, а не в строке счёта: он длиннее и
+       нужен только тогда, когда есть ошибки. */
+    var advice = box && box.querySelector(".quiz__advice");
+    if (advice) advice.parentNode.removeChild(advice);
+    var html = adviceHtml(questions, answers);
+    if (html && box) {
+      var reset = box.querySelector(".quiz__reset");
+      var node = document.createElement("div");
+      node.innerHTML = html;
+      var el = node.firstChild;
+      if (reset) box.insertBefore(el, reset);
+      else box.appendChild(el);
+    }
   }
 
   /* Обработчики вешаются на документ: в собранном артефакте секций много,
