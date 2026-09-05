@@ -1065,6 +1065,17 @@ details.check > div p { max-width: 34em; }
 .why dd { margin: 0; color: var(--ink-soft); max-width: 40em; }
 .why dd.ok { color: var(--ink); }
 
+.quiz__hint {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  max-width: 40em;
+  margin: 0 0 1.4rem;
+}
+
+.quiz__acts { display: flex; gap: 0.7rem; flex-wrap: wrap; margin: 0 0 1.6rem; }
+.quiz__acts .tr__go { text-decoration: none; display: inline-block; }
+
 .quiz__reset {
   font-family: var(--sans);
   font-size: 0.82rem;

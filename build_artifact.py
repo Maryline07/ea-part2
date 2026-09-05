@@ -36,6 +36,7 @@ OUT = os.path.join(HERE, "ea-part2.html")
 # Порядок разделов в собранном файле
 PAGES = [
     ("index",     "Модули",             "Modules"),
+    ("trainer",   "Тренажёр",           "Practice"),
     ("reference", "Справочник 2025",    "2025 figures"),
     ("exam-map",  "Программа экзамена", "Exam outline"),
     ("sources",   "Источники",          "Sources"),
@@ -65,10 +66,16 @@ def main_content(html):
     return match.group(1) if match else ""
 
 
-def quiz_script(html):
-    """Блок window.QUIZZES из страницы модуля."""
-    match = re.search(r"(window\.QUIZZES[^<]*)</script>", html, re.S)
-    return match.group(1) if match else ""
+def quiz_script(slug):
+    """Вопросы модуля из assets/quiz-suNN.js.
+
+    Раньше блок вырезался из самой страницы. Теперь он живёт отдельным
+    файлом, потому что его читают две страницы: модуль и тренажёр.
+    """
+    path = os.path.join(HERE, "assets", "quiz-%s.js" % slug)
+    if not os.path.exists(path):
+        return ""
+    return read(os.path.join("assets", "quiz-%s.js" % slug))
 
 
 def namespace_ids(fragment, prefix):
@@ -104,10 +111,64 @@ def check_clean(text, where):
                      "содержать." % where)
 
 
+def check_sections():
+    """Метки подразделов и названия в QUIZSECS не разошлись со страницей.
+
+    Названия подразделов лежат в двух местах: в заголовках страницы, где
+    их читают глазами, и в карте QUIZSECS, откуда их берёт тренажёр —
+    заголовков модуля на его странице нет. Дублирование неизбежно, но
+    расхождение — нет: сборка останавливается, если они разошлись или
+    если вопрос ссылается на несуществующий подраздел.
+    """
+    heading = re.compile(
+        r'<section class="sub" id="(s\d\d)">\s*<h2><span class="num">([^<]+)</span>\s*'
+        r'<span lang="ru">(.*?)</span>\s*<span lang="en">(.*?)</span>', re.S)
+
+    for slug in MODULES:
+        page = os.path.join(HERE, slug + ".html")
+        data = os.path.join(HERE, "assets", "quiz-%s.js" % slug)
+        if not (os.path.exists(page) and os.path.exists(data)):
+            continue
+
+        html = read(slug + ".html")
+        js = read(os.path.join("assets", "quiz-%s.js" % slug))
+
+        on_page = {}
+        for sid, num, ru, en in heading.findall(html):
+            on_page[sid] = (num.strip(), ru.strip(), en.strip())
+
+        in_map = {}
+        for sid, num, ru, en in re.findall(
+                r'\n  (s\d\d): \{ no: "([^"]*)", ru: "([^"]*)", en: "([^"]*)" \}', js):
+            in_map[sid] = (num, ru, en)
+
+        for sid, value in in_map.items():
+            if sid not in on_page:
+                sys.exit("Сборка остановлена: %s — подраздел %s есть в карте, "
+                         "но не на странице." % (slug, sid))
+            if on_page[sid] != value:
+                sys.exit("Сборка остановлена: %s — название подраздела %s "
+                         "разошлось со страницей.%s   страница: %s%s   карта:    %s"
+                         % (slug, sid, os.linesep, on_page[sid], os.linesep, value))
+
+        for sid in set(re.findall(r'\n    sec: "([^"]+)"', js)):
+            if sid not in on_page:
+                sys.exit("Сборка остановлена: %s — вопрос помечен подразделом %s, "
+                         "которого на странице нет." % (slug, sid))
+
+        marked = len(re.findall(r'\n    sec: "', js))
+        total = len(re.findall(r'\n    ru: "', js))
+        if marked != total:
+            sys.exit("Сборка остановлена: %s — без метки подраздела осталось %d "
+                     "вопросов из %d." % (slug, total - marked, total))
+
+
 def build():
     css = read(os.path.join("assets", "style.css"))
     app = read(os.path.join("assets", "app.js"))
     figures = read(os.path.join("assets", "figures-2025.js"))
+    modules_js = read(os.path.join("assets", "modules.js"))
+    trainer = read(os.path.join("assets", "trainer.js"))
 
     sections = []
     nav = []
@@ -128,7 +189,12 @@ def build():
 
         fragment = main_content(html)
         fragment = strip_local_only(fragment)
-        fragment = namespace_ids(fragment, slug)
+        # Разводить якоря нужно только у модулей: id="traps", "check" и
+        # "quiz" повторяются в каждом. У служебных страниц якоря свои, а
+        # приставка к ним ломала бы поиск по id из скриптов — так и было
+        # с таблицей справочника, которая в собранном файле не строилась.
+        if slug in MODULES:
+            fragment = namespace_ids(fragment, slug)
 
         sections.append(
             '<section class="page" id="page-%s" hidden>\n%s\n</section>' % (slug, fragment))
@@ -136,15 +202,20 @@ def build():
             '<a href="#" data-page="%s"><span lang="ru">%s</span>'
             '<span lang="en">%s</span></a>' % (slug, ru, en))
 
-        quiz = quiz_script(html)
-        if quiz:
-            quizzes.append(quiz)
+        if slug in MODULES:
+            quiz = quiz_script(slug)
+            if quiz:
+                check_clean(quiz, "quiz-%s.js" % slug)
+                quizzes.append(quiz)
 
     check_clean(css, "style.css")
     check_clean(app, "app.js")
     check_clean(figures, "figures-2025.js")
+    check_clean(modules_js, "modules.js")
+    check_clean(trainer, "trainer.js")
+    check_sections()
 
-    router = """
+    router = r"""
 /* Переключение разделов внутри одного файла: ссылки в верхней панели
    показывают нужную секцию, остальные скрыты атрибутом hidden. */
 (function () {
@@ -159,14 +230,26 @@ def build():
       else links[j].removeAttribute('aria-current');
     }
     window.scrollTo(0, 0);
+    /* Тренажёр рисует себя сам и должен пересобрать экран настройки:
+       счётчики отбора могли измениться, пока читали модуль. */
+    if (slug === 'trainer' && window.EA_TRAINER) window.EA_TRAINER.refresh();
   }
   document.addEventListener('click', function (event) {
     var link = event.target.closest && event.target.closest('a[data-page]');
     if (link) { event.preventDefault(); show(link.dataset.page); return; }
-    var inner = event.target.closest && event.target.closest('a[href$=".html"]');
+    /* Ссылка может нести якорь: тренажёр отсылает к подразделу вида
+       su01.html#s14. Проверка на окончание .html такую ссылку не ловила. */
+    var inner = event.target.closest && event.target.closest('a[href*=".html"]');
     if (inner) {
-      var slug = inner.getAttribute('href').replace('.html', '');
-      if (document.getElementById('page-' + slug)) { event.preventDefault(); show(slug); }
+      var parts = /^([A-Za-z0-9_-]+)\.html(#.*)?$/.exec(inner.getAttribute('href') || '');
+      if (parts && document.getElementById('page-' + parts[1])) {
+        event.preventDefault();
+        show(parts[1]);
+        if (parts[2]) {
+          var target = document.getElementById(parts[1] + '-' + parts[2].slice(1));
+          if (target) target.scrollIntoView();
+        }
+      }
     }
   });
   show('index');
@@ -227,10 +310,16 @@ def build():
 <script>
 %s
 </script>
+<script>
+%s
+</script>
+<script>
+%s
+</script>
 </body>
 </html>
 """ % (css, "\n".join("    " + item for item in nav), "\n".join(sections),
-       figures, "\n".join(quizzes), app, router)
+       figures, modules_js, "\n".join(quizzes), app, trainer, router)
 
     with open(OUT, "w", encoding="utf-8") as handle:
         handle.write(doc)

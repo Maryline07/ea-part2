@@ -46,7 +46,6 @@
       buttons[i].setAttribute("aria-pressed", String(buttons[i].dataset.lang === lang));
     }
     fillFigures(lang);
-    renderQuiz(lang);
   }
 
   function initLangSwitch() {
@@ -532,57 +531,57 @@
     return (value && typeof value.c === "number") ? value.c : null;
   }
 
-  function renderQuiz(lang) {
+  function renderQuiz() {
     var hosts = document.querySelectorAll("[data-quiz]");
-    for (var i = 0; i < hosts.length; i++) renderOneQuiz(hosts[i], lang);
+    for (var i = 0; i < hosts.length; i++) renderOneQuiz(hosts[i]);
   }
 
-  function renderOneQuiz(host, lang) {
+  /* Сводка по модулю и вход в тренажёр.
+
+     Вопросы здесь больше не показываются: банк один, и второй его вид
+     разошёлся бы с первым. Остаётся то, что осмысленно на странице
+     модуля, — сколько пройдено, где ошибки и куда идти дальше. */
+  function renderOneQuiz(host) {
     var moduleId = host.dataset.quiz;
     var questions = quizData(moduleId);
     if (!questions) return;
 
     var answers = loadAnswers(moduleId);
-    var html = "";
-
+    var answered = 0, wrong = 0;
     questions.forEach(function (question, index) {
       var given = answerOf(answers[index]);
-      var answered = given !== null;
-
-      html += '<div class="q' + (answered ? " is-answered" : "") + '" data-q="' + index + '">';
-      html += '<p class="q__stem"><span class="qnum">' + (index + 1) + "</span>" +
-              '<span lang="ru">' + question.ru + "</span>" +
-              '<span lang="en">' + question.en + "</span></p>";
-
-      html += '<div class="q__opts">';
-      question.opts.forEach(function (option) {
-        var cls = "opt";
-        if (answered) {
-          if (option.k === question.correct) cls += " is-correct";
-          else if (option.k === given) cls += " is-wrong";
-        }
-        html += '<button type="button" class="' + cls + '" data-k="' + option.k + '"' +
-                (answered ? " disabled" : "") + ">" +
-                '<span class="opt__k">' + option.k + "</span>" +
-                "<span>" +
-                '<span lang="ru">' + option.ru + "</span>" +
-                '<span lang="en">' + option.en + "</span>" +
-                "</span></button>";
-      });
-      html += "</div>";
-
-      /* Разбор каждого варианта, а не только верного */
-      html += '<div class="why"><dl>';
-      question.opts.forEach(function (option) {
-        var why = question.why[option.k] || {};
-        var isRight = option.k === question.correct;
-        html += "<dt>" + option.k + "</dt>" +
-                '<dd class="' + (isRight ? "ok" : "") + '">' +
-                '<span lang="ru">' + (why.ru || "") + "</span>" +
-                '<span lang="en">' + (why.en || "") + "</span></dd>";
-      });
-      html += "</dl></div></div>";
+      if (given === null) return;
+      answered++;
+      if (given !== question.correct) wrong++;
     });
+
+    var left = questions.length - answered;
+    var html = '<p class="quiz__hint">' +
+      '<span lang="ru">Вопросы модуля проходятся в тренажёре: по одному на экране, ' +
+      'с разбором каждого варианта и оценкой уверенности. Ответы общие \u2014 ' +
+      'пройденное здесь видно там, и наоборот.</span>' +
+      '<span lang="en">The module\u2019s questions are taken in the practice screen: one at ' +
+      'a time, every option explained, with a confidence check. Answers are shared \u2014 ' +
+      'progress here shows up there, and the other way round.</span></p>';
+
+    html += '<div class="quiz__acts">';
+    html += '<a class="tr__go" href="trainer.html" data-run="' +
+            (left ? "new" : "all") + '" data-module="' + moduleId + '">' +
+            (left
+              ? '<span lang="ru">Пройти вопросы модуля (' + left + ')</span>' +
+                '<span lang="en">Take the ' +
+                (left === 1 ? "remaining question" : left + " remaining") + "</span>"
+              : '<span lang="ru">Пройти модуль заново (' + questions.length + ')</span>' +
+                '<span lang="en">Take all ' + questions.length + ' again</span>') +
+            "</a>";
+    if (wrong) {
+      html += '<a class="tr__go tr__go--quiet" href="trainer.html" data-run="wrong" data-module="' +
+              moduleId + '">' +
+              '<span lang="ru">Повторить ошибки (' + wrong + ')</span>' +
+              '<span lang="en">Retry the ' +
+              (wrong === 1 ? "one missed" : wrong + " missed") + "</span></a>";
+    }
+    html += "</div>";
 
     host.innerHTML = html;
     updateScore(moduleId);
@@ -659,13 +658,13 @@
     var pct = answered ? Math.round((right / answered) * 100) : 0;
     var done = answered === questions.length;
 
-    host.innerHTML =
-      '<span lang="ru">Верно ' + right + " из " + answered +
-      (answered ? " \u2014 " + pct + "%" : "") +
-      (done ? ". Пройдено полностью" : ", всего вопросов " + questions.length) + "</span>" +
-      '<span lang="en">' + right + " correct of " + answered +
-      (answered ? " \u2014 " + pct + "%" : "") +
-      (done ? ". All questions answered" : ", " + questions.length + " in all") + "</span>";
+    host.innerHTML = answered
+      ? '<span lang="ru">Верно ' + right + " из " + answered + " \u2014 " + pct + "%" +
+        (done ? ". Пройдено полностью" : ", всего вопросов " + questions.length) + "</span>" +
+        '<span lang="en">' + right + " correct of " + answered + " \u2014 " + pct + "%" +
+        (done ? ". All questions answered" : ", " + questions.length + " in all") + "</span>"
+      : '<span lang="ru">Вопросов в модуле: ' + questions.length + "</span>" +
+        '<span lang="en">' + questions.length + " questions in this module</span>";
 
     /* Совет появляется под тестом, а не в строке счёта: он длиннее и
        нужен только тогда, когда есть ошибки. */
@@ -686,29 +685,21 @@
      а слушатель нужен один. */
   function initQuiz() {
     document.addEventListener("click", function (event) {
-      var button = event.target.closest && event.target.closest("button.opt");
-      if (button && !button.disabled) {
-        var host = button.closest("[data-quiz]");
-        if (!host) return;
-        var moduleId = host.dataset.quiz;
-        var questions = quizData(moduleId);
-        var block = button.closest(".q");
-        var index = parseInt(block.dataset.q, 10);
-        var question = questions[index];
-
-        var answers = loadAnswers(moduleId);
-        answers[index] = button.dataset.k;
-        saveAnswers(moduleId, answers);
-
-        block.classList.add("is-answered");
-        var options = block.querySelectorAll("button.opt");
-        for (var i = 0; i < options.length; i++) {
-          options[i].disabled = true;
-          var key = options[i].dataset.k;
-          if (key === question.correct) options[i].classList.add("is-correct");
-          else if (key === button.dataset.k) options[i].classList.add("is-wrong");
-        }
-        updateScore(moduleId);
+      var go = event.target.closest && event.target.closest("[data-run]");
+      if (go) {
+        /* Набор передаётся не через адрес: под file:// это работало бы,
+           но в собранном файле переходы перехватывает роутер, который
+           смотрит только на окончание .html. */
+        writeStore("ea2:trainer:preset", JSON.stringify({
+          mods: [go.dataset.module],
+          filter: go.dataset.run,
+          limit: 0,
+          order: "line",
+          go: true
+        }));
+        /* В собранном файле тренажёр — секция того же документа, и
+           перехода со сменой страницы не будет. */
+        if (window.EA_TRAINER) window.EA_TRAINER.refresh();
         return;
       }
 
@@ -718,7 +709,7 @@
         var body = box && box.querySelector("[data-quiz]");
         if (!body) return;
         saveAnswers(body.dataset.quiz, {});
-        renderOneQuiz(body, currentLang());
+        renderOneQuiz(body);
       }
     });
   }
@@ -770,6 +761,7 @@
     buildReference();
     fillXref();
     initQuiz();
+    renderQuiz();
     applyLang(currentLang());
     fillProgress();
     initTocBar();

@@ -499,7 +499,8 @@
     if (wrong.length) {
       html += '<button type="button" class="tr__go" id="tr-again">' +
               bi("Повторить ошибки (" + wrong.length + ")",
-                 "Retry the " + wrong.length + " missed") + "</button>";
+                 "Retry the " + (wrong.length === 1 ? "one missed" : wrong.length + " missed")) +
+              "</button>";
     }
     html += '<button type="button" class="tr__go tr__go--quiet" id="tr-new">' +
             bi("Новый заход", "New run") + "</button></div>";
