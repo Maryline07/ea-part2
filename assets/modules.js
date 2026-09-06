@@ -30,7 +30,7 @@ window.MODULES = [
   { id: "su05", no: "05", open: true,
     ru: "Прочие вычеты, домашний офис и вычет QBI",
     en: "Other deductions, home office and the QBI deduction" },
-  { id: "su06", no: "06", open: false,
+  { id: "su06", no: "06", open: true,
     ru: "Базис и сделки с имуществом",
     en: "Basis and property transactions" },
   { id: "su07", no: "07", open: false,

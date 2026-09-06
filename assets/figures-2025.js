@@ -24,6 +24,8 @@ var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/
 var SRC_P15B = { t: "Publication 15-B (2025), Employer's Tax Guide to Fringe Benefits", u: "https://www.irs.gov/publications/p15b" };
 var SRC_F8826 = { t: "Form 8826, Disabled Access Credit", u: "https://www.irs.gov/forms-pubs/about-form-8826" };
 var SRC_P535 = { t: "Publication 535, Business Expenses", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" };
+var SRC_P551 = { t: "Publication 551 (Rev. 12-2025), Basis of Assets", u: "https://www.irs.gov/publications/p551" };
+var SRC_P544 = { t: "Publication 544 (2025), Sales and Other Dispositions of Assets", u: "https://www.irs.gov/publications/p544" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
@@ -1127,6 +1129,78 @@ window.FIGURES = {
       note_en: "Per year, overhead excluded. Exceed it and the exception is lost entirely, not in part. It does not cover payments to outside lobbyists.",
       src: SRC_P535
     },
+
+    lke_identify_days: {
+      n: 45, unit: "int",
+      ru: "Дней на письменное определение замещающего объекта",
+      en: "Days to identify the replacement property in writing",
+      note_ru: "Считается от дня передачи отдаваемого объекта. Определить можно несколько объектов; описание должно быть однозначным и передано другой стороне.",
+      note_en: "Counted from the day the relinquished property is transferred. Several properties may be identified; the description must be unambiguous and delivered to the other party.",
+      src: SRC_P544
+    },
+
+    lke_complete_days: {
+      n: 180, unit: "int",
+      ru: "Дней на получение замещающего объекта",
+      en: "Days to receive the replacement property",
+      note_ru: "Или срок подачи декларации за год передачи с учётом продлений — что наступит раньше. Продление декларации может оказаться необходимым, чтобы не потерять отсрочку.",
+      note_en: "Or the due date of the return for the year of transfer, extensions included — whichever comes first. Extending the return may be what saves the deferral.",
+      src: SRC_P544
+    },
+
+    ic_replace_years: {
+      n: 2, unit: "int",
+      ru: "Лет на замещение после вынужденного выбытия",
+      en: "Years to replace property after an involuntary conversion",
+      note_ru: "Отсчёт идёт от конца первого налогового года, в котором признана хоть какая-то часть прибыли, а не от даты события.",
+      note_en: "Counted from the end of the first tax year in which any part of the gain is realized, not from the date of the event.",
+      src: SRC_P544
+    },
+
+    ic_condemn_years: {
+      n: 3, unit: "int",
+      ru: "Лет на замещение деловой недвижимости при конфискации",
+      en: "Years to replace business real property taken by condemnation",
+      note_ru: "Только для недвижимости, использовавшейся в бизнесе или державшейся для инвестиций. Не применяется, если замещение идёт через покупку контроля над корпорацией.",
+      note_en: "Only for real property used in a trade or business or held for investment. Not available where the replacement is made by acquiring control of a corporation.",
+      src: SRC_P544
+    },
+
+    alt_valuation_months: {
+      n: 6, unit: "int",
+      ru: "Месяцев до альтернативной даты оценки наследства",
+      en: "Months to the alternate valuation date for an estate",
+      note_ru: "Выбирается управляющим наследством в декларации по налогу на наследство и применяется ко всему имуществу сразу, а не выборочно.",
+      note_en: "Elected by the personal representative on the estate tax return and applied to all the property at once, not selectively.",
+      src: SRC_P551
+    },
+
+    gift_exclusion: {
+      n: 19000, unit: "usd",
+      ru: "Годовое освобождение по налогу на дарение, 2025",
+      en: "Annual gift tax exclusion, 2025",
+      note_ru: "На одного получателя. Участвует в расчёте той части налога на дарение, что прибавляется к базису одаряемого.",
+      note_en: "Per recipient. It enters the computation of the part of the gift tax that is added to the donee's basis.",
+      src: SRC_RP2440
+    },
+
+    stock_rights_pct: {
+      n: 15, unit: "pct",
+      ru: "Доля стоимости акции, ниже которой права на покупку получают нулевой базис",
+      en: "Share of the stock's value below which stock rights take a zero basis",
+      note_ru: "Считается на дату распределения. Можно выбрать распределение базиса и при меньшей доле.",
+      note_en: "Measured at the date of distribution. Basis may be allocated by election even below that share.",
+      src: SRC_P551
+    },
+
+    land_improve_years: {
+      n: 15, unit: "int",
+      ru: "Срок возмещения стоимости улучшений земельного участка",
+      en: "Recovery period for land improvements",
+      note_ru: "Тротуары, подъездные дороги, ограждения, озеленение. Сама земля не амортизируется никогда.",
+      note_en: "Pavements, driveways, fencing, landscaping. The land itself is never depreciated.",
+      src: SRC_P544
+    },
   },
 
   /* Группировка для страницы справочника */
@@ -1173,6 +1247,10 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "basis", ru: "Базис и сделки с имуществом", en: "Basis and property transactions",
+      keys: ["lke_identify_days", "lke_complete_days", "ic_replace_years",
+             "ic_condemn_years", "alt_valuation_months", "gift_exclusion",
+             "stock_rights_pct", "land_improve_years"] },
     { id: "other", ru: "Прочие вычеты", en: "Other deductions",
       keys: ["org_deduction", "org_phaseout", "barrier_deduction",
              "access_credit_floor", "access_credit_ceiling", "access_credit_rate",

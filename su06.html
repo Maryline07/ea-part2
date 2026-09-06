@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 6. Базис и сделки с имуществом — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=37">
+<script defer src="assets/figures-2025.js?v=37"></script>
+<script defer src="assets/modules.js?v=37"></script>
+<script defer src="assets/quiz-su06.js?v=37"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=37"></script>
+</head>
+<body data-module="su06">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="trainer.html"><span lang="ru">Тренажёр</span><span lang="en">Practice</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">06</span>
+      <h1>
+        <span lang="ru">Базис и сделки с имуществом</span>
+        <span lang="en">Basis and property transactions</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Подготовка деклараций бизнеса</span><span lang="en">Business Tax Preparation</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>8824 · 4797 · 4562 · Schedule D · 8949</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>551 · 544 · 946 · 538</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su06" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s61"><span lang="ru">6.1 Откуда берётся базис</span><span lang="en">6.1 Where basis comes from</span></a></li>
+        <li><a href="#s62"><span lang="ru">6.2 Как базис меняется</span><span lang="en">6.2 How basis changes</span></a></li>
+        <li><a href="#s63"><span lang="ru">6.3 Обмен на подобное</span><span lang="en">6.3 Like-kind exchanges</span></a></li>
+        <li><a href="#s64"><span lang="ru">6.4 Вынужденное выбытие</span><span lang="en">6.4 Involuntary conversions</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">Имущество выбывает. Сколько из полученного — прибыль, а сколько лишь возврат
+        своего?</p>
+      <p lang="en">Property leaves your hands. How much of what you get is gain, and how much is
+        merely your own money coming back?</p>
+      <p lang="ru">Границу проводит <strong>базис</strong>. Это то, что вы уже оплатили или что
+        уже было у вас обложено налогом; при выбытии эта часть не облагается второй раз. Отсюда
+        три вопроса, из которых состоит весь модуль. Откуда базис взялся — покупка, подарок,
+        наследство, обмен, перевод личной вещи в деловую. Как он изменился за годы владения.
+        И что происходит, когда имущество не продаётся за деньги, а <em>меняется</em> на другое
+        или изымается помимо вашей воли.</p>
+      <p lang="en">The line is drawn by <strong>basis</strong>. It is what you have already paid,
+        or what has already been taxed to you; on a disposition that part is not taxed a second
+        time. Hence the three questions the module is made of. Where the basis came from —
+        purchase, gift, inheritance, exchange, conversion of a personal item to business use. How
+        it changed over the years of ownership. And what happens when the property is not sold for
+        money but <em>swapped</em> for other property or taken from you against your will.</p>
+      <p lang="ru">Два последних случая объединяет одна идея: если вы, по сути, остались при
+        том же самом вложении, налог не берут <em>сейчас</em>. Его не отменяют — базис нового
+        имущества занижают ровно на отложенную прибыль, и она вернётся при следующей продаже.
+        Отсрочка, а не освобождение: это различие даёт больше половины неверных ответов по
+        теме.</p>
+      <p lang="en">The last two share one idea: if in substance you are still in the same
+        investment, no tax is taken <em>now</em>. It is not cancelled — the basis of the new
+        property is written down by exactly the deferred gain, which comes back on the next sale.
+        Deferral, not exemption: that distinction produces more than half the wrong answers on
+        the subject.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s61">
+      <h2><span class="num">6.1</span>
+        <span lang="ru">Откуда берётся базис</span>
+        <span lang="en">Where basis comes from</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Базис почти всегда начинается со <strong>стоимости</strong> — но не всякое
+      имущество покупается. Способов пять, и первый вопрос всегда один: каким из них имущество
+      попало к налогоплательщику.</p>
+    <p lang="en">Basis almost always begins with <strong>cost</strong> — but not all property is
+      bought. There are five routes, and the first question is always the same: by which of them
+      did the property reach the taxpayer.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Как получено</span><span lang="en">How it was acquired</span></th>
+          <th><span lang="ru">Чему равен базис</span><span lang="en">What the basis is</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Куплено — базис по стоимости</span><span lang="en">Bought — cost basis</span></th>
+          <td><span lang="ru">Всё, что отдано: деньги, имущество по рыночной стоимости, услуги, принятые на себя обязательства</span><span lang="en">Everything given up: cash, property at fair market value, services, liabilities assumed</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Получено взамен другого — замещённый базис</span><span lang="en">Received in place of other property — substituted basis</span></th>
+          <td><span lang="ru">Считается через базис <em>другого</em> имущества налогоплательщика</span><span lang="en">Figured by reference to the basis of the taxpayer's <em>other</em> property</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Передано другим лицом — перенесённый базис</span><span lang="en">Transferred from another person — transferred basis</span></th>
+          <td><span lang="ru">Считается через базис <em>того же</em> имущества в руках прежнего владельца. Так работает подарок</span><span lang="en">Figured by reference to the basis of <em>the same</em> property in the previous owner's hands. This is how a gift works</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Выменено — обменный базис</span><span lang="en">Exchanged — exchanged basis</span></th>
+          <td><span lang="ru">Считается через базис имущества, которым налогоплательщик владел раньше. Так работает §1031</span><span lang="en">Figured by reference to the basis of property the taxpayer held before. This is how section 1031 works</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Переведено из личного в деловое</span><span lang="en">Converted from personal to business use</span></th>
+          <td><span lang="ru"><strong>Меньшая</strong> из скорректированного базиса и рыночной стоимости на день перевода</span><span lang="en">The <strong>lesser</strong> of the adjusted basis and the fair market value on the date of the change</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Что входит в стоимость</span><span lang="en">What goes into cost</span></h3>
+
+    <p lang="ru">В базис входит не только цена. Правило простое: всё, что потрачено на то, чтобы
+      <em>получить</em> вещь и <em>довести её до готовности к использованию</em>. Всё, что
+      потрачено на то, чтобы ею <em>пользоваться и поддерживать</em>, — это расход.</p>
+    <p lang="en">Basis is not only the price. The rule is simple: everything spent to
+      <em>acquire</em> the thing and to <em>get it ready for use</em>. Everything spent to
+      <em>use and maintain</em> it is an expense.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">В базис</span><span lang="en">Into basis</span></th>
+          <th><span lang="ru">В расход</span><span lang="en">Into expense</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Цена и принятые обязательства, включая ипотеку на объекте</span><span lang="en">The price and any liabilities assumed, a mortgage on the property included</span></td>
+          <td><span lang="ru">Проценты по кредиту на покупку</span><span lang="en">Interest on the loan used to buy it</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Брокерские комиссии, гонорары юристов, подготовка и проверка документов</span><span lang="en">Brokers' commissions, legal fees, preparing and reviewing documents</span></td>
+          <td><span lang="ru">Страхование имущества</span><span lang="en">Insurance on the property</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Налоги на передачу титула, страхование титула, регистрационные сборы, налог с продаж при покупке</span><span lang="en">Title transfer taxes, title insurance, recording fees, sales tax on the purchase</span></td>
+          <td><span lang="ru">Обычный ремонт и обслуживание, в том числе покраска сама по себе</span><span lang="en">Ordinary repairs and maintenance, painting on its own included</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Доставка, монтаж, испытания, оценка</span><span lang="en">Freight, installation, testing, appraisal</span></td>
+          <td><span lang="ru">Неявные проценты, скрытые в цене рассрочки</span><span lang="en">Unstated interest hidden in an instalment price</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Крупные улучшения: новая кровля, новая проводка, пристройка, подведение воды к участку</span><span lang="en">Major improvements: a new roof, new wiring, an extension, running water to the site</span></td>
+          <td><span lang="ru">Скидка от продавца — она не доход, а <strong>уменьшение</strong> цены и базиса</span><span lang="en">A rebate from the seller — not income but a <strong>reduction</strong> of price and basis</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Решали, покупать ли, — расход; покупали — базис</span><span lang="en">Deciding whether to buy is an expense; buying is basis</span></h3>
+      <p lang="ru">Затраты, <strong>способствовавшие приобретению</strong>, капитализируются:
+        это деньги, потраченные уже в процессе поиска и оформления конкретного объекта. Но
+        расходы на то, чтобы решить, <em>покупать ли вообще</em> и <em>что именно</em>, —
+        текущий вычет. Черта проходит по моменту, когда объект выбран.</p>
+      <p lang="en">Amounts that <strong>facilitate the acquisition</strong> are capitalized: money
+        spent in the course of pursuing and closing on a particular property. But what is spent
+        deciding <em>whether to buy at all</em> and <em>which property</em> is a current
+        deduction. The line falls at the moment the property is chosen.</p>
+      <p lang="ru">Отдельно: оплата труда собственных работников и накладные расходы приобретению
+        не способствуют — они вычитаются, даже если сотрудник весь месяц занимался именно этой
+        покупкой. Заплатили бы ту же работу стороннему риелтору комиссией — сумма ушла бы в
+        базис. <span class="cite">Pub. 551; Reg. 1.263(a)-2</span></p>
+      <p lang="en">Separately: employee compensation and overhead are treated as not facilitating
+        the acquisition — they are deducted, even where the employee spent the whole month on this
+        very purchase. Pay an outside agent a commission for the same work and the amount goes
+        into basis. <span class="cite">Pub. 551; Reg. 1.263(a)-2</span></p>
+    </div>
+
+    <h3><span lang="ru">Одна цена за несколько вещей</span><span lang="en">One price for several things</span></h3>
+
+    <p lang="ru">Куплено сразу несколько активов за общую сумму. Базис каждого выделяется
+      пропорционально их рыночным стоимостям. Стороны могут договориться о распределении
+      письменно, и такая договорённость обязательна для обеих — пока налоговая служба не сочтёт
+      её необоснованной.</p>
+    <p lang="en">Several assets are bought together for one price. The basis of each is allocated
+      in proportion to their fair market values. The parties may agree the allocation in writing,
+      and such an agreement binds them both — unless the IRS finds it improper.</p>
+
+    <p lang="ru">Но если куплен <strong>действующий бизнес</strong> целиком, пропорция не
+      применяется. Цена разносится <em>остаточным методом</em>: по классам, строго по очереди,
+      каждому — до его рыночной стоимости, пока цена не кончится.</p>
+    <p lang="en">But where a <strong>going business</strong> is bought as a whole, no proportion is
+      used. The price is spread by the <em>residual method</em>: class by class, strictly in
+      order, each up to its fair market value, until the price runs out.</p>
+
+    <ol class="steps">
+      <li><b><span lang="ru">Деньги</span><span lang="en">Cash</span></b>
+          <span lang="ru">По номиналу</span>
+          <span lang="en">At face value</span></li>
+      <li><b><span lang="ru">Почти деньги</span><span lang="en">Near-cash items</span></b>
+          <span lang="ru">Депозитные сертификаты, государственные бумаги, валюта, прочие обращающиеся ценные бумаги</span>
+          <span lang="en">Certificates of deposit, government securities, foreign currency, other marketable securities</span></li>
+      <li><b><span lang="ru">Дебиторская задолженность</span><span lang="en">Receivables</span></b>
+          <span lang="ru">Счета покупателей, закладные и требования по картам, возникшие в обычной деятельности</span>
+          <span lang="en">Accounts receivable, mortgages and credit card receivables arising in the ordinary course</span></li>
+      <li><b><span lang="ru">Товарные запасы</span><span lang="en">Inventory</span></b>
+          <span lang="ru">Имущество для продажи покупателям и акции в запасах дилера</span>
+          <span lang="en">Property held for sale to customers and stock in a dealer's inventory</span></li>
+      <li><b><span lang="ru">Всё остальное имущество</span><span lang="en">All other property</span></b>
+          <span lang="ru">Оборудование, здания, земля. Если цены не хватает на весь класс, остаток делится внутри него пропорционально рыночным стоимостям</span>
+          <span lang="en">Equipment, buildings, land. If the price runs short within the class, what is left is split inside it in proportion to fair market values</span></li>
+      <li><b><span lang="ru">Нематериальные активы §197</span><span lang="en">Section 197 intangibles</span></b>
+          <span lang="ru">Патенты, лицензии, обязательства не конкурировать — кроме гудвилла</span>
+          <span lang="en">Patents, licences, covenants not to compete — goodwill excepted</span></li>
+      <li><b><span lang="ru">Гудвилл и стоимость действующего предприятия</span><span lang="en">Goodwill and going concern value</span></b>
+          <span lang="ru">Всё, что осталось от цены. Если цена ниже суммарной рыночной стоимости активов, сюда не достаётся ничего</span>
+          <span lang="en">Whatever is left of the price. If the price is below the total fair market value of the assets, nothing reaches here</span></li>
+    </ol>
+
+    <h3><span lang="ru">Подарок: базисов два</span><span lang="en">A gift: two bases</span></h3>
+
+    <p lang="ru">Базис одаряемого — это базис дарителя. Правило простое ровно до тех пор, пока
+      имущество не подешевело: если на день дарения рыночная стоимость <strong>ниже</strong>
+      базиса дарителя, у одаряемого появляются <em>два</em> базиса сразу, и какой из них верен,
+      выясняется только в момент продажи.</p>
+    <p lang="en">The donee's basis is the donor's basis. The rule is simple right up to the moment
+      the property has fallen in value: if on the date of the gift the fair market value is
+      <strong>below</strong> the donor's basis, the donee has <em>two</em> bases at once, and
+      which of them is right only becomes clear on a sale.</p>
+
+    <div class="plot">
+      <svg viewBox="0 0 640 200" role="img">
+        <title lang="ru">Цена продажи подаренного имущества попадает в одну из трёх зон: убыток по рыночной стоимости, ни прибыли ни убытка, прибыль по базису дарителя</title>
+        <title lang="en">The selling price of gifted property falls into one of three zones: loss at fair market value, neither gain nor loss, gain at the donor's basis</title>
+
+        <text lang="ru" class="plot__cap" x="60" y="40">цена продажи растёт слева направо</text>
+        <text lang="en" class="plot__cap" x="60" y="40">the selling price rises from left to right</text>
+
+        <rect class="plot__box--tax" x="60" y="56" width="180" height="54" />
+        <rect class="plot__box" x="240" y="56" width="180" height="54" />
+        <rect class="plot__box--keep" x="420" y="56" width="180" height="54" />
+
+        <text lang="ru" x="150" y="80" text-anchor="middle">убыток</text>
+        <text lang="en" x="150" y="80" text-anchor="middle">a loss</text>
+        <text lang="ru" class="plot__cap" x="150" y="96" text-anchor="middle">базис — рыночная стоимость</text>
+        <text lang="en" class="plot__cap" x="150" y="96" text-anchor="middle">basis is the market value</text>
+
+        <text lang="ru" x="330" y="80" text-anchor="middle">ни прибыли,</text>
+        <text lang="en" x="330" y="80" text-anchor="middle">neither gain</text>
+        <text lang="ru" x="330" y="96" text-anchor="middle">ни убытка</text>
+        <text lang="en" x="330" y="96" text-anchor="middle">nor loss</text>
+
+        <text lang="ru" x="510" y="80" text-anchor="middle">прибыль</text>
+        <text lang="en" x="510" y="80" text-anchor="middle">a gain</text>
+        <text lang="ru" class="plot__cap" x="510" y="96" text-anchor="middle">базис — базис дарителя</text>
+        <text lang="en" class="plot__cap" x="510" y="96" text-anchor="middle">basis is the donor's basis</text>
+
+        <line class="plot__axis" x1="60" y1="124" x2="600" y2="124" />
+        <line class="plot__link" x1="240" y1="110" x2="240" y2="132" />
+        <line class="plot__link" x1="420" y1="110" x2="420" y2="132" />
+
+        <text lang="ru" class="plot__cap" x="240" y="148" text-anchor="middle">рыночная стоимость</text>
+        <text lang="en" class="plot__cap" x="240" y="148" text-anchor="middle">market value</text>
+        <text lang="ru" class="plot__cap" x="240" y="162" text-anchor="middle">на день дарения</text>
+        <text lang="en" class="plot__cap" x="240" y="162" text-anchor="middle">at the date of the gift</text>
+
+        <text lang="ru" class="plot__cap" x="420" y="148" text-anchor="middle">базис дарителя</text>
+        <text lang="en" class="plot__cap" x="420" y="148" text-anchor="middle">the donor's basis</text>
+      </svg>
+    </div>
+    <p class="plot__note" lang="ru">Средняя зона существует не по чьему-то решению, а как
+      арифметическое следствие: по базису дарителя выходит убыток, по рыночной стоимости —
+      прибыль, и оба результата запрещены своим же правилом. Остаётся ноль. Рисунок действует,
+      только когда рыночная стоимость <em>ниже</em> базиса дарителя; если она выше, базис один и
+      средней зоны нет.</p>
+    <p class="plot__note" lang="en">The middle zone exists not by anyone's decision but as an
+      arithmetic consequence: the donor's basis yields a loss, the market value yields a gain, and
+      each result is barred by its own rule. Zero is what is left. The picture applies only where
+      the market value is <em>below</em> the donor's basis; if it is above, there is one basis and
+      no middle zone.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-1. Три продажи одного подарка</span><span lang="en">Example 6-1. Three sales of one gift</span></div>
+      <div class="example__body">
+        <p lang="ru">Дядя подарил племяннице акции. Его скорректированный базис — $40 000,
+          рыночная стоимость на день дарения — $25 000. Ничего, что меняло бы базис, не
+          происходило.</p>
+        <p lang="en">An uncle gave his niece shares. His adjusted basis was $40,000 and the market
+          value at the date of the gift $25,000. Nothing happened that would change basis.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Продажа за $47 000: базис дарителя</span><span lang="en">Sold for $47,000: the donor's basis</span></td>
+              <td data-num="7000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Продажа за $18 000: рыночная стоимость на день дарения</span><span lang="en">Sold for $18,000: the market value at the date of the gift</span></td>
+              <td data-num="-7000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Продажа за $32 000: между двумя величинами</span><span lang="en">Sold for $32,000: between the two figures</span></td>
+              <td data-num="0"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Обратите внимание на срок владения: он тоже раздваивается. Если считается
+          прибыль по базису дарителя, к сроку племянницы прибавляется срок дяди. Если считается
+          убыток по рыночной стоимости, срок начинается на следующий день после дарения.</p>
+        <p lang="en">Note that the holding period splits as well. Where gain is figured on the
+          donor's basis, the uncle's holding period is added to the niece's. Where loss is figured
+          on the market value, the period starts the day after the gift.</p>
+        <p lang="ru">Заготовленные неверные ответы: {22000} убытка при продаже за $18 000 — взят
+          базис дарителя; {7000} прибыли при продаже за $32 000 — взята рыночная стоимость;
+          {15000} — «убыток от падения цены до дарения» приписан одаряемой, хотя это потеря
+          дарителя, которая налогом не признаётся ни у кого.</p>
+        <p lang="en">The prepared wrong answers: a {22000} loss on the $18,000 sale — the donor's
+          basis used; a {7000} gain on the $32,000 sale — the market value used; and {15000} —
+          the “loss from the fall in value before the gift” attributed to the donee, when it is
+          the donor's loss and is recognised by nobody.</p>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-2. Налог на дарение прибавляется не весь</span><span lang="en">Example 6-2. Only part of the gift tax is added</span></div>
+      <div class="example__body">
+        <p lang="ru">Мать подарила дочери участок рыночной стоимостью $69 000; её
+          скорректированный базис — $39 000. Уплаченный налог на дарение — $9 000. Других
+          подарков этому получателю в году не было.</p>
+        <p lang="en">A mother gave her daughter a plot worth $69,000; her adjusted basis was
+          $39,000. The gift tax paid was $9,000. There were no other gifts to this recipient in
+          the year.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Прирост стоимости: 69 000 − 39 000</span><span lang="en">Net increase in value: 69,000 − 39,000</span></td>
+              <td data-num="30000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Сумма дарения: 69 000 минус годовое освобождение <span data-fig="gift_exclusion"></span></span><span lang="en">Amount of the gift: 69,000 less the annual exclusion of <span data-fig="gift_exclusion"></span></span></td>
+              <td data-num="50000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля прироста в сумме дарения</span><span lang="en">The increase as a share of the gift</span></td>
+              <td data-num="60" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Прибавка к базису: 9 000 × 60%</span><span lang="en">Added to basis: 9,000 × 60%</span></td>
+              <td data-num="5400"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Базис дочери</span><span lang="en">The daughter's basis</span></td>
+              <td data-num="44400"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Логика прибавки в том, что налогом на дарение обложен и тот прирост, который
+          подоходный налог ещё не догнал. Прибавляется только та доля налога, что приходится на
+          прирост, — иначе одна и та же стоимость освободилась бы дважды.</p>
+        <p lang="en">The reason for the addition is that the gift tax was charged on appreciation
+          the income tax has not yet caught. Only the share of the tax attributable to that
+          appreciation is added — otherwise the same value would escape twice.</p>
+        <p lang="ru">Заготовленные неверные ответы: {48000} — прибавлен весь налог; {39000} —
+          налог не прибавлен вовсе; {42913} — доля посчитана от рыночной стоимости $69 000, а не
+          от суммы дарения; {69000} — взята рыночная стоимость, будто это наследство.</p>
+        <p lang="en">The prepared wrong answers: {48000} — the whole tax added; {39000} — no tax
+          added at all; {42913} — the fraction taken over the $69,000 market value instead of the
+          amount of the gift; {69000} — the market value used, as though this were an
+          inheritance.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Наследство</span><span lang="en">Inherited property</span></h3>
+
+    <p lang="ru">Базис унаследованного имущества — <strong>рыночная стоимость на день смерти</strong>.
+      Управляющий наследством вправе выбрать альтернативную дату — через
+      <span data-fig="alt_valuation_months"></span> месяцев, — и тогда базисом станет стоимость
+      на неё. Выбор делается для всего имущества сразу, а не для отдельных активов.</p>
+    <p lang="en">The basis of inherited property is its <strong>fair market value on the date of
+      death</strong>. The personal representative may elect the alternate valuation date —
+      <span data-fig="alt_valuation_months"></span> months later — and the value on that date
+      becomes the basis. The election applies to all the property at once, not asset by asset.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Срок владения унаследованным — всегда долгосрочный</span><span lang="en">Inherited property is always long-term</span></h3>
+      <p lang="ru">Наследник продал акции через две недели после смерти наследодателя. Прирост
+        всё равно <strong>долгосрочный</strong>: у унаследованного имущества срок владения
+        считается длительным независимо от того, сколько оно фактически пробыло у наследника и
+        сколько было у умершего. Заготовленный неверный ответ предлагает краткосрочный прирост,
+        и по календарю он выглядит правильным.</p>
+      <p lang="en">An heir sold the shares a fortnight after the death. The gain is
+        <strong>long-term</strong> all the same: inherited property is treated as held long-term
+        whatever the time it actually spent in the heir's hands or the decedent's. The prepared
+        wrong answer offers a short-term gain, and by the calendar it looks right.</p>
+      <p lang="ru">Та же оценка по рыночной стоимости применяется к половине общей собственности
+        супругов и к имуществу, перешедшему по праву пережившего, — если только доля не была
+        куплена у неродственника за плату. <span class="cite">Pub. 551, Inherited Property</span></p>
+      <p lang="en">The same market-value basis applies to one-half of community property and to
+        property passing by right of survivorship — unless the interest was bought for
+        consideration from someone other than a spouse.
+        <span class="cite">Pub. 551, Inherited Property</span></p>
+    </div>
+
+    <h3><span lang="ru">Перевод личного имущества в деловое</span><span lang="en">Converting personal property to business use</span></h3>
+
+    <p lang="ru">Вы жили в доме, а потом сдали его. С этого момента у одного объекта появляются
+      <strong>три</strong> разных базиса, и путать их — самая частая ошибка темы.</p>
+    <p lang="en">You lived in the house and then let it. From that moment one property has
+      <strong>three</strong> different bases, and confusing them is the commonest error in the
+      subject.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Для чего</span><span lang="en">What for</span></th>
+          <th><span lang="ru">Чему равен</span><span lang="en">What it is</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Для амортизации</span><span lang="en">For depreciation</span></th>
+          <td><span lang="ru">Меньшая из скорректированного базиса и рыночной стоимости на день перевода</span><span lang="en">The lesser of the adjusted basis and the market value on the date of the change</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Для прибыли при продаже</span><span lang="en">For gain on a later sale</span></th>
+          <td><span lang="ru">Скорректированный базис на день продажи — без всякой оглядки на рыночную стоимость в день перевода</span><span lang="en">The adjusted basis at the date of sale — with no regard to the market value at the date of the change</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Для убытка при продаже</span><span lang="en">For loss on a later sale</span></th>
+          <td><span lang="ru">Меньшая из тех же двух величин на день перевода, затем уменьшенная на амортизацию</span><span lang="en">The lesser of the same two figures at the date of the change, then reduced by depreciation</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Смысл правила в том, что падение цены, случившееся, пока жильё было личным, —
+      личный убыток, и в деловые он не переходит. Именно поэтому для убытка берётся заниженная
+      величина, а для прибыли — нет.</p>
+    <p lang="en">The point of the rule is that a fall in value while the home was personal is a
+      personal loss and does not migrate into the business. That is exactly why the lower figure
+      is used for a loss and not for a gain.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-3. Дом, ставший арендным</span><span lang="en">Example 6-3. A home that became a rental</span></div>
+      <div class="example__body">
+        <p lang="ru">Дом построен за $220 000 на участке за $40 000. Позже сделаны постоянные
+          улучшения на $15 000 и заявлен вычет по ущербу от стихийного бедствия $5 000. На день
+          перевода в аренду рыночная стоимость всего объекта — $250 000, из них $50 000 земля и
+          $200 000 дом. За годы аренды начислено $30 000 амортизации.</p>
+        <p lang="en">A house was built for $220,000 on a lot costing $40,000. Later $15,000 of
+          permanent improvements were made and a $5,000 casualty loss was claimed. At the date of
+          the change to rental use the whole property was worth $250,000, of which $50,000 was the
+          land and $200,000 the house. Over the rental years $30,000 of depreciation was taken.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Скорректированный базис дома: 220 000 + 15 000 − 5 000</span><span lang="en">Adjusted basis of the house: 220,000 + 15,000 − 5,000</span></td>
+              <td data-num="230000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">База для амортизации: меньшая из 230 000 и 200 000</span><span lang="en">Basis for depreciation: the lesser of 230,000 and 200,000</span></td>
+              <td data-num="200000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Базис для прибыли: 230 000 + 40 000 земли − 30 000</span><span lang="en">Basis for gain: 230,000 + 40,000 of land − 30,000</span></td>
+              <td data-num="240000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Базис для убытка: меньшая из 270 000 и 250 000, минус 30 000</span><span lang="en">Basis for loss: the lesser of 270,000 and 250,000, less 30,000</span></td>
+              <td data-num="220000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Земля в базу амортизации не входит никогда, но в базис для прибыли и убытка
+          входит: продаётся-то объект целиком. Между $220 000 и $240 000 снова получается зона,
+          где нет ни прибыли, ни убытка, — по той же арифметике, что и с подарком.</p>
+        <p lang="en">Land never enters the basis for depreciation, but it does enter the basis for
+          gain and for loss: what is sold is the whole property. Between $220,000 and $240,000
+          there is again a zone with neither gain nor loss — by the same arithmetic as with a
+          gift.</p>
+        <p lang="ru">Заготовленные неверные ответы: {230000} как база для амортизации — рыночная
+          стоимость не сопоставлена; {250000} — взята рыночная стоимость всего объекта вместе с
+          землёй; {270000} как базис для убытка — сравнение проведено не с той величиной;
+          {195000} — из базы амортизации вычтена сама амортизация, хотя она уже учтена в
+          базисе.</p>
+        <p lang="en">The prepared wrong answers: {230000} as the basis for depreciation — the market
+          value never compared; {250000} — the market value of the whole property taken, land
+          included; {270000} as the basis for loss — the comparison made against the wrong figure;
+          {195000} — the depreciation subtracted from the depreciable basis, though it is already
+          reflected in basis.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s62">
+      <h2><span class="num">6.2</span>
+        <span lang="ru">Как базис меняется</span>
+        <span lang="en">How basis changes</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Начальный базис живёт не сам по себе: он движется вслед за событиями, которые
+      имеют налоговое значение. Проще всего держать в голове направление: <strong>вложили ещё —
+      базис вверх; получили налоговую выгоду — базис вниз</strong>.</p>
+    <p lang="en">Initial basis does not stand still: it moves with events that have tax
+      significance. The easiest thing to hold onto is the direction: <strong>put more in and basis
+      goes up; take a tax benefit and basis goes down</strong>.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Увеличивают базис</span><span lang="en">Increase basis</span></th>
+          <th><span lang="ru">Уменьшают базис</span><span lang="en">Decrease basis</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Улучшения, продлевающие срок службы не меньше чем на год или существенно повышающие стоимость</span><span lang="en">Improvements prolonging life by at least a year or materially increasing value</span></td>
+          <td><span lang="ru">Амортизация и списание нематериальных активов — <strong>заявленные или полагавшиеся</strong></span><span lang="en">Depreciation and amortization — <strong>allowed or allowable</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Гонорары юристов за защиту титула и премии по страхованию титула</span><span lang="en">Legal fees to defend title and title insurance premiums</span></td>
+          <td><span lang="ru">Вычет по §179 — он приравнен к амортизации</span><span lang="en">The section 179 deduction — treated as depreciation</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Взносы за благоустройство, повышающее стоимость участка</span><span lang="en">Assessments for local benefits that raise the value of the land</span></td>
+          <td><span lang="ru">Вычет по ущербу от стихийного бедствия или кражи и полученное страховое возмещение</span><span lang="en">A casualty or theft loss deduction and any insurance recovery</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Изменение зонирования, увеличивающее стоимость</span><span lang="en">A zoning change that increases value</span></td>
+          <td><span lang="ru">Необлагаемые распределения корпорации и возврат капитала</span><span lang="en">Nontaxable corporate distributions and returns of capital</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Расходы на снос строения и его несписанный базис — но в базис <em>земли</em>, а не строения</span><span lang="en">Demolition costs and the structure's remaining basis — but into the basis of the <em>land</em>, not the structure</span></td>
+          <td><span lang="ru">Исключённые из дохода субсидии на энергосбережение, часть кредитов и скидки от продавца</span><span lang="en">Energy conservation subsidies excluded from income, part of certain credits, and rebates from the seller</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">«Заявленная или полагавшаяся» — берётся большая</span><span lang="en">“Allowed or allowable” means the larger</span></h3>
+      <p lang="ru">Базис уменьшается на амортизацию, которую вы <em>могли</em> заявить, даже если
+        не заявили. Пропустили амортизацию за три года — базис всё равно уменьшен на неё, а
+        вычета вы не получили. Убыток от этого двойной, и восстановить его можно только
+        исправлением метода учёта, а не молчанием.</p>
+      <p lang="en">Basis is reduced by the depreciation you <em>could</em> have claimed, even if you
+        did not. Skip three years of depreciation and basis is reduced by it all the same, with no
+        deduction to show. The loss is a double one, and the only way back is a change of
+        accounting method, not silence.</p>
+      <p lang="ru">Заготовленный неверный ответ считает базис по фактически заявленным суммам —
+        и получается больше. Он выглядит справедливым, и в этом его сила.
+        <span class="cite">Pub. 551, Adjusted Basis</span></p>
+      <p lang="en">The prepared wrong answer figures basis from the amounts actually claimed — and
+        comes out higher. It looks fair, and that is its strength.
+        <span class="cite">Pub. 551, Adjusted Basis</span></p>
+    </div>
+
+    <h3><span lang="ru">Акции: дробление и права</span><span lang="en">Shares: splits and rights</span></h3>
+
+    <p lang="ru">Необлагаемое распределение по акциям базис не создаёт — оно его
+      <strong>перераспределяет</strong>. Общая сумма вложенного не меняется; меняется только то,
+      на сколько бумаг она разложена.</p>
+    <p lang="en">A nontaxable distribution on shares does not create basis — it
+      <strong>redistributes</strong> it. The total invested is unchanged; only the number of
+      pieces it is spread over changes.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что произошло</span><span lang="en">What happened</span></th>
+          <th><span lang="ru">Что с базисом</span><span lang="en">What happens to basis</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Дробление акций: новые бумаги того же вида</span><span lang="en">A stock split: new shares identical to the old</span></th>
+          <td><span lang="ru">Прежний базис просто делится на новое общее число акций</span><span lang="en">The old basis is simply divided among the new total number of shares</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Распределены бумаги другого вида</span><span lang="en">Shares of a different kind are distributed</span></th>
+          <td><span lang="ru">Базис делится пропорционально рыночным стоимостям старого и нового на дату распределения</span><span lang="en">Basis is split in proportion to the market values of the old and the new at the date of distribution</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Получены права на покупку акций</span><span lang="en">Rights to buy shares are received</span></th>
+          <td><span lang="ru">Если права стоят меньше <span data-fig="stock_rights_pct"></span> стоимости акции, их базис <strong>нулевой</strong> — если только вы не выбрали распределение базиса</span><span lang="en">If the rights are worth less than <span data-fig="stock_rights_pct"></span> of the value of the stock, their basis is <strong>zero</strong> — unless you elect to allocate basis</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Частичное выбытие делит базис, а не обнуляет его</span><span lang="en">A partial disposition splits basis, it does not zero it</span></h3>
+      <p lang="ru">Продана часть участка, снесено одно из зданий, выбыл один узел оборудования.
+        Базис целого делится между частями <strong>справедливо</strong> — обычно по относительным
+        рыночным стоимостям, — и к выбывшей части относится только её доля. Заготовленный
+        неверный ответ ставит против выручки от части <em>весь</em> базис объекта, отчего
+        прибыль исчезает.</p>
+      <p lang="en">Part of a plot is sold, one of the buildings is demolished, a single component
+        goes out. The basis of the whole is divided among the parts <strong>equitably</strong> —
+        ordinarily by relative market values — and only its share attaches to the part disposed
+        of. The prepared wrong answer sets the <em>whole</em> basis against the proceeds of the
+        part, and the gain vanishes.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s63">
+      <h2><span class="num">6.3</span>
+        <span lang="ru">Обмен на подобное</span>
+        <span lang="en">Like-kind exchanges</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Обмен — это продажа, и прибыль по ней возникает. §1031 позволяет
+      <strong>не признавать</strong> её сейчас, если вы остались, по сути, в том же вложении.
+      Проверка идёт по четырём условиям подряд, и провал любого выбрасывает сделку из §1031
+      целиком.</p>
+    <p lang="en">An exchange is a sale, and gain arises on it. Section 1031 lets you
+      <strong>not recognise</strong> that gain now, if in substance you remain in the same
+      investment. Four conditions are checked in turn, and failing any one throws the transaction
+      out of section 1031 entirely.</p>
+
+    <ol class="ladder">
+      <li>
+        <p class="ladder__q"><span lang="ru">Это недвижимость?</span><span lang="en">Is it real property?</span></p>
+        <p class="ladder__out"><span lang="ru">Нет — §1031 не применяется. С 2018 года оборудование, транспорт, скот, ценные бумаги и доли в партнёрстве под него не подпадают</span><span lang="en">No — section 1031 does not apply. Since 2018 equipment, vehicles, livestock, securities and partnership interests are outside it</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">И отданное, и полученное держатся для бизнеса или для инвестиций?</span><span lang="en">Are both the property given and the property received held for business or investment?</span></p>
+        <p class="ladder__out"><span lang="ru">Нет — §1031 не применяется. Личное жильё и имущество для перепродажи не подходят. При этом «бизнес» и «инвестиции» между собой меняются свободно</span><span lang="en">No — section 1031 does not apply. A personal residence and property held for resale do not qualify. Business and investment property, though, exchange freely for each other</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Обе внутри США или обе за его пределами?</span><span lang="en">Are both inside the United States, or both outside it?</span></p>
+        <p class="ladder__out"><span lang="ru">Нет — §1031 не применяется. Американская и иностранная недвижимость подобными не считаются, хотя внутри каждой группы подобным считается почти всё</span><span lang="en">No — section 1031 does not apply. Domestic and foreign real property are not like kind, though within each group almost everything is</span></p>
+      </li>
+      <li class="is-rest">
+        <p class="ladder__q"><span lang="ru">Сроки соблюдены?</span><span lang="en">Were the deadlines met?</span></p>
+        <p class="ladder__out"><span lang="ru">Да — отсрочка действует. Нет — прибыль признаётся полностью, каким бы подобным ни было имущество</span><span lang="en">Yes — the deferral applies. No — the gain is fully recognised, however like kind the property may be</span></p>
+      </li>
+    </ol>
+
+    <p lang="ru">«Подобное» понимается широко: важна природа и характер, а не сорт и качество.
+      Пустой участок подобен участку со зданием, городская недвижимость — сельской, арендованная
+      на <strong>тридцать лет и дольше</strong> земля приравнена к самой земле.</p>
+    <p lang="en">“Like kind” is read broadly: what matters is nature and character, not grade or
+      quality. Bare land is like kind with land carrying a building, city property with rural, and
+      a lease running <strong>thirty years or more</strong> is treated as the land itself.</p>
+
+    <h3><span lang="ru">Сроки</span><span lang="en">The deadlines</span></h3>
+
+    <div class="plot">
+      <svg viewBox="0 0 640 200" role="img">
+        <title lang="ru">От передачи отданного объекта отсчитываются сорок пять дней на письменное определение замены и сто восемьдесят дней на её получение</title>
+        <title lang="en">From the transfer of the relinquished property run forty-five days to identify the replacement in writing and one hundred and eighty days to receive it</title>
+
+        <text lang="ru" class="plot__cap" x="470" y="42" text-anchor="middle">срок подачи декларации — если он раньше</text>
+        <text lang="en" class="plot__cap" x="470" y="42" text-anchor="middle">the return's due date — if it comes first</text>
+
+        <rect class="plot__box--keep" x="80" y="58" width="115" height="28" />
+        <rect class="plot__box" x="195" y="58" width="345" height="28" />
+
+        <text lang="ru" x="137" y="77" text-anchor="middle">определить</text>
+        <text lang="en" x="137" y="77" text-anchor="middle">identify</text>
+        <text lang="ru" x="367" y="77" text-anchor="middle">получить</text>
+        <text lang="en" x="367" y="77" text-anchor="middle">receive</text>
+
+        <line class="plot__edge" x1="470" y1="48" x2="470" y2="96" />
+
+        <line class="plot__axis" x1="60" y1="120" x2="606" y2="120" />
+        <polygon class="plot__head" points="606,114 620,120 606,126" />
+
+        <line class="plot__link" x1="80" y1="86" x2="80" y2="128" />
+        <line class="plot__link" x1="195" y1="86" x2="195" y2="128" />
+        <line class="plot__link" x1="540" y1="86" x2="540" y2="128" />
+
+        <text lang="ru" class="plot__cap" x="80" y="144" text-anchor="middle">передача</text>
+        <text lang="en" class="plot__cap" x="80" y="144" text-anchor="middle">transfer</text>
+        <text lang="ru" class="plot__cap" x="80" y="158" text-anchor="middle">отданного</text>
+        <text lang="en" class="plot__cap" x="80" y="158" text-anchor="middle">of the old</text>
+
+        <text class="plot__val" data-fig="lke_identify_days" x="195" y="144" text-anchor="middle"></text>
+        <text lang="ru" class="plot__cap" x="195" y="158" text-anchor="middle">дней</text>
+        <text lang="en" class="plot__cap" x="195" y="158" text-anchor="middle">days</text>
+
+        <text class="plot__val" data-fig="lke_complete_days" x="540" y="144" text-anchor="middle"></text>
+        <text lang="ru" class="plot__cap" x="540" y="158" text-anchor="middle">дней</text>
+        <text lang="en" class="plot__cap" x="540" y="158" text-anchor="middle">days</text>
+      </svg>
+    </div>
+    <p class="plot__note" lang="ru">Оба срока идут от одного дня — передачи отданного объекта, — и
+      второй не начинается там, где кончился первый. Пунктир показывает главную ловушку: если
+      срок подачи декларации за год передачи наступает раньше 180-го дня, действует он. Обмен,
+      начатый в ноябре, надо либо завершить к 15 апреля, либо продлить декларацию — иначе
+      отсрочка теряется на календаре, а не по существу.</p>
+    <p class="plot__note" lang="en">Both periods run from the same day — the transfer of the
+      relinquished property — and the second does not begin where the first ends. The dashed line
+      marks the main trap: if the due date of the return for the year of transfer falls before the
+      180th day, that is the deadline. An exchange begun in November must either be completed by
+      April 15 or the return extended — otherwise the deferral is lost on the calendar, not on the
+      merits.</p>
+
+    <h3><span lang="ru">Добавка и признанная прибыль</span><span lang="en">Boot and recognised gain</span></h3>
+
+    <p lang="ru">Чистого обмена почти не бывает: стоимости не сходятся, и одна сторона доплачивает.
+      Всё, что получено сверх подобного имущества, называется <strong>добавкой</strong>
+      <span class="orig">(boot)</span>, и ровно на неё отсрочка не распространяется.</p>
+    <p lang="en">A clean swap is rare: the values do not match and one side pays the difference.
+      Everything received beyond like-kind property is <strong>boot</strong>, and it is exactly on
+      the boot that the deferral does not reach.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Признаётся <strong>меньшая</strong> из двух величин: реализованная прибыль или полученная добавка</span><span lang="en">The gain recognised is the <strong>lesser</strong> of the realised gain and the boot received</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Добавкой считаются деньги, иное неподобное имущество по рыночной стоимости и <strong>чистое</strong> освобождение от обязательств</span><span lang="en">Boot means cash, other non-qualifying property at market value, and <strong>net</strong> relief from liabilities</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Если обе стороны принимают долги друг друга, добавкой считается только разница</span><span lang="en">Where each side assumes the other's debt, only the difference is boot</span></td></tr>
+        <tr><th>4</th><td><span lang="ru"><strong>Убыток не признаётся никогда</strong> — ни при какой добавке. Он уходит в базис полученного</span><span lang="en"><strong>A loss is never recognised</strong> — with any amount of boot. It goes into the basis of the property received</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Базис полученного собирается из тех же слагаемых и в этом порядке:</p>
+    <p lang="en">The basis of the property received is assembled from the same pieces, in this
+      order:</p>
+
+    <div class="scroller">
+    <table class="ledger">
+      <tbody>
+        <tr>
+          <td><span lang="ru">Скорректированный базис отданного</span><span lang="en">Adjusted basis of the property given up</span></td>
+          <td><span lang="ru">+</span><span lang="en">+</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Признанная прибыль</span><span lang="en">Gain recognised</span></td>
+          <td><span lang="ru">+</span><span lang="en">+</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Отданная добавка: деньги, принятые долги, иное имущество</span><span lang="en">Boot given: cash, liabilities assumed, other property</span></td>
+          <td><span lang="ru">+</span><span lang="en">+</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Полученная добавка: деньги, освобождение от долгов, иное имущество</span><span lang="en">Boot received: cash, relief from liabilities, other property</span></td>
+          <td><span lang="ru">−</span><span lang="en">−</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Базис полученного имущества</span><span lang="en">Basis of the property received</span></td>
+          <td><span lang="ru">=</span><span lang="en">=</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Проверка, которая почти всегда выручает: базис полученного должен равняться его
+      рыночной стоимости <em>минус отложенная прибыль</em>. Если сходится — расчёт верен.</p>
+    <p lang="en">A check that almost always saves you: the basis of the property received should
+      equal its market value <em>less the deferred gain</em>. If that agrees, the computation is
+      right.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-4. Обмен с деньгами и долгом</span><span lang="en">Example 6-4. An exchange with cash and a mortgage</span></div>
+      <div class="example__body">
+        <p lang="ru">Отдан инвестиционный участок: скорректированный базис $180 000, рыночная
+          стоимость $300 000, на нём ипотека $60 000, которую принимает другая сторона. Получены
+          участок рыночной стоимостью $220 000 и $20 000 деньгами.</p>
+        <p lang="en">An investment plot is given up: adjusted basis $180,000, market value $300,000,
+          carrying a $60,000 mortgage the other side assumes. Received: a plot worth $220,000 and
+          $20,000 in cash.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Получено всего: 220 000 + 20 000 + освобождение от долга 60 000</span><span lang="en">Total received: 220,000 + 20,000 + 60,000 of debt relief</span></td>
+              <td data-num="300000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Реализованная прибыль: 300 000 − 180 000</span><span lang="en">Realised gain: 300,000 − 180,000</span></td>
+              <td data-num="120000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Добавка: деньги 20 000 плюс освобождение от долга 60 000</span><span lang="en">Boot: 20,000 of cash plus 60,000 of debt relief</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Признанная прибыль: меньшая из двух</span><span lang="en">Gain recognised: the lesser of the two</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Базис полученного: 180 000 + 80 000 − 80 000</span><span lang="en">Basis received: 180,000 + 80,000 − 80,000</span></td>
+              <td data-num="180000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Проверка сходится: рыночная стоимость полученного $220 000 минус отложенные
+          $40 000 — те самые $180 000. Отложенная прибыль равна реализованной за вычетом
+          признанной.</p>
+        <p lang="en">The check agrees: the $220,000 market value of what was received less the
+          $40,000 deferred is exactly $180,000. The deferred gain is the realised gain less the
+          recognised one.</p>
+        <p lang="ru">Заготовленные неверные ответы: {120000} признанной прибыли — отсрочка забыта
+          целиком; {20000} — добавкой сочтены только деньги, а освобождение от долга нет;
+          {0} — «обмен не облагается»; и базис {220000} — взята рыночная стоимость полученного,
+          отчего отложенная прибыль исчезает навсегда.</p>
+        <p lang="en">The prepared wrong answers: {120000} of recognised gain — the deferral
+          forgotten entirely; {20000} — only the cash treated as boot, the debt relief left out;
+          {0} — “an exchange is not taxed”; and a basis of {220000} — the market value of what was
+          received, which makes the deferred gain disappear for good.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Отсрочка не бывает выборочной</span><span lang="en">The deferral is not optional</span></h3>
+      <p lang="ru">§1031 — не льгота, от которой можно отказаться. Если сделка подпадает под него
+        по всем признакам, непризнание прибыли <strong>обязательно</strong>. Отсюда следствие,
+        которое и проверяют: убыток по подобному обмену тоже не признаётся, и вычесть его
+        нельзя. Хотите признать убыток — продавайте, а не меняйте.</p>
+      <p lang="en">Section 1031 is not a relief you may decline. Where the transaction meets every
+        test, non-recognition is <strong>mandatory</strong>. Hence the consequence that gets
+        tested: a loss on a like-kind exchange is not recognised either, and cannot be deducted.
+        If you want the loss, sell rather than exchange.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s64">
+      <h2><span class="num">6.4</span>
+        <span lang="ru">Вынужденное выбытие</span>
+        <span lang="en">Involuntary conversions</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Имущество погибло, украдено, изъято или конфисковано — либо конфискация лишь
+      нависла и была объявлена. Взамен пришли страховка, возмещение или другое имущество. §1033
+      позволяет не признавать прибыль, если полученное вложено в <strong>замену</strong>.</p>
+    <p lang="en">Property is destroyed, stolen, seized, requisitioned or condemned — or the
+      condemnation is merely threatened and announced. Insurance, an award or other property comes
+      instead. Section 1033 lets the gain go unrecognised if what came in is put into a
+      <strong>replacement</strong>.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Во что превратилось имущество?</span>
+        <span lang="en">What did the property turn into?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Сразу в подобное имущество</span><span lang="en">Directly into similar property</span></b>
+          <span lang="ru">Отсрочка <strong>обязательна</strong>, выбора нет. Базис нового равен базису погибшего</span>
+          <span lang="en">Deferral is <strong>mandatory</strong>, there is no election. The basis of the new equals that of the old</span></div>
+        <div class="fork__b">
+          <b><span lang="ru">В деньги или в неподходящее имущество</span><span lang="en">Into money or non-qualifying property</span></b>
+          <span lang="ru">Отсрочка <strong>по выбору</strong> и только если замена куплена в срок. Признаётся прибыль в той части, что не вложена в замену</span>
+          <span lang="en">Deferral is <strong>elective</strong>, and only if a replacement is bought in time. Gain is recognised to the extent the proceeds are not reinvested</span></div>
+      </div>
+    </div>
+
+    <p lang="ru">Три вещи, о которых чаще всего забывают. <strong>Убыток не откладывается</strong>:
+      §1033 говорит только о прибыли. Источник денег для покупки замены безразличен — можно
+      купить её в кредит, а страховку потратить на что угодно. И полученное по наследству или в
+      дар заменой не считается: замену надо <em>купить</em>.</p>
+    <p lang="en">Three things most often forgotten. <strong>A loss is not deferred</strong>: section
+      1033 speaks only of gain. The source of the money for the replacement does not matter — it
+      may be bought on credit and the insurance spent on anything. And property received by gift
+      or inheritance does not count as a replacement: it must be <em>bought</em>.</p>
+
+    <h3><span lang="ru">Сколько времени на замену</span><span lang="en">How long there is to replace</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Случай</span><span lang="en">The case</span></th>
+          <th><span lang="ru">Срок</span><span lang="en">The period</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Общее правило</span><span lang="en">The general rule</span></th>
+          <td><span lang="ru"><span data-fig="ic_replace_years"></span> года после конца первого налогового года, в котором признана хоть какая-то часть прибыли</span><span lang="en"><span data-fig="ic_replace_years"></span> years after the end of the first tax year in which any part of the gain is realized</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Конфискация деловой или инвестиционной недвижимости</span><span lang="en">Condemnation of business or investment real property</span></th>
+          <td><span lang="ru"><span data-fig="ic_condemn_years"></span> года. Не действует, если замена совершается покупкой контроля над корпорацией</span><span lang="en"><span data-fig="ic_condemn_years"></span> years. Not available where the replacement is made by acquiring control of a corporation</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Начало периода — <strong>более ранняя</strong> из двух дат: день выбытия имущества
+      или день, когда возникла угроза конфискации. Конец же считается не от события, а от конца
+      налогового <em>года</em>, и потому срок почти всегда длиннее, чем кажется.</p>
+    <p lang="en">The period begins on the <strong>earlier</strong> of two dates: the day the
+      property went, or the day the threat of condemnation arose. Its end, though, is measured not
+      from the event but from the end of the tax <em>year</em>, and so the period is nearly always
+      longer than it looks.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Два стандарта замены, и они устроены наоборот</span><span lang="en">Two replacement standards, and they run opposite ways</span></h3>
+      <p lang="ru">По общему правилу замена должна быть <strong>подобной или родственной по
+        использованию</strong> — это <em>жёстче</em>, чем «подобное» в §1031. Владелец-пользователь
+        должен получить вещь, работающую так же; дом, конфискованный у жильца, заменяется домом,
+        а не магазином.</p>
+      <p lang="en">Under the general rule the replacement must be <strong>similar or related in
+        service or use</strong> — which is <em>stricter</em> than “like kind” in section 1031. An
+        owner-user must get something that functions the same way; a condemned home is replaced by
+        a home, not by a grocery store.</p>
+      <p lang="ru">Но при <strong>конфискации</strong> деловой или инвестиционной недвижимости
+        достаточно мягкого стандарта «подобного» из §1031. И здесь всё выворачивается: для
+        §1031 американская и иностранная недвижимость подобными <em>не</em> считаются, а при
+        конфискации — <em>считаются</em>. Одно и то же слово, два разных смысла в соседних
+        параграфах. <span class="cite">Pub. 544, Condemnations</span></p>
+      <p lang="en">But on a <strong>condemnation</strong> of business or investment real property
+        the looser “like kind” standard of section 1031 is enough. And here everything turns over:
+        for section 1031 domestic and foreign real property are <em>not</em> like kind, while on a
+        condemnation they <em>are</em>. One phrase, two meanings in neighbouring sections.
+        <span class="cite">Pub. 544, Condemnations</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-5. Замена дешевле возмещения</span><span lang="en">Example 6-5. A replacement cheaper than the award</span></div>
+      <div class="example__body">
+        <p lang="ru">Склад со скорректированным базисом $250 000 конфискован под дорогу.
+          Возмещение — $400 000. В срок куплен другой склад за $360 000, разница потрачена на
+          погашение кредита. Выбор об отсрочке сделан.</p>
+        <p lang="en">A warehouse with an adjusted basis of $250,000 was condemned for a road. The
+          award was $400,000. Within the period another warehouse was bought for $360,000 and the
+          difference used to pay down a loan. The deferral election was made.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Реализованная прибыль: 400 000 − 250 000</span><span lang="en">Realised gain: 400,000 − 250,000</span></td>
+              <td data-num="150000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Не вложено в замену: 400 000 − 360 000</span><span lang="en">Not reinvested: 400,000 − 360,000</span></td>
+              <td data-num="40000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Признанная прибыль: меньшая из двух</span><span lang="en">Gain recognised: the lesser of the two</span></td>
+              <td data-num="40000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Базис нового склада: 360 000 − отложенные 110 000</span><span lang="en">Basis of the new warehouse: 360,000 − 110,000 deferred</span></td>
+              <td data-num="250000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Признаётся не «часть прибыли пропорционально», а <strong>вся невложенная
+          сумма</strong> — до величины реализованной прибыли. То, на что кредит был погашен,
+          значения не имеет: деньги не обязаны быть теми же самыми, но вложить надо не меньше,
+          чем получено.</p>
+        <p lang="en">What is recognised is not “a proportionate part of the gain” but the
+          <strong>whole amount not reinvested</strong> — up to the realised gain. What the loan
+          repayment was for is irrelevant: the money need not be the same money, but no less than
+          was received must go in.</p>
+        <p lang="ru">Заготовленные неверные ответы: {150000} — отсрочка не применена;
+          {0} — замена сочтена полной, раз склад куплен; {15000} — прибыль поделена
+          пропорционально доле невложенного; и базис {360000} — уменьшение на отложенную прибыль
+          пропущено, отчего она никогда не вернётся.</p>
+        <p lang="en">The prepared wrong answers: {150000} — no deferral applied; {0} — the
+          replacement treated as complete because a warehouse was bought; {15000} — the gain
+          prorated by the share not reinvested; and a basis of {360000} — the reduction for the
+          deferred gain omitted, so that it would never come back.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Базис — это отсроченный, а не отменённый налог. Всякий раз, когда прибыль не признана, базис нового имущества занижается ровно на неё</span><span lang="en">Basis is deferred tax, not cancelled tax. Whenever gain goes unrecognised, the basis of the new property is written down by exactly that amount</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">В базис входят принятые на себя обязательства: купили здание за $20 000 и приняли ипотеку $80 000 — базис $100 000</span><span lang="en">Liabilities assumed go into basis: buy a building for $20,000 cash and assume an $80,000 mortgage and the basis is $100,000</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Проценты, страховка и обычный ремонт в базис не идут: это расходы на пользование, а не на приобретение</span><span lang="en">Interest, insurance and ordinary repairs do not go into basis: they are costs of using the property, not of acquiring it</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Скидка от продавца — не доход. Она уменьшает цену и базис</span><span lang="en">A rebate from the seller is not income. It reduces the price and the basis</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Расходы на выбор объекта вычитаются, расходы на его приобретение капитализируются. Зарплата своих работников и накладные не капитализируются никогда</span><span lang="en">The cost of deciding which property to buy is deducted; the cost of acquiring it is capitalized. Employee pay and overhead are never capitalized</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Снос строения: и расходы на снос, и несписанный базис уходят в базис <strong>земли</strong>, а не в вычет</span><span lang="en">On demolition, both the cost and the structure's remaining basis go into the basis of the <strong>land</strong>, not into a deduction</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Покупка целого бизнеса разносится остаточным методом по семи классам подряд, а не пропорционально рыночным стоимостям</span><span lang="en">The purchase of a whole business is spread by the residual method across seven classes in order, not in proportion to market values</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Гудвилл получает только то, что осталось. Если цена ниже суммарной рыночной стоимости активов, гудвилла нет</span><span lang="en">Goodwill gets only the residue. If the price is below the total market value of the assets, there is no goodwill</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Подарок с упавшей ценой даёт два базиса: базис дарителя для прибыли, рыночная стоимость для убытка, между ними — ни того ни другого</span><span lang="en">A gift that has fallen in value gives two bases: the donor's basis for gain, market value for loss, and between them neither</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Срок владения подарком тоже двоится: при прибыли к своему сроку прибавляется срок дарителя, при убытке отсчёт идёт со дня после дарения</span><span lang="en">The holding period of a gift splits too: for gain the donor's period is added, for loss the count starts the day after the gift</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">К базису прибавляется не весь налог на дарение, а лишь доля, приходящаяся на прирост стоимости</span><span lang="en">Not all of the gift tax is added to basis, only the share attributable to the net increase in value</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Унаследованное имущество всегда долгосрочное, даже если продано на следующий день</span><span lang="en">Inherited property is always long-term, even if sold the next day</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Альтернативная дата оценки — через <span data-fig="alt_valuation_months"></span> месяцев, и выбирается она для всего наследства сразу</span><span lang="en">The alternate valuation date is <span data-fig="alt_valuation_months"></span> months later, and is elected for the whole estate at once</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">У переведённого в деловое имущества три базиса: для амортизации, для прибыли и для убытка. Совпадают они не всегда</span><span lang="en">Property converted to business use has three bases: for depreciation, for gain and for loss. They do not always coincide</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">Базис уменьшается на амортизацию <strong>заявленную или полагавшуюся</strong> — большую из двух. Не заявили — потеряли вычет, но не защитили базис</span><span lang="en">Basis is reduced by depreciation <strong>allowed or allowable</strong> — the greater of the two. Not claiming it loses the deduction without saving the basis</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">Дробление акций базис не создаёт: прежняя сумма делится на новое число бумаг</span><span lang="en">A stock split creates no basis: the old amount is divided among the new number of shares</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">Права на покупку акций стоимостью меньше <span data-fig="stock_rights_pct"></span> стоимости самой акции получают нулевой базис, если не выбрано иное</span><span lang="en">Stock rights worth less than <span data-fig="stock_rights_pct"></span> of the stock's value take a zero basis unless an election is made</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">С 2018 года §1031 применяется <strong>только к недвижимости</strong>. Оборудование, транспорт и ценные бумаги под него не подпадают</span><span lang="en">Since 2018 section 1031 applies <strong>to real property only</strong>. Equipment, vehicles and securities are outside it</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Американская и иностранная недвижимость по §1031 подобными не считаются. При конфискации по §1033 — считаются</span><span lang="en">Domestic and foreign real property are not like kind under section 1031. On a condemnation under section 1033 they are</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Аренда сроком <strong>тридцать лет и дольше</strong> приравнивается к недвижимости и обменивается на неё по §1031</span><span lang="en">A lease of <strong>thirty years or more</strong> is treated as real property and exchanges for it under section 1031</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Признаётся меньшая из реализованной прибыли и полученной добавки. Убыток по §1031 не признаётся никогда</span><span lang="en">The gain recognised is the lesser of the realised gain and the boot received. A loss under section 1031 is never recognised</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Освобождение от долга — это полученная добавка. При встречном принятии долгов добавкой считается только чистая разница</span><span lang="en">Relief from a liability is boot received. Where both sides assume debt, only the net difference is boot</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Сроки <span data-fig="lke_identify_days"></span> и <span data-fig="lke_complete_days"></span> дней идут от одного дня — передачи отданного объекта, — а не один за другим</span><span lang="en">The <span data-fig="lke_identify_days"></span> and <span data-fig="lke_complete_days"></span> day periods run from the same day — the transfer of the relinquished property — not one after the other</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Срок подачи декларации, если он раньше 180-го дня, обрывает обмен. Спасает продление декларации</span><span lang="en">The return's due date, if it falls before the 180th day, cuts the exchange short. Extending the return is what saves it</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Прямое превращение по §1033 отсрочку даёт <strong>обязательно</strong>, косвенное — только по выбору и только при покупке замены в срок</span><span lang="en">A direct conversion under section 1033 defers <strong>mandatorily</strong>; an indirect one only by election and only if a replacement is bought in time</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Признаётся вся сумма возмещения, не вложенная в замену, а не пропорциональная доля прибыли</span><span lang="en">What is recognised is the whole amount of the award not reinvested, not a proportionate share of the gain</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Убыток по §1033 не откладывается: параграф говорит только о прибыли</span><span lang="en">A loss is not deferred under section 1033: the section speaks only of gain</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Полученное в дар или по наследству заменой по §1033 не считается: замену надо купить</span><span lang="en">Property received by gift or inheritance is not a replacement under section 1033: it must be bought</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Срок замещения считается от конца <em>года</em>, а начинается с более ранней из двух дат: выбытия или угрозы конфискации</span><span lang="en">The replacement period is measured from the end of the <em>year</em>, and begins on the earlier of the disposition or the threat of condemnation</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Земля не амортизируется, а её улучшения — тротуары, ограждения, озеленение — амортизируются за <span data-fig="land_improve_years"></span> лет</span><span lang="en">Land is not depreciated, but its improvements — pavements, fencing, landscaping — are recovered over <span data-fig="land_improve_years"></span> years</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. Здание куплено за $30 000 наличными; покупатель принял на себя ипотеку $120 000, уплатил $4 000 брокеру и $2 500 за страхование титула. Каков базис?</span><span lang="en">1. A building was bought for $30,000 cash; the buyer assumed a $120,000 mortgage and paid $4,000 to a broker and $2,500 for title insurance. What is the basis?</span></summary>
+      <div>
+        <p lang="ru">$156 500. Принятая ипотека входит в базис так же, как деньги, а комиссия и
+          страхование титула — закрывающие расходы, тоже капитализируемые.</p>
+        <p lang="en">$156,500. An assumed mortgage enters basis just as cash does, and the
+          commission and title insurance are closing costs, likewise capitalized.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. Бизнес куплен целиком за $500 000. Рыночная стоимость всех активов — $560 000. Сколько достанется гудвиллу?</span><span lang="en">2. A business is bought as a whole for $500,000. The market value of all the assets is $560,000. How much goes to goodwill?</span></summary>
+      <div>
+        <p lang="ru">Ноль. По остаточному методу гудвилл получает только то, что осталось после
+          распределения цены по шести предыдущим классам. Цена ниже суммарной рыночной стоимости,
+          значит до седьмого класса она не доходит.</p>
+        <p lang="en">Nothing. Under the residual method goodwill takes only what is left after the
+          price has been spread over the six earlier classes. The price is below the total market
+          value, so it never reaches the seventh.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Подарены акции: базис дарителя $60 000, рыночная стоимость на день дарения $45 000. Одаряемый продал их за $52 000. Каков результат?</span><span lang="en">3. Shares were given away: the donor's basis $60,000, market value at the date of the gift $45,000. The donee sold them for $52,000. What is the result?</span></summary>
+      <div>
+        <p lang="ru">Ни прибыли, ни убытка. Цена продажи попала между рыночной стоимостью и базисом
+          дарителя: по базису дарителя вышел бы убыток, а его считать по этому базису нельзя; по
+          рыночной стоимости вышла бы прибыль, а её по этому базису считать нельзя.</p>
+        <p lang="en">Neither gain nor loss. The price fell between the market value and the donor's
+          basis: the donor's basis would give a loss, which may not be figured on that basis; the
+          market value would give a gain, which may not be figured on that one.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Наследник продал унаследованные акции через три недели после смерти наследодателя, который держал их два месяца. Какой это прирост?</span><span lang="en">4. An heir sold inherited shares three weeks after the death of a decedent who had held them for two months. What kind of gain is it?</span></summary>
+      <div>
+        <p lang="ru">Долгосрочный. У унаследованного имущества срок владения долгосрочный всегда —
+          и срок наследодателя, и срок наследника здесь ни при чём.</p>
+        <p lang="en">Long-term. Inherited property is always treated as held long-term — neither the
+          decedent's period nor the heir's has any bearing.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Владелец пять лет сдавал здание и ни разу не заявил амортизацию. Уменьшается ли базис при продаже?</span><span lang="en">5. An owner let a building for five years and never claimed depreciation. Is the basis reduced on a sale?</span></summary>
+      <div>
+        <p lang="ru">Да, на амортизацию <em>полагавшуюся</em>. Правило «заявленная или
+          полагавшаяся» берёт большую величину, поэтому пропуск вычета базис не сохраняет.
+          Исправить положение можно изменением метода учёта по форме 3115, а не умолчанием.</p>
+        <p lang="en">Yes, by the depreciation that was <em>allowable</em>. The “allowed or
+          allowable” rule takes the greater figure, so skipping the deduction does not preserve
+          basis. The way back is a change of accounting method on Form 3115, not silence.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. Обменяны инвестиционный участок в Техасе на участок в Испании. Подпадает ли обмен под §1031?</span><span lang="en">6. An investment plot in Texas was exchanged for one in Spain. Does section 1031 apply?</span></summary>
+      <div>
+        <p lang="ru">Нет. Американская и иностранная недвижимость подобными не считаются, и прибыль
+          признаётся полностью. Обратите внимание на противоположное правило при конфискации: там
+          та же пара считается подобной.</p>
+        <p lang="en">No. Domestic and foreign real property are not like kind, and the gain is fully
+          recognised. Note the opposite rule on a condemnation: there the same pair does count as
+          like kind.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">7. Обмен участками: отдан объект с базисом $90 000, получен объект стоимостью $80 000 и доплата $5 000. Каков результат?</span><span lang="en">7. An exchange of plots: property with a $90,000 basis given up, property worth $80,000 and $5,000 in cash received. What is the result?</span></summary>
+      <div>
+        <p lang="ru">Реализован убыток $5 000, и он <strong>не признаётся</strong>: по §1031 убыток
+          не вычитается никогда, сколько бы добавки ни было получено. Базис полученного —
+          $85 000: $90 000 минус полученные деньги.</p>
+        <p lang="en">A $5,000 loss is realised and is <strong>not recognised</strong>: under section
+          1031 a loss is never deducted, whatever boot is received. The basis of what was received
+          is $85,000: $90,000 less the cash.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">8. Отданный объект передан 1 ноября 2025 года. До какого дня надо получить замену?</span><span lang="en">8. The relinquished property was transferred on November 1, 2025. By when must the replacement be received?</span></summary>
+      <div>
+        <p lang="ru">До 15 апреля 2026 года, а не до 30 апреля — потому что берётся более ранняя из
+          двух дат: 180-й день или срок подачи декларации за 2025 год. Продление декларации
+          сдвигает и этот срок, поэтому его подают именно ради обмена.</p>
+        <p lang="en">By April 15, 2026, not April 30 — because the earlier of the two dates governs:
+          the 180th day or the due date of the 2025 return. Extending the return moves this
+          deadline too, which is precisely why it is filed.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">9. Оборудование погибло в пожаре; страховка $70 000, базис $50 000. Замена куплена за $75 000. Что признаётся?</span><span lang="en">9. Equipment was destroyed by fire; insurance $70,000, basis $50,000. A replacement was bought for $75,000. What is recognised?</span></summary>
+      <div>
+        <p lang="ru">Ничего: вложено больше, чем получено. Базис нового оборудования — $55 000:
+          $75 000 минус отложенная прибыль $20 000. Заметьте, что §1033 работает и с движимым
+          имуществом — в отличие от §1031, который после 2017 года остался только для
+          недвижимости.</p>
+        <p lang="en">Nothing: more was reinvested than was received. The basis of the new equipment
+          is $55,000: $75,000 less the $20,000 of deferred gain. Note that section 1033 works for
+          personal property too — unlike section 1031, which after 2017 is left with real property
+          only.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">10. Здание конфисковано в марте 2025 года, прибыль признана в том же году. До какого срока надо купить замену?</span><span lang="en">10. A building was condemned in March 2025 and the gain realized the same year. By when must a replacement be bought?</span></summary>
+      <div>
+        <p lang="ru">До 31 декабря 2028 года, если здание использовалось в бизнесе или держалось для
+          инвестиций: <span data-fig="ic_condemn_years"></span> года считаются от конца 2025 года.
+          В остальных случаях — <span data-fig="ic_replace_years"></span> года, то есть до
+          31 декабря 2027 года.</p>
+        <p lang="en">By December 31, 2028, if the building was used in a business or held for
+          investment: the <span data-fig="ic_condemn_years"></span> years run from the end of 2025.
+          Otherwise <span data-fig="ic_replace_years"></span> years, that is by December 31,
+          2027.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div class="quiz__panel" data-quiz="su06"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 551, 544, 946 и 538, инструкциями к формам 8824 и
+        4797, а также §§1011—1016, 1031, 1033, 1014, 1015 и 1060 Кодекса. Данные проверены
+        6 сентября 2026 года и относятся к налоговому периоду 2025. Не является налоговой
+        консультацией.</p>
+      <p lang="en">Check against IRS Publications 551, 544, 946 and 538, the instructions to Forms
+        8824 and 4797, and Code sections 1011–1016, 1031, 1033, 1014, 1015 and 1060. Verified
+        September 6, 2026 for the 2025 tax year. Not tax advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
