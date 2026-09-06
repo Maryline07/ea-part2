@@ -1089,5 +1089,221 @@ window.QUIZZES.su01 = [
       C: { ru: "Наименьшую совокупную отсрочку считают только тогда, когда не сработали обе ступени выше. Здесь сработала первая.", en: "The least aggregate deferral is computed only when both rungs above come up empty. Here the first one applied." },
       D: { ru: "Свободного выбора у партнёрства нет; исключения дают только §444 или деловая цель.", en: "The partnership has no free choice; only section 444 or a business purpose provides an exception." }
     }
+  },
+  {
+    sec: "s14",
+    ru: "Совет директоров объявил дивиденд 18 декабря 2025 года. Корпорация по своему обычному порядку разослала чеки так, что акционеры получили их 6 января 2026 года. К какому году относится доход акционера на кассовом методе?",
+    en: "The board declared a dividend on December 18, 2025. Following its usual practice the corporation mailed the cheques so that shareholders received them on January 6, 2026. To which year does the income of a cash-method shareholder belong?",
+    opts: [
+      { k: "A", ru: "К 2025 году: дивиденд объявлен в декабре", en: "To 2025: the dividend was declared in December" },
+      { k: "B", ru: "К 2026 году: раньше он не был поставлен в распоряжение акционера", en: "To 2026: it was not made subject to the shareholder's demand any earlier" },
+      { k: "C", ru: "К 2025 году: чек отправлен корпорацией в декабре", en: "To 2025: the corporation posted the cheque in December" },
+      { k: "D", ru: "Делится между годами пропорционально дням", en: "It is split between the years in proportion to the days" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Объявление дивиденда дохода не создаёт. Конструктивное получение требует, чтобы сумма была безоговорочно поставлена в распоряжение акционера.", en: "Declaring a dividend creates no income. Constructive receipt requires the amount to be unqualifiedly subject to the shareholder's demand." },
+      B: { ru: "Верно. Дивиденды считаются полученными, когда акционер вправе их потребовать. Если корпорация по обычному порядку рассылки доставляет чеки в январе, доход январский, хотя решение принято в декабре.", en: "Correct. Dividends are received when the shareholder may demand them. Where the corporation's ordinary mailing practice delivers the cheques in January, the income is January income, though the resolution was passed in December." },
+      C: { ru: "Дата отправки роли не играет: важна возможность получить. Сравните с чеком, готовым к выдаче с декабря, — там сумма была доступна, и год другой.", en: "The posting date is beside the point: availability is what counts. Contrast a cheque ready for collection since December — there the money was available, and the year differs." },
+      D: { ru: "Пропорционального деления дохода между годами эта норма не знает.", en: "This rule knows no proportional split of income between years." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Держатель продал облигацию 30 июня. Купон выплачивается 1 июля и 1 января. Часть цены продажи составляли проценты, набежавшие к дню продажи. Как их показывает продавец?",
+    en: "A holder sold a bond on June 30. Interest is paid on July 1 and January 1. Part of the sale price was interest accrued to the day of sale. How does the seller report it?",
+    opts: [
+      { k: "A", ru: "Как процентный доход года продажи", en: "As interest income for the year of sale" },
+      { k: "B", ru: "Как часть выручки от продажи, увеличивающей прирост капитала", en: "As part of the sale proceeds, increasing the capital gain" },
+      { k: "C", ru: "Никак: купон получит покупатель, он весь доход и покажет", en: "Not at all: the buyer will receive the coupon and will report all of it" },
+      { k: "D", ru: "Как возврат вложенного, уменьшающий базис", en: "As a return of capital, reducing basis" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Проценты, набежавшие до дня продажи, заработаны продавцом и показываются процентным доходом года продажи, хотя купон физически придёт покупателю.", en: "Correct. Interest accrued up to the day of sale was earned by the seller and is reported as interest income for the year of sale, although the coupon will physically reach the buyer." },
+      B: { ru: "Эта часть цены — не выручка от продажи бумаги, а плата за уже заработанные проценты; в прирост капитала она не входит.", en: "That part of the price is not proceeds from selling the security but payment for interest already earned; it does not enter the capital gain." },
+      C: { ru: "Заготовленный неверный ответ: он отдаёт весь купон покупателю. У покупателя часть, набежавшая до покупки, доходом не является — она уменьшает базис.", en: "The prepared wrong answer, giving the whole coupon to the buyer. For the buyer the part accrued before the purchase is not income — it reduces basis." },
+      D: { ru: "Возврат вложенного — это про покупателя, а не про продавца. Направления перепутаны.", en: "The return of capital belongs to the buyer, not the seller. The directions have been swapped." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Бухгалтер выполнил работу для стартапа и получил вместо оплаты опционы на его акции. Рыночную стоимость опционов определить невозможно. Что включается в доход?",
+    en: "An accountant did work for a start-up and was paid in options over its shares instead of money. The fair market value of the options cannot be determined. What goes into income?",
+    opts: [
+      { k: "A", ru: "Ничего до продажи опционов: пока цена неизвестна, дохода нет", en: "Nothing until the options are sold: with no known price there is no income" },
+      { k: "B", ru: "Номинальная стоимость акций, на которые дают право опционы", en: "The par value of the shares the options cover" },
+      { k: "C", ru: "Стоимость оказанных услуг", en: "The value of the services performed" },
+      { k: "D", ru: "Половина обычного гонорара — как оценка при неопределённости", en: "Half the usual fee, as an estimate under uncertainty" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Это и есть проверяемая ошибка. Неизвестность цены отодвигает не доход, а способ его измерить.", en: "This is the error being tested. An unknowable price postpones not the income but the way of measuring it." },
+      B: { ru: "Номинал к рыночной стоимости отношения не имеет и мерой дохода не служит.", en: "Par value has nothing to do with fair market value and is no measure of income." },
+      C: { ru: "Верно. Когда стоимость полученного определить нельзя, берётся стоимость отданного — то есть оказанных услуг.", en: "Correct. Where the value of what was received cannot be determined, the value of what was given — the services performed — is used." },
+      D: { ru: "Такого правила нет; оценка «на глаз» нормой не предусмотрена.", en: "There is no such rule; no eyeballed estimate is provided for." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Оптовая компания на методе начисления продаёт оборудование и по опыту знает, что около 3% счетов покупателей никогда не будут оплачены. Вправе ли она не начислять эту часть дохода?",
+    en: "An accrual-method wholesaler sells equipment and knows from experience that about 3% of customer invoices are never paid. May it decline to accrue that part of the income?",
+    opts: [
+      { k: "A", ru: "Да: метод по опыту прямо для этого и предусмотрен", en: "Yes: the nonaccrual-experience method exists for exactly this" },
+      { k: "B", ru: "Да, если она создаст резерв по сомнительным долгам", en: "Yes, provided it sets up a reserve for doubtful debts" },
+      { k: "C", ru: "Нет: метод по опыту применяется только к задолженности за услуги", en: "No: the nonaccrual-experience method reaches only receivables for services" },
+      { k: "D", ru: "Нет: метод по опыту доступен только корпорациям", en: "No: the nonaccrual-experience method is available only to corporations" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Метод существует, но к продаже товара не применяется никогда — только к оказанным услугам.", en: "The method exists but never reaches the sale of goods — only services performed." },
+      B: { ru: "Резервы по сомнительным долгам в налоговом учёте не допускаются: безнадёжный долг списывается по каждому случаю отдельно.", en: "Reserves for doubtful debts are not allowed for tax: a bad debt is written off case by case." },
+      C: { ru: "Верно. Послабление узкое: задолженность за услуги, при этом либо услуги из названного перечня профессий, либо выручка в пределах порога, и по сумме не начисляются проценты и штраф за просрочку.", en: "Correct. The relief is narrow: a receivable for services, with either a listed profession or receipts within the threshold, and no interest or late-payment penalty charged on the amount." },
+      D: { ru: "Ограничение не по организационной форме, а по виду задолженности и по выручке.", en: "The limit is not by entity form but by the kind of receivable and the level of receipts." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Предприниматель показывает доход своего бизнеса кассовым методом. Какое утверждение о его расходах верно?",
+    en: "A proprietor reports the income of the business under the cash method. Which statement about the expenses is true?",
+    opts: [
+      { k: "A", ru: "Расходы он вправе показывать по методу начисления, если так яснее отражается доход", en: "Expenses may be reported on the accrual method if that reflects income more clearly" },
+      { k: "B", ru: "Расходы он обязан показывать кассовым методом", en: "Expenses must be reported under the cash method" },
+      { k: "C", ru: "Выбор метода для расходов свободен и год от года может меняться", en: "The method for expenses is free and may change from year to year" },
+      { k: "D", ru: "Метод для расходов определяет не он, а IRS при первой проверке", en: "The method for expenses is set not by the taxpayer but by the IRS at the first examination" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Сочетание допустимо не любое: кассовый метод для дохода тянет за собой кассовый метод для расходов.", en: "Not every combination is allowed: the cash method for income carries the cash method for expenses with it." },
+      B: { ru: "Верно. Сочетать методы можно, но с ограничениями, и это одно из них. Обратное тоже действует: метод начисления для расходов обязывает считать по начислению и доход.", en: "Correct. Methods may be combined, but subject to limits, and this is one of them. The converse holds too: an accrual method for expenses requires income on the accrual method as well." },
+      C: { ru: "Метод применяется последовательно из года в год; смена — отдельная процедура с согласия IRS.", en: "A method is used consistently from year to year; changing it is a separate procedure requiring IRS consent." },
+      D: { ru: "Метод выбирает налогоплательщик при подаче первой декларации; IRS вмешивается, только если метод ясно не отражает доход.", en: "The taxpayer chooses the method on the first return; the IRS steps in only where the method fails to reflect income clearly." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Корпорация на методе начисления начислила в декабре 2025 года вознаграждение единственному акционеру, ведущему учёт кассовым методом, и выплатила его в марте 2026 года. Когда корпорация вычитает расход?",
+    en: "An accrual-method corporation accrued a fee in December 2025 to its sole shareholder, who is on the cash method, and paid it in March 2026. When does the corporation deduct it?",
+    opts: [
+      { k: "A", ru: "В 2025 году: обязательство зафиксировано и сумма определима", en: "In 2025: the liability was fixed and the amount determinable" },
+      { k: "B", ru: "В 2026 году — когда уплачено и включено акционером в доход", en: "In 2026 — when paid and included in the shareholder's income" },
+      { k: "C", ru: "Половину в 2025 году, половину в 2026", en: "Half in 2025 and half in 2026" },
+      { k: "D", ru: "Не вычитает вовсе: выплаты связанным лицам не вычитаются", en: "Never: payments to related persons are not deductible" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Обычные правила начисления здесь отступают. Норма о связанных лицах закрывает разрыв между вычетом у одной стороны и доходом у другой.", en: "The ordinary accrual rules give way here. The related-person rule closes the gap between one side's deduction and the other's income." },
+      B: { ru: "Верно. Деловые расходы и проценты, причитающиеся связанному лицу на кассовом методе, вычитаются не раньше, чем произведена уплата и сумма включена этим лицом в доход. Родство определяется на конец года, в котором расход иначе подлежал бы вычету.", en: "Correct. Business expenses and interest owed to a related person on the cash method are not deductible until payment is made and the amount is includible in that person's income. The relationship is tested at the end of the year in which the expense would otherwise be deductible." },
+      C: { ru: "Деления суммы норма не предусматривает — она сдвигает вычет целиком.", en: "The rule provides for no split; it moves the whole deduction." },
+      D: { ru: "Вычет не отменяется, а откладывается до года включения суммы в доход получателя.", en: "The deduction is not denied but deferred to the year the amount enters the payee's income." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Новый бизнес подаёт первую налоговую декларацию и выбирает метод учёта. Что для этого требуется?",
+    en: "A new business is filing its first tax return and choosing an accounting method. What does that take?",
+    opts: [
+      { k: "A", ru: "Предварительное разрешение IRS по форме 3115", en: "Advance IRS approval on Form 3115" },
+      { k: "B", ru: "Ничего, кроме применения выбранного метода в первой декларации", en: "Nothing beyond using the chosen method on the first return" },
+      { k: "C", ru: "Уведомление по форме 1128 в течение 75 дней", en: "A notice on Form 1128 within 75 days" },
+      { k: "D", ru: "Согласие IRS, если выбран метод начисления", en: "IRS consent, if the accrual method is chosen" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Форма 3115 нужна для <strong>смены</strong> метода, а не для первоначального выбора.", en: "Form 3115 is for <strong>changing</strong> a method, not for the initial choice." },
+      B: { ru: "Верно. Первоначальный метод выбирается подачей первой декларации и разрешения не требует. Обязанности две: метод должен ясно отражать доход и применяться последовательно из года в год.", en: "Correct. The initial method is adopted by filing the first return and needs no permission. Two duties attach: the method must clearly reflect income and be used consistently from year to year." },
+      C: { ru: "Форма 1128 меняет налоговый период, а не метод учёта.", en: "Form 1128 changes the tax year, not the accounting method." },
+      D: { ru: "Согласие для первоначального выбора не требуется ни при каком из допустимых методов.", en: "No consent is needed for the initial choice, whichever permitted method is taken." }
+    }
+  },
+  {
+    sec: "s14",
+    ru: "Владелец контролирует корпорацию-заказчика и в декабре велел ей не выписывать причитающийся ему чек, хотя всем прочим исполнителям корпорация заплатила. Деньги он получил в январе. К какому году относится доход?",
+    en: "An owner controls the paying corporation and in December told it not to write his cheque, although it paid every other contractor. He took the money in January. To which year does the income belong?",
+    opts: [
+      { k: "A", ru: "К январю: чек в декабре действительно не выписывался", en: "To January: no cheque was in fact written in December" },
+      { k: "B", ru: "К декабрю: сумма была в его распоряжении, а отказ её взять получения не отменяет", en: "To December: the money was available to him, and declining to take it does not undo receipt" },
+      { k: "C", ru: "К январю: доход возникает в момент фактического получения денег", en: "To January: income arises when the money is actually received" },
+      { k: "D", ru: "Делится поровну между декабрём и январём", en: "It is split evenly between December and January" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Отсутствие чека здесь создано самим налогоплательщиком: он распоряжался плательщиком. Существенным ограничением это не является.", en: "The absence of the cheque was created by the taxpayer himself, who controlled the payer. That is no substantial restriction." },
+      B: { ru: "Верно. Доход считается полученным, когда он поставлен в распоряжение без существенных ограничений. Собственный отказ забрать деньги ограничением не считается.", en: "Correct. Income is received when it is made available without substantial restriction. A taxpayer's own refusal to take it is not such a restriction." },
+      C: { ru: "Кассовый метод считает и конструктивное получение, а не только фактическое.", en: "The cash method counts constructive receipt as well, not only actual receipt." },
+      D: { ru: "Деления между годами доктрина не знает.", en: "The doctrine knows no split between years." }
+    }
+  },
+  {
+    sec: "s15",
+    ru: "Торговец изъял из запасов товар себестоимостью $900 для личного пользования. Как это отражается?",
+    en: "A merchant withdrew goods costing $900 from inventory for personal use. How is that reflected?",
+    opts: [
+      { k: "A", ru: "Себестоимость изъятого исключается из закупок; вычета по нему нет", en: "The cost withdrawn is removed from purchases; no deduction is allowed for it" },
+      { k: "B", ru: "Товар остаётся в себестоимости проданного: он выбыл со склада", en: "It stays in cost of goods sold: it did leave the warehouse" },
+      { k: "C", ru: "Показывается продажа самому себе по рыночной цене", en: "A sale to oneself at market price is reported" },
+      { k: "D", ru: "Изъятие никак не отражается до конца года", en: "The withdrawal is not reflected at all until year end" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Личное потребление деловым расходом не становится: стоимость изъятого убирается из закупок, и в себестоимость проданного она не попадает.", en: "Correct. Personal consumption does not become a business expense: the cost withdrawn comes out of purchases and never reaches cost of goods sold." },
+      B: { ru: "Оставить его в себестоимости значит вычесть личный расход. Именно на этом и строится неверный вариант.", en: "Leaving it in cost of goods sold means deducting a personal expense. That is exactly how the wrong answer is built." },
+      C: { ru: "Продажи самому себе не бывает, и дохода изъятие не создаёт — оно лишь уменьшает закупки.", en: "There is no sale to oneself, and the withdrawal creates no income — it merely reduces purchases." },
+      D: { ru: "Отражается сразу: иначе конечные запасы и себестоимость окажутся неверны.", en: "It is reflected at once: otherwise both ending inventory and cost of goods sold come out wrong." }
+    }
+  },
+  {
+    sec: "s15",
+    ru: "Налогоплательщик применяет LIFO. Остаток на начало года — 500 единиц по $4. За год куплено: 700 единиц по $6 и 400 единиц по $9. На конец года осталось 900 единиц. Какова стоимость конечных запасов?",
+    en: "A taxpayer uses LIFO. Beginning inventory is 500 units at $4. Purchases during the year were 700 units at $6 and 400 units at $9. Ending inventory is 900 units. What is the closing inventory?",
+    opts: [
+      { k: "A", ru: "$4 400", en: "$4,400" },
+      { k: "B", ru: "$6 600", en: "$6,600" },
+      { k: "C", ru: "$5 400", en: "$5,400" },
+      { k: "D", ru: "$8 100", en: "$8,100" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. При LIFO в остатке лежат самые ранние партии: 500 × $4 = $2 000 плюс 400 × $6 = $2 400, итого $4 400.", en: "Correct. Under LIFO the earliest layers remain: 500 × $4 = $2,000 plus 400 × $6 = $2,400, giving $4,400." },
+      B: { ru: "Это остаток по FIFO: 400 × $9 + 500 × $6. Методы переставлены местами — самый частый неверный вариант в теме.", en: "That is the FIFO figure: 400 × $9 + 500 × $6. The methods have been swapped, the commonest wrong answer here." },
+      C: { ru: "Взята средняя цена, а средневзвешенный метод в условии не заявлен.", en: "An average cost has been used, but no weighted-average method was stated in the facts." },
+      D: { ru: "Все 900 единиц оценены по последней цене $9. LIFO относит к остатку самые ранние партии, а не самые поздние.", en: "All 900 units valued at the latest $9 price. LIFO leaves the earliest layers in inventory, not the latest." }
+    }
+  },
+  {
+    sec: "s15",
+    ru: "Какая из практик оценки запасов для налоговых целей не допускается?",
+    en: "Which inventory practice is not acceptable for tax purposes?",
+    opts: [
+      { k: "A", ru: "Оценка по меньшей из себестоимости и рыночной цены по каждой позиции", en: "Lower of cost or market, applied item by item" },
+      { k: "B", ru: "Уменьшение конечного остатка на скидки, которые предполагается получить", en: "Reducing closing inventory by discounts expected to be received" },
+      { k: "C", ru: "Скользящее среднее при выполнении установленных условий", en: "A rolling average where the stated conditions are met" },
+      { k: "D", ru: "Специальная идентификация каждой единицы товара", en: "Specific identification of each unit" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Допускается — но именно по каждой позиции, а не сравнением итога с итогом.", en: "Acceptable — but item by item, not by comparing one total with another." },
+      B: { ru: "Верно, это запрещено. Уценивать остаток на расчётные скидки нельзя: скидка либо уменьшает закупки, либо идёт на отдельный счёт, но конечный остаток не трогает.", en: "Correct, this is forbidden. Closing inventory may not be written down by anticipated discounts: a discount either reduces purchases or goes to a separate account, but it does not touch closing inventory." },
+      C: { ru: "Допускается: нужны учёт по §471, тот же метод в отчётности, установленная частота пересчёта и один из двух признаков — отклонение или оборачиваемость.", en: "Acceptable: it takes section 471 accounting, the same method in the financial statements, the required recomputation frequency and one of the two tests — variance or turnover." },
+      D: { ru: "Допускается: это один из трёх способов опознания единицы наряду с FIFO и LIFO.", en: "Acceptable: it is one of the three ways of identifying units, alongside FIFO and LIFO." }
+    }
+  },
+  {
+    sec: "s15",
+    ru: "Розничный магазин оценивает запасы розничным методом. Товары разных отделов дают разную валовую прибыль. Как считается стоимость?",
+    en: "A shop values inventory by the retail method. Departments carry different gross profit percentages. How is the value computed?",
+    opts: [
+      { k: "A", ru: "Одним общим показателем по всему магазину", en: "By one overall figure for the whole shop" },
+      { k: "B", ru: "Отдельно по каждому отделу или классу товаров", en: "Separately for each department or class of goods" },
+      { k: "C", ru: "По наибольшей из наценок, применённой ко всем товарам", en: "By the highest mark-up, applied to all the goods" },
+      { k: "D", ru: "Розничный метод для налоговых целей не применяется", en: "The retail method is not available for tax purposes" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Общий показатель исказит оценку там, где отделы торгуют с разной прибылью, — ради этого правило и написано.", en: "A single overall figure distorts the value where departments trade at different margins, which is precisely why the rule exists." },
+      B: { ru: "Верно. Для отдела или класса товаров с иной долей валовой прибыли соотношение себестоимости считается отдельно.", en: "Correct. A cost complement is computed separately for each department or class of goods with a different gross profit percentage." },
+      C: { ru: "Выбор наибольшей наценки правилом не предусмотрен и занизил бы запасы.", en: "Choosing the highest mark-up is not provided for and would understate inventory." },
+      D: { ru: "Метод допустим — при соблюдении порядка его применения.", en: "The method is permitted, provided its rules are followed." }
+    }
   }
 ];
