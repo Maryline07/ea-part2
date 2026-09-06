@@ -92,7 +92,7 @@ window.QUIZZES.su07 = [
     correct: "D",
     why: {
       A: { ru: "Обязательный случай: заграничное использование выводит имущество из общей системы.", en: "A required case: use abroad takes the property out of the general system." },
-      B: { ru: "Обязательный случай.", en: "A required case." },
+      B: { ru: "Обязательный случай: финансирование освобождёнными облигациями тянет за собой альтернативную систему.", en: "A required case: financing with tax-exempt bonds carries the alternative system with it." },
       C: { ru: "Обязательный случай, и вдобавок §179 в нём недоступен.", en: "A required case, and section 179 is unavailable there as well." },
       D: { ru: "Верно. Бывшее в употреблении имущество амортизируется по общей системе так же, как новое; в 2025 году оно даже получает бонусную амортизацию.", en: "Correct. Used property is depreciated under the general system just as new property is; in 2025 it even qualifies for bonus depreciation." }
     }

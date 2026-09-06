@@ -164,7 +164,7 @@ window.QUIZZES.su06 = [
       A: { ru: "Это убыток по базису дарителя, а его для убытка брать нельзя: падение цены до дарения было потерей дарителя.", en: "That is the loss on the donor's basis, which may not be used for a loss: the fall in value before the gift was the donor's." },
       B: { ru: "Верно. Для убытка берётся рыночная стоимость на день дарения: 25 000 − 18 000.", en: "Correct. For loss the market value at the date of the gift is used: 25,000 − 18,000." },
       C: { ru: "Средняя зона кончается на $25 000; продажа ниже её.", en: "The middle zone ends at $25,000; this sale is below it." },
-      D: { ru: "Базис не нулевой.", en: "The basis is not zero." }
+      D: { ru: "Это цена продажи, принятая за убыток: $18 000 — то, что выручили, а не итог.", en: "That is the sale price taken for the loss: $18,000 is what the shares fetched, not the result." }
     }
   },
   {

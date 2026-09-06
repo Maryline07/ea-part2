@@ -36,7 +36,7 @@ window.QUIZZES.su08 = [
     correct: "C",
     why: {
       A: { ru: "Входит и считается на форме 5884, а итог переносится на форму 3800.", en: "It is part of it, figured on Form 5884 and carried to Form 3800." },
-      B: { ru: "Входит.", en: "It is part of it." },
+      B: { ru: "Входит и считается на форме 8881.", en: "It is part of it, figured on Form 8881." },
       C: { ru: "Верно. Иностранный налоговый кредит в общий кредит бизнеса не входит: у него свой предел и свои сроки переноса — назад на год и вперёд на десять.", en: "Correct. The foreign tax credit is not part of the general business credit: it has its own limit and its own carryover periods — back one year and forward ten." },
       D: { ru: "Входит и считается на форме 8826.", en: "It is part of it, figured on Form 8826." }
     }
@@ -758,7 +758,7 @@ window.QUIZZES.su08 = [
       A: { ru: "Ураган — внезапное событие внешней силы.", en: "A hurricane is a sudden event of external force." },
       B: { ru: "Верно. Постепенное разрушение — термиты, ржавчина, гниль, засуха — под несчастный случай не подпадает: не хватает внезапности.", en: "Correct. Progressive deterioration — termites, rust, rot, drought — is not a casualty: it lacks suddenness." },
       C: { ru: "Пожар — классический несчастный случай.", en: "Fire is the classic casualty." },
-      D: { ru: "Землетрясение — тоже.", en: "So is an earthquake." }
+      D: { ru: "Землетрясение тоже внезапно и приходит извне.", en: "An earthquake is sudden and external too." }
     }
   },
   {
