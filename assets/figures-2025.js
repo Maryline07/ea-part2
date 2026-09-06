@@ -27,6 +27,16 @@ var SRC_P535 = { t: "Publication 535, Business Expenses", u: "https://www.irs.go
 var SRC_P551 = { t: "Publication 551 (Rev. 12-2025), Basis of Assets", u: "https://www.irs.gov/publications/p551" };
 var SRC_P544 = { t: "Publication 544 (2025), Sales and Other Dispositions of Assets", u: "https://www.irs.gov/publications/p544" };
 var SRC_P946 = { t: "Publication 946 (2025), How To Depreciate Property", u: "https://www.irs.gov/publications/p946" };
+var SRC_I3800 = { t: "Instructions for Form 3800 (2025), General Business Credit", u: "https://www.irs.gov/instructions/i3800" };
+var SRC_F5884 = { t: "Form 5884, Work Opportunity Credit", u: "https://www.irs.gov/forms-pubs/about-form-5884" };
+var SRC_I8941 = { t: "Instructions for Form 8941 (2025), Credit for Small Employer Health Insurance Premiums", u: "https://www.irs.gov/instructions/i8941" };
+var SRC_I6765 = { t: "Instructions for Form 6765, Credit for Increasing Research Activities", u: "https://www.irs.gov/instructions/i6765" };
+var SRC_F8882 = { t: "Form 8882, Credit for Employer-Provided Childcare Facilities and Services", u: "https://www.irs.gov/forms-pubs/about-form-8882" };
+var SRC_I172 = { t: "Instructions for Form 172, Net Operating Losses for Individuals, Estates, and Trusts", u: "https://www.irs.gov/instructions/i172" };
+var SRC_P547 = { t: "Publication 547 (2025), Casualties, Disasters, and Thefts", u: "https://www.irs.gov/publications/p547" };
+var SRC_I2290 = { t: "Instructions for Form 2290, Heavy Highway Vehicle Use Tax Return", u: "https://www.irs.gov/instructions/i2290" };
+var SRC_RP2414 = { t: "Rev. Proc. 2024-14", u: "https://www.irs.gov/pub/irs-drop/rp-24-14.pdf" };
+var SRC_ACAFT = { t: "IRS, Identifying Full-time Employees", u: "https://www.irs.gov/affordable-care-act/employers/identifying-full-time-employees" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
@@ -1418,6 +1428,402 @@ window.FIGURES = {
       note_en: "The part of long-term gain on real property attributable to straight-line depreciation. It may not exceed the net section 1231 gain.",
       src: SRC_P544
     },
+
+    gbc_threshold: {
+      n: 25000, unit: "usd",
+      ru: "Порог, свыше которого в предел общего кредита бизнеса входит четверть налога",
+      en: "Threshold above which a quarter of the tax enters the general business credit limit",
+      note_ru: "Предел равен чистому налогу на доход за вычетом большей из двух величин: предварительного минимального налога или четверти обычного налога сверх этого порога.",
+      note_en: "The limit is the net income tax less the greater of two amounts: the tentative minimum tax, or a quarter of the regular tax above this threshold.",
+      src: SRC_I3800
+    },
+
+    gbc_pct: {
+      n: 25, unit: "pct",
+      ru: "Доля налога сверх порога в пределе общего кредита бизнеса",
+      en: "Share of the tax above the threshold in the general business credit limit",
+      note_ru: "У корпораций сравнивать не с чем: предварительного минимального налога у них в этой формуле нет, и берётся сразу эта доля.",
+      note_en: "For corporations there is nothing to compare with: the tentative minimum tax does not enter their formula, and this share is taken directly.",
+      src: SRC_I3800
+    },
+
+    gbc_carryback: {
+      n: 1, unit: "int",
+      ru: "Лет переноса неиспользованного общего кредита назад",
+      en: "Years an unused general business credit is carried back",
+      note_ru: "Неиспользованный остаток нельзя перенести назад в год, предшествующий появлению самого кредита в законе.",
+      note_en: "The unused balance cannot be carried back to a year before the credit itself existed in law.",
+      src: SRC_I3800
+    },
+
+    gbc_carryforward: {
+      n: 20, unit: "int",
+      ru: "Лет переноса неиспользованного общего кредита вперёд",
+      en: "Years an unused general business credit is carried forward",
+      note_ru: "То, что не использовано и после двадцатого года, становится вычетом по §196 — но уже вычетом, а не кредитом.",
+      note_en: "What is still unused after the twentieth year becomes a deduction under section 196 — a deduction, though, and no longer a credit.",
+      src: SRC_I3800
+    },
+
+    wotc_hours_min: {
+      n: 120, unit: "int",
+      ru: "Часов работы, ниже которых кредита за наём не будет вовсе",
+      en: "Hours worked below which there is no work opportunity credit at all",
+      note_ru: "Считается за календарный год. Не отработал столько — заработная плата признаётся нулевой для кредита.",
+      note_en: "Counted for the calendar year. Fall short and the qualified wages are treated as zero for the credit.",
+      src: SRC_F5884
+    },
+
+    wotc_hours_full: {
+      n: 400, unit: "int",
+      ru: "Часов работы для полной ставки кредита за наём",
+      en: "Hours worked for the full rate of the work opportunity credit",
+      note_ru: "От 120 до 399 часов ставка пониженная.",
+      note_en: "Between 120 and 399 hours the rate is the reduced one.",
+      src: SRC_F5884
+    },
+
+    wotc_rate_partial: {
+      n: 25, unit: "pct",
+      ru: "Ставка кредита за наём при работе от 120 до 399 часов",
+      en: "Work opportunity credit rate for 120 to 399 hours worked",
+      note_ru: "Применяется к заработной плате первого года в пределах установленного для группы потолка.",
+      note_en: "Applied to first-year wages up to the cap set for the targeted group.",
+      src: SRC_F5884
+    },
+
+    wotc_rate_full: {
+      n: 40, unit: "pct",
+      ru: "Ставка кредита за наём при работе от 400 часов",
+      en: "Work opportunity credit rate from 400 hours worked",
+      note_ru: "Заработная плата первого года. Вычет по заработной плате уменьшается на сумму кредита.",
+      note_en: "First-year wages. The deduction for wages is reduced by the amount of the credit.",
+      src: SRC_F5884
+    },
+
+    wotc_rate_second: {
+      n: 50, unit: "pct",
+      ru: "Ставка кредита за второй год для получателей долгосрочной семейной помощи",
+      en: "Second-year credit rate for long-term family assistance recipients",
+      note_ru: "Единственная группа, по которой кредит полагается и за второй год работы.",
+      note_en: "The only group for which the credit is available for a second year of work.",
+      src: SRC_F5884
+    },
+
+    wotc_wages_general: {
+      n: 6000, unit: "usd",
+      ru: "Потолок заработной платы для кредита за наём, общий случай",
+      en: "Wage cap for the work opportunity credit, the general case",
+      note_ru: "Максимальный кредит по обычной группе — $2 400.",
+      note_en: "The maximum credit for an ordinary targeted group is $2,400.",
+      src: SRC_F5884
+    },
+
+    wotc_wages_youth: {
+      n: 3000, unit: "usd",
+      ru: "Потолок заработной платы для кредита за наём летней молодёжи",
+      en: "Wage cap for the work opportunity credit, summer youth",
+      note_ru: "Самая низкая планка среди целевых групп.",
+      note_en: "The lowest ceiling among the targeted groups.",
+      src: SRC_F5884
+    },
+
+    wotc_wages_ltfa: {
+      n: 10000, unit: "usd",
+      ru: "Потолок заработной платы для получателей долгосрочной семейной помощи",
+      en: "Wage cap for long-term family assistance recipients",
+      note_ru: "Действует и в первый год, и во второй, но ставки разные.",
+      note_en: "Applies in both the first and the second year, but at different rates.",
+      src: SRC_F5884
+    },
+
+    wotc_wages_veteran: {
+      n: 24000, unit: "usd",
+      ru: "Наибольший потолок заработной платы: ветераны с инвалидностью",
+      en: "The highest wage cap: veterans with a service-connected disability",
+      note_ru: "Даёт наибольший возможный кредит за одного работника — $9 600.",
+      note_en: "It gives the largest possible credit for one employee — $9,600.",
+      src: SRC_F5884
+    },
+
+    shic_rate: {
+      n: 50, unit: "pct",
+      ru: "Ставка кредита за медицинскую страховку у малого работодателя",
+      en: "Credit rate for small employer health insurance premiums",
+      note_ru: "35% для освобождённых от налога работодателей, и у них кредит возвратный. Работодатель должен оплачивать не менее половины взноса.",
+      note_en: "35% for tax-exempt employers, and for them the credit is refundable. The employer must pay at least half of the premium.",
+      src: SRC_I8941
+    },
+
+    shic_fte: {
+      n: 25, unit: "int",
+      ru: "Число работников в пересчёте на полную занятость, ниже которого доступен кредит за страховку",
+      en: "Full-time equivalent employees below which the health insurance credit is available",
+      note_ru: "Строго меньше. Инструкция отмечает прямо: при ровно 25 работниках кредит по расчёту обнуляется.",
+      note_en: "Strictly fewer. The instructions note expressly that at exactly 25 the credit works out to nothing.",
+      src: SRC_I8941
+    },
+
+    shic_wages: {
+      n: 67000, unit: "usd",
+      ru: "Средняя годовая заработная плата, при которой кредит за страховку обнуляется, 2025",
+      en: "Average annual wages at which the health insurance credit falls to zero, 2025",
+      note_ru: "Показатель индексируется: за 2024 год он был другим.",
+      note_en: "The figure is indexed: for 2024 it was different.",
+      src: SRC_I8941
+    },
+
+    shic_wages_phase: {
+      n: 33000, unit: "usd",
+      ru: "Средняя годовая заработная плата, выше которой кредит за страховку уменьшается",
+      en: "Average annual wages above which the health insurance credit is reduced",
+      note_ru: "Уменьшение по заработной плате и уменьшение по числу работников считаются отдельно и складываются.",
+      note_en: "The wage reduction and the headcount reduction are figured separately and combined.",
+      src: SRC_I8941
+    },
+
+    shic_fte_phase: {
+      n: 10, unit: "int",
+      ru: "Число работников, выше которого кредит за страховку уменьшается",
+      en: "Number of employees above which the health insurance credit is reduced",
+      note_ru: "В пересчёте на полную занятость.",
+      note_en: "Measured in full-time equivalents.",
+      src: SRC_I8941
+    },
+
+    shic_years: {
+      n: 2, unit: "int",
+      ru: "Лет подряд, в течение которых доступен кредит за страховку",
+      en: "Consecutive years for which the health insurance credit is available",
+      note_ru: "Отсчёт начинается с первого года, за который подана форма 8941 с положительной суммой.",
+      note_en: "The count begins with the first year for which Form 8941 is filed with a positive amount.",
+      src: SRC_I8941
+    },
+
+    research_rate: {
+      n: 20, unit: "pct",
+      ru: "Ставка кредита на исследования",
+      en: "Rate of the credit for increasing research activities",
+      note_ru: "От превышения расходов года над базовой суммой. Исследование должно вестись в США.",
+      note_en: "On the excess of the year's expenses over the base amount. The research must be conducted in the United States.",
+      src: SRC_I6765
+    },
+
+    research_asc: {
+      n: 14, unit: "pct",
+      ru: "Ставка упрощённого расчёта кредита на исследования",
+      en: "Rate under the alternative simplified research credit",
+      note_ru: "От превышения над половиной средних расходов трёх предыдущих лет.",
+      note_en: "On the excess over half the average expenses of the three preceding years.",
+      src: SRC_I6765
+    },
+
+    research_280c: {
+      n: 15.8, unit: "pct",
+      ru: "Пониженная ставка кредита на исследования по выбору §280C",
+      en: "Reduced research credit rate under the section 280C election",
+      note_ru: "Кредит уменьшается, зато вычет по расходам на исследования сохраняется полностью.",
+      note_en: "The credit is smaller, but the deduction for the research expenses is kept in full.",
+      src: SRC_I6765
+    },
+
+    research_payroll_max: {
+      n: 500000, unit: "usd",
+      ru: "Максимум кредита на исследования против зарплатных налогов",
+      en: "Maximum research credit applied against payroll taxes",
+      note_ru: "Доступно квалифицированному малому бизнесу — тому, у кого выручка меньше $5 000 000 и не было выручки до пятилетнего окна.",
+      note_en: "Available to a qualified small business — one with gross receipts under $5,000,000 and none before the five-year window.",
+      src: SRC_I6765
+    },
+
+    rehab_rate: {
+      n: 20, unit: "pct",
+      ru: "Ставка кредита на восстановление исторического здания",
+      en: "Rate of the rehabilitation credit for a certified historic structure",
+      note_ru: "Берётся не сразу, а равными долями за 5 лет. Базис здания уменьшается на весь кредит.",
+      note_en: "Not taken at once but ratably over 5 years. The building's basis is reduced by the whole credit.",
+      src: SRC_I3800
+    },
+
+    rehab_years: {
+      n: 5, unit: "int",
+      ru: "Лет, за которые берётся кредит на восстановление",
+      en: "Years over which the rehabilitation credit is taken",
+      note_ru: "По 4% в год. Затраты должны превышать большее из $5 000 и скорректированного базиса здания.",
+      note_en: "4% a year. The expenditures must exceed the greater of $5,000 and the building's adjusted basis.",
+      src: SRC_I3800
+    },
+
+    childcare_rate: {
+      n: 25, unit: "pct",
+      ru: "Ставка кредита за детский сад для работников",
+      en: "Rate of the employer-provided childcare credit",
+      note_ru: "От затрат на сам детский сад. Затраты на него под §179 не подпадают.",
+      note_en: "On the childcare facility expenditures. Those costs do not qualify for section 179.",
+      src: SRC_F8882
+    },
+
+    childcare_referral_rate: {
+      n: 10, unit: "pct",
+      ru: "Ставка кредита за услуги подбора детского сада",
+      en: "Credit rate for childcare resource and referral services",
+      note_ru: "Отдельная, более низкая ставка для справочных и подбирающих услуг.",
+      note_en: "A separate, lower rate for resource and referral services.",
+      src: SRC_F8882
+    },
+
+    childcare_cap: {
+      n: 150000, unit: "usd",
+      ru: "Годовой потолок кредита за детский сад",
+      en: "Annual cap on the employer-provided childcare credit",
+      note_ru: "Общий на обе ставки вместе.",
+      note_en: "A single cap covering both rates together.",
+      src: SRC_F8882
+    },
+
+    ftc_carryback: {
+      n: 1, unit: "int",
+      ru: "Лет переноса неиспользованного иностранного налогового кредита назад",
+      en: "Years an unused foreign tax credit is carried back",
+      note_ru: "Иностранный налоговый кредит в общий кредит бизнеса не входит и живёт по своим срокам.",
+      note_en: "The foreign tax credit is not part of the general business credit and runs on its own periods.",
+      src: SRC_I3800
+    },
+
+    ftc_carryforward: {
+      n: 10, unit: "int",
+      ru: "Лет переноса неиспользованного иностранного налогового кредита вперёд",
+      en: "Years an unused foreign tax credit is carried forward",
+      note_ru: "Вместо кредита иностранный налог можно взять вычетом — но одно из двух и по всем странам сразу.",
+      note_en: "Instead of a credit the foreign tax may be deducted — but one or the other, and for all countries at once.",
+      src: SRC_I3800
+    },
+
+    nol_limit_pct: {
+      n: 80, unit: "pct",
+      ru: "Доля налогооблагаемого дохода, которую может погасить перенесённый убыток",
+      en: "Share of taxable income a carried-forward loss may offset",
+      note_ru: "Для убытков, возникших после 2017 года. База считается до вычета самого убытка, вычета QBI и вычета §250.",
+      note_en: "For losses arising after 2017. The base is figured before the loss deduction itself, the QBI deduction and the section 250 deduction.",
+      src: SRC_I172
+    },
+
+    nol_farm_carryback: {
+      n: 2, unit: "int",
+      ru: "Лет переноса назад фермерской части убытка",
+      en: "Years the farming portion of a loss is carried back",
+      note_ru: "Единственное исключение из запрета на перенос назад. Назад идёт только фермерская часть убытка, а не весь убыток.",
+      note_en: "The only exception to the ban on carrybacks. Only the farming portion goes back, not the whole loss.",
+      src: SRC_I172
+    },
+
+    casualty_floor: {
+      n: 100, unit: "usd",
+      ru: "Порог на каждое событие для личных потерь от несчастного случая",
+      en: "Per-event floor for personal casualty losses",
+      note_ru: "Применяется один раз на событие, сколько бы вещей ни пострадало. К деловому имуществу не применяется вовсе.",
+      note_en: "Applied once per event however many items were damaged. It does not apply to business property at all.",
+      src: SRC_P547
+    },
+
+    casualty_agi_pct: {
+      n: 10, unit: "pct",
+      ru: "Доля скорректированного валового дохода, на которую уменьшаются личные потери",
+      en: "Share of adjusted gross income by which personal losses are reduced",
+      note_ru: "Применяется после порога на событие и сразу ко всей сумме за год.",
+      note_en: "Applied after the per-event floor and to the whole year's total at once.",
+      src: SRC_P547
+    },
+
+    casualty_qualified_floor: {
+      n: 500, unit: "usd",
+      ru: "Порог на событие для потерь от квалифицированного бедствия",
+      en: "Per-event floor for a qualified disaster loss",
+      note_ru: "Взамен обычного порога. Уменьшение на долю дохода при этом не применяется вовсе.",
+      note_en: "In place of the ordinary floor. The reduction by a share of income is then not applied at all.",
+      src: SRC_P547
+    },
+
+    hvut_weight: {
+      n: 55000, unit: "int",
+      ru: "Полная облагаемая масса, фунтов, с которой платится налог за пользование дорогами",
+      en: "Taxable gross weight, pounds, from which the highway use tax is due",
+      note_ru: "Складывается из снаряжённой массы машины, снаряжённой массы обычно используемых прицепов и обычно перевозимого максимального груза.",
+      note_en: "The sum of the vehicle's unloaded weight, the unloaded weight of trailers customarily used with it, and the maximum load customarily carried.",
+      src: SRC_I2290
+    },
+
+    hvut_miles: {
+      n: 5000, unit: "int",
+      ru: "Пробег за период, до которого налог за пользование дорогами приостанавливается",
+      en: "Mileage for the period up to which the highway use tax is suspended",
+      note_ru: "Приостановка заявляется в самой форме 2290. Превысили пробег — налог за весь период становится должным.",
+      note_en: "The suspension is claimed on Form 2290 itself. Exceed the mileage and the tax for the whole period falls due.",
+      src: SRC_I2290
+    },
+
+    hvut_miles_farm: {
+      n: 7500, unit: "int",
+      ru: "Пробег для сельскохозяйственной машины, до которого налог приостанавливается",
+      en: "Mileage for an agricultural vehicle up to which the tax is suspended",
+      note_ru: "Повышенный предел только для машин, используемых преимущественно в сельском хозяйстве.",
+      note_en: "The higher limit applies only to vehicles used primarily in agriculture.",
+      src: SRC_I2290
+    },
+
+    ale_threshold: {
+      n: 50, unit: "int",
+      ru: "Число работников, с которого работодатель считается крупным по закону о доступной медицине",
+      en: "Employees from which an employer is an applicable large employer",
+      note_ru: "Среднее за предшествующий год, с учётом работников в пересчёте на полную занятость. Связанные лица считаются вместе.",
+      note_en: "Averaged over the preceding year, full-time equivalents included. Related entities are counted together.",
+      src: SRC_ACAFT
+    },
+
+    ale_hours_week: {
+      n: 30, unit: "int",
+      ru: "Часов в неделю, с которых работник считается занятым полное время",
+      en: "Hours a week from which an employee is full-time",
+      note_ru: "В среднем за календарный месяц.",
+      note_en: "On average for a calendar month.",
+      src: SRC_ACAFT
+    },
+
+    ale_hours_month: {
+      n: 130, unit: "int",
+      ru: "Часов в месяц, с которых работник считается занятым полное время",
+      en: "Hours a month from which an employee is full-time",
+      note_ru: "Второй способ измерения того же самого. Число именно 130, а не 120: тридцать часов в неделю за месяц дают больше ста двадцати.",
+      note_en: "The second way of measuring the same thing. The figure is 130, not 120: thirty hours a week over a month comes to more than a hundred and twenty.",
+      src: SRC_ACAFT
+    },
+
+    esrp_a: {
+      n: 2900, unit: "usd",
+      ru: "Платёж работодателя за непредложенное покрытие, 2025",
+      en: "Employer payment for failing to offer coverage, 2025",
+      note_ru: "За каждого работника полной занятости, кроме первых тридцати. Возникает, если покрытие не предложено хотя бы 95% таких работников и хотя бы один получил кредит на бирже.",
+      note_en: "For each full-time employee except the first thirty. It arises where coverage was not offered to at least 95% of them and at least one received the marketplace credit.",
+      src: SRC_RP2414
+    },
+
+    esrp_b: {
+      n: 4350, unit: "usd",
+      ru: "Платёж работодателя за неподходящее покрытие, 2025",
+      en: "Employer payment for coverage that is not adequate, 2025",
+      note_ru: "За каждого работника, получившего кредит на бирже. Два платежа вместе не берутся — только один из двух.",
+      note_en: "For each employee who received the marketplace credit. The two payments are never charged together — only one of the two.",
+      src: SRC_RP2414
+    },
+
+    esrp_exempt: {
+      n: 30, unit: "int",
+      ru: "Работников, за которых первый платёж не берётся",
+      en: "Employees for whom the first payment is not charged",
+      note_ru: "Вычитаются из числа работников полной занятости только при первом виде платежа, при втором — нет.",
+      note_en: "Subtracted from the full-time headcount for the first kind of payment only, never for the second.",
+      src: SRC_RP2414
+    },
   },
 
   /* Группировка для страницы справочника */
@@ -1464,6 +1870,22 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "credits", ru: "Кредиты, убытки и дополнительные налоги", en: "Credits, losses and additional taxes",
+      keys: ["gbc_threshold", "gbc_pct", "gbc_carryback", "gbc_carryforward",
+             "wotc_hours_min", "wotc_hours_full", "wotc_rate_partial",
+             "wotc_rate_full", "wotc_rate_second", "wotc_wages_general",
+             "wotc_wages_youth", "wotc_wages_ltfa", "wotc_wages_veteran",
+             "shic_rate", "shic_fte", "shic_wages", "shic_wages_phase",
+             "shic_fte_phase", "shic_years",
+             "research_rate", "research_asc", "research_280c",
+             "research_payroll_max", "rehab_rate", "rehab_years",
+             "childcare_rate", "childcare_referral_rate", "childcare_cap",
+             "ftc_carryback", "ftc_carryforward",
+             "nol_limit_pct", "nol_farm_carryback",
+             "casualty_floor", "casualty_agi_pct", "casualty_qualified_floor",
+             "hvut_weight", "hvut_miles", "hvut_miles_farm",
+             "ale_threshold", "ale_hours_week", "ale_hours_month",
+             "esrp_a", "esrp_b", "esrp_exempt"] },
     { id: "cost", ru: "Возмещение стоимости", en: "Cost recovery",
       keys: ["sec179_limit", "sec179_phaseout", "sec179_suv",
              "bonus_pct", "bonus_pct_prior",
