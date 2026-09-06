@@ -134,7 +134,7 @@ window.QUIZZES.su02 = [
   },
   {
     sec: "s23",
-    ru: "Незамужняя женщина имеет заработную плату $210 000 и чистый заработок от самозанятости $30 000. С какой суммы взимается дополнительный налог Medicare?",
+    ru: "Одинокий налогоплательщик имеет заработную плату $210 000 и чистый заработок от самозанятости $30 000. С какой суммы взимается дополнительный налог Medicare?",
     en: "A single taxpayer has $210,000 of wages and $30,000 of net earnings from self-employment. On what amount is the Additional Medicare Tax imposed?",
     opts: [
       { k: "A", ru: "$30 000", en: "$30,000" },
@@ -819,7 +819,7 @@ window.QUIZZES.su02 = [
   },
   {
     sec: "s23",
-    ru: "Незамужняя женщина получила заработную плату $130 000 и имеет чистый заработок от самозанятости $145 000. Каков дополнительный налог Medicare?",
+    ru: "Одинокий налогоплательщик получил заработную плату $130 000 и имеет чистый заработок от самозанятости $145 000. Каков дополнительный налог Medicare?",
     en: "A single filer has $130,000 of wages and $145,000 of net earnings from self-employment. What is the Additional Medicare Tax?",
     opts: [
       { k: "A", ru: "$675 — с $75 000", en: "$675 — on $75,000" },
@@ -837,7 +837,7 @@ window.QUIZZES.su02 = [
   },
   {
     sec: "s23",
-    ru: "Незамужняя женщина получила заработную плату $230 000 и понесла убыток по Schedule C $40 000. Каков дополнительный налог Medicare?",
+    ru: "Одинокий налогоплательщик получил заработную плату $230 000 и понёс убыток по Schedule C $40 000. Каков дополнительный налог Medicare?",
     en: "A single filer has $230,000 of wages and a $40,000 Schedule C loss. What is the Additional Medicare Tax?",
     opts: [
       { k: "A", ru: "$0: совокупный трудовой доход $190 000 ниже порога", en: "$0: combined earned income of $190,000 is below the threshold" },
@@ -873,7 +873,7 @@ window.QUIZZES.su02 = [
   },
   {
     sec: "s23",
-    ru: "Незамужний работник получил за год по $150 000 от каждого из двух работодателей. Ни один из них дополнительный налог Medicare не удерживал. Верно ли это и каковы последствия?",
+    ru: "Одинокий работник получил за год по $150 000 от каждого из двух работодателей. Ни один из них дополнительный налог Medicare не удерживал. Верно ли это и каковы последствия?",
     en: "A single employee received $150,000 from each of two employers for the year. Neither withheld Additional Medicare Tax. Was that right, and what follows?",
     opts: [
       { k: "A", ru: "Работодатели поступили верно, и налога нет: каждый платил ниже порога", en: "The employers were right and no tax is due: each paid below the threshold" },
