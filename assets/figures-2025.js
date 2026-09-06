@@ -906,6 +906,23 @@ window.FIGURES = {
       src: SRC_P225
     },
 
+    /* --- Безопасные гавани по материальным активам ------------------- */
+
+    deminimis_no_afs: {
+      n: 2500, unit: "usd",
+      ru: "Гавань малой суммы без применимой финансовой отчётности",
+      en: "De minimis safe harbor without an applicable financial statement",
+      note_ru: "Порог считается за счёт или за отдельный предмет, подтверждённый счётом, а не за год.",
+      note_en: "The limit is per invoice or per item as substantiated by invoice, not per year.",
+      src: { t: "Tangible Property Final Regulations", u: "https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations" }
+    },
+    deminimis_afs: {
+      n: 5000, unit: "usd",
+      ru: "Гавань малой суммы при наличии применимой финансовой отчётности",
+      en: "De minimis safe harbor with an applicable financial statement",
+      src: { t: "Tangible Property Final Regulations", u: "https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations" }
+    },
+
     /* --- Освобождённые организации ------------------------------------ */
 
     ex_990n_receipts: {
@@ -997,7 +1014,8 @@ window.FIGURES = {
              "rental_incidental_pct",
              "depr_residential", "depr_nonresidential", "matpart_hours", "matpart_hours_sig",
              "rep_hours", "pal_allowance", "pal_allowance_mfs", "pal_phaseout_start",
-             "pal_phaseout_end", "ebl_single", "ebl_mfj"] },
+             "pal_phaseout_end", "ebl_single", "ebl_mfj",
+             "deminimis_no_afs", "deminimis_afs"] },
     { id: "deductions", ru: "Поездки, подарки, домашний офис", en: "Travel, gifts and the home office",
       keys: ["mileage_2025", "meals_limit", "gift_limit", "gift_incidental",
              "temp_assignment_months", "home_office_rate", "home_office_max_sqft",
