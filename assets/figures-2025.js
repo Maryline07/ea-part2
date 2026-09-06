@@ -99,6 +99,14 @@ window.FIGURES = {
       note_en: "No ceiling — applies to all net earnings.",
       src: { t: "Instructions for Schedule SE (2025)", u: "https://www.irs.gov/instructions/i1040sse" }
     },
+    fica_employer_rate: {
+      n: 7.65, unit: "pct",
+      ru: "Доля работодателя в социальном обеспечении и Medicare",
+      en: "Employer’s share of social security and Medicare",
+      note_ru: "6,2% социального обеспечения и 1,45% Medicare. Столько же удерживается с работника, а самозанятый несёт обе половины сам.",
+      note_en: "6.2% social security and 1.45% Medicare. The same again is withheld from the employee, while a self-employed person carries both halves.",
+      src: SRC_P15
+    },
     se_net_factor: {
       n: 92.35, unit: "pct",
       ru: "Множитель чистого заработка",
@@ -1834,7 +1842,7 @@ window.FIGURES = {
     { id: "methods", ru: "Методы и периоды учёта", en: "Accounting methods and periods",
       keys: ["gross_receipts_448c", "sec444_deferral"] },
     { id: "se", ru: "Налог на самозанятость", en: "Self-employment tax",
-      keys: ["se_rate_total", "se_rate_ss", "se_rate_medicare", "se_net_factor", "se_wage_base",
+      keys: ["se_rate_total", "se_rate_ss", "se_rate_medicare", "se_net_factor", "fica_employer_rate", "se_wage_base",
              "se_threshold", "se_church", "addl_medicare_rate", "addl_medicare_single",
              "addl_medicare_mfj", "addl_medicare_mfs", "addl_medicare_withhold", "farm_opt_gross", "farm_opt_profit",
              "farm_opt_max", "nonfarm_opt_pct"] },
