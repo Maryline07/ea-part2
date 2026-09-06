@@ -1,0 +1,2031 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 7. Возмещение стоимости — EA Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=38">
+<script defer src="assets/figures-2025.js?v=38"></script>
+<script defer src="assets/modules.js?v=38"></script>
+<script defer src="assets/quiz-su07.js?v=38"></script>
+<script defer src="assets/xref.local.js"></script>
+<script defer src="assets/app.js?v=38"></script>
+</head>
+<body data-module="su07">
+
+<a class="skip" href="#main"><span lang="ru">К содержанию</span><span lang="en">Skip to content</span></a>
+
+<div class="topbar">
+  <a class="topbar__mark" href="index.html">EA Part 2</a>
+  <nav>
+    <a href="index.html"><span lang="ru">Модули</span><span lang="en">Modules</span></a>
+    <a href="trainer.html"><span lang="ru">Тренажёр</span><span lang="en">Practice</span></a>
+    <a href="reference.html"><span lang="ru">Справочник 2025</span><span lang="en">2025 figures</span></a>
+    <a href="exam-map.html"><span lang="ru">Программа экзамена</span><span lang="en">Exam outline</span></a>
+    <a href="sources.html"><span lang="ru">Источники</span><span lang="en">Sources</span></a>
+  </nav>
+  <div class="switches">
+    <div class="langswitch" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="themeswitch" role="group" aria-label="Оформление / Theme">
+      <button type="button" data-theme="light" aria-pressed="true"
+              aria-label="Светлая тема / Light theme" title="Светлая тема / Light theme">☀</button>
+      <button type="button" data-theme="dark" aria-pressed="false"
+              aria-label="Тёмная тема / Dark theme" title="Тёмная тема / Dark theme">☾</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <div class="sheet">
+    <div class="sheet__title">
+      <span class="sheet__no">07</span>
+      <h1>
+        <span lang="ru">Возмещение стоимости</span>
+        <span lang="en">Cost recovery</span>
+      </h1>
+    </div>
+    <dl class="sheet__fields">
+      <div class="field">
+        <dt><span lang="ru">Налоговый период</span><span lang="en">Tax year</span></dt>
+        <dd>2025</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Раздел программы</span><span lang="en">Outline section</span></dt>
+        <dd><span lang="ru">Подготовка деклараций бизнеса</span><span lang="en">Business Tax Preparation</span></dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Формы</span><span lang="en">Forms</span></dt>
+        <dd>4562 · 4797 · 3115 · Schedule D</dd>
+      </div>
+      <div class="field">
+        <dt><span lang="ru">Публикации</span><span lang="en">Publications</span></dt>
+        <dd>946 · 544 · 535 · 551</dd>
+      </div>
+    </dl>
+    <div class="xref" data-xref="su07" hidden></div>
+  </div>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Содержание модуля">
+      <h2><span lang="ru">В этом модуле</span><span lang="en">In this module</span></h2>
+      <ol>
+        <li><a href="#s71"><span lang="ru">7.1 Что амортизируется и за сколько лет</span><span lang="en">7.1 What is depreciated, and over how long</span></a></li>
+        <li><a href="#s72"><span lang="ru">7.2 Списанное имущество и автомобили</span><span lang="en">7.2 Listed property and automobiles</span></a></li>
+        <li><a href="#s73"><span lang="ru">7.3 §179 и бонусная амортизация</span><span lang="en">7.3 Section 179 and bonus depreciation</span></a></li>
+        <li><a href="#s74"><span lang="ru">7.4 Нематериальные активы</span><span lang="en">7.4 Intangible assets</span></a></li>
+        <li><a href="#s75"><span lang="ru">7.5 Истощение природных ресурсов</span><span lang="en">7.5 Depletion of natural resources</span></a></li>
+        <li><a href="#s76"><span lang="ru">7.6 Возврат амортизации</span><span lang="en">7.6 Depreciation recapture</span></a></li>
+        <li><a href="#traps"><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></a></li>
+        <li><a href="#check"><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></a></li>
+        <li><a href="#quiz"><span lang="ru">Тренажёр</span><span lang="en">Question set</span></a></li>
+      </ol>
+    </nav>
+
+    <div>
+
+    <div class="concept">
+      <h2><span lang="ru">Главный вопрос модуля</span><span lang="en">The question this module answers</span></h2>
+      <p lang="ru">Станок куплен за один день, а работает десять лет. Деньги ушли сразу — когда
+        приходит вычет?</p>
+      <p lang="en">A machine is bought in a day and works for ten years. The money left at once —
+        when does the deduction arrive?</p>
+      <p lang="ru">Ответ — по частям, по расписанию, которое пишет закон. Это и есть
+        <strong>возмещение стоимости</strong>: амортизация для вещей, списание для
+        нематериальных активов, истощение для месторождений. Расписание не про износ. Станок
+        может дорожать, здание — стоять как новое; вычет всё равно идёт по таблице, потому что
+        таблица заменяет спор о том, сколько имущество на самом деле потеряло за год.</p>
+      <p lang="en">The answer is in instalments, on a schedule the law writes. That is what
+        <strong>cost recovery</strong> is: depreciation for things, amortization for intangibles,
+        depletion for deposits. The schedule is not about wear. A machine may rise in value and a
+        building may stand as good as new; the deduction still follows the table, because the
+        table replaces any argument about what the property really lost during the year.</p>
+      <p lang="ru">И у расписания есть вторая половина, о которой забывают. Вычет — не подарок,
+        а <em>аванс</em>. Пока имущество служит, государство отдаёт его частями по обычной
+        ставке. Когда имущество продаётся с прибылью, оно забирает выданное назад — тоже по
+        обычной ставке, а не по льготной ставке прироста капитала. Это называется
+        <strong>возврат амортизации</strong>, и на нём строится треть вопросов по теме.</p>
+      <p lang="en">And the schedule has a second half, the one that gets forgotten. The deduction
+        is not a gift but an <em>advance</em>. While the property serves, the government hands it
+        over in instalments at ordinary rates. When the property is sold at a gain, it takes back
+        what it advanced — at ordinary rates too, not at the preferential capital gains rate. This
+        is <strong>depreciation recapture</strong>, and a third of the questions on the subject
+        are built on it.</p>
+      <p lang="ru">Отсюда порядок модуля. Сначала общее расписание и его сроки, потом два
+        особых режима — для машин и для того, что списывается сразу, — затем нематериальные
+        активы и месторождения, и в конце то, чем всё это оплачивается при продаже.</p>
+      <p lang="en">Hence the order of this module. First the general schedule and its periods,
+        then two special regimes — one for vehicles, one for what is written off at once — then
+        intangibles and mineral deposits, and at the end what pays for all of it on a sale.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s71">
+      <h2><span class="num">7.1</span>
+        <span lang="ru">Что амортизируется и за сколько лет</span>
+        <span lang="en">What is depreciated, and over how long</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Амортизируется не всё, что дорого стоит. Пять условий должны выполняться
+      одновременно, и провал любого из них означает: либо вычет сразу и целиком, либо не вычет
+      вовсе, а базис до самой продажи.</p>
+    <p lang="en">Not everything expensive is depreciated. Five conditions must hold at once, and
+      failing any one of them means either a deduction in full right away, or no deduction at all
+      but basis carried until the property is sold.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru"><strong>Имущество принадлежит налогоплательщику.</strong> Арендованное — нет; но улучшения, сделанные арендатором, амортизирует он сам</span><span lang="en"><strong>The taxpayer owns it.</strong> Leased property is not owned; but improvements the tenant makes are depreciated by the tenant</span></td></tr>
+        <tr><th>2</th><td><span lang="ru"><strong>Используется в бизнесе или для получения дохода.</strong> При смешанном использовании амортизируется только деловая доля</span><span lang="en"><strong>It is used in a business or held for the production of income.</strong> Where use is mixed, only the business share is depreciated</span></td></tr>
+        <tr><th>3</th><td><span lang="ru"><strong>Срок службы определим.</strong> Вещь должна изнашиваться, устаревать или иссякать. Земля не изнашивается — и не амортизируется никогда</span><span lang="en"><strong>Its useful life is determinable.</strong> The thing must wear out, become obsolete or be used up. Land does not wear out — and is never depreciated</span></td></tr>
+        <tr><th>4</th><td><span lang="ru"><strong>Прослужит дольше года.</strong> Иначе это текущий расход</span><span lang="en"><strong>It will last more than one year.</strong> Otherwise it is a current expense</span></td></tr>
+        <tr class="total"><th>5</th><td><span lang="ru"><strong>Не входит в исключения.</strong> Запасы, имущество, введённое и выбывшее в одном и том же году, и имущество, стоимость которого возмещается по другим правилам</span><span lang="en"><strong>It is not excepted property.</strong> Inventory, property placed in service and disposed of in the same year, and property whose cost is recovered under other rules</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">«Введено в эксплуатацию» — не значит «начало работать»</span><span lang="en">“Placed in service” does not mean “started working”</span></h3>
+      <p lang="ru">Отсчёт амортизации начинается в тот момент, когда имущество <strong>готово и
+        доступно</strong> для определённого использования. Не когда оно куплено, не когда
+        оплачено и не когда принесло первый доллар. Станок, смонтированный в декабре и
+        запущенный в марте, амортизируется с декабря. Дом, готовый к сдаче и выставленный в
+        объявлении в ноябре, амортизируется с ноября, даже если жилец въехал в феврале.</p>
+      <p lang="en">Depreciation starts at the moment the property is <strong>ready and
+        available</strong> for a specific use. Not when it was bought, not when it was paid for,
+        and not when it earned its first dollar. A machine installed in December and switched on
+        in March is depreciated from December. A house finished and advertised for rent in
+        November is depreciated from November, even if the tenant moves in in February.</p>
+      <p lang="ru">Обратная сторона того же правила: простой амортизацию не останавливает.
+        Станок, стоящий без дела, но остающийся в бизнесе, списывается по расписанию дальше.
+        <span class="cite">Pub. 946, гл. 1</span></p>
+      <p lang="en">The other side of the same rule: idleness does not stop depreciation. A machine
+        standing unused but still held in the business keeps running down its schedule.
+        <span class="cite">Pub. 946, ch. 1</span></p>
+    </div>
+
+    <h3><span lang="ru">Классы и сроки</span><span lang="en">Classes and periods</span></h3>
+
+    <p lang="ru">Действующая система называется MACRS и применяется ко всему, что введено в
+      эксплуатацию с 1987 года. Внутри неё две системы: <strong>общая</strong>, по которой
+      считают по умолчанию, и <strong>альтернативная</strong> — более медленная, прямолинейная,
+      которую в одних случаях выбирают, а в других обязаны применять.</p>
+    <p lang="en">The system in force is called MACRS and applies to everything placed in service
+      since 1987. Inside it there are two systems: the <strong>general</strong> one, used by
+      default, and the <strong>alternative</strong> one — slower, straight line, elected in some
+      cases and mandatory in others.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Класс</span><span lang="en">Class</span></th>
+          <th><span lang="ru">Метод</span><span lang="en">Method</span></th>
+          <th><span lang="ru">Что сюда попадает</span><span lang="en">What falls here</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">3 года</span><span lang="en">3-year</span></th>
+          <td><span lang="ru">200% убывающего остатка</span><span lang="en">200% declining balance</span></td>
+          <td><span lang="ru">Специальный инструмент, скаковые лошади старше двух лет, тракторные тягачи</span><span lang="en">Special tools, race horses over two years old, tractor units</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">5 лет</span><span lang="en">5-year</span></th>
+          <td><span lang="ru">200% убывающего остатка</span><span lang="en">200% declining balance</span></td>
+          <td><span lang="ru">Легковые машины и лёгкие грузовики, компьютеры и оргтехника, скот молочный и племенной, оборудование для исследований</span><span lang="en">Cars and light trucks, computers and office machinery, dairy and breeding cattle, research equipment</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">7 лет</span><span lang="en">7-year</span></th>
+          <td><span lang="ru">200% убывающего остатка</span><span lang="en">200% declining balance</span></td>
+          <td><span lang="ru">Офисная мебель, сельхозтехника, а также <strong>всё, что закон нигде не отнёс к другому классу</strong></span><span lang="en">Office furniture, farm machinery, and also <strong>anything the law has not assigned to another class</strong></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">10 лет</span><span lang="en">10-year</span></th>
+          <td><span lang="ru">200% убывающего остатка</span><span lang="en">200% declining balance</span></td>
+          <td><span lang="ru">Суда и баржи, оборудование пищевой и табачной промышленности, плодовые деревья и виноградники</span><span lang="en">Vessels and barges, food and tobacco processing equipment, fruit- and nut-bearing trees and vines</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">15 лет</span><span lang="en">15-year</span></th>
+          <td><span lang="ru">150% убывающего остатка</span><span lang="en">150% declining balance</span></td>
+          <td><span lang="ru">Улучшения земельного участка, очистные сооружения, придорожные щиты, рестораны, улучшения внутри нежилого здания</span><span lang="en">Land improvements, sewage treatment plants, billboards, restaurant property, qualified improvement property</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">20 лет</span><span lang="en">20-year</span></th>
+          <td><span lang="ru">150% убывающего остатка</span><span lang="en">150% declining balance</span></td>
+          <td><span lang="ru">Сельскохозяйственные постройки, муниципальные канализационные сети</span><span lang="en">Farm buildings, municipal sewers</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru"><span data-fig="resid_rental_years"></span> года</span><span lang="en"><span data-fig="resid_rental_years"></span> years</span></th>
+          <td><span lang="ru">Прямолинейный, середина месяца</span><span lang="en">Straight line, mid-month</span></td>
+          <td><span lang="ru">Жилая арендная недвижимость: не менее 80% валовой платы приходит от жилых помещений. Гостиница не подходит</span><span lang="en">Residential rental property: at least 80% of the gross rents come from dwelling units. A hotel does not qualify</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru"><span data-fig="nonresid_years"></span> лет</span><span lang="en"><span data-fig="nonresid_years"></span> years</span></th>
+          <td><span lang="ru">Прямолинейный, середина месяца</span><span lang="en">Straight line, mid-month</span></td>
+          <td><span lang="ru">Вся прочая недвижимость: магазины, офисы, склады, заводские корпуса</span><span lang="en">All other real property: shops, offices, warehouses, factory buildings</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Седьмая строка стоит того, чтобы её запомнить отдельно. Класс «семь лет» —
+      корзина по умолчанию: если имущество не названо ни в одном другом классе и у него нет
+      установленного среднего срока, оно семилетнее. Это спасает на экзамене чаще, чем знание
+      самих перечней.</p>
+    <p lang="en">The seventh line is worth remembering on its own. The seven-year class is the
+      default bucket: if property is named in no other class and has no class life assigned, it is
+      seven-year property. On the exam that saves you more often than knowing the lists.</p>
+
+    <h3><span lang="ru">Когда общая система запрещена</span><span lang="en">When the general system is barred</span></h3>
+
+    <p lang="ru">Альтернативная система прямолинейна, не знает ликвидационной стоимости и идёт
+      дольше: <span data-fig="ads_resid_years"></span> лет для жилой аренды (<span data-fig="ads_nonresid_years"></span>,
+      если объект введён до 2018 года), <span data-fig="ads_nonresid_years"></span> — для нежилой
+      недвижимости, 12 — для личного имущества без установленного срока. Её применяют
+      <strong>обязательно</strong> в пяти случаях.</p>
+    <p lang="en">The alternative system is straight line, ignores salvage value and runs longer:
+      <span data-fig="ads_resid_years"></span> years for residential rental property
+      (<span data-fig="ads_nonresid_years"></span> if placed in service before 2018),
+      <span data-fig="ads_nonresid_years"></span> for nonresidential real property, 12 for
+      personal property with no class life. It is <strong>mandatory</strong> in five cases.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Списанное имущество, у которого квалифицированное деловое использование не превысило <span data-fig="qbu_threshold"></span></span><span lang="en">Listed property whose qualified business use did not exceed <span data-fig="qbu_threshold"></span></span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Материальное имущество, используемое преимущественно за пределами США</span><span lang="en">Tangible property used predominantly outside the United States</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Имущество, используемое освобождённой организацией или сдаваемое ей в аренду</span><span lang="en">Property used by, or leased to, a tax-exempt organisation</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Имущество, профинансированное освобождёнными от налога облигациями</span><span lang="en">Property financed by tax-exempt bonds</span></td></tr>
+        <tr class="total"><th>5</th><td><span lang="ru">Ввезённое имущество из страны, применяющей дискриминационные торговые меры</span><span lang="en">Imported property from a country that engages in discriminatory trade practices</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Альтернативную систему можно выбрать и добровольно — например, чтобы не
+      раздувать убыток. Для недвижимости такой выбор делается <strong>по каждому объекту
+      отдельно</strong>, для прочего имущества — сразу по всему классу года. И он
+      <strong>необратим</strong>. <span class="cite">Pub. 946, гл. 4</span></p>
+    <p lang="en">The alternative system may also be elected voluntarily — to keep a loss from
+      growing, for instance. For real property the election is made <strong>property by
+      property</strong>; for other property it covers the whole class of that year. And it is
+      <strong>irrevocable</strong>. <span class="cite">Pub. 946, ch. 4</span></p>
+
+    <h3><span lang="ru">Сколько достаётся на первый год</span><span lang="en">How much the first year gets</span></h3>
+
+    <p lang="ru">Имущество редко покупают первого января. Вместо того чтобы считать дни, закон
+      применяет <strong>условность</strong> — придуманную дату, одинаковую для всех. Какая из
+      трёх, решается по порядку.</p>
+    <p lang="en">Property is rarely bought on the first of January. Rather than count days, the
+      law applies a <strong>convention</strong> — an invented date, the same for everyone. Which
+      of the three applies is settled in order.</p>
+
+    <ol class="ladder">
+      <li>
+        <p class="ladder__q"><span lang="ru">Это недвижимость?</span><span lang="en">Is it real property?</span></p>
+        <p class="ladder__out"><span lang="ru">Да — <strong>середина месяца</strong>. Считается, что объект введён в середине того месяца, в котором введён на самом деле. Дальше в этой развилке недвижимость не участвует</span><span lang="en">Yes — <strong>mid-month</strong>. The property is treated as placed in service in the middle of the month in which it actually was. Real property takes no further part in this fork</span></p>
+      </li>
+      <li>
+        <p class="ladder__q"><span lang="ru">Больше <span data-fig="midquarter_test"></span> базиса всего прочего имущества года пришлось на последний квартал?</span><span lang="en">Did more than <span data-fig="midquarter_test"></span> of the basis of all the year's other property fall in the last quarter?</span></p>
+        <p class="ladder__out"><span lang="ru">Да — <strong>середина квартала</strong>, и притом для <em>всего</em> имущества этого года, а не только для декабрьского. У каждого объекта свой квартал и своя ставка</span><span lang="en">Yes — <strong>mid-quarter</strong>, and for <em>all</em> of that year's property, not only the December purchases. Each asset uses its own quarter and its own rate</span></p>
+      </li>
+      <li class="is-rest">
+        <p class="ladder__q"><span lang="ru">Ни то ни другое</span><span lang="en">Neither</span></p>
+        <p class="ladder__out"><span lang="ru"><strong>Полугодовая</strong>: половина годовой суммы в первый год и половина — в год выбытия, когда бы внутри года это ни случилось</span><span lang="en"><strong>Half-year</strong>: half a year's amount in the first year and half in the year of disposal, whenever inside the year that happens</span></p>
+      </li>
+    </ol>
+
+    <div class="trap">
+      <h3><span lang="ru">Тест <span data-fig="midquarter_test"></span> считается по базису и без недвижимости</span><span lang="en">The <span data-fig="midquarter_test"></span> test is by basis and excludes real property</span></h3>
+      <p lang="ru">Три ошибки живут в одном месте. Первая: считают по <em>числу</em> объектов, а
+        не по их базису. Вторая: в знаменатель включают здание, введённое в том же году, — а
+        недвижимость в этом тесте не участвует ни в числителе, ни в знаменателе. Третья: решив,
+        что тест пройден, применяют середину квартала <em>только</em> к декабрьской покупке.
+        Условность одна на весь год: если порог перейдён, мартовский станок тоже считается по
+        своему кварталу, просто по мартовскому.</p>
+      <p lang="en">Three mistakes live in one place. First: counting the <em>number</em> of assets
+        instead of their basis. Second: putting a building placed in service that same year into
+        the denominator — real property takes no part in this test, neither above nor below the
+        line. Third: having found the threshold crossed, applying the mid-quarter convention
+        <em>only</em> to the December purchase. The convention is one for the whole year: once the
+        threshold is passed, the March machine is figured by its quarter too — just by the March
+        one. <span class="cite">Pub. 946, ch. 4</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-1. Ноябрьская покупка меняет весь год</span><span lang="en">Example 7-1. A November purchase changes the whole year</span></div>
+      <div class="example__body">
+        <p lang="ru">За год введены в эксплуатацию два объекта: в марте — станок семилетнего
+          класса за $40 000, в ноябре — оборудование пятилетнего класса за $30 000. Недвижимости
+          не покупали, §179 и бонус не применяются.</p>
+        <p lang="en">Two assets were placed in service during the year: in March, a seven-year
+          class machine for $40,000; in November, five-year class equipment for $30,000. No real
+          property was bought, and neither section 179 nor bonus depreciation is claimed.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Доля последнего квартала: 30 000 ÷ 70 000</span><span lang="en">Last-quarter share: 30,000 ÷ 70,000</span></td>
+              <td data-num="42.86" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Станок, первый квартал, семь лет: 40 000 × 25,00%</span><span lang="en">The machine, first quarter, seven-year: 40,000 × 25.00%</span></td>
+              <td data-num="10000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Оборудование, четвёртый квартал, пять лет: 30 000 × 5,00%</span><span lang="en">The equipment, fourth quarter, five-year: 30,000 × 5.00%</span></td>
+              <td data-num="1500"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет первого года</span><span lang="en">First-year deduction</span></td>
+              <td data-num="11500"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Ноябрьская покупка, меньшая по сумме, отняла вычет у мартовской: по
+          полугодовой условности станок дал бы $5 716 вместо $10 000. Здесь это обернулось в
+          плюс, но так бывает не всегда — квартальная ставка зависит от класса, и одна поздняя
+          покупка способна обрушить вычет по всем остальным.</p>
+        <p lang="en">The November purchase, the smaller of the two, took the deduction away from
+          the March one: under the half-year convention the machine would have given $5,716
+          instead of $10,000. Here it worked out well, but not always — the quarterly rate depends
+          on the class, and one late purchase can pull the deduction down on everything else.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="11716"></span> — тест
+          проигнорирован и применена полугодовая условность; <span data-num="7216"></span> —
+          середина квартала применена только к ноябрьской покупке;
+          <span data-num="2928"></span> — оба объекта отнесены к четвёртому кварталу.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="11716"></span> — the test ignored
+          and the half-year convention used; <span data-num="7216"></span> — the mid-quarter
+          convention applied to the November purchase only; <span data-num="2928"></span> — both
+          assets treated as fourth-quarter property.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Исправление ошибок</span><span lang="en">Correcting errors</span></h3>
+
+    <p lang="ru">Амортизацию посчитали неправильно или не посчитали вовсе. Способ исправления
+      зависит не от размера ошибки, а от того, успел ли неверный порядок стать
+      <strong>принятым методом учёта</strong>. Метод считается принятым, если один и тот же
+      неверный способ применён в <strong>двух и более подряд поданных декларациях</strong>.</p>
+    <p lang="en">Depreciation was figured wrongly, or not at all. How it is fixed depends not on
+      the size of the error but on whether the wrong treatment has become an <strong>adopted
+      method of accounting</strong>. A method counts as adopted where the same impermissible
+      treatment was used in <strong>two or more consecutively filed returns</strong>.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что случилось</span><span lang="en">What happened</span></th>
+          <th><span lang="ru">Чем исправляется</span><span lang="en">How it is fixed</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Арифметическая ошибка или ошибка переноса</span><span lang="en">A mathematical or posting error</span></th>
+          <td><span lang="ru">Уточнённая декларация — в любом году, метод здесь ни при чём</span><span lang="en">An amended return — in any year; no method is involved</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Неверный метод применён <strong>в одной</strong> декларации</span><span lang="en">A wrong method used <strong>in one</strong> return</span></th>
+          <td><span lang="ru">Уточнённая декларация: метод ещё не принят, исправлять нечего, кроме самой цифры</span><span lang="en">An amended return: no method has been adopted yet, so there is nothing to change but the figure</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Неверный метод применён <strong>в двух и более</strong> подряд</span><span lang="en">A wrong method used <strong>in two or more</strong> in a row</span></th>
+          <td><span lang="ru">Форма 3115: смена метода учёта с корректировкой по §481(a), которая подбирает всю недостачу разом</span><span lang="en">Form 3115: a change of accounting method with a section 481(a) adjustment, which picks up the whole shortfall at once</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Меняются метод, срок возмещения или условность</span><span lang="en">The method, recovery period or convention is changed</span></th>
+          <td><span lang="ru">Форма 3115</span><span lang="en">Form 3115</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Актив переводится из неамортизируемых в амортизируемые или обратно</span><span lang="en">An asset moves from nondepreciable to depreciable, or the other way</span></th>
+          <td><span lang="ru">Форма 3115</span><span lang="en">Form 3115</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Срок для уточнённой декларации — <strong>более поздняя</strong> из двух дат:
+      три года со дня подачи исходной декларации или два года со дня уплаты налога за тот год.
+      Декларация, поданная досрочно, считается поданной в срок.
+      <span class="cite">Pub. 946, гл. 1</span></p>
+    <p lang="en">The deadline for an amended return is the <strong>later</strong> of two dates:
+      three years from filing the original return, or two years from paying the tax for that year.
+      A return filed early counts as filed on the due date.
+      <span class="cite">Pub. 946, ch. 1</span></p>
+
+    <div class="trap">
+      <h3><span lang="ru">Не заявили амортизацию — базис всё равно упал</span><span lang="en">Not claiming depreciation does not save the basis</span></h3>
+      <p lang="ru">Соблазн рассуждать так: раз вычет не взят, то и возвращать при продаже нечего,
+        и базис остался прежним. Это неверно. Базис уменьшается на амортизацию
+        <strong>заявленную или полагавшуюся</strong> — на бо́льшую из двух. Не заявили — вычет
+        потерян, а базис всё равно уменьшен, и прибыль от продажи посчитают так, как если бы
+        вычет был взят.</p>
+      <p lang="en">The tempting reasoning: if the deduction was never claimed, there is nothing to
+        take back on a sale, and the basis is untouched. It is wrong. Basis is reduced by
+        depreciation <strong>allowed or allowable</strong> — by the greater of the two. Not
+        claiming it loses the deduction and reduces the basis anyway, and the gain on sale is
+        figured as though the deduction had been taken.</p>
+      <p lang="ru">Отсюда практический вывод: пропущенная амортизация — не мелочь, которую можно
+        оставить как есть. Её возвращают формой 3115, и корректировка по §481(a) даёт весь
+        накопленный вычет в год исправления, без уточнённых деклараций за прошлые годы.</p>
+      <p lang="en">Hence the practical point: missed depreciation is not a small thing to be left
+        alone. It is recovered on Form 3115, and the section 481(a) adjustment gives the whole
+        accumulated deduction in the year of correction, with no amended returns for the past
+        years.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s72">
+      <h2><span class="num">7.2</span>
+        <span lang="ru">Списанное имущество и автомобили</span>
+        <span lang="en">Listed property and automobiles</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Есть вещи, которыми одинаково удобно пользоваться и для дела, и для себя. Закон
+      не спорит с налогоплательщиком о каждой поездке — он выделяет такое имущество в отдельный
+      разряд, <strong>списанное имущество</strong>, и ставит его под особый учёт. Разрядов
+      четыре.</p>
+    <p lang="en">Some things are equally convenient for business and for oneself. The law does not
+      argue about every trip — it sets such property apart as <strong>listed property</strong> and
+      puts it under a special regime. There are four categories.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Легковые автомобили полной массой не более <span data-fig="auto_weight"></span> фунтов</span><span lang="en">Passenger automobiles rated at not more than <span data-fig="auto_weight"></span> pounds</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Прочий транспорт: грузовики, фургоны, мотоциклы, лодки, самолёты — кроме прямо исключённых машин</span><span lang="en">Other transportation property: trucks, vans, motorcycles, boats, aircraft — except vehicles specifically excepted</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Деловые самолёты</span><span lang="en">Business aircraft</span></td></tr>
+        <tr class="total"><th>4</th><td><span lang="ru">Имущество для развлечения, отдыха и увеселения: фото- и видеотехника, звуковая и записывающая аппаратура</span><span lang="en">Property generally used for entertainment, recreation or amusement: photographic, phonographic, communication and video recording equipment</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Компьютер списанным имуществом больше не считается</span><span lang="en">A computer is no longer listed property</span></h3>
+      <p lang="ru">До 2018 года компьютеры и периферия входили в перечень, и на этом построено
+        множество старых задач: работник считает домашний компьютер, доказывает удобство
+        работодателя, применяет альтернативную систему. С налоговых периодов, начинающихся после
+        2017 года, компьютеры из перечня <strong>исключены</strong>. Они амортизируются как
+        обычное пятилетнее имущество, без порога в <span data-fig="qbu_threshold"></span> и без
+        особого журнала учёта.</p>
+      <p lang="en">Before 2018 computers and peripheral equipment were on the list, and a whole
+        genre of old problems is built on it: an employee figures the home computer, proves the
+        employer's convenience, applies the alternative system. For tax years beginning after 2017
+        computers are <strong>off the list</strong>. They are depreciated as ordinary five-year
+        property, with no <span data-fig="qbu_threshold"></span> threshold and no special
+        substantiation log.</p>
+      <p lang="ru">Личная доля, конечно, вычету всё равно не подлежит — но это общее правило, а
+        не режим списанного имущества. <span class="cite">Pub. 946, гл. 5</span></p>
+      <p lang="en">The personal share is of course still not deductible — but that is the general
+        rule, not the listed-property regime. <span class="cite">Pub. 946, ch. 5</span></p>
+    </div>
+
+    <h3><span lang="ru">Порог в половину</span><span lang="en">The half threshold</span></h3>
+
+    <p lang="ru">Всё в этом режиме держится на одной величине — доле
+      <strong>квалифицированного делового использования</strong>. Она должна быть
+      <em>строго больше</em> <span data-fig="qbu_threshold"></span>: ровно половина порога не
+      проходит.</p>
+    <p lang="en">Everything in this regime turns on one figure — the share of
+      <strong>qualified business use</strong>. It must be <em>strictly more</em> than
+      <span data-fig="qbu_threshold"></span>: exactly half does not pass.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Доля квалифицированного делового использования</span><span lang="en">Qualified business use share</span></th>
+          <th><span lang="ru">Что можно</span><span lang="en">What is available</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Больше <span data-fig="qbu_threshold"></span></span><span lang="en">More than <span data-fig="qbu_threshold"></span></span></th>
+          <td><span lang="ru">§179, бонусная амортизация и общая система MACRS — всё на деловую долю</span><span lang="en">Section 179, bonus depreciation and the general MACRS system — all applied to the business share</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru"><span data-fig="qbu_threshold"></span> и меньше</span><span lang="en"><span data-fig="qbu_threshold"></span> or less</span></th>
+          <td><span lang="ru">Только альтернативная система: прямолинейно по удлинённому сроку. Ни §179, ни бонуса</span><span lang="en">The alternative system only: straight line over the longer period. Neither section 179 nor bonus</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Работник, использующий <em>своё</em> имущество, попадает в деловое использование
+      только при трёх условиях сразу: это нужно для бизнеса работодателя, это делается
+      <strong>для удобства работодателя</strong> и требуется <strong>как условие
+      найма</strong>. Удобство самого работника — не основание.</p>
+    <p lang="en">An employee using <em>their own</em> property counts as business use only where
+      three things hold at once: it is for the employer's business, it is <strong>for the
+      employer's convenience</strong>, and it is <strong>required as a condition of
+      employment</strong>. The employee's own convenience is no ground.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Инвестиционное использование к порогу не прибавляется</span><span lang="en">Investment use does not count towards the threshold</span></h3>
+      <p lang="ru">Машина используется 40% для бизнеса и 25% для поездок к своим инвестиционным
+        объектам, остальное — лично. Соблазн сложить: 65% — порог пройден. Не пройден.
+        Инвестиционное использование <strong>не входит</strong> в квалифицированное деловое
+        использование и в тесте не участвует. Порог провален при 40%, значит §179 недоступен и
+        амортизация идёт по альтернативной системе.</p>
+      <p lang="en">A car is used 40% for the business and 25% for trips to the owner's investment
+        properties, the rest personally. The temptation is to add: 65%, threshold passed. It is
+        not. Investment use is <strong>not part of</strong> qualified business use and takes no
+        part in the test. The threshold fails at 40%, so section 179 is unavailable and
+        depreciation runs under the alternative system.</p>
+      <p lang="ru">При этом сама <em>сумма</em> амортизации считается от 65%: инвестиционная доля
+        в тест не входит, но вычет по ней полагается. Одна и та же цифра работает в двух местах
+        по-разному, и на этом строятся вопросы.
+        <span class="cite">Pub. 946, гл. 5</span></p>
+      <p lang="en">Yet the <em>amount</em> of depreciation is figured on 65%: investment use is
+        outside the test but still earns a deduction. The same figure works differently in two
+        places, and the questions are built on exactly that.
+        <span class="cite">Pub. 946, ch. 5</span></p>
+    </div>
+
+    <p lang="ru">Если порог пройден в первый год, а потом деловая доля упала до
+      <span data-fig="qbu_threshold"></span> и ниже, взятое возвращается. В доход того года
+      включается <strong>превышение</strong> уже взятой амортизации (вместе с §179 и бонусом)
+      над той, что полагалась бы по альтернативной системе с самого начала. И дальше, до конца
+      срока, применяется только альтернативная система — даже если доля потом опять выросла.</p>
+    <p lang="en">If the threshold is met in the first year and the business share later falls to
+      <span data-fig="qbu_threshold"></span> or below, what was taken comes back. Income of that
+      year includes the <strong>excess</strong> of the depreciation already claimed (section 179
+      and bonus included) over what the alternative system would have given from the start. And
+      from then to the end of the period only the alternative system applies — even if the share
+      rises again.</p>
+
+    <h3><span lang="ru">Потолки для легковых машин</span><span lang="en">The caps on passenger automobiles</span></h3>
+
+    <p lang="ru">Для машин лёгких — не тяжелее <span data-fig="auto_weight"></span> фунтов —
+      есть второй, независимый ограничитель. Сколько бы ни давали §179, бонус и MACRS вместе,
+      вычет за год не превысит суммы из таблицы. Числа привязаны к году ввода в эксплуатацию и
+      потом не меняются.</p>
+    <p lang="en">For light vehicles — not heavier than <span data-fig="auto_weight"></span> pounds
+      — there is a second, independent limiter. However much section 179, bonus and MACRS give
+      together, the year's deduction will not exceed the figure in the table. The amounts are
+      fixed by the year the vehicle is placed in service and do not change afterwards.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Год</span><span lang="en">Year</span></th>
+          <th><span lang="ru">Потолок для машины 2025 года ввода</span><span lang="en">Cap for a vehicle placed in service in 2025</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Первый, с бонусной амортизацией</span><span lang="en">First, with bonus depreciation</span></th>
+          <td><span data-fig="auto_cap_y1"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Первый, без бонусной амортизации</span><span lang="en">First, without bonus depreciation</span></th>
+          <td><span data-fig="auto_cap_y1_nobonus"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Второй</span><span lang="en">Second</span></th>
+          <td><span data-fig="auto_cap_y2"></span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Третий</span><span lang="en">Third</span></th>
+          <td><span data-fig="auto_cap_y3"></span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Четвёртый и далее</span><span lang="en">Fourth and later</span></th>
+          <td><span data-fig="auto_cap_y4"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Разница между первыми двумя строками — ровно $8 000: это доля бонусной
+      амортизации, которую закон разрешает добавить сверх обычного потолка. Отказались от
+      бонуса — остаётся <span data-fig="auto_cap_y1_nobonus"></span>.</p>
+    <p lang="en">The gap between the first two lines is exactly $8,000: the slice of bonus
+      depreciation the law allows on top of the ordinary cap. Decline the bonus and
+      <span data-fig="auto_cap_y1_nobonus"></span> is what is left.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-2. Дорогая машина и её потолок</span><span lang="en">Example 7-2. An expensive car and its cap</span></div>
+      <div class="example__body">
+        <p lang="ru">1 марта 2025 года куплена машина за $60 000 массой 4 100 фунтов. Деловое
+          использование — 80%, остальное личное. От бонусной амортизации не отказывались, машина
+          приобретена после 19 января 2025 года.</p>
+        <p lang="en">On March 1, 2025 a car weighing 4,100 pounds was bought for $60,000. Business
+          use is 80%, the rest personal. The bonus allowance was not declined, and the car was
+          acquired after January 19, 2025.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Деловой базис: 60 000 × 80%</span><span lang="en">Business basis: 60,000 × 80%</span></td>
+              <td data-num="48000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Что дал бы стопроцентный бонус без потолка</span><span lang="en">What a 100% bonus would give with no cap</span></td>
+              <td data-num="48000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Потолок первого года с бонусом</span><span lang="en">First-year cap with bonus</span></td>
+              <td data-num="20200"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет первого года: потолок × 80%</span><span lang="en">First-year deduction: the cap × 80%</span></td>
+              <td data-num="16160"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Обратите внимание на порядок: доля делового использования применяется
+          <strong>к потолку</strong>, а не к тому, что осталось после него. Дальше та же машина
+          даёт <span data-num="15680"></span> во второй год, <span data-num="9440"></span> — в
+          третий и по <span data-num="5648"></span> в каждый следующий, пока не исчерпается
+          базис. Дорогая машина списывается больше десяти лет.</p>
+        <p lang="en">Note the order: the business-use share is applied <strong>to the cap</strong>,
+          not to what is left after it. The same car then gives
+          <span data-num="15680"></span> in the second year, <span data-num="9440"></span> in the
+          third and <span data-num="5648"></span> in each year after that until the basis is used
+          up. An expensive car takes more than ten years to write off.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="20200"></span> — потолок не
+          умножен на долю делового использования; <span data-num="48000"></span> — потолок
+          вообще не применён; <span data-num="9760"></span> — взят потолок для случая без
+          бонусной амортизации.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="20200"></span> — the cap not
+          multiplied by the business-use share; <span data-num="48000"></span> — no cap applied at
+          all; <span data-num="9760"></span> — the no-bonus cap used.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Тяжёлая машина потолка не знает, но своё ограничение имеет</span><span lang="en">A heavy vehicle has no cap, but has a limit of its own</span></h3>
+      <p lang="ru">Полная масса выше <span data-fig="auto_weight"></span> фунтов — и пределы
+        §280F не действуют вовсе. Отсюда популярный вывод: внедорожник списывается целиком в
+        первый год. Не целиком. Для машин массой свыше <span data-fig="auto_weight"></span> и не
+        более 14 000 фунтов вычет по §179 ограничен суммой
+        <span data-fig="sec179_suv"></span>. Остаток базиса при этом идёт под бонусную
+        амортизацию без ограничения — и вот она действительно способна списать всё сразу.</p>
+      <p lang="en">Gross weight above <span data-fig="auto_weight"></span> pounds and the section
+        280F limits do not apply at all. Hence the popular conclusion: an SUV is written off in
+        full in the first year. Not in full. For vehicles rated above
+        <span data-fig="auto_weight"></span> and not more than 14,000 pounds the section 179
+        deduction is capped at <span data-fig="sec179_suv"></span>. The rest of the basis then
+        goes to bonus depreciation without limit — and that is what really can write off the
+        remainder at once.</p>
+      <p lang="ru">Из-под этого потолка выходят три вида машин: с более чем девятью
+        пассажирскими местами позади водителя, с грузовым отсеком не короче шести футов и с
+        полностью закрытой кабиной без сидений позади водителя. Пикап с длинным кузовом и
+        микроавтобус ограничения не знают. <span class="cite">Pub. 946, гл. 2</span></p>
+      <p lang="en">Three kinds of vehicle escape this cap: those seating more than nine passengers
+        behind the driver, those with a cargo area at least six feet long, and those with a fully
+        enclosed compartment and no seating behind the driver. A long-bed pickup and a shuttle van
+        know no such limit. <span class="cite">Pub. 946, ch. 2</span></p>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Стандартная ставка за милю — это отказ от MACRS</span><span lang="en">The standard mileage rate is an election out of MACRS</span></h3>
+      <p lang="ru">Кто считает расходы на машину по стандартной ставке за милю, тот считается
+        <strong>выбравшим исключение машины из MACRS</strong>. Отдельной амортизации к ставке не
+        прибавляется: часть ставки и есть амортизация, и на эту часть базис машины всё равно
+        уменьшается — со всеми последствиями при продаже.</p>
+      <p lang="en">Anyone figuring car expenses at the standard mileage rate is treated as having
+        <strong>elected to exclude the car from MACRS</strong>. No separate depreciation is added
+        on top: part of the rate <em>is</em> depreciation, and the car's basis is reduced by that
+        part all the same — with every consequence that follows on a sale.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s73">
+      <h2><span class="num">7.3</span>
+        <span lang="ru">§179 и бонусная амортизация</span>
+        <span lang="en">Section 179 and bonus depreciation</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Два способа не ждать годами, а списать стоимость сразу. Похожи только
+      результатом: устроены они по-разному и ограничены разным, а на экзамене их постоянно
+      путают между собой.</p>
+    <p lang="en">Two ways not to wait for years but to write the cost off at once. They resemble
+      each other only in the result: they are built differently and limited differently, and on
+      the exam they are constantly confused with one another.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">§179</span><span lang="en">Section 179</span></th>
+          <th><span lang="ru">Бонусная амортизация</span><span lang="en">Bonus depreciation</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">По выбору, объект за объектом и на любую часть стоимости</span><span lang="en">Elective, property by property and for any part of the cost</span></td>
+          <td><span lang="ru">Применяется автоматически. Отказ возможен, но сразу по всему классу имущества</span><span lang="en">Applies automatically. Opting out is possible, but for a whole class of property at once</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Ограничен суммой <span data-fig="sec179_limit"></span> и уменьшается при крупных закупках</span><span lang="en">Capped at <span data-fig="sec179_limit"></span> and reduced for large purchases</span></td>
+          <td><span lang="ru">Суммой не ограничена вовсе</span><span lang="en">Not capped in amount at all</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru"><strong>Не может создать убыток</strong>: упирается в доход от активной деятельности</span><span lang="en"><strong>Cannot create a loss</strong>: it stops at income from the active conduct of a business</span></td>
+          <td><span lang="ru"><strong>Может создать или увеличить убыток</strong></span><span lang="en"><strong>Can create or increase a loss</strong></span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Имущество приобретено покупкой у <strong>не связанного</strong> лица для активной деятельности</span><span lang="en">The property is acquired by purchase from an <strong>unrelated</strong> party for active conduct of a business</span></td>
+          <td><span lang="ru">Первое использование именно этим налогоплательщиком; новое или бывшее в употреблении; не от связанного лица</span><span lang="en">First use by this taxpayer; new or used; not from a related party</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Наследственным массам и трастам недоступен</span><span lang="en">Unavailable to estates and trusts</span></td>
+          <td><span lang="ru">Срок возмещения имущества — 20 лет или меньше</span><span lang="en">The property's recovery period is 20 years or less</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3><span lang="ru">Что подпадает под §179</span><span lang="en">What qualifies for section 179</span></h3>
+
+    <p lang="ru">Материальное личное имущество — станки, мебель, оргтехника, вывески,
+      холодильники и прилавки в магазине, бензоколонки, скот. Коробочное программное
+      обеспечение. И, по отдельному выбору, <strong>квалифицированная недвижимость</strong>:
+      улучшения внутри нежилого здания, а также кровля, вентиляция и кондиционирование, системы
+      пожарной сигнализации и охраны — если они введены в эксплуатацию <em>после</em> самого
+      здания.</p>
+    <p lang="en">Tangible personal property — machinery, furniture, office equipment, signs, shop
+      refrigerators and counters, petrol pumps, livestock. Off-the-shelf software. And, by a
+      separate election, <strong>qualified real property</strong>: improvements to the interior of
+      a nonresidential building, plus roofs, heating and air conditioning, fire alarm and security
+      systems — provided they are placed in service <em>after</em> the building itself.</p>
+
+    <p lang="ru">Из улучшений внутри здания выпадают три вещи: расширение здания, лифты и
+      эскалаторы, внутренний несущий каркас. Они амортизируются вместе со зданием — по
+      <span data-fig="nonresid_years"></span> лет.</p>
+    <p lang="en">Three things fall outside interior improvements: enlargement of the building,
+      elevators and escalators, and the internal structural framework. They are depreciated with
+      the building itself — over <span data-fig="nonresid_years"></span> years.</p>
+
+    <h3><span lang="ru">Три предела подряд</span><span lang="en">Three limits in a row</span></h3>
+
+    <p lang="ru">Вычет по §179 проходит через три сита, и порядок здесь важен. Первое —
+      предельная сумма. Второе — уменьшение за объём закупок. Третье — доход.</p>
+    <p lang="en">The section 179 deduction passes through three sieves, and the order matters.
+      First the dollar limit. Second the reduction for the volume of purchases. Third income.</p>
+
+    <div class="plot">
+      <svg viewBox="0 0 640 230" role="img">
+        <title lang="ru">Вычет по §179 держится на уровне 2 500 000 долларов, пока закупки не превысили 4 000 000, затем убывает доллар за доллар и обнуляется при 6 500 000</title>
+        <title lang="en">The section 179 deduction stays at $2,500,000 until purchases exceed $4,000,000, then falls dollar for dollar and reaches zero at $6,500,000</title>
+
+        <text lang="ru" class="plot__cap" x="14" y="42">вычет</text>
+        <text lang="en" class="plot__cap" x="14" y="42">deduction</text>
+        <text lang="ru" class="plot__cap" x="14" y="56">по §179</text>
+        <text lang="en" class="plot__cap" x="14" y="56">allowed</text>
+
+        <path class="plot__axis" d="M 90 40 L 90 176 L 616 176" />
+
+        <path class="plot__link" d="M 218 60 L 218 176" />
+        <path class="plot__link" d="M 90 60 L 218 60" />
+
+        <text lang="ru" class="plot__cap" x="84" y="64" text-anchor="end">2 500 000</text>
+        <text lang="en" class="plot__cap" x="84" y="64" text-anchor="end">2,500,000</text>
+        <text class="plot__cap" x="84" y="180" text-anchor="end">0</text>
+
+        <text lang="ru" class="plot__cap" x="218" y="194" text-anchor="middle">закупки 4 000 000</text>
+        <text lang="en" class="plot__cap" x="218" y="194" text-anchor="middle">purchases 4,000,000</text>
+        <text lang="ru" class="plot__cap" x="536" y="194" text-anchor="middle">6 500 000</text>
+        <text lang="en" class="plot__cap" x="536" y="194" text-anchor="middle">6,500,000</text>
+
+        <text lang="ru" x="150" y="52" text-anchor="middle">полный вычет</text>
+        <text lang="en" x="150" y="52" text-anchor="middle">full deduction</text>
+        <text lang="ru" class="plot__cap" x="378" y="106" text-anchor="middle">доллар за доллар</text>
+        <text lang="en" class="plot__cap" x="378" y="106" text-anchor="middle">dollar for dollar</text>
+        <text lang="ru" x="570" y="166" text-anchor="middle">ноль</text>
+        <text lang="en" x="570" y="166" text-anchor="middle">nil</text>
+
+        <path class="plot__line" d="M 90 60 L 218 60 L 536 176 L 616 176" />
+      </svg>
+      <p class="plot__note" lang="ru">Уменьшение считается от стоимости <em>всего</em> имущества
+        §179, введённого в эксплуатацию за год, а не только того, по которому вычет заявлен.</p>
+      <p class="plot__note" lang="en">The reduction is measured against the cost of <em>all</em>
+        section 179 property placed in service for the year, not only the property for which the
+        deduction is claimed.</p>
+    </div>
+
+    <p lang="ru">Третье сито — <strong>доход</strong>. Вычет не может превысить
+      налогооблагаемый доход от активно ведомой деятельности. И в этот доход входит больше, чем
+      кажется: прибыли и убытки §1231, проценты на оборотный капитал бизнеса и — что удивляет
+      чаще всего — <strong>заработная плата налогоплательщика и супруга по найму</strong>.
+      Считается он до вычета по §179, до вычета половины налога на самозанятость и без учёта
+      переносимых убытков.</p>
+    <p lang="en">The third sieve is <strong>income</strong>. The deduction may not exceed taxable
+      income from the active conduct of a trade or business. And that income holds more than one
+      expects: section 1231 gains and losses, interest on the business's working capital and —
+      the greatest surprise — <strong>wages earned by the taxpayer or spouse as an
+      employee</strong>. It is figured before the section 179 deduction, before the
+      self-employment tax deduction, and without any loss carryovers.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Один излишек переносится, другой пропадает навсегда</span><span lang="en">One excess carries forward, the other is gone for good</span></h3>
+      <p lang="ru">Сита выглядят одинаково, но их излишки живут по-разному. То, что срезано
+        <em>уменьшением за объём закупок</em>, не переносится никуда: сумма просто не полагалась.
+        То, что срезано <em>пределом дохода</em>, переносится вперёд на неограниченное число лет
+        и участвует в вычете следующего года.</p>
+      <p lang="en">The sieves look alike, but what they cut off lives differently. What is cut by
+        the <em>reduction for the volume of purchases</em> carries nowhere: the amount was simply
+        never allowed. What is cut by the <em>income limit</em> carries forward for an unlimited
+        number of years and enters the next year's deduction.</p>
+      <p lang="ru">Отсюда практическое следствие для планирования: при закупках выше
+        <span data-fig="sec179_phaseout"></span> перенос покупки на следующий год спасает вычет,
+        а при недостатке дохода — не нужен, вычет и так дождётся.
+        <span class="cite">Pub. 946, гл. 2</span></p>
+      <p lang="en">Hence a planning consequence: where purchases run above
+        <span data-fig="sec179_phaseout"></span>, moving a purchase into the next year saves the
+        deduction; where income is short it is unnecessary, since the deduction will wait of its
+        own accord. <span class="cite">Pub. 946, ch. 2</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-3. Два одинаковых излишка с разной судьбой</span><span lang="en">Example 7-3. Two identical excesses, two fates</span></div>
+      <div class="example__body">
+        <p lang="ru">За 2025 год введено в эксплуатацию имущество §179 на $4 300 000.
+          Налогооблагаемый доход от активной деятельности до вычета — $1 900 000.</p>
+        <p lang="en">During 2025 section 179 property of $4,300,000 was placed in service. Taxable
+          income from the active conduct of the business, before the deduction, was
+          $1,900,000.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Предельная сумма</span><span lang="en">Dollar limit</span></td>
+              <td data-num="2500000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение закупок над порогом: 4 300 000 − 4 000 000</span><span lang="en">Purchases over the threshold: 4,300,000 − 4,000,000</span></td>
+              <td data-num="-300000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Предел после уменьшения</span><span lang="en">Limit after the reduction</span></td>
+              <td data-num="2200000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Предел по доходу</span><span lang="en">Income limit</span></td>
+              <td data-num="1900000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет 2025 года</span><span lang="en">Deduction for 2025</span></td>
+              <td data-num="1900000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Оба излишка равны <span data-num="300000"></span>, и в этом вся соль.
+          Первый — потерян навсегда: закупки были слишком велики. Второй переносится на 2026 год
+          и там сложится с новым вычетом. Одна и та же сумма, две противоположные судьбы, и
+          различает их только то, какое сито её срезало.</p>
+        <p lang="en">Both excesses are <span data-num="300000"></span>, and that is the whole
+          point. The first is lost for good: the purchases were too large. The second carries into
+          2026 and joins the new deduction there. The same amount, two opposite fates, told apart
+          only by which sieve cut it.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="2500000"></span> —
+          уменьшение за объём закупок не применено; <span data-num="2200000"></span> — не
+          применён предел по доходу; перенос <span data-num="600000"></span> — вперёд отнесены
+          оба излишка.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="2500000"></span> — the reduction
+          for purchases not applied; <span data-num="2200000"></span> — the income limit not
+          applied; a carryforward of <span data-num="600000"></span> — both excesses carried
+          forward.</p>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-4. Сдали старое в зачёт</span><span lang="en">Example 7-4. Trading the old one in</span></div>
+      <div class="example__body">
+        <p lang="ru">Куплен станок. Продавец дал за старый станок зачёт $7 000, остальные
+          $18 000 уплачены деньгами. Скорректированный базис старого станка — $4 000, вся
+          разница с ценой покупки списана амортизацией.</p>
+        <p lang="en">A machine was bought. The seller allowed $7,000 for the old machine and the
+          remaining $18,000 was paid in cash. The old machine's adjusted basis was $4,000, the
+          whole difference from its purchase price having been depreciated.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Базис нового станка для амортизации: 18 000 + 7 000</span><span lang="en">Basis of the new machine for depreciation: 18,000 + 7,000</span></td>
+              <td data-num="25000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Из него подпадает под §179 — только уплаченное деньгами</span><span lang="en">Of that, eligible for section 179 — only what was paid in cash</span></td>
+              <td data-num="18000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Обычный доход от выбытия старого станка: 7 000 − 4 000</span><span lang="en">Ordinary income on the disposal of the old machine: 7,000 − 4,000</span></td>
+              <td data-num="3000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">С 2018 года зачёт при покупке — не обмен на подобное, а обычная продажа:
+          старый станок продан за $7 000, и прибыль над его базисом возвращается как обычный
+          доход по §1245. При этом оставшиеся <span data-num="7000"></span> базиса нового станка
+          вычета по §179 не получают, но амортизируются по общим правилам и бонус на них
+          распространяется.</p>
+        <p lang="en">Since 2018 a trade-in on a purchase is not a like-kind exchange but an
+          ordinary sale: the old machine was sold for $7,000 and the gain over its basis comes
+          back as ordinary income under section 1245. The remaining
+          <span data-num="7000"></span> of the new machine's basis gets no section 179 deduction
+          but is depreciated under the general rules, bonus included.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="25000"></span> под §179 —
+          зачёт принят за уплаченное; <span data-num="22000"></span> базиса — сложены деньги и
+          базис старого станка, как при обмене на подобное до 2018 года; и ноль обычного дохода —
+          выбытие старого станка не замечено вовсе.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="25000"></span> under section 179
+          — the allowance counted as money paid; a basis of <span data-num="22000"></span> — cash
+          plus the old machine's basis added, as in a pre-2018 like-kind exchange; and no ordinary
+          income at all — the disposal of the old machine simply not noticed.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">Бонусная амортизация в 2025 году</span><span lang="en">Bonus depreciation in 2025</span></h3>
+
+    <p lang="ru">2025 год разрезан пополам. Закон, принятый 4 июля 2025 года, вернул стопроцентную
+      бонусную амортизацию — но не для всего, что введено в эксплуатацию в этом году, а по
+      <strong>дате приобретения</strong>.</p>
+    <p lang="en">2025 is cut in two. The act passed on July 4, 2025 restored the 100% bonus
+      allowance — not for everything placed in service that year, but according to the
+      <strong>date of acquisition</strong>.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Когда имущество приобретено?</span>
+        <span lang="en">When was the property acquired?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">До 20 января 2025 года</span><span lang="en">Before January 20, 2025</span></b>
+          <span lang="ru">Бонус <span data-fig="bonus_pct_prior"></span>. Для имущества с долгим циклом производства и некоторых самолётов — 60%</span>
+          <span lang="en">Bonus of <span data-fig="bonus_pct_prior"></span>. For long production period property and certain aircraft, 60%</span></div>
+        <div class="fork__b">
+          <b><span lang="ru">После 19 января 2025 года</span><span lang="en">After January 19, 2025</span></b>
+          <span lang="ru">Бонус <span data-fig="bonus_pct"></span>. Договор, подписанный до 20 января, считается приобретением до этой даты</span>
+          <span lang="en">Bonus of <span data-fig="bonus_pct"></span>. A purchase agreement dated before January 20 counts as acquisition before that date</span></div>
+      </div>
+    </div>
+
+    <p lang="ru">Дата ввода в эксплуатацию здесь не решает ничего — она лишь определяет год
+      вычета. Станок, купленный по договору от 10 января и запущенный в декабре, получает
+      <span data-fig="bonus_pct_prior"></span>, а купленный в феврале и запущенный тогда же —
+      <span data-fig="bonus_pct"></span>. Тот же выбор действует и в обратную сторону: за первый
+      налоговый год, кончающийся после 19 января 2025 года, можно <em>выбрать</em>
+      <span data-fig="bonus_pct_prior"></span> вместо полного бонуса — например, чтобы не гасить
+      вычетом доход, нужный для §179.</p>
+    <p lang="en">The date placed in service decides nothing here — it only fixes the year of the
+      deduction. A machine bought under an agreement of January 10 and started in December gets
+      <span data-fig="bonus_pct_prior"></span>; one bought in February and started then gets
+      <span data-fig="bonus_pct"></span>. The same choice works the other way: for the first tax
+      year ending after January 19, 2025 a taxpayer may <em>elect</em>
+      <span data-fig="bonus_pct_prior"></span> instead of the full allowance — to keep the
+      deduction from swallowing the income that section 179 needs, for instance.</p>
+
+    <h3><span lang="ru">Порядок: кто за кем</span><span lang="en">The order: what comes after what</span></h3>
+
+    <ol class="steps">
+      <li><b><span lang="ru">§179</span><span lang="en">Section 179</span></b>
+          <span lang="ru">Заявляется первым и уменьшает базис. Только на выбранные объекты и только в пределах трёх сит</span>
+          <span lang="en">Claimed first and reduces basis. Only on the chosen properties and only within the three limits</span></li>
+      <li><b><span lang="ru">Бонусная амортизация</span><span lang="en">Bonus depreciation</span></b>
+          <span lang="ru">Считается от <em>остатка</em> базиса, а не от первоначальной стоимости</span>
+          <span lang="en">Figured on what is <em>left</em> of the basis, not on the original cost</span></li>
+      <li><b><span lang="ru">Обычная амортизация</span><span lang="en">Regular depreciation</span></b>
+          <span lang="ru">Ставка MACRS применяется к тому, что осталось после первых двух</span>
+          <span lang="en">The MACRS rate is applied to what is left after the first two</span></li>
+    </ol>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-5. Три вычета по очереди</span><span lang="en">Example 7-5. Three deductions in turn</span></div>
+      <div class="example__body">
+        <p lang="ru">Оборудование пятилетнего класса за $80 000 куплено по договору от 10 января
+          2025 года и введено в эксплуатацию в июне. Заявлен §179 на $30 000. Условность
+          полугодовая, ставка первого года — 20%.</p>
+        <p lang="en">Five-year class equipment costing $80,000 was bought under an agreement dated
+          January 10, 2025 and placed in service in June. Section 179 of $30,000 was elected. The
+          half-year convention applies and the first-year rate is 20%.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">§179</span><span lang="en">Section 179</span></td>
+              <td data-num="30000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Бонус <span data-fig="bonus_pct_prior"></span> от остатка $50 000: договор подписан до 20 января</span><span lang="en">Bonus of <span data-fig="bonus_pct_prior"></span> on the remaining $50,000: the agreement predates January 20</span></td>
+              <td data-num="20000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Обычная амортизация: 30 000 × 20%</span><span lang="en">Regular depreciation: 30,000 × 20%</span></td>
+              <td data-num="6000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет первого года</span><span lang="en">First-year deduction</span></td>
+              <td data-num="56000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="80000"></span> — применён
+          стопроцентный бонус, дата договора не учтена; <span data-num="65600"></span> — бонус
+          посчитан раньше §179 и от полной стоимости; <span data-num="66000"></span> — обычная
+          амортизация посчитана от первоначальных $80 000, а не от остатка.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="80000"></span> — the 100% bonus
+          applied and the date of the agreement ignored; <span data-num="65600"></span> — bonus
+          taken before section 179 and figured on the full cost;
+          <span data-num="66000"></span> — regular depreciation figured on the original $80,000
+          instead of the remainder.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">§179 возвращается при падении делового использования</span><span lang="en">Section 179 comes back when business use falls</span></h3>
+      <p lang="ru">Если в любой год <em>внутри срока возмещения</em> деловое использование
+        падает до <span data-fig="qbu_threshold"></span> и ниже, в доход того года включается
+        превышение взятого §179 над той амортизацией, что полагалась бы без него. То же
+        происходит при выбытии объекта до конца срока. Возвращённое прибавляется к базису
+        имущества — вычет не исчезает, а превращается обратно в базис.</p>
+      <p lang="en">If in any year <em>within the recovery period</em> business use drops to
+        <span data-fig="qbu_threshold"></span> or below, income of that year includes the excess
+        of the section 179 deduction taken over the depreciation that would have been allowed
+        without it. The same happens on a disposal before the period ends. What is recaptured is
+        added back to the property's basis — the deduction does not vanish, it turns back into
+        basis.</p>
+      <p lang="ru">Выбор по §179 можно и отменить — уточнённой декларацией и без согласия
+        налоговой службы. Но отмена <strong>необратима</strong>: передумать во второй раз уже не
+        получится. <span class="cite">Pub. 946, гл. 2</span></p>
+      <p lang="en">A section 179 election may also be revoked — by an amended return and without
+        the IRS's consent. But the revocation is <strong>irrevocable</strong>: there is no
+        changing one's mind a second time. <span class="cite">Pub. 946, ch. 2</span></p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s74">
+      <h2><span class="num">7.4</span>
+        <span lang="ru">Нематериальные активы</span>
+        <span lang="en">Intangible assets</span>
+      </h2>
+    </section>
+
+    <p lang="ru">У материального имущества срок службы виден: станок изнашивается, здание ветшает.
+      У гудвилла и товарного знака ничего подобного нет — они могут не терять ценности
+      десятилетиями. Спорить об этом в каждом деле было бы бесконечно, и закон спор прекратил:
+      почти все приобретённые нематериальные активы списываются <strong>ровно за
+      <span data-fig="sec197_years"></span> лет</strong>, каков бы ни был их настоящий срок.</p>
+    <p lang="en">Tangible property wears its life on its face: a machine wears out, a building
+      decays. Goodwill and a trade name do nothing of the kind — they may hold their value for
+      decades. Arguing the point case by case would be endless, and the law ended the argument:
+      almost every acquired intangible is written off over <strong>exactly
+      <span data-fig="sec197_years"></span> years</strong>, whatever its real life may be.</p>
+
+    <p lang="ru">Это §197, и в нём три ключевых слова. <strong>Приобретённый</strong> — созданное
+      своими силами сюда не попадает. <strong>В связи с деятельностью</strong> — бизнесом или
+      получением дохода. И <span data-fig="sec197_years"></span> <strong>лет</strong> —
+      180 месяцев прямолинейно, без исключений в обе стороны.</p>
+    <p lang="en">This is section 197, and it has three key words. <strong>Acquired</strong> —
+      what a taxpayer creates does not belong here. <strong>In connection with an
+      activity</strong> — a business or the production of income. And
+      <span data-fig="sec197_years"></span> <strong>years</strong> — 180 months, straight line,
+      with no exception either way.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Списывается за <span data-fig="sec197_years"></span> лет</span><span lang="en">Amortized over <span data-fig="sec197_years"></span> years</span></th>
+          <th><span lang="ru">Под §197 не подпадает</span><span lang="en">Outside section 197</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Гудвилл и стоимость действующего предприятия</span><span lang="en">Goodwill and going concern value</span></td>
+          <td><span lang="ru">Доли в корпорациях, партнёрствах, трастах и наследственных массах</span><span lang="en">Interests in corporations, partnerships, trusts and estates</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Сложившийся коллектив работников, база данных, списки клиентов и поставщиков</span><span lang="en">Workforce in place, information bases, customer and supplier lists</span></td>
+          <td><span lang="ru">Интересы в земле, включая право прохода и сервитуты</span><span lang="en">Interests in land, rights of way and easements included</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Патенты, авторские права, ноу-хау, программное обеспечение — <em>если</em> приобретены вместе с бизнесом</span><span lang="en">Patents, copyrights, know-how, software — <em>if</em> acquired together with a business</span></td>
+          <td><span lang="ru">Большинство финансовых инструментов и контрактов</span><span lang="en">Most financial instruments and contracts</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Лицензии, разрешения и иные права, выданные органами власти</span><span lang="en">Licences, permits and other rights granted by government units</span></td>
+          <td><span lang="ru">Аренда материального личного имущества</span><span lang="en">Leases of tangible personal property</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Обязательства не конкурировать, франшизы, товарные знаки и фирменные наименования</span><span lang="en">Covenants not to compete, franchises, trademarks and trade names</span></td>
+          <td><span lang="ru">Созданное самим налогоплательщиком — кроме случая, когда это часть приобретения бизнеса</span><span lang="en">Anything the taxpayer created — unless it is part of the acquisition of a business</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Настоящий срок значения не имеет</span><span lang="en">The real life does not matter</span></h3>
+      <p lang="ru">Обязательство не конкурировать подписано на три года. Списывается оно за
+        <span data-fig="sec197_years"></span> лет — если получено при покупке бизнеса. Патент, до
+        конца которого осталось семь лет, тоже за <span data-fig="sec197_years"></span>. Срок,
+        записанный в договоре, на расписание не влияет никак, и это первое, на чём ловят.</p>
+      <p lang="en">A covenant not to compete is signed for three years. It is amortized over
+        <span data-fig="sec197_years"></span> — if it came with the purchase of a business. A
+        patent with seven years left runs over <span data-fig="sec197_years"></span> too. The term
+        written in the contract has no effect on the schedule whatever, and that is the first
+        thing candidates are caught on.</p>
+      <p lang="ru">Обратная сторона: тот же патент, купленный <em>отдельно</em>, а не вместе с
+        бизнесом, под §197 не подпадает и амортизируется прямолинейно по своему сроку —
+        меньшему из выданного государством и оставшегося на день покупки. Один и тот же актив,
+        два расписания, и различает их только то, куплен он сам по себе или в составе
+        бизнеса. <span class="cite">Pub. 535, гл. 8; Pub. 946, гл. 1</span></p>
+      <p lang="en">The other side: the same patent bought <em>on its own</em>, not with a
+        business, is outside section 197 and is depreciated straight line over its own life — the
+        lesser of the term granted by the government and what remains at the date of purchase. One
+        asset, two schedules, told apart only by whether it was bought by itself or as part of a
+        business. <span class="cite">Pub. 535, ch. 8; Pub. 946, ch. 1</span></p>
+    </div>
+
+    <h3><span lang="ru">С какого месяца и по какой</span><span lang="en">From which month, and to which</span></h3>
+
+    <p lang="ru">Отсчёт 180 месяцев начинается с <strong>более позднего</strong> из двух:
+      месяца приобретения актива или месяца, в котором началась сама деятельность. Купили
+      франшизу в марте, а кафе открылось в августе — считать с августа.</p>
+    <p lang="en">The 180 months begin with the <strong>later</strong> of two months: the month the
+      intangible was acquired, or the month the activity itself began. Buy the franchise in March
+      and open the café in August — the count starts in August.</p>
+
+    <p lang="ru">На другом конце — правило, которое ломает арифметику у тех, кто о нём не знает:
+      <strong>за месяц выбытия списание не берётся</strong>. Продали актив 20 сентября — сентябрь
+      в расчёт не идёт.</p>
+    <p lang="en">At the other end is a rule that breaks the arithmetic of anyone unaware of it:
+      <strong>no amortization is taken for the month of disposal</strong>. Sell the asset on
+      September 20 and September does not count.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-6. Полгода списания</span><span lang="en">Example 7-6. Half a year of amortization</span></div>
+      <div class="example__body">
+        <p lang="ru">1 июля 2025 года куплено туристическое агентство и сразу начало работать.
+          В цене выделены: гудвилл $180 000, трёхлетнее обязательство прежнего владельца не
+          конкурировать $36 000 и доля в земельном участке под офисом $50 000.</p>
+        <p lang="en">On July 1, 2025 a travel agency was bought and began operating at once. The
+          price was allocated as: goodwill $180,000, a three-year covenant of the former owner not
+          to compete $36,000, and an interest in the land under the office $50,000.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Гудвилл</span><span lang="en">Goodwill</span></td>
+              <td data-num="180000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Обязательство не конкурировать</span><span lang="en">Covenant not to compete</span></td>
+              <td data-num="36000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Итого нематериальных активов §197</span><span lang="en">Total section 197 intangibles</span></td>
+              <td data-num="216000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">В месяц: 216 000 ÷ 180</span><span lang="en">Per month: 216,000 ÷ 180</span></td>
+              <td data-num="1200"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет 2025 года: шесть месяцев, с июля по декабрь</span><span lang="en">Deduction for 2025: six months, July through December</span></td>
+              <td data-num="7200"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Земля в списание не идёт вовсе: интерес в земле прямо исключён из §197, а
+          сама земля не амортизируется ни по какому правилу. Трёхлетний срок обязательства не
+          конкурировать тоже не участвует — с бизнесом оно куплено, значит идёт за
+          <span data-fig="sec197_years"></span> лет вместе с гудвиллом.</p>
+        <p lang="en">The land takes no part at all: an interest in land is expressly outside
+          section 197, and land itself is depreciated under no rule whatever. The covenant's
+          three-year term takes no part either — it came with the business, so it runs over
+          <span data-fig="sec197_years"></span> years alongside the goodwill.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="8867"></span> — в базу
+          включена земля; <span data-num="14400"></span> — взят полный год вместо шести месяцев;
+          <span data-num="12000"></span> — обязательство не конкурировать списано за свои три
+          года.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="8867"></span> — the land put into
+          the base; <span data-num="14400"></span> — a full year taken instead of six months;
+          <span data-num="12000"></span> — the covenant amortized over its own three years.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Убыток по одному §197 не признаётся, пока остались другие</span><span lang="en">A loss on one section 197 asset waits while the others remain</span></h3>
+      <p lang="ru">Продан или обесценился один из нематериальных активов, купленных в составе
+        одной сделки, а прочие остались у налогоплательщика. Убыток по нему
+        <strong>вычету не подлежит</strong>. Он прибавляется к базису оставшихся активов той же
+        сделки пропорционально — и вернётся вычетом позже, через их списание.</p>
+      <p lang="en">One of the intangibles bought in a single transaction is sold or becomes
+        worthless while the others stay with the taxpayer. The loss on it is <strong>not
+        deductible</strong>. It is added to the basis of the remaining intangibles of that same
+        transaction in proportion — and comes back later, through their amortization.</p>
+      <p lang="ru">Смысл правила прост: цена сделки распределялась между активами по договору, и
+        признать убыток по одному, оставив завышенным базис остальных, значило бы вычесть то,
+        что на самом деле никуда не делось. <span class="cite">Pub. 535, гл. 8</span></p>
+      <p lang="en">The reason is plain: the price was allocated among the assets by agreement, and
+        allowing a loss on one while the others keep an inflated basis would deduct something that
+        has not actually gone anywhere. <span class="cite">Pub. 535, ch. 8</span></p>
+    </div>
+
+    <p lang="ru">Есть и заслон против самого простого обхода: <strong>правила против
+      перетасовки</strong>. Гудвилл, существовавший до августа 1993 года, нельзя сделать
+      списываемым, продав его самому себе — сделка, не изменившая по существу ни
+      собственника, ни характер использования, права на списание не даёт.</p>
+    <p lang="en">There is a barrier against the simplest workaround too: the
+      <strong>anti-churning rules</strong>. Goodwill that existed before August 1993 cannot be
+      made amortizable by selling it to oneself — a transaction that changed neither the ownership
+      nor the use in substance gives no right to amortize.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Программное обеспечение</span><span lang="en">Software</span></th>
+          <th><span lang="ru">Как возмещается</span><span lang="en">How the cost is recovered</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Куплено в составе бизнеса</span><span lang="en">Bought as part of a business</span></th>
+          <td><span lang="ru">§197, <span data-fig="sec197_years"></span> лет</span><span lang="en">Section 197, <span data-fig="sec197_years"></span> years</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Куплено отдельно, доступно всем желающим, не переделано под себя</span><span lang="en">Bought separately, available to the general public, not substantially modified</span></th>
+          <td><span lang="ru">Прямолинейно за <span data-fig="software_months"></span> месяцев; подпадает и под §179, и под бонус</span><span lang="en">Straight line over <span data-fig="software_months"></span> months; qualifies for section 179 and for bonus as well</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Разработано своими силами</span><span lang="en">Developed in house</span></th>
+          <td><span lang="ru">По правилам исследовательских затрат §174 — см. модуль 5</span><span lang="en">Under the research expenditure rules of section 174 — see module 5</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Затраты на запуск бизнеса и на его организацию тоже списываются 180 месяцами, но
+      по своим параграфам — §195 для первых и §248 или §709 для вторых, с немедленным вычетом до
+      $5 000 и порогом $50 000. Они разобраны в <a href="su05.html#s55">модуле 5</a> и здесь не
+      повторяются: важно помнить, что к §197 они отношения не имеют, а совпадение сроков
+      случайно.</p>
+    <p lang="en">Start-up and organizational costs are also written off over 180 months, but under
+      their own provisions — section 195 for the first and sections 248 or 709 for the second,
+      with an immediate deduction of up to $5,000 and a $50,000 threshold. They are covered in
+      <a href="su05.html#s55">module 5</a> and are not repeated here: what matters is that they
+      have nothing to do with section 197, and that the matching period is a coincidence.</p>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s75">
+      <h2><span class="num">7.5</span>
+        <span lang="ru">Истощение природных ресурсов</span>
+        <span lang="en">Depletion of natural resources</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Шахта не изнашивается — она <em>кончается</em>. Каждая вывезенная тонна руды
+      уменьшает то, за что заплачено, и возмещение этой стоимости называется
+      <strong>истощением</strong>. Право на него есть не у всякого, кто имеет отношение к
+      месторождению, а только у того, у кого есть <strong>экономический интерес</strong>. Три
+      признака должны выполняться сразу.</p>
+    <p lang="en">A mine does not wear out — it <em>runs out</em>. Every ton of ore taken away
+      reduces what was paid for, and recovering that cost is called <strong>depletion</strong>.
+      The right to it belongs not to everyone connected with the deposit but only to whoever holds
+      an <strong>economic interest</strong>. Three marks must hold at once.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Вложением приобретён интерес в полезном ископаемом <strong>в недрах</strong></span><span lang="en">By investment, an interest was acquired in the mineral <strong>in place</strong></span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Доход извлекается из добычи этого ископаемого</span><span lang="en">Income is derived from the extraction of that mineral</span></td></tr>
+        <tr class="total"><th>3</th><td><span lang="ru">Возврат вложенного зависит именно от добытого — а не от договора, который платят в любом случае</span><span lang="en">The return of capital looks to the mineral extracted — not to a contract that pays regardless</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Вложение не обязано быть денежным: им может быть земля, обеспечивающая доступ к
+      залежи, или стационарное оборудование для добычи. Зато подрядчик, которому платят
+      фиксированную цену за вывоз породы, экономического интереса не имеет: его деньги не
+      зависят от того, что найдут. Не имеет его и переработчик — нефтеперегонный завод не
+      месторождение, и истощения ему не полагается.</p>
+    <p lang="en">The investment need not be cash: it may be land securing access to the deposit, or
+      stationary extraction equipment. A contractor paid a fixed price to haul rock, however, has
+      no economic interest: the money does not depend on what is found. Nor has a processor — an
+      oil refinery is not a deposit, and no depletion belongs to it.</p>
+
+    <h3><span lang="ru">Два способа, и берётся больший</span><span lang="en">Two methods, and the larger is taken</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Истощение по стоимости</span><span lang="en">Cost depletion</span></th>
+          <th><span lang="ru">Процентное истощение</span><span lang="en">Percentage depletion</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Базис для истощения ÷ извлекаемые единицы на начало года × единицы, <strong>проданные</strong> за год</span><span lang="en">Basis for depletion ÷ recoverable units at the start of the year × units <strong>sold</strong> during the year</span></td>
+          <td><span lang="ru">Ставка по §613(b) × валовой доход от объекта за вычетом уплаченных рент и роялти</span><span lang="en">The section 613(b) rate × gross income from the property less rents and royalties paid</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Базис для истощения — скорректированный базис за вычетом того, что возмещается амортизацией, и за вычетом остаточной стоимости земли</span><span lang="en">The basis for depletion is the adjusted basis less anything recoverable through depreciation and less the residual value of the land</span></td>
+          <td><span lang="ru">Потолок: <span data-fig="depletion_ti_pct"></span> налогооблагаемого дохода <em>этого объекта</em> до истощения. Для нефти и газа — 100%</span><span lang="en">Ceiling: <span data-fig="depletion_ti_pct"></span> of taxable income from <em>that property</em> before depletion. For oil and gas, 100%</span></td>
+        </tr>
+        <tr class="total">
+          <td><span lang="ru">Всего за годы нельзя вычесть больше вложенного: на нуле базиса вычет прекращается</span><span lang="en">Over the years no more than the investment may be deducted: at a zero basis the deduction stops</span></td>
+          <td><span lang="ru"><strong>Продолжается и после того, как базис исчерпан</strong> — можно вычесть больше, чем вложено</span><span lang="en"><strong>Continues after the basis is exhausted</strong> — more may be deducted than was invested</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">По полезным ископаемым берётся тот способ, который в этом году даёт
+      <strong>больше</strong>, и выбирать заново можно каждый год. Ставки заданы §613(b) и
+      разнятся: <span data-fig="depletion_oil_pct"></span> для нефти, газа и геотермальных
+      источников, 22% для серы и урана, 10% для угля, 5% для песка, гравия и камня.</p>
+    <p lang="en">For minerals the method giving <strong>more</strong> in that year is taken, and
+      the choice may be made afresh each year. The rates are set by section 613(b) and differ:
+      <span data-fig="depletion_oil_pct"></span> for oil, gas and geothermal deposits, 22% for
+      sulphur and uranium, 10% for coal, 5% for sand, gravel and stone.</p>
+
+    <p lang="ru">Два исключения из выбора. <strong>Лес</strong> процентного истощения не знает
+      вовсе — только по стоимости. А для нефти и газа процентное истощение доступно лишь
+      независимым добытчикам и владельцам роялти, и лишь в пределах 1 000 баррелей в день:
+      крупным интегрированным компаниям оно закрыто.</p>
+    <p lang="en">Two exceptions to the choice. <strong>Timber</strong> knows no percentage
+      depletion at all — cost depletion only. And for oil and gas, percentage depletion is open
+      only to independent producers and royalty owners, and only up to 1,000 barrels a day: to
+      large integrated companies it is closed.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Считается проданное, а не добытое</span><span lang="en">What counts is sold, not mined</span></h3>
+      <p lang="ru">В формуле истощения по стоимости стоят единицы, <strong>проданные</strong> за
+        год. Добыли 150 000 тонн, продали 120 000 — в расчёт идут 120 000. Остальное лежит на
+        складе и станет вычетом в тот год, когда будет продано. Условие задачи почти всегда даёт
+        оба числа, и одно из них — приманка.</p>
+      <p lang="en">The cost depletion formula uses the units <strong>sold</strong> during the
+        year. Mine 150,000 tons and sell 120,000 and the figure is 120,000. The rest lies in the
+        yard and becomes a deduction in the year it is sold. The problem almost always gives both
+        numbers, and one of them is the bait.</p>
+      <p lang="ru">Вторая приманка — потолок процентного истощения. Он считается от
+        налогооблагаемого дохода <em>этого месторождения</em> до вычета истощения, а не от всего
+        дохода налогоплательщика и не от валового дохода объекта.
+        <span class="cite">Pub. 535, гл. 9</span></p>
+      <p lang="en">The second bait is the percentage depletion ceiling. It is measured against the
+        taxable income of <em>that property</em> before depletion — not against the taxpayer's
+        income as a whole, and not against the property's gross income.
+        <span class="cite">Pub. 535, ch. 9</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-7. Угольная шахта: что больше</span><span lang="en">Example 7-7. A coal mine: which is larger</span></div>
+      <div class="example__body">
+        <p lang="ru">Базис шахты для истощения на начало года — $300 000, извлекаемых запасов
+          оценено 400 000 тонн. За год добыто 120 000 тонн, продано 100 000. Валовой доход от
+          объекта — $850 000, налогооблагаемый доход объекта до истощения — $160 000. Ставка
+          §613(b) для угля — 10%.</p>
+        <p lang="en">The mine's basis for depletion at the start of the year is $300,000 and
+          recoverable reserves are estimated at 400,000 tons. During the year 120,000 tons were
+          mined and 100,000 sold. Gross income from the property was $850,000 and taxable income
+          from the property before depletion $160,000. The section 613(b) rate for coal is 10%.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">По стоимости: 300 000 ÷ 400 000 × 100 000 проданных тонн</span><span lang="en">Cost: 300,000 ÷ 400,000 × 100,000 tons sold</span></td>
+              <td data-num="75000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Процентное до потолка: 10% × 850 000</span><span lang="en">Percentage before the ceiling: 10% × 850,000</span></td>
+              <td data-num="85000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Потолок: <span data-fig="depletion_ti_pct"></span> × 160 000</span><span lang="en">Ceiling: <span data-fig="depletion_ti_pct"></span> × 160,000</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет: больший из 75 000 и 80 000</span><span lang="en">Deduction: the greater of 75,000 and 80,000</span></td>
+              <td data-num="80000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Ответ даёт процентное истощение — но не то, что вышло по ставке, а
+          урезанное потолком. И заметьте, что базис шахты уменьшится на все
+          <span data-num="80000"></span>, хотя по стоимости истощения полагалось бы только
+          <span data-num="75000"></span>: процентное истощение уменьшает базис на всю
+          вычтенную сумму.</p>
+        <p lang="en">The answer comes from percentage depletion — not the figure the rate gave,
+          but the one the ceiling cut down to. And note that the mine's basis falls by the whole
+          <span data-num="80000"></span>, though cost depletion would have taken only
+          <span data-num="75000"></span>: percentage depletion reduces basis by everything
+          deducted.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="85000"></span> — потолок не
+          применён; <span data-num="90000"></span> — по стоимости взяты добытые тонны вместо
+          проданных, и этот способ вышел бы больше; <span data-num="75000"></span> — взято
+          истощение по стоимости без сравнения со вторым способом.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="85000"></span> — the ceiling not
+          applied; <span data-num="90000"></span> — cost depletion figured on tons mined rather
+          than sold, which would then have been the larger; <span data-num="75000"></span> — cost
+          depletion taken without comparing it with the other method.</p>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="s76">
+      <h2><span class="num">7.6</span>
+        <span lang="ru">Возврат амортизации</span>
+        <span lang="en">Depreciation recapture</span>
+      </h2>
+    </section>
+
+    <p lang="ru">Всё, что было в первых пяти подразделах, здесь оплачивается. Три параграфа —
+      §1231, §1245 и §1250 — решают, <strong>каким</strong> будет результат продажи делового
+      имущества: обычным доходом или приростом капитала, обычным убытком или капитальным. Ни
+      один из них не меняет <em>сумму</em> прибыли или убытка. Только характер.</p>
+    <p lang="en">Everything in the first five subsections is paid for here. Three sections — 1231,
+      1245 and 1250 — decide <strong>what kind</strong> of result a sale of business property
+      gives: ordinary income or capital gain, ordinary loss or capital loss. None of them changes
+      the <em>amount</em> of the gain or loss. Only its character.</p>
+
+    <p lang="ru">Начинается всё с §1231, и устроен он в пользу налогоплательщика необычно щедро.
+      Чистая прибыль по такому имуществу — долгосрочная капитальная, со льготной ставкой. Чистый
+      убыток — обычный, то есть гасит обычный доход без ограничения в $3 000. Выигрыш в обе
+      стороны сразу.</p>
+    <p lang="en">It begins with section 1231, and it is unusually generous to the taxpayer. A net
+      gain on such property is long-term capital gain, at the preferential rate. A net loss is
+      ordinary, and so offsets ordinary income without the $3,000 limit. A win in both
+      directions.</p>
+
+    <p lang="ru">Именно за эту щедрость и берут плату §1245 и §1250: прежде чем прибыль станет
+      капитальной, из неё вычитают то, что уже было вычтено амортизацией. Государство отдавало
+      вычет по обычной ставке — по обычной же и забирает.</p>
+    <p lang="en">It is for that generosity that sections 1245 and 1250 charge: before the gain can
+      become capital, what was already deducted as depreciation is taken out of it. The deduction
+      was given at ordinary rates — and at ordinary rates it comes back.</p>
+
+    <div class="plot">
+      <svg viewBox="0 0 640 210" role="img">
+        <title lang="ru">Цена продажи станка, купленного за 100 000 и списанного на 60 000, делится на три части: возврат базиса, амортизация обратно обычным доходом и прирост сверх первоначальной цены</title>
+        <title lang="en">The selling price of a machine bought for 100,000 and depreciated by 60,000 splits into three parts: return of basis, depreciation coming back as ordinary income, and gain above the original cost</title>
+
+        <text lang="ru" class="plot__cap" x="60" y="44">станок за 100 000, амортизация 60 000, продан за 130 000</text>
+        <text lang="en" class="plot__cap" x="60" y="44">a machine bought for 100,000, depreciated by 60,000, sold for 130,000</text>
+
+        <rect class="plot__box" x="60" y="58" width="166" height="46" />
+        <rect class="plot__box--tax" x="226" y="58" width="249" height="46" />
+        <rect class="plot__box--keep" x="475" y="58" width="125" height="46" />
+
+        <text lang="ru" x="143" y="80" text-anchor="middle">40 000</text>
+        <text lang="en" x="143" y="80" text-anchor="middle">40,000</text>
+        <text lang="ru" class="plot__cap" x="143" y="96" text-anchor="middle">возврат своего</text>
+        <text lang="en" class="plot__cap" x="143" y="96" text-anchor="middle">return of basis</text>
+
+        <text lang="ru" x="350" y="80" text-anchor="middle">60 000</text>
+        <text lang="en" x="350" y="80" text-anchor="middle">60,000</text>
+        <text lang="ru" class="plot__cap" x="350" y="96" text-anchor="middle">§1245 — обычный доход</text>
+        <text lang="en" class="plot__cap" x="350" y="96" text-anchor="middle">section 1245 — ordinary income</text>
+
+        <text lang="ru" x="537" y="80" text-anchor="middle">30 000</text>
+        <text lang="en" x="537" y="80" text-anchor="middle">30,000</text>
+        <text lang="ru" class="plot__cap" x="537" y="96" text-anchor="middle">§1231</text>
+        <text lang="en" class="plot__cap" x="537" y="96" text-anchor="middle">section 1231</text>
+
+        <text lang="ru" class="plot__cap" x="226" y="128" text-anchor="middle">базис 40 000</text>
+        <text lang="en" class="plot__cap" x="226" y="128" text-anchor="middle">basis 40,000</text>
+        <text lang="ru" class="plot__cap" x="475" y="128" text-anchor="middle">первоначальная цена 100 000</text>
+        <text lang="en" class="plot__cap" x="475" y="128" text-anchor="middle">original cost 100,000</text>
+
+        <line class="plot__edge" x1="226" y1="52" x2="226" y2="114" />
+        <line class="plot__edge" x1="475" y1="52" x2="475" y2="114" />
+      </svg>
+      <p class="plot__note" lang="ru">Граница между обычным доходом и §1231 проходит по
+        <em>первоначальной</em> цене. Продали дешевле неё — вся прибыль обычная; дороже — обычной
+        будет ровно амортизация.</p>
+      <p class="plot__note" lang="en">The line between ordinary income and section 1231 runs at
+        the <em>original</em> cost. Sell below it and the whole gain is ordinary; sell above and
+        the ordinary part is exactly the depreciation.</p>
+    </div>
+
+    <h3><span lang="ru">Кто под каким параграфом</span><span lang="en">Which section applies to what</span></h3>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Имущество</span><span lang="en">The property</span></th>
+          <th><span lang="ru">Параграф</span><span lang="en">The section</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span lang="ru">Земля, использованная в бизнесе дольше года</span><span lang="en">Land used in a business for more than a year</span></th>
+          <td><span lang="ru">Чистый §1231: не амортизируется, возвращать нечего</span><span lang="en">Pure section 1231: not depreciable, so nothing to recapture</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Оборудование, мебель, транспорт, племенной скот</span><span lang="en">Equipment, furniture, vehicles, breeding livestock</span></th>
+          <td><span lang="ru">§1245: материальное личное имущество</span><span lang="en">Section 1245: tangible personal property</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Гудвилл, товарный знак, обязательство не конкурировать, патент</span><span lang="en">Goodwill, a trademark, a covenant not to compete, a patent</span></th>
+          <td><span lang="ru">§1245: нематериальное личное имущество, которое списывалось</span><span lang="en">Section 1245: intangible personal property that was amortized</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Сооружения — неотъемлемая часть производства, хранилища сыпучих грузов, очистные установки</span><span lang="en">Structures that are an integral part of production, bulk storage facilities, pollution control facilities</span></th>
+          <td><span lang="ru">§1245: «прочее материальное имущество», хотя выглядит недвижимостью</span><span lang="en">Section 1245: “other tangible property”, though it looks like real property</span></td>
+        </tr>
+        <tr>
+          <th><span lang="ru">Здания и их конструктивные элементы, лифты и эскалаторы, аренда земли</span><span lang="en">Buildings and their structural components, elevators and escalators, a lease of land</span></th>
+          <td><span lang="ru">§1250: амортизируемая недвижимость</span><span lang="en">Section 1250: depreciable real property</span></td>
+        </tr>
+        <tr class="total">
+          <th><span lang="ru">Товарные запасы, имущество для продажи покупателям, счета покупателей, личные вещи</span><span lang="en">Inventory, property held for sale to customers, receivables, personal-use property</span></th>
+          <td><span lang="ru">Ни §1231, ни §1245, ни §1250: результат обычный без всякого возврата</span><span lang="en">Neither 1231 nor 1245 nor 1250: the result is ordinary with no recapture at all</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Лифт — недвижимость, а зернохранилище — нет</span><span lang="en">An elevator is real property; a grain silo is not</span></h3>
+      <p lang="ru">Здравый смысл здесь подводит дважды в разные стороны. Лифты и эскалаторы
+        выглядят оборудованием, а закон относит их к конструктивным элементам здания — это
+        §1250. Зернохранилище, резервуар, очистная установка, бензоколонка выглядят
+        сооружениями, но закон считает их «прочим материальным имуществом», потому что они
+        неотъемлемая часть производства или хранилище сыпучего товара, — это §1245.</p>
+      <p lang="en">Common sense misleads twice here, in opposite directions. Elevators and
+        escalators look like equipment, and the law treats them as structural components of the
+        building — section 1250. A grain silo, a tank, a pollution control unit, a petrol pump
+        look like structures, and the law counts them as “other tangible property”, because they
+        are an integral part of production or a bulk storage facility — section 1245.</p>
+      <p lang="ru">И ещё одно, куда более практичное: имущество §1250, переведённое в §1250 из
+        §1245 сменой использования, обратно уже никогда не возвращается.
+        <span class="cite">Pub. 544, гл. 3</span></p>
+      <p lang="en">And one more, far more practical: property that becomes section 1245 property by
+        a change of use can never again be treated as section 1250 property.
+        <span class="cite">Pub. 544, ch. 3</span></p>
+    </div>
+
+    <h3><span lang="ru">§1245: меньшее из двух</span><span lang="en">Section 1245: the lesser of two</span></h3>
+
+    <p lang="ru">Правило одно и короткое. Обычным доходом становится <strong>меньшая</strong> из
+      двух величин: вся взятая амортизация — включая §179 и бонус — или признанная прибыль. Что
+      осталось сверх, идёт в §1231.</p>
+    <p lang="en">The rule is single and short. Ordinary income is the <strong>lesser</strong> of two
+      amounts: all the depreciation taken — section 179 and bonus included — or the gain
+      recognised. Whatever is left above goes to section 1231.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-8. Три продажи одного станка</span><span lang="en">Example 7-8. Three sales of one machine</span></div>
+      <div class="example__body">
+        <p lang="ru">Станок куплен за $100 000 и прослужил несколько лет. Амортизации взято
+          $60 000, в том числе $20 000 по §179. Скорректированный базис — $40 000.</p>
+        <p lang="en">A machine was bought for $100,000 and served several years. Depreciation of
+          $60,000 was taken, $20,000 of it under section 179. The adjusted basis is $40,000.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Продан за $130 000: обычный доход по §1245</span><span lang="en">Sold for $130,000: ordinary income under section 1245</span></td>
+              <td data-num="60000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">…и прибыль §1231 сверх того</span><span lang="en">…and section 1231 gain above it</span></td>
+              <td data-num="30000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Продан за $85 000: обычный доход по §1245 — вся прибыль</span><span lang="en">Sold for $85,000: ordinary income under section 1245 — the whole gain</span></td>
+              <td data-num="45000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Продан за $32 000: обычный убыток по §1231</span><span lang="en">Sold for $32,000: ordinary loss under section 1231</span></td>
+              <td data-num="-8000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Три исхода из одного набора чисел. При высокой цене возвращается вся
+          амортизация и остаётся капитальный прирост. При средней возвращается только то, что
+          есть, — прибыль меньше амортизации, и §1231 не достаётся ничего. При убытке §1245 не
+          работает вовсе: он говорит только о прибыли, а убыток по деловому имуществу — обычный
+          по §1231, и это выгоднее капитального.</p>
+        <p lang="en">Three outcomes from one set of figures. At the high price all the depreciation
+          comes back and a capital gain remains. At the middle price only what there is comes back
+          — the gain is less than the depreciation, and section 1231 gets nothing. At a loss
+          section 1245 does not work at all: it speaks only of gain, and a loss on business
+          property is ordinary under section 1231, which is better than a capital one.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="90000"></span> обычного дохода
+          при цене $130 000 — возвращена вся прибыль, а не амортизация;
+          <span data-num="60000"></span> обычного дохода при цене $85 000 — возвращена вся
+          амортизация, хотя прибыль меньше; и капитальный убыток
+          <span data-num="-8000"></span> — забыто, что убыток §1231 обычный.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="90000"></span> of ordinary income
+          at $130,000 — the whole gain recaptured instead of the depreciation;
+          <span data-num="60000"></span> of ordinary income at $85,000 — the whole depreciation
+          recaptured though the gain is smaller; and a capital loss of
+          <span data-num="-8000"></span> — forgetting that a section 1231 loss is ordinary.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">§1250: почти всегда ноль, и всё же не всегда</span><span lang="en">Section 1250: nearly always nil, and yet not always</span></h3>
+
+    <p lang="ru">Недвижимость устроена иначе. Обычным доходом по §1250 становится не вся
+      амортизация, а только <strong>превышение ускоренной над прямолинейной</strong>. А с
+      1987 года вся недвижимость амортизируется прямолинейно — значит превышения нет, и §1250
+      даёт ноль. Отсюда типичный ответ на экзамене: обычного дохода по §1250 нет.</p>
+    <p lang="en">Real property works differently. What becomes ordinary income under section 1250
+      is not all the depreciation but only the <strong>excess of accelerated over straight
+      line</strong>. And since 1987 all real property is depreciated straight line — so there is
+      no excess, and section 1250 gives nil. Hence the usual answer on the exam: there is no
+      section 1250 ordinary income.</p>
+
+    <p lang="ru">Два исключения из «почти всегда». Первое: недвижимость, купленная
+      <strong>до 1987 года</strong>, могла амортизироваться ускоренно, и превышение у неё есть.
+      Второе, куда более живое: если объект держали <strong>год или меньше</strong>,
+      дополнительной амортизацией считается <em>вся</em> взятая, и §1250 возвращает её целиком.</p>
+    <p lang="en">Two exceptions to “nearly always”. First: real property bought <strong>before
+      1987</strong> could be depreciated on an accelerated basis, and does have an excess. Second,
+      and far more alive: if the property was held for <strong>one year or less</strong>,
+      <em>all</em> the depreciation taken counts as additional depreciation, and section 1250
+      takes it all back.</p>
+
+    <p lang="ru">Даже когда §1250 даёт ноль, амортизация не проходит бесследно. У физического лица
+      та часть долгосрочной прибыли, что приходится на прямолинейную амортизацию, называется
+      <strong>невозвращённой прибылью §1250</strong> и облагается по ставке до
+      <span data-fig="unrecap1250_rate"></span>, а не по обычным 0/15/20. Это не обычный доход, а
+      третья, промежуточная ставка.</p>
+    <p lang="en">Even where section 1250 gives nil, the depreciation does not pass without trace.
+      For an individual, the part of the long-term gain attributable to straight-line depreciation
+      is called <strong>unrecaptured section 1250 gain</strong> and is taxed at up to
+      <span data-fig="unrecap1250_rate"></span>, not at the usual 0/15/20. It is not ordinary
+      income but a third, intermediate rate.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Корпорация платит там, где человек не платит</span><span lang="en">A corporation pays where an individual does not</span></h3>
+      <p lang="ru">Одно и то же здание, проданное с одинаковой прибылью, даёт разный результат в
+        зависимости от того, кто продавец. У физического лица обычного дохода нет — есть
+        невозвращённая прибыль §1250 по ставке до
+        <span data-fig="unrecap1250_rate"></span>. У корпорации, кроме S-корпорации, включается
+        §291: обычным доходом становятся <span data-fig="sec291_pct"></span> превышения того, что
+        было бы обычным доходом по §1245, над тем, что признано по §1250.</p>
+      <p lang="en">The same building, sold at the same gain, gives different results depending on
+        who is selling. For an individual there is no ordinary income — there is unrecaptured
+        section 1250 gain at up to <span data-fig="unrecap1250_rate"></span>. For a corporation
+        other than an S corporation, section 291 comes in:
+        <span data-fig="sec291_pct"></span> of the excess of what would have been ordinary income
+        under section 1245 over what is ordinary income under section 1250 becomes ordinary
+        income.</p>
+      <p lang="ru">Практически это значит: посчитайте здание так, как если бы это был станок,
+        вычтите то, что дал §1250 (обычно ноль), и возьмите
+        <span data-fig="sec291_pct"></span> от разницы. S-корпорации правило не касается.
+        <span class="cite">Pub. 544, гл. 3</span></p>
+      <p lang="en">In practice: figure the building as though it were a machine, subtract what
+        section 1250 gave (usually nil), and take <span data-fig="sec291_pct"></span> of the
+        difference. S corporations are outside the rule.
+        <span class="cite">Pub. 544, ch. 3</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-9. Здание корпорации и здание человека</span><span lang="en">Example 7-9. A corporation's building and an individual's</span></div>
+      <div class="example__body">
+        <p lang="ru">Здание куплено за $500 000, амортизация прямолинейная — $180 000, базис
+          $320 000. Продано за $600 000, владели больше года. Прибыль — $280 000.</p>
+        <p lang="en">A building was bought for $500,000, depreciated straight line by $180,000 to a
+          basis of $320,000. It was sold for $600,000 after more than a year. The gain is
+          $280,000.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Обычный доход по §1250: превышения ускоренной над прямолинейной нет</span><span lang="en">Ordinary income under section 1250: no excess of accelerated over straight line</span></td>
+              <td data-num="0"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Было бы обычным доходом по §1245: меньшее из 180 000 и 280 000</span><span lang="en">What would be ordinary under section 1245: the lesser of 180,000 and 280,000</span></td>
+              <td data-num="180000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">У корпорации: §291 — 20% от 180 000 − 0</span><span lang="en">For the corporation: section 291 — 20% of 180,000 − 0</span></td>
+              <td data-num="36000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Остаётся прибылью §1231</span><span lang="en">Remaining as section 1231 gain</span></td>
+              <td data-num="244000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Тот же объект у физического лица не даёт обычного дохода ни доллара. Все
+          $280 000 — прибыль §1231, из которой <span data-num="180000"></span> облагаются по
+          ставке до <span data-fig="unrecap1250_rate"></span> как невозвращённая прибыль §1250, а
+          остальные <span data-num="100000"></span> — по обычным ставкам прироста капитала.</p>
+        <p lang="en">The same property in an individual's hands gives not a dollar of ordinary
+          income. The whole $280,000 is section 1231 gain, of which
+          <span data-num="180000"></span> is taxed at up to
+          <span data-fig="unrecap1250_rate"></span> as unrecaptured section 1250 gain and the
+          other <span data-num="100000"></span> at the ordinary capital gains rates.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="180000"></span> обычного
+          дохода — к недвижимости применён §1245; <span data-num="0"></span> — §291 забыт и вся
+          прибыль отнесена к §1231; <span data-num="56000"></span> — двадцать процентов взяты от
+          всей прибыли, а не от превышения.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="180000"></span> of ordinary income
+          — section 1245 applied to real property; <span data-num="0"></span> — section 291
+          forgotten and the whole gain treated as section 1231;
+          <span data-num="56000"></span> — the twenty per cent taken on the whole gain rather than
+          on the excess.</p>
+      </div>
+    </div>
+
+    <h3><span lang="ru">В каком порядке считать</span><span lang="en">The order of the computation</span></h3>
+
+    <ol class="steps">
+      <li><b><span lang="ru">Возврат по §1245 и §1250</span><span lang="en">Recapture under sections 1245 and 1250</span></b>
+          <span lang="ru">По каждому объекту отдельно. Обычный доход снимается сверху и в дальнейшее сальдирование не попадает</span>
+          <span lang="en">Property by property. The ordinary income comes off the top and takes no part in the netting that follows</span></li>
+      <li><b><span lang="ru">Сальдирование несчастных случаев и краж</span><span lang="en">Netting casualties and thefts</span></b>
+          <span lang="ru">Отдельный круг. Чистый убыток — все эти сделки обычные и дальше не идут. Чистая прибыль — присоединяются к общему кругу</span>
+          <span lang="en">A separate round. A net loss makes all these transactions ordinary and they go no further. A net gain and they join the general round</span></li>
+      <li><b><span lang="ru">Общее сальдирование §1231</span><span lang="en">The general section 1231 netting</span></b>
+          <span lang="ru">Всё оставшееся вместе. Чистый убыток — обычный целиком. Чистая прибыль — идём дальше</span>
+          <span lang="en">Everything left, together. A net loss is ordinary in full. A net gain and we go on</span></li>
+      <li><b><span lang="ru">Обратный взгляд на <span data-fig="sec1231_lookback"></span> лет</span><span lang="en">The <span data-fig="sec1231_lookback"></span>-year look-back</span></b>
+          <span lang="ru">Чистая прибыль обычная в пределах непогашенных чистых убытков §1231 прошлых лет, начиная с самого раннего. Остаток — долгосрочный прирост капитала</span>
+          <span lang="en">The net gain is ordinary up to the nonrecaptured net section 1231 losses of prior years, earliest first. The rest is long-term capital gain</span></li>
+    </ol>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-10. Убытки прошлых лет догоняют</span><span lang="en">Example 7-10. Past losses catch up</span></div>
+      <div class="example__body">
+        <p lang="ru">Чистые результаты по §1231 за пять лет: 2021 — убыток $20 000, 2022 —
+          прибыль $5 000, 2023 — ноль, 2024 — убыток $12 000, 2025 — прибыль $40 000.</p>
+        <p lang="en">Net section 1231 results over five years: 2021 a loss of $20,000, 2022 a gain
+          of $5,000, 2023 nil, 2024 a loss of $12,000, 2025 a gain of $40,000.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">2022: прибыль стала обычной в счёт убытка 2021 года</span><span lang="en">2022: the gain became ordinary against the 2021 loss</span></td>
+              <td data-num="5000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Осталось непогашенным от 2021 года</span><span lang="en">Left unrecaptured from 2021</span></td>
+              <td data-num="15000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Непогашенные убытки на 2025 год: 15 000 + 12 000</span><span lang="en">Nonrecaptured losses standing in 2025: 15,000 + 12,000</span></td>
+              <td data-num="27000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">2025: обычный доход</span><span lang="en">2025: ordinary income</span></td>
+              <td data-num="27000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">2025: долгосрочный прирост капитала</span><span lang="en">2025: long-term capital gain</span></td>
+              <td data-num="13000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Убыток гасится один раз и начиная с самого раннего. Пять лет считаются
+          скользящим окном: убыток 2021 года в 2027 году из окна выйдет, и остаток $15 000
+          пропадёт, если до тех пор не найдётся прибыли.</p>
+        <p lang="en">A loss is used once, and the earliest goes first. The five years are a rolling
+          window: the 2021 loss leaves the window in 2027, and the remaining $15,000 will be gone
+          if no gain has arrived by then.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="40000"></span> капитальной
+          прибыли — обратный взгляд не применён; <span data-num="8000"></span> — убыток 2021 года
+          взят целиком, хотя $5 000 уже погашены в 2022 году;
+          <span data-num="28000"></span> — учтён только убыток 2024 года.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="40000"></span> of capital gain —
+          the look-back not applied; <span data-num="8000"></span> — the whole 2021 loss counted,
+          though $5,000 of it was already used in 2022;
+          <span data-num="28000"></span> — only the 2024 loss taken into account.</p>
+      </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Отсрочка не спасает от возврата целиком</span><span lang="en">Deferral does not fully escape recapture</span></h3>
+      <p lang="ru">Станок обменян или погиб, и прибыль отложена по §1031 или §1033. Возврат по
+        §1245 не исчезает — он ограничивается суммой признанной прибыли <em>плюс</em> рыночная
+        стоимость полученного имущества, которое само §1245 не является. Проще говоря: взяли
+        добавку деньгами или получили землю вместо станка — на эту величину амортизация
+        вернётся обычным доходом, сколько бы ни было отсрочено.</p>
+      <p lang="en">A machine is exchanged or destroyed and the gain deferred under section 1031 or
+        1033. Section 1245 recapture does not disappear — it is limited to the gain recognised
+        <em>plus</em> the fair market value of any property received that is not itself section
+        1245 property. Put plainly: take boot in cash or receive land instead of a machine and the
+        depreciation comes back as ordinary income to that extent, however much was deferred.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="traps">
+      <h2><span lang="ru">Ловушки</span><span lang="en">Pitfalls</span></h2>
+    </section>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Амортизация начинается, когда имущество <strong>готово и доступно</strong> к использованию, а не когда им начали пользоваться или когда оно принесло доход</span><span lang="en">Depreciation starts when the property is <strong>ready and available</strong> for use, not when it is first used or first earns income</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Простой амортизацию не останавливает: имущество, оставшееся в бизнесе, списывается по расписанию дальше</span><span lang="en">Idleness does not stop depreciation: property still held in the business keeps running down its schedule</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Земля не амортизируется никогда, а её улучшения — тротуары, ограждения, озеленение — за 15 лет</span><span lang="en">Land is never depreciated, but its improvements — pavements, fencing, landscaping — over 15 years</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Имущество, введённое и выбывшее в одном и том же году, не амортизируется вовсе</span><span lang="en">Property placed in service and disposed of in the same year is not depreciated at all</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Класс «семь лет» — корзина по умолчанию для всего, что не названо в другом классе и не имеет установленного среднего срока</span><span lang="en">The seven-year class is the default bucket for anything not named in another class and having no class life</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Жилая аренда — <span data-fig="resid_rental_years"></span> года, только если не менее 80% валовой платы приходит от жилых помещений. Гостиница не подходит</span><span lang="en">Residential rental is <span data-fig="resid_rental_years"></span> years only where at least 80% of the gross rents come from dwelling units. A hotel does not qualify</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Тест <span data-fig="midquarter_test"></span> считается по базису, а не по числу объектов, и недвижимость в него не входит</span><span lang="en">The <span data-fig="midquarter_test"></span> test goes by basis, not by number of assets, and real property is outside it</span></td></tr>
+        <tr><th>8</th><td><span lang="ru">Перейдён порог — середина квартала применяется ко <strong>всему</strong> имуществу года, каждому по своему кварталу</span><span lang="en">Once the threshold is crossed, the mid-quarter convention applies to <strong>all</strong> of the year's property, each by its own quarter</span></td></tr>
+        <tr><th>9</th><td><span lang="ru">Выбор альтернативной системы необратим; для недвижимости он делается по каждому объекту, для прочего — по классу года</span><span lang="en">The ADS election is irrevocable; for real property it is made property by property, for the rest by class of the year</span></td></tr>
+        <tr><th>10</th><td><span lang="ru">Неверный метод в двух и более подряд декларациях становится принятым: исправляется формой 3115, а не уточнённой декларацией</span><span lang="en">A wrong method used in two or more consecutive returns becomes adopted: it is fixed on Form 3115, not by an amended return</span></td></tr>
+        <tr><th>11</th><td><span lang="ru">Базис уменьшается на амортизацию <strong>заявленную или полагавшуюся</strong>. Не заявили — вычет потерян, базис всё равно упал</span><span lang="en">Basis is reduced by depreciation <strong>allowed or allowable</strong>. Not claiming it loses the deduction and reduces the basis anyway</span></td></tr>
+        <tr><th>12</th><td><span lang="ru">Компьютеры с 2018 года списанным имуществом не считаются: порога в <span data-fig="qbu_threshold"></span> для них нет</span><span lang="en">Since 2018 computers are not listed property: the <span data-fig="qbu_threshold"></span> threshold does not apply to them</span></td></tr>
+        <tr><th>13</th><td><span lang="ru">Порог квалифицированного делового использования — <em>строго больше</em> <span data-fig="qbu_threshold"></span>. Ровно половина не проходит</span><span lang="en">The qualified business use threshold is <em>strictly more</em> than <span data-fig="qbu_threshold"></span>. Exactly half does not pass</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Инвестиционное использование в тест не входит, но в расчёт суммы амортизации входит. Одна цифра работает в двух местах по-разному</span><span lang="en">Investment use is outside the test but inside the computation of the deduction. One figure works two ways</span></td></tr>
+        <tr><th>15</th><td><span lang="ru">Работник считает своё имущество деловым, только если это удобно <em>работодателю</em> и требуется как условие найма</span><span lang="en">An employee's own property is business property only where it is for the <em>employer's</em> convenience and required as a condition of employment</span></td></tr>
+        <tr><th>16</th><td><span lang="ru">Доля делового использования умножается <strong>на потолок</strong> §280F, а не применяется к остатку после него</span><span lang="en">The business-use share multiplies <strong>the section 280F cap</strong>; it is not applied to what is left after it</span></td></tr>
+        <tr><th>17</th><td><span lang="ru">Машина тяжелее <span data-fig="auto_weight"></span> фунтов потолков §280F не знает, но §179 по ней ограничен суммой <span data-fig="sec179_suv"></span></span><span lang="en">A vehicle heavier than <span data-fig="auto_weight"></span> pounds escapes the section 280F caps, but its section 179 deduction is capped at <span data-fig="sec179_suv"></span></span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Стандартная ставка за милю — это выбор исключения машины из MACRS. Амортизация отдельно к ней не прибавляется</span><span lang="en">The standard mileage rate is an election out of MACRS. No depreciation is added on top of it</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Излишек, срезанный уменьшением за объём закупок, пропадает навсегда; излишек, срезанный пределом дохода, переносится вперёд без ограничения срока</span><span lang="en">The excess cut by the reduction for purchases is lost for good; the excess cut by the income limit carries forward without a time limit</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">В доход для предела §179 входит и заработная плата налогоплательщика или супруга по найму, и прибыли §1231</span><span lang="en">Income for the section 179 limit includes wages earned by the taxpayer or spouse as an employee, and section 1231 gains</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">При покупке с зачётом старого имущества под §179 подпадает <strong>только уплаченное деньгами</strong></span><span lang="en">On a purchase with a trade-in, only <strong>the cash paid</strong> is eligible for section 179</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">§179 не может создать убыток, бонусная амортизация — может. §179 наследственным массам и трастам недоступен</span><span lang="en">Section 179 cannot create a loss; bonus depreciation can. Section 179 is unavailable to estates and trusts</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Ставку бонуса в 2025 году решает <strong>дата приобретения</strong>, а не дата ввода в эксплуатацию: до 20 января — <span data-fig="bonus_pct_prior"></span>, после 19 января — <span data-fig="bonus_pct"></span></span><span lang="en">The 2025 bonus rate is decided by the <strong>date of acquisition</strong>, not the date placed in service: before January 20, <span data-fig="bonus_pct_prior"></span>; after January 19, <span data-fig="bonus_pct"></span></span></td></tr>
+        <tr><th>24</th><td><span lang="ru">Порядок вычетов: §179, затем бонус <em>от остатка</em>, затем MACRS от того, что осталось. Перестановка меняет ответ</span><span lang="en">The order is section 179, then bonus <em>on the remainder</em>, then MACRS on what is left. Rearranging changes the answer</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Нематериальные активы §197 списываются за <span data-fig="sec197_years"></span> лет независимо от своего настоящего срока — трёхлетнее обязательство не конкурировать тоже</span><span lang="en">Section 197 intangibles are amortized over <span data-fig="sec197_years"></span> years whatever their real life — a three-year covenant not to compete included</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Тот же патент, купленный <em>отдельно</em> от бизнеса, под §197 не подпадает и списывается по своему сроку</span><span lang="en">The same patent bought <em>apart from</em> a business is outside section 197 and is written off over its own life</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Отсчёт 180 месяцев начинается с более позднего из двух: месяца приобретения или месяца начала деятельности. За месяц выбытия списание не берётся</span><span lang="en">The 180 months begin with the later of the month of acquisition and the month the activity began. No amortization is taken for the month of disposal</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Интерес в земле и доли в корпорациях, партнёрствах и трастах под §197 не подпадают</span><span lang="en">Interests in land and interests in corporations, partnerships and trusts are outside section 197</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Убыток по одному активу §197 не вычитается, пока остались другие из той же сделки: он прибавляется к их базису</span><span lang="en">A loss on one section 197 asset is not deducted while others from the same transaction remain: it is added to their basis</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Истощение по стоимости считается по единицам <strong>проданным</strong>, а не добытым</span><span lang="en">Cost depletion goes by units <strong>sold</strong>, not units mined</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Потолок процентного истощения — <span data-fig="depletion_ti_pct"></span> налогооблагаемого дохода <em>объекта</em>, а не всего дохода налогоплательщика</span><span lang="en">The percentage depletion ceiling is <span data-fig="depletion_ti_pct"></span> of the taxable income of <em>the property</em>, not of the taxpayer's income as a whole</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Процентное истощение продолжается и после исчерпания базиса; истощение по стоимости на нуле прекращается</span><span lang="en">Percentage depletion continues after the basis is exhausted; cost depletion stops at zero</span></td></tr>
+        <tr><th>33</th><td><span lang="ru">Лес процентного истощения не знает. Нефтеперегонный завод месторождением не является и истощения не получает</span><span lang="en">Timber has no percentage depletion. An oil refinery is not a deposit and gets no depletion</span></td></tr>
+        <tr><th>34</th><td><span lang="ru">§1231, §1245 и §1250 меняют <strong>характер</strong> прибыли или убытка, но никогда не меняют их сумму</span><span lang="en">Sections 1231, 1245 and 1250 change the <strong>character</strong> of a gain or loss, never its amount</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">§1245 и §1250 работают только с прибылью. Убыток по деловому имуществу — обычный убыток §1231</span><span lang="en">Sections 1245 and 1250 deal only with gain. A loss on business property is an ordinary section 1231 loss</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Обычный доход по §1245 — <strong>меньшее</strong> из всей взятой амортизации (с §179 и бонусом) и признанной прибыли</span><span lang="en">Section 1245 ordinary income is the <strong>lesser</strong> of all depreciation taken (section 179 and bonus included) and the gain recognised</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Лифты и эскалаторы — §1250, а зернохранилища, резервуары и очистные установки — §1245</span><span lang="en">Elevators and escalators are section 1250; grain silos, tanks and pollution control units are section 1245</span></td></tr>
+        <tr><th>38</th><td><span lang="ru">Земля, использованная в бизнесе дольше года, — чистый §1231: амортизации не было, возвращать нечего</span><span lang="en">Land used in a business for more than a year is pure section 1231: there was no depreciation, so there is nothing to recapture</span></td></tr>
+        <tr><th>39</th><td><span lang="ru">Гудвилл и обязательство не конкурировать — §1245, хотя ничего материального в них нет</span><span lang="en">Goodwill and a covenant not to compete are section 1245, though there is nothing tangible about them</span></td></tr>
+        <tr><th>40</th><td><span lang="ru">§1250 почти всегда даёт ноль: с 1987 года недвижимость амортизируется прямолинейно. Но при владении <strong>год и меньше</strong> возвращается вся амортизация</span><span lang="en">Section 1250 nearly always gives nil: since 1987 real property is depreciated straight line. But where it is held <strong>one year or less</strong>, all the depreciation comes back</span></td></tr>
+        <tr><th>41</th><td><span lang="ru">§291 добавляет корпорации, кроме S-корпорации, <span data-fig="sec291_pct"></span> превышения §1245 над §1250. У физического лица вместо этого невозвращённая прибыль по ставке до <span data-fig="unrecap1250_rate"></span></span><span lang="en">Section 291 adds <span data-fig="sec291_pct"></span> of the excess of 1245 over 1250 for a corporation other than an S corporation. An individual instead has unrecaptured gain at up to <span data-fig="unrecap1250_rate"></span></span></td></tr>
+        <tr><th>42</th><td><span lang="ru">Чистый убыток §1231 обычный — без ограничения в $3 000. Чистая прибыль — долгосрочная капитальная. Выигрыш в обе стороны</span><span lang="en">A net section 1231 loss is ordinary — with no $3,000 limit. A net gain is long-term capital. A win both ways</span></td></tr>
+        <tr class="total"><th>43</th><td><span lang="ru">Обратный взгляд на <span data-fig="sec1231_lookback"></span> лет: чистая прибыль обычная в пределах непогашенных убытков прошлых лет, начиная с самого раннего</span><span lang="en">The <span data-fig="sec1231_lookback"></span>-year look-back: a net gain is ordinary up to the nonrecaptured losses of prior years, earliest first</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <section class="sub" id="check">
+      <h2><span lang="ru">Проверь себя</span><span lang="en">Check yourself</span></h2>
+    </section>
+
+    <details class="check">
+      <summary><span lang="ru">1. Дом, готовый к сдаче, объявлен к аренде 20 ноября. Жилец въехал 1 марта следующего года. С какого месяца идёт амортизация?</span><span lang="en">1. A house, ready to let, was advertised on November 20. The tenant moved in on March 1 the next year. From which month does depreciation run?</span></summary>
+      <div>
+        <p lang="ru">С ноября. Имущество введено в эксплуатацию, когда оно готово и доступно для
+          определённого использования; поиск жильца этому не мешает. По условности середины
+          месяца ноябрь считается наполовину.</p>
+        <p lang="en">From November. Property is placed in service when it is ready and available for
+          a specific use; looking for a tenant does not stand in the way. Under the mid-month
+          convention November counts as a half.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">2. За год куплены станок за $30 000 в феврале и офисная мебель за $18 000 в декабре. Какая условность?</span><span lang="en">2. A $30,000 machine was bought in February and $18,000 of office furniture in December. Which convention applies?</span></summary>
+      <div>
+        <p lang="ru">Полугодовая. Доля последнего квартала — 18 000 ÷ 48 000 = 37,5%, а порог —
+          <em>больше</em> <span data-fig="midquarter_test"></span>. Хотя предметов в декабре
+          куплено столько же, сколько в феврале, тест идёт по базису, а не по счёту.</p>
+        <p lang="en">Half-year. The last-quarter share is 18,000 ÷ 48,000 = 37.5%, and the
+          threshold is <em>more</em> than <span data-fig="midquarter_test"></span>. Although as
+          many items were bought in December as in February, the test goes by basis, not by
+          count.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">3. Амортизация по станку не заявлялась четыре года подряд. Как вернуть вычет?</span><span lang="en">3. No depreciation was claimed on a machine for four consecutive years. How is the deduction recovered?</span></summary>
+      <div>
+        <p lang="ru">Формой 3115. Один и тот же неверный порядок применялся в двух и более подряд
+          поданных декларациях, значит он стал принятым методом учёта. Корректировка по §481(a)
+          даёт всю накопленную амортизацию в год исправления. Уточнённые декларации здесь не
+          подходят, а базис станка всё это время уменьшался, как если бы вычет брался.</p>
+        <p lang="en">On Form 3115. The same wrong treatment was used in two or more consecutively
+          filed returns, so it became an adopted method of accounting. A section 481(a) adjustment
+          gives the whole accumulated depreciation in the year of correction. Amended returns will
+          not do here, and the machine's basis was falling all that time as though the deduction
+          had been taken.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">4. Машина используется 45% для бизнеса, 30% для поездок к своим инвестиционным объектам и 25% лично. Можно ли §179?</span><span lang="en">4. A car is used 45% for business, 30% for trips to the owner's investment properties and 25% personally. Is section 179 available?</span></summary>
+      <div>
+        <p lang="ru">Нет. В тест входит только квалифицированное деловое использование — 45%, а
+          нужно больше <span data-fig="qbu_threshold"></span>. Инвестиционные 30% к порогу не
+          прибавляются. Амортизация при этом считается от 75% и идёт по альтернативной системе.</p>
+        <p lang="en">No. Only qualified business use enters the test — 45%, and more than
+          <span data-fig="qbu_threshold"></span> is needed. The investment 30% is not added to the
+          threshold. Depreciation is nonetheless figured on 75% and runs under the alternative
+          system.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">5. Машина за $45 000 массой 3 900 фунтов куплена в 2025 году, деловое использование 100%, бонус применяется. Вычет первого года?</span><span lang="en">5. A $45,000 car weighing 3,900 pounds was bought in 2025, used 100% for business, bonus claimed. What is the first-year deduction?</span></summary>
+      <div>
+        <p lang="ru"><span data-fig="auto_cap_y1"></span>. Бонус дал бы все $45 000, но потолок
+          §280F перекрывает и §179, и бонус, и обычную амортизацию вместе взятые. При стопроцентном
+          деловом использовании потолок применяется целиком.</p>
+        <p lang="en"><span data-fig="auto_cap_y1"></span>. The bonus would give the whole $45,000,
+          but the section 280F cap overrides section 179, bonus and regular depreciation taken
+          together. At 100% business use the cap applies in full.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">6. Закуплено имущества §179 на $4 800 000, доход от деятельности $3 000 000. Каков предел?</span><span lang="en">6. Section 179 property of $4,800,000 was placed in service and business income was $3,000,000. What is the limit?</span></summary>
+      <div>
+        <p lang="ru">$1 700 000. Предел <span data-fig="sec179_limit"></span> уменьшается на
+          превышение закупок над <span data-fig="sec179_phaseout"></span>, то есть на $800 000.
+          Доход в $3 000 000 выше полученного предела и его не режет. Срезанные $800 000
+          пропадают навсегда — на следующий год они не переносятся.</p>
+        <p lang="en">$1,700,000. The <span data-fig="sec179_limit"></span> limit is reduced by the
+          excess of purchases over <span data-fig="sec179_phaseout"></span>, that is by $800,000.
+          The $3,000,000 of income is above the resulting limit and does not cut it. The $800,000
+          cut off is lost for good — it does not carry to the next year.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">7. Куплено кафе. В цене: гудвилл $90 000, лицензия на алкоголь $30 000, участок под парковку $40 000. Что списывается за <span data-fig="sec197_years"></span> лет?</span><span lang="en">7. A café was bought. The price included goodwill $90,000, a liquor licence $30,000 and a car park plot $40,000. What is amortized over <span data-fig="sec197_years"></span> years?</span></summary>
+      <div>
+        <p lang="ru">$120 000 — гудвилл и лицензия. Лицензия, выданная органом власти, прямо
+          названа среди нематериальных активов §197. Участок — интерес в земле: из §197 исключён
+          и не амортизируется вовсе.</p>
+        <p lang="en">$120,000 — the goodwill and the licence. A licence granted by a government
+          unit is expressly named among section 197 intangibles. The plot is an interest in land:
+          outside section 197 and not depreciated at all.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">8. Базис карьера $400 000, запасов 500 000 тонн, добыто 60 000, продано 50 000. Истощение по стоимости?</span><span lang="en">8. A quarry's basis is $400,000, reserves 500,000 tons, 60,000 mined and 50,000 sold. What is cost depletion?</span></summary>
+      <div>
+        <p lang="ru">$40 000: 400 000 ÷ 500 000 × 50 000 проданных тонн. Добытые, но не проданные
+          10 000 тонн станут вычетом в тот год, когда будут проданы.</p>
+        <p lang="en">$40,000: 400,000 ÷ 500,000 × 50,000 tons sold. The 10,000 tons mined but not
+          sold will become a deduction in the year they are sold.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">9. Грузовик куплен за $50 000, амортизация $35 000, продан за $58 000. Что и сколько?</span><span lang="en">9. A truck was bought for $50,000, depreciated by $35,000 and sold for $58,000. What and how much?</span></summary>
+      <div>
+        <p lang="ru">Прибыль $43 000: $35 000 обычного дохода по §1245 (меньшее из амортизации и
+          прибыли) и $8 000 прибыли §1231. Граница проходит по первоначальной цене $50 000: всё,
+          что выше неё, амортизацией не создано и потому возврату не подлежит.</p>
+        <p lang="en">A gain of $43,000: $35,000 of ordinary income under section 1245 (the lesser
+          of the depreciation and the gain) and $8,000 of section 1231 gain. The line runs at the
+          original cost of $50,000: anything above it was not created by depreciation and so is
+          not recaptured.</p>
+      </div>
+    </details>
+
+    <details class="check">
+      <summary><span lang="ru">10. У налогоплательщика в 2023 году был чистый убыток §1231 в $18 000, а в 2025 году — чистая прибыль $25 000. Как облагается прибыль?</span><span lang="en">10. A taxpayer had a net section 1231 loss of $18,000 in 2023 and a net gain of $25,000 in 2025. How is the gain taxed?</span></summary>
+      <div>
+        <p lang="ru">$18 000 — обычный доход по правилу обратного взгляда, оставшиеся $7 000 —
+          долгосрочный прирост капитала. Убыток 2023 года попадает в пятилетнее окно и
+          погашается первым же годом с чистой прибылью.</p>
+        <p lang="en">$18,000 is ordinary income under the look-back rule and the remaining $7,000
+          is long-term capital gain. The 2023 loss falls inside the five-year window and is used
+          up by the first year showing a net gain.</p>
+      </div>
+    </details>
+
+    <!-- ============================================================ -->
+    <section class="quiz" id="quiz">
+      <div class="quiz__head">
+        <h2><span lang="ru">Тренажёр</span><span lang="en">Question set</span></h2>
+        <div class="quiz__score"></div>
+      </div>
+      <div class="quiz__panel" data-quiz="su07"></div>
+      <button type="button" class="quiz__reset">
+        <span lang="ru">Сбросить ответы</span><span lang="en">Reset answers</span>
+      </button>
+    </section>
+
+    <div class="pagefoot">
+      <p lang="ru">Сверяйтесь с публикациями IRS 946, 544, 535 и 551, инструкциями к формам 4562,
+        4797 и 3115, а также §§167, 168, 179, 197, 280F, 611—613, 1231, 1245, 1250 и 291
+        Кодекса. Данные проверены 6 сентября 2026 года и относятся к налоговому периоду 2025.
+        Не является налоговой консультацией.</p>
+      <p lang="en">Check against IRS Publications 946, 544, 535 and 551, the instructions to Forms
+        4562, 4797 and 3115, and Code sections 167, 168, 179, 197, 280F, 611–613, 1231, 1245, 1250
+        and 291. Verified September 6, 2026 for the 2025 tax year. Not tax advice.</p>
+      <p>© 2026</p>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -26,6 +26,7 @@ var SRC_F8826 = { t: "Form 8826, Disabled Access Credit", u: "https://www.irs.go
 var SRC_P535 = { t: "Publication 535, Business Expenses", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" };
 var SRC_P551 = { t: "Publication 551 (Rev. 12-2025), Basis of Assets", u: "https://www.irs.gov/publications/p551" };
 var SRC_P544 = { t: "Publication 544 (2025), Sales and Other Dispositions of Assets", u: "https://www.irs.gov/publications/p544" };
+var SRC_P946 = { t: "Publication 946 (2025), How To Depreciate Property", u: "https://www.irs.gov/publications/p946" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
@@ -1201,6 +1202,222 @@ window.FIGURES = {
       note_en: "Pavements, driveways, fencing, landscaping. The land itself is never depreciated.",
       src: SRC_P544
     },
+
+    sec179_limit: {
+      n: 2500000, unit: "usd",
+      ru: "Максимальный вычет по §179, 2025",
+      en: "Maximum section 179 deduction, 2025",
+      note_ru: "Поднят законом от 4 июля 2025 года. Вычет не может превышать налогооблагаемый доход от активной деятельности; излишек переносится вперёд без ограничения срока.",
+      note_en: "Raised by the act of July 4, 2025. The deduction may not exceed taxable income from the active conduct of a trade or business; the excess carries forward without a time limit.",
+      src: SRC_P946
+    },
+
+    sec179_phaseout: {
+      n: 4000000, unit: "usd",
+      ru: "Порог, выше которого вычет по §179 уменьшается",
+      en: "Threshold above which the section 179 deduction is reduced",
+      note_ru: "Уменьшение доллар за доллар от стоимости всего имущества §179, введённого в эксплуатацию за год. При $6 500 000 вычет обнуляется.",
+      note_en: "Reduced dollar for dollar by the cost of all section 179 property placed in service for the year. At $6,500,000 the deduction reaches zero.",
+      src: SRC_P946
+    },
+
+    sec179_suv: {
+      n: 31300, unit: "usd",
+      ru: "Предел §179 для внедорожника, 2025",
+      en: "Section 179 limit for a sport utility vehicle, 2025",
+      note_ru: "Для машин полной массой свыше 6 000 и не более 14 000 фунтов. Не действует, если у машины более девяти пассажирских мест за водителем, грузовой отсек не короче шести футов или полностью закрытая кабина без сидений позади водителя.",
+      note_en: "For vehicles rated above 6,000 and not more than 14,000 pounds gross vehicle weight. It does not apply to a vehicle seating more than nine passengers behind the driver, one with a cargo area at least six feet long, or one with a fully enclosed compartment and no seating behind the driver.",
+      src: SRC_P946
+    },
+
+    bonus_pct: {
+      n: 100, unit: "pct",
+      ru: "Бонусная амортизация: имущество, приобретённое после 19 января 2025",
+      en: "Bonus depreciation: property acquired after January 19, 2025",
+      note_ru: "Сделана постоянной законом от 4 июля 2025 года. Решает дата приобретения, а не дата ввода в эксплуатацию.",
+      note_en: "Made permanent by the act of July 4, 2025. What decides the rate is the date of acquisition, not the date placed in service.",
+      src: SRC_P946
+    },
+
+    bonus_pct_prior: {
+      n: 40, unit: "pct",
+      ru: "Бонусная амортизация: имущество, приобретённое до 20 января 2025",
+      en: "Bonus depreciation: property acquired before January 20, 2025",
+      note_ru: "60% для имущества с долгим циклом производства и некоторых самолётов. Такое имущество, введённое в эксплуатацию в 2025 году, стопроцентный бонус не получает.",
+      note_en: "60% for long production period property and certain aircraft. Such property, placed in service in 2025, does not get the 100% allowance.",
+      src: SRC_P946
+    },
+
+    auto_cap_y1: {
+      n: 20200, unit: "usd",
+      ru: "Предел §280F для легкового автомобиля, первый год, с бонусом",
+      en: "Section 280F cap for a passenger automobile, first year, with bonus",
+      note_ru: "Включает $8 000 бонусной амортизации. Предел ещё умножается на долю делового использования.",
+      note_en: "Includes $8,000 of bonus depreciation. The cap is then multiplied by the business-use percentage.",
+      src: SRC_P946
+    },
+
+    auto_cap_y1_nobonus: {
+      n: 12200, unit: "usd",
+      ru: "Предел §280F, первый год, без бонусной амортизации",
+      en: "Section 280F cap, first year, without bonus depreciation",
+      note_ru: "Применяется, если от бонуса отказались или машина под него не подпадает.",
+      note_en: "Applies where the bonus allowance was declined or the vehicle is not qualified property.",
+      src: SRC_P946
+    },
+
+    auto_cap_y2: {
+      n: 19600, unit: "usd",
+      ru: "Предел §280F, второй год",
+      en: "Section 280F cap, second year",
+      note_ru: "Для машин, введённых в эксплуатацию в 2025 году. Пределы привязаны к году ввода и дальше не меняются.",
+      note_en: "For vehicles placed in service in 2025. The caps are fixed by the year placed in service and do not change afterwards.",
+      src: SRC_P946
+    },
+
+    auto_cap_y3: {
+      n: 11800, unit: "usd",
+      ru: "Предел §280F, третий год",
+      en: "Section 280F cap, third year",
+      note_ru: "Для машин, введённых в эксплуатацию в 2025 году.",
+      note_en: "For vehicles placed in service in 2025.",
+      src: SRC_P946
+    },
+
+    auto_cap_y4: {
+      n: 7060, unit: "usd",
+      ru: "Предел §280F, четвёртый и последующие годы",
+      en: "Section 280F cap, fourth and later years",
+      note_ru: "Действует и после конца срока возмещения, пока остаётся несписанный базис.",
+      note_en: "Continues after the recovery period ends, so long as unrecovered basis remains.",
+      src: SRC_P946
+    },
+
+    auto_weight: {
+      n: 6000, unit: "int",
+      ru: "Полная масса, фунтов, ниже которой действуют пределы §280F",
+      en: "Gross vehicle weight, pounds, below which the section 280F caps apply",
+      note_ru: "Для легковых машин считается снаряжённая масса, для грузовиков и фургонов — полная. Выше порога пределы не действуют, но списанным имуществом машина остаётся.",
+      note_en: "Unloaded weight for cars, gross weight for trucks and vans. Above the threshold the caps do not apply, though the vehicle stays listed property.",
+      src: SRC_P946
+    },
+
+    qbu_threshold: {
+      n: 50, unit: "pct",
+      ru: "Доля квалифицированного делового использования списанного имущества",
+      en: "Qualified business use share for listed property",
+      note_ru: "Строго выше половины. Не выше — §179 недоступен, амортизация только по альтернативной системе, а ранее взятый излишек возвращается в доход.",
+      note_en: "Strictly more than half. Not more — section 179 is unavailable, depreciation is under the alternative system only, and any earlier excess comes back into income.",
+      src: SRC_P946
+    },
+
+    midquarter_test: {
+      n: 40, unit: "pct",
+      ru: "Доля базиса в последнем квартале, включающая условность середины квартала",
+      en: "Share of basis in the last quarter that triggers the mid-quarter convention",
+      note_ru: "Считается по всему имуществу MACRS, введённому за год, кроме недвижимости. Превышение переводит на условность середины квартала всё имущество года, а не только декабрьское.",
+      note_en: "Measured across all MACRS property placed in service for the year except real property. Exceeding it moves every asset of that year to the mid-quarter convention, not only the December ones.",
+      src: SRC_P946
+    },
+
+    resid_rental_years: {
+      n: 27.5, unit: "int",
+      ru: "Срок возмещения жилой арендной недвижимости, лет",
+      en: "Recovery period for residential rental property, years",
+      note_ru: "Прямолинейный метод, условность середины месяца. Жилой считается недвижимость, у которой не менее 80% валовой арендной платы приходит от жилых помещений.",
+      note_en: "Straight line, mid-month convention. Property is residential where at least 80% of the gross rents come from dwelling units.",
+      src: SRC_P946
+    },
+
+    nonresid_years: {
+      n: 39, unit: "int",
+      ru: "Срок возмещения нежилой недвижимости, лет",
+      en: "Recovery period for nonresidential real property, years",
+      note_ru: "Прямолинейный метод, условность середины месяца.",
+      note_en: "Straight line, mid-month convention.",
+      src: SRC_P946
+    },
+
+    ads_resid_years: {
+      n: 30, unit: "int",
+      ru: "Срок жилой арендной недвижимости по альтернативной системе, лет",
+      en: "ADS recovery period for residential rental property, years",
+      note_ru: "40 лет, если введена в эксплуатацию до 1 января 2018 года.",
+      note_en: "40 years if placed in service before January 1, 2018.",
+      src: SRC_P946
+    },
+
+    ads_nonresid_years: {
+      n: 40, unit: "int",
+      ru: "Срок нежилой недвижимости по альтернативной системе, лет",
+      en: "ADS recovery period for nonresidential real property, years",
+      note_ru: "Выбор альтернативной системы для недвижимости делается по каждому объекту отдельно и отменён быть не может.",
+      note_en: "The ADS election for real property is made property by property and can never be revoked.",
+      src: SRC_P946
+    },
+
+    sec197_years: {
+      n: 15, unit: "int",
+      ru: "Срок списания нематериальных активов §197, лет",
+      en: "Amortization period for section 197 intangibles, years",
+      note_ru: "180 месяцев начиная с более позднего из двух месяцев: приобретения актива или начала деятельности. За месяц выбытия списание не берётся.",
+      note_en: "180 months beginning with the later of the month of acquisition or the month the activity begins. No amortization is taken for the month of disposal.",
+      src: SRC_P535
+    },
+
+    software_months: {
+      n: 36, unit: "int",
+      ru: "Срок списания программного обеспечения вне §197, месяцев",
+      en: "Recovery period for software outside section 197, months",
+      note_ru: "Прямолинейно. Коробочное программное обеспечение подпадает и под §179.",
+      note_en: "Straight line. Off-the-shelf software also qualifies for section 179.",
+      src: SRC_P946
+    },
+
+    depletion_oil_pct: {
+      n: 15, unit: "pct",
+      ru: "Ставка процентного истощения для нефти, газа и геотермальных источников",
+      en: "Percentage depletion rate for oil, gas and geothermal deposits",
+      note_ru: "Ставки других полезных ископаемых заданы законом отдельно: от 5% для песка и гравия до 22% для серы и урана.",
+      note_en: "Rates for other minerals are set separately by statute: from 5% for sand and gravel to 22% for sulphur and uranium.",
+      src: SRC_P535
+    },
+
+    depletion_ti_pct: {
+      n: 50, unit: "pct",
+      ru: "Потолок процентного истощения от налогооблагаемого дохода объекта",
+      en: "Percentage depletion ceiling as a share of taxable income from the property",
+      note_ru: "100% для нефтяных и газовых объектов. База — доход именно этого объекта до вычета истощения, а не весь доход налогоплательщика.",
+      note_en: "100% for oil and gas properties. The base is the taxable income from that property before the depletion deduction, not the taxpayer's income as a whole.",
+      src: SRC_P535
+    },
+
+    sec1231_lookback: {
+      n: 5, unit: "int",
+      ru: "Срок обратного взгляда на чистые убытки §1231, лет",
+      en: "Look-back period for net section 1231 losses, years",
+      note_ru: "Чистая прибыль года становится обычным доходом в пределах непогашенных чистых убытков предыдущих лет. Убытки погашаются начиная с самого раннего.",
+      note_en: "A net gain for the year is ordinary income up to the nonrecaptured net losses of prior years. Losses are applied beginning with the earliest.",
+      src: SRC_P544
+    },
+
+    sec291_pct: {
+      n: 20, unit: "pct",
+      ru: "Дополнительный обычный доход корпорации по §291",
+      en: "Additional ordinary income of a corporation under section 291",
+      note_ru: "Доля превышения того, что было бы обычным доходом по §1245, над тем, что признано обычным доходом по §1250. S-корпораций не касается.",
+      note_en: "A share of the excess of what would have been ordinary income under section 1245 over what is ordinary income under section 1250. S corporations are outside it.",
+      src: SRC_P544
+    },
+
+    unrecap1250_rate: {
+      n: 25, unit: "pct",
+      ru: "Предельная ставка для невозвращённой прибыли §1250",
+      en: "Maximum rate on unrecaptured section 1250 gain",
+      note_ru: "Часть долгосрочной прибыли по недвижимости, приходящаяся на прямолинейную амортизацию. Не может превышать чистую прибыль §1231.",
+      note_en: "The part of long-term gain on real property attributable to straight-line depreciation. It may not exceed the net section 1231 gain.",
+      src: SRC_P544
+    },
   },
 
   /* Группировка для страницы справочника */
@@ -1247,6 +1464,15 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "cost", ru: "Возмещение стоимости", en: "Cost recovery",
+      keys: ["sec179_limit", "sec179_phaseout", "sec179_suv",
+             "bonus_pct", "bonus_pct_prior",
+             "auto_cap_y1", "auto_cap_y1_nobonus", "auto_cap_y2", "auto_cap_y3",
+             "auto_cap_y4", "auto_weight", "qbu_threshold", "midquarter_test",
+             "resid_rental_years", "nonresid_years", "ads_resid_years",
+             "ads_nonresid_years", "sec197_years", "software_months",
+             "depletion_oil_pct", "depletion_ti_pct",
+             "sec1231_lookback", "sec291_pct", "unrecap1250_rate"] },
     { id: "basis", ru: "Базис и сделки с имуществом", en: "Basis and property transactions",
       keys: ["lke_identify_days", "lke_complete_days", "ic_replace_years",
              "ic_condemn_years", "alt_valuation_months", "gift_exclusion",
