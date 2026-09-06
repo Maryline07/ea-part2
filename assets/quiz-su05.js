@@ -673,5 +673,365 @@ window.QUIZZES.su05 = [
       C: { ru: "Такого способа не существует.", en: "No such method exists." },
       D: { ru: "Стандартная норма на питание избавляет от хранения чеков по каждому приёму пищи.", en: "The standard meal allowance saves keeping a receipt for every meal." }
     }
+  },
+  {
+    sec: "s51",
+    ru: "Поездка длилась восемь дней: два дня заняли переговоры с заказчиком, шесть — отдых на побережье. Перелёт стоил $700. Что вычитается?",
+    en: "A trip lasted eight days: two were spent negotiating with a client and six holidaying on the coast. The airfare was $700. What is deductible?",
+    opts: [
+      { k: "A", ru: "$700 целиком: деловая цель у поездки была", en: "The whole $700: the trip did have a business purpose" },
+      { k: "B", ru: "$175 — четверть перелёта по доле деловых дней", en: "$175 — a quarter of the fare, by the share of business days" },
+      { k: "C", ru: "Перелёт не вычитается; вычитаются только расходы на месте, прямо связанные с делом", en: "The fare is not deductible; only expenses at the destination directly related to the business are" },
+      { k: "D", ru: "Не вычитается ничего", en: "Nothing is deductible" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Дорога вычитается целиком, только если поездка преимущественно деловая.", en: "The fare is deductible in full only where the trip is primarily for business." },
+      B: { ru: "Дорогу по дням не делят: она либо вычитается целиком, либо не вычитается вовсе.", en: "The fare is not prorated by days: it is either deducted in full or not at all." },
+      C: { ru: "Верно. Поездка преимущественно личная, и стоимость дороги — личный расход. Деловые расходы на месте при этом сохраняются.", en: "Correct. The trip was primarily personal and the fare is a personal expense. Business expenses at the destination survive." },
+      D: { ru: "Расходы, прямо связанные с делом на месте, вычитаются и при личной поездке.", en: "Expenses directly related to business at the destination are deductible even on a personal trip." }
+    }
+  },
+  {
+    sec: "s51",
+    ru: "Поездка на девять дней: шесть дней переговоры, потом три дня отдыха в том же городе. Перелёт $700, гостиница $180 в сутки. Что вычитается?",
+    en: "A nine-day trip: six days of negotiations, then three days' holiday in the same city. Airfare $700, hotel $180 a night. What is deductible?",
+    opts: [
+      { k: "A", ru: "$700 перелёта и $1 080 гостиницы за шесть дней", en: "$700 of airfare and $1,080 of hotel for six nights" },
+      { k: "B", ru: "$700 перелёта и $1 620 гостиницы за все девять дней", en: "$700 of airfare and $1,620 of hotel for all nine nights" },
+      { k: "C", ru: "Две трети перелёта и $1 080 гостиницы", en: "Two-thirds of the airfare and $1,080 of hotel" },
+      { k: "D", ru: "Не вычитается ничего: поездка смешанная", en: "Nothing: the trip was mixed" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Поездка преимущественно деловая, поэтому дорога вычитается целиком; на месте вычитаются расходы деловых дней, а продление ради отдыха — нет.", en: "Correct. The trip was primarily for business, so the fare is deducted in full; at the destination the business days' expenses are deducted and the holiday extension is not." },
+      B: { ru: "Дни отдыха на месте не вычитаются, даже если поездка была деловой.", en: "Holiday days at the destination are not deducted, even on a business trip." },
+      C: { ru: "Дорогу не делят пропорционально: при преимущественно деловой поездке она вычитается целиком.", en: "The fare is not prorated: on a primarily business trip it is deducted in full." },
+      D: { ru: "Смешанная поездка вычет не отменяет; она его делит.", en: "A mixed trip does not cancel the deduction; it divides it." }
+    }
+  },
+  {
+    sec: "s51",
+    ru: "Владелец взял в деловую поездку супругу. Та не работник бизнеса, но вела заметки на переговорах и присутствовала на деловых обедах. Вычитаются ли её расходы?",
+    en: "An owner took his spouse on a business trip. She is not an employee of the business but took notes at the negotiations and attended the business lunches. Are her expenses deductible?",
+    opts: [
+      { k: "A", ru: "Да: она выполняла работу, полезную для бизнеса", en: "Yes: she performed work useful to the business" },
+      { k: "B", ru: "Нет: подобные услуги деловой необходимости присутствия не доказывают, и работником она не является", en: "No: services of that kind do not establish that her presence was necessary, and she is not an employee" },
+      { k: "C", ru: "Да, но только наполовину", en: "Yes, but only half of them" },
+      { k: "D", ru: "Да, если супруги подают декларацию совместно", en: "Yes, if the spouses file jointly" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Печатать заметки и ходить на обеды — не та деловая цель, которая требуется.", en: "Typing notes and attending lunches is not the business purpose required." },
+      B: { ru: "Верно. Нужны сразу два условия: подлинная деловая цель поездки этого человека и его статус работника бизнеса.", en: "Correct. Two conditions are needed together: a bona fide business purpose for that person's travel and their status as an employee of the business." },
+      C: { ru: "Предел в половину относится к питанию, а не к вопросу о том, чьи расходы вычитаются.", en: "The 50% limit concerns meals, not the question of whose expenses are deductible." },
+      D: { ru: "Способ подачи декларации на деловой характер расходов не влияет.", en: "The filing status has no bearing on whether the expense is a business one." }
+    }
+  },
+  {
+    sec: "s51",
+    ru: "Компания потратила $12 000 на летний пикник для всех работников. Какая часть вычитается?",
+    en: "A company spent $12,000 on a summer picnic for all its employees. How much is deductible?",
+    opts: [
+      { k: "A", ru: "$6 000", en: "$6,000" },
+      { k: "B", ru: "$12 000", en: "$12,000" },
+      { k: "C", ru: "Ничего: это развлечение", en: "Nothing: it is entertainment" },
+      { k: "D", ru: "$9 600 — восемьдесят процентов", en: "$9,600 — eighty per cent" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Предел в половину сюда не применяется.", en: "The 50% limit does not apply here." },
+      B: { ru: "Верно. Расходы на отдых и общие мероприятия для работников вычитаются целиком, если льгота предназначена в основном не высокооплачиваемым работникам.", en: "Correct. The cost of recreational and social activities for employees is deducted in full, provided the benefit is primarily for employees who are not highly compensated." },
+      C: { ru: "Запрет на развлечения касается приёма клиентов, а не мероприятий для собственных работников.", en: "The bar on entertainment concerns hosting clients, not events for your own employees." },
+      D: { ru: "Восемьдесят процентов — норма для тех, на кого распространяются ограничения рабочего времени министерства транспорта.", en: "Eighty per cent is the rate for those subject to the Department of Transportation's hours-of-service limits." }
+    }
+  },
+  {
+    sec: "s51",
+    ru: "Водитель-дальнобойщик, подпадающий под ограничения рабочего времени министерства транспорта, потратил в рейсах $4 000 на питание. Какая часть вычитается?",
+    en: "A long-haul driver subject to the Department of Transportation's hours-of-service limits spent $4,000 on meals on the road. How much is deductible?",
+    opts: [
+      { k: "A", ru: "$2 000", en: "$2,000" },
+      { k: "B", ru: "$4 000", en: "$4,000" },
+      { k: "C", ru: "$3 200", en: "$3,200" },
+      { k: "D", ru: "Ничего: питание в рейсе личный расход", en: "Nothing: meals on the road are personal" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Половина — общее правило, но для этой категории установлена своя норма.", en: "Half is the general rule, but this category has its own rate." },
+      B: { ru: "Целиком питание в отъезде не вычитается ни у кого.", en: "Nobody deducts meals away from home in full." },
+      C: { ru: "Верно. Для лиц, подпадающих под ограничения рабочего времени министерства транспорта, вычитается 80% питания в отъезде.", en: "Correct. For persons subject to the Department of Transportation's hours-of-service limits, 80% of meals away from home is deducted." },
+      D: { ru: "Питание в отъезде по делам — деловой расход, ограниченный процентом.", en: "Meals away from home on business are a business expense, limited by a percentage." }
+    }
+  },
+  {
+    sec: "s51",
+    ru: "Фирма платит $9 000 в год членских взносов в охотничий клуб, где партнёры встречаются с заказчиками. Что вычитается?",
+    en: "A firm pays $9,000 a year in membership fees to a hunting club where the partners meet clients. What is deductible?",
+    opts: [
+      { k: "A", ru: "$4 500", en: "$4,500" },
+      { k: "B", ru: "Ничего: взнос за развлекательный объект вычету не подлежит и считается капитальным вложением", en: "Nothing: a fee for an entertainment facility is not deductible and counts as a capital expenditure" },
+      { k: "C", ru: "$9 000, если деловые встречи документированы", en: "$9,000, if the business meetings are documented" },
+      { k: "D", ru: "$9 000 списываются равномерно за срок членства", en: "$9,000 is written off ratably over the term of the membership" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Половина относится к деловому питанию, а не к взносам за объект.", en: "The half applies to business meals, not to facility fees." },
+      B: { ru: "Верно. Расходы на развлекательные объекты — яхты, охотничьи домики, корты — не вычитаются вовсе, а вступительный и членский взнос считается капитальным вложением.", en: "Correct. Expenses for entertainment facilities — yachts, hunting lodges, courts — are not deductible at all, and the initiation or membership fee is a capital expenditure." },
+      C: { ru: "Документирование не спасает: запрет здесь безусловный.", en: "Documentation does not save it: the bar here is absolute." },
+      D: { ru: "Списания нет; сумма остаётся в капитале и учитывается при продаже участия.", en: "There is no amortization; the amount stays in capital and is taken into account on a sale of the interest." }
+    }
+  },
+  {
+    sec: "s52",
+    ru: "Муж и жена — совладельцы фирмы. Каждый подарил одному и тому же заказчику по подарку за $20, всего $40. Какова сумма вычета?",
+    en: "A husband and wife co-own a firm. Each gave the same customer a $20 gift, $40 in all. What is the deduction?",
+    opts: [
+      { k: "A", ru: "$40: у каждого свой предел", en: "$40: each has their own limit" },
+      { k: "B", ru: "$25", en: "$25" },
+      { k: "C", ru: "$50", en: "$50" },
+      { k: "D", ru: "$20", en: "$20" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Супруги считаются одним налогоплательщиком, даже если подают декларации раздельно и у каждого свои деловые отношения с получателем.", en: "Spouses count as one taxpayer, even filing separately and each with their own business relationship with the recipient." },
+      B: { ru: "Верно. Один получатель, один предел на двоих: из $40 вычитается $25.", en: "Correct. One recipient, one limit between them: of the $40, $25 is deducted." },
+      C: { ru: "Удвоенного предела не бывает: он на получателя, а не на дарителя.", en: "There is no doubled limit: it is per recipient, not per giver." },
+      D: { ru: "Вычитается больше: предел $25 не достигнут одним подарком, но общий подарок его превышает.", en: "More is deductible: one gift does not reach $25, but the combined gift exceeds it." }
+    }
+  },
+  {
+    sec: "s53",
+    ru: "Владелец застраховал свою жизнь, чтобы банк выдал кредит на развитие бизнеса. Вычитаются ли премии?",
+    en: "An owner insured his own life so that the bank would grant a business loan. Are the premiums deductible?",
+    opts: [
+      { k: "A", ru: "Да, как деловой расход", en: "Yes, as a business expense" },
+      { k: "B", ru: "Да, как проценты по деловому займу", en: "Yes, as interest on the business loan" },
+      { k: "C", ru: "Нет: премии по страховке, взятой ради получения или защиты займа, не вычитаются", en: "No: premiums on a policy taken to get or protect a loan are not deductible" },
+      { k: "D", ru: "Да, если выгодоприобретателем назначен банк", en: "Yes, if the bank is named beneficiary" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Именно этот случай из деловых расходов и исключён.", en: "This is precisely the case excluded from business expenses." },
+      B: { ru: "Премии не являются ни процентами, ни расходами на получение займа.", en: "Premiums are neither interest nor a cost of financing the loan." },
+      C: { ru: "Верно. И отдельно: страховая выплата в случае смерти не облагается, даже если пойдёт на погашение долга.", en: "Correct. And separately: the death proceeds are not taxed even if used to pay off the debt." },
+      D: { ru: "Личность выгодоприобретателя запрета не снимает.", en: "Who the beneficiary is does not lift the bar." }
+    }
+  },
+  {
+    sec: "s53",
+    ru: "Какая из двух страховок вычитается: от простоя бизнеса из-за пожара или от потери заработка владельца из-за болезни?",
+    en: "Which of the two is deductible: business interruption cover for a fire, or cover for the owner's lost earnings through illness?",
+    opts: [
+      { k: "A", ru: "Обе", en: "Both" },
+      { k: "B", ru: "Только от простоя бизнеса", en: "Business interruption only" },
+      { k: "C", ru: "Только от потери заработка", en: "Lost earnings only" },
+      { k: "D", ru: "Ни одна", en: "Neither" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Полис, возмещающий утраченный заработок при болезни или нетрудоспособности, из вычета исключён.", en: "A policy paying for lost earnings through sickness or disability is excluded." },
+      B: { ru: "Верно. Страхование от простоя возмещает упущенную прибыль бизнеса и вычитается; страхование заработка владельца — личная защита.", en: "Correct. Business interruption cover replaces the business's lost profits and is deductible; cover for the owner's earnings is personal protection." },
+      C: { ru: "Всё наоборот: вычитается именно страхование бизнеса.", en: "It is the other way round: it is the business cover that is deductible." },
+      D: { ru: "Страхование от простоя прямо названо вычитаемым.", en: "Business interruption insurance is expressly listed as deductible." }
+    }
+  },
+  {
+    sec: "s54",
+    ru: "Акционер одолжил своей корпорации $40 000, чтобы защитить собственные вложения в неё. Заём стал безнадёжным. Как учитывается убыток?",
+    en: "A shareholder lent his corporation $40,000 to protect his own investment in it. The loan became worthless. How is the loss treated?",
+    opts: [
+      { k: "A", ru: "Деловой безнадёжный долг: обычный убыток", en: "A business bad debt: an ordinary loss" },
+      { k: "B", ru: "Неделовой безнадёжный долг: краткосрочный капитальный убыток", en: "A nonbusiness bad debt: a short-term capital loss" },
+      { k: "C", ru: "Убыток не признаётся вовсе", en: "No loss is recognised" },
+      { k: "D", ru: "Долгосрочный капитальный убыток", en: "A long-term capital loss" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Заём ради защиты вложений деловым не считается: инвестиции — не бизнес.", en: "A loan to protect an investment is not a business loan: investing is not a trade or business." },
+      B: { ru: "Верно. Полностью безнадёжный неделовой долг вычитается в год, когда стал безнадёжным, как краткосрочный капитальный убыток — независимо от срока владения.", en: "Correct. A wholly worthless nonbusiness debt is deducted in the year it becomes worthless, as a short-term capital loss — whatever the holding period." },
+      C: { ru: "Убыток признаётся, но иначе. Иное дело, если по обстоятельствам заём был вкладом в капитал.", en: "A loss is recognised, but differently. It would be otherwise if the facts showed the loan was a contribution to capital." },
+      D: { ru: "Неделовой безнадёжный долг всегда краткосрочный, сколько бы его ни держали.", en: "A nonbusiness bad debt is always short-term, however long it was held." }
+    }
+  },
+  {
+    sec: "s54",
+    ru: "В 2024 году компания списала безнадёжный долг $9 000 и получила по нему вычет. В 2025 году должник неожиданно заплатил $9 000. Как это отражается?",
+    en: "In 2024 a company wrote off a $9,000 bad debt and took the deduction. In 2025 the debtor unexpectedly paid the $9,000. How is that reported?",
+    opts: [
+      { k: "A", ru: "Прочий доход 2025 года", en: "Other income for 2025" },
+      { k: "B", ru: "Уточнённая декларация за 2024 год со снятием вычета", en: "An amended 2024 return removing the deduction" },
+      { k: "C", ru: "Не отражается: деньги уже были обложены в 2024 году", en: "Not reported: the money was already taxed in 2024" },
+      { k: "D", ru: "Краткосрочный прирост капитала", en: "Short-term capital gain" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Долг, списанный в прошлом году и взысканный в текущем, показывается прочим доходом — в той мере, в какой вычет дал выгоду.", en: "Correct. A debt written off in a prior year and recovered in the current one is reported as other income — to the extent the deduction produced a benefit." },
+      B: { ru: "Прошлый год не пересматривается: в нём вычет был правомерен.", en: "The prior year is not reopened: the deduction was proper when taken." },
+      C: { ru: "В 2024 году сумма как раз была вычтена, а не обложена.", en: "In 2024 the amount was deducted, not taxed." },
+      D: { ru: "Взыскание списанного долга приростом капитала не является.", en: "Recovering a written-off debt is not a capital gain." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Партнёрство уплатило $28 000 комиссий и юридических гонораров за размещение долей среди инвесторов. Как это учитывается?",
+    en: "A partnership paid $28,000 of commissions and legal fees for placing its interests with investors. How is that treated?",
+    opts: [
+      { k: "A", ru: "Организационные затраты: $5 000 сразу, остальное за 180 месяцев", en: "Organizational costs: $5,000 at once and the rest over 180 months" },
+      { k: "B", ru: "Вычитается целиком в год уплаты", en: "Deducted in full in the year paid" },
+      { k: "C", ru: "Капитализируется и не списывается никогда", en: "Capitalized and never written off" },
+      { k: "D", ru: "Списывается за 15 лет как нематериальный актив §197", en: "Written off over 15 years as a section 197 intangible" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Организационные затраты создают само партнёрство; эти деньги продают в нём доли.", en: "Organizational costs create the partnership itself; this money sells shares in it." },
+      B: { ru: "Синдикационные затраты текущим расходом не являются.", en: "Syndication costs are not a current expense." },
+      C: { ru: "Верно. Синдикационные затраты капитализируются и не могут быть ни амортизированы, ни списаны — ни за 180 месяцев, ни при ликвидации.", en: "Correct. Syndication costs are capitalized and can be neither amortized nor deducted — not over 180 months, not on liquidation." },
+      D: { ru: "К §197 они не относятся.", en: "They are not section 197 intangibles." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Корпорация начала деятельность в 2025 году, потратив $20 000 на исследование рынка и $12 000 на получение устава и организационные собрания. Какова сумма единовременных вычетов?",
+    en: "A corporation began business in 2025, having spent $20,000 on market research and $12,000 on obtaining its charter and on organizational meetings. What is the total of the immediate deductions?",
+    opts: [
+      { k: "A", ru: "$5 000", en: "$5,000" },
+      { k: "B", ru: "$10 000", en: "$10,000" },
+      { k: "C", ru: "$32 000", en: "$32,000" },
+      { k: "D", ru: "$0: оба вида затрат капитализируются", en: "$0: both kinds are capitalized" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Предел не один общий: у затрат на создание бизнеса и у организационных затрат он свой.", en: "There is not one shared limit: start-up costs and organizational costs each have their own." },
+      B: { ru: "Верно. $5 000 по затратам на создание бизнеса и $5 000 по организационным; ни та ни другая сумма порога $50 000 не достигла. Остатки $15 000 и $7 000 списываются за 180 месяцев.", en: "Correct. $5,000 for the start-up costs and $5,000 for the organizational costs; neither amount reached the $50,000 threshold. The remainders of $15,000 and $7,000 are amortized over 180 months." },
+      C: { ru: "Сразу вычитается не всё: остаток идёт в списание.", en: "Not everything is deducted at once: the remainder goes into amortization." },
+      D: { ru: "Единовременный вычет существует по обоим видам затрат.", en: "An immediate deduction exists for both kinds of cost." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Предприниматель, никогда не работавший в этой отрасли, потратил $14 000 на изучение возможности купить автомойку и в итоге отказался от затеи. Что он вычитает?",
+    en: "A proprietor who had never worked in the industry spent $14,000 investigating the purchase of a car wash and in the end dropped the idea. What does he deduct?",
+    opts: [
+      { k: "A", ru: "$5 000 сразу и остаток за 180 месяцев", en: "$5,000 at once and the rest over 180 months" },
+      { k: "B", ru: "$14 000 как убыток", en: "$14,000 as a loss" },
+      { k: "C", ru: "Ничего", en: "Nothing" },
+      { k: "D", ru: "$14 000 как краткосрочный капитальный убыток", en: "$14,000 as a short-term capital loss" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Этот порядок отсчитывается от начала активной деятельности, а её не было.", en: "That treatment runs from the start of the active business, and there was none." },
+      B: { ru: "Убытка нет: расход не относится ни к какому существующему делу налогоплательщика.", en: "There is no loss: the expense relates to no existing trade of the taxpayer." },
+      C: { ru: "Верно. Не занимались этим делом раньше и не вошли в него — затраты на его создание не вычитаются и не списываются. Будь у него уже автомойка, $14 000 вычитались бы независимо от исхода.", en: "Correct. Not previously in that business and never entering it — the start-up costs are neither deducted nor amortized. Had he already owned a car wash, the $14,000 would be deductible whatever the outcome." },
+      D: { ru: "Капитального актива налогоплательщик не приобретал и не отчуждал.", en: "The taxpayer neither acquired nor disposed of a capital asset." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Станок со скорректированным базисом $18 000 перестал использоваться, вывезен на свалку, возмещения не предвидится. Когда признаётся убыток?",
+    en: "A machine with an adjusted basis of $18,000 went out of use and was scrapped, with no reimbursement expected. When is the loss recognised?",
+    opts: [
+      { k: "A", ru: "В году отказа от имущества, в размере скорректированного базиса", en: "In the year of abandonment, in the amount of the adjusted basis" },
+      { k: "B", ru: "Только при продаже или ином отчуждении", en: "Only on a sale or other disposition" },
+      { k: "C", ru: "Равномерно за оставшийся срок амортизации", en: "Ratably over the remaining depreciation period" },
+      { k: "D", ru: "Убыток не признаётся", en: "No loss is recognised" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Отказ от имущества и есть событие: убыток равен скорректированному базису, по которому считался бы убыток при продаже.", en: "Correct. The abandonment is the event: the loss equals the adjusted basis that would be used to figure a loss on a sale." },
+      B: { ru: "Ждать продажи не нужно — имущества уже нет.", en: "There is no need to wait for a sale — the property is gone." },
+      C: { ru: "Амортизация на брошенное имущество не продолжается.", en: "Depreciation does not continue on abandoned property." },
+      D: { ru: "Признаётся, и в год отказа.", en: "It is recognised, in the year of abandonment." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Диспансер, законный по праву своего штата, торгует веществом, запрещённым на федеральном уровне. Выручка $900 000, себестоимость проданного $500 000, зарплата и аренда $250 000. Что учитывается для федерального налога?",
+    en: "A dispensary lawful under its state's law sells a substance banned federally. Receipts $900,000, cost of goods sold $500,000, wages and rent $250,000. What counts for federal tax?",
+    opts: [
+      { k: "A", ru: "Облагается $150 000: вычитается всё", en: "$150,000 is taxed: everything is deducted" },
+      { k: "B", ru: "Облагается $400 000: себестоимость уменьшает выручку, а зарплата и аренда не вычитаются", en: "$400,000 is taxed: cost of goods sold reduces receipts, but wages and rent are not deducted" },
+      { k: "C", ru: "Облагается $900 000: не учитывается ничего", en: "$900,000 is taxed: nothing is taken into account" },
+      { k: "D", ru: "Не облагается ничего: деятельность незаконна", en: "Nothing is taxed: the activity is illegal" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Законность по праву штата федерального запрета не снимает.", en: "Lawfulness under state law does not lift the federal bar." },
+      B: { ru: "Верно. Расходы такого дела не вычитаются, но себестоимость проданного вычетом и не является: она уменьшает выручку при расчёте валового дохода.", en: "Correct. The expenses of such a business are not deductible, but cost of goods sold is not a deduction: it reduces receipts in arriving at gross income." },
+      C: { ru: "Себестоимость проданного учитывается всегда — это конституционное ограничение понятия дохода.", en: "Cost of goods sold is always taken into account — a constitutional limit on what income means." },
+      D: { ru: "Доход облагается независимо от законности источника.", en: "Income is taxed whatever the legality of its source." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Компания взяла заём и на все средства купила освобождённые от налога муниципальные облигации. Вычитаются ли проценты по займу?",
+    en: "A company borrowed and used all the proceeds to buy tax-exempt municipal bonds. Is the interest on the loan deductible?",
+    opts: [
+      { k: "A", ru: "Да, как инвестиционные проценты", en: "Yes, as investment interest" },
+      { k: "B", ru: "Да, в пределах инвестиционного дохода", en: "Yes, up to investment income" },
+      { k: "C", ru: "Нет", en: "No" },
+      { k: "D", ru: "Да, если облигации приобретены для деловых целей", en: "Yes, if the bonds were bought for business purposes" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Инвестиционные проценты вычитаются только против облагаемого инвестиционного дохода.", en: "Investment interest is deductible only against taxable investment income." },
+      B: { ru: "Доход по этим облигациям налогом не облагается и в расчёт предела не входит.", en: "The income from these bonds is not taxed and does not enter that limit." },
+      C: { ru: "Верно. Расходы, произведённые ради дохода, освобождённого от налога, не вычитаются: иначе одна и та же сумма дала бы выгоду дважды.", en: "Correct. Costs incurred to produce tax-exempt income are not deductible: otherwise the same money would give a benefit twice." },
+      D: { ru: "Цель приобретения запрета не снимает: решает необлагаемость дохода.", en: "The purpose of the purchase does not lift the bar: what decides is that the income is exempt." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Малый бизнес потратил $6 250 на устранение барьеров для инвалидов. Какой кредит по форме 8826 ему полагается?",
+    en: "A small business spent $6,250 on removing barriers for the disabled. What credit is available on Form 8826?",
+    opts: [
+      { k: "A", ru: "$3 125", en: "$3,125" },
+      { k: "B", ru: "$3 000", en: "$3,000" },
+      { k: "C", ru: "$5 000", en: "$5,000" },
+      { k: "D", ru: "$6 250", en: "$6,250" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Это половина всей суммы; первые $250 в расчёт не входят.", en: "That is half of the whole amount; the first $250 does not count." },
+      B: { ru: "Верно. Считается половина затрат между $250 и $10 250: ($6 250 − $250) × 50%. На сумму кредита при этом уменьшается вычет.", en: "Correct. Half the expenditures between $250 and $10,250: ($6,250 − $250) × 50%. The deduction is reduced by the amount of the credit." },
+      C: { ru: "$5 000 — потолок кредита, он достигается при затратах $10 250.", en: "$5,000 is the ceiling, reached at $10,250 of expenditures." },
+      D: { ru: "Кредит равен половине учитываемых затрат, а не всей сумме.", en: "The credit is half the counted expenditures, not the whole amount." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Компания потратила $1 800 силами собственных сотрудников на переписку с законодателями и $7 000 на оплату стороннего лоббиста. Что вычитается?",
+    en: "A company spent $1,800 of its own staff's time corresponding with legislators and $7,000 paying an outside lobbyist. What is deductible?",
+    opts: [
+      { k: "A", ru: "$8 800", en: "$8,800" },
+      { k: "B", ru: "$1 800", en: "$1,800" },
+      { k: "C", ru: "$2 000", en: "$2,000" },
+      { k: "D", ru: "Ничего", en: "Nothing" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Оплата сторонних лоббистов не вычитается с первого доллара.", en: "Payments to outside lobbyists are not deductible from the first dollar." },
+      B: { ru: "Верно. Собственные расходы на влияние на законодательство до $2 000 за год вычитаются; $1 800 в предел укладываются, а $7 000 стороннему лоббисту — нет.", en: "Correct. In-house expenses of influencing legislation up to $2,000 a year are deductible; the $1,800 fits within it, the $7,000 to the outside lobbyist does not." },
+      C: { ru: "$2 000 — это предел, а не вычитаемая сумма: вычитается фактически потраченное.", en: "$2,000 is the limit, not the amount deducted: what is deducted is what was actually spent." },
+      D: { ru: "Узкое исключение для собственных расходов существует.", en: "The narrow in-house exception does exist." }
+    }
+  },
+  {
+    sec: "s55",
+    ru: "Владелец сдаёт склад собственной компании, в которой существенно участвует. Аренда дала $50 000 чистого дохода. Можно ли зачесть против него пассивные убытки от другой деятельности?",
+    en: "An owner lets a warehouse to his own company, in which he materially participates. The letting produced $50,000 of net income. Can passive losses from another activity be offset against it?",
+    opts: [
+      { k: "A", ru: "Да: аренда всегда пассивная деятельность", en: "Yes: renting is always a passive activity" },
+      { k: "B", ru: "Нет: при самоаренде чистый доход считается непассивным", en: "No: on self-rental the net income is nonpassive" },
+      { k: "C", ru: "Да, в пределах половины дохода", en: "Yes, up to half the income" },
+      { k: "D", ru: "Нет, потому что доход от аренды вообще не показывается в декларации", en: "No, because rental income is not reported at all" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Правило о самоаренде как раз выводит такой доход из пассивной категории.", en: "The self-rental rule is what takes such income out of the passive category." },
+      B: { ru: "Верно. Доход показывается в Schedule E, но в пассивную колонку формы 8582 не попадает. При этом убыток от самоаренды остался бы пассивным — правило несимметрично.", en: "Correct. The income is reported on Schedule E but does not enter the passive column of Form 8582. A self-rental loss, by contrast, would stay passive — the rule is one-sided." },
+      C: { ru: "Частичного зачёта здесь не предусмотрено.", en: "There is no partial offset here." },
+      D: { ru: "Доход показывается в Schedule E как обычно.", en: "The income is reported on Schedule E as usual." }
+    }
   }
 ];

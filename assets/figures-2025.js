@@ -22,6 +22,8 @@ var SRC_F8809 = { t: "Form 8809, Application for Extension of Time To File Infor
 var SRC_I1099GI = { t: "General Instructions for Certain Information Returns (2025)", u: "https://www.irs.gov/instructions/i1099gi" };
 var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/publications/p15" };
 var SRC_P15B = { t: "Publication 15-B (2025), Employer's Tax Guide to Fringe Benefits", u: "https://www.irs.gov/publications/p15b" };
+var SRC_F8826 = { t: "Form 8826, Disabled Access Credit", u: "https://www.irs.gov/forms-pubs/about-form-8826" };
+var SRC_P535 = { t: "Publication 535, Business Expenses", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
@@ -1057,6 +1059,74 @@ window.FIGURES = {
       note_en: "Below this share, the cost is spread over the term including all renewals. At or above it, over the remaining term alone.",
       src: { t: "Internal Revenue Code section 178; Reg. 1.178-1(b)(5)", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" }
     },
+
+    org_deduction: {
+      n: 5000, unit: "usd",
+      ru: "Единовременный вычет организационных затрат",
+      en: "Immediate deduction of organizational costs",
+      note_ru: "Свой предел, отдельный от предела по затратам на создание бизнеса. Оба считаются порознь, и один другой не уменьшает.",
+      note_en: "Its own limit, separate from the one for start-up costs. The two are figured independently and neither reduces the other.",
+      src: SRC_P535
+    },
+
+    org_phaseout: {
+      n: 50000, unit: "usd",
+      ru: "Порог, выше которого единовременный вычет организационных затрат сокращается",
+      en: "Threshold above which the immediate deduction of organizational costs is reduced",
+      note_ru: "Сокращение доллар за доллар. Остаток в любом случае списывается за 180 месяцев.",
+      note_en: "Reduced dollar for dollar. The remainder is amortized over 180 months in any event.",
+      src: SRC_P535
+    },
+
+    barrier_deduction: {
+      n: 15000, unit: "usd",
+      ru: "Предел вычета затрат на устранение барьеров для инвалидов и пожилых",
+      en: "Limit on deducting the cost of removing barriers for the disabled and the elderly",
+      note_ru: "За год. Затраты сверх предела прибавляются к базису имущества и амортизируются.",
+      note_en: "Per year. Costs above the limit are added to the basis of the property and depreciated.",
+      src: SRC_P535
+    },
+
+    access_credit_floor: {
+      n: 250, unit: "usd",
+      ru: "Первые затраты на доступность, в кредит не входящие",
+      en: "The first access expenditures, excluded from the credit",
+      src: SRC_F8826
+    },
+
+    access_credit_ceiling: {
+      n: 10250, unit: "usd",
+      ru: "Потолок затрат на доступность, учитываемых в кредите",
+      en: "Ceiling on access expenditures taken into the credit",
+      src: SRC_F8826
+    },
+
+    access_credit_rate: {
+      n: 50, unit: "pct",
+      ru: "Доля учитываемых затрат, дающая кредит на доступность",
+      en: "Share of the counted expenditures that becomes the disabled access credit",
+      note_ru: "Половина от суммы между нижним порогом и потолком; максимум кредита выходит $5 000 за год.",
+      note_en: "Half of the amount between the floor and the ceiling; the credit tops out at $5,000 a year.",
+      src: SRC_F8826
+    },
+
+    access_credit_receipts: {
+      n: 1000000, unit: "usd",
+      ru: "Выручка за предыдущий год, до которой бизнес считается малым для кредита 8826",
+      en: "Prior-year gross receipts up to which a business is small for the Form 8826 credit",
+      note_ru: "Либо не более 30 работников с полной занятостью за предыдущий год — достаточно одного из двух.",
+      note_en: "Or no more than 30 full-time employees in the preceding year — either test is enough.",
+      src: SRC_F8826
+    },
+
+    lobby_inhouse: {
+      n: 2000, unit: "usd",
+      ru: "Собственные расходы на влияние на законодательство, которые всё же вычитаются",
+      en: "In-house expenses of influencing legislation that remain deductible",
+      note_ru: "За год, без накладных расходов. Превысили — исключение пропадает целиком, а не частично. К оплате услуг сторонних лоббистов не относится.",
+      note_en: "Per year, overhead excluded. Exceed it and the exception is lost entirely, not in part. It does not cover payments to outside lobbyists.",
+      src: SRC_P535
+    },
   },
 
   /* Группировка для страницы справочника */
@@ -1103,6 +1173,10 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "other", ru: "Прочие вычеты", en: "Other deductions",
+      keys: ["org_deduction", "org_phaseout", "barrier_deduction",
+             "access_credit_floor", "access_credit_ceiling", "access_credit_rate",
+             "access_credit_receipts", "lobby_inhouse"] },
     { id: "fringe", ru: "Льготы работникам", en: "Employee fringe benefits",
       keys: ["qtf_monthly", "gtl_coverage", "edu_assist", "dcap_limit", "dcap_mfs",
              "adoption_excl", "award_nonqualified", "award_qualified",
