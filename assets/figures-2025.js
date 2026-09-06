@@ -1214,7 +1214,7 @@ window.FIGURES = {
 
     land_improve_years: {
       n: 15, unit: "int",
-      ru: "Срок возмещения стоимости улучшений земельного участка",
+      ru: "Срок амортизации стоимости улучшений земельного участка",
       en: "Recovery period for land improvements",
       note_ru: "Тротуары, подъездные дороги, ограждения, озеленение. Сама земля не амортизируется никогда.",
       note_en: "Pavements, driveways, fencing, landscaping. The land itself is never depreciated.",
@@ -1306,7 +1306,7 @@ window.FIGURES = {
       n: 7060, unit: "usd",
       ru: "Предел §280F, четвёртый и последующие годы",
       en: "Section 280F cap, fourth and later years",
-      note_ru: "Действует и после конца срока возмещения, пока остаётся несписанный базис.",
+      note_ru: "Действует и после конца срока амортизации, пока остаётся несписанный базис.",
       note_en: "Continues after the recovery period ends, so long as unrecovered basis remains.",
       src: SRC_P946
     },
@@ -1340,7 +1340,7 @@ window.FIGURES = {
 
     resid_rental_years: {
       n: 27.5, unit: "int",
-      ru: "Срок возмещения жилой арендной недвижимости, лет",
+      ru: "Срок амортизации жилой арендной недвижимости, лет",
       en: "Recovery period for residential rental property, years",
       note_ru: "Прямолинейный метод, условность середины месяца. Жилой считается недвижимость, у которой не менее 80% валовой арендной платы приходит от жилых помещений.",
       note_en: "Straight line, mid-month convention. Property is residential where at least 80% of the gross rents come from dwelling units.",
@@ -1349,7 +1349,7 @@ window.FIGURES = {
 
     nonresid_years: {
       n: 39, unit: "int",
-      ru: "Срок возмещения нежилой недвижимости, лет",
+      ru: "Срок амортизации нежилой недвижимости, лет",
       en: "Recovery period for nonresidential real property, years",
       note_ru: "Прямолинейный метод, условность середины месяца.",
       note_en: "Straight line, mid-month convention.",

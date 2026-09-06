@@ -99,7 +99,7 @@ window.QUIZZES.su07 = [
   },
   {
     sec: "s71",
-    ru: "Офисное здание введено в эксплуатацию в 2025 году. Какой срок возмещения по общей системе?",
+    ru: "Офисное здание введено в эксплуатацию в 2025 году. Какой срок амортизации по общей системе?",
     en: "An office building was placed in service in 2025. What is its recovery period under the general system?",
     opts: [
       { k: "A", ru: "27,5 года", en: "27.5 years" },
@@ -441,7 +441,7 @@ window.QUIZZES.su07 = [
   },
   {
     sec: "s73",
-    ru: "Станок был списан по §179 в 2023 году. В 2025 году, внутри срока возмещения, деловое использование упало до 40%. Что происходит?",
+    ru: "Станок был списан по §179 в 2023 году. В 2025 году, внутри срока амортизации, деловое использование упало до 40%. Что происходит?",
     en: "A machine was expensed under section 179 in 2023. In 2025, still within the recovery period, business use fell to 40%. What happens?",
     opts: [
       { k: "A", ru: "Ничего: вычет уже взят и пересмотру не подлежит", en: "Nothing: the deduction has been taken and is not revisited" },
@@ -1075,14 +1075,14 @@ window.QUIZZES.su07 = [
     en: "A building that was nonresidential real property was converted to a use that made it section 1245 property. Can it ever again be section 1250 property?",
     opts: [
       { k: "A", ru: "Да, если использование вернётся к прежнему", en: "Yes, if the use reverts to the earlier one" },
-      { k: "B", ru: "Да, по истечении срока возмещения", en: "Yes, once the recovery period ends" },
+      { k: "B", ru: "Да, по истечении срока амортизации", en: "Yes, once the recovery period ends" },
       { k: "C", ru: "Нет, никогда", en: "No, never" },
       { k: "D", ru: "Да, по выбору налогоплательщика", en: "Yes, at the taxpayer's election" }
     ],
     correct: "C",
     why: {
       A: { ru: "Возврат использования положения не меняет.", en: "Reverting the use changes nothing." },
-      B: { ru: "Срок возмещения к классификации отношения не имеет.", en: "The recovery period has nothing to do with the classification." },
+      B: { ru: "Срок амортизации к классификации отношения не имеет.", en: "The recovery period has nothing to do with the classification." },
       C: { ru: "Верно. Имущество §1250, ставшее имуществом §1245 сменой использования, обратно уже никогда не возвращается.", en: "Correct. Section 1250 property that becomes section 1245 property by a change of use can never again be treated as section 1250 property." },
       D: { ru: "Выбора здесь не предусмотрено.", en: "No election is provided for here." }
     }
