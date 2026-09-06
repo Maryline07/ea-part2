@@ -21,6 +21,7 @@ var SRC_RP2440 = { t: "Rev. Proc. 2024-40, §2.27", u: "https://www.irs.gov/pub/
 var SRC_F8809 = { t: "Form 8809, Application for Extension of Time To File Information Returns", u: "https://www.irs.gov/forms-pubs/about-form-8809" };
 var SRC_I1099GI = { t: "General Instructions for Certain Information Returns (2025)", u: "https://www.irs.gov/instructions/i1099gi" };
 var SRC_P15 = { t: "Publication 15 (2025), Circular E", u: "https://www.irs.gov/publications/p15" };
+var SRC_P15B = { t: "Publication 15-B (2025), Employer's Tax Guide to Fringe Benefits", u: "https://www.irs.gov/publications/p15b" };
 var SRC_FTF = { t: "IRS, Failure to File Penalty", u: "https://www.irs.gov/payments/failure-to-file-penalty" };
 var SRC_I1065 = { t: "Instructions for Form 1065 (2025)", u: "https://www.irs.gov/instructions/i1065" };
 var SRC_I4562 = { t: "Instructions for Form 4562 (2025)", u: "https://www.irs.gov/instructions/i4562" };
@@ -977,6 +978,85 @@ window.FIGURES = {
       note_en: "The corporate rate. Trusts exempt under section 501(a) are taxed at trust rates.",
       src: { t: "Instructions for Form 990-T (2025)", u: "https://www.irs.gov/instructions/i990t" }
     },
+
+    qtf_monthly: {
+      n: 325, unit: "usd",
+      ru: "Транспортная льгота, исключаемая из зарплаты, за месяц",
+      en: "Monthly transportation fringe excluded from wages",
+      note_ru: "Отдельно на парковку и отдельно на проездные: два по этой сумме, а не одна на двоих.",
+      note_en: "Separately for parking and for transit passes: two such amounts, not one shared between them.",
+      src: SRC_P15B
+    },
+
+    gtl_coverage: {
+      n: 50000, unit: "usd",
+      ru: "Групповое страхование жизни, не попадающее в доход работника",
+      en: "Group-term life insurance coverage kept out of the employee's income",
+      note_ru: "Стоимость покрытия сверх этой суммы включается в зарплату по таблице Pub. 15-B, а не по фактической премии.",
+      note_en: "The cost of coverage above this figure goes into wages, valued by the Pub. 15-B table rather than by the actual premium.",
+      src: SRC_P15B
+    },
+
+    edu_assist: {
+      n: 5250, unit: "usd",
+      ru: "Помощь работнику в обучении, освобождённая от налога за год",
+      en: "Tax-free educational assistance per employee per year",
+      note_ru: "До 1 января 2026 года в эту же сумму укладываются и платежи работодателя по студенческому займу работника.",
+      note_en: "Through January 1, 2026, employer payments on the employee's student loan fit inside the same figure.",
+      src: SRC_P15B
+    },
+
+    dcap_limit: {
+      n: 5000, unit: "usd",
+      ru: "Помощь по уходу за иждивенцами, освобождённая от налога",
+      en: "Tax-free dependent care assistance",
+      note_ru: "Программа должна быть письменной. Освобождение снимает подоходный налог, но не социальный и не Medicare.",
+      note_en: "The programme must be in writing. The exclusion covers income tax, not social security and Medicare.",
+      src: SRC_P15B
+    },
+
+    dcap_mfs: {
+      n: 2500, unit: "usd",
+      ru: "То же при раздельной подаче супругов",
+      en: "The same figure for a married employee filing separately",
+      src: SRC_P15B
+    },
+
+    adoption_excl: {
+      n: 17280, unit: "usd",
+      ru: "Помощь при усыновлении, исключаемая из дохода работника, 2025",
+      en: "Adoption assistance excluded from the employee's income, 2025",
+      note_ru: "Исключается из подоходного налога, но не из социального, Medicare и FUTA. Показывается в графе 12 формы W-2 кодом T целиком, включая превышение.",
+      note_en: "Excluded from income tax but not from social security, Medicare and FUTA. Reported in box 12 of Form W-2 with code T in full, the excess included.",
+      src: SRC_P15B
+    },
+
+    award_nonqualified: {
+      n: 400, unit: "usd",
+      ru: "Предел вычета наград за достижения вне письменного плана",
+      en: "Deduction limit for achievement awards outside a written plan",
+      note_ru: "На одного работника за год. Награда должна быть вещью: подарочная карта или сертификат не считаются.",
+      note_en: "Per employee per year. The award must be tangible property: a gift card or certificate does not count.",
+      src: { t: "Internal Revenue Code section 274(j)(2)", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" }
+    },
+
+    award_qualified: {
+      n: 1600, unit: "usd",
+      ru: "Предел вычета всех наград за достижения одному работнику",
+      en: "Deduction limit for all achievement awards to one employee",
+      note_ru: "Потолок по всем наградам вместе, включая выданные по письменному плану, не благоприятствующему высокооплачиваемым.",
+      note_en: "A ceiling on all awards together, including those under a written plan that does not favour the highly compensated.",
+      src: { t: "Internal Revenue Code section 274(j)(2)", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" }
+    },
+
+    lease_renewal_pct: {
+      n: 75, unit: "pct",
+      ru: "Доля платы за аренду, приходящаяся на оставшийся срок",
+      en: "Share of the lease cost attributable to the remaining term",
+      note_ru: "Меньше этой доли — списывать приходится на срок вместе со всеми продлениями. Столько же или больше — только на оставшийся срок.",
+      note_en: "Below this share, the cost is spread over the term including all renewals. At or above it, over the remaining term alone.",
+      src: { t: "Internal Revenue Code section 178; Reg. 1.178-1(b)(5)", u: "https://www.irs.gov/pub/irs-prior/p535--2022.pdf" }
+    },
   },
 
   /* Группировка для страницы справочника */
@@ -1023,6 +1103,10 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "fringe", ru: "Льготы работникам", en: "Employee fringe benefits",
+      keys: ["qtf_monthly", "gtl_coverage", "edu_assist", "dcap_limit", "dcap_mfs",
+             "adoption_excl", "award_nonqualified", "award_qualified",
+             "lease_renewal_pct"] },
     { id: "farm", ru: "Фермеры", en: "Farmers",
       keys: ["farm_income_share", "farm_prepaid_limit", "soil_water_limit",
              "farm_syndicate_losses",

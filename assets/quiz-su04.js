@@ -599,5 +599,293 @@ window.QUIZZES.su04 = [
       C: { ru: "Сумма вычитается — но в составе стоимости топлива.", en: "The amount is deducted — inside the cost of the fuel." },
       D: { ru: "Топливо расходуется, а не входит в стоимость транспортных средств.", en: "Fuel is consumed; it does not become part of the vehicles’ cost." }
     }
+  },
+  {
+    sec: "s42",
+    ru: "Работодатель на методе начисления закрепил за работниками $18 000 отпускных к 31 декабря 2025 года и выплатил их в феврале 2026 года. В каком году сумма вычитается?",
+    en: "An accrual-method employer had $18,000 of vacation pay vested for its employees by December 31, 2025, and paid it in February 2026. In which year is the amount deducted?",
+    opts: [
+      { k: "A", ru: "В 2025 году, поскольку сумма закреплена к концу года", en: "In 2025, because the amount was vested by year end" },
+      { k: "B", ru: "В 2026 году — в году, когда работники её получили", en: "In 2026 — the year the employees received it" },
+      { k: "C", ru: "Половина в 2025 году, половина в 2026-м", en: "Half in 2025 and half in 2026" },
+      { k: "D", ru: "В 2025 году, поскольку выплата состоялась в течение двух с половиной месяцев", en: "In 2025, because payment was made within two and a half months" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Закрепление за работником даёт ему право на деньги, но не даёт работодателю вычета.", en: "Vesting gives the employee a right to the money; it does not give the employer a deduction." },
+      B: { ru: "Верно. Отпускные вычитаются в том году, в котором работник их фактически получил, и метод учёта на это не влияет.", en: "Correct. Vacation pay is deducted in the year the employee actually receives it, and the accounting method does not change that." },
+      C: { ru: "Деления по годам здесь нет: вычет целиком относится к году выплаты.", en: "There is no split between years: the deduction belongs entirely to the year of payment." },
+      D: { ru: "Правдоподобно, но неверно. Срок в два с половиной месяца приходит из правил об отложенном вознаграждении; к отпускным публикация его не применяет.", en: "Plausible but wrong. The two-and-a-half-month period comes from the deferred compensation rules; the publication does not apply it to vacation pay." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "За десять лет работы работнику вручена подарочная карта магазина на $500. Как это учитывается?",
+    en: "An employee was given a $500 store gift card for ten years' service. How is it treated?",
+    opts: [
+      { k: "A", ru: "Награда за выслугу: у работника в доход не идёт, у работодателя вычет ограничен $400", en: "A length-of-service award: not income to the employee, and the employer's deduction is capped at $400" },
+      { k: "B", ru: "Включается в зарплату работника целиком; работодатель вычитает $500 как оплату труда", en: "Included in the employee's wages in full; the employer deducts $500 as pay" },
+      { k: "C", ru: "Деловой подарок: вычитается не более $25", en: "A business gift: no more than $25 is deductible" },
+      { k: "D", ru: "Не вычитается вовсе как расход личного характера", en: "Not deductible at all, as a personal expense" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Подарочная карта приравнена к деньгам и наградой за достижения быть не может, каким бы ни был повод.", en: "A gift card counts as cash and can never be an achievement award, whatever the occasion." },
+      B: { ru: "Верно. Раз это не награда, а денежный эквивалент, сумма идёт в зарплату работника и вычитается работодателем как обычная оплата труда — без потолка наград.", en: "Correct. Since it is a cash equivalent rather than an award, the amount goes into the employee's wages and the employer deducts it as ordinary pay — with no award ceiling." },
+      C: { ru: "Предел деловых подарков относится к подаркам клиентам и партнёрам, а не к выплатам своим работникам.", en: "The business gift limit applies to gifts to customers and contacts, not to payments to your own employees." },
+      D: { ru: "Расход деловой: это вознаграждение за труд.", en: "The expense is a business one: it is remuneration for work." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Работнику вручены часы стоимостью $1 000 за двадцать лет работы. Письменного плана награждения у работодателя нет. Какова сумма вычета?",
+    en: "An employee received a $1,000 watch for twenty years' service. The employer has no written awards plan. What is the deduction?",
+    opts: [
+      { k: "A", ru: "$1 000", en: "$1,000" },
+      { k: "B", ru: "$1 600", en: "$1,600" },
+      { k: "C", ru: "$400", en: "$400" },
+      { k: "D", ru: "$0", en: "$0" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Вещь наградой является, но потолок вычета никуда не делся.", en: "The item does qualify as an award, but the deduction ceiling still applies." },
+      B: { ru: "$1 600 — это потолок по всем наградам вместе; вне письменного плана действует меньший предел.", en: "$1,600 is the ceiling for all awards together; outside a written plan the smaller limit applies." },
+      C: { ru: "Верно. Награда вне квалифицированного письменного плана вычитается не более чем на $400 одному работнику за год.", en: "Correct. An award outside a qualified written plan is deductible up to $400 per employee per year." },
+      D: { ru: "Часы — вещь, врученная за выслугу; определению награды это отвечает.", en: "A watch is tangible property given for length of service; that meets the definition of an award." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Работодатель весь 2025 год оплачивал работнику парковку у офиса по $500 в месяц. Какая сумма попадает в зарплату работника за год?",
+    en: "Throughout 2025 an employer paid $500 a month for an employee's office parking. What amount goes into the employee's wages for the year?",
+    opts: [
+      { k: "A", ru: "$6 000", en: "$6,000" },
+      { k: "B", ru: "$2 100", en: "$2,100" },
+      { k: "C", ru: "$0", en: "$0" },
+      { k: "D", ru: "$5 675", en: "$5,675" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Исключение существует: не вся сумма облагается.", en: "The exclusion exists: not all of it is taxable." },
+      B: { ru: "Верно. Ежемесячное исключение на парковку в 2025 году — $325, превышение $175 берётся за каждый из двенадцати месяцев.", en: "Correct. The 2025 monthly parking exclusion is $325; the $175 excess is counted for each of the twelve months." },
+      C: { ru: "Полностью льгота не исключается: месячный предел превышен.", en: "The benefit is not wholly excluded: the monthly limit is exceeded." },
+      D: { ru: "Так выходит, если вычесть предел один раз за год, а он месячный.", en: "That is the result of subtracting the limit once for the year, when it is a monthly one." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Работодатель по программе усыновления возместил работнику $20 000. Как это облагается у работника в 2025 году?",
+    en: "An employer reimbursed an employee $20,000 under an adoption assistance programme. How is that taxed to the employee in 2025?",
+    opts: [
+      { k: "A", ru: "Все $20 000 освобождены от всех налогов", en: "The whole $20,000 is exempt from every tax" },
+      { k: "B", ru: "От подоходного налога освобождены $17 280; социальный налог, Medicare и FUTA берутся со всех $20 000", en: "$17,280 is exempt from income tax; social security, Medicare and FUTA apply to the whole $20,000" },
+      { k: "C", ru: "$17 280 освобождены от всех налогов, остальное облагается всеми", en: "$17,280 is exempt from every tax and the rest is taxed by all of them" },
+      { k: "D", ru: "Вся сумма облагается как обычная зарплата", en: "The whole amount is taxed as ordinary wages" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Освобождение ограничено суммой и не распространяется на зарплатные налоги.", en: "The exclusion is capped and does not reach the employment taxes." },
+      B: { ru: "Верно. Исключение действует только против подоходного налога; в графе 12 формы W-2 кодом T показывается вся сумма, включая превышение.", en: "Correct. The exclusion works against income tax only; box 12 of Form W-2 shows the whole amount with code T, the excess included." },
+      C: { ru: "Половина верна: сумма та. Но освобождение от социального налога и Medicare программа усыновления не даёт.", en: "Half right: the figure is correct. But adoption assistance gives no exemption from social security and Medicare." },
+      D: { ru: "Исключение из подоходного налога программа даёт.", en: "The programme does give an exclusion from income tax." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Что из перечисленного нельзя включить в план «кафетерий»?",
+    en: "Which of the following may not be included in a cafeteria plan?",
+    opts: [
+      { k: "A", ru: "Помощь по уходу за иждивенцами", en: "Dependent care assistance" },
+      { k: "B", ru: "Групповое страхование жизни", en: "Group-term life insurance" },
+      { k: "C", ru: "Помощь в обучении работника", en: "Educational assistance" },
+      { k: "D", ru: "Помощь при усыновлении", en: "Adoption assistance" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Входит в перечень допустимых льгот.", en: "It is on the list of qualified benefits." },
+      B: { ru: "Входит, включая ту часть стоимости, которая из зарплаты не исключается.", en: "It is, including the part of the cost that cannot be excluded from wages." },
+      C: { ru: "Верно. Помощь в обучении в «кафетерий» не включается — вместе со скидками работникам, транспортом до работы, питанием и жильём на территории и малозначительными льготами.", en: "Correct. Educational assistance may not go into a cafeteria plan — nor may employee discounts, commuting benefits, on-premises meals and lodging, or de minimis benefits." },
+      D: { ru: "Входит в перечень допустимых льгот.", en: "It is on the list of qualified benefits." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Семнадцатилетняя дочь работает в партнёрстве, участниками которого являются только её отец и мать. Какие налоги берутся с её зарплаты?",
+    en: "A seventeen-year-old daughter works for a partnership whose only partners are her father and mother. Which taxes apply to her wages?",
+    opts: [
+      { k: "A", ru: "Все: удержание подоходного, социальный, Medicare и FUTA", en: "All of them: income tax withholding, social security, Medicare and FUTA" },
+      { k: "B", ru: "Только удержание подоходного налога", en: "Income tax withholding only" },
+      { k: "C", ru: "Удержание и FUTA, но не социальный и не Medicare", en: "Withholding and FUTA, but not social security and Medicare" },
+      { k: "D", ru: "Никакие", en: "None" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так было бы, если бы среди участников был хоть один не родитель этого ребёнка.", en: "That would be so if any partner were not a parent of this child." },
+      B: { ru: "Верно. Партнёрство, каждый участник которого приходится ребёнку родителем, приравнено к предприятию родителя: до 18 лет нет социального налога и Medicare, до 21 года нет FUTA. Подоходный удерживается.", en: "Correct. A partnership every partner in which is a parent of the child is treated like the parent's own business: no social security or Medicare until 18, no FUTA until 21. Income tax is withheld." },
+      C: { ru: "FUTA как раз не берётся: до 21 года действует освобождение.", en: "FUTA is precisely what does not apply: the exemption runs until 21." },
+      D: { ru: "Подоходный налог удерживается во всех случаях семейного найма в бизнесе.", en: "Income tax is withheld in every case of family employment in a business." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Жена работает продавцом в магазине, который принадлежит её мужу как индивидуальное предприятие. Какие налоги берутся с её зарплаты?",
+    en: "A wife works as a shop assistant in a shop owned by her husband as a sole proprietorship. Which taxes apply to her wages?",
+    opts: [
+      { k: "A", ru: "Удержание подоходного, социальный и Medicare — но не FUTA", en: "Income tax withholding, social security and Medicare — but not FUTA" },
+      { k: "B", ru: "Все четыре", en: "All four" },
+      { k: "C", ru: "Только удержание подоходного налога", en: "Income tax withholding only" },
+      { k: "D", ru: "Никакие: выплаты супругу зарплатой не считаются", en: "None: payments to a spouse do not count as wages" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Освобождение супруга касается только FUTA; удержание, социальный налог и Medicare берутся как обычно.", en: "Correct. The spousal exemption covers FUTA only; withholding, social security and Medicare apply as usual." },
+      B: { ru: "FUTA с зарплаты супруга, работающего в бизнесе супруга, не берётся.", en: "FUTA does not apply to a spouse working in the other spouse's business." },
+      C: { ru: "Освобождения от социального налога у супруга нет — оно есть только у ребёнка до 18 лет.", en: "A spouse has no exemption from social security tax — only a child under 18 does." },
+      D: { ru: "Выплаты супругу за фактическую работу — обычная оплата труда и вычитаются.", en: "Payments to a spouse for work actually done are ordinary pay and are deductible." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Ателье продаёт услугу по пошиву за $2 000, а своим работникам оказывает её за $1 400. Что попадает в зарплату работника?",
+    en: "A tailor's shop charges $2,000 for a service and provides it to its own employees for $1,400. What goes into the employee's wages?",
+    opts: [
+      { k: "A", ru: "$600", en: "$600" },
+      { k: "B", ru: "$200", en: "$200" },
+      { k: "C", ru: "$0", en: "$0" },
+      { k: "D", ru: "$1 400", en: "$1,400" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так выходит, если не применить исключение вовсе.", en: "That is the result of not applying the exclusion at all." },
+      B: { ru: "Верно. По услугам из зарплаты исключается скидка до 20% обычной цены, то есть $400; остальные $200 облагаются.", en: "Correct. On services a discount up to 20% of the ordinary price is excluded, that is $400; the other $200 is taxable." },
+      C: { ru: "Скидка составила 30% цены и предел превысила.", en: "The discount came to 30% of the price and exceeded the limit." },
+      D: { ru: "Это уплаченная работником сумма, а не льгота.", en: "That is what the employee paid, not the benefit." }
+    }
+  },
+  {
+    sec: "s42",
+    ru: "Работодатель обеспечивает работнику групповое страхование жизни на $80 000. Что включается в зарплату работника?",
+    en: "An employer provides an employee with $80,000 of group-term life insurance. What is included in the employee's wages?",
+    opts: [
+      { k: "A", ru: "Ничего", en: "Nothing" },
+      { k: "B", ru: "Уплаченная работодателем премия за всё покрытие", en: "The premium the employer paid for the whole coverage" },
+      { k: "C", ru: "Стоимость покрытия сверх $50 000, определённая по таблице Pub. 15-B", en: "The cost of the coverage above $50,000, figured from the Pub. 15-B table" },
+      { k: "D", ru: "$30 000", en: "$30,000" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Освобождение ограничено покрытием в $50 000.", en: "The exclusion is limited to $50,000 of coverage." },
+      B: { ru: "Премия за покрытие в пределах $50 000 в доход не идёт.", en: "The premium for coverage within $50,000 does not enter income." },
+      C: { ru: "Верно. Считается не фактическая премия, а стоимость по единой таблице, и только за превышение над $50 000.", en: "Correct. It is not the actual premium that counts but the cost from the standard table, and only for the excess over $50,000." },
+      D: { ru: "$30 000 — это лишняя сумма страхового покрытия, а не сумма дохода.", en: "$30,000 is the excess amount of coverage, not an amount of income." }
+    }
+  },
+  {
+    sec: "s43",
+    ru: "Предприниматель взял десятилетний заём на оборудование и уплатил $8 000 пунктов при выдаче. Какая сумма вычитается в первый год?",
+    en: "A proprietor took a ten-year loan for equipment and paid $8,000 of points on origination. What is deductible in the first year?",
+    opts: [
+      { k: "A", ru: "$8 000", en: "$8,000" },
+      { k: "B", ru: "$800", en: "$800" },
+      { k: "C", ru: "$0: пункты процентами не являются", en: "$0: points are not interest" },
+      { k: "D", ru: "$8 000 прибавляются к базису оборудования", en: "$8,000 is added to the basis of the equipment" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Пункты — проценты, уплаченные вперёд, и сразу не списываются.", en: "Points are prepaid interest and are not written off at once." },
+      B: { ru: "Верно. Пункты растягиваются на срок займа: $8 000 ÷ 10 лет.", en: "Correct. Points are spread over the term of the loan: $8,000 ÷ 10 years." },
+      C: { ru: "Пункты как раз являются процентами — если уплачены исключительно за пользование деньгами.", en: "Points are interest — where they are solely for the use of money." },
+      D: { ru: "К базису оборудования проценты по займу не прибавляются: это не затраты на его приобретение.", en: "Loan interest is not added to the basis of equipment: it is not a cost of acquiring it." }
+    }
+  },
+  {
+    sec: "s43",
+    ru: "IRS начислила предпринимателю $2 000 процентов на недоплаченный подоходный налог и $900 процентов на недоимку по зарплатным налогам его бизнеса. Что вычитается в Schedule C?",
+    en: "The IRS charged a proprietor $2,000 of interest on underpaid income tax and $900 of interest on his business's employment tax deficiency. What is deductible on Schedule C?",
+    opts: [
+      { k: "A", ru: "$2 900", en: "$2,900" },
+      { k: "B", ru: "$2 000", en: "$2,000" },
+      { k: "C", ru: "$900", en: "$900" },
+      { k: "D", ru: "$0", en: "$0" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Проценты по подоходному налогу физического лица деловым расходом не становятся.", en: "Interest on an individual's income tax never becomes a business expense." },
+      B: { ru: "Это как раз та половина, которая не вычитается.", en: "That is precisely the half that is not deductible." },
+      C: { ru: "Верно. Проценты по зарплатным налогам бизнеса вычитаются: это долг бизнеса, а не личный налоговый долг.", en: "Correct. Interest on the business's employment taxes is deductible: it is a debt of the business, not a personal tax debt." },
+      D: { ru: "Половина суммы вычитается — та, что относится к зарплатным налогам.", en: "Half of the amount is deductible — the part relating to the employment taxes." }
+    }
+  },
+  {
+    sec: "s44",
+    ru: "За передачу договора аренды уплачено $16 000. До конца срока остаётся 12 лет, договор даёт два продления по 4 года. На оставшийся срок приходится $10 000 уплаченного. Какова сумма вычета за год?",
+    en: "$16,000 was paid to take over a lease. Twelve years remain on it and it carries two four-year renewals. $10,000 of the payment is attributable to the remaining term. What is the annual deduction?",
+    opts: [
+      { k: "A", ru: "$1 333", en: "$1,333" },
+      { k: "B", ru: "$800", en: "$800" },
+      { k: "C", ru: "$833", en: "$833" },
+      { k: "D", ru: "$500", en: "$500" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Так выходит при делении всей суммы на 12 лет, то есть если считать, что порог пройден.", en: "That is the whole amount over 12 years, that is, on the footing that the threshold is met." },
+      B: { ru: "Верно. На оставшийся срок приходится 62,5% — меньше 75%, поэтому все $16 000 делятся на 20 лет: 12 плюс два продления по 4.", en: "Correct. 62.5% is attributable to the remaining term — less than 75%, so the whole $16,000 is divided over 20 years: 12 plus two renewals of 4." },
+      C: { ru: "Так выходит, если поделить на 12 лет только «свою» часть $10 000.", en: "That is the “own” $10,000 divided over 12 years." },
+      D: { ru: "Так выходит, если поделить только $10 000 на все 20 лет: деньги за продления потеряны.", en: "That is only the $10,000 over the full 20 years: the money for the renewals is lost." }
+    }
+  },
+  {
+    sec: "s44",
+    ru: "За передачу договора аренды уплачено $24 000. До конца срока остаётся 12 лет, есть право продления ещё на 6 лет. На оставшийся срок приходится $19 200. Какова сумма вычета за год?",
+    en: "$24,000 was paid to take over a lease. Twelve years remain and there is a right to renew for a further six. $19,200 is attributable to the remaining term. What is the annual deduction?",
+    opts: [
+      { k: "A", ru: "$1 333", en: "$1,333" },
+      { k: "B", ru: "$1 600", en: "$1,600" },
+      { k: "C", ru: "$2 000", en: "$2,000" },
+      { k: "D", ru: "$24 000", en: "$24,000" }
+    ],
+    correct: "C",
+    why: {
+      A: { ru: "Так выходит при делении на 18 лет, то есть если считать, что порог не пройден.", en: "That is the amount over 18 years, that is, on the footing that the threshold is not met." },
+      B: { ru: "Так выходит, если поделить на 12 лет только «свою» часть $19 200.", en: "That is only the “own” $19,200 divided over 12 years." },
+      C: { ru: "Верно. На оставшийся срок приходится 80% — порог в 75% пройден, продления не считаются, и все $24 000 делятся на 12 лет.", en: "Correct. 80% is attributable to the remaining term — the 75% threshold is met, the renewals are ignored, and the whole $24,000 is divided over 12 years." },
+      D: { ru: "Плата за получение аренды сразу не списывается ни при каком раскладе.", en: "The cost of getting a lease is never written off at once." }
+    }
+  },
+  {
+    sec: "s44",
+    ru: "Предприниматель весь 2025 год платил $2 000 в месяц за гараж, где ведёт дело. 1 сентября он подписал договор о покупке гаража, и платежи с сентября по декабрь идут в счёт выкупа. Какова сумма вычета по аренде за 2025 год?",
+    en: "Throughout 2025 a proprietor paid $2,000 a month for the garage where he runs his business. On September 1 he signed a contract to buy it, and the payments from September to December are applied to the purchase. What is the 2025 rent deduction?",
+    opts: [
+      { k: "A", ru: "$24 000", en: "$24,000" },
+      { k: "B", ru: "$16 000", en: "$16,000" },
+      { k: "C", ru: "$8 000", en: "$8,000" },
+      { k: "D", ru: "$0", en: "$0" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "После перехода к выкупу платежи арендой быть перестают.", en: "Once the purchase begins the payments stop being rent." },
+      B: { ru: "Верно. Восемь месяцев до подписания — аренда, $16 000. Платежи с сентября идут в долю в собственности и уходят в базис, а не в расход.", en: "Correct. The eight months before signing are rent, $16,000. The payments from September go toward equity and into basis, not into expense." },
+      C: { ru: "Это как раз та часть, которая арендой не является.", en: "That is precisely the part that is not rent." },
+      D: { ru: "До подписания договора о покупке доли в собственности не было и платежи были обычной арендой.", en: "Before the purchase contract there was no equity and the payments were ordinary rent." }
+    }
+  },
+  {
+    sec: "s44",
+    ru: "Чтобы уменьшить арендуемую площадь, компания согласилась доплатить $6 000 сверх обычной аренды; в договоре сумма названа дополнительной арендной платой. До конца срока остаётся 15 лет. Как это учитывается?",
+    en: "To reduce the space it rents, a company agreed to pay $6,000 on top of the ordinary rent; the agreement calls it additional rent. Fifteen years remain on the lease. How is it treated?",
+    opts: [
+      { k: "A", ru: "Вычитается как аренда в году уплаты", en: "Deducted as rent in the year paid" },
+      { k: "B", ru: "Капитализируется и списывается по $400 в год на оставшийся срок", en: "Capitalized and written off at $400 a year over the remaining term" },
+      { k: "C", ru: "Не вычитается вовсе", en: "Not deductible at all" },
+      { k: "D", ru: "Прибавляется к базису арендуемого здания", en: "Added to the basis of the leased building" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Название в договоре природы платежа не меняет: платят за изменение условий аренды, а не за пользование в этом году.", en: "The label in the agreement does not change the nature of the payment: it buys a change of terms, not this year's use." },
+      B: { ru: "Верно. Плата за изменение условий договора капитализируется и списывается равными долями на оставшийся срок: $6 000 ÷ 15.", en: "Correct. A payment to modify the lease is capitalized and written off in equal parts over the remaining term: $6,000 ÷ 15." },
+      C: { ru: "Сумма возмещается — растянуто во времени.", en: "The amount is recovered — over time." },
+      D: { ru: "Здание компании не принадлежит; базиса в нём у неё нет.", en: "The company does not own the building and has no basis in it." }
+    }
   }
 ];
