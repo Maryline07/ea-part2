@@ -121,14 +121,14 @@ window.QUIZZES.su01 = [
     ru: "Средняя годовая валовая выручка партнёрства за три предыдущих года — $18 млн. Один из партнёров — C-корпорация. Вправе ли партнёрство применять кассовый метод в 2025 году?",
     en: "A partnership’s average annual gross receipts for the three prior years are $18 million. One partner is a C corporation. May the partnership use the cash method for 2025?",
     opts: [
-      { k: "A", ru: "Нет: наличие партнёра-корпорации исключает кассовый метод без изъятий", en: "No: having a corporate partner rules out the cash method absolutely" },
+      { k: "A", ru: "Нет: наличие партнёра-корпорации исключает кассовый метод наглухо", en: "No: having a corporate partner rules out the cash method absolutely" },
       { k: "B", ru: "Да: тест валовой выручки пройден", en: "Yes: the gross receipts test is met" },
       { k: "C", ru: "Нет: партнёрства вообще не применяют кассовый метод", en: "No: partnerships may never use the cash method" },
       { k: "D", ru: "Да, но только с разрешения IRS по форме 3115", en: "Yes, but only with IRS consent on Form 3115" }
     ],
     correct: "B",
     why: {
-      A: { ru: "Запрет снимается, если пройден тест валовой выручки. Изъятие как раз предусмотрено.", en: "The prohibition lifts where the gross receipts test is met. The exception exists precisely for this." },
+      A: { ru: "Запрет снимается, если пройден тест валовой выручки. Исключение как раз предусмотрено.", en: "The prohibition lifts where the gross receipts test is met. The exception exists precisely for this." },
       B: { ru: "Верно. $18 млн ниже порога, поэтому партнёрство считается малым налогоплательщиком и вправе применять кассовый метод.", en: "Correct. $18 million is below the threshold, so the partnership is a small business taxpayer and may use the cash method." },
       C: { ru: "Партнёрства применяют кассовый метод свободно, если среди партнёров нет C-корпорации или пройден тест выручки.", en: "Partnerships may use the cash method freely absent a C corporation partner, or where the receipts test is met." },
       D: { ru: "Форма 3115 нужна для смены уже применяемого метода, а не для права его применять.", en: "Form 3115 is for changing an existing method, not for the right to use one." }
@@ -148,7 +148,7 @@ window.QUIZZES.su01 = [
     why: {
       A: { ru: "Такое партнёрство ограничений не имеет.", en: "Such a partnership faces no restriction." },
       B: { ru: "S-корпорации кассовый метод доступен.", en: "An S corporation may use the cash method." },
-      C: { ru: "Верно. Для налогового убежища изъятия по тесту валовой выручки не предусмотрено.", en: "Correct. No gross receipts exception is available to a tax shelter." },
+      C: { ru: "Верно. Для налогового убежища исключения по тесту валовой выручки не предусмотрено.", en: "Correct. No gross receipts exception is available to a tax shelter." },
       D: { ru: "Это типичный пользователь кассового метода.", en: "This is the typical cash method taxpayer." }
     }
   },
