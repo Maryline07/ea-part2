@@ -544,8 +544,8 @@ window.FIGURES = {
       d: "2026-01-15", unit: "date",
       ru: "Фермеры и рыбаки: единственный платёж расчётного налога",
       en: "Farmers and fishermen: the single estimated tax payment",
-      note_ru: "Обязательный годовой платёж — меньшая из двух величин: 66⅔% налога за 2025 год или 100% налога за 2024 год.",
-      note_en: "The required annual payment is the smaller of 66 2/3% of the 2025 tax or 100% of the tax shown on the 2024 return.",
+      note_ru: "Обязательный годовой платёж — меньшая из двух величин: 66,67% налога за 2025 год или 100% налога за 2024 год.",
+      note_en: "The required annual payment is the smaller of 66.67% of the 2025 tax or 100% of the tax shown on the 2024 return.",
       src: SRC_P225
     },
     due_1099_recipient: {

@@ -535,13 +535,13 @@ window.QUIZZES.su02 = [
     opts: [
       { k: "A", ru: "$12 667 — две трети налога за 2024 год", en: "$12,667 — two-thirds of the 2024 tax" },
       { k: "B", ru: "$19 000 — 100% налога за 2024 год", en: "$19,000 — 100% of the 2024 tax" },
-      { k: "C", ru: "$20 000 — 66⅔% налога за 2025 год", en: "$20,000 — 66 2/3% of the 2025 tax" },
+      { k: "C", ru: "$20 001 — 66,67% налога за 2025 год", en: "$20,001 — 66.67% of the 2025 tax" },
       { k: "D", ru: "$30 000 — весь налог за 2025 год", en: "$30,000 — the whole 2025 tax" }
     ],
     correct: "B",
     why: {
       A: { ru: "Годы перепутаны: две трети берутся от налога <em>текущего</em> года, а от прошлого берутся все сто процентов.", en: "The years are swapped: two-thirds applies to the <em>current</em> year, while the prior year is taken at one hundred percent." },
-      B: { ru: "Верно. Платёж — меньшая из величин: 66⅔% от $30 000 = $20 000 либо 100% от $19 000 = $19 000. Меньшая — $19 000.", en: "Correct. The payment is the smaller of 66 2/3% of $30,000 = $20,000 and 100% of $19,000 = $19,000. The smaller is $19,000." },
+      B: { ru: "Верно. Платёж — меньшая из величин: 66,67% от $30 000 = $20 001 либо 100% от $19 000 = $19 000. Меньшая — $19 000.", en: "Correct. The payment is the smaller of 66.67% of $30,000 = $20,001 and 100% of $19,000 = $19,000. The smaller is $19,000." },
       C: { ru: "Это одна из двух величин, но берётся не бо́льшая, а меньшая.", en: "That is one of the two figures, but the smaller is taken, not the larger." },
       D: { ru: "Полная сумма налога уплачивается, если фермер выбирает подать декларацию и уплатить всё к сроку в марте, а не платить расчётный налог.", en: "The full tax is paid where the farmer chooses to file and pay everything by the March date instead of paying estimated tax." }
     }
