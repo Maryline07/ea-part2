@@ -238,7 +238,7 @@ window.QUIZZES.su07 = [
       A: { ru: "Часть ставки и есть амортизация; отдельно её брать нельзя.", en: "Part of the rate is depreciation; it may not be taken separately." },
       B: { ru: "Верно. Применение стандартной ставки считается выбором исключения машины из MACRS, а базис всё равно уменьшается на амортизационную часть ставки — со всеми последствиями при продаже.", en: "Correct. Using the standard rate counts as an election to exclude the car from MACRS, and the basis is still reduced by the depreciation part of the rate — with every consequence that follows on a sale." },
       C: { ru: "Уменьшается: иначе при продаже прибыль оказалась бы занижена.", en: "It is reduced: otherwise the gain on a sale would be understated." },
-      D: { ru: "§179 — тоже способ возмещения стоимости, и вместе со ставкой он не применяется.", en: "Section 179 is a cost recovery method too, and it is not combined with the rate." }
+      D: { ru: "§179 — тоже способ списания стоимости, и вместе со ставкой он не применяется.", en: "Section 179 is a cost recovery method too, and it is not combined with the rate." }
     }
   },
   {

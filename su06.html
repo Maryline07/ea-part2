@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=47">
-<script defer src="assets/figures-2025.js?v=47"></script>
-<script defer src="assets/modules.js?v=47"></script>
-<script defer src="assets/quiz-su06.js?v=47"></script>
+<link rel="stylesheet" href="assets/style.css?v=48">
+<script defer src="assets/figures-2025.js?v=48"></script>
+<script defer src="assets/modules.js?v=48"></script>
+<script defer src="assets/quiz-su06.js?v=48"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=47"></script>
+<script defer src="assets/app.js?v=48"></script>
 </head>
 <body data-module="su06">
 
@@ -270,6 +270,97 @@
           <span lang="en">Whatever is left of the price. If the price is below the total fair market value of the assets, nothing reaches here</span></li>
     </ol>
 
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 6-1. Магазин целиком и те же вещи по отдельности</span><span lang="en">Example 6-1. A whole shop, and the same things bought separately</span></div>
+      <div class="example__body">
+        <p lang="ru">Куплен действующий магазин за $560 000. Рыночные стоимости того, что в него
+          входит: деньги на счёте $10 000, счета покупателей $40 000, товарные запасы $90 000,
+          оборудование и здание $300 000, обязательство продавца не конкурировать $20 000. Всего
+          на $460 000.</p>
+        <p lang="en">A going shop is bought for $560,000. The market values of what comes with it:
+          $10,000 in the bank, $40,000 of customer accounts, $90,000 of inventory, $300,000 of
+          equipment and building, and a $20,000 covenant by the seller not to compete — $460,000
+          in all.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Класс I, деньги — по номиналу</span><span lang="en">Class I, cash — at face</span></td>
+              <td data-num="10000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Класс III, счета покупателей</span><span lang="en">Class III, customer accounts</span></td>
+              <td data-num="40000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Класс IV, товарные запасы</span><span lang="en">Class IV, inventory</span></td>
+              <td data-num="90000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Класс V, оборудование и здание</span><span lang="en">Class V, equipment and building</span></td>
+              <td data-num="300000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Класс VI, обязательство не конкурировать</span><span lang="en">Class VI, the covenant not to compete</span></td>
+              <td data-num="20000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Класс VII, гудвилл — всё, что осталось от цены</span><span lang="en">Class VII, goodwill — whatever is left of the price</span></td>
+              <td data-num="100000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Цена разнесена полностью</span><span lang="en">The price is fully allocated</span></td>
+              <td data-num="560000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Гудвилл здесь не оценивали — его никто и не оценивает. Он получил
+          <strong>остаток</strong>: $560 000 минус $460 000. Именно поэтому метод и называется
+          остаточным.</p>
+        <p lang="en">Nobody valued the goodwill here — nobody ever does. It took the
+          <strong>residue</strong>: $560,000 less $460,000. That is exactly why the method is
+          called residual.</p>
+        <p lang="ru">Теперь цена <strong>$420 000</strong>, всё остальное то же. Классы I, III и
+          IV забирают свои $140 000. Классу V остаётся $280 000 при рыночной стоимости $300 000:
+          он берёт что есть, и эти $280 000 делятся между оборудованием и зданием пропорционально
+          их рыночным стоимостям. Классам VI и VII не достаётся ничего — ни обязательству не
+          конкурировать, ни гудвиллу. Очередь строгая, и последние в ней остаются ни с чем.</p>
+        <p lang="en">Now let the price be <strong>$420,000</strong>, everything else unchanged.
+          Classes I, III and IV take their $140,000. Class V is left $280,000 against a market
+          value of $300,000: it takes what there is, and that $280,000 is split between the
+          equipment and the building in proportion to their market values. Classes VI and VII get
+          nothing at all — neither the covenant nor the goodwill. The queue is strict, and those
+          at the end of it come away empty.</p>
+        <p lang="ru">И тот же набор вещей, купленный <strong>не как бизнес</strong>, а просто
+          набором, за те же $420 000 разошёлся бы иначе: пропорционально рыночным стоимостям,
+          то есть каждому по 420 ÷ 460 от его стоимости. Запасы получили бы не $90 000, а
+          $82 174 — и ровно на эту разницу изменилась бы себестоимость проданного уже в первый
+          год. Метод решает не только судьбу гудвилла, но и то, какой актив примет на себя
+          нехватку цены.</p>
+        <p lang="en">And the same set of things bought <strong>not as a business</strong> but
+          simply as a set, for the same $420,000, would be spread differently: in proportion to
+          market values, each taking 420 ÷ 460 of its own. The inventory would get $82,174 instead
+          of $90,000 — and the cost of goods sold in the very first year would move by exactly
+          that difference. The method decides more than the fate of the goodwill: it decides which
+          asset absorbs the shortfall.</p>
+        <p lang="ru">Заготовленные неверные ответы по гудвиллу в первом расчёте:
+          <span data-num="0"></span> — цена разнесена пропорционально рыночным стоимостям, как при
+          обычной покупке набора; тогда каждому достаётся больше его стоимости и на остаточный
+          класс не остаётся ничего; <span data-num="110000"></span> — деньги на счёте сочтены не
+          входящими в покупку; и <span data-num="120000"></span> — обязательство не конкурировать
+          свалено в остаточный класс вместе с гудвиллом. Списываются они одинаково, за
+          <span data-fig="sec197_years"></span>, но заполняются по-разному: класс VI получает свою
+          рыночную стоимость, класс VII — только остаток.</p>
+        <p lang="en">The prepared wrong answers for the goodwill in the first computation:
+          <span data-num="0"></span> — the price spread in proportion to market values, as for an
+          ordinary purchase of a set of things; then each asset takes more than its own value and
+          nothing reaches the residual class; <span data-num="110000"></span> — the cash in the
+          bank treated as not part of the purchase; and <span data-num="120000"></span> — the
+          covenant not to compete tipped into the residual class along with the goodwill. Both are
+          written off the same way, over <span data-fig="sec197_years"></span>, but they are filled
+          differently: Class VI takes its own market value, Class VII only the residue.</p>
+      </div>
+    </div>
+
     <h3><span lang="ru">Подарок: базисов два</span><span lang="en">A gift: two bases</span></h3>
 
     <p lang="ru">Базис одаряемого — это базис дарителя. Правило простое ровно до тех пор, пока
@@ -333,7 +424,7 @@
       no middle zone.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 6-1. Три продажи одного подарка</span><span lang="en">Example 6-1. Three sales of one gift</span></div>
+      <div class="example__head"><span lang="ru">Пример 6-2. Три продажи одного подарка</span><span lang="en">Example 6-2. Three sales of one gift</span></div>
       <div class="example__body">
         <p lang="ru">Дядя подарил племяннице акции. Его скорректированный базис — $40 000,
           рыночная стоимость на день дарения — $25 000. Ничего, что меняло бы базис, не
@@ -374,7 +465,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 6-2. Налог на дарение прибавляется не весь</span><span lang="en">Example 6-2. Only part of the gift tax is added</span></div>
+      <div class="example__head"><span lang="ru">Пример 6-3. Налог на дарение прибавляется не весь</span><span lang="en">Example 6-3. Only part of the gift tax is added</span></div>
       <div class="example__body">
         <p lang="ru">Мать подарила дочери участок рыночной стоимостью $69 000; её
           скорректированный базис — $39 000. Уплаченный налог на дарение — $9 000. Других
@@ -494,7 +585,7 @@
       is used for a loss and not for a gain.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 6-3. Дом, ставший арендным</span><span lang="en">Example 6-3. A home that became a rental</span></div>
+      <div class="example__head"><span lang="ru">Пример 6-4. Дом, ставший арендным</span><span lang="en">Example 6-4. A home that became a rental</span></div>
       <div class="example__body">
         <p lang="ru">Дом построен за $220 000 на участке за $40 000. Позже сделаны постоянные
           улучшения на $15 000 и заявлен вычет по ущербу от стихийного бедствия $5 000. На день
@@ -812,7 +903,7 @@
       right.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 6-4. Обмен с деньгами и долгом</span><span lang="en">Example 6-4. An exchange with cash and a mortgage</span></div>
+      <div class="example__head"><span lang="ru">Пример 6-5. Обмен с деньгами и долгом</span><span lang="en">Example 6-5. An exchange with cash and a mortgage</span></div>
       <div class="example__body">
         <p lang="ru">Отдан инвестиционный участок: скорректированный базис $180 000, рыночная
           стоимость $300 000, на нём ипотека $60 000, которую принимает другая сторона. Получены
@@ -969,7 +1060,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 6-5. Замена дешевле возмещения</span><span lang="en">Example 6-5. A replacement cheaper than the award</span></div>
+      <div class="example__head"><span lang="ru">Пример 6-6. Замена дешевле возмещения</span><span lang="en">Example 6-6. A replacement cheaper than the award</span></div>
       <div class="example__body">
         <p lang="ru">Склад со скорректированным базисом $250 000 конфискован под дорогу.
           Возмещение — $400 000. В срок куплен другой склад за $360 000, разница потрачена на

@@ -34,7 +34,7 @@ window.MODULES = [
     ru: "Базис и сделки с имуществом",
     en: "Basis and property transactions" },
   { id: "su07", no: "07", open: true,
-    ru: "Возмещение стоимости: амортизация, §179, бонусная амортизация",
+    ru: "Списание стоимости: амортизация, §179, бонусная амортизация",
     en: "Cost recovery: depreciation, section 179, bonus depreciation" },
   { id: "su08", no: "08", open: true,
     ru: "Кредиты, убытки и дополнительные налоги",

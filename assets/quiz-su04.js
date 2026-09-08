@@ -887,5 +887,23 @@ window.QUIZZES.su04 = [
       C: { ru: "Сумма возмещается — растянуто во времени.", en: "The amount is recovered — over time." },
       D: { ru: "Здание компании не принадлежит; базиса в нём у неё нет.", en: "The company does not own the building and has no basis in it." }
     }
+  },
+  {
+    sec: "s42",
+    ru: "Работнику за десять лет работы вручили часы стоимостью $900. Письменного плана награждения у работодателя нет. Сколько попадёт в зарплату работника?",
+    en: "An employee received a $900 watch for ten years' service. The employer has no written awards plan. How much goes into the employee's wages?",
+    opts: [
+      { k: "A", ru: "$0", en: "$0" },
+      { k: "B", ru: "$500", en: "$500" },
+      { k: "C", ru: "$900", en: "$900" },
+      { k: "D", ru: "$400", en: "$400" }
+    ],
+    correct: "B",
+    why: {
+      A: { ru: "Награда исключается из дохода не безгранично: часть, которую работодателю не разрешено вычесть, работник получает как зарплату.", en: "The exclusion is not unlimited: the part the employer is not allowed to deduct reaches the employee as wages." },
+      B: { ru: "Верно. Вычет вне письменного плана ограничен $400, а в доход идёт бо́льшая из двух величин: стоимость сверх разрешённого вычета и превышение рыночной стоимости над ним. Здесь обе дают $500.", en: "Correct. Outside a written plan the deduction is capped at $400, and what goes into income is the larger of two amounts: the cost above the allowable deduction and the excess of market value over it. Here both come to $500." },
+      C: { ru: "Целиком в доход идёт то, что наградой не является, — например подарочная карта. Часы определению награды отвечают.", en: "What goes into income in full is something that is not an award at all — a gift card, say. A watch meets the definition." },
+      D: { ru: "$400 — это предел вычета у работодателя, а не сумма дохода у работника. В зарплату идёт остаток сверх этого предела.", en: "$400 is the employer's deduction limit, not the employee's income. What goes into wages is what is left above that limit." }
+    }
   }
 ];

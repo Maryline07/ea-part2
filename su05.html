@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=47">
-<script defer src="assets/figures-2025.js?v=47"></script>
-<script defer src="assets/modules.js?v=47"></script>
-<script defer src="assets/quiz-su05.js?v=47"></script>
+<link rel="stylesheet" href="assets/style.css?v=48">
+<script defer src="assets/figures-2025.js?v=48"></script>
+<script defer src="assets/modules.js?v=48"></script>
+<script defer src="assets/quiz-su05.js?v=48"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=47"></script>
+<script defer src="assets/app.js?v=48"></script>
 </head>
 <body data-module="su05">
 
@@ -1629,6 +1629,109 @@
         income is <strong>below the threshold</strong> that fact means nothing — the deduction is
         computed as for any other business. The answer choice “a doctor gets no deduction” is
         wrong without a statement of income.</p>
+    </div>
+
+    <p lang="ru">Выше порога начинается <strong>диапазон ввода</strong> —
+      <span data-fig="qbi_phasein_single"></span> сверху для всех, кроме совместной подачи, и
+      <span data-fig="qbi_phasein_mfj"></span> при совместной. Внутри него специальные услуги не
+      выключаются разом: доля деятельности, которая ещё считается квалифицированной,
+      <em>убывает</em> линейно. Выше диапазона она равна нулю, и вычет пропадает целиком.</p>
+    <p lang="en">Above the threshold the <strong>phase-in range</strong> begins — up to
+      <span data-fig="qbi_phasein_single"></span> for everyone but joint filers and
+      <span data-fig="qbi_phasein_mfj"></span> for them. Inside it a specified service business is
+      not switched off at a stroke: the share of it that still counts as qualified
+      <em>falls away</em> in a straight line. Above the range the share is nil and the deduction
+      is gone entirely.</p>
+    <p lang="ru">И внутри диапазона работают <strong>два</strong> сокращения подряд, а не одно.
+      Сначала применимая доля урезает и квалифицированный доход, и заработную плату, и стоимость
+      имущества. Потом к урезанным величинам применяется ограничение по зарплате и имуществу — и
+      само оно тоже вводится постепенно, в той же пропорции.</p>
+    <p lang="en">And inside the range <strong>two</strong> reductions work in sequence, not one.
+      First the applicable percentage cuts the qualified income, the W-2 wages and the property
+      alike. Then the wage-and-property limitation is applied to those cut-down figures — and that
+      limitation, too, phases in, in the same proportion.</p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 5-7. Консультант внутри диапазона</span><span lang="en">Example 5-7. A consultant inside the range</span></div>
+      <div class="example__body">
+        <p lang="ru">Одинокий консультант: квалифицированный доход $160 000, заработная плата
+          работникам $40 000, квалифицированного имущества нет. Налогооблагаемый доход до вычета
+          QBI — $222 300, прироста капитала нет. Консультирование входит в перечень специальных
+          услуг.</p>
+        <p lang="en">A single consultant: qualified business income $160,000, W-2 wages paid to
+          employees $40,000, no qualified property. Taxable income before the QBI deduction is
+          $222,300 and there is no capital gain. Consulting is a specified service trade or
+          business.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Превышение над порогом <span data-fig="qbi_threshold_single"></span></span><span lang="en">Excess over the <span data-fig="qbi_threshold_single"></span> threshold</span></td>
+              <td data-num="25000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля выбывшего: 25 000 ÷ 50 000</span><span lang="en">Phase-in percentage: 25,000 ÷ 50,000</span></td>
+              <td data-num="50" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Применимая доля: 100% − 50%</span><span lang="en">Applicable percentage: 100% − 50%</span></td>
+              <td data-num="50" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Квалифицированный доход после урезания: 160 000 × 50%</span><span lang="en">Qualified income after the cut: 160,000 × 50%</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Заработная плата после урезания: 40 000 × 50%</span><span lang="en">W-2 wages after the cut: 40,000 × 50%</span></td>
+              <td data-num="20000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">20% урезанного дохода</span><span lang="en">20% of the cut-down income</span></td>
+              <td data-num="16000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Ограничение по зарплате: 50% × 20 000</span><span lang="en">The wage limitation: 50% × 20,000</span></td>
+              <td data-num="10000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение над ограничением: 16 000 − 10 000</span><span lang="en">Excess over the limitation: 16,000 − 10,000</span></td>
+              <td data-num="6000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Уменьшение вводится постепенно: 6 000 × 50%</span><span lang="en">The reduction phases in too: 6,000 × 50%</span></td>
+              <td data-num="3000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Вычет: 16 000 − 3 000</span><span lang="en">Deduction: 16,000 − 3,000</span></td>
+              <td data-num="13000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Одна и та же половина работает в примере трижды: урезает доход, урезает
+          зарплату и урезает превышение над ограничением. Это не описка — так устроена форма
+          8995-A: приложение A считает применимую долю, а часть III той же формы вводит ограничение
+          по зарплате в той же пропорции.</p>
+        <p lang="en">The same one-half does three jobs here: it cuts the income, cuts the wages,
+          and cuts the excess over the limitation. That is not a slip — it is how Form 8995-A is
+          built: its Schedule A works out the applicable percentage, and Part III of the same form
+          phases in the wage limitation in the very same proportion.</p>
+        <p lang="ru">Общий потолок в 20% налогооблагаемого дохода здесь не связывает: 20% от
+          $222 300 — это $44 460, много больше $13 000. Но проверять его всё равно надо
+          последним.</p>
+        <p lang="en">The overall 20%-of-taxable-income cap does not bind here: 20% of $222,300 is
+          $44,460, far above $13,000. It still has to be checked last.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="32000"></span> — 20% взяты от
+          полного дохода $160 000, урезание не применено вовсе; <span data-num="16000"></span> —
+          урезание применено, а ограничение по зарплате забыто; <span data-num="10000"></span> —
+          за вычет принято само ограничение, тогда как оно не потолок, а лишь база для расчёта
+          уменьшения; и <span data-num="0"></span> — доход сочтён выше диапазона, будто достаточно
+          одного превышения над порогом.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="32000"></span> — 20% taken on the
+          full $160,000, no cut applied at all; <span data-num="16000"></span> — the cut applied
+          but the wage limitation forgotten; <span data-num="10000"></span> — the limitation itself
+          taken as the deduction, when it is not a ceiling but only the base for working out the
+          reduction; and <span data-num="0"></span> — the income treated as above the range, as
+          though crossing the threshold were enough.</p>
+      </div>
     </div>
 
     <!-- ============================================================ -->

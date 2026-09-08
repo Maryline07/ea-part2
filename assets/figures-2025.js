@@ -1894,7 +1894,7 @@ window.FIGURES = {
              "hvut_weight", "hvut_miles", "hvut_miles_farm",
              "ale_threshold", "ale_hours_week", "ale_hours_month",
              "esrp_a", "esrp_b", "esrp_exempt"] },
-    { id: "cost", ru: "Возмещение стоимости", en: "Cost recovery",
+    { id: "cost", ru: "Списание стоимости", en: "Cost recovery",
       keys: ["sec179_limit", "sec179_phaseout", "sec179_suv",
              "bonus_pct", "bonus_pct_prior",
              "auto_cap_y1", "auto_cap_y1_nobonus", "auto_cap_y2", "auto_cap_y3",

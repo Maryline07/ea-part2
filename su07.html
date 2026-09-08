@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Модуль 7. Возмещение стоимости — EA Part 2</title>
+<title>Модуль 7. Списание стоимости — EA Part 2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=47">
-<script defer src="assets/figures-2025.js?v=47"></script>
-<script defer src="assets/modules.js?v=47"></script>
-<script defer src="assets/quiz-su07.js?v=47"></script>
+<link rel="stylesheet" href="assets/style.css?v=48">
+<script defer src="assets/figures-2025.js?v=48"></script>
+<script defer src="assets/modules.js?v=48"></script>
+<script defer src="assets/quiz-su07.js?v=48"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=47"></script>
+<script defer src="assets/app.js?v=48"></script>
 </head>
 <body data-module="su07">
 
@@ -47,7 +47,7 @@
     <div class="sheet__title">
       <span class="sheet__no">07</span>
       <h1>
-        <span lang="ru">Возмещение стоимости</span>
+        <span lang="ru">Списание стоимости</span>
         <span lang="en">Cost recovery</span>
       </h1>
     </div>
@@ -98,8 +98,11 @@
       <p lang="en">A machine is bought in a day and works for ten years. The money left at once —
         when does the deduction arrive?</p>
       <p lang="ru">Ответ — по частям, по расписанию, которое пишет закон. Это и есть
-        <strong>возмещение стоимости</strong>: амортизация для вещей, списание для
-        нематериальных активов, истощение для месторождений. Расписание не про износ. Станок
+        <strong>списание стоимости</strong> <span class="orig">(cost recovery)</span>. Ветвей три:
+        амортизация вещей <span class="orig">(depreciation)</span>, амортизация нематериальных
+        активов <span class="orig">(amortization)</span> и истощение месторождений
+        <span class="orig">(depletion)</span>. По-русски первые две — одно слово, по-английски
+        разные, и на экзамене они не взаимозаменяемы. Расписание не про износ. Станок
         может дорожать, здание — стоять как новое; вычет всё равно идёт по таблице, потому что
         таблица заменяет спор о том, сколько имущество на самом деле потеряло за год.</p>
       <p lang="en">The answer is in instalments, on a schedule the law writes. That is what
@@ -1234,6 +1237,77 @@
         has not actually gone anywhere. <span class="cite">Pub. 535, ch. 8</span></p>
     </div>
 
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-7. Клиентская база обесценилась</span><span lang="en">Example 7-7. A customer list turns worthless</span></div>
+      <div class="example__body">
+        <p lang="ru">В составе одной покупки бизнеса приобретены три нематериальных актива §197:
+          клиентская база за $60 000, обязательство продавца не конкурировать за $30 000 и гудвилл
+          за $90 000. Через три года клиентская база стала ничего не стоить и списана; два других
+          актива остались у покупателя. Скорректированные базисы на этот день — по двенадцать
+          пятнадцатых от стоимости каждого.</p>
+        <p lang="en">Three section 197 intangibles were acquired in a single purchase of a
+          business: a customer list for $60,000, the seller's covenant not to compete for $30,000
+          and goodwill for $90,000. Three years on the customer list is worthless and written off;
+          the other two stay with the buyer. Their adjusted bases at that date are twelve-fifteenths
+          of each original cost.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Клиентская база: скорректированный базис, 60 000 × 12 ÷ 15</span><span lang="en">Customer list: adjusted basis, 60,000 × 12 ÷ 15</span></td>
+              <td data-num="48000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Вычитается в этом году</span><span lang="en">Deductible this year</span></td>
+              <td data-num="0"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">К базису обязательства не конкурировать: 48 000 × 24 000 ÷ 96 000</span><span lang="en">To the basis of the covenant: 48,000 × 24,000 ÷ 96,000</span></td>
+              <td data-num="12000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">К базису гудвилла: 48 000 × 72 000 ÷ 96 000</span><span lang="en">To the basis of the goodwill: 48,000 × 72,000 ÷ 96,000</span></td>
+              <td data-num="36000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Всего перенесено — ни доллара не потеряно</span><span lang="en">Carried across in all — not a dollar lost</span></td>
+              <td data-num="48000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Дробь берётся не от первоначальных цен, а от <strong>скорректированных
+          базисов оставшихся активов на день выбытия</strong>: $24 000 и $72 000, вместе $96 000.
+          Новые базисы — $36 000 у обязательства и $108 000 у гудвилла; они списываются дальше, и
+          прибавка возвращается вычетом вместе с ними.</p>
+        <p lang="en">The fraction is taken not on the original prices but on the <strong>adjusted
+          bases of the remaining assets at the date of the disposition</strong>: $24,000 and
+          $72,000, $96,000 together. The new bases are $36,000 for the covenant and $108,000 for
+          the goodwill; they go on being amortized, and the addition comes back as a deduction
+          along with them.</p>
+        <p lang="ru">Правило держится на том, что активы куплены <strong>одной сделкой</strong>.
+          Продай покупатель к этому дню и обязательство, и гудвилл — не осталось бы, к чему
+          прибавлять, и $48 000 стали бы вычетом сразу. А нематериальный актив §197 из
+          <em>другой</em> покупки в расчёт не входит вовсе, даже если он у налогоплательщика
+          есть.</p>
+        <p lang="en">The rule rests on the assets having been bought in <strong>one
+          transaction</strong>. Had the buyer already sold both the covenant and the goodwill by
+          then, there would be nothing to add to and the $48,000 would be deductible at once. And a
+          section 197 intangible from a <em>different</em> purchase does not enter the computation
+          at all, however much of it the taxpayer holds.</p>
+        <p lang="ru">Заготовленные неверные ответы по вычету этого года:
+          <span data-num="48000"></span> — убыток признан, как по любому другому активу;
+          <span data-num="60000"></span> — списана первоначальная цена вместо скорректированного
+          базиса, то есть трёхлетняя амортизация вычтена дважды; и
+          <span data-num="15000"></span> — убыток разделён поровну между тремя активами, а не
+          пропорционально базисам двух оставшихся.</p>
+        <p lang="en">The prepared wrong answers for this year's deduction:
+          <span data-num="48000"></span> — the loss allowed like that on any other asset;
+          <span data-num="60000"></span> — the original price written off instead of the adjusted
+          basis, deducting three years of amortization twice; and
+          <span data-num="15000"></span> — the loss split equally between three assets rather than
+          in proportion to the bases of the two that remain.</p>
+      </div>
+    </div>
+
     <p lang="ru">Есть и заслон против самого простого обхода: <strong>правила против
       перетасовки</strong>. Гудвилл, существовавший до августа 1993 года, нельзя сделать
       списываемым, продав его самому себе — сделка, не изменившая по существу ни
@@ -1383,7 +1457,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 7-7. Угольная шахта: что больше</span><span lang="en">Example 7-7. A coal mine: which is larger</span></div>
+      <div class="example__head"><span lang="ru">Пример 7-8. Угольная шахта: что больше</span><span lang="en">Example 7-8. A coal mine: which is larger</span></div>
       <div class="example__body">
         <p lang="ru">Базис шахты для истощения на начало года — $300 000, извлекаемых запасов
           оценено 400 000 тонн. За год добыто 120 000 тонн, продано 100 000. Валовой доход от
@@ -1579,7 +1653,7 @@
       recognised. Whatever is left above goes to section 1231.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 7-8. Три продажи одного станка</span><span lang="en">Example 7-8. Three sales of one machine</span></div>
+      <div class="example__head"><span lang="ru">Пример 7-9. Три продажи одного станка</span><span lang="en">Example 7-9. Three sales of one machine</span></div>
       <div class="example__body">
         <p lang="ru">Станок куплен за $100 000 и прослужил несколько лет. Амортизации взято
           $60 000, в том числе $20 000 по §179. Скорректированный базис — $40 000.</p>
@@ -1687,7 +1761,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 7-9. Здание корпорации и здание человека</span><span lang="en">Example 7-9. A corporation's building and an individual's</span></div>
+      <div class="example__head"><span lang="ru">Пример 7-10. Здание корпорации и здание человека</span><span lang="en">Example 7-10. A corporation's building and an individual's</span></div>
       <div class="example__body">
         <p lang="ru">Здание куплено за $500 000, амортизация прямолинейная — $180 000, базис
           $320 000. Продано за $600 000, владели больше года. Прибыль — $280 000.</p>
@@ -1753,7 +1827,7 @@
     </ol>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 7-10. Убытки прошлых лет догоняют</span><span lang="en">Example 7-10. Past losses catch up</span></div>
+      <div class="example__head"><span lang="ru">Пример 7-11. Убытки прошлых лет догоняют</span><span lang="en">Example 7-11. Past losses catch up</span></div>
       <div class="example__body">
         <p lang="ru">Чистые результаты по §1231 за пять лет: 2021 — убыток $20 000, 2022 —
           прибыль $5 000, 2023 — ноль, 2024 — убыток $12 000, 2025 — прибыль $40 000.</p>
@@ -1812,6 +1886,88 @@
         <em>plus</em> the fair market value of any property received that is not itself section
         1245 property. Put plainly: take boot in cash or receive land instead of a machine and the
         depreciation comes back as ordinary income to that extent, however much was deferred.</p>
+    </div>
+
+    <p lang="ru">Третья отсрочка — <strong>продажа в рассрочку</strong>, и она уступает возврату
+      ещё определённее. Возврат по §1245 и §1250 признаётся <strong>целиком в год продажи</strong>,
+      сколько бы денег в этом году ни поступило и поступило ли вообще. Только то, что осталось от
+      прибыли <em>после</em> возврата, растягивается по платежам. И признанный возврат прибавляется
+      к базису для расчёта доли валовой прибыли — иначе он был бы обложен дважды.
+      <span class="cite">§453(i); Pub. 544, Installment Sales</span></p>
+    <p lang="en">The third deferral is the <strong>installment sale</strong>, and it yields to
+      recapture more plainly still. Section 1245 and 1250 recapture is recognised <strong>in full in
+      the year of sale</strong>, whatever money came in that year, or none. Only what is left of
+      the gain <em>after</em> the recapture is spread over the payments. And the recognised
+      recapture is added to basis in working out the gross profit percentage — otherwise it would
+      be taxed twice. <span class="cite">Section 453(i); Pub. 544, Installment Sales</span></p>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 7-12. Рассрочка, в которой налог пришёл раньше денег</span><span lang="en">Example 7-12. An installment sale where the tax arrives before the money</span></div>
+      <div class="example__body">
+        <p lang="ru">Станок куплен за $120 000, амортизации взято $50 000, скорректированный базис
+          $70 000. Продан за $150 000 в рассрочку: $30 000 в год продажи и по $30 000 в каждый из
+          следующих четырёх годов. Проценты по рассрочке считаются отдельно и здесь не
+          рассматриваются.</p>
+        <p lang="en">A machine cost $120,000, $50,000 of depreciation was taken, and the adjusted
+          basis is $70,000. It is sold for $150,000 on the installment plan: $30,000 in the year of
+          sale and $30,000 in each of the next four years. Interest on the installments is figured
+          separately and is left aside here.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Реализованная прибыль: 150 000 − 70 000</span><span lang="en">Realized gain: 150,000 − 70,000</span></td>
+              <td data-num="80000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Возврат по §1245: меньшее из амортизации 50 000 и прибыли</span><span lang="en">Section 1245 recapture: the lesser of 50,000 of depreciation and the gain</span></td>
+              <td data-num="50000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Базис для рассрочки: 70 000 + признанный возврат 50 000</span><span lang="en">Installment sale basis: 70,000 + the 50,000 recognised</span></td>
+              <td data-num="120000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Валовая прибыль: 150 000 − 120 000</span><span lang="en">Gross profit: 150,000 − 120,000</span></td>
+              <td data-num="30000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Доля валовой прибыли: 30 000 ÷ 150 000</span><span lang="en">Gross profit percentage: 30,000 ÷ 150,000</span></td>
+              <td data-num="20" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Прибыль §1231 в год продажи: 20% × 30 000</span><span lang="en">Section 1231 gain in the year of sale: 20% × 30,000</span></td>
+              <td data-num="6000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Признано в год продажи, а получено $30 000</span><span lang="en">Recognised in the year of sale, against $30,000 received</span></td>
+              <td data-num="56000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Вот и вся ловушка: денег пришло $30 000, а обложено $56 000 — и $50 000 из них
+          по обычным ставкам. Рассрочка отодвигает налог только с той части прибыли, которая
+          пережила возврат; здесь это $30 000 из $80 000. В каждый из следующих четырёх годов
+          признаётся по $6 000, и за пять лет набирается ровно $30 000.</p>
+        <p lang="en">That is the whole trap: $30,000 came in and $56,000 was taxed — $50,000 of it
+          at ordinary rates. The installment method postpones tax only on the part of the gain that
+          survived the recapture; here $30,000 out of $80,000. Each of the next four years
+          recognises $6,000, and over five years that comes to exactly $30,000.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="16000"></span> — возврат
+          признан верно, но доля валовой прибыли посчитана от базиса <em>без</em> прибавки
+          возврата, отчего она вышла 53,33% вместо 20% и часть амортизации обложена дважды;
+          <span data-num="6000"></span> — возврат отложен вместе с остальной прибылью, будто
+          рассрочка распространяется на всё; <span data-num="80000"></span> — вся прибыль признана
+          сразу, рассрочка не применена вовсе; и <span data-num="50000"></span> — взят один
+          возврат, а доля валовой прибыли за год продажи забыта.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="16000"></span> — the recapture
+          right, but the gross profit percentage figured on basis <em>without</em> the recapture
+          added, making it 53.33% instead of 20% and taxing part of the depreciation twice;
+          <span data-num="6000"></span> — the recapture deferred along with the rest of the gain,
+          as though the installment method covered everything; <span data-num="80000"></span> — the
+          whole gain recognised at once, no installment method at all; and
+          <span data-num="50000"></span> — the recapture alone, the year-of-sale share of gross
+          profit forgotten.</p>
+      </div>
     </div>
 
     <!-- ============================================================ -->
