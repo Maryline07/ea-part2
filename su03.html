@@ -1578,20 +1578,32 @@
         <table class="ledger">
           <tbody>
             <tr>
-              <td><span lang="ru">Доля убытка</span><span lang="en">Share of loss</span></td>
+              <td><span lang="ru">Доля убытка за год</span><span lang="en">Share of loss for the year</span></td>
               <td data-num="52000"></td>
             </tr>
             <tr>
-              <td><span lang="ru">Фильтр 1 — базис: пропускает</span><span lang="en">Filter 1 — basis: allows</span></td>
+              <td><span lang="ru">Фильтр 1 — базис. Пропускает не больше базиса</span><span lang="en">Filter 1 — basis. Lets through no more than the basis</span></td>
               <td data-num="40000"></td>
             </tr>
             <tr>
-              <td><span lang="ru">Фильтр 2 — риск: минус безоборотный заём</span><span lang="en">Filter 2 — at-risk: less the nonrecourse loan</span></td>
+              <td><span lang="ru">…откладывается за нехваткой базиса: 52 000 − 40 000</span><span lang="en">…held back for want of basis: 52,000 − 40,000</span></td>
+              <td data-num="12000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Фильтр 2 — риск. Из прошедших $40 000 под риском 40 000 − 9 000</span><span lang="en">Filter 2 — at-risk. Of the $40,000 that got through, 40,000 − 9,000 is at risk</span></td>
               <td data-num="31000"></td>
             </tr>
             <tr>
-              <td><span lang="ru">Фильтр 3 — пассивная деятельность: пассивного дохода нет</span><span lang="en">Filter 3 — passive: no passive income</span></td>
+              <td><span lang="ru">…откладывается за нехваткой суммы под риском</span><span lang="en">…held back for want of an amount at risk</span></td>
+              <td data-num="9000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Фильтр 3 — пассивная деятельность. Пропускает не больше пассивного дохода, а его нет</span><span lang="en">Filter 3 — passive activity. Lets through no more than passive income, and there is none</span></td>
               <td data-num="0"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">…откладывается как пассивный убыток</span><span lang="en">…held back as a passive loss</span></td>
+              <td data-num="31000"></td>
             </tr>
             <tr class="total">
               <td><span lang="ru">Вычитается в 2025 году</span><span lang="en">Deductible in 2025</span></td>
@@ -1599,13 +1611,46 @@
             </tr>
           </tbody>
         </table>
+        <p lang="ru">Читать таблицу нужно так: числа в колонке — <strong>не вычитаемые суммы, а
+          потолки</strong>. Каждый фильтр говорит, сколько он пропускает дальше, и применяется не
+          к первоначальным $52 000, а к тому, что дошло до него живым. Ни один доллар здесь не
+          вычитается дважды.</p>
+        <p lang="en">The table reads like this: the figures in the column are <strong>not amounts
+          subtracted but ceilings</strong>. Each filter says how much it lets through, and it
+          applies not to the original $52,000 but to whatever reached it alive. No dollar here is
+          subtracted twice.</p>
+        <p lang="ru">Легко решить, что базис и риск отнимают одно и то же. Они смотрят на одни и
+          те же $40 000, но спрашивают <strong>разное</strong>. Базис спрашивает: <em>сколько вы
+          вложили?</em> — $40 000, и откуда взяты деньги, ему безразлично. Риск спрашивает:
+          <em>сколько из вложенного вы способны потерять?</em> — $31 000, потому что $9 000 взяты
+          безоборотным займом: если деятельность прогорит, кредитор заберёт её имущество и до
+          вашего кармана не доберётся. Потерять то, чем вы не рисковали, нельзя, поэтому эти
+          $9 000 второй фильтр не пропускает. Вычтены они <strong>один</strong> раз — из суммы под
+          риском, а не из базиса. В примере 3-4 то же правило показано с другой стороны: там
+          безоборотный заём не вычитался, а просто давал ноль в сумму под риском. Считается одно и
+          то же, разница только в том, складывать вложенное или отнимать невложенное.
+          <span class="cite">Pub. 925, Amounts Not at Risk</span></p>
+        <p lang="en">It is easy to decide that basis and at-risk take away the same money. They
+          look at the same $40,000, but they ask <strong>different</strong> questions. Basis asks:
+          <em>how much did you put in?</em> — $40,000, and where the money came from is nothing to
+          it. At-risk asks: <em>how much of what you put in can you actually lose?</em> — $31,000,
+          because $9,000 came from a nonrecourse loan: if the activity fails, the lender takes its
+          property and never reaches your pocket. You cannot lose what you never risked, so the
+          second filter does not let that $9,000 through. It is subtracted <strong>once</strong> —
+          from the amount at risk, not from basis. Example 3-4 shows the same rule from the other
+          side: there the nonrecourse loan was not subtracted at all, it simply contributed nil to
+          the amount at risk. The computation is the same; the only difference is whether you add
+          up what was put in or take away what was not.
+          <span class="cite">Pub. 925, Amounts Not at Risk</span></p>
         <p lang="ru">До четвёртого фильтра дело не дошло: вычитать нечего. Убыток разошёлся по
           трём разным очередям — $12 000 ждут увеличения базиса, $9 000 ждут появления суммы
-          под риском, $31 000 ждут пассивного дохода или выбытия. Все три остатка живут по своим
+          под риском, $31 000 ждут пассивного дохода или выбытия. Вместе это ровно $52 000:
+          не пропало ничего, всё лишь распределилось по очередям. Все три остатка живут по своим
           правилам и высвобождаются по-разному.</p>
         <p lang="en">The fourth filter never came into play: there is nothing to deduct. The loss
           has split into three separate queues — $12,000 waiting for more basis, $9,000 waiting
-          for an at-risk amount, $31,000 waiting for passive income or a disposition. Each of the
+          for an at-risk amount, $31,000 waiting for passive income or a disposition. Together
+          that is exactly $52,000: nothing was lost, it was only sorted into queues. Each of the
           three balances lives by its own rules and is released differently.</p>
         <p lang="ru">Заготовленные неверные ответы — это остановка на любом из фильтров:
           <span data-num="52000"></span>, если не применить ни одного; <span data-num="40000"></span>, если остановиться на базисе; <span data-num="31000"></span>, если
