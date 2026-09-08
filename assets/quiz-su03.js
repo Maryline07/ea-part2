@@ -745,8 +745,8 @@ window.QUIZZES.su03 = [
   },
   {
     sec: "s33",
-    ru: "Условия те же: четыре месяца собственного проживания, затем сдача дольше двенадцати месяцев подряд. Как эти четыре месяца учитываются при <strong>распределении расходов</strong> между личным и арендным использованием?",
-    en: "Same facts: four months of living there, then a letting of more than twelve consecutive months. How do those four months count when <strong>dividing expenses</strong> between personal and rental use?",
+    ru: "Владелец жил в квартире как в основном жилье четыре месяца, с января по апрель, затем сдал её и непрерывно сдавал дольше двенадцати месяцев подряд. Как эти четыре месяца учитываются при <strong>распределении расходов</strong> между личным и арендным использованием?",
+    en: "An owner lived in a flat as a main home for four months, from January to April, then let it and kept it let for more than twelve consecutive months. How do those four months count when <strong>dividing expenses</strong> between personal and rental use?",
     opts: [
       { k: "A", ru: "Не учитываются: то же исключение действует и здесь", en: "They do not count: the same carve-out applies here too" },
       { k: "B", ru: "Учитываются как обычно: исключение на распределение расходов не распространяется", en: "They count as usual: the carve-out does not reach the division of expenses" },
@@ -755,7 +755,7 @@ window.QUIZZES.su03 = [
     ],
     correct: "B",
     why: {
-      A: { ru: "Это и есть проверяемая ошибка — перенос льготы из одного вопроса в другой.", en: "This is the error being tested: carrying the relief from one question into another." },
+      A: { ru: "Это и есть проверяемая ошибка: исключение перенесено из проверки «использовалось ли жильё как дом» в распределение расходов, где оно не действует.", en: "This is the error being tested: the carve-out carried from the “used as a home” test into the division of expenses, where it does not apply." },
       B: { ru: "Верно. Исключение работает <strong>только</strong> при проверке «использовалось ли жильё как дом». При делении расходов между личным и арендным использованием те же дни считаются обычным порядком.", en: "Correct. The carve-out works <strong>only</strong> for the test of whether the dwelling was used as a home. When expenses are divided between personal and rental use, those same days count in the ordinary way." },
       C: { ru: "Такого разделения по видам расходов норма здесь не делает.", en: "The rule draws no such distinction between kinds of expense here." },
       D: { ru: "Расходы личного периода не вычитаются вовсе — вычитается доля, приходящаяся на аренду.", en: "Expenses of the personal period are not deductible at all; what is deducted is the share attributable to the renting." }

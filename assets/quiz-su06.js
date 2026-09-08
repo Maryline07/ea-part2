@@ -151,8 +151,8 @@ window.QUIZZES.su06 = [
   },
   {
     sec: "s61",
-    ru: "Те же акции: базис дарителя $40 000, рыночная стоимость на день дарения $25 000. Продажа за $18 000. Каков результат?",
-    en: "The same shares: the donor's basis $40,000, market value at the date of the gift $25,000. Sold for $18,000. What is the result?",
+    ru: "Подарены акции: базис дарителя $40 000, рыночная стоимость на день дарения $25 000. Одаряемый продал их за $18 000. Каков результат?",
+    en: "Shares were given away: the donor's basis $40,000, market value at the date of the gift $25,000. The donee sold them for $18,000. What is the result?",
     opts: [
       { k: "A", ru: "Убыток $22 000", en: "A $22,000 loss" },
       { k: "B", ru: "Убыток $7 000", en: "A $7,000 loss" },
@@ -169,8 +169,8 @@ window.QUIZZES.su06 = [
   },
   {
     sec: "s61",
-    ru: "Те же акции: базис дарителя $40 000, рыночная стоимость на день дарения $25 000. Продажа за $32 000. Каков результат?",
-    en: "The same shares: the donor's basis $40,000, market value at the date of the gift $25,000. Sold for $32,000. What is the result?",
+    ru: "Подарены акции: базис дарителя $40 000, рыночная стоимость на день дарения $25 000. Одаряемый продал их за $32 000. Каков результат?",
+    en: "Shares were given away: the donor's basis $40,000, market value at the date of the gift $25,000. The donee sold them for $32,000. What is the result?",
     opts: [
       { k: "A", ru: "Прибыль $7 000", en: "A $7,000 gain" },
       { k: "B", ru: "Убыток $8 000", en: "An $8,000 loss" },
@@ -727,8 +727,8 @@ window.QUIZZES.su06 = [
   },
   {
     sec: "s64",
-    ru: "Каков базис нового склада в предыдущем вопросе?",
-    en: "What is the basis of the new warehouse in the previous question?",
+    ru: "Склад с базисом $200 000 сгорел; страховка $320 000. Новый склад куплен за $290 000 в срок, выбор об отсрочке сделан, признанная прибыль — $30 000. Каков базис нового склада?",
+    en: "A warehouse with a $200,000 basis burned down; insurance was $320,000. A new warehouse was bought in time for $290,000, the deferral was elected and $30,000 of gain recognised. What is the basis of the new warehouse?",
     opts: [
       { k: "A", ru: "$290 000", en: "$290,000" },
       { k: "B", ru: "$200 000", en: "$200,000" },
