@@ -17,7 +17,7 @@ window.QUIZSECS = window.QUIZSECS || {};
 
 window.QUIZSECS.su07 = {
   s71: { no: "7.1", ru: "Что амортизируется и за сколько лет", en: "What is depreciated, and over how long" },
-  s72: { no: "7.2", ru: "Списанное имущество и автомобили", en: "Listed property and automobiles" },
+  s72: { no: "7.2", ru: "Имущество из особого перечня и автомобили", en: "Listed property and automobiles" },
   s73: { no: "7.3", ru: "§179 и бонусная амортизация", en: "Section 179 and bonus depreciation" },
   s74: { no: "7.4", ru: "Нематериальные активы", en: "Intangible assets" },
   s75: { no: "7.5", ru: "Истощение природных ресурсов", en: "Depletion of natural resources" },
@@ -86,7 +86,7 @@ window.QUIZZES.su07 = [
     opts: [
       { k: "A", ru: "Материальное имущество используется преимущественно за пределами США", en: "Tangible property used predominantly outside the United States" },
       { k: "B", ru: "Имущество профинансировано освобождёнными от налога облигациями", en: "Property financed by tax-exempt bonds" },
-      { k: "C", ru: "Списанное имущество с деловым использованием не больше 50%", en: "Listed property with business use of 50% or less" },
+      { k: "C", ru: "Имущество из особого перечня с деловым использованием не больше 50%", en: "Listed property with business use of 50% or less" },
       { k: "D", ru: "Имущество куплено бывшим в употреблении", en: "The property was bought used" }
     ],
     correct: "D",
@@ -153,7 +153,7 @@ window.QUIZZES.su07 = [
   },
   {
     sec: "s72",
-    ru: "Что из перечисленного НЕ является списанным имуществом для налоговых периодов после 2017 года?",
+    ru: "Что из перечисленного НЕ входит в особый перечень имущества для налоговых периодов после 2017 года?",
     en: "Which of the following is NOT listed property for tax years after 2017?",
     opts: [
       { k: "A", ru: "Легковой автомобиль", en: "A passenger automobile" },
@@ -163,7 +163,7 @@ window.QUIZZES.su07 = [
     ],
     correct: "B",
     why: {
-      A: { ru: "Легковые машины — первая и главная категория списанного имущества.", en: "Passenger automobiles are the first and chief category of listed property." },
+      A: { ru: "Легковые машины — первый и главный разряд особого перечня.", en: "Passenger automobiles are the first and chief category of listed property." },
       B: { ru: "Верно. С налоговых периодов, начинающихся после 2017 года, компьютеры и периферия из перечня исключены и амортизируются как обычное пятилетнее имущество.", en: "Correct. For tax years beginning after 2017 computers and peripheral equipment are off the list and are depreciated as ordinary five-year property." },
       C: { ru: "Видеокамера — имущество для развлечения и записи, оно в перечне.", en: "A video camera is entertainment and recording property, and is on the list." },
       D: { ru: "Деловые самолёты названы в перечне прямо.", en: "Business aircraft are named on the list expressly." }
@@ -345,7 +345,7 @@ window.QUIZZES.su07 = [
     why: {
       A: { ru: "Личная доля вычету не подлежит ни по какому правилу.", en: "The personal share is not deductible under any rule." },
       B: { ru: "Верно. По §179 списывается только деловая доля стоимости: $40 000 × 85%.", en: "Correct. Only the business share of the cost is expensed under section 179: $40,000 × 85%." },
-      C: { ru: "Половина здесь ни при чём: порог в половину — правило списанного имущества, а станок к нему не относится.", en: "Half has nothing to do with it: the more-than-half threshold is a listed-property rule, and a machine is not listed property." },
+      C: { ru: "Половина здесь ни при чём: порог в половину — правило имущества из особого перечня, а станок к нему не относится.", en: "Half has nothing to do with it: the more-than-half threshold is a listed-property rule, and a machine is not listed property." },
       D: { ru: "§179 доступен, просто в доле делового использования.", en: "Section 179 is available, merely limited to the business share." }
     }
   },

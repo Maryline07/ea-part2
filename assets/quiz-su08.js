@@ -865,7 +865,7 @@ window.QUIZZES.su08 = [
     why: {
       A: { ru: "Режимы для делового и личного слишком разные, чтобы считать разом.", en: "The business and personal regimes differ too much to be figured together." },
       B: { ru: "Верно. Базис и падение стоимости делятся по долям, и к личной части применяются пороги, а к деловой — нет.", en: "Correct. Basis and decline in value are split by the shares, and the floors apply to the personal part but not to the business one." },
-      C: { ru: "Правила «больше половины» здесь нет: это правило списанного имущества из модуля 7.", en: "There is no “more than half” rule here: that belongs to listed property in module 7." },
+      C: { ru: "Правила «больше половины» здесь нет: это правило имущества из особого перечня, модуль 7.", en: "There is no “more than half” rule here: that belongs to listed property in module 7." },
       D: { ru: "Деловая часть остаётся деловой.", en: "The business part stays business." }
     }
   },

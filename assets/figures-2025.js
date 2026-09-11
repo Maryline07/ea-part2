@@ -1315,14 +1315,14 @@ window.FIGURES = {
       n: 6000, unit: "int",
       ru: "Полная масса, фунтов, ниже которой действуют пределы §280F",
       en: "Gross vehicle weight, pounds, below which the section 280F caps apply",
-      note_ru: "Для легковых машин считается снаряжённая масса, для грузовиков и фургонов — полная. Выше порога пределы не действуют, но списанным имуществом машина остаётся.",
+      note_ru: "Для легковых машин считается снаряжённая масса, для грузовиков и фургонов — полная. Выше порога пределы не действуют, но в особом перечне машина остаётся.",
       note_en: "Unloaded weight for cars, gross weight for trucks and vans. Above the threshold the caps do not apply, though the vehicle stays listed property.",
       src: SRC_P946
     },
 
     qbu_threshold: {
       n: 50, unit: "pct",
-      ru: "Доля квалифицированного делового использования списанного имущества",
+      ru: "Доля квалифицированного делового использования имущества из особого перечня",
       en: "Qualified business use share for listed property",
       note_ru: "Строго выше половины. Не выше — §179 недоступен, амортизация только по альтернативной системе, а ранее взятый излишек возвращается в доход.",
       note_en: "Strictly more than half. Not more — section 179 is unavailable, depreciation is under the alternative system only, and any earlier excess comes back into income.",
