@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=50">
-<script defer src="assets/figures-2025.js?v=50"></script>
-<script defer src="assets/modules.js?v=50"></script>
-<script defer src="assets/quiz-su07.js?v=50"></script>
+<link rel="stylesheet" href="assets/style.css?v=51">
+<script defer src="assets/figures-2025.js?v=51"></script>
+<script defer src="assets/modules.js?v=51"></script>
+<script defer src="assets/quiz-su07.js?v=51"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=50"></script>
+<script defer src="assets/app.js?v=51"></script>
 </head>
 <body data-module="su07">
 
@@ -696,12 +696,39 @@
       <h3><span lang="ru">Стандартная ставка за милю — это отказ от MACRS</span><span lang="en">The standard mileage rate is an election out of MACRS</span></h3>
       <p lang="ru">Кто считает расходы на машину по стандартной ставке за милю, тот считается
         <strong>выбравшим исключение машины из MACRS</strong>. Отдельной амортизации к ставке не
-        прибавляется: часть ставки и есть амортизация, и на эту часть базис машины всё равно
-        уменьшается — со всеми последствиями при продаже.</p>
+        прибавляется: часть ставки <em>и есть</em> амортизация.</p>
       <p lang="en">Anyone figuring car expenses at the standard mileage rate is treated as having
         <strong>elected to exclude the car from MACRS</strong>. No separate depreciation is added
-        on top: part of the rate <em>is</em> depreciation, and the car's basis is reduced by that
-        part all the same — with every consequence that follows on a sale.</p>
+        on top: part of the rate <em>is</em> depreciation.</p>
+      <p lang="ru">Отсюда следствие, которое застаёт врасплох: <strong>базис машины всё равно
+        уменьшается</strong>. Не на всю ставку <span data-fig="mileage_2025"></span>, а на её
+        амортизационную долю — <span data-fig="mileage_depreciation"></span> за милю в 2025 году.
+        У каждого года своя: 2024 — $0,30, 2023 — $0,28, 2021–2022 — $0,26. Ниже нуля базис при
+        этом не опускается, а ставку за милю можно применять и дальше в полном размере.</p>
+      <p lang="en">Hence the consequence that catches people out: <strong>the basis of the car
+        falls all the same</strong>. Not by the whole <span data-fig="mileage_2025"></span> rate
+        but by its depreciation share — <span data-fig="mileage_depreciation"></span> a mile for
+        2025. Each year has its own: 2024 — $0.30, 2023 — $0.28, 2021–2022 — $0.26. Basis is not
+        driven below zero, and the mileage rate may still be claimed in full afterwards.</p>
+      <p lang="ru">Машина за $30 000, пройдено 15 000 деловых миль за год: вычет 15 000 ×
+        <span data-fig="mileage_2025"></span> = $10 500, а базис упал на 15 000 ×
+        <span data-fig="mileage_depreciation"></span> = $4 950 и стал $25 050. Через три таких
+        года базис — около $15 150, и если машину продать за $20 000, то $4 850 прибыли будут
+        <strong>обычным доходом по §1245</strong>, а не капитальным приростом: амортизация
+        возвращается ровно так же, как если бы её считали по таблице MACRS.
+        <span class="cite">Pub. 463, Disposition of a Car</span></p>
+      <p lang="en">A $30,000 car driven 15,000 business miles in a year: the deduction is 15,000 ×
+        <span data-fig="mileage_2025"></span> = $10,500, while the basis falls by 15,000 ×
+        <span data-fig="mileage_depreciation"></span> = $4,950, to $25,050. After three such years
+        the basis is about $15,150, and selling the car for $20,000 makes $4,850 of the gain
+        <strong>ordinary income under section 1245</strong> rather than capital gain: the
+        depreciation is recaptured exactly as it would have been under a MACRS table.
+        <span class="cite">Pub. 463, Disposition of a Car</span></p>
+      <p lang="ru">Мысль «на стандартной ставке продажа ничем не грозит» — одна из самых
+        живучих. Ставка избавляет от учёта расходов, но не от возврата амортизации.</p>
+      <p lang="en">The thought that “the standard rate means nothing happens on a sale” is one of
+        the most persistent there is. The rate saves you from tracking expenses, not from
+        recapture.</p>
     </div>
 
     <!-- ============================================================ -->
@@ -2087,7 +2114,7 @@
         <tr><th>15</th><td><span lang="ru">Работник, купивший имущество сам, считает его деловым, только если выполнены <strong>оба</strong> условия: это удобно работодателю и требуется как условие найма. Одного удобства мало. С 2018 года такие расходы работника всё равно не вычитаются — правило сохраняет значение для амортизации и для возврата</span><span lang="en">An employee who bought the property personally may treat it as business property only if <strong>both</strong> conditions hold: it is for the employer's convenience and it is required as a condition of employment. Convenience alone is not enough. Since 2018 such employee expenses are not deductible anyway — the rule still matters for depreciation and for recapture</span></td></tr>
         <tr><th>16</th><td><span lang="ru">Потолки §280F на легковые автомобили применяются так: доля делового использования <strong>умножается на потолок</strong>, а не применяется к остатку после него. Потолок $20 200 при деловом использовании 80% даёт $16 160, а не $20 200</span><span lang="en">The section 280F ceilings on passenger automobiles work this way: the business-use share is <strong>multiplied by the ceiling</strong>, not applied to what is left after it. A $20,200 ceiling at 80% business use gives $16,160, not $20,200</span></td></tr>
         <tr><th>17</th><td><span lang="ru">Машина тяжелее <span data-fig="auto_weight"></span> фунтов потолков §280F на легковые автомобили не знает — но §179 по ней ограничен отдельной суммой <span data-fig="sec179_suv"></span>. Освобождение от одного предела не означает свободы от всех</span><span lang="en">A vehicle over <span data-fig="auto_weight"></span> pounds escapes the section 280F ceilings on passenger automobiles — but section 179 on it is capped separately at <span data-fig="sec179_suv"></span>. Escaping one limit is not freedom from all of them</span></td></tr>
-        <tr><th>18</th><td><span lang="ru">Стандартная ставка за милю — это выбор <strong>исключить</strong> машину из MACRS: амортизация уже сидит внутри ставки и отдельно к ней не прибавляется. Базис при этом всё равно снижается на амортизационную часть ставки, и при продаже она вернётся</span><span lang="en">The standard mileage rate is an election to keep the car <strong>out of</strong> MACRS: depreciation is already inside the rate and is not added on top. Basis falls all the same by the depreciation component of the rate, and it comes back on a sale</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Стандартная ставка за милю — это выбор <strong>исключить</strong> машину из MACRS: амортизация уже сидит внутри ставки и отдельно к ней не прибавляется. Но базис машины всё равно снижается — на амортизационную долю ставки, <span data-fig="mileage_depreciation"></span> за милю в 2025 году, — и при продаже эта амортизация возвращается обычным доходом по §1245. Мысль «на стандартной ставке продажа ничем не грозит» неверна</span><span lang="en">The standard mileage rate is an election to keep the car <strong>out of</strong> MACRS: depreciation is already inside the rate and is not added on top. But the car's basis falls all the same — by the depreciation share of the rate, <span data-fig="mileage_depreciation"></span> a mile for 2025 — and on a sale that depreciation comes back as ordinary income under section 1245. The thought that “the standard rate means nothing happens on a sale” is wrong</span></td></tr>
         <tr><th>19</th><td><span lang="ru">Два излишка по §179 живут по-разному. Срезанный <strong>уменьшением за объём закупок</strong> — когда куплено больше порога — пропадает навсегда. Срезанный <strong>пределом по доходу</strong> — когда вычет упёрся в прибыль от деятельности — переносится вперёд без ограничения срока</span><span lang="en">The two kinds of section 179 excess fare differently. The one cut by the <strong>reduction for the volume of purchases</strong> — where more was bought than the threshold allows — is lost for good. The one cut by the <strong>income limit</strong> — where the deduction ran into the profit of the business — carries forward with no time limit</span></td></tr>
         <tr><th>20</th><td><span lang="ru">В доход, ограничивающий вычет по §179, входит не только прибыль бизнеса: туда идут и <strong>заработная плата</strong> налогоплательщика или супруга по найму, и прибыли §1231 от продажи делового имущества. Поэтому предел по доходу часто оказывается выше, чем кажется по одному Schedule C</span><span lang="en">The income that limits the section 179 deduction is more than the business profit: it takes in the <strong>wages</strong> of the taxpayer or spouse from employment, and section 1231 gains on sales of business property. So the income limit often turns out higher than Schedule C alone suggests</span></td></tr>
         <tr><th>21</th><td><span lang="ru">При покупке с зачётом старого имущества под §179 подпадает <strong>только уплаченное деньгами</strong>. Базис нового станка при этом всё равно включает и стоимость зачтённого старого — но немедленный вычет берётся лишь с доплаты</span><span lang="en">On a purchase with a trade-in, only the <strong>cash paid</strong> qualifies for section 179. The basis of the new machine still includes the value of the old one traded in — but the immediate deduction is taken on the additional cash alone</span></td></tr>

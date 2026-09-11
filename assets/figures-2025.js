@@ -594,6 +594,15 @@ window.FIGURES = {
       src: SRC_P463
     },
 
+    mileage_depreciation: {
+      n: 0.33, unit: "usd",
+      ru: "Доля амортизации внутри стандартной ставки за милю",
+      en: "Depreciation portion inside the standard mileage rate",
+      note_ru: "На эту величину уменьшается базис автомобиля за каждую милю, пройденную по стандартной ставке, — и при продаже она возвращается обычным доходом по §1245. Ставка своя для каждого года: 2024 — $0,30, 2023 — $0,28, 2021–2022 — $0,26, 2020 — $0,27. Ниже нуля базис не опускается.",
+      note_en: "Basis in the car is reduced by this much for every mile driven at the standard rate — and on a sale it comes back as ordinary income under section 1245. Each year has its own rate: 2024 — $0.30, 2023 — $0.28, 2021–2022 — $0.26, 2020 — $0.27. Basis is not reduced below zero.",
+      src: SRC_P463
+    },
+
     meals_limit: {
       n: 50, unit: "pct",
       ru: "Предел вычета расходов на деловое питание",
@@ -1872,7 +1881,7 @@ window.FIGURES = {
              "pal_phaseout_end", "ebl_single", "ebl_mfj",
              "deminimis_no_afs", "deminimis_afs"] },
     { id: "deductions", ru: "Поездки, подарки, домашний офис", en: "Travel, gifts and the home office",
-      keys: ["mileage_2025", "meals_limit", "gift_limit", "gift_incidental",
+      keys: ["mileage_2025", "mileage_depreciation", "meals_limit", "gift_limit", "gift_incidental",
              "temp_assignment_months", "home_office_rate", "home_office_max_sqft",
              "home_office_max", "startup_deduction", "startup_phaseout", "startup_amort_months"] },
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
