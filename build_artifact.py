@@ -255,7 +255,12 @@ def build():
         event.preventDefault();
         show(parts[1]);
         if (parts[2]) {
-          var target = document.getElementById(parts[1] + '-' + parts[2].slice(1));
+          /* Якоря модулей разведены префиксом (namespace_ids), а якоря
+             остальных страниц — нет: там столкновений не бывает. Поэтому
+             сначала ищем префиксованный, потом исходный. */
+          var anchor = parts[2].slice(1);
+          var target = document.getElementById(parts[1] + '-' + anchor)
+                    || document.getElementById(anchor);
           if (target) target.scrollIntoView();
         }
       }
