@@ -610,12 +610,12 @@ window.QUIZZES.su04 = [
       { k: "C", ru: "Половина в 2025 году, половина в 2026-м", en: "Half in 2025 and half in 2026" },
       { k: "D", ru: "В 2025 году, поскольку выплата состоялась в течение двух с половиной месяцев", en: "In 2025, because payment was made within two and a half months" }
     ],
-    correct: "B",
+    correct: "D",
     why: {
-      A: { ru: "Закрепление за работником даёт ему право на деньги, но не даёт работодателю вычета.", en: "Vesting gives the employee a right to the money; it does not give the employer a deduction." },
-      B: { ru: "Верно. Отпускные вычитаются в том году, в котором работник их фактически получил, и метод учёта на это не влияет.", en: "Correct. Vacation pay is deducted in the year the employee actually receives it, and the accounting method does not change that." },
-      C: { ru: "Деления по годам здесь нет: вычет целиком относится к году выплаты.", en: "There is no split between years: the deduction belongs entirely to the year of payment." },
-      D: { ru: "Правдоподобно, но неверно. Срок в два с половиной месяца приходит из правил об отложенном вознаграждении; к отпускным публикация его не применяет.", en: "Plausible but wrong. The two-and-a-half-month period comes from the deferred compensation rules; the publication does not apply it to vacation pay." }
+      A: { ru: "Закрепления мало. Выплати работодатель эти деньги в апреле, вычет ушёл бы в 2026 год, как бы прочно сумма ни была закреплена к 31 декабря.", en: "Vesting alone is not enough. Had the employer paid in April, the deduction would have moved to 2026, however firmly the amount was vested by December 31." },
+      B: { ru: "Так было бы, выйди выплата за два с половиной месяца: тогда отпускные считаются отложенным вознаграждением, и §404(a)(5) относит вычет к году получения. Февраль в этот срок укладывается.", en: "That would be so had the payment run past the two and a half months: vacation pay is then treated as deferred compensation and section 404(a)(5) puts the deduction in the year of receipt. February is inside the period." },
+      C: { ru: "Деления по годам правило не знает: вся сумма относится к одному году — вопрос лишь к какому.", en: "The rule knows no split between years: the whole amount belongs to one year — the only question is which." },
+      D: { ru: "Верно. Выплата 15 марта или раньше означает, что отпускные не стали отложенным вознаграждением, и §404(a)(5) к ним не применяется. Вычет остаётся в году начисления — 2025.", en: "Correct. Payment on March 15 or earlier means the vacation pay never became deferred compensation, so section 404(a)(5) does not apply to it. The deduction stays in the year of accrual — 2025." }
     }
   },
   {

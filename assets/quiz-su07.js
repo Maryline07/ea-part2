@@ -1104,5 +1104,87 @@ window.QUIZZES.su07 = [
       C: { ru: "Параграф действует и применяется, например, при владении год и меньше.", en: "The section is in force and applies, for instance, where the property is held one year or less." },
       D: { ru: "§291 касается только корпораций, кроме S-корпораций, и работает поверх §1250, а не вместо него.", en: "Section 291 touches only corporations other than S corporations, and works on top of section 1250, not instead of it." }
     }
+  },
+  {
+    sec: "s76",
+    ru: "Станок за $90 000 введён в эксплуатацию в 2025 году, и вся его стоимость списана стопроцентной бонусной амортизацией. Через два года станок продан за $50 000. Каков характер результата?",
+    en: "A $90,000 machine was placed in service in 2025 and its entire cost was written off by hundred per cent bonus depreciation. Two years later the machine was sold for $50,000. What is the character of the result?",
+    opts: [
+      { k: "A", ru: "Обычный доход $50 000", en: "Ordinary income of $50,000" },
+      { k: "B", ru: "Долгосрочная капитальная прибыль $50 000 по §1231", en: "Long-term capital gain of $50,000 under section 1231" },
+      { k: "C", ru: "Результата нет: стоимость уже списана", en: "No result: the cost has already been written off" },
+      { k: "D", ru: "Обычный доход $40 000 и прибыль §1231 $10 000", en: "Ordinary income of $40,000 and section 1231 gain of $10,000" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Базис равен нулю, поэтому прибылью становится вся цена — $50 000. Взятая амортизация $90 000 больше, значит обычным доходом по §1245 становится меньшая величина, то есть вся прибыль. До §1231 дело не доходит: первоначальная цена не превышена.", en: "Correct. The basis is nil, so the gain is the whole price — $50,000. The depreciation taken, $90,000, is larger, so section 1245 ordinary income is the lesser figure, that is the entire gain. Section 1231 is not reached: the original cost was not exceeded." },
+      B: { ru: "Бонусная амортизация — это амортизация, и §1245 возвращает её наравне с обычной. Капитальной прибыль стала бы только сверх первоначальных $90 000.", en: "Bonus depreciation is depreciation, and section 1245 recaptures it like the ordinary kind. The gain would be capital only above the original $90,000." },
+      C: { ru: "Списание стоимости обнуляет базис, но не отменяет продажу. Нулевой базис как раз и делает прибылью всю выручку.", en: "Writing off the cost zeroes the basis but does not cancel the sale. A nil basis is exactly what makes the whole proceeds gain." },
+      D: { ru: "Так получилось бы, если бы базис равнялся $10 000. Здесь он нулевой: списано всё.", en: "That would follow if the basis were $10,000. Here it is nil: everything was written off." }
+    }
+  },
+  {
+    sec: "s73",
+    ru: "Оборудование куплено в 2024 году, и по нему заявлен §179. В 2026 году, до истечения срока амортизации, оборудование продано. Как учитывается ранее взятый вычет по §179?",
+    en: "Equipment was bought in 2024 and section 179 was elected on it. In 2026, before the recovery period ended, the equipment was sold. How is the section 179 deduction previously taken accounted for?",
+    opts: [
+      { k: "A", ru: "Через §1245 при расчёте прибыли от продажи", en: "Through section 1245 in figuring the gain on the sale" },
+      { k: "B", ru: "Отдельным возвратом по §179: в доход включается превышение вычета над обычной амортизацией", en: "By a separate section 179 recapture: income includes the excess of the deduction over ordinary depreciation" },
+      { k: "C", ru: "И тем и другим способом: сначала возврат по §179, затем §1245 на остаток", en: "By both: first the section 179 recapture, then section 1245 on the remainder" },
+      { k: "D", ru: "Никак: срок для возврата истёк через год после ввода в эксплуатацию", en: "Not at all: the recapture period expired a year after the property was placed in service" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Собственный возврат по §179 предусмотрен только для падения делового использования до 50% и ниже. При продаже, обмене или ином выбытии он не применяется: вычет возвращается через §1245 вместе с бонусом и обычной амортизацией.", en: "Correct. Section 179 has its own recapture only for a drop in business use to 50% or below. On a sale, exchange or other disposition it does not apply: the deduction comes back through section 1245, together with bonus and ordinary depreciation." },
+      B: { ru: "Этот расчёт предназначен для падения делового использования, а не для выбытия. Публикация прямо запрещает применять его при продаже.", en: "That computation is meant for a drop in business use, not for a disposition. The publication expressly forbids using it on a sale." },
+      C: { ru: "Механизмы не складываются: применяется ровно один из двух, и при продаже это §1245.", en: "The mechanisms do not add up: exactly one of the two applies, and on a sale it is section 1245." },
+      D: { ru: "Срок §1245 не ограничен: амортизация возвращается при продаже когда угодно, хоть через двадцать лет.", en: "Section 1245 has no time limit: depreciation is recaptured on a sale whenever it happens, even twenty years later." }
+    }
+  },
+  {
+    sec: "s74",
+    ru: "При покупке работающей типографии часть цены отнесена на стоимость действующего предприятия. За что именно платит эта часть цены?",
+    en: "On the purchase of a working print shop part of the price was allocated to going concern value. What exactly does that part of the price pay for?",
+    opts: [
+      {
+        k: "A",
+        ru: "За то, что предприятие уже собрано и работает: доход не прерывается при смене владельца",
+        en: "For the business being assembled and running already: the income does not stop when ownership changes"
+      },
+      {
+        k: "B",
+        ru: "За ожидание, что прежние клиенты продолжат обращаться сюда же",
+        en: "For the expectation that the former customers will keep coming to the same place"
+      },
+      {
+        k: "C",
+        ru: "За рыночную стоимость печатных машин сверх их балансовой стоимости",
+        en: "For the market value of the presses above their book value"
+      },
+      {
+        k: "D",
+        ru: "За обязательство прежнего владельца не открывать типографию по соседству",
+        en: "For the former owner's covenant not to open a print shop nearby"
+      }
+    ],
+    correct: "A",
+    why: {
+      A: {
+        ru: "Верно. Стоимость действующего предприятия — надбавка за работающий механизм: персонал на местах, разрешения действуют, заказы в работе. Собирая то же самое с нуля, владелец месяцами не имел бы выручки, и оплачен именно этот пропущенный простой.",
+        en: "Correct. Going concern value is the premium for working machinery: staff in place, permits in force, orders under way. Assembling the same thing from nothing, an owner would go months without takings, and it is that skipped idleness that is paid for."
+      },
+      B: {
+        ru: "Это гудвилл: он смотрит на клиентов, на имя и репутацию. Оба списываются за 15 лет, но платят за разное.",
+        en: "That is goodwill: it looks to the customers, to the name and reputation. Both are amortized over 15 years, but they pay for different things."
+      },
+      C: {
+        ru: "Превышение над балансовой стоимостью относится на сами машины при распределении цены покупки и амортизируется как оборудование, а не как нематериальный актив.",
+        en: "An excess over book value is allocated to the presses themselves when the purchase price is apportioned, and is depreciated as equipment, not as an intangible."
+      },
+      D: {
+        ru: "Обязательство не конкурировать — отдельный нематериальный актив §197, и в цене оно выделяется своей суммой.",
+        en: "A covenant not to compete is a separate section 197 intangible, and it is allocated its own amount in the price."
+      }
+    }
   }
 ];

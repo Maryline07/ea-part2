@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=51">
-<script defer src="assets/figures-2025.js?v=51"></script>
-<script defer src="assets/modules.js?v=51"></script>
-<script defer src="assets/quiz-su07.js?v=51"></script>
+<link rel="stylesheet" href="assets/style.css?v=53">
+<script defer src="assets/figures-2025.js?v=53"></script>
+<script defer src="assets/modules.js?v=53"></script>
+<script defer src="assets/quiz-su07.js?v=53"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=51"></script>
+<script defer src="assets/app.js?v=53"></script>
 </head>
 <body data-module="su07">
 
@@ -1211,23 +1211,42 @@
 
     <div class="trap">
       <h3><span lang="ru">§179 возвращается при падении делового использования</span><span lang="en">Section 179 comes back when business use falls</span></h3>
-      <p lang="ru">Если в любой год <em>внутри срока амортизации</em> деловое использование
-        падает до <span data-fig="qbu_threshold"></span> и ниже, в доход того года включается
-        превышение взятого §179 над той амортизацией, что полагалась бы без него. То же
-        происходит при выбытии объекта до конца срока. Возвращённое прибавляется к базису
-        имущества — вычет не исчезает, а превращается обратно в базис.</p>
-      <p lang="en">If in any year <em>within the recovery period</em> business use drops to
-        <span data-fig="qbu_threshold"></span> or below, income of that year includes the excess
-        of the section 179 deduction taken over the depreciation that would have been allowed
-        without it. The same happens on a disposal before the period ends. What is recaptured is
-        added back to the property's basis — the deduction does not vanish, it turns back into
-        basis.</p>
+      <p lang="ru">Возврат по §179 срабатывает в одном-единственном случае: если в любой год
+        <em>внутри срока амортизации</em> квалифицированное деловое использование падает до
+        <span data-fig="qbu_threshold"></span> и ниже — станок, например, перевели в личное
+        пользование. Тогда в доход того года включается превышение взятого §179 над той
+        амортизацией, что полагалась бы без него, и на ту же сумму <strong>увеличивается
+        базис</strong>: вычет не исчезает, а превращается обратно в базис.</p>
+      <p lang="ru">А при <strong>продаже, обмене или ином выбытии</strong> этот расчёт не
+        применяется вовсе. Там работает §1245 из подраздела 7.6: считается прибыль, и §179
+        возвращается уже через неё, наравне с бонусом и обычной амортизацией. Два механизма
+        не смешиваются и не складываются — путаница между ними готовый неверный ответ.</p>
+      <p lang="ru">И третий адрес: у имущества из особого перечня падение ниже порога считают не
+        здесь, а по правилам подраздела 7.2 — возвращается превышение всей взятой амортизации
+        над прямолинейной по альтернативной системе.</p>
+      <p lang="en">Section 179 recapture is triggered by one thing only: if in any year
+        <em>within the recovery period</em> qualified business use drops to
+        <span data-fig="qbu_threshold"></span> or below — a machine converted to personal use,
+        say. Income of that year then includes the excess of the section 179 deduction taken over
+        the depreciation that would have been allowed without it, and the property's
+        <strong>basis is increased</strong> by the same amount: the deduction does not vanish, it
+        turns back into basis.</p>
+      <p lang="en">On a <strong>sale, exchange or other disposition</strong> this computation does
+        not apply at all. Section 1245 from subsection 7.6 governs there: the gain is figured, and
+        section 179 comes back through it, alongside bonus and ordinary depreciation. The two
+        mechanisms neither mix nor add up — confusing them is a ready wrong answer.</p>
+      <p lang="en">And a third address: for listed property a drop below the threshold is figured
+        not here but under the rules of subsection 7.2 — the excess of all the depreciation taken
+        over straight line under the alternative system comes back.</p>
       <p lang="ru">Выбор по §179 можно и отменить — уточнённой декларацией и без согласия
         налоговой службы. Но отмена <strong>необратима</strong>: передумать во второй раз уже не
-        получится. <span class="cite">Pub. 946, гл. 2</span></p>
+        получится. <span class="cite">Pub. 946, гл. 2, «When Must You Recapture the Deduction?»;
+        Pub. 544, гл. 3</span></p>
       <p lang="en">A section 179 election may also be revoked — by an amended return and without
         the IRS's consent. But the revocation is <strong>irrevocable</strong>: there is no
-        changing one's mind a second time. <span class="cite">Pub. 946, ch. 2</span></p>
+        changing one's mind a second time.
+        <span class="cite">Pub. 946, ch. 2, “When Must You Recapture the Deduction?”;
+        Pub. 544, ch. 3</span></p>
     </div>
 
     <!-- ============================================================ -->
@@ -1259,38 +1278,168 @@
       <span data-fig="sec197_years"></span> <strong>years</strong> — 180 months, straight line,
       with no exception either way.</p>
 
+    <h3><span lang="ru">Гудвилл и стоимость действующего предприятия</span><span lang="en">Goodwill and going concern value</span></h3>
+
+    <p lang="ru">Два первых имени в списке §197 стоят рядом и постоянно путаются, хотя платят за
+      разное. <strong>Гудвилл</strong> <span class="orig">(goodwill)</span> — это надбавка за
+      <em>ожидание, что клиенты вернутся</em>: за имя, репутацию, привычку людей ходить именно
+      сюда. <strong>Стоимость действующего предприятия</strong>
+      <span class="orig">(going concern value)</span> — надбавка за то, что предприятие уже
+      <em>собрано и работает</em>: доход не прерывается в момент смены владельца.</p>
+    <p lang="en">The first two names on the section 197 list stand side by side and are endlessly
+      confused, though they pay for different things. <strong>Goodwill</strong> is the premium for
+      the <em>expectation that customers will come back</em>: for the name, the reputation, the
+      habit people have of coming to this particular place. <strong>Going concern value</strong>
+      is the premium for the business being <em>assembled and running already</em>: the income
+      does not stop at the moment ownership changes.</p>
+
+    <p lang="ru">Разница видна на пекарне. Вы покупаете её в пятницу, а в субботу в шесть утра
+      печи уже горячие, тесто подошло, пекарь на смене, разрешения санитарной службы
+      действуют, и первый хлеб продан. Соберите то же самое с нуля — оборудование, наём,
+      разрешения, отладка, — и между покупкой печей и первой выручкой пройдут месяцы. Вот этот
+      пропущенный простой и оплачен: это стоимость действующего предприятия. А то, что в субботу
+      у дверей стоит очередь постоянных покупателей, — уже гудвилл.</p>
+    <p lang="en">The difference shows in a bakery. You buy it on Friday, and by six on Saturday
+      morning the ovens are hot, the dough has risen, the baker is on shift, the health permits
+      are in force, and the first loaf is sold. Assemble the same thing from nothing — equipment,
+      hiring, permits, running it in — and months pass between buying the ovens and the first
+      takings. It is that skipped idleness that has been paid for: going concern value. That a
+      queue of regulars is at the door on Saturday is goodwill.</p>
+
+    <p lang="ru">На практике их часто и не разделяют: оба попадают в один и тот же остаточный
+      класс при распределении цены покупки бизнеса (подраздел 6.1) и оба списываются за
+      <span data-fig="sec197_years"></span> лет. Но спросить, что есть что, могут — и различает их
+      именно это: гудвилл смотрит на <em>клиентов</em>, стоимость действующего предприятия — на
+      <em>работающий механизм</em>. <span class="cite">§197(d)(1); Reg. §1.197-2(b)(1)–(2)</span></p>
+    <p lang="en">In practice the two are often not separated: both fall into the same residual
+      class when the purchase price of a business is allocated (subsection 6.1), and both are
+      amortized over <span data-fig="sec197_years"></span> years. But the difference can be asked
+      about, and it lies just there: goodwill looks to the <em>customers</em>, going concern value
+      to the <em>working machinery</em>. <span class="cite">Section 197(d)(1);
+      Regulations section 1.197-2(b)(1)–(2)</span></p>
+
+    <h3><span lang="ru">Кому <span data-fig="sec197_years"></span> лет, а кому свой срок</span><span lang="en">Who gets <span data-fig="sec197_years"></span> years and who keeps their own term</span></h3>
+
+    <p lang="ru">Здесь и лежит главная развилка подраздела, и она проходит не там, где кажется.
+      Неверно, что §197 — это «всё, купленное вместе с предприятием». Активы делятся на
+      <strong>три</strong> группы, и покупка в составе бизнеса решает судьбу только
+      <em>средней</em> из них.</p>
+    <p lang="en">Here lies the main fork of the subsection, and it does not run where one expects.
+      It is not true that section 197 means “everything bought together with a business”. The
+      assets fall into <strong>three</strong> groups, and buying as part of a business decides the
+      fate of the <em>middle</em> one only.</p>
+
+    <p lang="ru">Первая группа попадает в §197 всегда, как только куплена, — отдельно её обычно и
+      не купишь: гудвилл или сложившийся коллектив сами по себе не продаются. Третья не попадает
+      в §197 ни при каких условиях. А вот второй группе — патентам, авторским правам,
+      обязательствам не конкурировать, правам по договорам — вопрос задаётся каждый раз:
+      <strong>куплено это в составе бизнеса или само по себе</strong>. Вместе с бизнесом —
+      <span data-fig="sec197_years"></span> лет; само по себе — §197 к нему не применяется вовсе.</p>
+    <p lang="en">The first group falls under section 197 whenever it is acquired — and separately
+      it usually cannot be acquired at all: goodwill or a workforce in place are not sold on their
+      own. The third group never falls under section 197 on any terms. It is the second group —
+      patents, copyrights, covenants not to compete, contract rights — that is asked the question
+      every time: <strong>was this bought as part of a business or by itself</strong>. With a
+      business, <span data-fig="sec197_years"></span> years; by itself, section 197 does not apply
+      to it at all.</p>
+
     <div class="scroller">
     <table>
       <thead>
         <tr>
-          <th><span lang="ru">Списывается за <span data-fig="sec197_years"></span> лет</span><span lang="en">Amortized over <span data-fig="sec197_years"></span> years</span></th>
-          <th><span lang="ru">Под §197 не подпадает</span><span lang="en">Outside section 197</span></th>
+          <th><span lang="ru">§197 в любом случае</span><span lang="en">Section 197 in any event</span></th>
+          <th><span lang="ru">§197 — только вместе с бизнесом</span><span lang="en">Section 197 — only with a business</span></th>
+          <th><span lang="ru">Под §197 не подпадает никогда</span><span lang="en">Never under section 197</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><span lang="ru">Гудвилл и стоимость действующего предприятия</span><span lang="en">Goodwill and going concern value</span></td>
+          <td><span lang="ru">Патенты, авторские права, формулы, процессы, ноу-хау, образцы</span><span lang="en">Patents, copyrights, formulas, processes, know-how, designs</span></td>
           <td><span lang="ru">Доли в корпорациях, партнёрствах, трастах и наследственных массах</span><span lang="en">Interests in corporations, partnerships, trusts and estates</span></td>
         </tr>
         <tr>
-          <td><span lang="ru">Сложившийся коллектив работников, база данных, списки клиентов и поставщиков</span><span lang="en">Workforce in place, information bases, customer and supplier lists</span></td>
+          <td><span lang="ru">Сложившийся коллектив работников, деловые книги и записи, базы данных</span><span lang="en">Workforce in place, business books and records, information bases</span></td>
+          <td><span lang="ru">Обязательство не конкурировать — только при покупке бизнеса или доли в нём</span><span lang="en">A covenant not to compete — only on the purchase of a business or an interest in one</span></td>
           <td><span lang="ru">Интересы в земле, включая право прохода и сервитуты</span><span lang="en">Interests in land, rights of way and easements included</span></td>
         </tr>
         <tr>
-          <td><span lang="ru">Патенты, авторские права, ноу-хау, программное обеспечение — <em>если</em> приобретены вместе с бизнесом</span><span lang="en">Patents, copyrights, know-how, software — <em>if</em> acquired together with a business</span></td>
+          <td><span lang="ru">Клиентская и поставщицкая базы, доля рынка</span><span lang="en">Customer-based and supplier-based intangibles, market share</span></td>
+          <td><span lang="ru">Право получить имущество или услуги по договору либо от органа власти</span><span lang="en">A right to receive property or services under a contract or from a governmental unit</span></td>
           <td><span lang="ru">Большинство финансовых инструментов и контрактов</span><span lang="en">Most financial instruments and contracts</span></td>
         </tr>
         <tr>
-          <td><span lang="ru">Лицензии, разрешения и иные права, выданные органами власти</span><span lang="en">Licences, permits and other rights granted by government units</span></td>
-          <td><span lang="ru">Аренда материального личного имущества</span><span lang="en">Leases of tangible personal property</span></td>
-        </tr>
-        <tr class="total">
-          <td><span lang="ru">Обязательства не конкурировать, франшизы, товарные знаки и фирменные наименования</span><span lang="en">Covenants not to compete, franchises, trademarks and trade names</span></td>
-          <td><span lang="ru">Созданное самим налогоплательщиком — кроме случая, когда это часть приобретения бизнеса</span><span lang="en">Anything the taxpayer created — unless it is part of the acquisition of a business</span></td>
+          <td><span lang="ru">Товарные знаки, фирменные наименования, франшизы; лицензии и разрешения органов власти</span><span lang="en">Trademarks, trade names, franchises; licences and permits granted by government units</span></td>
+          <td><span lang="ru">Интересы в фильмах, звукозаписях, книгах и подобном</span><span lang="en">Interests in films, sound recordings, books and the like</span></td>
+          <td><span lang="ru">Коробочное программное обеспечение, аренда материального личного имущества, созданное самим налогоплательщиком</span><span lang="en">Off-the-shelf software, leases of tangible personal property, anything the taxpayer created</span></td>
         </tr>
       </tbody>
     </table>
     </div>
+
+    <p lang="ru">Средняя колонка — единственная, где вопрос «как куплено» вообще имеет смысл.
+      Крайние колонки на него не отвечают: гудвилл и коллектив отдельно не продаются, а земля и
+      доли в организациях не попадут в §197 даже в составе самой большой покупки. Именно поэтому
+      в вопросе про патент условие всегда договаривает, куплен он с бизнесом или сам по себе, —
+      без этого ответа нет. <span class="cite">§197(d), (e); инструкция к форме 4562, часть VI</span></p>
+    <p lang="en">The middle column is the only one where the question “how was it bought” means
+      anything. The outer columns do not answer it: goodwill and a workforce are not sold
+      separately, while land and interests in entities stay outside section 197 even inside the
+      largest purchase. That is why a question about a patent always states whether it came with a
+      business or on its own — without that there is no answer.
+      <span class="cite">Sections 197(d), (e); Instructions for Form 4562, Part VI</span></p>
+
+    <h3><span lang="ru">Куплено отдельно — списывается по своему сроку</span><span lang="en">Bought separately — written off over its own term</span></h3>
+
+    <p lang="ru">Выпасть из §197 не значит потерять вычет. Это значит попасть под общее правило
+      §167: списывать прямолинейно по <strong>собственному</strong> сроку актива. Обычно он
+      короче пятнадцати лет, так что отдельная покупка чаще выгоднее — вычет приходит быстрее.</p>
+    <p lang="en">Falling outside section 197 does not mean losing the deduction. It means falling
+      under the general rule of section 167: straight line over the asset's <strong>own</strong>
+      term. That term is usually shorter than fifteen years, so a separate purchase is often the
+      better one — the deduction arrives sooner.</p>
+
+    <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th><span lang="ru">Что куплено отдельно</span><span lang="en">What was bought separately</span></th>
+          <th><span lang="ru">За какой срок списывается</span><span lang="en">Over what term it is written off</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="ru">Патент или авторское право</span><span lang="en">A patent or a copyright</span></td>
+          <td><span lang="ru">Прямолинейно по меньшему из двух: срока, выданного государством, и срока, оставшегося на день покупки</span><span lang="en">Straight line over the lesser of two: the life granted by the government and what remains at the date of purchase</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Программное обеспечение, доступное всем желающим</span><span lang="en">Software readily available to the public</span></td>
+          <td><span lang="ru">Прямолинейно за <span data-fig="software_months"></span> месяцев</span><span lang="en">Straight line over <span data-fig="software_months"></span> months</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Право получить имущество или услуги по договору</span><span lang="en">A right to receive property or services under a contract</span></td>
+          <td><span lang="ru">По сроку самого договора</span><span lang="en">Over the term of the contract itself</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Права на обслуживание жилищной ипотеки</span><span lang="en">Residential mortgage servicing rights</span></td>
+          <td><span lang="ru">Прямолинейно за 108 месяцев</span><span lang="en">Straight line over 108 months</span></td>
+        </tr>
+        <tr>
+          <td><span lang="ru">Земля, доли в организациях, финансовые инструменты</span><span lang="en">Land, interests in entities, financial instruments</span></td>
+          <td><span lang="ru">Не списываются вовсе: базис ждёт продажи</span><span lang="en">Not written off at all: the basis waits for a sale</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Одна ловушка внутри таблицы: если патент или авторское право обесценились раньше
+      срока, остаток базиса вычитается сразу, в том же году. Под §197 так нельзя — там убыток
+      по одному активу ждёт остальных, и об этом ниже.
+      <span class="cite">Pub. 946, гл. 1; инструкция к форме 4562, часть VI</span></p>
+    <p lang="en">One trap inside the table: if a patent or copyright becomes worthless before its
+      term is out, the remaining basis is deducted at once, in that same year. Under section 197
+      that is not allowed — there a loss on one asset waits for the others, as set out below.
+      <span class="cite">Pub. 946, ch. 1; Instructions for Form 4562, Part VI</span></p>
 
     <div class="trap">
       <h3><span lang="ru">Настоящий срок значения не имеет</span><span lang="en">The real life does not matter</span></h3>
@@ -1307,12 +1456,12 @@
         бизнесом, под §197 не подпадает и амортизируется прямолинейно по своему сроку —
         меньшему из выданного государством и оставшегося на день покупки. Один и тот же актив,
         два расписания, и различает их только то, куплен он сам по себе или в составе
-        бизнеса. <span class="cite">Pub. 535, гл. 8; Pub. 946, гл. 1</span></p>
+        бизнеса. <span class="cite">Pub. 946, гл. 1; инструкция к форме 4562, часть VI</span></p>
       <p lang="en">The other side: the same patent bought <em>on its own</em>, not with a
         business, is outside section 197 and is depreciated straight line over its own life — the
         lesser of the term granted by the government and what remains at the date of purchase. One
         asset, two schedules, told apart only by whether it was bought by itself or as part of a
-        business. <span class="cite">Pub. 535, ch. 8; Pub. 946, ch. 1</span></p>
+        business. <span class="cite">Pub. 946, ch. 1; Instructions for Form 4562, Part VI</span></p>
     </div>
 
     <h3><span lang="ru">С какого месяца и по какой</span><span lang="en">From which month, and to which</span></h3>
@@ -1394,10 +1543,10 @@
         transaction in proportion — and comes back later, through their amortization.</p>
       <p lang="ru">Смысл правила прост: цена сделки распределялась между активами по договору, и
         признать убыток по одному, оставив завышенным базис остальных, значило бы вычесть то,
-        что на самом деле никуда не делось. <span class="cite">Pub. 535, гл. 8</span></p>
+        что на самом деле никуда не делось. <span class="cite">§197; инструкция к форме 4562, часть VI</span></p>
       <p lang="en">The reason is plain: the price was allocated among the assets by agreement, and
         allowing a loss on one while the others keep an inflated basis would deduct something that
-        has not actually gone anywhere. <span class="cite">Pub. 535, ch. 8</span></p>
+        has not actually gone anywhere. <span class="cite">Section 197; Instructions for Form 4562, Part VI</span></p>
     </div>
 
     <div class="example">
@@ -1608,14 +1757,14 @@
       дохода объекта, а потому продолжается и после того, как базис исчерпан. Отсюда главное
       следствие: процентное истощение способно вернуть больше вложенного, а истощение по
       стоимости на нуле останавливается. Таблица ниже сводит обе формулы.
-      <span class="cite">§§611–613; Pub. 535, гл. 9</span></p>
+      <span class="cite">§§611–613; Pub. 225, гл. 9</span></p>
     <p lang="en">The two are built quite differently. <em>Cost</em> depletion spreads your basis
       over the reserve and writes it off as units are sold — you get back what you put in, and
       no more. <em>Percentage</em> depletion takes no notice of basis at all: it takes a share
       of the property's gross income, and so continues after the basis is exhausted. Hence the
       consequence that matters: percentage depletion can return more than was invested, while
       cost depletion stops at nil. The table below sets out both formulas.
-      <span class="cite">Sections 611–613; Pub. 535, chapter 9</span></p>
+      <span class="cite">Sections 611–613; Pub. 225, ch. 9</span></p>
 
     <div class="scroller">
     <table>
@@ -1673,11 +1822,11 @@
       <p lang="ru">Вторая приманка — потолок процентного истощения. Он считается от
         налогооблагаемого дохода <em>этого месторождения</em> до вычета истощения, а не от всего
         дохода налогоплательщика и не от валового дохода объекта.
-        <span class="cite">Pub. 535, гл. 9</span></p>
+        <span class="cite">§§611–613; Pub. 225, гл. 9</span></p>
       <p lang="en">The second bait is the percentage depletion ceiling. It is measured against the
         taxable income of <em>that property</em> before depletion — not against the taxpayer's
         income as a whole, and not against the property's gross income.
-        <span class="cite">Pub. 535, ch. 9</span></p>
+        <span class="cite">Sections 611–613; Pub. 225, ch. 9</span></p>
     </div>
 
     <div class="example">
@@ -1898,6 +2047,20 @@
       amounts: all the depreciation taken — section 179 and bonus included — or the gain
       recognised. Whatever is left above goes to section 1231.</p>
 
+    <p lang="ru">Слова «включая §179 и бонус» здесь несут всю нагрузку. Оба вычета берутся
+      разом и целиком, но амортизацией быть от этого не перестают, и §1245 считает их наравне с
+      обычной. Отсюда следствие, которое спрашивают чаще самой формулы: если стоимость списана
+      <strong>целиком</strong> — §179 на всю цену, стопроцентный бонус или то и другое вместе, —
+      скорректированный базис равен <strong>нулю</strong>. Вычитать из выручки нечего, а значит
+      прибылью становится вся цена продажи до последнего доллара.</p>
+    <p lang="en">The words “section 179 and bonus included” carry the whole weight here. Both
+      deductions are taken at once and in full, but they do not stop being depreciation for that,
+      and section 1245 counts them alongside the ordinary kind. Hence the consequence asked about
+      more often than the formula itself: if the cost was written off <strong>in full</strong> —
+      section 179 on the whole price, a hundred per cent bonus, or both together — the adjusted
+      basis is <strong>nil</strong>. There is nothing to subtract from the proceeds, so the whole
+      selling price becomes gain, down to the last dollar.</p>
+
     <div class="example">
       <div class="example__head"><span lang="ru">Пример 7-9. Три продажи одного станка</span><span lang="en">Example 7-9. Three sales of one machine</span></div>
       <div class="example__body">
@@ -1946,6 +2109,35 @@
           recaptured though the gain is smaller; and a capital loss of
           <span data-num="-8000"></span> — forgetting that a section 1231 loss is ordinary.</p>
       </div>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Полное списание откладывает налог, а не отменяет его</span><span lang="en">Writing off in full defers the tax, it does not cancel it</span></h3>
+      <p lang="ru">Станок за $90 000 введён в эксплуатацию в 2025 году и списан целиком —
+        стопроцентным бонусом, §179 или тем и другим вместе, разницы нет. Через два года его
+        продают за $50 000. Базис ноль, поэтому прибыль равна всей цене — $50 000. Амортизации
+        взято $90 000. Меньшее из двух — $50 000, и <strong>вся выручка обычный доход</strong>.
+        До §1231 дело не доходит: до первоначальной цены ещё $40 000.</p>
+      <p lang="en">A $90,000 machine was placed in service in 2025 and written off in full — by a
+        hundred per cent bonus, by section 179, or by both, it makes no difference. Two years
+        later it is sold for $50,000. The basis is nil, so the gain equals the whole price:
+        $50,000. Depreciation taken is $90,000. The lesser of the two is $50,000, and the
+        <strong>entire proceeds are ordinary income</strong>. Section 1231 is never reached:
+        the original cost is still $40,000 away.</p>
+      <p lang="ru">Продай тот же станок за $95 000 — обычным доходом станут $90 000, вся
+        амортизация, а оставшиеся $5 000 уйдут в §1231. Граница по-прежнему проходит по
+        первоначальной цене, просто при нулевом базисе до неё дальше, чем кажется.</p>
+      <p lang="en">Sell the same machine for $95,000 and $90,000 — all the depreciation — becomes
+        ordinary income, while the remaining $5,000 goes to section 1231. The line still runs at
+        the original cost; it is merely further away than it looks when the basis is nil.</p>
+      <p lang="ru">Заблуждение, на котором строится вопрос, звучит так: «бонус — это не
+        амортизация, возвращать нечего». Возвращать есть что, и в полном объёме. Вычет был дан по
+        обычной ставке — по обычной же и забирается, только годы спустя.
+        <span class="cite">§1245(a)(2); Pub. 544, гл. 3</span></p>
+      <p lang="en">The misconception the question is built on runs: “bonus is not depreciation,
+        there is nothing to recapture.” There is, and in full. The deduction was given at ordinary
+        rates — at ordinary rates it is taken back, only years later.
+        <span class="cite">Section 1245(a)(2); Pub. 544, ch. 3</span></p>
     </div>
 
     <h3><span lang="ru">§1250: почти всегда ноль, и всё же не всегда</span><span lang="en">Section 1250: nearly always nil, and yet not always</span></h3>
