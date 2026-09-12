@@ -21,6 +21,7 @@
   var FLAG = "ea2:flag:";
   var RUNS = "ea2:runs";
   var PRESET = "ea2:trainer:preset";
+  var KEEP = "ea2:trainer:setup";
   var RUNS_KEEP = 20;
 
   var setup = null;     /* выбор на экране настройки */
@@ -160,10 +161,46 @@
     };
   }
 
+  /* Выбор модулей держится только в памяти, поэтому перезагрузка страницы
+     и переход по ссылке «Тренажёр» из шапки возвращали все модули разом —
+     и заход приносил вопросы по непрочитанным темам. Последний выбор
+     сохраняется и восстанавливается; одноразовый пресет из модуля всё
+     равно идёт первым, он говорит о намерении прямо сейчас. */
+
+  function savedSetup() {
+    var raw = EA.read(KEEP);
+    if (!raw) return null;
+    var value;
+    try { value = JSON.parse(raw); } catch (e) { return null; }
+    if (!value || !value.mods || !value.mods.length) return null;
+
+    var live = {};
+    modules().forEach(function (module) { live[module.id] = true; });
+    var mods = value.mods.filter(function (id) { return live[id]; });
+    if (!mods.length) return null;
+
+    var limits = {};
+    LIMITS.forEach(function (each) { limits[each] = true; });
+    var filters = {};
+    FILTERS.forEach(function (each) { filters[each.k] = true; });
+
+    return {
+      mods: mods,
+      filter: filters[value.filter] ? value.filter : "all",
+      limit: limits[value.limit] ? value.limit : 10,
+      order: value.order === "line" ? "line" : "shuffle"
+    };
+  }
+
+  function remember() {
+    if (!setup) return;
+    EA.write(KEEP, JSON.stringify(setup));
+  }
+
   function renderSetup() {
     var box = host("tr-setup");
     if (!box) return;
-    if (!setup) setup = defaultSetup();
+    if (!setup) setup = savedSetup() || defaultSetup();
 
     var list = modules();
     if (!list.length) {
@@ -637,6 +674,7 @@
       setup.mods = mods.dataset.mods === "all"
         ? modules().map(function (module) { return module.id; })
         : [];
+      remember();
       renderSetup();
       return;
     }
@@ -645,18 +683,24 @@
        выбранную отдельно не нужно. Кнопки объёма и порядка он не трогает —
        им отметка нужна, иначе выбор не виден до перерисовки экрана. */
     var filter = hit("[data-filter]");
-    if (filter) { setup.filter = filter.dataset.filter; refreshCounts(); return; }
+    if (filter) { setup.filter = filter.dataset.filter; remember(); refreshCounts(); return; }
 
     var limit = hit("[data-limit]");
     if (limit) {
       setup.limit = parseInt(limit.dataset.limit, 10);
+      remember();
       markOn(limit, ".tr__chip[data-limit]");
       refreshCounts();
       return;
     }
 
     var order = hit("[data-order]");
-    if (order) { setup.order = order.dataset.order; markOn(order, ".tr__chip[data-order]"); return; }
+    if (order) {
+      setup.order = order.dataset.order;
+      remember();
+      markOn(order, ".tr__chip[data-order]");
+      return;
+    }
 
     if (hit("#tr-go")) { begin(); return; }
 
@@ -717,6 +761,7 @@
     var at = setup.mods.indexOf(id);
     if (box.checked && at === -1) setup.mods.push(id);
     if (!box.checked && at !== -1) setup.mods.splice(at, 1);
+    remember();
     var label = box.closest(".tr__mod");
     if (label) label.classList.toggle("is-on", box.checked);
     refreshCounts();
