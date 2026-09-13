@@ -1599,6 +1599,15 @@ window.FIGURES = {
       src: SRC_I8941
     },
 
+    shic_wages_divisor: {
+      n: 33300, unit: "usd",
+      ru: "Делитель в расчёте уменьшения кредита за страховку по заработной плате, 2025",
+      en: "Divisor in the wage-based reduction of the health insurance credit, 2025",
+      note_ru: "Индексируемая величина. На форме порог выглядит как $33 000, потому что средняя плата округляется до тысячи, а вычитают и делят именно на $33 300; полное обнуление приходится на $67 000.",
+      note_en: "An indexed amount. The form shows the threshold as $33,000 because average wages are rounded to a multiple of $1,000, but the subtraction and the division both use $33,300; the credit reaches nil at $67,000.",
+      src: SRC_I8941
+    },
+
     shic_fte_phase: {
       n: 10, unit: "int",
       ru: "Число работников, выше которого кредит за страховку уменьшается",
@@ -1851,6 +1860,33 @@ window.FIGURES = {
       src: SRC_I2290
     },
 
+    hvut_tax_min: {
+      n: 100, unit: "usd",
+      ru: "Налог за пользование дорогами при полной облагаемой массе ровно 55 000 фунтов",
+      en: "Highway use tax at a taxable gross weight of exactly 55,000 pounds",
+      note_ru: "Лесовозная машина платит три четверти ставки.",
+      note_en: "A logging vehicle pays three quarters of the rate.",
+      src: SRC_I2290
+    },
+
+    hvut_tax_step: {
+      n: 22, unit: "usd",
+      ru: "Прибавка к налогу за пользование дорогами за каждую следующую тысячу фунтов",
+      en: "Increase in the highway use tax for each further thousand pounds",
+      note_ru: "Категории идут по тысяче фунтов; внутри категории ставка одна.",
+      note_en: "The categories run in thousand-pound bands; within a band the rate is one.",
+      src: SRC_I2290
+    },
+
+    hvut_tax_max: {
+      n: 550, unit: "usd",
+      ru: "Наибольший налог за пользование дорогами — свыше 75 000 фунтов",
+      en: "Maximum highway use tax, above 75,000 pounds",
+      note_ru: "Выше этой массы ставка больше не растёт.",
+      note_en: "Above that weight the rate stops rising.",
+      src: SRC_I2290
+    },
+
     ale_threshold: {
       n: 50, unit: "int",
       ru: "Число работников, с которого работодатель считается крупным по закону о доступной медицине",
@@ -1956,7 +1992,7 @@ window.FIGURES = {
              "wotc_rate_full", "wotc_rate_second", "wotc_wages_general",
              "wotc_wages_youth", "wotc_wages_ltfa", "wotc_wages_veteran",
              "shic_rate", "shic_fte", "shic_wages", "shic_wages_phase",
-             "shic_fte_phase", "shic_years",
+             "shic_fte_phase", "shic_years", "shic_wages_divisor",
              "research_rate", "research_asc", "research_280c",
              "research_280c_factor", "research_base_floor", "research_fbp_max",
              "research_asc_flat", "research_contract",
@@ -1967,6 +2003,7 @@ window.FIGURES = {
              "nol_limit_pct", "nol_farm_carryback",
              "casualty_floor", "casualty_agi_pct", "casualty_qualified_floor",
              "hvut_weight", "hvut_miles", "hvut_miles_farm",
+             "hvut_tax_min", "hvut_tax_step", "hvut_tax_max",
              "ale_threshold", "ale_hours_week", "ale_hours_month",
              "esrp_a", "esrp_b", "esrp_exempt"] },
     { id: "cost", ru: "Списание стоимости", en: "Cost recovery",

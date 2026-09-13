@@ -1175,5 +1175,42 @@ window.QUIZZES.su08 = [
       D: { ru: "Не пропадает: неиспользованное переносится на следующий квартал и дальше.", en: "It is not lost: what is unused carries to the next quarter and beyond." }
     }
   }
+,
+  {
+    sec: "s81",
+    ru: "Взносы за год — $120 000, работников в пересчёте на полную занятость 16, средняя годовая плата $45 000. Отправная величина кредита $60 000, счётчик по работникам даёт 0,400, счётчик по плате 0,351. Каков кредит?",
+    en: "Premiums for the year are $120,000, there are 16 full-time equivalent employees and average annual wages of $45,000. The starting amount is $60,000, the headcount meter gives 0.400 and the wage meter 0.351. What is the credit?",
+    opts: [
+      { k: "A", ru: "$14 940", en: "$14,940" },
+      { k: "B", ru: "$23 364", en: "$23,364" },
+      { k: "C", ru: "$36 000", en: "$36,000" },
+      { k: "D", ru: "$60 000", en: "$60,000" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Счётчики независимы и оба вычитаются из одной величины: 60 000 − 60 000 × 0,400 − 60 000 × 0,351 = 14 940.", en: "Correct. The meters are independent and both come off the same amount: 60,000 − 60,000 × 0.400 − 60,000 × 0.351 = 14,940." },
+      B: { ru: "Счётчики применены последовательно: второй взят от оставшихся 36 000, а не от исходных 60 000. Самая частая ошибка.", en: "The meters applied one after the other: the second taken on the remaining 36,000 rather than the original 60,000. The commonest error." },
+      C: { ru: "Учтён только счётчик по работникам, а по заработной плате забыт.", en: "Only the headcount meter counted; the wage meter forgotten." },
+      D: { ru: "Счётчики не применены вовсе. Оба порога перейдены, и оба уменьшения обязательны.", en: "No meters applied at all. Both thresholds are crossed and both reductions are required." }
+    }
+  },
+  {
+    sec: "s84",
+    ru: "Сельскохозяйственный грузовик полной облагаемой массой 58 000 фунтов впервые выехал на дорогу 12 ноября. За период владелец рассчитывает проехать 6 000 миль. Что он должен сделать?",
+    en: "An agricultural lorry with a taxable gross weight of 58,000 pounds was first driven on a highway on November 12. The owner expects 6,000 miles for the period. What must be done?",
+    opts: [
+      { k: "A", ru: "Подать форму 2290 до 31 декабря и заявить приостановку: налога нет", en: "File Form 2290 by December 31 and claim the suspension: no tax is due" },
+      { k: "B", ru: "Ничего: раз налога нет, подавать нечего", en: "Nothing: with no tax there is nothing to file" },
+      { k: "C", ru: "Подать форму 2290 до 31 декабря и уплатить налог: 6 000 миль больше предела", en: "File Form 2290 by December 31 and pay the tax: 6,000 miles is over the limit" },
+      { k: "D", ru: "Подать форму 2290 до 15 апреля следующего года", en: "File Form 2290 by April 15 of the next year" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Предел для сельскохозяйственной машины — 7 500 миль, и 6 000 в него укладываются. Но приостановка заявляется именно на форме 2290, в категории W, и срок — последний день месяца, следующего за месяцем первого использования.", en: "Correct. The limit for an agricultural vehicle is 7,500 miles and 6,000 is within it. But the suspension is claimed on Form 2290 itself, in category W, and the due date is the last day of the month following the month of first use." },
+      B: { ru: "Приостановка снимает налог, но не обязанность подать форму: без формы её не на чем заявить.", en: "Suspension removes the tax but not the duty to file: without the form there is nowhere to claim it." },
+      C: { ru: "Предел в 5 000 миль — для обычной машины. У сельскохозяйственной он 7 500.", en: "The 5,000-mile limit is for an ordinary vehicle. For an agricultural one it is 7,500." },
+      D: { ru: "Срок считается от месяца первого использования, а не от налогового года. Период формы 2290 идёт с 1 июля по 30 июня.", en: "The due date runs from the month of first use, not from the tax year. The Form 2290 period runs July 1 to June 30." }
+    }
+  }
 
 ];

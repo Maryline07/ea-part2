@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=56">
-<script defer src="assets/figures-2025.js?v=56"></script>
-<script defer src="assets/modules.js?v=56"></script>
-<script defer src="assets/quiz-su08.js?v=56"></script>
+<link rel="stylesheet" href="assets/style.css?v=57">
+<script defer src="assets/figures-2025.js?v=57"></script>
+<script defer src="assets/modules.js?v=57"></script>
+<script defer src="assets/quiz-su08.js?v=57"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=56"></script>
+<script defer src="assets/app.js?v=57"></script>
 </head>
 <body data-module="su08">
 
@@ -216,6 +216,53 @@
         business.</p>
     </div>
 
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 8-1. Иностранный налог: кредит или вычет</span><span lang="en">Example 8-1. Foreign tax: credit or deduction</span></div>
+      <div class="example__body">
+        <p lang="ru">Всемирный налогооблагаемый доход — $800 000, из них $200 000 из иностранного
+          источника. Налог США до кредитов — $168 000. За рубежом уплачено налогов на
+          $55 000.</p>
+        <p lang="en">Worldwide taxable income is $800,000, of which $200,000 is from a foreign
+          source. US tax before credits is $168,000. Foreign taxes of $55,000 were paid.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Доля иностранного дохода: 200 000 ÷ 800 000</span><span lang="en">Foreign share: 200,000 ÷ 800,000</span></td>
+              <td data-num="25" data-unit="pct"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Предел: 168 000 × 25%</span><span lang="en">The limit: 168,000 × 25%</span></td>
+              <td data-num="42000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Уплачено за рубежом</span><span lang="en">Paid abroad</span></td>
+              <td data-num="55000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Кредит: меньшее из двух</span><span lang="en">The credit: the lesser of the two</span></td>
+              <td data-num="42000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Неиспользованные <span data-num="13000"></span> идут назад на
+          <span data-fig="ftc_carryback"></span> год и вперёд на
+          <span data-fig="ftc_carryforward"></span> лет. Вместо кредита иностранный налог можно
+          взять вычетом — но выбор делается <em>сразу по всем странам</em> и на весь год, а не по
+          каждой отдельно.</p>
+        <p lang="en">The unused <span data-num="13000"></span> goes back
+          <span data-fig="ftc_carryback"></span> year and forward
+          <span data-fig="ftc_carryforward"></span> years. Instead of a credit the foreign tax may
+          be deducted — but the choice is made <em>for all countries at once</em> and for the
+          whole year, not country by country.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="55000"></span> — предел не
+          применён; <span data-num="13000"></span> — за кредит принято превышение;
+          <span data-num="168000"></span> — взят весь налог США.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="55000"></span> — no limit applied;
+          <span data-num="13000"></span> — the excess taken as the credit;
+          <span data-num="168000"></span> — the whole US tax taken.</p>
+      </div>
+    </div>
+
     <h3><span lang="ru">Предел: сколько налога кредит вправе снять</span><span lang="en">The limit: how much tax the credit may take off</span></h3>
 
     <p lang="ru">Кредит <strong>нерефундируемый</strong>: до нуля он налог доводит, ниже нуля —
@@ -292,7 +339,7 @@
       <span data-fig="gbc_threshold"></span> is subtracted directly.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-1. Что осталось кредиту</span><span lang="en">Example 8-1. What is left for the credit</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-2. Что осталось кредиту</span><span lang="en">Example 8-2. What is left for the credit</span></div>
       <div class="example__body">
         <p lang="ru">Обычный налог на доход — $60 000, предварительный минимальный налог —
           $45 000. Прочих нерефундируемых кредитов нет. Кредитов, входящих в общий кредит
@@ -428,7 +475,7 @@
       was for work in the employer's trade or business.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-2. Трое из целевой группы</span><span lang="en">Example 8-2. Three from a targeted group</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-3. Трое из целевой группы</span><span lang="en">Example 8-3. Three from a targeted group</span></div>
       <div class="example__body">
         <p lang="ru">Наняты трое, все сертифицированы как члены обычной целевой группы с потолком
           <span data-fig="wotc_wages_general"></span>. Анна отработала 90 часов и получила
@@ -630,7 +677,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-3. Прирост большой, а потолок ниже</span><span lang="en">Example 8-3. A large increase, and a lower cap</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-4. Прирост большой, а потолок ниже</span><span lang="en">Example 8-4. A large increase, and a lower cap</span></div>
       <div class="example__body">
         <p lang="ru">Фирма «Рефрактор» потратила на квалифицированные исследования за 2025 год
           $400 000. Средняя годовая выручка за 2021–2024 годы — $2 000 000, фиксированный процент
@@ -795,52 +842,86 @@
         answer offered. <span class="cite">Instructions for Form 8941 (2025)</span></p>
     </div>
 
+    <p lang="ru">Осталось три частности, без которых расчёт не сходится. Первая: в расчёт идут не
+      любые взносы, а <strong>не больше средней премии малого группового рынка</strong> вашего
+      региона — заплатили дороже рынка, разницу не считают. Вторая: из взносов вычитаются
+      <strong>субсидии и налоговые кредиты штата</strong>, если они были. Третья, и она же
+      главная: оба счётчика берутся <strong>от одной и той же исходной величины</strong> — от
+      <span data-fig="shic_rate"></span> взносов, — а не один от того, что осталось после
+      другого.</p>
+    <p lang="en">Three particulars remain, and without them the figures will not come out. First,
+      not every premium enters: <strong>no more than the average premium for the small group
+      market</strong> in your area — pay above the market and the difference is not counted.
+      Second, <strong>state subsidies and state tax credits</strong> are subtracted from the
+      premiums. Third, and this is the main one: both meters are taken <strong>from one and the
+      same starting amount</strong> — from <span data-fig="shic_rate"></span> of the premiums —
+      and not one from what the other has left.</p>
+
+    <p lang="ru">И мелочь, которая портит арифметику. Порог в таблице выглядит как
+      <span data-fig="shic_wages_phase"></span>, потому что средняя плата на форме округляется до
+      тысячи. Но вычитают и делят на индексируемые
+      <span data-fig="shic_wages_divisor"></span> — отсюда и полное обнуление ровно на
+      <span data-fig="shic_wages"></span>.</p>
+    <p lang="en">And a small thing that spoils the arithmetic. The threshold in the table looks
+      like <span data-fig="shic_wages_phase"></span>, because average wages on the form are rounded
+      to a multiple of a thousand. But what is subtracted and divided by is the indexed
+      <span data-fig="shic_wages_divisor"></span> — which is why the credit reaches nil exactly at
+      <span data-fig="shic_wages"></span>.</p>
+
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-4. Иностранный налог: кредит или вычет</span><span lang="en">Example 8-4. Foreign tax: credit or deduction</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-5. Два счётчика от одной величины</span><span lang="en">Example 8-5. Two meters from one amount</span></div>
       <div class="example__body">
-        <p lang="ru">Всемирный налогооблагаемый доход — $800 000, из них $200 000 из иностранного
-          источника. Налог США до кредитов — $168 000. За рубежом уплачено налогов на
-          $55 000.</p>
-        <p lang="en">Worldwide taxable income is $800,000, of which $200,000 is from a foreign
-          source. US tax before credits is $168,000. Foreign taxes of $55,000 were paid.</p>
+        <p lang="ru">У мастерской 16 работников в пересчёте на полную занятость, средняя годовая
+          заработная плата — $45 000. За год уплачено взносов $120 000; работодатель платит 60%
+          взноса за каждого, страховка куплена на бирже SHOP. Средняя премия малого группового
+          рынка выше уплаченного, субсидий штата нет. Это первый год кредита.</p>
+        <p lang="en">A workshop has 16 full-time equivalent employees and average annual wages of
+          $45,000. Premiums of $120,000 were paid for the year; the employer pays 60% of each
+          premium and the cover was bought through the SHOP marketplace. The average premium for
+          the small group market is higher than what was paid, and there are no state subsidies.
+          This is the first year of the credit.</p>
         <table class="ledger">
           <tbody>
             <tr>
-              <td><span lang="ru">Доля иностранного дохода: 200 000 ÷ 800 000</span><span lang="en">Foreign share: 200,000 ÷ 800,000</span></td>
-              <td data-num="25" data-unit="pct"></td>
+              <td><span lang="ru">Отправная величина: <span data-fig="shic_rate"></span> × 120 000</span><span lang="en">The starting amount: <span data-fig="shic_rate"></span> × 120,000</span></td>
+              <td data-num="60000"></td>
             </tr>
             <tr>
-              <td><span lang="ru">Предел: 168 000 × 25%</span><span lang="en">The limit: 168,000 × 25%</span></td>
-              <td data-num="42000"></td>
+              <td><span lang="ru">Счётчик по работникам: (16 − 10) ÷ 15 = 0,400; 60 000 × 0,400</span><span lang="en">The headcount meter: (16 − 10) ÷ 15 = 0.400; 60,000 × 0.400</span></td>
+              <td data-num="24000"></td>
             </tr>
             <tr>
-              <td><span lang="ru">Уплачено за рубежом</span><span lang="en">Paid abroad</span></td>
-              <td data-num="55000"></td>
+              <td><span lang="ru">Счётчик по плате: (45 000 − 33 300) ÷ 33 300 = 0,351; 60 000 × 0,351</span><span lang="en">The wage meter: (45,000 − 33,300) ÷ 33,300 = 0.351; 60,000 × 0.351</span></td>
+              <td data-num="21060"></td>
             </tr>
             <tr class="total">
-              <td><span lang="ru">Кредит: меньшее из двух</span><span lang="en">The credit: the lesser of the two</span></td>
-              <td data-num="42000"></td>
+              <td><span lang="ru">Кредит: 60 000 − 24 000 − 21 060</span><span lang="en">The credit: 60,000 − 24,000 − 21,060</span></td>
+              <td data-num="14940"></td>
             </tr>
           </tbody>
         </table>
-        <p lang="ru">Неиспользованные <span data-num="13000"></span> идут назад на
-          <span data-fig="ftc_carryback"></span> год и вперёд на
-          <span data-fig="ftc_carryforward"></span> лет. Вместо кредита иностранный налог можно
-          взять вычетом — но выбор делается <em>сразу по всем странам</em> и на весь год, а не по
-          каждой отдельно.</p>
-        <p lang="en">The unused <span data-num="13000"></span> goes back
-          <span data-fig="ftc_carryback"></span> year and forward
-          <span data-fig="ftc_carryforward"></span> years. Instead of a credit the foreign tax may
-          be deducted — but the choice is made <em>for all countries at once</em> and for the
-          whole year, not country by country.</p>
-        <p lang="ru">Заготовленные неверные ответы: <span data-num="55000"></span> — предел не
-          применён; <span data-num="13000"></span> — за кредит принято превышение;
-          <span data-num="168000"></span> — взят весь налог США.</p>
-        <p lang="en">The prepared wrong answers: <span data-num="55000"></span> — no limit applied;
-          <span data-num="13000"></span> — the excess taken as the credit;
-          <span data-num="168000"></span> — the whole US tax taken.</p>
+        <p lang="ru">Оба условия выполнены — 16 меньше <span data-fig="shic_fte"></span>,
+          $45 000 меньше <span data-fig="shic_wages"></span>, — и всё же от кредита осталась
+          четверть. Так и задумано: полную половину взносов получает только совсем маленький и
+          совсем низкооплачиваемый работодатель, а между порогами кредит тает быстро.</p>
+        <p lang="en">Both conditions are met — 16 is fewer than
+          <span data-fig="shic_fte"></span> and $45,000 is less than
+          <span data-fig="shic_wages"></span> — and yet a quarter of the credit is what survives.
+          That is by design: the full half of the premiums goes only to a very small and very
+          low-paying employer, and between the thresholds the credit melts fast.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="60000"></span> — счётчики не
+          применены вовсе; <span data-num="36000"></span> — учтён только счётчик по работникам;
+          <span data-num="23364"></span> — счётчик по плате взят от оставшихся $36 000, а не от
+          исходных $60 000. Последняя ошибка — самая частая: счётчики независимы и вычитаются оба
+          из одной величины.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="60000"></span> — no meters applied
+          at all; <span data-num="36000"></span> — only the headcount meter counted;
+          <span data-num="23364"></span> — the wage meter taken on the remaining $36,000 rather
+          than on the original $60,000. That last is the commonest: the meters are independent and
+          both come off the same amount.</p>
       </div>
     </div>
+
 
     <!-- ============================================================ -->
     <section class="sub" id="s82">
@@ -996,7 +1077,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-5. Убыток, очищенный от личного</span><span lang="en">Example 8-5. A loss cleared of the personal</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-6. Убыток, очищенный от личного</span><span lang="en">Example 8-6. A loss cleared of the personal</span></div>
       <div class="example__body">
         <p lang="ru">Одинокий налогоплательщик за 2025 год: заработная плата на подработке
           $9 000, проценты по личным сбережениям $1 200, убыток единоличного предприятия
@@ -1098,7 +1179,7 @@
       goes on. Where there are several losses, the earliest is spent first.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-6. Восемьдесят процентов, а не всё</span><span lang="en">Example 8-6. Eighty per cent, not everything</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-7. Восемьдесят процентов, а не всё</span><span lang="en">Example 8-7. Eighty per cent, not everything</span></div>
       <div class="example__body">
         <p lang="ru">Убыток 2023 года — $200 000, перенесён вперёд. В 2025 году налогооблагаемый
           доход до вычета убытка — $150 000.</p>
@@ -1318,7 +1399,7 @@
       shrubs counts as one item, not as a set of things.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-7. Одно здание, два режима</span><span lang="en">Example 8-7. One building, two regimes</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-8. Одно здание, два режима</span><span lang="en">Example 8-8. One building, two regimes</span></div>
       <div class="example__body">
         <p lang="ru">Здание куплено за $200 000 и используется на 60% в бизнесе, на 40% лично.
           По деловой части взята амортизация $70 000. Землетрясение в зоне объявленного бедствия
@@ -1407,7 +1488,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-8. Ограбление магазина</span><span lang="en">Example 8-8. A shop is robbed</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-9. Ограбление магазина</span><span lang="en">Example 8-9. A shop is robbed</span></div>
       <div class="example__body">
         <p lang="ru">2 октября 2025 года из магазина похищен товар на $9 000; хозяйка обнаружила
           пропажу в тот же день. Страховая компания признала требование и в феврале 2026 года
@@ -1534,6 +1615,10 @@
           <th><span lang="ru">Когда налог приостанавливается</span><span lang="en">When the tax is suspended</span></th>
           <td><span lang="ru">Ожидаемый пробег за период — <span data-fig="hvut_miles"></span> миль и меньше; для сельскохозяйственной машины — <span data-fig="hvut_miles_farm"></span></span><span lang="en">Expected mileage for the period is <span data-fig="hvut_miles"></span> or less; for an agricultural vehicle, <span data-fig="hvut_miles_farm"></span></span></td>
         </tr>
+        <tr>
+          <th><span lang="ru">Сколько платить</span><span lang="en">How much is due</span></th>
+          <td><span lang="ru"><span data-fig="hvut_tax_min"></span> при массе ровно <span data-fig="hvut_weight"></span> фунтов и на <span data-fig="hvut_tax_step"></span> больше за каждую следующую полную тысячу, но не более <span data-fig="hvut_tax_max"></span>. Лесовозная машина платит три четверти</span><span lang="en"><span data-fig="hvut_tax_min"></span> at a weight of exactly <span data-fig="hvut_weight"></span> pounds and <span data-fig="hvut_tax_step"></span> more for each further full thousand, but never above <span data-fig="hvut_tax_max"></span>. A logging vehicle pays three quarters</span></td>
+        </tr>
         <tr class="total">
           <th><span lang="ru">Когда возвращается</span><span lang="en">When it is refunded</span></th>
           <td><span lang="ru">Машина уничтожена, украдена, продана или пробег за период оказался ниже предела</span><span lang="en">The vehicle was destroyed, stolen or sold, or the mileage for the period fell below the limit</span></td>
@@ -1557,6 +1642,66 @@
       <p lang="en">As to mileage: it is the <em>expected</em> figure. The suspension is claimed in
         advance, and if the vehicle later crosses the limit after all, the tax for the whole period
         falls due.</p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 8-10. Тягач, прицеп и груз</span><span lang="en">Example 8-10. Tractor, trailer and load</span></div>
+      <div class="example__body">
+        <p lang="ru">Фермер собрал сцепку: снаряжённая масса тягача — 18 000 фунтов, обычно
+          используемого с ним прицепа — 12 000, обычно перевозимый груз — 28 000. Впервые выехал
+          на дорогу общего пользования 12 ноября 2025 года. За период рассчитывает проехать
+          6 000 миль по сельскохозяйственным делам.</p>
+        <p lang="en">A farmer put together a rig: the tractor unit weighs 18,000 pounds unloaded,
+          the trailer customarily used with it 12,000, and the load customarily carried 28,000. It
+          was first driven on a public highway on November 12, 2025. Over the period he expects to
+          drive 6,000 miles on farm business.</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Снаряжённая масса тягача</span><span lang="en">Tractor unit, unloaded</span></td>
+              <td data-num="18000" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Снаряжённая масса прицепа</span><span lang="en">Trailer, unloaded</span></td>
+              <td data-num="12000" data-unit="plain"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Обычно перевозимый груз</span><span lang="en">Load customarily carried</span></td>
+              <td data-num="28000" data-unit="plain"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Полная облагаемая масса, фунтов</span><span lang="en">Taxable gross weight, pounds</span></td>
+              <td data-num="58000" data-unit="plain"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">58 000 фунтов — больше <span data-fig="hvut_weight"></span>, и машина под
+          налог подпадает: по ставке это <span data-num="166"></span> за период. Но пробег
+          ожидается 6 000 миль, а для <em>сельскохозяйственной</em> машины предел —
+          <span data-fig="hvut_miles_farm"></span>, а не <span data-fig="hvut_miles"></span>.
+          Значит, налог <strong>приостанавливается</strong> и платить нечего.</p>
+        <p lang="en">58,000 pounds is above <span data-fig="hvut_weight"></span>, so the vehicle is
+          within the tax: at the rate that comes to <span data-num="166"></span> for the period.
+          But the expected mileage is 6,000, and for an <em>agricultural</em> vehicle the limit is
+          <span data-fig="hvut_miles_farm"></span>, not <span data-fig="hvut_miles"></span>. So the
+          tax is <strong>suspended</strong> and nothing is payable.</p>
+        <p lang="ru">И вот главное, ради чего пример и нужен: <strong>приостановка не освобождает
+          от подачи</strong>. Именно на форме 2290 приостановка и заявляется — машина показывается
+          в категории W. Срок — последний день месяца, следующего за месяцем первого
+          использования, то есть <strong>31 декабря 2025 года</strong>.</p>
+        <p lang="en">And here is the point of the example: <strong>suspension does not excuse
+          filing</strong>. It is on Form 2290 that the suspension is claimed — the vehicle is
+          reported in category W. The due date is the last day of the month following the month of
+          first use, that is <strong>December 31, 2025</strong>.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="166"></span> к уплате — предел
+          пробега взят как <span data-fig="hvut_miles"></span>, хотя машина сельскохозяйственная;
+          «налога нет, и подавать нечего» — приостановка снимает налог, но не обязанность;
+          «под налог не подпадает» — в массу включён один тягач, без прицепа и груза.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="166"></span> payable — the mileage
+          limit taken as <span data-fig="hvut_miles"></span> though the vehicle is agricultural;
+          “no tax and nothing to file” — suspension removes the tax but not the duty to file;
+          “outside the tax” — only the tractor unit counted, without trailer or load.</p>
+      </div>
     </div>
 
     <h3><span lang="ru">Акциз на топливо у фермера</span><span lang="en">Fuel excise for a farmer</span></h3>
@@ -1647,7 +1792,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-9. Покрытие не предложено</span><span lang="en">Example 8-9. No coverage offered</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-11. Покрытие не предложено</span><span lang="en">Example 8-11. No coverage offered</span></div>
       <div class="example__body">
         <p lang="ru">У компании 90 работников полной занятости. Медицинское покрытие не
           предложено никому. Четверо работников купили страховку на бирже и получили кредит на
@@ -1710,33 +1855,35 @@
         <tr><th>15</th><td><span lang="ru">Кредит малому работодателю за медицинскую страховку работников полагается при <strong>строго меньше</strong> <span data-fig="shic_fte"></span> работников в пересчёте на полную занятость. Ровно двадцать пять — уже не проходит</span><span lang="en">The small employer health insurance credit is available where there are <strong>fewer than</strong> <span data-fig="shic_fte"></span> full-time equivalent employees, strictly. Exactly twenty-five does not qualify</span></td></tr>
         <tr><th>16</th><td><span lang="ru">Работники для этого кредита считаются в пересчёте на <strong>полную занятость</strong>, а не по головам: 48 человек на полставки — это 24 работника, и порог пройден. Считать головы — готовый неверный ответ</span><span lang="en">Employees for this credit are counted as <strong>full-time equivalents</strong>, not by head: 48 half-time people are 24 employees, and the threshold is met. Counting heads is a ready-made wrong answer</span></td></tr>
         <tr><th>17</th><td><span lang="ru">Кредит за медицинскую страховку даётся не бессрочно, а только <strong><span data-fig="shic_years"></span> года подряд</strong>, и притом страховка должна быть куплена через биржу SHOP — площадку для покупки страховки малыми работодателями, а не у страховщика напрямую. Показатель средней годовой платы, при котором кредит ещё полагается, индексируется и меняется год от года</span><span lang="en">The health insurance credit is not open-ended: it runs for <strong><span data-fig="shic_years"></span> consecutive years</strong> only, and the insurance must be bought through the SHOP marketplace — the exchange where small employers buy cover, not direct from an insurer. The average annual wage figure below which the credit is available is indexed and moves from year to year</span></td></tr>
-        <tr><th>18</th><td><span lang="ru">Кредит на восстановление сертифицированного исторического здания берётся не сразу, а равными долями по <span data-fig="rehab_rate"></span> за <span data-fig="rehab_years"></span> лет, и базис здания уменьшается на <strong>весь</strong> кредит сразу, а не по частям</span><span lang="en">The credit for rehabilitating a certified historic building is not taken at once but in equal parts of <span data-fig="rehab_rate"></span> over <span data-fig="rehab_years"></span> years, while the basis of the building is reduced by the <strong>whole</strong> credit immediately, not in instalments</span></td></tr>
-        <tr><th>19</th><td><span lang="ru">Затраты работодателя на детский сад для работников под <a class="sec" href="reference.html#p179">§179</a> не подпадают — немедленного вычета по ним нет. Кредит за детский сад при этом есть: 25% расходов на сам сад и 10% на услуги подбора, вместе не больше $150 000 за год</span><span lang="en">An employer's spending on childcare for employees does not qualify for section 179 — there is no immediate deduction. The childcare credit does exist, though: 25% of the childcare expenditure and 10% of resource-and-referral costs, together no more than $150,000 a year</span></td></tr>
-        <tr><th>20</th><td><span lang="ru">Предел иностранного налогового кредита — <strong>доля налога США</strong>, приходящаяся на иностранный доход: налог США до кредитов, умноженный на иностранный доход и делённый на весь доход. Сама уплаченная за рубежом сумма пределом не является, и разница переносится</span><span lang="en">The limit on the foreign tax credit is the <strong>share of the US tax</strong> attributable to foreign income: US tax before credits, multiplied by foreign income over total income. The amount actually paid abroad is not the limit, and the difference carries over</span></td></tr>
-        <tr><th>21</th><td><span lang="ru">Выбор между <strong>кредитом и вычетом</strong> иностранного налога делается сразу по всем странам и на весь год: нельзя по одной стране взять кредит, а по другой вычет. Выбор можно менять в течение десяти лет уточнённой декларацией</span><span lang="en">The choice between <strong>credit and deduction</strong> for foreign tax is made across all countries and for the whole year at once: you cannot take a credit for one country and a deduction for another. The choice may be changed within ten years by amending the return</span></td></tr>
-        <tr><th>22</th><td><span lang="ru">Партнёрство и S-корпорация чистого операционного убытка <strong>не имеют</strong>: убыток проходит насквозь к партнёрам и акционерам, и уже они считают его у себя. Физическое лицо, наследственная масса и траст считают его по форме 172; корпорация C — у себя, но без деления на деловое и неделовое: у неё всё деловое</span><span lang="en">A partnership and an S corporation <strong>have no</strong> net operating loss: the loss passes through to the partners and shareholders, who figure it in their own hands. An individual, an estate and a trust figure it on Form 172; a C corporation figures it itself, but with no split into business and non-business: for it everything is business</span></td></tr>
-        <tr><th>23</th><td><span lang="ru">При расчёте чистого операционного убытка <strong>заработная плата</strong> считается деловым доходом — она заработана трудом. Пособие по безработице тоже деловое. А проценты, дивиденды и прирост капитала от инвестиций — неделовые</span><span lang="en">In figuring a net operating loss, <strong>wages</strong> count as business income — they are earned by working. Unemployment compensation is business income too. Interest, dividends and capital gains from investments are non-business</span></td></tr>
-        <tr><th>24</th><td><span lang="ru">Стандартный вычет целиком неделовой, но обратно прибавляется <strong>не весь</strong> он, а лишь превышение неделовых вычетов над неделовым доходом. Стандартный вычет $15 750 при процентах $1 200 даёт прибавку $14 550, а не $15 750</span><span lang="en">The standard deduction is wholly non-business, but what is added back is <strong>not all of it</strong> — only the excess of non-business deductions over non-business income. A $15,750 standard deduction against $1,200 of interest adds back $14,550, not $15,750</span></td></tr>
-        <tr><th>25</th><td><span lang="ru">Потери от несчастного случая считаются <strong>деловым</strong> вычетом при расчёте убытка даже тогда, когда погибшее имущество было личным. Это исключение из общего деления, и держится оно на том, что потеря не зависела от воли налогоплательщика</span><span lang="en">Casualty losses count as <strong>business</strong> deductions in figuring a net operating loss even where the property lost was personal. It is an exception to the general split, resting on the fact that the loss was none of the taxpayer's doing</span></td></tr>
-        <tr><th>26</th><td><span lang="ru">Налог штата на доход <em>от бизнеса</em> — деловой вычет. Прочие постатейные вычеты — медицинские расходы, благотворительность, проценты по ипотеке жилья — неделовые и в убыток не идут</span><span lang="en">State tax on <em>business</em> income is a business deduction. The other itemized deductions — medical expenses, charity, home mortgage interest — are non-business and do not feed the loss</span></td></tr>
-        <tr><th>27</th><td><span lang="ru">Чистый операционный убыток, возникший после 2020 года, переносится <strong>только вперёд</strong>, зато без ограничения срока. Назад — нельзя: правило переноса назад на два года, действовавшее до 2018 года и ненадолго вернувшееся в 2018–2020 годах, отменено</span><span lang="en">A net operating loss arising after 2020 carries <strong>forward only</strong>, but with no time limit. Back it cannot go: the two-year carryback that applied before 2018, and came back briefly for 2018–2020, is gone</span></td></tr>
-        <tr><th>28</th><td><span lang="ru">Исключение из запрета на перенос назад одно — <strong>фермерское</strong>: фермерская часть убытка может пойти назад на <span data-fig="nol_farm_carryback"></span> года. Только она, а не весь убыток; от переноса назад можно и отказаться, оставив всё на будущее</span><span lang="en">There is one exception to the ban on carrybacks — the <strong>farming</strong> one: the farming portion of the loss may go back <span data-fig="nol_farm_carryback"></span> years. Only that portion, not the whole loss; and the carryback may be waived, leaving everything for the future</span></td></tr>
-        <tr><th>29</th><td><span lang="ru">Перенесённый убыток гасит не более <span data-fig="nol_limit_pct"></span> налогооблагаемого дохода того года, куда он пришёл, — значит что-то всегда останется обложенным. База для этих процентов считается <strong>до</strong> вычета самого убытка и до вычета квалифицированного дохода бизнеса</span><span lang="en">A carried-over loss offsets no more than <span data-fig="nol_limit_pct"></span> of the taxable income of the year it reaches — so something always stays taxed. The base for that percentage is figured <strong>before</strong> the loss deduction itself and before the qualified business income deduction</span></td></tr>
-        <tr><th>30</th><td><span lang="ru">Когда убытков накопилось несколько, расходуется <strong>самый ранний</strong> из них. Порядок важен, потому что убытки до 2018 года и после подчиняются разным правилам по сроку и по восьмидесяти процентам</span><span lang="en">Where several losses have piled up, the <strong>earliest</strong> is used first. The order matters because losses from before 2018 and after obey different rules on duration and on the eighty per cent</span></td></tr>
-        <tr><th>31</th><td><span lang="ru">Потеря от несчастного случая вычитается в год <strong>события</strong>, а потеря от кражи — в год её <strong>обнаружения</strong>. Кража, случившаяся в декабре и замеченная в январе, относится к январю</span><span lang="en">A casualty loss is deducted in the year of the <strong>event</strong>; a theft loss in the year of its <strong>discovery</strong>. A theft committed in December and noticed in January belongs to January</span></td></tr>
-        <tr><th>32</th><td><span lang="ru">Деловое имущество, погибшее <strong>целиком</strong>: берётся скорректированный базис, а падение рыночной стоимости не рассматривается вовсе. Правило «меньшее из двух» здесь не применяется — оно для частичного разрушения</span><span lang="en">Business property <strong>wholly</strong> destroyed: the adjusted basis is taken and the decline in market value is not looked at at all. The “lesser of the two” rule does not apply here — that is for partial destruction</span></td></tr>
-        <tr><th>33</th><td><span lang="ru">Разрушено <strong>частично</strong> — берётся меньшее из двух: падения рыночной стоимости и скорректированного базиса. Это верно и для делового имущества, и для личного; различие между ними не здесь, а в порогах</span><span lang="en"><strong>Partly</strong> destroyed — the lesser of two is taken: the decline in market value or the adjusted basis. That holds for business and personal property alike; the difference between them lies not here but in the floors</span></td></tr>
-        <tr><th>34</th><td><span lang="ru">У делового имущества порогов нет вовсе: вычитается вся посчитанная сумма. У личного из потери вычитается <span data-fig="casualty_floor"></span> на каждое событие и <span data-fig="casualty_agi_pct"></span> скорректированного валового дохода за год — и только потом остаток идёт в постатейные вычеты</span><span lang="en">Business property has no floors at all: the whole computed amount is deducted. From a personal loss you take off <span data-fig="casualty_floor"></span> for each event and <span data-fig="casualty_agi_pct"></span> of adjusted gross income for the year — and only then does the remainder go into itemized deductions</span></td></tr>
-        <tr><th>35</th><td><span lang="ru">Личные потери от несчастного случая <strong>вне объявленного федерального бедствия</strong> не вычитаются вовсе — с 2018 года и дальше. Единственная лазейка: они гасят прибыли от несчастных случаев того же года, если такие были</span><span lang="en">Personal casualty losses <strong>outside a federally declared disaster</strong> are not deductible at all — from 2018 onwards. The one opening left: they offset casualty gains of the same year, if there were any</span></td></tr>
-        <tr><th>36</th><td><span lang="ru">Имущество, использовавшееся и для дела, и лично, считается <strong>двумя отдельными расчётами</strong>: деловая часть по своим правилам и без порогов, личная по своим и с порогами. Один расчёт на всё здание — готовый неверный ответ</span><span lang="en">Property used both in business and personally is figured as <strong>two separate computations</strong>: the business part by its rules and without floors, the personal part by its own and with them. A single computation for the whole building is a ready-made wrong answer</span></td></tr>
-        <tr><th>37</th><td><span lang="ru">Погибшие товарные запасы учитываются <strong>либо</strong> через себестоимость проданного — просто не попадают в конечный остаток, — <strong>либо</strong> отдельной потерей от несчастного случая. Обоими способами сразу нельзя: это был бы двойной вычет</span><span lang="en">Inventory destroyed is accounted for <strong>either</strong> through cost of goods sold — by simply not appearing in closing inventory — <strong>or</strong> as a separate casualty loss. Not both: that would be a double deduction</span></td></tr>
-        <tr><th>38</th><td><span lang="ru">Пока есть <strong>обоснованная надежда на возмещение</strong> — иск не рассмотрен, страховая не ответила, — эта часть потери не вычитается ни в каком году. Вычет ждёт, пока не станет ясно, сколько возместят</span><span lang="en">While there is a <strong>reasonable prospect of recovery</strong> — a claim not yet decided, an insurer not yet answering — that part of the loss is not deducted in any year. The deduction waits until it is clear how much will come back</span></td></tr>
-        <tr><th>39</th><td><span lang="ru">Если по застрахованному имуществу требование по страховке <strong>не подано</strong>, вычитается только та часть потери, которую полис и так не покрывал. Отказаться от возмещения, чтобы получить вычет побольше, не выйдет</span><span lang="en">Where no <strong>insurance claim was filed</strong> on insured property, only the part of the loss the policy would not have covered is deductible. Foregoing the recovery to get a larger deduction does not work</span></td></tr>
-        <tr><th>40</th><td><span lang="ru">Потерю от бедствия <strong>федерального уровня</strong> можно по выбору отнести к <em>предыдущему</em> году и получить возврат налога сразу, уточнённой декларацией, — не дожидаясь декларации за год самого бедствия</span><span lang="en">A loss from a <strong>federally declared disaster</strong> may be elected into the <em>preceding</em> year and the tax refunded at once by amending that return — without waiting for the return for the year of the disaster itself</span></td></tr>
-        <tr><th>41</th><td><span lang="ru">Полная облагаемая масса для налога за пользование дорогами включает саму машину, прицепы и <strong>обычно перевозимый груз</strong>, а не только вес тягача. Порог в 55 000 фунтов проверяется по этой полной величине</span><span lang="en">Taxable gross weight for the heavy highway vehicle use tax takes in the vehicle, its trailers and the <strong>load customarily carried</strong>, not the tractor alone. The 55,000-pound threshold is tested on that full figure</span></td></tr>
-        <tr><th>42</th><td><span lang="ru">Период формы 2290 — налога за пользование дорогами — идёт <strong>с 1 июля по 30 июня</strong>, а не по календарному году. Подаётся форма до конца месяца, следующего за месяцем первого использования машины в этом периоде</span><span lang="en">The period for Form 2290 — the heavy highway vehicle use tax — runs <strong>from July 1 to June 30</strong>, not by the calendar year. The form is due by the end of the month following the month the vehicle was first used in that period</span></td></tr>
-        <tr><th>43</th><td><span lang="ru">Кредит за акциз на топливо есть по <strong>бензину</strong>, использованному на ферме не на дорогах, и его <strong>нет</strong> по дизельному топливу: то продаётся окрашенным и без акциза, а возвращать нечего, если налог не платили</span><span lang="en">The fuel excise tax credit is available on <strong>gasoline</strong> used on a farm off the highways, and is <strong>not</strong> available on diesel: diesel is sold dyed and untaxed, and there is nothing to refund where no tax was paid</span></td></tr>
-        <tr class="total"><th>44</th><td><span lang="ru">Для платежа крупного работодателя за медицинское покрытие работник полной занятости — это <span data-fig="ale_hours_month"></span> часов в месяц или <span data-fig="ale_hours_week"></span> в неделю, а не 120 часов. И первые <span data-fig="esrp_exempt"></span> работников вычитаются из расчёта <strong>только при первом виде платежа</strong> — за то, что покрытие не предложено вовсе. При втором виде — покрытие предложено, но неподходящее или неподъёмное — такого вычета нет</span><span lang="en">For the employer shared responsibility payment a full-time employee is one working <span data-fig="ale_hours_month"></span> hours a month, or <span data-fig="ale_hours_week"></span> a week — not 120 hours. And the first <span data-fig="esrp_exempt"></span> employees come out of the computation <strong>for the first kind of payment only</strong> — the one for offering no coverage at all. For the second kind — coverage offered but inadequate or unaffordable — there is no such reduction</span></td></tr>
+        <tr><th>18</th><td><span lang="ru">Два счётчика кредита за страховку считаются <strong>независимо</strong> и оба вычитаются из одной и той же величины — из <span data-fig="shic_rate"></span> взносов. Первый включается выше <span data-fig="shic_fte_phase"></span> работников, второй — выше <span data-fig="shic_wages_phase"></span> средней платы. Считать их последовательно, уменьшая уже уменьшенное, — самая частая ошибка</span><span lang="en">The two meters of the health insurance credit are figured <strong>independently</strong> and both come off one and the same amount — <span data-fig="shic_rate"></span> of the premiums. The first starts above <span data-fig="shic_fte_phase"></span> employees, the second above <span data-fig="shic_wages_phase"></span> of average pay. Applying them one after the other, reducing what is already reduced, is the commonest error</span></td></tr>
+        <tr><th>19</th><td><span lang="ru">Кредит на восстановление сертифицированного исторического здания берётся не сразу, а равными долями по <span data-fig="rehab_rate"></span> за <span data-fig="rehab_years"></span> лет, и базис здания уменьшается на <strong>весь</strong> кредит сразу, а не по частям</span><span lang="en">The credit for rehabilitating a certified historic building is not taken at once but in equal parts of <span data-fig="rehab_rate"></span> over <span data-fig="rehab_years"></span> years, while the basis of the building is reduced by the <strong>whole</strong> credit immediately, not in instalments</span></td></tr>
+        <tr><th>20</th><td><span lang="ru">Затраты работодателя на детский сад для работников под <a class="sec" href="reference.html#p179">§179</a> не подпадают — немедленного вычета по ним нет. Кредит за детский сад при этом есть: 25% расходов на сам сад и 10% на услуги подбора, вместе не больше $150 000 за год</span><span lang="en">An employer's spending on childcare for employees does not qualify for section 179 — there is no immediate deduction. The childcare credit does exist, though: 25% of the childcare expenditure and 10% of resource-and-referral costs, together no more than $150,000 a year</span></td></tr>
+        <tr><th>21</th><td><span lang="ru">Предел иностранного налогового кредита — <strong>доля налога США</strong>, приходящаяся на иностранный доход: налог США до кредитов, умноженный на иностранный доход и делённый на весь доход. Сама уплаченная за рубежом сумма пределом не является, и разница переносится</span><span lang="en">The limit on the foreign tax credit is the <strong>share of the US tax</strong> attributable to foreign income: US tax before credits, multiplied by foreign income over total income. The amount actually paid abroad is not the limit, and the difference carries over</span></td></tr>
+        <tr><th>22</th><td><span lang="ru">Выбор между <strong>кредитом и вычетом</strong> иностранного налога делается сразу по всем странам и на весь год: нельзя по одной стране взять кредит, а по другой вычет. Выбор можно менять в течение десяти лет уточнённой декларацией</span><span lang="en">The choice between <strong>credit and deduction</strong> for foreign tax is made across all countries and for the whole year at once: you cannot take a credit for one country and a deduction for another. The choice may be changed within ten years by amending the return</span></td></tr>
+        <tr><th>23</th><td><span lang="ru">Партнёрство и S-корпорация чистого операционного убытка <strong>не имеют</strong>: убыток проходит насквозь к партнёрам и акционерам, и уже они считают его у себя. Физическое лицо, наследственная масса и траст считают его по форме 172; корпорация C — у себя, но без деления на деловое и неделовое: у неё всё деловое</span><span lang="en">A partnership and an S corporation <strong>have no</strong> net operating loss: the loss passes through to the partners and shareholders, who figure it in their own hands. An individual, an estate and a trust figure it on Form 172; a C corporation figures it itself, but with no split into business and non-business: for it everything is business</span></td></tr>
+        <tr><th>24</th><td><span lang="ru">При расчёте чистого операционного убытка <strong>заработная плата</strong> считается деловым доходом — она заработана трудом. Пособие по безработице тоже деловое. А проценты, дивиденды и прирост капитала от инвестиций — неделовые</span><span lang="en">In figuring a net operating loss, <strong>wages</strong> count as business income — they are earned by working. Unemployment compensation is business income too. Interest, dividends and capital gains from investments are non-business</span></td></tr>
+        <tr><th>25</th><td><span lang="ru">Стандартный вычет целиком неделовой, но обратно прибавляется <strong>не весь</strong> он, а лишь превышение неделовых вычетов над неделовым доходом. Стандартный вычет $15 750 при процентах $1 200 даёт прибавку $14 550, а не $15 750</span><span lang="en">The standard deduction is wholly non-business, but what is added back is <strong>not all of it</strong> — only the excess of non-business deductions over non-business income. A $15,750 standard deduction against $1,200 of interest adds back $14,550, not $15,750</span></td></tr>
+        <tr><th>26</th><td><span lang="ru">Потери от несчастного случая считаются <strong>деловым</strong> вычетом при расчёте убытка даже тогда, когда погибшее имущество было личным. Это исключение из общего деления, и держится оно на том, что потеря не зависела от воли налогоплательщика</span><span lang="en">Casualty losses count as <strong>business</strong> deductions in figuring a net operating loss even where the property lost was personal. It is an exception to the general split, resting on the fact that the loss was none of the taxpayer's doing</span></td></tr>
+        <tr><th>27</th><td><span lang="ru">Налог штата на доход <em>от бизнеса</em> — деловой вычет. Прочие постатейные вычеты — медицинские расходы, благотворительность, проценты по ипотеке жилья — неделовые и в убыток не идут</span><span lang="en">State tax on <em>business</em> income is a business deduction. The other itemized deductions — medical expenses, charity, home mortgage interest — are non-business and do not feed the loss</span></td></tr>
+        <tr><th>28</th><td><span lang="ru">Чистый операционный убыток, возникший после 2020 года, переносится <strong>только вперёд</strong>, зато без ограничения срока. Назад — нельзя: правило переноса назад на два года, действовавшее до 2018 года и ненадолго вернувшееся в 2018–2020 годах, отменено</span><span lang="en">A net operating loss arising after 2020 carries <strong>forward only</strong>, but with no time limit. Back it cannot go: the two-year carryback that applied before 2018, and came back briefly for 2018–2020, is gone</span></td></tr>
+        <tr><th>29</th><td><span lang="ru">Исключение из запрета на перенос назад одно — <strong>фермерское</strong>: фермерская часть убытка может пойти назад на <span data-fig="nol_farm_carryback"></span> года. Только она, а не весь убыток; от переноса назад можно и отказаться, оставив всё на будущее</span><span lang="en">There is one exception to the ban on carrybacks — the <strong>farming</strong> one: the farming portion of the loss may go back <span data-fig="nol_farm_carryback"></span> years. Only that portion, not the whole loss; and the carryback may be waived, leaving everything for the future</span></td></tr>
+        <tr><th>30</th><td><span lang="ru">Перенесённый убыток гасит не более <span data-fig="nol_limit_pct"></span> налогооблагаемого дохода того года, куда он пришёл, — значит что-то всегда останется обложенным. База для этих процентов считается <strong>до</strong> вычета самого убытка и до вычета квалифицированного дохода бизнеса</span><span lang="en">A carried-over loss offsets no more than <span data-fig="nol_limit_pct"></span> of the taxable income of the year it reaches — so something always stays taxed. The base for that percentage is figured <strong>before</strong> the loss deduction itself and before the qualified business income deduction</span></td></tr>
+        <tr><th>31</th><td><span lang="ru">Когда убытков накопилось несколько, расходуется <strong>самый ранний</strong> из них. Порядок важен, потому что убытки до 2018 года и после подчиняются разным правилам по сроку и по восьмидесяти процентам</span><span lang="en">Where several losses have piled up, the <strong>earliest</strong> is used first. The order matters because losses from before 2018 and after obey different rules on duration and on the eighty per cent</span></td></tr>
+        <tr><th>32</th><td><span lang="ru">Потеря от несчастного случая вычитается в год <strong>события</strong>, а потеря от кражи — в год её <strong>обнаружения</strong>. Кража, случившаяся в декабре и замеченная в январе, относится к январю</span><span lang="en">A casualty loss is deducted in the year of the <strong>event</strong>; a theft loss in the year of its <strong>discovery</strong>. A theft committed in December and noticed in January belongs to January</span></td></tr>
+        <tr><th>33</th><td><span lang="ru">Деловое имущество, погибшее <strong>целиком</strong>: берётся скорректированный базис, а падение рыночной стоимости не рассматривается вовсе. Правило «меньшее из двух» здесь не применяется — оно для частичного разрушения</span><span lang="en">Business property <strong>wholly</strong> destroyed: the adjusted basis is taken and the decline in market value is not looked at at all. The “lesser of the two” rule does not apply here — that is for partial destruction</span></td></tr>
+        <tr><th>34</th><td><span lang="ru">Разрушено <strong>частично</strong> — берётся меньшее из двух: падения рыночной стоимости и скорректированного базиса. Это верно и для делового имущества, и для личного; различие между ними не здесь, а в порогах</span><span lang="en"><strong>Partly</strong> destroyed — the lesser of two is taken: the decline in market value or the adjusted basis. That holds for business and personal property alike; the difference between them lies not here but in the floors</span></td></tr>
+        <tr><th>35</th><td><span lang="ru">У делового имущества порогов нет вовсе: вычитается вся посчитанная сумма. У личного из потери вычитается <span data-fig="casualty_floor"></span> на каждое событие и <span data-fig="casualty_agi_pct"></span> скорректированного валового дохода за год — и только потом остаток идёт в постатейные вычеты</span><span lang="en">Business property has no floors at all: the whole computed amount is deducted. From a personal loss you take off <span data-fig="casualty_floor"></span> for each event and <span data-fig="casualty_agi_pct"></span> of adjusted gross income for the year — and only then does the remainder go into itemized deductions</span></td></tr>
+        <tr><th>36</th><td><span lang="ru">Личные потери от несчастного случая <strong>вне объявленного федерального бедствия</strong> не вычитаются вовсе — с 2018 года и дальше. Единственная лазейка: они гасят прибыли от несчастных случаев того же года, если такие были</span><span lang="en">Personal casualty losses <strong>outside a federally declared disaster</strong> are not deductible at all — from 2018 onwards. The one opening left: they offset casualty gains of the same year, if there were any</span></td></tr>
+        <tr><th>37</th><td><span lang="ru">Имущество, использовавшееся и для дела, и лично, считается <strong>двумя отдельными расчётами</strong>: деловая часть по своим правилам и без порогов, личная по своим и с порогами. Один расчёт на всё здание — готовый неверный ответ</span><span lang="en">Property used both in business and personally is figured as <strong>two separate computations</strong>: the business part by its rules and without floors, the personal part by its own and with them. A single computation for the whole building is a ready-made wrong answer</span></td></tr>
+        <tr><th>38</th><td><span lang="ru">Погибшие товарные запасы учитываются <strong>либо</strong> через себестоимость проданного — просто не попадают в конечный остаток, — <strong>либо</strong> отдельной потерей от несчастного случая. Обоими способами сразу нельзя: это был бы двойной вычет</span><span lang="en">Inventory destroyed is accounted for <strong>either</strong> through cost of goods sold — by simply not appearing in closing inventory — <strong>or</strong> as a separate casualty loss. Not both: that would be a double deduction</span></td></tr>
+        <tr><th>39</th><td><span lang="ru">Пока есть <strong>обоснованная надежда на возмещение</strong> — иск не рассмотрен, страховая не ответила, — эта часть потери не вычитается ни в каком году. Вычет ждёт, пока не станет ясно, сколько возместят</span><span lang="en">While there is a <strong>reasonable prospect of recovery</strong> — a claim not yet decided, an insurer not yet answering — that part of the loss is not deducted in any year. The deduction waits until it is clear how much will come back</span></td></tr>
+        <tr><th>40</th><td><span lang="ru">Если по застрахованному имуществу требование по страховке <strong>не подано</strong>, вычитается только та часть потери, которую полис и так не покрывал. Отказаться от возмещения, чтобы получить вычет побольше, не выйдет</span><span lang="en">Where no <strong>insurance claim was filed</strong> on insured property, only the part of the loss the policy would not have covered is deductible. Foregoing the recovery to get a larger deduction does not work</span></td></tr>
+        <tr><th>41</th><td><span lang="ru">Потерю от бедствия <strong>федерального уровня</strong> можно по выбору отнести к <em>предыдущему</em> году и получить возврат налога сразу, уточнённой декларацией, — не дожидаясь декларации за год самого бедствия</span><span lang="en">A loss from a <strong>federally declared disaster</strong> may be elected into the <em>preceding</em> year and the tax refunded at once by amending that return — without waiting for the return for the year of the disaster itself</span></td></tr>
+        <tr><th>42</th><td><span lang="ru">Полная облагаемая масса для налога за пользование дорогами включает саму машину, прицепы и <strong>обычно перевозимый груз</strong>, а не только вес тягача. Порог в 55 000 фунтов проверяется по этой полной величине</span><span lang="en">Taxable gross weight for the heavy highway vehicle use tax takes in the vehicle, its trailers and the <strong>load customarily carried</strong>, not the tractor alone. The 55,000-pound threshold is tested on that full figure</span></td></tr>
+        <tr><th>43</th><td><span lang="ru">Период формы 2290 — налога за пользование дорогами — идёт <strong>с 1 июля по 30 июня</strong>, а не по календарному году. Подаётся форма до конца месяца, следующего за месяцем первого использования машины в этом периоде</span><span lang="en">The period for Form 2290 — the heavy highway vehicle use tax — runs <strong>from July 1 to June 30</strong>, not by the calendar year. The form is due by the end of the month following the month the vehicle was first used in that period</span></td></tr>
+        <tr><th>44</th><td><span lang="ru">Приостановка налога за пользование дорогами по малому пробегу <strong>не освобождает от подачи</strong> формы 2290: именно на ней приостановка и заявляется, машина показывается в категории W. Предел — <span data-fig="hvut_miles"></span> миль, а для сельскохозяйственной машины — <span data-fig="hvut_miles_farm"></span></span><span lang="en">Suspension of the highway use tax for low mileage <strong>does not excuse filing</strong> Form 2290: it is on that form that the suspension is claimed, and the vehicle is reported in category W. The limit is <span data-fig="hvut_miles"></span> miles, or <span data-fig="hvut_miles_farm"></span> for an agricultural vehicle</span></td></tr>
+        <tr><th>45</th><td><span lang="ru">Кредит за акциз на топливо есть по <strong>бензину</strong>, использованному на ферме не на дорогах, и его <strong>нет</strong> по дизельному топливу: то продаётся окрашенным и без акциза, а возвращать нечего, если налог не платили</span><span lang="en">The fuel excise tax credit is available on <strong>gasoline</strong> used on a farm off the highways, and is <strong>not</strong> available on diesel: diesel is sold dyed and untaxed, and there is nothing to refund where no tax was paid</span></td></tr>
+        <tr class="total"><th>46</th><td><span lang="ru">Для платежа крупного работодателя за медицинское покрытие работник полной занятости — это <span data-fig="ale_hours_month"></span> часов в месяц или <span data-fig="ale_hours_week"></span> в неделю, а не 120 часов. И первые <span data-fig="esrp_exempt"></span> работников вычитаются из расчёта <strong>только при первом виде платежа</strong> — за то, что покрытие не предложено вовсе. При втором виде — покрытие предложено, но неподходящее или неподъёмное — такого вычета нет</span><span lang="en">For the employer shared responsibility payment a full-time employee is one working <span data-fig="ale_hours_month"></span> hours a month, or <span data-fig="ale_hours_week"></span> a week — not 120 hours. And the first <span data-fig="esrp_exempt"></span> employees come out of the computation <strong>for the first kind of payment only</strong> — the one for offering no coverage at all. For the second kind — coverage offered but inadequate or unaffordable — there is no such reduction</span></td></tr>
       </tbody>
     </table>
     </div>
