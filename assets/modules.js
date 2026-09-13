@@ -45,7 +45,7 @@ window.MODULES = [
   { id: "su10", no: "10", open: true,
     ru: "Операции партнёрства и распределения",
     en: "Partnership operations and distributions" },
-  { id: "su11", no: "11", open: false,
+  { id: "su11", no: "11", open: true,
     ru: "Выбытие доли партнёра",
     en: "Disposition of a partner’s interest" },
   { id: "su12", no: "12", open: false,
