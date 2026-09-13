@@ -18,6 +18,8 @@
 
 import hashlib
 import os
+import subprocess
+import shutil
 import re
 import sys
 
@@ -127,6 +129,44 @@ def check_numbers(text, where):
             ctx = re.sub(r"\s+", " ", plain[max(0, m.start() - 60):m.end() + 30])
             sys.exit("Сборка остановлена: в %s у числа срезано начало — "
                      "…%s…" % (where, ctx.strip()))
+
+
+def check_js_runs():
+    """Файлы данных должны не только разбираться, но и исполняться.
+
+    Синтаксическая проверка ловит сломанные скобки и молчит о ссылке на
+    необъявленную переменную. А она обрушивает весь файл: window.FIGURES
+    не появляется, и на каждой странице пустеет каждый показатель. Один
+    раз так и вышло, и сборка прошла.
+    """
+    if not shutil.which("node"):
+        print("node не найден: исполнение файлов данных не проверено")
+        return
+
+    files = ["figures-2025.js", "modules.js"] + [
+        "quiz-%s.js" % m for m in MODULES
+        if os.path.exists(os.path.join(HERE, "assets", "quiz-%s.js" % m))]
+    listing = ",".join('"assets/%s"' % f for f in files)
+    probe = (
+        "global.window={};"
+        "for (const f of [%s]) { require('./'+f); }"
+        "const F=window.FIGURES, Q=window.QUIZZES, S=window.QUIZSECS, M=window.MODULES;"
+        "if(!F||!F.items||!Object.keys(F.items).length) throw new Error('window.FIGURES пуст');"
+        "if(!M||!M.length) throw new Error('window.MODULES пуст');"
+        "for (const k of Object.keys(Q||{})) {"
+        "  if(!S[k]) throw new Error('нет QUIZSECS для '+k);"
+        "  for (const q of Q[k]) if(!S[k][q.sec]) throw new Error(k+': вопрос с чужим sec '+q.sec);"
+        "}"
+        "console.log('js ok');"
+    ) % listing
+
+    r = subprocess.run(["node", "-e", probe], cwd=HERE,
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        lines = [l.strip() for l in r.stderr.splitlines() if l.strip()]
+        msg = next((l for l in lines if "Error" in l or "error" in l),
+                   lines[0] if lines else "без сообщения")
+        sys.exit("Сборка остановлена: файлы данных не исполняются — %s" % msg)
 
 
 def check_sections():
@@ -241,6 +281,7 @@ def build():
         if os.path.exists(os.path.join(HERE, name)):
             check_clean(read(name), name)
 
+    check_js_runs()
     check_sections()
 
     router = r"""

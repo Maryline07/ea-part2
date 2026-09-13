@@ -39,7 +39,7 @@ window.MODULES = [
   { id: "su08", no: "08", open: true,
     ru: "Кредиты, убытки и дополнительные налоги",
     en: "Credits, losses and additional taxes" },
-  { id: "su09", no: "09", open: false,
+  { id: "su09", no: "09", open: true,
     ru: "Вклады в партнёрство",
     en: "Contributions to a partnership" },
   { id: "su10", no: "10", open: false,

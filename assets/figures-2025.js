@@ -34,6 +34,7 @@ var SRC_I6765 = { t: "Instructions for Form 6765, Credit for Increasing Research
 var SRC_F8882 = { t: "Form 8882, Credit for Employer-Provided Childcare Facilities and Services", u: "https://www.irs.gov/forms-pubs/about-form-8882" };
 var SRC_I172 = { t: "Instructions for Form 172, Net Operating Losses for Individuals, Estates, and Trusts", u: "https://www.irs.gov/instructions/i172" };
 var SRC_P547 = { t: "Publication 547 (2025), Casualties, Disasters, and Thefts", u: "https://www.irs.gov/publications/p547" };
+var SRC_P541 = { t: "Publication 541, Partnerships", u: "https://www.irs.gov/publications/p541" };
 var SRC_I2290 = { t: "Instructions for Form 2290, Heavy Highway Vehicle Use Tax Return", u: "https://www.irs.gov/instructions/i2290" };
 var SRC_RP2414 = { t: "Rev. Proc. 2024-14", u: "https://www.irs.gov/pub/irs-drop/rp-24-14.pdf" };
 var SRC_ACAFT = { t: "IRS, Identifying Full-time Employees", u: "https://www.irs.gov/affordable-care-act/employers/identifying-full-time-employees" };
@@ -1725,6 +1726,15 @@ window.FIGURES = {
       src: SRC_I6765
     },
 
+    p704c_years: {
+      n: 7, unit: "int",
+      ru: "Срок, в течение которого вложенное в партнёрство имущество остаётся под присмотром",
+      en: "Period during which property contributed to a partnership stays under watch",
+      note_ru: "Отсчёт идёт от даты вклада каждого предмета отдельно, а не от создания партнёрства. Внутри срока распределение поднимает у вкладчика отложенную прибыль.",
+      note_en: "The count runs from the date each item was contributed, separately, not from the partnership's formation. Within the period a distribution raises the contributor's deferred gain.",
+      src: SRC_P541
+    },
+
     rehab_rate: {
       n: 20, unit: "pct",
       ru: "Ставка кредита на восстановление исторического здания",
@@ -1986,6 +1996,9 @@ window.FIGURES = {
     { id: "qbi", ru: "Вычет квалифицированного дохода бизнеса", en: "Qualified business income deduction",
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
+    { id: "partnership", ru: "Партнёрства", en: "Partnerships",
+      keys: ["p704c_years"] },
+
     { id: "credits", ru: "Кредиты, убытки и дополнительные налоги", en: "Credits, losses and additional taxes",
       keys: ["gbc_threshold", "gbc_pct", "gbc_carryback", "gbc_carryforward",
              "wotc_hours_min", "wotc_hours_full", "wotc_rate_partial",
