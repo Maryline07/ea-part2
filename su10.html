@@ -787,6 +787,50 @@
       </div>
     </div>
 
+    <div class="plot">
+      <svg viewBox="0 0 640 200" role="img">
+        <title lang="ru">Из девяноста тысяч убытка двадцать застревают на базисе, двадцать пять на правилах риска, и в декларацию попадают сорок пять тысяч</title>
+        <title lang="en">Of a ninety-thousand loss, twenty thousand stick at basis, twenty-five at the at-risk rules, and forty-five thousand reach the return</title>
+
+        <text lang="ru" class="plot__cap" x="60" y="42">доля в убытке за год</text>
+        <text lang="en" class="plot__cap" x="60" y="42">share of the loss for the year</text>
+        <text class="plot__val" x="212" y="42" data-num="90000" data-unit="plain"></text>
+
+        <rect class="plot__box--sunk" x="60" y="56" width="120" height="48" />
+        <rect class="plot__box--tax" x="180" y="56" width="150" height="48" />
+        <rect class="plot__box--keep" x="330" y="56" width="270" height="48" />
+
+        <text class="plot__val" x="120" y="78" text-anchor="middle" data-num="20000" data-unit="plain"></text>
+        <text lang="ru" class="plot__cap" x="120" y="94" text-anchor="middle">стоит на базисе</text>
+        <text lang="en" class="plot__cap" x="120" y="94" text-anchor="middle">held at basis</text>
+
+        <text class="plot__val" x="255" y="78" text-anchor="middle" data-num="25000" data-unit="plain"></text>
+        <text lang="ru" class="plot__cap" x="255" y="94" text-anchor="middle">стоит на риске</text>
+        <text lang="en" class="plot__cap" x="255" y="94" text-anchor="middle">held at risk</text>
+
+        <text class="plot__val" x="465" y="78" text-anchor="middle" data-num="45000" data-unit="plain"></text>
+        <text lang="ru" class="plot__cap" x="465" y="94" text-anchor="middle">дошло до декларации</text>
+        <text lang="en" class="plot__cap" x="465" y="94" text-anchor="middle">reached the return</text>
+
+        <line class="plot__edge" x1="330" y1="50" x2="330" y2="128" />
+
+        <text lang="ru" class="plot__cap" x="60" y="146">третье и четвёртое сита — пассивность и избыточный убыток — пропустили всё</text>
+        <text lang="en" class="plot__cap" x="60" y="146">the third and fourth sieves — passivity and the excess business loss — let everything through</text>
+      </svg>
+      <p class="plot__note" lang="ru">Слева направо — порядок сит, и переставить его нельзя.
+        Ни одна из застрявших частей не пропала: обе ждут своего года. Но базис доли уменьшился
+        на все <span data-num="70000"></span>, а не на прошедшие сито
+        <span data-num="45000"></span>, — застрявший убыток базис всё равно съедает. Картина
+        верна для партнёра, который участвует материально; при пассивном участии третье сито
+        срезало бы ещё.</p>
+      <p class="plot__note" lang="en">Left to right is the order of the sieves, and it cannot be
+        rearranged. Neither stuck portion is lost: both wait for their year. But the basis of the
+        interest fell by the whole <span data-num="70000"></span>, not by the
+        <span data-num="45000"></span> that got through — a stuck loss eats the basis all the
+        same. The picture holds for a partner who materially participates; with passive
+        participation the third sieve would cut further.</p>
+    </div>
+
     <!-- ============================================================ -->
     <section class="sub" id="s104">
       <h2><span class="num">10.4</span>
@@ -1094,6 +1138,23 @@
       that. “Forty thousand a year” is a guaranteed payment. “Ten per cent of the profits” is not a
       guaranteed payment but a share. Interest on a partner's capital account is a guaranteed
       payment. So is rent for property they contributed.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Определён ли размер выплаты без учёта дохода партнёрства?</span>
+        <span lang="en">Is the amount of the payment fixed without regard to the partnership's income?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет</span><span lang="en">No</span></b>
+          <span lang="ru">Это <strong>распределяемая доля</strong>. «Десять процентов прибыли» останется долей, сколько бы лет её ни платили</span>
+          <span lang="en">It is a <strong>distributive share</strong>. “Ten per cent of the profits” stays a share however many years it is paid</span></div>
+        <div class="fork__b">
+          <b><span lang="ru">Да</span><span lang="en">Yes</span></b>
+          <span lang="ru">Это <strong>гарантированная выплата</strong>. Обычный доход партнёру, вычет партнёрству, на базис доли не влияет</span>
+          <span lang="en">It is a <strong>guaranteed payment</strong>. Ordinary income to the partner, a deduction to the partnership, and no effect on the basis of the interest</span></div>
+      </div>
+    </div>
 
     <div class="scroller">
     <table class="numbered">

@@ -269,6 +269,44 @@
       </div>
     </div>
 
+    <div class="plot">
+      <svg viewBox="0 0 640 180" role="img">
+        <title lang="ru">Пятьдесят тысяч прибыли от продажи доли делятся на восемнадцать тысяч обычного дохода и тридцать две тысячи капитальной прибыли</title>
+        <title lang="en">A fifty-thousand gain on the sale of an interest splits into eighteen thousand of ordinary income and thirty-two thousand of capital gain</title>
+
+        <text lang="ru" class="plot__cap" x="60" y="42">прибыль от продажи доли</text>
+        <text lang="en" class="plot__cap" x="60" y="42">gain on the sale of the interest</text>
+        <text class="plot__val" x="220" y="42" data-num="50000" data-unit="plain"></text>
+
+        <rect class="plot__box--tax" x="60" y="56" width="194" height="48" />
+        <rect class="plot__box--keep" x="254" y="56" width="346" height="48" />
+
+        <text class="plot__val" x="157" y="78" text-anchor="middle" data-num="18000" data-unit="plain"></text>
+        <text lang="ru" class="plot__cap" x="157" y="94" text-anchor="middle">обычная ставка</text>
+        <text lang="en" class="plot__cap" x="157" y="94" text-anchor="middle">ordinary rate</text>
+
+        <text class="plot__val" x="427" y="78" text-anchor="middle" data-num="32000" data-unit="plain"></text>
+        <text lang="ru" class="plot__cap" x="427" y="94" text-anchor="middle">ставка прироста капитала</text>
+        <text lang="en" class="plot__cap" x="427" y="94" text-anchor="middle">capital gains rate</text>
+
+        <line class="plot__edge" x1="254" y1="50" x2="254" y2="128" />
+
+        <text lang="ru" class="plot__cap" x="60" y="146">режет доля в горячих активах — дебиторка и запасы</text>
+        <text lang="en" class="plot__cap" x="60" y="146">the cut is the share of hot assets — receivables and inventory</text>
+      </svg>
+      <p class="plot__note" lang="ru">Сумма от разреза не меняется — меняется налог. Разрез
+        делает только доля партнёра в <strong>горячих активах</strong>; нет дебиторки и запасов —
+        нет и разреза, вся прибыль капитальная. Размер левой части задан долей в горячих активах,
+        а не размером прибыли: будь прибыль <span data-num="20000"></span>, обычной всё равно
+        оказались бы <span data-num="18000"></span>.</p>
+      <p class="plot__note" lang="en">The total does not change with the cut — the tax does. The
+        cut is made solely by the partner's share of the <strong>hot assets</strong>; with no
+        receivables and no inventory there is no cut and the whole gain is capital. The left-hand
+        part is set by the share of hot assets, not by the size of the gain: had the gain been
+        <span data-num="20000"></span>, <span data-num="18000"></span> of it would still have been
+        ordinary.</p>
+    </div>
+
     <h3><span lang="ru">Внешний базис и внутренний базис</span><span lang="en">Outside basis and inside basis</span></h3>
 
     <p lang="ru">Два слова, которые стоит развести раз и навсегда. <strong>Внешний базис</strong> —
@@ -288,6 +326,23 @@
       interest while the assets inside the partnership stand at the old one. The remedy is the
       partnership's election to bring the inside basis up for that buyer; the election is made by
       the partnership rather than the buyer, and it works for that partner alone.</p>
+
+    <div class="fork">
+      <div class="fork__q">
+        <span lang="ru">Выкупает ли долю само партнёрство?</span>
+        <span lang="en">Is the partnership itself buying the interest back?</span>
+      </div>
+      <div class="fork__branches">
+        <div class="fork__b fork__b--no">
+          <b><span lang="ru">Нет</span><span lang="en">No</span></b>
+          <span lang="ru">Это <strong>продажа</strong> — постороннему, другому партнёру, нескольким сразу. Прибыль капитальная, из неё вырезается доля в горячих активах</span>
+          <span lang="en">It is a <strong>sale</strong> — to an outsider, to another partner, to several at once. The gain is capital, with the share of hot assets cut out of it</span></div>
+        <div class="fork__b">
+          <b><span lang="ru">Да</span><span lang="en">Yes</span></b>
+          <span lang="ru">Это <strong>ликвидационное распределение</strong>, а не продажа. Правила другие: убыток признаётся только при трёх условиях сразу, и партнёр может получить имущество</span>
+          <span lang="en">It is a <strong>liquidating distribution</strong>, not a sale. The rules differ: a loss is recognised only where three conditions hold at once, and the partner may receive property</span></div>
+      </div>
+    </div>
 
     <div class="trap">
       <h3><span lang="ru">Продажа партнёрству — не продажа</span><span lang="en">A sale to the partnership is not a sale</span></h3>
