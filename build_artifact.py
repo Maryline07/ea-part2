@@ -179,7 +179,7 @@ def check_sections():
     если вопрос ссылается на несуществующий подраздел.
     """
     heading = re.compile(
-        r'<section class="sub" id="(s\d\d)">\s*<h2><span class="num">([^<]+)</span>\s*'
+        r'<section class="sub" id="(s\d{2,3})">\s*<h2><span class="num">([^<]+)</span>\s*'
         r'<span lang="ru">(.*?)</span>\s*<span lang="en">(.*?)</span>', re.S)
 
     for slug in MODULES:
@@ -197,7 +197,7 @@ def check_sections():
 
         in_map = {}
         for sid, num, ru, en in re.findall(
-                r'\n  (s\d\d): \{ no: "([^"]*)", ru: "([^"]*)", en: "([^"]*)" \}', js):
+                r'\n  (s\d{2,3}): \{ no: "([^"]*)", ru: "([^"]*)", en: "([^"]*)" \}', js):
             in_map[sid] = (num, ru, en)
 
         for sid, value in in_map.items():

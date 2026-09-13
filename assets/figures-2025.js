@@ -1735,6 +1735,33 @@ window.FIGURES = {
       src: SRC_P541
     },
 
+    inventory_appreciated: {
+      n: 120, unit: "pct",
+      ru: "Порог существенного удорожания запасов партнёрства",
+      en: "Threshold at which partnership inventory is substantially appreciated",
+      note_ru: "Рыночная стоимость запасов сверх этой доли их базиса делает их горячим активом: несоразмерное распределение даёт обычный доход. Запасы, купленные ради снижения доли, в расчёт не берутся.",
+      note_en: "Inventory whose market value exceeds this share of its basis is a hot asset: a disproportionate distribution gives ordinary income. Inventory acquired to bring the ratio down is left out.",
+      src: SRC_P541
+    },
+
+    bba_optout_partners: {
+      n: 100, unit: "int",
+      ru: "Партнёров, при которых можно выйти из централизованного аудита партнёрства",
+      en: "Partners at or below which a partnership may elect out of the centralized audit regime",
+      note_ru: "Считаются приложения K-1, включая выданные партнёром — S-корпорацией своим акционерам. Все партнёры должны быть подходящими: физические лица, корпорации C и S, наследственные массы умерших партнёров, иностранные лица, которые были бы корпорацией C.",
+      note_en: "Schedules K-1 are counted, including those an S corporation partner issues to its shareholders. All partners must be eligible: individuals, C and S corporations, estates of deceased partners, and foreign entities that would be C corporations.",
+      src: SRC_P541
+    },
+
+    contrib_character_years: {
+      n: 5, unit: "int",
+      ru: "Срок, в течение которого вложенное имущество сохраняет прежний характер",
+      en: "Period for which contributed property keeps its former character",
+      note_ru: "Запасы дают обычный доход, а капитальный убыток остаётся капитальным столько лет после вклада. Нереализованная дебиторка остаётся обычной всегда, без срока.",
+      note_en: "Inventory gives ordinary income, and a capital loss stays capital, for that many years after the contribution. Unrealized receivables stay ordinary for ever, with no time limit.",
+      src: SRC_P541
+    },
+
     rehab_rate: {
       n: 20, unit: "pct",
       ru: "Ставка кредита на восстановление исторического здания",
@@ -1997,7 +2024,8 @@ window.FIGURES = {
       keys: ["qbi_rate", "qbi_threshold_single", "qbi_threshold_mfj",
              "qbi_phasein_single", "qbi_phasein_mfj"] },
     { id: "partnership", ru: "Партнёрства", en: "Partnerships",
-      keys: ["p704c_years"] },
+      keys: ["p704c_years", "contrib_character_years", "inventory_appreciated",
+             "bba_optout_partners"] },
 
     { id: "credits", ru: "Кредиты, убытки и дополнительные налоги", en: "Credits, losses and additional taxes",
       keys: ["gbc_threshold", "gbc_pct", "gbc_carryback", "gbc_carryforward",
