@@ -1230,6 +1230,78 @@ window.QUIZZES.su08 = [
       C: { ru: "Прибавлен обратно весь стандартный вычет: −33 750 − 15 750. Возврат идёт в другую сторону и здесь вообще равен нулю.", en: "The whole standard deduction added back the wrong way: −33,750 − 15,750. The add-back runs the other way and here it is nil in any case." },
       D: { ru: "Обратно прибавлен весь стандартный вычет: −33 750 + 15 750. Прибавляется лишь превышение вычетов над неделовым доходом, а превышения тут нет.", en: "The whole standard deduction added back: −33,750 + 15,750. Only the excess of the deductions over nonbusiness income is added, and here there is no excess." }
     }
+  },
+  {
+    sec: "s83",
+    ru: "Личную машину угнали в 2025 году. Скорректированный базис $20 000, рыночная стоимость на день угона $16 000. Страховки нет, бедствий на федеральном уровне в этой местности не объявляли, прибылей от несчастных случаев за год не было. Каков вычет?",
+    en: "A personal car was stolen in 2025. Adjusted basis $20,000, market value on the day of the theft $16,000. There is no insurance, no federal disaster was declared in that area, and there were no casualty gains for the year. What is the deduction?",
+    opts: [
+      { k: "A", ru: "Ноль", en: "Nil" },
+      { k: "B", ru: "$16 000 — меньшее из базиса и рыночной стоимости", en: "$16,000 — the lesser of basis and market value" },
+      { k: "C", ru: "$20 000 — скорректированный базис", en: "$20,000 — the adjusted basis" },
+      { k: "D", ru: "$16 000 за вычетом $100 и десятой доли дохода", en: "$16,000 less $100 and a tenth of income" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Личная потеря вычитается только при бедствии, объявленном на федеральном уровне. Кражу бедствием не объявляют и объявить нельзя — она не стихия. Значит, условие невыполнимо в принципе и вычет по личной краже равен нулю всегда. Единственное исключение — прибыли от несчастных случаев за тот же год, но их здесь нет.", en: "Correct. A personal loss is deducted only in a federally declared disaster. A theft is never declared one and cannot be — it is not an act of nature. So the condition cannot be met at all and a personal theft always gives nil. The only exception is casualty gains for the same year, and there are none here." },
+      B: { ru: "Это правило для личного имущества — но оно работает лишь тогда, когда потеря вообще допущена к вычету. Здесь она не допущена.", en: "That is the rule for personal property — but it applies only once the loss is admitted to deduction at all. Here it is not." },
+      C: { ru: "По базису без оглядки на рынок считают деловое имущество и имущество, купленное ради прибыли. Личная машина — ни то ни другое.", en: "Basis without regard to market is how business property and property bought for profit are figured. A personal car is neither." },
+      D: { ru: "Пороги применяются к личным потерям от объявленного бедствия. До порогов дело не доходит: бедствия нет.", en: "The floors apply to personal losses from a declared disaster. It never gets as far as the floors: there is no disaster." }
+    }
+  },
+  {
+    sec: "s83",
+    ru: "Коллекцию монет, купленную несколько лет назад как вложение за $9 000, украли в 2025 году. На день кражи она стоила $14 000. Страховки нет. Скорректированный валовой доход владельца $70 000. Каков вычет?",
+    en: "A coin collection bought some years ago as an investment for $9,000 was stolen in 2025. On the day of the theft it was worth $14,000. There is no insurance. The owner's adjusted gross income is $70,000. What is the deduction?",
+    opts: [
+      { k: "A", ru: "$9 000", en: "$9,000" },
+      { k: "B", ru: "$14 000", en: "$14,000" },
+      { k: "C", ru: "Ноль — имущество не деловое", en: "Nil — the property is not business property" },
+      { k: "D", ru: "$1 900", en: "$1,900" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Имущество куплено ради прибыли, а не для себя, поэтому ограничение по бедствию к нему не относится. Украденное целиком берётся по скорректированному базису — рыночная стоимость не рассматривается. Вычет постатейный, и отмена прочих постатейных вычетов его не задела: потери от кражи выведены из их числа прямо.", en: "Correct. The property was bought for profit, not for personal use, so the disaster limitation does not reach it. What is stolen outright is taken at adjusted basis — market value is not considered. The deduction is itemised, and the repeal of miscellaneous itemised deductions left it alone: theft losses were taken out of that class expressly." },
+      B: { ru: "Прирост в $5 000 никогда не облагался налогом, вычитать его не за что. Украденное целиком берётся по базису.", en: "The $5,000 of appreciation was never taxed, so there is nothing there to deduct. What is stolen outright is taken at basis." },
+      C: { ru: "Деловым быть не обязательно. Достаточно, чтобы вещь была приобретена в сделке ради прибыли: между деловым и личным есть третий карман, и коллекция лежит в нём.", en: "It need not be business property. It is enough that the thing was acquired in a transaction entered into for profit: between business and personal there is a third pocket, and the collection is in it." },
+      D: { ru: "9 000 − 100 − 7 000: применены порог на событие и десятая доля дохода. Оба относятся только к личному имуществу и к сделке ради прибыли отношения не имеют.", en: "9,000 − 100 − 7,000: the per-event floor and the tenth of income applied. Both belong to personal property alone and have nothing to do with a profit-seeking transaction." }
+    }
+  },
+  {
+    sec: "s83",
+    ru: "Все четыре человека потеряли по $30 000 из-за обмана. Чья потеря вычитается как потеря от кражи?",
+    en: "All four people lost $30,000 each to fraud. Whose loss is deducted as a theft loss?",
+    opts: [
+      { k: "A", ru: "Перевёл деньги на мнимую инвестиционную площадку под обещание дохода; вернуть их надежды нет", en: "Wired the money to a sham investment platform against a promise of return; there is no prospect of recovery" },
+      { k: "B", ru: "Оплатил домашний кинотеатр в поддельном интернет-магазине, товар не пришёл", en: "Paid for a home cinema at a fake web shop, and the goods never came" },
+      { k: "C", ru: "Отправил деньги человеку, изображавшему романтический интерес", en: "Sent the money to a person feigning a romantic interest" },
+      { k: "D", ru: "Оплатил ремонт личной кухни подрядчику, который скрылся", en: "Paid a contractor to refit a personal kitchen, and the contractor absconded" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Для вычета нужны три условия сразу: деяние есть кража по праву штата, разумной надежды вернуть деньги нет и сделка была заключена ради прибыли. Третье условие выполнено только здесь.", en: "Correct. Three conditions are needed at once: the act is theft under state law, there is no reasonable prospect of recovery, and the transaction was entered into for profit. Only here is the third met." },
+      B: { ru: "Деньги отданы за вещь для себя. Сделка ради прибыли не заключалась, и потеря остаётся личной — вычет ноль.", en: "The money was handed over for a thing for personal use. No profit-seeking transaction was entered into, and the loss stays personal — nil." },
+      C: { ru: "Ради прибыли сделка не заключалась. Сумма и обманщик те же, а карман другой.", en: "No transaction was entered into for profit. Same sum, same swindler, different pocket." },
+      D: { ru: "Ремонт личной кухни — расход на себя, а не сделка ради прибыли.", en: "Refitting a personal kitchen is spending on oneself, not a transaction entered into for profit." }
+    }
+  },
+  {
+    sec: "s83",
+    ru: "Почему вычет по краже личного имущества с 2018 года равен нулю, хотя закон по-прежнему подробно перечисляет, что кражей считается?",
+    en: "Why has a theft of personal property given a nil deduction since 2018, though the law still lists in detail what counts as a theft?",
+    opts: [
+      { k: "A", ru: "Перечень нужен деловому имуществу и имуществу, купленному ради прибыли; личная же потеря требует объявленного бедствия, а кражу бедствием не объявляют", en: "The list is needed by business property and by property bought for profit; a personal loss meanwhile requires a declared disaster, and a theft is never declared one" },
+      { k: "B", ru: "Порог на событие и десятая доля дохода обычно съедают всю сумму", en: "The per-event floor and the tenth of income usually eat the whole amount" },
+      { k: "C", ru: "Кража перестала считаться потерей и теперь приравнена к постепенному разрушению", en: "A theft has ceased to count as a loss and is now treated like progressive deterioration" },
+      { k: "D", ru: "Для вычета требуется обвинительный приговор, а его почти никогда не бывает", en: "The deduction requires a conviction, and there almost never is one" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Ограничение написано только про имущество, не связанное ни с бизнесом, ни со сделкой ради прибыли. Для него условие невыполнимо: бедствием объявляют стихию, а не преступление. Для двух других карманов перечень работает как прежде.", en: "Correct. The limitation is written only about property connected neither with a business nor with a profit-seeking transaction. For that property the condition cannot be met: disasters are declared for acts of nature, not for crimes. For the other two pockets the list works as before." },
+      B: { ru: "Пороги срезают часть суммы, но не всю и не всегда. И дело не в них: до порогов расчёт вообще не доходит.", en: "The floors cut part of the amount, but not all of it and not always. And they are not the reason: the computation never reaches them." },
+      C: { ru: "Кража осталась потерей, и её определение в законе никуда не делось. Постепенное разрушение — это про несчастный случай, а не про кражу.", en: "A theft is still a loss, and its definition is still in the law. Progressive deterioration belongs to casualties, not to thefts." },
+      D: { ru: "Приговор не требуется никогда. Достаточно, чтобы деяние было преступлением по праву штата и совершалось с преступным умыслом.", en: "A conviction is never required. It is enough that the act was a crime under state law and was done with criminal intent." }
+    }
   }
 
 ];
