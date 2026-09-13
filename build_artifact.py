@@ -111,6 +111,24 @@ def check_clean(text, where):
                      "содержать." % where)
 
 
+def check_numbers(text, where):
+    """Убедиться, что от числа не остался один хвост.
+
+    Групп по три нуля без ведущей цифры и без знака доллара в тексте быть
+    не может: так выглядит число, у которого правка срезала начало.
+    Повод — «$5 000 000», от которого осталось « 000 000»: страница при
+    этом собиралась и читалась как готовая, просто с неверной суммой.
+    """
+    plain = re.sub(r"<[^>]+>", " ", text)
+    for rx in (r"(?<![\d$\w.,-])\s000(?:\s000)*\b",
+               r"(?<![\d$\w.-]),000(?:,000)*\b"):
+        m = re.search(rx, plain)
+        if m:
+            ctx = re.sub(r"\s+", " ", plain[max(0, m.start() - 60):m.end() + 30])
+            sys.exit("Сборка остановлена: в %s у числа срезано начало — "
+                     "…%s…" % (where, ctx.strip()))
+
+
 def check_sections():
     """Метки подразделов и названия в QUIZSECS не разошлись со страницей.
 
@@ -186,6 +204,7 @@ def build():
     for slug, ru, en in present:
         html = read(slug + ".html")
         check_clean(html, slug + ".html")
+        check_numbers(html, slug + ".html")
 
         fragment = main_content(html)
         fragment = strip_local_only(fragment)
