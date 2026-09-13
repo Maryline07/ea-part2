@@ -1212,5 +1212,24 @@ window.QUIZZES.su08 = [
       D: { ru: "Срок считается от месяца первого использования, а не от налогового года. Период формы 2290 идёт с 1 июля по 30 июня.", en: "The due date runs from the month of first use, not from the tax year. The Form 2290 period runs July 1 to June 30." }
     }
   }
+,
+  {
+    sec: "s82",
+    ru: "За год: проценты по личным сбережениям $20 000, убыток единоличного предприятия $38 000, иного дохода нет, взят стандартный вычет $15 750. Каков чистый операционный убыток?",
+    en: "For the year: $20,000 of interest on personal savings, a $38,000 loss from a sole proprietorship, no other income, and the $15,750 standard deduction. What is the net operating loss?",
+    opts: [
+      { k: "A", ru: "$33 750", en: "$33,750" },
+      { k: "B", ru: "$38 000", en: "$38,000" },
+      { k: "C", ru: "$49 500", en: "$49,500" },
+      { k: "D", ru: "$18 000", en: "$18,000" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Налогооблагаемый доход: 20 000 − 38 000 − 15 750 = −33 750. Неделовые вычеты $15 750 меньше неделового дохода $20 000, значит, возвращать нечего — строка даёт ноль. Излишек личного дохода при этом никто не стирал: он остаётся в расчёте и убыток уменьшает.", en: "Correct. Taxable income: 20,000 − 38,000 − 15,750 = −33,750. Nonbusiness deductions of $15,750 are less than nonbusiness income of $20,000, so there is nothing to add back — the line is nil. Nobody rubbed out the surplus personal income: it stays in the computation and reduces the loss." },
+      B: { ru: "Это чистый убыток предприятия. Он был бы ответом, если бы неделовой доход из расчёта убирали, — но неделовой доход вправе гасить деловой убыток, и его не убирают.", en: "That is the proprietorship's loss alone. It would be the answer if nonbusiness income were removed from the computation — but nonbusiness income may absorb a business loss and is not removed." },
+      C: { ru: "Прибавлен обратно весь стандартный вычет: −33 750 − 15 750. Возврат идёт в другую сторону и здесь вообще равен нулю.", en: "The whole standard deduction added back the wrong way: −33,750 − 15,750. The add-back runs the other way and here it is nil in any case." },
+      D: { ru: "Обратно прибавлен весь стандартный вычет: −33 750 + 15 750. Прибавляется лишь превышение вычетов над неделовым доходом, а превышения тут нет.", en: "The whole standard deduction added back: −33,750 + 15,750. Only the excess of the deductions over nonbusiness income is added, and here there is no excess." }
+    }
+  }
 
 ];
