@@ -1653,6 +1653,69 @@ window.FIGURES = {
       src: SRC_I6765
     },
 
+    research_base_floor: {
+      n: 50, unit: "pct",
+      ru: "Наименьшая базовая сумма для кредита на исследования — доля расходов года",
+      en: "Floor on the base amount for the research credit, as a share of the year's expenses",
+      note_ru: "Превышение, от которого берётся кредит, не бывает больше половины расходов года. Поэтому обычный кредит никогда не выше 10% расходов. Только обычный расчёт; упрощённого это не касается.",
+      note_en: "The excess the credit is taken on never exceeds half the year's expenses. So the regular credit is never more than 10% of them. The regular computation only; the simplified one is not affected.",
+      src: SRC_I6765
+    },
+
+    research_fbp_max: {
+      n: 16, unit: "pct",
+      ru: "Предел фиксированного процента базы в кредите на исследования",
+      en: "Cap on the fixed-base percentage for the research credit",
+      note_ru: "Сам процент считается по истории 1984-1988 годов; у молодой фирмы первые пять лет с расходами он равен 3%.",
+      note_en: "The percentage itself is figured from the 1984-1988 history; for a young company it is 3% for the first five years with research expenses.",
+      src: SRC_I6765
+    },
+
+    research_asc_flat: {
+      n: 6, unit: "pct",
+      ru: "Плоская ставка упрощённого расчёта, когда в одном из трёх предыдущих лет расходов не было",
+      en: "Flat simplified rate where any one of the three preceding years had no expenses",
+      note_ru: "Берётся от всех расходов года: ни делить, ни вычитать средние не нужно.",
+      note_en: "Taken on the whole year's expenses: nothing is divided and nothing is subtracted.",
+      src: SRC_I6765
+    },
+
+    research_contract: {
+      n: 65, unit: "pct",
+      ru: "Доля оплаты исследования на стороне, входящая в расходы",
+      en: "Share of contract research payments that counts as an expense",
+      note_ru: "Для исследовательского консорциума доля выше - 75%, для квалифицированного энергетического исследования берётся вся сумма.",
+      note_en: "For a qualified research consortium the share is higher, 75%, and for qualified energy research the whole amount is taken.",
+      src: SRC_I6765
+    },
+
+    research_280c_factor: {
+      n: 79, unit: "pct",
+      ru: "Множитель кредита на исследования при выборе §280C",
+      en: "Multiplier applied to the research credit under the section 280C election",
+      note_ru: "Единица минус наибольшая ставка корпоративного налога. Обычная ставка 20% превращается в 15,8%, упрощённая 14% - в 11,06%.",
+      note_en: "One minus the maximum corporate tax rate. The 20% regular rate becomes 15.8%, and the 14% simplified rate becomes 11.06%.",
+      src: SRC_I6765
+    },
+
+    research_qsb_receipts: {
+      n: 5000000, unit: "usd",
+      ru: "Предел выручки квалифицированного малого бизнеса для зарплатного зачёта",
+      en: "Gross receipts ceiling for a qualified small business making the payroll election",
+      note_ru: "Строго меньше этой суммы за год, и при этом выручки не было ни в одном году до пятилетнего окна, оканчивающегося этим годом.",
+      note_en: "Strictly under this amount for the year, and no gross receipts in any year before the five-year window ending with that year.",
+      src: SRC_I6765
+    },
+
+    research_payroll_ss: {
+      n: 250000, unit: "usd",
+      ru: "Квартальный предел зачёта кредита против доли работодателя в социальном налоге",
+      en: "Quarterly limit on applying the credit against the employer share of social security tax",
+      note_ru: "Остаток сверх этой суммы уменьшает долю работодателя в Medicare за тот же квартал; что не уместилось - переходит на следующий квартал. Заявляется по форме 8974 вместе с формой 941.",
+      note_en: "Anything above it reduces the employer share of Medicare tax for the same quarter; what still does not fit is carried to the next quarter. Claimed on Form 8974 with Form 941.",
+      src: SRC_I6765
+    },
+
     rehab_rate: {
       n: 20, unit: "pct",
       ru: "Ставка кредита на восстановление исторического здания",
@@ -1895,7 +1958,10 @@ window.FIGURES = {
              "shic_rate", "shic_fte", "shic_wages", "shic_wages_phase",
              "shic_fte_phase", "shic_years",
              "research_rate", "research_asc", "research_280c",
-             "research_payroll_max", "rehab_rate", "rehab_years",
+             "research_280c_factor", "research_base_floor", "research_fbp_max",
+             "research_asc_flat", "research_contract",
+             "research_payroll_max", "research_qsb_receipts",
+             "research_payroll_ss", "rehab_rate", "rehab_years",
              "childcare_rate", "childcare_referral_rate", "childcare_cap",
              "ftc_carryback", "ftc_carryforward",
              "nol_limit_pct", "nol_farm_carryback",

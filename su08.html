@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=55">
-<script defer src="assets/figures-2025.js?v=55"></script>
-<script defer src="assets/modules.js?v=55"></script>
-<script defer src="assets/quiz-su08.js?v=55"></script>
+<link rel="stylesheet" href="assets/style.css?v=56">
+<script defer src="assets/figures-2025.js?v=56"></script>
+<script defer src="assets/modules.js?v=56"></script>
+<script defer src="assets/quiz-su08.js?v=56"></script>
 <script defer src="assets/xref.local.js"></script>
-<script defer src="assets/app.js?v=55"></script>
+<script defer src="assets/app.js?v=56"></script>
 </head>
 <body data-module="su08">
 
@@ -479,18 +479,18 @@
       <p lang="ru">Почти у каждого кредита есть оборотная сторона: расход, который его породил,
         перестаёт вычитаться в той же сумме. Кредит за наём уменьшает вычет по заработной плате.
         Кредит за доступность уменьшает вычет по тем же затратам. Кредит на восстановление
-        уменьшает базис здания. Кредит на исследования уменьшает вычет по <a class="sec" href="reference.html#p174">§174</a> — статье о затратах на исследования и
-        разработки — или, по выбору <a class="sec" href="reference.html#p280C">§280C</a>, запрещающего вычесть то же дважды, сам уменьшается со <span data-fig="research_rate"></span> до
-        <span data-fig="research_280c"></span>, зато вычет остаётся целым.</p>
+        уменьшает базис здания. Кредит на исследования уменьшает вычет по <a class="sec" href="reference.html#p174A">§174A</a> — статье об отечественных
+        затратах на исследования и разработки — или, по выбору <a class="sec" href="reference.html#p280C">§280C</a>, запрещающего
+        вычесть то же дважды, сам умножается на <span data-fig="research_280c_factor"></span>,
+        зато вычет остаётся целым.</p>
       <p lang="en">Nearly every credit has a reverse side: the expense that produced it stops
         being deductible to the same extent. The hiring credit reduces the deduction for wages.
         The access credit reduces the deduction for the same expenditure. The rehabilitation
-        credit reduces the building's basis. The research credit reduces the section 174 deduction
-        — section 174 being the one on research and experimental expenditures — or, under the
-        section 280C election that bars deducting the same outlay twice, the credit is itself cut
-        from
-        <span data-fig="research_rate"></span> to <span data-fig="research_280c"></span> while the
-        deduction stays whole.</p>
+        credit reduces the building's basis. The research credit reduces the section 174A deduction
+        — section 174A being the one on domestic research and experimental expenditures — or,
+        under the section 280C election that bars deducting the same outlay twice, the credit is
+        itself multiplied by <span data-fig="research_280c_factor"></span> while the deduction
+        stays whole.</p>
       <p lang="ru">Правило одно и то же везде: <strong>двойной выгоды не бывает</strong>. Вопрос
         обычно строится так, что кредит посчитан верно, а вычет забыли уменьшить.</p>
       <p lang="en">The rule is everywhere the same: <strong>there is no double benefit</strong>.
@@ -498,21 +498,256 @@
         forgotten.</p>
     </div>
 
-    <p lang="ru">У кредита на исследования есть два запасных пути. Первый — <strong>упрощённый
-      расчёт</strong>: вместо базовой суммы, требующей данных за четыре предыдущих года, берётся
-      <span data-fig="research_asc"></span> от превышения расходов над половиной среднего за три
-      предыдущих года. Второй — для тех, у кого налога ещё нет: квалифицированный малый бизнес
-      может зачесть до <span data-fig="research_payroll_max"></span> кредита
-      <em>против зарплатных налогов</em>. Право на это есть у компании с выручкой меньше
-       000 000, у которой не было выручки до пятилетнего окна, — то есть у молодой и пока
-      убыточной.</p>
-    <p lang="en">The research credit has two fallback routes. The first is the <strong>simplified
-      computation</strong>: instead of a base amount requiring four prior years of data, it takes
-      <span data-fig="research_asc"></span> of the excess of expenses over half the average of the
-      three preceding years. The second is for those who have no tax yet: a qualified small
-      business may apply up to <span data-fig="research_payroll_max"></span> of the credit
-      <em>against payroll taxes</em>. That is open to a company with gross receipts under
-      ,000,000 and none before the five-year window — a young and so far unprofitable one.</p>
+    <h3><span lang="ru">Кредит на исследования: четыре вопроса к работе и два способа счёта</span><span lang="en">The research credit: four questions about the work and two ways to figure it</span></h3>
+
+    <p lang="ru">Этот кредит устроен сложнее прочих, и путаница почти всегда в одном месте:
+      <strong>процент берётся не от расходов на исследования, а только от их прироста</strong>.
+      Потратить много — мало; надо потратить больше, чем у вас выходило обычно. Отсюда и полное
+      название — кредит за <em>увеличение</em> исследовательской деятельности.</p>
+    <p lang="en">This credit is built more intricately than the others, and the confusion is almost
+      always in one place: <strong>the percentage is taken not on the research spending but only on
+      its increase</strong>. Spending a great deal is not enough; you must spend more than you
+      usually did. Hence the full name — the credit for <em>increasing</em> research activities.</p>
+
+    <p lang="ru">Сначала — какая работа вообще считается исследованием. Проверка называется
+      <strong>тестом из четырёх частей</strong> и применяется <strong>к каждому изделию или
+      процессу отдельно</strong>, а не к фирме целиком.</p>
+    <p lang="en">First, what work counts as research at all. The test is called the
+      <strong>four-part test</strong> and is applied <strong>to each product or process
+      separately</strong>, not to the firm as a whole.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Затраты подпадают под <a class="sec" href="reference.html#p174A">§174A</a> — статью об отечественных затратах на исследования и разработки</span><span lang="en">The expenditures are domestic research or experimental expenditures under section 174A</span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Работа ведётся ради сведений <strong>технического характера</strong> — опирается на естественные науки, инженерное дело или информатику</span><span lang="en">The work is undertaken to discover information <strong>technological in nature</strong> — resting on the physical or biological sciences, engineering or computer science</span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Результат предназначен для <strong>нового или улучшенного</strong> изделия, процесса, программы, методики, формулы или изобретения — того, что фирма продаёт, сдаёт, лицензирует или использует у себя</span><span lang="en">The result is intended for a <strong>new or improved</strong> product, process, software, technique, formula or invention — something the firm sells, leases, licenses or uses in its own business</span></td></tr>
+        <tr class="total"><th>4</th><td><span lang="ru">Практически вся работа — это <strong>процесс экспериментирования</strong>: есть неопределённость, перебираются варианты, проверяются гипотезы</span><span lang="en">Substantially all of the work is a <strong>process of experimentation</strong>: there is uncertainty, alternatives are tried, hypotheses are tested</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">И перечень того, что не считается исследованием никогда. Он короткий, и спрашивают
+      его охотно — потому что каждый пункт звучит как работа, за которую хочется получить
+      кредит.</p>
+    <p lang="en">And the list of what never counts as research. It is short and readily asked
+      about — because every item sounds like work one would like a credit for.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru">Всё, что делается <strong>после начала серийного выпуска</strong></span><span lang="en">Anything done <strong>after commercial production has begun</strong></span></td></tr>
+        <tr><th>2</th><td><span lang="ru">Приспособление существующего изделия или процесса под нужду <strong>конкретного заказчика</strong></span><span lang="en">Adapting an existing product or process to the need of a <strong>particular customer</strong></span></td></tr>
+        <tr><th>3</th><td><span lang="ru">Повторение уже существующего изделия или процесса</span><span lang="en">Duplicating an existing product or process</span></td></tr>
+        <tr><th>4</th><td><span lang="ru">Опросы, обследования, изучение рынка</span><span lang="en">Surveys, studies, market research</span></td></tr>
+        <tr><th>5</th><td><span lang="ru">Программы <strong>для внутреннего употребления</strong> — кроме тех, что проходят особый порог новизны</span><span lang="en">Software <strong>for internal use</strong> — except where it clears a special high threshold of innovation</span></td></tr>
+        <tr><th>6</th><td><span lang="ru">Исследование <strong>за пределами США</strong> и их территорий</span><span lang="en">Research carried on <strong>outside the United States</strong> and its territories</span></td></tr>
+        <tr><th>7</th><td><span lang="ru">Общественные науки, искусства, гуманитарные дисциплины</span><span lang="en">The social sciences, arts and humanities</span></td></tr>
+        <tr class="total"><th>8</th><td><span lang="ru">Исследование, <strong>оплаченное другим лицом</strong> или государством</span><span lang="en">Research <strong>funded by another person</strong> or by a governmental entity</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p lang="ru">Теперь расходы. В расчёт идут четыре вещи: заработная плата за квалифицированные
+      работы, израсходованные припасы, аренда чужих вычислительных мощностей — компьютер должен
+      стоять не у вас и обслуживать его должны не вы, — и оплата исследования, заказанного на
+      стороне. Последняя входит <strong>не целиком, а на <span data-fig="research_contract"></span></strong>:
+      закон исходит из того, что часть этой платы — чужая прибыль и накладные, а не само
+      исследование.</p>
+    <p lang="en">Now the expenses. Four things enter: wages for qualified services, supplies used
+      up, the rental of someone else's computing power — the machine must sit elsewhere and be run
+      by someone else — and payments for research contracted out. The last enters <strong>not in
+      full but at <span data-fig="research_contract"></span></strong>: the law assumes that part of
+      that payment is the other party's profit and overhead rather than research.</p>
+
+    <p lang="ru"><strong>Обычный расчёт.</strong> Сложили расходы года. Посчитали
+      <strong>базовую сумму</strong> — это фиксированный процент базы, не больше
+      <span data-fig="research_fbp_max"></span>, умноженный на среднюю годовую выручку за четыре
+      предыдущих года. Сам процент берётся из истории 1984–1988 годов, а у молодой фирмы первые
+      пять лет с расходами он равен 3%. Вычли базовую сумму из расходов — получили превышение.
+      И вот здесь стоит ограничитель, о котором забывают чаще всего:
+      <strong>превышение берётся не больше <span data-fig="research_base_floor"></span> расходов
+      года</strong>. Сравниваются две величины — превышение и половина расходов, — и берётся
+      меньшая. От неё <span data-fig="research_rate"></span>.</p>
+    <p lang="en"><strong>The regular computation.</strong> Add up the year's expenses. Figure the
+      <strong>base amount</strong> — the fixed-base percentage, no more than
+      <span data-fig="research_fbp_max"></span>, times the average annual gross receipts of the
+      four preceding years. The percentage itself comes from the 1984–1988 history, and for a young
+      firm it is 3% for its first five years with expenses. Subtract the base amount from the
+      expenses and you have the excess. And here stands the limiter most often forgotten:
+      <strong>the excess is taken at no more than
+      <span data-fig="research_base_floor"></span> of the year's expenses</strong>. Two amounts are
+      compared — the excess and half the expenses — and the smaller is taken. On that,
+      <span data-fig="research_rate"></span>.</p>
+
+    <p lang="ru">Отсюда следствие, которое стоит запомнить отдельно: <strong>обычный кредит
+      никогда не превышает 10% расходов года</strong> — <span data-fig="research_rate"></span> от
+      половины есть десятая часть. Сколько бы ни вырос ваш прирост, выше этой черты он не
+      поднимет.</p>
+    <p lang="en">Hence a consequence worth remembering on its own: <strong>the regular credit never
+      exceeds 10% of the year's expenses</strong> — <span data-fig="research_rate"></span> of a
+      half is a tenth. However large your increase, it will not lift you above that line.</p>
+
+    <p lang="ru"><strong>Упрощённый расчёт.</strong> Он избавляет от истории сорокалетней
+      давности: <span data-fig="research_asc"></span> от превышения расходов года над половиной
+      средних расходов трёх предыдущих лет. На деле: сложить расходы трёх прошлых лет, разделить
+      на шесть, вычесть из расходов года. Если хотя бы в <strong>одном</strong> из этих трёх лет
+      расходов не было вовсе, ни делить, ни вычитать не нужно —
+      <span data-fig="research_asc_flat"></span> от всех расходов года. Потолка в половину расходов
+      здесь <strong>нет</strong>.</p>
+    <p lang="en"><strong>The simplified computation.</strong> It frees you from forty-year-old
+      history: <span data-fig="research_asc"></span> of the excess of the year's expenses over half
+      the average expenses of the three preceding years. In practice: add the three prior years,
+      divide by six, subtract from this year. If in <strong>any one</strong> of those three years
+      there were no expenses at all, nothing is divided and nothing subtracted —
+      <span data-fig="research_asc_flat"></span> of the whole year's expenses. There is
+      <strong>no</strong> half-the-expenses cap here.</p>
+
+    <div class="trap">
+      <h3><span lang="ru">Меньшая ставка может дать больший кредит</span><span lang="en">The smaller rate can give the larger credit</span></h3>
+      <p lang="ru">Ставка упрощённого расчёта ниже обычной, и кажется, что он всегда проигрывает.
+        Это не так, и виноват потолок. В обычном расчёте превышение обрезается половиной расходов
+        года, в упрощённом — не обрезается ничем. Поэтому у фирмы, которая нарастила расходы
+        резко, обычный расчёт упирается в потолок, а упрощённый — нет, и
+        <span data-fig="research_asc"></span> без потолка оказываются больше, чем
+        <span data-fig="research_rate"></span> с потолком.</p>
+      <p lang="en">The simplified rate is lower than the regular one, and it looks as though it
+        must always lose. It does not, and the cap is why. In the regular computation the excess is
+        cut down to half the year's expenses; in the simplified one it is cut by nothing. So for a
+        firm that raised its spending sharply, the regular computation runs into the cap and the
+        simplified one does not, and <span data-fig="research_asc"></span> uncapped comes out above
+        <span data-fig="research_rate"></span> capped.</p>
+      <p lang="ru">Практическое правило: посчитать обоими способами и взять больший результат —
+        инструкция к форме 6765 прямо это советует. Но выбор упрощённого расчёта связывает:
+        он действует на текущий год и на все последующие, за текущий год не отменяется, и
+        вернуться к обычному можно только начиная со следующего года.
+        <span class="cite">§41(c)(5); инстр. к форме 6765</span></p>
+      <p lang="en">The practical rule: figure it both ways and take the larger — the instructions
+        for Form 6765 say so outright. But electing the simplified method binds you: it applies to
+        the current year and every later one, cannot be revoked for the current year, and you may
+        return to the regular method only from the following year on.
+        <span class="cite">Section 41(c)(5); Instructions for Form 6765</span></p>
+    </div>
+
+    <div class="example">
+      <div class="example__head"><span lang="ru">Пример 8-3. Прирост большой, а потолок ниже</span><span lang="en">Example 8-3. A large increase, and a lower cap</span></div>
+      <div class="example__body">
+        <p lang="ru">Фирма «Рефрактор» потратила на квалифицированные исследования за 2025 год
+          $400 000. Средняя годовая выручка за 2021–2024 годы — $2 000 000, фиксированный процент
+          базы — 3,5%. Расходы на исследования прошлых лет: 2022 — $150 000, 2023 — $200 000,
+          2024 — $250 000. Какой кредит?</p>
+        <p lang="en">Refractor Ltd spent $400,000 on qualified research in 2025. Its average annual
+          gross receipts for 2021–2024 were $2,000,000 and its fixed-base percentage is 3.5%. Its
+          research expenses in earlier years were: 2022, $150,000; 2023, $200,000; 2024, $250,000.
+          What is the credit?</p>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Базовая сумма: 3,5% × 2 000 000</span><span lang="en">Base amount: 3.5% × 2,000,000</span></td>
+              <td data-num="70000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение: 400 000 − 70 000</span><span lang="en">The excess: 400,000 − 70,000</span></td>
+              <td data-num="330000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Потолок: <span data-fig="research_base_floor"></span> × 400 000</span><span lang="en">The cap: <span data-fig="research_base_floor"></span> × 400,000</span></td>
+              <td data-num="200000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Обычный расчёт: <span data-fig="research_rate"></span> от меньшего</span><span lang="en">Regular computation: <span data-fig="research_rate"></span> of the smaller</span></td>
+              <td data-num="40000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="ledger">
+          <tbody>
+            <tr>
+              <td><span lang="ru">Расходы трёх прошлых лет: 150 000 + 200 000 + 250 000</span><span lang="en">The three prior years: 150,000 + 200,000 + 250,000</span></td>
+              <td data-num="600000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Делим на шесть</span><span lang="en">Divided by six</span></td>
+              <td data-num="100000"></td>
+            </tr>
+            <tr>
+              <td><span lang="ru">Превышение: 400 000 − 100 000</span><span lang="en">The excess: 400,000 − 100,000</span></td>
+              <td data-num="300000"></td>
+            </tr>
+            <tr class="total">
+              <td><span lang="ru">Упрощённый расчёт: <span data-fig="research_asc"></span> от превышения</span><span lang="en">Simplified computation: <span data-fig="research_asc"></span> of the excess</span></td>
+              <td data-num="42000"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="ru">Посмотрите, что произошло. Обычный расчёт нашёл превышение <em>больше</em>
+          — $330 000 против $300 000 — и взял с него <em>бо́льшую</em> ставку, а дал меньше.
+          Всю разницу сделал потолок: $330 000 обрезаны до $200 000, а в упрощённом расчёте
+          обрезать нечем. Фирма берёт $42 000.</p>
+        <p lang="en">Look at what happened. The regular computation found the <em>larger</em>
+          excess — $330,000 against $300,000 — and applied the <em>higher</em> rate to it, and
+          produced less. The cap made the whole difference: $330,000 cut to $200,000, while the
+          simplified computation has nothing to cut it with. The firm takes $42,000.</p>
+        <p lang="ru">Дальше — выбор по <a class="sec" href="reference.html#p280C">§280C</a>. Не сделали выбор: кредит $42 000, а вычет
+          затрат на исследования падает с $400 000 до $358 000. Сделали выбор: кредит
+          $42 000 × <span data-fig="research_280c_factor"></span> = $33 180, зато вычет остаётся
+          целым — все $400 000.</p>
+        <p lang="en">Then comes the section 280C election. Without it: a credit of $42,000, and the
+          deduction for the research costs falls from $400,000 to $358,000. With it: a credit of
+          $42,000 × <span data-fig="research_280c_factor"></span> = $33,180, but the deduction
+          stays whole at $400,000.</p>
+        <p lang="ru">Заготовленные неверные ответы: <span data-num="66000"></span> — в обычном
+          расчёте забыт потолок; <span data-num="80000"></span> — забыта базовая сумма и
+          <span data-fig="research_rate"></span> взяты от всех расходов;
+          <span data-num="40000"></span> — обычный расчёт посчитан верно, но не сверен с
+          упрощённым.</p>
+        <p lang="en">The prepared wrong answers: <span data-num="66000"></span> — the cap forgotten
+          in the regular computation; <span data-num="80000"></span> — the base amount forgotten
+          and <span data-fig="research_rate"></span> taken on all the expenses;
+          <span data-num="40000"></span> — the regular computation figured correctly but never
+          compared with the simplified one.</p>
+      </div>
+    </div>
+
+    <p lang="ru"><strong>Зачёт против зарплатных налогов.</strong> Кредит нерефундируемый, и
+      молодой фирме, у которой налога на доход ещё нет, он был бы бесполезен. Для неё есть
+      отдельный выход: <strong>квалифицированный малый бизнес</strong> вправе выбрать зачёт
+      кредита против <em>зарплатных</em> налогов — до
+      <span data-fig="research_payroll_max"></span> за год.</p>
+    <p lang="en"><strong>The payroll tax election.</strong> The credit is nonrefundable, and to a
+      young firm with no income tax yet it would be of no use. For such a firm there is a separate
+      way out: a <strong>qualified small business</strong> may elect to apply the credit against
+      <em>payroll</em> taxes — up to <span data-fig="research_payroll_max"></span> a year.</p>
+
+    <div class="scroller">
+    <table class="numbered">
+      <tbody>
+        <tr><th>1</th><td><span lang="ru"><strong>Кто.</strong> Корпорация (в том числе S-корпорация) или товарищество, у которых выручка за год <strong>меньше</strong> <span data-fig="research_qsb_receipts"></span> и не было выручки ни в одном году до пятилетнего окна, оканчивающегося этим годом. Прочие лица — по той же мерке, но выручка всех их дел складывается</span><span lang="en"><strong>Who.</strong> A corporation (an S corporation included) or a partnership whose gross receipts for the year are <strong>under</strong> <span data-fig="research_qsb_receipts"></span> and which had no gross receipts in any year before the five-year window ending with that year. Other persons qualify on the same measure, but the receipts of all their businesses are aggregated</span></td></tr>
+        <tr><th>2</th><td><span lang="ru"><strong>Сколько.</strong> Наименьшая из трёх величин: кредит за этот год; заявленная сумма, не свыше <span data-fig="research_payroll_max"></span>; перенос общего делового кредита на этот год. Последнее к товариществам и S-корпорациям не относится</span><span lang="en"><strong>How much.</strong> The smallest of three: this year's research credit; the amount elected, not over <span data-fig="research_payroll_max"></span>; the general business credit carryforward into the year. The last does not apply to partnerships and S corporations</span></td></tr>
+        <tr><th>3</th><td><span lang="ru"><strong>Против чего.</strong> В каждом квартале сначала доля работодателя в социальном налоге — до <span data-fig="research_payroll_ss"></span>, затем доля работодателя в Medicare, а что не уместилось — переходит на следующий квартал. Заявляется по форме 8974 вместе с формой 941</span><span lang="en"><strong>Against what.</strong> Each quarter, first the employer share of social security tax — up to <span data-fig="research_payroll_ss"></span> — then the employer share of Medicare tax, and whatever still does not fit is carried to the next quarter. Claimed on Form 8974 with Form 941</span></td></tr>
+        <tr class="total"><th>4</th><td><span lang="ru"><strong>Как долго.</strong> Выбор делается не позднее срока подачи первоначальной декларации с учётом продлений — и его нельзя сделать, если он уже делался за <strong>пять или больше</strong> предыдущих лет</span><span lang="en"><strong>For how long.</strong> The election is made no later than the due date of the original return, extensions included — and it cannot be made if it was already made for <strong>five or more</strong> preceding years</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="trap">
+      <h3><span lang="ru">Зачёт против зарплатных налогов — не возврат денег</span><span lang="en">The payroll offset is not a refund</span></h3>
+      <p lang="ru">Кредит от этого выбора возвратным <strong>не становится</strong>. Он по-прежнему
+        только гасит налог — просто другой: не налог на доход, а зарплатный. Если зарплатных
+        налогов за квартал меньше, чем кредита, разница не выплачивается, а переходит на следующий
+        квартал и ждёт там.</p>
+      <p lang="en">The election does <strong>not</strong> make the credit refundable. It still only
+        extinguishes a tax — merely a different one: payroll tax instead of income tax. If a
+        quarter's payroll taxes come to less than the credit, the difference is not paid out; it
+        moves to the next quarter and waits there.</p>
+      <p lang="ru">И второе: доля меряется <strong>работодательская</strong>. Удержанное из
+        заработной платы работника — деньги работника, и кредитом их погасить нельзя.
+        <span class="cite">§41(h); инстр. к формам 6765 и 8974</span></p>
+      <p lang="en">And second: the share measured is the <strong>employer's</strong>. What is
+        withheld from an employee's wages is the employee's money, and no credit may extinguish it.
+        <span class="cite">Section 41(h); Instructions for Forms 6765 and 8974</span></p>
+    </div>
+
 
     <h3><span lang="ru">Кредит за страховку: три условия и два счётчика</span><span lang="en">The insurance credit: three conditions and two meters</span></h3>
 
@@ -561,7 +796,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-3. Иностранный налог: кредит или вычет</span><span lang="en">Example 8-3. Foreign tax: credit or deduction</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-4. Иностранный налог: кредит или вычет</span><span lang="en">Example 8-4. Foreign tax: credit or deduction</span></div>
       <div class="example__body">
         <p lang="ru">Всемирный налогооблагаемый доход — $800 000, из них $200 000 из иностранного
           источника. Налог США до кредитов — $168 000. За рубежом уплачено налогов на
@@ -761,7 +996,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-4. Убыток, очищенный от личного</span><span lang="en">Example 8-4. A loss cleared of the personal</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-5. Убыток, очищенный от личного</span><span lang="en">Example 8-5. A loss cleared of the personal</span></div>
       <div class="example__body">
         <p lang="ru">Одинокий налогоплательщик за 2025 год: заработная плата на подработке
           $9 000, проценты по личным сбережениям $1 200, убыток единоличного предприятия
@@ -863,7 +1098,7 @@
       goes on. Where there are several losses, the earliest is spent first.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-5. Восемьдесят процентов, а не всё</span><span lang="en">Example 8-5. Eighty per cent, not everything</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-6. Восемьдесят процентов, а не всё</span><span lang="en">Example 8-6. Eighty per cent, not everything</span></div>
       <div class="example__body">
         <p lang="ru">Убыток 2023 года — $200 000, перенесён вперёд. В 2025 году налогооблагаемый
           доход до вычета убытка — $150 000.</p>
@@ -1083,7 +1318,7 @@
       shrubs counts as one item, not as a set of things.</p>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-6. Одно здание, два режима</span><span lang="en">Example 8-6. One building, two regimes</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-7. Одно здание, два режима</span><span lang="en">Example 8-7. One building, two regimes</span></div>
       <div class="example__body">
         <p lang="ru">Здание куплено за $200 000 и используется на 60% в бизнесе, на 40% лично.
           По деловой части взята амортизация $70 000. Землетрясение в зоне объявленного бедствия
@@ -1172,7 +1407,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-7. Ограбление магазина</span><span lang="en">Example 8-7. A shop is robbed</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-8. Ограбление магазина</span><span lang="en">Example 8-8. A shop is robbed</span></div>
       <div class="example__body">
         <p lang="ru">2 октября 2025 года из магазина похищен товар на $9 000; хозяйка обнаружила
           пропажу в тот же день. Страховая компания признала требование и в феврале 2026 года
@@ -1412,7 +1647,7 @@
     </div>
 
     <div class="example">
-      <div class="example__head"><span lang="ru">Пример 8-8. Покрытие не предложено</span><span lang="en">Example 8-8. No coverage offered</span></div>
+      <div class="example__head"><span lang="ru">Пример 8-9. Покрытие не предложено</span><span lang="en">Example 8-9. No coverage offered</span></div>
       <div class="example__body">
         <p lang="ru">У компании 90 работников полной занятости. Медицинское покрытие не
           предложено никому. Четверо работников купили страховку на бирже и получили кредит на
@@ -1471,7 +1706,7 @@
         <tr><th>11</th><td><span lang="ru">От целевой группы зависит другое — <strong>потолок заработной платы</strong>, к которой ставка применяется: $6 000 в общем случае, $3 000 для летней молодёжи, $10 000 для получателей долгосрочной семейной помощи, до $24 000 для ветеранов с инвалидностью. Второй год кредита есть только у получателей долгосрочной семейной помощи</span><span lang="en">What the targeted group decides is something else — the <strong>ceiling on the wages</strong> the rate applies to: $6,000 in the general case, $3,000 for summer youth, $10,000 for long-term family assistance recipients, up to $24,000 for disabled veterans. A second year of credit exists only for long-term family assistance recipients</span></td></tr>
         <tr><th>12</th><td><span lang="ru">Кредита за наём не будет вовсе, если работник — <strong>родственник или иждивенец</strong> нанимателя или если он <strong>уже работал</strong> у этого нанимателя раньше. Целевая группа тут не спасает: это отдельные запреты</span><span lang="en">There is no work opportunity credit at all where the employee is a <strong>relative or dependant</strong> of the employer, or where they have <strong>worked for that employer before</strong>. Membership of a targeted group does not save it: these are separate bars</span></td></tr>
         <tr><th>13</th><td><span lang="ru">Кредит съедает вычет: на сумму взятого кредита уменьшается соответствующий расход. Заявили кредит за наём — вычитаете заработную плату на эту сумму меньше; то же с затратами на доступность и с расходами на исследования. Двойной выгоды не бывает</span><span lang="en">A credit eats the deduction: the matching expense is reduced by the credit taken. Claim the work opportunity credit and you deduct that much less in wages; the same goes for accessibility costs and research expenses. There is no double benefit</span></td></tr>
-        <tr><th>14</th><td><span lang="ru">Выбор по <a class="sec" href="reference.html#p280C">§280C</a> для кредита на исследования: ставка кредита падает с <span data-fig="research_rate"></span> до <span data-fig="research_280c"></span>, зато вычет расходов на исследования сохраняется <strong>полностью</strong>. Выбор делается на декларации и за год не отменяется</span><span lang="en">The section 280C election for the research credit: the rate falls from <span data-fig="research_rate"></span> to <span data-fig="research_280c"></span>, but the deduction for the research expenses is kept in <strong>full</strong>. The election is made on the return and cannot be revoked for that year</span></td></tr>
+        <tr><th>14</th><td><span lang="ru">Выбор по <a class="sec" href="reference.html#p280C">§280C</a> для кредита на исследования: кредит умножается на <span data-fig="research_280c_factor"></span> — обычный падает с <span data-fig="research_rate"></span> до <span data-fig="research_280c"></span>, упрощённый с <span data-fig="research_asc"></span> до 11,06%, — зато вычет расходов на исследования сохраняется <strong>полностью</strong>. Выбор делается на декларации и за год не отменяется</span><span lang="en">The section 280C election for the research credit: the credit is multiplied by <span data-fig="research_280c_factor"></span> — the regular rate falls from <span data-fig="research_rate"></span> to <span data-fig="research_280c"></span> and the simplified one from <span data-fig="research_asc"></span> to 11.06% — but the deduction for the research expenses is kept in <strong>full</strong>. The election is made on the return and cannot be revoked for that year</span></td></tr>
         <tr><th>15</th><td><span lang="ru">Кредит малому работодателю за медицинскую страховку работников полагается при <strong>строго меньше</strong> <span data-fig="shic_fte"></span> работников в пересчёте на полную занятость. Ровно двадцать пять — уже не проходит</span><span lang="en">The small employer health insurance credit is available where there are <strong>fewer than</strong> <span data-fig="shic_fte"></span> full-time equivalent employees, strictly. Exactly twenty-five does not qualify</span></td></tr>
         <tr><th>16</th><td><span lang="ru">Работники для этого кредита считаются в пересчёте на <strong>полную занятость</strong>, а не по головам: 48 человек на полставки — это 24 работника, и порог пройден. Считать головы — готовый неверный ответ</span><span lang="en">Employees for this credit are counted as <strong>full-time equivalents</strong>, not by head: 48 half-time people are 24 employees, and the threshold is met. Counting heads is a ready-made wrong answer</span></td></tr>
         <tr><th>17</th><td><span lang="ru">Кредит за медицинскую страховку даётся не бессрочно, а только <strong><span data-fig="shic_years"></span> года подряд</strong>, и притом страховка должна быть куплена через биржу SHOP — площадку для покупки страховки малыми работодателями, а не у страховщика напрямую. Показатель средней годовой платы, при котором кредит ещё полагается, индексируется и меняется год от года</span><span lang="en">The health insurance credit is not open-ended: it runs for <strong><span data-fig="shic_years"></span> consecutive years</strong> only, and the insurance must be bought through the SHOP marketplace — the exchange where small employers buy cover, not direct from an insurer. The average annual wage figure below which the credit is available is indexed and moves from year to year</span></td></tr>

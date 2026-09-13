@@ -1120,5 +1120,60 @@ window.QUIZZES.su08 = [
       C: { ru: "Это второй вид платежа по двум работникам: 2 × $4 350. Он здесь не применяется — работодатель платит один из двух.", en: "That is the second kind of payment on the two employees: 2 × $4,350. It does not apply here — an employer pays one of the two." },
       D: { ru: "Сложены оба вида платежа, а вместе они не берутся.", en: "The two kinds added together, and they are never charged together." }
     }
+  },
+  {
+    sec: "s81",
+    ru: "Расходы на квалифицированные исследования за год — $300 000, базовая сумма — $60 000. Каков кредит по обычному расчёту?",
+    en: "Qualified research expenses for the year are $300,000 and the base amount is $60,000. What is the regular credit?",
+    opts: [
+      { k: "A", ru: "$30 000", en: "$30,000" },
+      { k: "B", ru: "$48 000", en: "$48,000" },
+      { k: "C", ru: "$60 000", en: "$60,000" },
+      { k: "D", ru: "$12 000", en: "$12,000" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Превышение $240 000, но оно берётся не больше половины расходов года, то есть не больше $150 000. 20% × $150 000 = $30 000. Это и есть предел: обычный кредит никогда не выше 10% расходов года.", en: "Correct. The excess is $240,000, but it is taken at no more than half the year's expenses, that is no more than $150,000. 20% × $150,000 = $30,000. That is the ceiling: the regular credit is never above 10% of the year's expenses." },
+      B: { ru: "Потолок забыт: 20% взяты со всего превышения в $240 000.", en: "The cap forgotten: 20% taken on the whole $240,000 excess." },
+      C: { ru: "Забыта базовая сумма: 20% взяты со всех расходов года.", en: "The base amount forgotten: 20% taken on all the year's expenses." },
+      D: { ru: "Так вышло бы, если бы 20% брались от базовой суммы, а не от превышения над ней.", en: "That is what 20% of the base amount would give, rather than 20% of the excess over it." }
+    }
+  },
+  {
+    sec: "s81",
+    ru: "Фирма ведёт исследования первый год: за три предыдущих года расходов не было вовсе. Расходы этого года — $200 000. Что даёт упрощённый расчёт?",
+    en: "A firm is doing research for the first year: in the three preceding years there were no expenses at all. This year's expenses are $200,000. What does the simplified computation give?",
+    opts: [
+      { k: "A", ru: "$12 000 — 6% от расходов года", en: "$12,000 — 6% of the year's expenses" },
+      { k: "B", ru: "$28 000 — 14% от расходов года", en: "$28,000 — 14% of the year's expenses" },
+      { k: "C", ru: "$40 000 — 20% от расходов года", en: "$40,000 — 20% of the year's expenses" },
+      { k: "D", ru: "Кредита нет: не с чем сравнивать", en: "No credit: there is nothing to compare with" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Если хотя бы в одном из трёх предыдущих лет расходов не было, средние не считаются и не вычитаются: ставка падает до 6%, зато берётся со всей суммы расходов года.", en: "Correct. If any one of the three preceding years had no expenses, no average is figured and nothing is subtracted: the rate drops to 6% but is taken on the whole of the year's expenses." },
+      B: { ru: "14% — ставка при полной истории трёх лет, и берётся она с превышения, а не со всей суммы.", en: "14% is the rate where all three years have a history, and it is taken on the excess, not on the whole amount." },
+      C: { ru: "20% — ставка обычного расчёта, а он требует базовой суммы и выручки за четыре года.", en: "20% is the regular rate, and that computation needs a base amount and four years of receipts." },
+      D: { ru: "Именно на этот случай и дана плоская ставка: отсутствие истории кредита не отменяет.", en: "The flat rate exists precisely for this case: the absence of a history does not cancel the credit." }
+    }
+  },
+  {
+    sec: "s81",
+    ru: "Молодая корпорация выбрала зачёт кредита на исследования против зарплатных налогов. Доля работодателя в налогах за квартал оказалась меньше кредита. Что происходит с разницей?",
+    en: "A young corporation elected to apply the research credit against payroll taxes. The employer's share of the quarter's taxes turned out to be less than the credit. What happens to the difference?",
+    opts: [
+      { k: "A", ru: "Переходит на следующий квартал", en: "It carries to the next quarter" },
+      { k: "B", ru: "Выплачивается деньгами: с этим выбором кредит становится возвратным", en: "It is paid out in cash: with this election the credit becomes refundable" },
+      { k: "C", ru: "Гасит удержанное из заработной платы работников", en: "It extinguishes what was withheld from the employees' wages" },
+      { k: "D", ru: "Пропадает: зачёт действует только в пределах квартала", en: "It is lost: the offset works within the quarter only" }
+    ],
+    correct: "A",
+    why: {
+      A: { ru: "Верно. Сначала доля работодателя в социальном налоге — до $250 000 за квартал, затем доля работодателя в Medicare, а остаток ждёт следующего квартала.", en: "Correct. First the employer share of social security tax — up to $250,000 for the quarter — then the employer share of Medicare, and the remainder waits for the next quarter." },
+      B: { ru: "Возвратным кредит не становится. Меняется только то, какой налог он гасит: зарплатный вместо налога на доход.", en: "The credit does not become refundable. All that changes is which tax it extinguishes: payroll tax instead of income tax." },
+      C: { ru: "Удержанное — деньги работника, и кредитом их погасить нельзя. Меряется только доля работодателя.", en: "What is withheld is the employee's money and no credit may extinguish it. Only the employer's share is measured." },
+      D: { ru: "Не пропадает: неиспользованное переносится на следующий квартал и дальше.", en: "It is not lost: what is unused carries to the next quarter and beyond." }
+    }
   }
+
 ];
